@@ -1,0 +1,26 @@
+{
+  "type": "architecture",
+  "title": "Order platform · system architecture",
+  "subtitle": "Responsibilities are grouped by layer; connections are not implied",
+  "eyebrow": "EXAMPLE / ARCHITECTURE",
+  "layers": [
+    {"label": "Experience", "description": "User-facing channels", "items": [
+      {"id": "web", "label": "Web app", "detail": "Browse and place orders"},
+      {"id": "support", "label": "Support desk", "detail": "Review customer requests"}
+    ]},
+    {"label": "Application", "description": "Business capabilities", "items": [
+      {"id": "orders", "label": "Order service", "detail": "Manage order states"},
+      {"id": "inventory", "label": "Inventory service", "detail": "Check available stock"}
+    ]},
+    {"label": "Data", "description": "Records and history", "items": [
+      {"id": "order_store", "label": "Order records", "detail": "Order and payment status"},
+      {"id": "stock_store", "label": "Stock records", "detail": "Item availability"}
+    ]}
+  ],
+  "crosscut": [
+    {"label": "Access control", "detail": "Role-based permissions"},
+    {"label": "Observability", "detail": "Logs and service metrics"}
+  ],
+  "footer": "Illustrative model. Layer placement shows responsibility, not a verified call path.",
+  "assumptions": ["All names and responsibilities are simulated example content."]
+}

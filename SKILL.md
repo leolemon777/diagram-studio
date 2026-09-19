@@ -1,9 +1,11 @@
 ---
 name: diagram-studio
-description: 根据自然语言内容创建和修改图表、架构、流程与结构图，按内容选择布局、调整文字和连线、生成阅读详图并检查实际输出，提供矢量图和可编辑源。适用于图示设计、美化和参考风格提炼；不替代计算验证的工程设计或完整应用开发。
+description: 根据自然语言创建架构图、流程图、结构图与数据图表，按内容排版并交付 SVG 和可编辑源。Create architecture diagrams, workflows, structural diagrams, and charts from briefs with adaptive layout and editable outputs. Does not replace professional engineering validation.
 ---
 
 # 图示设计工坊
+
+English users can read the [English usage guide](README.en.md); the same input model, semantic checks, output formats, and quality rules apply to requests in either language.
 
 核心目标是让用户给出的内容自动获得清楚、合适且精致的表达。先理解信息主次和关系，再选择布局；根据实际成图反复修正，交付可继续修改的成果。图型数量、脚本执行成功或零越界均不能代替视觉完成度。
 

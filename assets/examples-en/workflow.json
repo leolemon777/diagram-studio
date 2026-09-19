@@ -1,0 +1,25 @@
+{
+  "type": "graph",
+  "title": "Customer support · resolution workflow",
+  "subtitle": "Two handling routes and an explicit return when a case remains unresolved",
+  "eyebrow": "EXAMPLE / WORKFLOW",
+  "nodes": [
+    {"id": "receive", "label": "Receive request", "kind": "pill"},
+    {"id": "triage", "label": "Classify issue"},
+    {"id": "self_help", "label": "Suggest answer"},
+    {"id": "agent", "label": "Agent handles case"},
+    {"id": "confirm", "label": "Resolved?", "kind": "diamond"},
+    {"id": "close", "label": "Close case", "kind": "pill"}
+  ],
+  "edges": [
+    {"from": "receive", "to": "triage", "label": "Register"},
+    {"from": "triage", "to": "self_help", "label": "Common question"},
+    {"from": "triage", "to": "agent", "label": "Complex issue"},
+    {"from": "self_help", "to": "confirm", "label": "Proposed answer"},
+    {"from": "agent", "to": "confirm", "label": "Proposed solution"},
+    {"from": "confirm", "to": "close", "label": "Yes"},
+    {"from": "confirm", "to": "agent", "label": "No"}
+  ],
+  "footer": "Illustrative process. Arrows show order and return, not volume or elapsed time.",
+  "assumptions": ["This workflow is simulated and does not describe an actual support team."]
+}

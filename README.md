@@ -1,36 +1,64 @@
 # 图示设计工坊 · diagram-studio
 
-一个用于 Codex 的本地图示 Skill：根据内容选择图型，生成架构图、流程图、结构图、甘特图和数据图表，并交付 SVG、可编辑的 draw.io 源文件及检查记录。
+**中文** · [English](README.en.md)
 
-它先建立对象、关系和数据模型，再选择排版与视觉表达。普通流程、树和分层架构支持自适应文字、节点尺寸及连线路由；复杂内容可另生成总览、局部关系页和阅读详页。专门图型使用相应脚本，支持范围请看 [SKILL.md](SKILL.md) 与各项参考文档。
+这是一个供 Codex 使用的本地图示 Skill。你用自然语言说明内容与用途，它会选择合适的图型、组织信息、绘图并检查结果；也可以直接运行仓库中的 Python 生成器。适合需要架构图、流程图、关系与结构图、计划图和数据图表的人。
 
-## 安装到 Codex
+## 它可以画什么
 
-在终端运行：
+| 任务 | 常见表达 | 支持方式 |
+| --- | --- | --- |
+| 架构与系统 | 业务/系统分层、C4、应用与云架构、网络和数据关系 | 普通分层架构支持自适应排版；专门模型按对应输入规则生成。见 [架构方法](references/architecture.md)。 |
+| 流程与协作 | 流程、分支、异常回流、泳道、基础时序、BPMN 子集 | 普通关系流程支持自适应节点和连线；正式记法需对应后端与校验。见 [流程方法](references/process.md)。 |
+| 组织与关系 | 组织树、任务分解、脑图、人物关系、责任矩阵 | 按树、网络或矩阵语义分别表达。 |
+| 计划与运营 | 甘特、任务依赖、看板、PERT、里程碑、运营分析 | 日期、依赖、进度与计算由专门规则处理；[甘特等输入边界](references/rendering.md)需单独查看。 |
+| 数据与科研 | 对比、趋势、分布、统计图、部分科学图 | 按真实数据和单位选择图形；专门统计图需相应 Python 依赖及验证。见 [数据图](references/charts.md)。 |
+| 工程与行业示意 | 设施、能源、控制、软件基础设施及跨行业常见图 | 各专门脚本只覆盖文档说明的模型子集；需要领域复核。 |
+
+它还支持针对**同一份数据**比较不同表达方式，改变阅读顺序与构图，同时保留数值、关系、单位和方向。[四个行业场景的八种表达](demos/expression-lab/index.html)是可重绘的实验示例。目录中的类型名称是检索入口，不代表每个类型都有独立渲染器；详细状态见 [验证记录](references/verification-status.md)。
+
+## 怎么用
+
+### 1. 安装给 Codex
+
+在 macOS 或 Linux 的终端运行：
 
 ```bash
 git clone https://github.com/leolemon777/diagram-studio.git ~/.codex/skills/diagram-studio
 ```
 
-然后在 Codex 中使用 `$diagram-studio`，例如：“用 `$diagram-studio` 画一个带异常回流的客户服务流程图，给我 SVG 和可编辑源”。也可以把整个仓库放到你的 Codex Skills 目录，并阅读 [SKILL.md](SKILL.md)。
+如果这个目录已经是 Git 克隆，可以在其中运行 `git pull` 更新；如果是手动复制的目录，先备份再替换。Windows 用户可以把仓库放到 `%USERPROFILE%\.codex\skills\diagram-studio`。之后在 Codex 任务里写 `$diagram-studio`，再描述你需要的图。Skill 的完整工作规则在 [SKILL.md](SKILL.md)。
 
-## 直接试用生成器
+下面三种请求都可以直接复制后改内容：
 
-基础生成器使用 Python 3.9+ 标准库，不需要 API 密钥或远程服务。部分专业图表另需 Matplotlib；自适应排版可选 Pillow 获取更准确的字体度量。
+```text
+用 $diagram-studio 画一张订单履约流程图：下单→库存检查→付款→发货→签收；库存不足回到补货，付款失败结束。标出判断条件，交付 SVG 和 draw.io 源。
+
+用 $diagram-studio 做一个软件系统架构图：面向产品评审，展示前端、API、订单服务、库存服务和数据库；只画我明确给出的调用关系，另给适合汇报的总览与详细页。
+
+用 $diagram-studio 比较四个课程的前后成绩：给我两种看变化的表达，保持同一份数值和 0–100 分口径，并说明各自适合回答什么问题。
+```
+
+告诉它**给谁看、想回答什么问题、必须出现的内容和关系、数据单位、输出格式与尺寸**，结果会更可靠。缺少关键事实时可以让它标明假设；不要让示例数据冒充你的真实数据。中文和英文请求都可以使用同一个 Skill。
+
+### 2. 不经 Codex，直接运行示例
+
+基础生成器需要 Python 3.9+，不需要 API 密钥或远程生成服务。请在仓库根目录运行：
 
 ```bash
 python3 scripts/render.py assets/examples/01-system-architecture.json --out /tmp/diagram-architecture --theme light
 python3 scripts/render.py assets/examples/02-workflow.json --out /tmp/diagram-workflow --theme light
+python3 scripts/render.py assets/examples-en/architecture.json --out /tmp/diagram-architecture-en --theme light
+python3 scripts/render.py assets/examples-en/workflow.json --out /tmp/diagram-workflow-en --theme light
 python3 scripts/expression_lab.py --out /tmp/diagram-expression-lab
 ```
 
-前两条生成架构与流程的 SVG、draw.io、阅读页和检查文件。第三条生成四组共八种表达的离线对照页；[演示文件](demos/expression-lab/index.html)也保存在仓库中。演示数据为模拟数据，四组分别展示营销转化、教育前后对照、项目时间与依赖、客户服务分支与回流。
+前四条分别生成中英架构图、流程图。`render.py` 的普通输出包含 SVG、draw.io、原始 brief、场景和检查记录；自适应模式还会生成阅读 HTML 与多页源。最后一条生成四组、八种表达的离线对照页；演示数据均为模拟数据。更多输入字段见 [生成格式](references/rendering.md)。部分专业图表需要 Matplotlib，自适应字宽度量可选 Pillow；缺少依赖时按对应后端文档安装。
 
-## 使用边界
+## 交付与边界
 
-- 目录条目不等于独立渲染器，也不代表每种图型都完成了视觉验收。复杂图生成后要查看实际输出，核对数据、方向、文字和连线。
-- SVG 与 draw.io 是可继续编辑的源；目标编辑器的实际拖动、保存与重开情况需要对具体文件验证。
-- 工程、医疗、科研等专业图只能按已实现的输入与校验范围使用，不能替代专业审查。
-- 研究参考包括公开的图示产品与设计资料；此项目为独立实现，不包含商业模板、图片或字体文件，也不隶属于万兴图示。
+Skill 会选择图形表达并保留可修改的源文件；脚本不会自行理解自然语言，需求理解和最终视觉判断由运行它的助手完成。生成后要实际查看文字、箭头、分支、单位和数据；自动边界检查通过不等于读者一定看懂。
 
-本仓库目前用于公开试用与反馈，尚未附开源许可证。
+SVG 与 draw.io 可以继续编辑。目标编辑器能否逐对象拖动并保存重开，需要针对具体文件验证。工程、医疗、科研等专业图只适用于已实现的输入与校验范围，不能替代专业审查。
+
+项目参考公开的图示设计资料，代码、布局和示例独立实现；不包含商业模板、图片或字体文件，也不隶属于万兴图示。本仓库目前用于公开试用与反馈，尚未附开源许可证。
