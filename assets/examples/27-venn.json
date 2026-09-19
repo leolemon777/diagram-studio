@@ -1,0 +1,23 @@
+{
+  "type": "venn",
+  "title": "韦恩结构 · 两类集合及交集",
+  "diagram_name": "韦恩结构",
+  "family": "关系与结构",
+  "subtitle": "交叠表示共同成员；圆面积不编码集合大小",
+  "eyebrow": "27 / DIAGRAM LIBRARY",
+  "footer": "原创结构范例 · 数据、实体、尺寸与假说均为演示输入；实际任务按用户资料替换",
+  "assumptions": [
+    "原创演示内容，不代表实际业务、研究结论或工程设计"
+  ],
+  "items": [
+    {
+      "label": "现场经验",
+      "detail": "情境与操作知识"
+    },
+    {
+      "label": "数据证据",
+      "detail": "记录与可复核指标"
+    }
+  ],
+  "intersection": "共同支持\n问题判断"
+}

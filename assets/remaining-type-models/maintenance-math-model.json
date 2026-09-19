@@ -1,0 +1,99 @@
+{
+  "mode": "mathematics",
+  "title": "可靠度推导卡 · 并联系统",
+  "subtitle": "定义、代入、校验和结论保持同一计算口径",
+  "template": "science",
+  "data_status": "simulated",
+  "assumptions": [
+    "数据为教学模拟，不代表真实项目现状",
+    "真实交付前须替换数值、名称、品牌规范和审批信息"
+  ],
+  "metrics": [
+    {
+      "id": "r",
+      "label": "系统可靠度",
+      "value": 99.68,
+      "unit": "%",
+      "evidence": "示例输入"
+    },
+    {
+      "id": "q",
+      "label": "并联失效率",
+      "value": 0.32,
+      "unit": "%",
+      "evidence": "示例输入"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "b1",
+      "role": "statement",
+      "label": "问题",
+      "content": "两台独立泵至少一台可用",
+      "rect": [
+        0.04,
+        0.58,
+        0.28,
+        0.32
+      ],
+      "order": 1
+    },
+    {
+      "id": "b2",
+      "role": "derivation",
+      "label": "推导",
+      "content": "R = 1 − (1−R1)(1−R2)",
+      "rect": [
+        0.36,
+        0.58,
+        0.28,
+        0.32
+      ],
+      "order": 2
+    },
+    {
+      "id": "b3",
+      "role": "result",
+      "label": "结果",
+      "content": "R = 1 − 0.04 × 0.08 = 0.9968",
+      "rect": [
+        0.68,
+        0.58,
+        0.28,
+        0.32
+      ],
+      "order": 3
+    },
+    {
+      "id": "b4",
+      "role": "derivation",
+      "label": "边界",
+      "content": "独立失效假设；共同原因另评估",
+      "rect": [
+        0.2,
+        0.12,
+        0.6,
+        0.28
+      ],
+      "order": 4
+    }
+  ],
+  "steps": [
+    {
+      "expression": "1-(1-0.96)*(1-0.92)=0.9968",
+      "lhs": 0.9968,
+      "rhs": 0.9968
+    },
+    {
+      "expression": "failure=0.04*0.08=0.0032",
+      "lhs": 0.0032,
+      "rhs": 0.0032
+    },
+    {
+      "expression": "availability+failure=1",
+      "lhs": 1.0,
+      "rhs": 1.0
+    }
+  ],
+  "tolerance": 1e-12
+}

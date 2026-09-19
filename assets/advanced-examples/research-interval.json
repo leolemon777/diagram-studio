@@ -1,0 +1,29 @@
+{
+  "mode": "errorbar",
+  "title": "估计值与不确定区间",
+  "subtitle": "区间由输入提供；示范不对研究方案作统计推断",
+  "uncertainty_kind": "provided interval",
+  "interval_source": "原创演示输入，非置信区间计算",
+  "ylabel": "示例指标",
+  "data": [
+    {
+      "label": "组 A",
+      "estimate": 12,
+      "low": 9,
+      "high": 15
+    },
+    {
+      "label": "组 B",
+      "estimate": 16,
+      "low": 12,
+      "high": 20
+    },
+    {
+      "label": "组 C",
+      "estimate": 14,
+      "low": 11,
+      "high": 17
+    }
+  ],
+  "footer": "原创演示数据 · 区间不能解释为显著性检验结果"
+}

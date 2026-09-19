@@ -1,0 +1,177 @@
+{
+  "schema": "pid-topology-1",
+  "title": "供水支路与压力测量：假设拓扑",
+  "assumptions": [
+    "教学模型；未给尺寸、压力等级和控制设定。",
+    "测压点用显式过程端口连接；测量信号另用signal端口。",
+    "独立教学符号，未验证为ISA标准符号或DEXPI交换；图形编辑不自动更新连接模型。"
+  ],
+  "items": [
+    {
+      "id": "tank",
+      "tag": "TK-101",
+      "kind": "tank",
+      "label": "供水槽",
+      "ports": [
+        {
+          "id": "tank_out",
+          "domain": "process",
+          "direction": "out"
+        }
+      ]
+    },
+    {
+      "id": "pump",
+      "tag": "P-101",
+      "kind": "pump",
+      "label": "输送泵",
+      "ports": [
+        {
+          "id": "pump_in",
+          "domain": "process",
+          "direction": "in"
+        },
+        {
+          "id": "pump_out",
+          "domain": "process",
+          "direction": "out"
+        }
+      ]
+    },
+    {
+      "id": "tee",
+      "tag": "J-101",
+      "kind": "junction",
+      "label": "测量支点",
+      "ports": [
+        {
+          "id": "tee_in",
+          "domain": "process",
+          "direction": "in"
+        },
+        {
+          "id": "tee_out",
+          "domain": "process",
+          "direction": "out"
+        },
+        {
+          "id": "tee_sense",
+          "domain": "process",
+          "direction": "bidirectional"
+        }
+      ]
+    },
+    {
+      "id": "valve",
+      "tag": "HV-101",
+      "kind": "valve",
+      "label": "手动隔离阀",
+      "ports": [
+        {
+          "id": "valve_in",
+          "domain": "process",
+          "direction": "in"
+        },
+        {
+          "id": "valve_out",
+          "domain": "process",
+          "direction": "out"
+        }
+      ]
+    },
+    {
+      "id": "sink",
+      "tag": "B-101",
+      "kind": "boundary",
+      "label": "下游边界",
+      "ports": [
+        {
+          "id": "sink_in",
+          "domain": "process",
+          "direction": "in"
+        }
+      ]
+    },
+    {
+      "id": "pt",
+      "tag": "PT-101",
+      "kind": "instrument",
+      "label": "压力变送器",
+      "ports": [
+        {
+          "id": "pt_sense",
+          "domain": "process",
+          "direction": "bidirectional"
+        },
+        {
+          "id": "pt_signal",
+          "domain": "signal",
+          "direction": "out"
+        }
+      ]
+    },
+    {
+      "id": "display",
+      "tag": "PI-101",
+      "kind": "instrument",
+      "label": "压力显示",
+      "ports": [
+        {
+          "id": "display_signal",
+          "domain": "signal",
+          "direction": "in"
+        }
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "C1",
+      "from": "tank_out",
+      "to": "pump_in",
+      "domain": "process",
+      "label": "供水",
+      "flow": "forward"
+    },
+    {
+      "id": "C2",
+      "from": "pump_out",
+      "to": "tee_in",
+      "domain": "process",
+      "label": "泵出口",
+      "flow": "forward"
+    },
+    {
+      "id": "C3",
+      "from": "tee_out",
+      "to": "valve_in",
+      "domain": "process",
+      "label": "主支路",
+      "flow": "forward"
+    },
+    {
+      "id": "C4",
+      "from": "valve_out",
+      "to": "sink_in",
+      "domain": "process",
+      "label": "下游供水",
+      "flow": "forward"
+    },
+    {
+      "id": "C5",
+      "from": "tee_sense",
+      "to": "pt_sense",
+      "domain": "process",
+      "label": "测压连接（非流量断言）",
+      "flow": "unknown"
+    },
+    {
+      "id": "C6",
+      "from": "pt_signal",
+      "to": "display_signal",
+      "domain": "signal",
+      "label": "压力测量信号（介质未指定）",
+      "flow": "forward"
+    }
+  ]
+}

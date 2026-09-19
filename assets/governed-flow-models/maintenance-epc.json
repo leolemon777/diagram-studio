@@ -1,0 +1,20 @@
+{
+  "id": "maintenance-epc", "mode": "epc",
+  "title": "维修工单事件驱动过程", "subtitle": "事件与功能交替；XOR 明确区分紧急与计划路径", "data_status": "simulated",
+  "nodes": [
+    {"id": "e0", "type": "event", "label": "设备异常已报告"},
+    {"id": "f1", "type": "function", "label": "登记并分级"},
+    {"id": "e1", "type": "event", "label": "工单已分类"},
+    {"id": "g1", "type": "gateway", "operator": "XOR", "label": "紧急性判断"},
+    {"id": "f2", "type": "function", "label": "安排立即处置"},
+    {"id": "e2", "type": "event", "label": "应急任务已派发"},
+    {"id": "f3", "type": "function", "label": "纳入计划窗口"},
+    {"id": "e3", "type": "event", "label": "计划任务已排期"}
+  ],
+  "edges": [
+    {"source": "e0", "target": "f1"}, {"source": "f1", "target": "e1"}, {"source": "e1", "target": "g1"},
+    {"source": "g1", "target": "f2", "label": "紧急"}, {"source": "f2", "target": "e2"},
+    {"source": "g1", "target": "f3", "label": "非紧急"}, {"source": "f3", "target": "e3"}
+  ],
+  "assumptions": ["过程为演示，不代表现行维修制度", "XOR 两条路径互斥且覆盖全部工单"]
+}

@@ -1,0 +1,153 @@
+{
+  "mode": "system-diagram",
+  "title": "维修闭环系统 · 上下文与接口",
+  "subtitle": "边界、参与者、接口类型和证据流分开表达",
+  "template": "graph",
+  "data_status": "simulated",
+  "assumptions": [
+    "数据为教学模拟，不代表真实项目现状",
+    "真实交付前须替换数值、名称、品牌规范和审批信息"
+  ],
+  "metrics": [
+    {
+      "id": "actors",
+      "label": "外部参与者",
+      "value": 2,
+      "unit": "类",
+      "evidence": "示例输入"
+    },
+    {
+      "id": "interfaces",
+      "label": "接口",
+      "value": 4,
+      "unit": "类",
+      "evidence": "示例输入"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "operator",
+      "label": "现场操作员",
+      "kind": "actor",
+      "position": [
+        0.09,
+        0.72
+      ]
+    },
+    {
+      "id": "planner",
+      "label": "维修计划员",
+      "kind": "actor",
+      "position": [
+        0.09,
+        0.3
+      ]
+    },
+    {
+      "id": "cmms",
+      "label": "维修闭环平台",
+      "kind": "system",
+      "position": [
+        0.48,
+        0.52
+      ],
+      "detail": "边界内核心系统",
+      "group": "boundary"
+    },
+    {
+      "id": "plc",
+      "label": "PLC / SCADA",
+      "kind": "interface",
+      "position": [
+        0.82,
+        0.75
+      ],
+      "detail": "遥测接口"
+    },
+    {
+      "id": "erp",
+      "label": "ERP",
+      "kind": "interface",
+      "position": [
+        0.82,
+        0.5
+      ],
+      "detail": "工单与成本"
+    },
+    {
+      "id": "mobile",
+      "label": "移动终端",
+      "kind": "interface",
+      "position": [
+        0.82,
+        0.25
+      ],
+      "detail": "执行反馈"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "operator",
+      "target": "cmms",
+      "relation": "command",
+      "label": "报修/确认"
+    },
+    {
+      "id": "e2",
+      "source": "planner",
+      "target": "cmms",
+      "relation": "work-order",
+      "label": "计划/派工"
+    },
+    {
+      "id": "e3",
+      "source": "plc",
+      "target": "cmms",
+      "relation": "telemetry",
+      "label": "状态与报警"
+    },
+    {
+      "id": "e4",
+      "source": "cmms",
+      "target": "erp",
+      "relation": "work-order",
+      "label": "工单/成本"
+    },
+    {
+      "id": "e5",
+      "source": "cmms",
+      "target": "mobile",
+      "relation": "command",
+      "label": "任务",
+      "label_position": [
+        0.67,
+        0.34
+      ]
+    },
+    {
+      "id": "e6",
+      "source": "mobile",
+      "target": "cmms",
+      "relation": "telemetry",
+      "label": "结果/证据",
+      "label_position": [
+        0.68,
+        0.19
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "id": "boundary",
+      "label": "系统边界",
+      "rect": [
+        0.28,
+        0.12,
+        0.4,
+        0.76
+      ]
+    }
+  ],
+  "system_boundary": "boundary"
+}

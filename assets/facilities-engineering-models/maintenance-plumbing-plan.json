@@ -1,0 +1,460 @@
+{
+  "mode": "plumbing-plan",
+  "title": "设备维护办公区给排水布置示意",
+  "subtitle": "冷水、热水和排水分系统表达，管径、流向与排水坡度逐段保留",
+  "data_status": "simulated",
+  "assumptions": [
+    "模拟管线；压力、热负荷、通气、防回流、坡度和属地卫生规范需由专业设计核对"
+  ],
+  "engineering_status": "schematic-requires-local-design",
+  "plan": {
+    "width_m": 20,
+    "height_m": 12
+  },
+  "rooms": [
+    {
+      "id": "open-office",
+      "label": "开放办公区",
+      "zone": "员工区",
+      "rect": [
+        0.4,
+        0.4,
+        12.6,
+        7.2
+      ]
+    },
+    {
+      "id": "meeting",
+      "label": "会议室",
+      "zone": "公共区",
+      "rect": [
+        13.2,
+        0.4,
+        6.4,
+        4.1
+      ]
+    },
+    {
+      "id": "support",
+      "label": "设备与茶水区",
+      "zone": "支持区",
+      "rect": [
+        13.2,
+        4.7,
+        6.4,
+        2.9
+      ]
+    },
+    {
+      "id": "corridor",
+      "label": "主通道",
+      "zone": "通行区",
+      "rect": [
+        0.4,
+        7.8,
+        19.2,
+        3.8
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "meter",
+      "label": "给水入口",
+      "kind": "source",
+      "tag": "WM-01",
+      "position": [
+        20,
+        10.5
+      ],
+      "label_at": [
+        19.0,
+        11.1
+      ]
+    },
+    {
+      "id": "heater",
+      "label": "电热水器",
+      "kind": "heater",
+      "tag": "WH-01",
+      "position": [
+        18.5,
+        6.5
+      ],
+      "label_at": [
+        18.3,
+        5.95
+      ]
+    },
+    {
+      "id": "sink",
+      "label": "茶水盆",
+      "kind": "fixture",
+      "tag": "SK-01",
+      "position": [
+        17.0,
+        5.4
+      ],
+      "label_at": [
+        17.4,
+        5.85
+      ]
+    },
+    {
+      "id": "basin",
+      "label": "洗手盆",
+      "kind": "fixture",
+      "tag": "WB-01",
+      "position": [
+        14.2,
+        5.4
+      ],
+      "label_at": [
+        13.75,
+        5.85
+      ]
+    },
+    {
+      "id": "floor-drain",
+      "label": "地漏",
+      "kind": "fixture",
+      "tag": "FD-01",
+      "position": [
+        15.5,
+        5.0
+      ],
+      "label_at": [
+        15.5,
+        4.55
+      ]
+    },
+    {
+      "id": "stack",
+      "label": "排水立管",
+      "kind": "stack",
+      "tag": "SW-01",
+      "position": [
+        19.2,
+        5.0
+      ],
+      "label_at": [
+        19.0,
+        5.55
+      ]
+    },
+    {
+      "id": "drain",
+      "label": "室外排水接口",
+      "kind": "drain",
+      "tag": "D-01",
+      "position": [
+        20,
+        2.0
+      ],
+      "label_at": [
+        19.1,
+        1.6
+      ]
+    }
+  ],
+  "pipes": [
+    {
+      "id": "c1",
+      "label": "冷水主管",
+      "source": "meter",
+      "target": "heater",
+      "system": "cold",
+      "diameter_mm": 25,
+      "flow_direction": "入口 → 热水器",
+      "points": [
+        [
+          20,
+          10.5
+        ],
+        [
+          18.5,
+          10.5
+        ],
+        [
+          18.5,
+          6.5
+        ]
+      ],
+      "label_at": [
+        16.6,
+        10.25
+      ]
+    },
+    {
+      "id": "c2",
+      "label": "茶水盆冷水",
+      "source": "meter",
+      "target": "sink",
+      "system": "cold",
+      "diameter_mm": 20,
+      "flow_direction": "入口 → 茶水盆",
+      "points": [
+        [
+          20,
+          10.5
+        ],
+        [
+          19.5,
+          7.0
+        ],
+        [
+          17.0,
+          7.0
+        ],
+        [
+          17.0,
+          5.4
+        ]
+      ],
+      "label_at": [
+        16.5,
+        9.2
+      ]
+    },
+    {
+      "id": "c3",
+      "label": "洗手盆冷水",
+      "source": "meter",
+      "target": "basin",
+      "system": "cold",
+      "diameter_mm": 20,
+      "flow_direction": "入口 → 洗手盆",
+      "points": [
+        [
+          20,
+          10.5
+        ],
+        [
+          19.0,
+          7.3
+        ],
+        [
+          14.2,
+          7.3
+        ],
+        [
+          14.2,
+          5.4
+        ]
+      ],
+      "label_at": [
+        16.5,
+        8.55
+      ]
+    },
+    {
+      "id": "c4",
+      "label": "地漏补水",
+      "source": "meter",
+      "target": "floor-drain",
+      "system": "cold",
+      "diameter_mm": 15,
+      "flow_direction": "入口 → 地漏",
+      "points": [
+        [
+          20,
+          10.5
+        ],
+        [
+          19.0,
+          7.6
+        ],
+        [
+          15.5,
+          7.6
+        ],
+        [
+          15.5,
+          5.0
+        ]
+      ],
+      "label_at": [
+        16.5,
+        7.9
+      ]
+    },
+    {
+      "id": "h1",
+      "label": "茶水盆热水",
+      "source": "heater",
+      "target": "sink",
+      "system": "hot",
+      "diameter_mm": 20,
+      "flow_direction": "热水器 → 茶水盆",
+      "points": [
+        [
+          18.5,
+          6.5
+        ],
+        [
+          17.0,
+          6.5
+        ],
+        [
+          17.0,
+          5.4
+        ]
+      ],
+      "label_at": [
+        17.5,
+        6.8
+      ]
+    },
+    {
+      "id": "h2",
+      "label": "洗手盆热水",
+      "source": "heater",
+      "target": "basin",
+      "system": "hot",
+      "diameter_mm": 20,
+      "flow_direction": "热水器 → 洗手盆",
+      "points": [
+        [
+          18.5,
+          6.5
+        ],
+        [
+          14.2,
+          6.5
+        ],
+        [
+          14.2,
+          5.4
+        ]
+      ],
+      "label_at": [
+        14.9,
+        6.15
+      ]
+    },
+    {
+      "id": "w1",
+      "label": "茶水盆排水",
+      "source": "sink",
+      "target": "stack",
+      "system": "waste",
+      "diameter_mm": 50,
+      "slope_percent": 1.0,
+      "flow_direction": "茶水盆 → 立管",
+      "points": [
+        [
+          17.0,
+          5.4
+        ],
+        [
+          17.0,
+          4.6
+        ],
+        [
+          19.2,
+          4.6
+        ],
+        [
+          19.2,
+          5.0
+        ]
+      ],
+      "label_at": [
+        17.9,
+        5.0
+      ]
+    },
+    {
+      "id": "w2",
+      "label": "洗手盆排水",
+      "source": "basin",
+      "target": "stack",
+      "system": "waste",
+      "diameter_mm": 50,
+      "slope_percent": 1.0,
+      "flow_direction": "洗手盆 → 立管",
+      "points": [
+        [
+          14.2,
+          5.4
+        ],
+        [
+          14.2,
+          4.3
+        ],
+        [
+          19.2,
+          4.3
+        ],
+        [
+          19.2,
+          5.0
+        ]
+      ],
+      "label_at": [
+        17.3,
+        4.35
+      ]
+    },
+    {
+      "id": "w3",
+      "label": "地漏排水",
+      "source": "floor-drain",
+      "target": "stack",
+      "system": "waste",
+      "diameter_mm": 75,
+      "slope_percent": 1.0,
+      "flow_direction": "地漏 → 立管",
+      "points": [
+        [
+          15.5,
+          5.0
+        ],
+        [
+          15.5,
+          4.0
+        ],
+        [
+          19.2,
+          4.0
+        ],
+        [
+          19.2,
+          5.0
+        ]
+      ],
+      "label_at": [
+        16.5,
+        3.65
+      ]
+    },
+    {
+      "id": "w4",
+      "label": "排水出户",
+      "source": "stack",
+      "target": "drain",
+      "system": "waste",
+      "diameter_mm": 100,
+      "slope_percent": 0.8,
+      "flow_direction": "立管 → 室外接口",
+      "points": [
+        [
+          19.2,
+          5.0
+        ],
+        [
+          19.2,
+          2.0
+        ],
+        [
+          20,
+          2.0
+        ]
+      ],
+      "label_at": [
+        18.0,
+        2.0
+      ]
+    }
+  ]
+}

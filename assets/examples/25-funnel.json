@@ -1,0 +1,31 @@
+{
+  "type": "tapered",
+  "title": "漏斗结构 · 阶段留存",
+  "diagram_name": "漏斗结构",
+  "family": "信息表达",
+  "subtitle": "每层顶边宽度表示阶段数量；连续阶段数量不得递增",
+  "eyebrow": "25 / DIAGRAM LIBRARY",
+  "footer": "原创结构范例 · 数据、实体、尺寸与假说均为演示输入；实际任务按用户资料替换",
+  "assumptions": [
+    "原创演示内容，不代表实际业务、研究结论或工程设计"
+  ],
+  "mode": "funnel",
+  "items": [
+    {
+      "label": "进入范围",
+      "value": 100
+    },
+    {
+      "label": "完成初筛",
+      "value": 72
+    },
+    {
+      "label": "进入验证",
+      "value": 45
+    },
+    {
+      "label": "完成确认",
+      "value": 24
+    }
+  ]
+}

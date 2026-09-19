@@ -1,0 +1,118 @@
+{
+  "title": "设备维修系统：用例关系教学示例",
+  "scope": "单一系统边界；展示参与关联、公共认证包含关系与条件扩展，不表达步骤顺序",
+  "assumptions": [
+    "全部角色、目标与条件均为教学假设，不代表实际系统需求"
+  ],
+  "subjects": [
+    {
+      "id": "maintenance",
+      "name": "设备维修系统",
+      "stereotype": "subsystem"
+    }
+  ],
+  "actors": [
+    {
+      "id": "technician",
+      "name": "维修员",
+      "side": "left",
+      "kind": "human role"
+    },
+    {
+      "id": "supervisor",
+      "name": "维修主管",
+      "side": "right",
+      "kind": "human role"
+    },
+    {
+      "id": "identity",
+      "name": "统一身份平台",
+      "side": "right",
+      "kind": "external system"
+    }
+  ],
+  "use_cases": [
+    {
+      "id": "authenticate",
+      "name": "验证身份",
+      "subject": "maintenance"
+    },
+    {
+      "id": "report",
+      "name": "提交设备异常",
+      "subject": "maintenance",
+      "extension_points": [
+        "requestHelp"
+      ]
+    },
+    {
+      "id": "assign",
+      "name": "分派维修任务",
+      "subject": "maintenance"
+    },
+    {
+      "id": "close",
+      "name": "关闭维修工单",
+      "subject": "maintenance"
+    },
+    {
+      "id": "help",
+      "name": "请求远程协助",
+      "subject": "maintenance"
+    }
+  ],
+  "relations": [
+    {
+      "id": "tech_report",
+      "kind": "association",
+      "source": "technician",
+      "target": "report"
+    },
+    {
+      "id": "tech_close",
+      "kind": "association",
+      "source": "technician",
+      "target": "close"
+    },
+    {
+      "id": "supervisor_assign",
+      "kind": "association",
+      "source": "supervisor",
+      "target": "assign"
+    },
+    {
+      "id": "identity_auth",
+      "kind": "association",
+      "source": "identity",
+      "target": "authenticate"
+    },
+    {
+      "id": "report_auth",
+      "kind": "include",
+      "source": "report",
+      "target": "authenticate"
+    },
+    {
+      "id": "assign_auth",
+      "kind": "include",
+      "source": "assign",
+      "target": "authenticate"
+    },
+    {
+      "id": "close_auth",
+      "kind": "include",
+      "source": "close",
+      "target": "authenticate"
+    },
+    {
+      "id": "help_report",
+      "kind": "extend",
+      "source": "help",
+      "target": "report",
+      "condition": "现场信息不足",
+      "extension_points": [
+        "requestHelp"
+      ]
+    }
+  ]
+}

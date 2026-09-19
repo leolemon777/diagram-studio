@@ -1,0 +1,151 @@
+{
+  "schema": "pid-topology-1",
+  "title": "主蒸汽母管与压力测量：公用发电 P&ID 教学拓扑",
+  "assumptions": [
+    "模拟锅炉出口至汽轮机边界的主蒸汽支路；未表示实际启停或阀门状态。",
+    "不编造蒸汽参数、保护定值、疏水、旁路、减温减压或安全阀配置。",
+    "独立教学符号未验证为完整 ISA 5.1 符号集，也不是 DEXPI 交换文件。"
+  ],
+  "items": [
+    {
+      "id": "boiler",
+      "tag": "B-501",
+      "kind": "boundary",
+      "label": "锅炉出口边界",
+      "ports": [
+        {
+          "id": "boiler_out",
+          "domain": "process",
+          "direction": "out"
+        }
+      ]
+    },
+    {
+      "id": "stop",
+      "tag": "HV-501",
+      "kind": "valve",
+      "label": "主汽隔离阀",
+      "ports": [
+        {
+          "id": "stop_in",
+          "domain": "process",
+          "direction": "in"
+        },
+        {
+          "id": "stop_out",
+          "domain": "process",
+          "direction": "out"
+        }
+      ]
+    },
+    {
+      "id": "header",
+      "tag": "J-501",
+      "kind": "junction",
+      "label": "主蒸汽母管测点",
+      "ports": [
+        {
+          "id": "header_in",
+          "domain": "process",
+          "direction": "in"
+        },
+        {
+          "id": "header_out",
+          "domain": "process",
+          "direction": "out"
+        },
+        {
+          "id": "header_sense",
+          "domain": "process",
+          "direction": "bidirectional"
+        }
+      ]
+    },
+    {
+      "id": "turbine",
+      "tag": "B-502",
+      "kind": "boundary",
+      "label": "汽轮机入口边界",
+      "ports": [
+        {
+          "id": "turbine_in",
+          "domain": "process",
+          "direction": "in"
+        }
+      ]
+    },
+    {
+      "id": "pt",
+      "tag": "PT-501",
+      "kind": "instrument",
+      "label": "压力变送器",
+      "ports": [
+        {
+          "id": "pt_process",
+          "domain": "process",
+          "direction": "bidirectional"
+        },
+        {
+          "id": "pt_signal",
+          "domain": "signal",
+          "direction": "out"
+        }
+      ]
+    },
+    {
+      "id": "pi",
+      "tag": "PI-501",
+      "kind": "instrument",
+      "label": "压力显示",
+      "ports": [
+        {
+          "id": "pi_signal",
+          "domain": "signal",
+          "direction": "in"
+        }
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "C1",
+      "from": "boiler_out",
+      "to": "stop_in",
+      "domain": "process",
+      "label": "主蒸汽",
+      "flow": "forward"
+    },
+    {
+      "id": "C2",
+      "from": "stop_out",
+      "to": "header_in",
+      "domain": "process",
+      "label": "阀后蒸汽",
+      "flow": "forward"
+    },
+    {
+      "id": "C3",
+      "from": "header_out",
+      "to": "turbine_in",
+      "domain": "process",
+      "label": "汽轮机供汽",
+      "flow": "forward"
+    },
+    {
+      "id": "C4",
+      "from": "header_sense",
+      "to": "pt_process",
+      "domain": "process",
+      "label": "母管测压连接",
+      "flow": "unknown"
+    },
+    {
+      "id": "C5",
+      "from": "pt_signal",
+      "to": "pi_signal",
+      "domain": "signal",
+      "label": "压力测量信号",
+      "flow": "forward"
+    }
+  ]
+}

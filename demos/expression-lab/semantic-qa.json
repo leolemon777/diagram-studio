@@ -1,0 +1,45 @@
+{
+  "scope": "four bounded studies / source invariants and SVG parse only; browser and human review are separate",
+  "figures": [
+    {
+      "file": "marketing-a.svg",
+      "source_sha256": "441ec8efad285f7c253538909194540ed6c5b407bfc43d9ae0d4f49fa302657e",
+      "text_count": 24
+    },
+    {
+      "file": "marketing-b.svg",
+      "source_sha256": "441ec8efad285f7c253538909194540ed6c5b407bfc43d9ae0d4f49fa302657e",
+      "text_count": 14
+    },
+    {
+      "file": "education-a.svg",
+      "source_sha256": "afae85c33be37bbe2cfbe266ae4cb636402675339e3aea6b76dee81cc9afd1cc",
+      "text_count": 27
+    },
+    {
+      "file": "education-b.svg",
+      "source_sha256": "afae85c33be37bbe2cfbe266ae4cb636402675339e3aea6b76dee81cc9afd1cc",
+      "text_count": 23
+    },
+    {
+      "file": "planning-a.svg",
+      "source_sha256": "ba0f5b047a04159a032d8ef40aebb042b9d12006c9a2d366dffc9109ca72eb2a",
+      "text_count": 40
+    },
+    {
+      "file": "planning-b.svg",
+      "source_sha256": "ba0f5b047a04159a032d8ef40aebb042b9d12006c9a2d366dffc9109ca72eb2a",
+      "text_count": 31
+    },
+    {
+      "file": "service-a.svg",
+      "source_sha256": "ea5c2915d1dc6a4414639428a2e10f31016baf3498c8b02b48b66c3a31bde353",
+      "text_count": 24
+    },
+    {
+      "file": "service-b.svg",
+      "source_sha256": "ea5c2915d1dc6a4414639428a2e10f31016baf3498c8b02b48b66c3a31bde353",
+      "text_count": 39
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "mode": "wiring-diagram",
+  "title": "泵站控制柜端子接线图",
+  "subtitle": "设备、端子、线号、导体规格和信号逐线对应",
+  "data_status": "simulated",
+  "assumptions": [
+    "教学示例不对应真实柜体；端子容量、屏蔽接地、隔离和安全回路必须按设计复核"
+  ],
+  "devices": [
+    {
+      "id": "psu",
+      "label": "24 VDC 电源",
+      "tag": "PS1",
+      "terminals": [
+        "+24V-1",
+        "0V-1",
+        "+24V-2",
+        "0V-2"
+      ],
+      "position": [
+        0.12,
+        0.74
+      ]
+    },
+    {
+      "id": "plc",
+      "label": "PLC 数字量模块",
+      "tag": "A1",
+      "terminals": [
+        "I0.0",
+        "M0",
+        "Q0.0",
+        "M1"
+      ],
+      "position": [
+        0.12,
+        0.3
+      ]
+    },
+    {
+      "id": "tb",
+      "label": "现场端子排",
+      "tag": "X1",
+      "terminals": [
+        "01",
+        "02",
+        "03",
+        "04"
+      ],
+      "position": [
+        0.88,
+        0.74
+      ]
+    },
+    {
+      "id": "field",
+      "label": "泵站现场设备",
+      "tag": "M1/S1",
+      "terminals": [
+        "P+",
+        "P-",
+        "START",
+        "COM"
+      ],
+      "position": [
+        0.88,
+        0.3
+      ]
+    }
+  ],
+  "wires": [
+    {
+      "id": "w1",
+      "from": "psu.+24V-1",
+      "to": "tb.01",
+      "wire_no": "W101",
+      "conductor_spec": "1×1.0 mm² RD",
+      "signal": "+24VDC",
+      "label_at": [
+        0.42,
+        0.78
+      ]
+    },
+    {
+      "id": "w2",
+      "from": "psu.0V-1",
+      "to": "tb.02",
+      "wire_no": "W102",
+      "conductor_spec": "1×1.0 mm² BU",
+      "signal": "0VDC",
+      "label_at": [
+        0.58,
+        0.71
+      ]
+    },
+    {
+      "id": "w3",
+      "from": "psu.+24V-2",
+      "to": "plc.I0.0",
+      "wire_no": "W103",
+      "conductor_spec": "1×0.75 mm² RD",
+      "signal": "输入供电",
+      "label_at": [
+        0.42,
+        0.56
+      ]
+    },
+    {
+      "id": "w4",
+      "from": "psu.0V-2",
+      "to": "plc.M0",
+      "wire_no": "W104",
+      "conductor_spec": "1×0.75 mm² BU",
+      "signal": "输入公共端",
+      "label_at": [
+        0.58,
+        0.49
+      ]
+    },
+    {
+      "id": "w5",
+      "from": "tb.03",
+      "to": "field.P+",
+      "wire_no": "W201",
+      "conductor_spec": "1×1.0 mm² RD",
+      "signal": "现场 +24V",
+      "label_at": [
+        0.81,
+        0.56
+      ]
+    },
+    {
+      "id": "w6",
+      "from": "tb.04",
+      "to": "field.P-",
+      "wire_no": "W202",
+      "conductor_spec": "1×1.0 mm² BU",
+      "signal": "现场 0V",
+      "label_at": [
+        0.93,
+        0.49
+      ]
+    },
+    {
+      "id": "w7",
+      "from": "plc.Q0.0",
+      "to": "field.START",
+      "wire_no": "W301",
+      "conductor_spec": "1×0.75 mm² BK",
+      "signal": "启动命令",
+      "label_at": [
+        0.42,
+        0.31
+      ]
+    },
+    {
+      "id": "w8",
+      "from": "plc.M1",
+      "to": "field.COM",
+      "wire_no": "W302",
+      "conductor_spec": "1×0.75 mm² BU",
+      "signal": "输出公共端",
+      "label_at": [
+        0.58,
+        0.24
+      ]
+    }
+  ]
+}

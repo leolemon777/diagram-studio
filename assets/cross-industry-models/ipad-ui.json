@@ -1,0 +1,133 @@
+{
+  "catalog_id": "cn-1237",
+  "mode": "tablet-wireframe",
+  "title": "社区巡检 · iPad 双栏原型",
+  "subtitle": "列表、地图与现场表单适配横竖屏",
+  "template": "wireframe",
+  "sector": "软件与数字产品",
+  "use_case": "平板业务和现场应用常用界面原型",
+  "data_status": "simulated",
+  "assumptions": [
+    "内容和数值为教学模拟",
+    "真实交付前须替换名称、事实、品牌、尺寸和审批信息"
+  ],
+  "metrics": [
+    {
+      "id": "screens",
+      "label": "关键页面",
+      "value": 2,
+      "unit": "个",
+      "evidence": "模拟输入"
+    },
+    {
+      "id": "tasks",
+      "label": "核心任务",
+      "value": 3,
+      "unit": "项",
+      "evidence": "模拟输入"
+    }
+  ],
+  "screens": [
+    {
+      "id": "map",
+      "label": "巡检地图",
+      "viewport": "1180×820",
+      "rect": [
+        0.05,
+        0.15,
+        0.42,
+        0.7
+      ],
+      "regions": [
+        {
+          "id": "maparea",
+          "role": "map",
+          "label": "点位地图",
+          "rect": [
+            0.03,
+            0.18,
+            0.94,
+            0.77
+          ]
+        },
+        {
+          "id": "tabs",
+          "role": "navigation",
+          "label": "地图 / 列表",
+          "rect": [
+            0.03,
+            0.04,
+            0.94,
+            0.1
+          ]
+        },
+        {
+          "id": "filter",
+          "role": "toolbar",
+          "label": "区域筛选",
+          "rect": [
+            0.62,
+            0.82,
+            0.35,
+            0.1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "form",
+      "label": "点位表单",
+      "viewport": "1180×820",
+      "rect": [
+        0.53,
+        0.15,
+        0.42,
+        0.7
+      ],
+      "regions": [
+        {
+          "id": "photo",
+          "role": "media",
+          "label": "现场照片",
+          "rect": [
+            0.04,
+            0.57,
+            0.92,
+            0.35
+          ]
+        },
+        {
+          "id": "fields",
+          "role": "form",
+          "label": "状态与备注",
+          "rect": [
+            0.04,
+            0.2,
+            0.92,
+            0.31
+          ]
+        },
+        {
+          "id": "save",
+          "role": "actions",
+          "label": "暂存 / 提交",
+          "rect": [
+            0.04,
+            0.05,
+            0.92,
+            0.1
+          ]
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "id": "i1",
+      "source_screen": "map",
+      "target_screen": "form",
+      "trigger": "点击巡检点"
+    }
+  ],
+  "responsive_rule": "横屏双栏，竖屏依次进入地图和表单"
+}

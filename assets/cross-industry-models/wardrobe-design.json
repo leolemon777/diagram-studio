@@ -1,0 +1,112 @@
+{
+  "catalog_id": "cn-1131",
+  "mode": "wardrobe-plan",
+  "title": "玄关定制衣柜模块图",
+  "subtitle": "挂衣、鞋柜、抽屉和开放格按使用频率分区",
+  "template": "spatial",
+  "sector": "家居与零售",
+  "use_case": "定制家居和收纳规划常用模块图",
+  "data_status": "simulated",
+  "assumptions": [
+    "内容和数值为教学模拟",
+    "真实交付前须替换名称、事实、品牌、尺寸和审批信息"
+  ],
+  "metrics": [
+    {
+      "id": "modules",
+      "label": "收纳模块",
+      "value": 5,
+      "unit": "个",
+      "evidence": "模拟输入"
+    },
+    {
+      "id": "width",
+      "label": "柜体总宽",
+      "value": 2.4,
+      "unit": "m",
+      "evidence": "模拟输入"
+    }
+  ],
+  "zones": [
+    {
+      "id": "long",
+      "label": "长衣区",
+      "kind": "storage",
+      "rect": [
+        0.08,
+        0.16,
+        0.24,
+        0.68
+      ]
+    },
+    {
+      "id": "short",
+      "label": "短衣区",
+      "kind": "storage",
+      "rect": [
+        0.34,
+        0.44,
+        0.25,
+        0.4
+      ]
+    },
+    {
+      "id": "drawer",
+      "label": "抽屉区",
+      "kind": "storage",
+      "rect": [
+        0.34,
+        0.16,
+        0.25,
+        0.22
+      ]
+    },
+    {
+      "id": "shoe",
+      "label": "鞋柜区",
+      "kind": "storage",
+      "rect": [
+        0.62,
+        0.16,
+        0.18,
+        0.68
+      ]
+    },
+    {
+      "id": "open",
+      "label": "开放格",
+      "kind": "display",
+      "rect": [
+        0.82,
+        0.16,
+        0.1,
+        0.68
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "id": "m1",
+      "zone": "long",
+      "label": "净高",
+      "value": 1.45,
+      "unit": "m"
+    },
+    {
+      "id": "m2",
+      "zone": "shoe",
+      "label": "层高",
+      "value": 180,
+      "unit": "mm"
+    },
+    {
+      "id": "m3",
+      "zone": "open",
+      "label": "宽度",
+      "value": 240,
+      "unit": "mm"
+    }
+  ],
+  "view": "interior-front",
+  "scale_note": "模块示意；五金、板厚和安装公差另核"
+}

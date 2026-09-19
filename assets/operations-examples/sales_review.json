@@ -1,0 +1,71 @@
+{
+  "mode": "sales_review",
+  "data_status": "模拟数据 · 方法与版式演示",
+  "title": "增长有多少，目标差在哪里",
+  "subtitle": "销售复盘 / 2026 年上半年、同一不含税收入口径",
+  "unit": "万元",
+  "months": [
+    {
+      "name": "2026-01",
+      "actual": 180,
+      "target": 190
+    },
+    {
+      "name": "2026-02",
+      "actual": 195,
+      "target": 200
+    },
+    {
+      "name": "2026-03",
+      "actual": 210,
+      "target": 210
+    },
+    {
+      "name": "2026-04",
+      "actual": 205,
+      "target": 220
+    },
+    {
+      "name": "2026-05",
+      "actual": 235,
+      "target": 230
+    },
+    {
+      "name": "2026-06",
+      "actual": 255,
+      "target": 250
+    }
+  ],
+  "regions": [
+    {
+      "name": "华东",
+      "value": 510
+    },
+    {
+      "name": "华南",
+      "value": 380
+    },
+    {
+      "name": "华北",
+      "value": 260
+    },
+    {
+      "name": "其他",
+      "value": 130
+    }
+  ],
+  "products": [
+    {
+      "name": "标准品",
+      "value": 720
+    },
+    {
+      "name": "定制品",
+      "value": 400
+    },
+    {
+      "name": "服务",
+      "value": 160
+    }
+  ]
+}

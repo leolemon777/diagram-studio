@@ -1,0 +1,153 @@
+{
+  "catalog_id": "ext-genogram",
+  "mode": "genogram",
+  "title": "三代心血管风险家系图",
+  "subtitle": "家庭关系与健康标记分开记录",
+  "template": "graph",
+  "sector": "医疗与社会服务",
+  "use_case": "医疗、心理和社会工作常用的家系关系图",
+  "data_status": "simulated",
+  "assumptions": [
+    "内容和数值为教学模拟",
+    "真实交付前须替换名称、事实、品牌、尺寸和审批信息"
+  ],
+  "metrics": [
+    {
+      "id": "people",
+      "label": "家庭成员",
+      "value": 5,
+      "unit": "人",
+      "evidence": "模拟输入"
+    },
+    {
+      "id": "health",
+      "label": "健康标记",
+      "value": 2,
+      "unit": "项",
+      "evidence": "模拟输入"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "g1",
+      "label": "祖父",
+      "kind": "person",
+      "position": [
+        0.18,
+        0.76
+      ]
+    },
+    {
+      "id": "g2",
+      "label": "祖母",
+      "kind": "person",
+      "position": [
+        0.36,
+        0.76
+      ]
+    },
+    {
+      "id": "h1",
+      "label": "高血压史",
+      "kind": "health-note",
+      "position": [
+        0.27,
+        0.58
+      ]
+    },
+    {
+      "id": "p1",
+      "label": "父亲",
+      "kind": "person",
+      "position": [
+        0.38,
+        0.4
+      ]
+    },
+    {
+      "id": "p2",
+      "label": "母亲",
+      "kind": "person",
+      "position": [
+        0.58,
+        0.4
+      ]
+    },
+    {
+      "id": "h2",
+      "label": "血脂异常",
+      "kind": "health-note",
+      "position": [
+        0.38,
+        0.2
+      ]
+    },
+    {
+      "id": "c1",
+      "label": "本人",
+      "kind": "person",
+      "position": [
+        0.76,
+        0.2
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "g1g2",
+      "source": "g1",
+      "target": "g2",
+      "relation": "partner",
+      "label": "伴侣"
+    },
+    {
+      "id": "g1p",
+      "source": "g1",
+      "target": "p1",
+      "relation": "parent",
+      "label": "父子"
+    },
+    {
+      "id": "g2p",
+      "source": "g2",
+      "target": "p1",
+      "relation": "parent",
+      "label": "母子"
+    },
+    {
+      "id": "cl1",
+      "source": "h1",
+      "target": "g1",
+      "relation": "clinical",
+      "label": "病史"
+    },
+    {
+      "id": "p1p2",
+      "source": "p1",
+      "target": "p2",
+      "relation": "partner",
+      "label": "伴侣"
+    },
+    {
+      "id": "p1c",
+      "source": "p1",
+      "target": "c1",
+      "relation": "parent",
+      "label": "父子"
+    },
+    {
+      "id": "p2c",
+      "source": "p2",
+      "target": "c1",
+      "relation": "parent",
+      "label": "母子"
+    },
+    {
+      "id": "cl2",
+      "source": "h2",
+      "target": "p1",
+      "relation": "clinical",
+      "label": "风险"
+    }
+  ]
+}

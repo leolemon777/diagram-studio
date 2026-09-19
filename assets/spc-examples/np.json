@@ -1,0 +1,136 @@
+{
+  "mode": "np",
+  "title": "固定抽检量，监测不合格品件数",
+  "sampling_plan": "每批抽检100件；每件只记一次合格或不合格",
+  "baseline_count": 20,
+  "data_status": "模拟数据 · 图型与方法演示",
+  "unit": "mm",
+  "exposure_unit": "m²",
+  "samples": [
+    {
+      "id": "S01",
+      "inspected": 100,
+      "nonconforming": 10
+    },
+    {
+      "id": "S02",
+      "inspected": 100,
+      "nonconforming": 9
+    },
+    {
+      "id": "S03",
+      "inspected": 100,
+      "nonconforming": 11
+    },
+    {
+      "id": "S04",
+      "inspected": 100,
+      "nonconforming": 13
+    },
+    {
+      "id": "S05",
+      "inspected": 100,
+      "nonconforming": 10
+    },
+    {
+      "id": "S06",
+      "inspected": 100,
+      "nonconforming": 8
+    },
+    {
+      "id": "S07",
+      "inspected": 100,
+      "nonconforming": 12
+    },
+    {
+      "id": "S08",
+      "inspected": 100,
+      "nonconforming": 11
+    },
+    {
+      "id": "S09",
+      "inspected": 100,
+      "nonconforming": 9
+    },
+    {
+      "id": "S10",
+      "inspected": 100,
+      "nonconforming": 10
+    },
+    {
+      "id": "S11",
+      "inspected": 100,
+      "nonconforming": 12
+    },
+    {
+      "id": "S12",
+      "inspected": 100,
+      "nonconforming": 9
+    },
+    {
+      "id": "S13",
+      "inspected": 100,
+      "nonconforming": 11
+    },
+    {
+      "id": "S14",
+      "inspected": 100,
+      "nonconforming": 8
+    },
+    {
+      "id": "S15",
+      "inspected": 100,
+      "nonconforming": 10
+    },
+    {
+      "id": "S16",
+      "inspected": 100,
+      "nonconforming": 12
+    },
+    {
+      "id": "S17",
+      "inspected": 100,
+      "nonconforming": 11
+    },
+    {
+      "id": "S18",
+      "inspected": 100,
+      "nonconforming": 9
+    },
+    {
+      "id": "S19",
+      "inspected": 100,
+      "nonconforming": 10
+    },
+    {
+      "id": "S20",
+      "inspected": 100,
+      "nonconforming": 12
+    },
+    {
+      "id": "S21",
+      "inspected": 100,
+      "nonconforming": 11
+    },
+    {
+      "id": "S22",
+      "inspected": 100,
+      "nonconforming": 10
+    },
+    {
+      "id": "S23",
+      "inspected": 100,
+      "nonconforming": 25
+    },
+    {
+      "id": "S24",
+      "inspected": 100,
+      "nonconforming": 9
+    },
+    {
+      "id": "S25",
+      "inspected": 100,
+      "nonconforming": 12
+    }
+  ]
+}

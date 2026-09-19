@@ -1,0 +1,22 @@
+{
+  "id": "material-transfer-chord",
+  "mode": "chord",
+  "title": "四个生产单元的物料转运",
+  "subtitle": "模拟日均批次；箭头位于流入端，矩阵行表示流出",
+  "data_status": "simulated",
+  "direction": "directed",
+  "groups": [
+    {"id": "mixing", "label": "配料"},
+    {"id": "reaction", "label": "反应"},
+    {"id": "separation", "label": "分离"},
+    {"id": "packing", "label": "包装"}
+  ],
+  "matrix": [
+    [0, 28, 4, 0],
+    [3, 0, 24, 2],
+    [2, 5, 0, 26],
+    [1, 0, 3, 0]
+  ],
+  "assumptions": ["矩阵行是流出、列是流入", "批次关系不代表物料质量或因果"],
+  "footer": "模拟日均批次 · 有向关系 · 精确数值以输入矩阵为准"
+}

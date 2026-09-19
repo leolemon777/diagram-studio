@@ -1,0 +1,86 @@
+[
+  {
+    "id": "warm",
+    "name": "暖灰纸感",
+    "en": "Warm Paper",
+    "bg": "#F1EFEB",
+    "ink": "#34322D",
+    "muted": "#706B62",
+    "line": "#CDC7BC",
+    "accent": "#94634C",
+    "tint": "#E8E1D6",
+    "outer": "#E4E2DD"
+  },
+  {
+    "id": "blue",
+    "name": "青瓷蓝",
+    "en": "Celadon Blue",
+    "bg": "#EDF3F4",
+    "ink": "#253D48",
+    "muted": "#5C717A",
+    "line": "#C2D0D4",
+    "accent": "#447487",
+    "tint": "#DBE8EB",
+    "outer": "#DDE6E9"
+  },
+  {
+    "id": "sage",
+    "name": "鼠尾草绿",
+    "en": "Sage Botanical",
+    "bg": "#EFF1E7",
+    "ink": "#343D2E",
+    "muted": "#68725E",
+    "line": "#C8CEBA",
+    "accent": "#64784C",
+    "tint": "#E0E6D3",
+    "outer": "#DFE3D6"
+  },
+  {
+    "id": "sand",
+    "name": "暖砂陶土",
+    "en": "Terracotta Sand",
+    "bg": "#F6EEE5",
+    "ink": "#513B31",
+    "muted": "#806C5F",
+    "line": "#DECDBF",
+    "accent": "#9C5D45",
+    "tint": "#EEDDD0",
+    "outer": "#E9DED2"
+  },
+  {
+    "id": "lilac",
+    "name": "雾感灰紫",
+    "en": "Misty Lilac",
+    "bg": "#F0EEF4",
+    "ink": "#3D384C",
+    "muted": "#747083",
+    "line": "#CFCADB",
+    "accent": "#78628B",
+    "tint": "#E5DDEB",
+    "outer": "#E2DFE9"
+  },
+  {
+    "id": "charcoal",
+    "name": "炭黑铜色",
+    "en": "Charcoal & Copper",
+    "bg": "#1D2221",
+    "ink": "#ECE8DC",
+    "muted": "#B4B7AB",
+    "line": "#49524B",
+    "accent": "#D8AB7C",
+    "tint": "#30342F",
+    "outer": "#131716"
+  },
+  {
+    "id": "mono",
+    "name": "黑白印刷",
+    "en": "Monochrome Press",
+    "bg": "#F5F4F0",
+    "ink": "#262624",
+    "muted": "#71716B",
+    "line": "#CDCDC7",
+    "accent": "#454542",
+    "tint": "#E8E8E3",
+    "outer": "#E5E5E0"
+  }
+]

@@ -1,0 +1,31 @@
+{
+  "type": "cycle",
+  "title": "循环结构 · PDCA 闭环",
+  "diagram_name": "循环结构",
+  "family": "过程与时序",
+  "subtitle": "箭头沿同一方向闭环；每个阶段有明确产出",
+  "eyebrow": "24 / DIAGRAM LIBRARY",
+  "footer": "原创结构范例 · 数据、实体、尺寸与假说均为演示输入；实际任务按用户资料替换",
+  "assumptions": [
+    "原创演示内容，不代表实际业务、研究结论或工程设计"
+  ],
+  "center": "持续改善",
+  "items": [
+    {
+      "label": "Plan 计划",
+      "detail": "界定问题与目标"
+    },
+    {
+      "label": "Do 执行",
+      "detail": "落实措施与记录"
+    },
+    {
+      "label": "Check 检查",
+      "detail": "比较结果与口径"
+    },
+    {
+      "label": "Act 处置",
+      "detail": "标准化与新问题"
+    }
+  ]
+}

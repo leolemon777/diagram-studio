@@ -1,0 +1,37 @@
+{
+  "type": "chart",
+  "mode": "line",
+  "title": "月度停机时间 · 趋势观察",
+  "subtitle": "等间隔月份；保留原始数值，不使用平滑曲线",
+  "eyebrow": "09 / TREND",
+  "unit": " h",
+  "data": [
+    {
+      "label": "1月",
+      "value": 42
+    },
+    {
+      "label": "2月",
+      "value": 37
+    },
+    {
+      "label": "3月",
+      "value": 39
+    },
+    {
+      "label": "4月",
+      "value": 28
+    },
+    {
+      "label": "5月",
+      "value": 24
+    },
+    {
+      "label": "6月",
+      "value": 18
+    }
+  ],
+  "footer": "样式演示 · 合成数据 · 趋势变化不自动证明任何措施的因果效果",
+  "family": "数据图表",
+  "diagram_name": "折线趋势"
+}

@@ -1,0 +1,467 @@
+{
+  "mode": "hvac-plan",
+  "title": "设备维护办公室暖通空调平面图",
+  "subtitle": "设备、送回排风、风管尺寸、设计流量与控制关系分开",
+  "data_status": "simulated",
+  "assumptions": [
+    "流量和风管尺寸均为模拟；热负荷、静压、噪声、消防联动与现行标准需重新设计"
+  ],
+  "plan": {
+    "width_m": 20,
+    "height_m": 12
+  },
+  "rooms": [
+    {
+      "id": "open-office",
+      "label": "开放办公区",
+      "zone": "员工区",
+      "rect": [
+        0.4,
+        0.4,
+        12.6,
+        7.2
+      ]
+    },
+    {
+      "id": "meeting",
+      "label": "会议室",
+      "zone": "公共区",
+      "rect": [
+        13.2,
+        0.4,
+        6.4,
+        4.1
+      ]
+    },
+    {
+      "id": "support",
+      "label": "设备与茶水区",
+      "zone": "支持区",
+      "rect": [
+        13.2,
+        4.7,
+        6.4,
+        2.9
+      ]
+    },
+    {
+      "id": "corridor",
+      "label": "主通道",
+      "zone": "通行区",
+      "rect": [
+        0.4,
+        7.8,
+        19.2,
+        3.8
+      ]
+    }
+  ],
+  "allowed_balance_lps": 0,
+  "equipment": [
+    {
+      "id": "ahu",
+      "label": "组合式空气处理机",
+      "kind": "ahu",
+      "tag": "AHU-01",
+      "position": [
+        18.4,
+        6.0
+      ],
+      "label_at": [
+        17.9,
+        6.65
+      ]
+    },
+    {
+      "id": "vav-a",
+      "label": "办公区变风量箱",
+      "kind": "vav",
+      "tag": "VAV-01",
+      "position": [
+        11.8,
+        6.0
+      ],
+      "label_at": [
+        11.8,
+        5.45
+      ]
+    },
+    {
+      "id": "vav-b",
+      "label": "会议区变风量箱",
+      "kind": "vav",
+      "tag": "VAV-02",
+      "position": [
+        16.0,
+        4.0
+      ],
+      "label_at": [
+        15.25,
+        4.4
+      ]
+    }
+  ],
+  "terminals": [
+    {
+      "id": "s1",
+      "label": "送风口 S1",
+      "kind": "supply",
+      "airflow_lps": 400,
+      "position": [
+        3.0,
+        5.5
+      ],
+      "label_at": [
+        3.0,
+        5.95
+      ]
+    },
+    {
+      "id": "s2",
+      "label": "送风口 S2",
+      "kind": "supply",
+      "airflow_lps": 400,
+      "position": [
+        8.0,
+        5.5
+      ],
+      "label_at": [
+        8.0,
+        5.95
+      ]
+    },
+    {
+      "id": "s3",
+      "label": "送风口 S3",
+      "kind": "supply",
+      "airflow_lps": 400,
+      "position": [
+        3.0,
+        2.0
+      ],
+      "label_at": [
+        3.0,
+        2.45
+      ]
+    },
+    {
+      "id": "s4",
+      "label": "送风口 S4",
+      "kind": "supply",
+      "airflow_lps": 400,
+      "position": [
+        15.5,
+        2.2
+      ],
+      "label_at": [
+        15.5,
+        2.7
+      ]
+    },
+    {
+      "id": "r1",
+      "label": "回风口 R1",
+      "kind": "return",
+      "airflow_lps": 650,
+      "position": [
+        6.0,
+        6.8
+      ],
+      "label_at": [
+        6.0,
+        7.3
+      ]
+    },
+    {
+      "id": "r2",
+      "label": "回风口 R2",
+      "kind": "return",
+      "airflow_lps": 650,
+      "position": [
+        16.5,
+        3.7
+      ],
+      "label_at": [
+        16.75,
+        3.25
+      ]
+    },
+    {
+      "id": "e1",
+      "label": "排风口 E1",
+      "kind": "exhaust",
+      "airflow_lps": 300,
+      "position": [
+        17.5,
+        5.5
+      ],
+      "label_at": [
+        17.0,
+        5.05
+      ]
+    }
+  ],
+  "ducts": [
+    {
+      "id": "d1",
+      "label": "送风主管",
+      "source": "ahu",
+      "target": "vav-a",
+      "system": "supply",
+      "points": [
+        [
+          18.4,
+          6.0
+        ],
+        [
+          11.8,
+          6.0
+        ]
+      ],
+      "label_at": [
+        14.5,
+        6.15
+      ],
+      "width_mm": 600,
+      "flow_direction": "AHU → VAV-01"
+    },
+    {
+      "id": "d2",
+      "label": "送风支管 S1",
+      "source": "vav-a",
+      "target": "s1",
+      "system": "supply",
+      "points": [
+        [
+          11.8,
+          6.0
+        ],
+        [
+          3.0,
+          6.0
+        ],
+        [
+          3.0,
+          5.5
+        ]
+      ],
+      "label_at": [
+        4.8,
+        6.15
+      ],
+      "width_mm": 300,
+      "flow_direction": "VAV-01 → S1"
+    },
+    {
+      "id": "d3",
+      "label": "送风支管 S2",
+      "source": "vav-a",
+      "target": "s2",
+      "system": "supply",
+      "points": [
+        [
+          11.8,
+          6.0
+        ],
+        [
+          8.0,
+          6.0
+        ],
+        [
+          8.0,
+          5.5
+        ]
+      ],
+      "label_at": [
+        8.4,
+        6.15
+      ],
+      "width_mm": 300,
+      "flow_direction": "VAV-01 → S2"
+    },
+    {
+      "id": "d4",
+      "label": "送风支管 S3",
+      "source": "vav-a",
+      "target": "s3",
+      "system": "supply",
+      "points": [
+        [
+          11.8,
+          6.0
+        ],
+        [
+          10.8,
+          3.0
+        ],
+        [
+          3.0,
+          3.0
+        ],
+        [
+          3.0,
+          2.0
+        ]
+      ],
+      "label_at": [
+        6.0,
+        3.0
+      ],
+      "width_mm": 300,
+      "flow_direction": "VAV-01 → S3"
+    },
+    {
+      "id": "d5",
+      "label": "会议送风",
+      "source": "ahu",
+      "target": "vav-b",
+      "system": "supply",
+      "points": [
+        [
+          18.4,
+          6.0
+        ],
+        [
+          18.4,
+          4.0
+        ],
+        [
+          16.0,
+          4.0
+        ]
+      ],
+      "label_at": [
+        18.0,
+        4.25
+      ],
+      "width_mm": 350,
+      "flow_direction": "AHU → VAV-02"
+    },
+    {
+      "id": "d6",
+      "label": "送风支管 S4",
+      "source": "vav-b",
+      "target": "s4",
+      "system": "supply",
+      "points": [
+        [
+          16.0,
+          4.0
+        ],
+        [
+          15.5,
+          2.2
+        ]
+      ],
+      "label_at": [
+        15.2,
+        3.0
+      ],
+      "width_mm": 250,
+      "flow_direction": "VAV-02 → S4"
+    },
+    {
+      "id": "d7",
+      "label": "办公回风",
+      "source": "r1",
+      "target": "ahu",
+      "system": "return",
+      "points": [
+        [
+          6.0,
+          6.8
+        ],
+        [
+          18.4,
+          6.8
+        ],
+        [
+          18.4,
+          6.0
+        ]
+      ],
+      "label_at": [
+        10.0,
+        6.95
+      ],
+      "width_mm": 500,
+      "flow_direction": "R1 → AHU"
+    },
+    {
+      "id": "d8",
+      "label": "会议回风",
+      "source": "r2",
+      "target": "ahu",
+      "system": "return",
+      "points": [
+        [
+          16.5,
+          3.7
+        ],
+        [
+          19.0,
+          3.7
+        ],
+        [
+          19.0,
+          6.0
+        ],
+        [
+          18.4,
+          6.0
+        ]
+      ],
+      "label_at": [
+        18.2,
+        3.45
+      ],
+      "width_mm": 350,
+      "flow_direction": "R2 → AHU"
+    },
+    {
+      "id": "d9",
+      "label": "茶水排风",
+      "source": "e1",
+      "target": "ahu",
+      "system": "exhaust",
+      "points": [
+        [
+          17.5,
+          5.5
+        ],
+        [
+          19.4,
+          5.5
+        ],
+        [
+          19.4,
+          6.0
+        ],
+        [
+          18.4,
+          6.0
+        ]
+      ],
+      "label_at": [
+        19.0,
+        5.55
+      ],
+      "width_mm": 250,
+      "flow_direction": "E1 → 排风出口"
+    }
+  ],
+  "controls": [
+    {
+      "id": "c1",
+      "sensor": "r1",
+      "controlled": "vav-a",
+      "signal": "区域温度反馈"
+    },
+    {
+      "id": "c2",
+      "sensor": "r2",
+      "controlled": "vav-b",
+      "signal": "会议区温度反馈"
+    }
+  ]
+}

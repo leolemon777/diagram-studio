@@ -1,0 +1,43 @@
+{
+  "type": "plot",
+  "title": "面积图 · 等间隔趋势与量值",
+  "diagram_name": "面积图",
+  "family": "数据图表",
+  "subtitle": "底部从零开始；横轴为等间隔类别，面积不额外表示独立指标",
+  "eyebrow": "52 / DIAGRAM LIBRARY",
+  "footer": "原创结构范例 · 数据、实体、尺寸与假说均为演示输入；实际任务按用户资料替换",
+  "assumptions": [
+    "原创演示内容，不代表实际业务、研究结论或工程设计"
+  ],
+  "mode": "area",
+  "data": [
+    {
+      "label": "1月",
+      "value": 12
+    },
+    {
+      "label": "2月",
+      "value": 19
+    },
+    {
+      "label": "3月",
+      "value": 17
+    },
+    {
+      "label": "4月",
+      "value": 28
+    },
+    {
+      "label": "5月",
+      "value": 35
+    },
+    {
+      "label": "6月",
+      "value": 32
+    },
+    {
+      "label": "7月",
+      "value": 42
+    }
+  ]
+}

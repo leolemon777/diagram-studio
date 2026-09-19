@@ -1,0 +1,239 @@
+{
+  "mode": "network-topology",
+  "profile": "detailed",
+  "title": "预测性维护详细网络图",
+  "subtitle": "节点标签与逐端口链路分开，显示地址、介质、容量和分区",
+  "data_status": "simulated",
+  "assumptions": [
+    "地址使用文档网段或私网；不代表现场配置"
+  ],
+  "devices": [
+    {
+      "id": "remote",
+      "label": "远程工程师",
+      "role": "endpoint",
+      "layer": "external",
+      "vendor": "通用",
+      "model": "笔记本",
+      "management_ip": "192.0.2.20",
+      "position": [
+        0.08,
+        0.82
+      ]
+    },
+    {
+      "id": "vpn",
+      "label": "VPN 网关",
+      "role": "wan-edge",
+      "layer": "edge",
+      "vendor": "通用",
+      "model": "VPN Gateway",
+      "management_ip": "10.0.0.1",
+      "position": [
+        0.27,
+        0.82
+      ]
+    },
+    {
+      "id": "fw",
+      "label": "工业防火墙",
+      "role": "firewall",
+      "layer": "edge",
+      "vendor": "通用",
+      "model": "NGFW",
+      "management_ip": "10.0.0.2",
+      "position": [
+        0.47,
+        0.82
+      ]
+    },
+    {
+      "id": "core",
+      "label": "核心交换机",
+      "role": "core",
+      "layer": "core",
+      "vendor": "通用",
+      "model": "L3 Switch",
+      "management_ip": "10.0.1.1",
+      "position": [
+        0.67,
+        0.82
+      ]
+    },
+    {
+      "id": "server",
+      "label": "分析服务器",
+      "role": "server",
+      "layer": "service",
+      "vendor": "通用",
+      "model": "2U Server",
+      "management_ip": "10.20.10.20",
+      "position": [
+        0.86,
+        0.7
+      ]
+    },
+    {
+      "id": "ot-switch",
+      "label": "OT 交换机",
+      "role": "access",
+      "layer": "access",
+      "vendor": "通用",
+      "model": "Industrial Switch",
+      "management_ip": "10.20.20.2",
+      "position": [
+        0.67,
+        0.48
+      ]
+    },
+    {
+      "id": "plc",
+      "label": "泵站 PLC",
+      "role": "ot-controller",
+      "layer": "ot",
+      "vendor": "通用",
+      "model": "PLC",
+      "management_ip": "10.20.20.31",
+      "position": [
+        0.47,
+        0.25
+      ]
+    },
+    {
+      "id": "sensor",
+      "label": "振动采集器",
+      "role": "endpoint",
+      "layer": "ot",
+      "vendor": "通用",
+      "model": "Edge Sensor",
+      "management_ip": "10.20.20.41",
+      "position": [
+        0.86,
+        0.25
+      ]
+    }
+  ],
+  "segments": [
+    {
+      "id": "vpn-net",
+      "label": "远程接入",
+      "kind": "subnet",
+      "cidr": "10.0.0.0/29"
+    },
+    {
+      "id": "service-vlan",
+      "label": "分析服务",
+      "kind": "vlan",
+      "vlan_id": 120,
+      "cidr": "10.20.10.0/24"
+    },
+    {
+      "id": "ot-vlan",
+      "label": "OT 控制",
+      "kind": "vlan",
+      "vlan_id": 220,
+      "cidr": "10.20.20.0/24"
+    }
+  ],
+  "links": [
+    {
+      "id": "d1",
+      "source": "remote",
+      "target": "vpn",
+      "source_interface": "wlan0",
+      "target_interface": "wan0",
+      "plane": "L3",
+      "capacity_mbps": 200,
+      "medium": "wireless",
+      "purpose": "远程 VPN",
+      "evidence": "模拟端口表",
+      "segment_id": "vpn-net"
+    },
+    {
+      "id": "d2",
+      "source": "vpn",
+      "target": "fw",
+      "source_interface": "lan0",
+      "target_interface": "outside",
+      "plane": "L3",
+      "capacity_mbps": 1000,
+      "medium": "copper",
+      "purpose": "认证后访问",
+      "evidence": "模拟端口表",
+      "segment_id": "vpn-net"
+    },
+    {
+      "id": "d3",
+      "source": "fw",
+      "target": "core",
+      "source_interface": "inside",
+      "target_interface": "Gi1/0/1",
+      "plane": "L3",
+      "capacity_mbps": 10000,
+      "medium": "fiber",
+      "purpose": "区域间检查",
+      "evidence": "模拟端口表",
+      "segment_id": "vpn-net"
+    },
+    {
+      "id": "d4",
+      "source": "core",
+      "target": "server",
+      "source_interface": "Gi1/0/2",
+      "target_interface": "eth0",
+      "plane": "L2",
+      "capacity_mbps": 10000,
+      "medium": "fiber",
+      "purpose": "分析服务",
+      "evidence": "模拟端口表",
+      "segment_id": "service-vlan",
+      "label_offset": [
+        0.01,
+        0.025
+      ]
+    },
+    {
+      "id": "d5",
+      "source": "core",
+      "target": "ot-switch",
+      "source_interface": "Gi1/0/3",
+      "target_interface": "Gi0/1",
+      "plane": "L3",
+      "capacity_mbps": 1000,
+      "medium": "fiber",
+      "purpose": "OT 路由",
+      "evidence": "模拟端口表",
+      "segment_id": "ot-vlan"
+    },
+    {
+      "id": "d6",
+      "source": "ot-switch",
+      "target": "plc",
+      "source_interface": "Gi0/2",
+      "target_interface": "eth0",
+      "plane": "L2",
+      "capacity_mbps": 100,
+      "medium": "copper",
+      "purpose": "PLC 控制",
+      "evidence": "模拟端口表",
+      "segment_id": "ot-vlan"
+    },
+    {
+      "id": "d7",
+      "source": "ot-switch",
+      "target": "sensor",
+      "source_interface": "Gi0/3",
+      "target_interface": "eth0",
+      "plane": "L2",
+      "capacity_mbps": 100,
+      "medium": "copper",
+      "purpose": "传感采集",
+      "evidence": "模拟端口表",
+      "segment_id": "ot-vlan",
+      "label_offset": [
+        0.02,
+        -0.02
+      ]
+    }
+  ]
+}

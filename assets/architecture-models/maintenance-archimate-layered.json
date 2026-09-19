@@ -1,0 +1,177 @@
+{
+  "data_status": "simulated",
+  "assumptions": [
+    "示例对象、关系和名称均为教学模拟，不代表任何真实企业现状。"
+  ],
+  "mode": "archimate-layered",
+  "specification_version": "3.2",
+  "viewpoint": "layered",
+  "title": "设备维护 ArchiMate 分层视图",
+  "subtitle": "业务、应用、技术三层；主动结构、行为、被动结构和关系类型分别编码",
+  "elements": [
+    {
+      "id": "business-role",
+      "label": "维修计划员",
+      "layer": "business",
+      "aspect": "active-structure",
+      "element_type": "Business Role",
+      "position": [
+        0.18,
+        0.8
+      ]
+    },
+    {
+      "id": "business-process",
+      "label": "维护计划流程",
+      "layer": "business",
+      "aspect": "behavior",
+      "element_type": "Business Process",
+      "position": [
+        0.5,
+        0.8
+      ]
+    },
+    {
+      "id": "business-object",
+      "label": "维护策略",
+      "layer": "business",
+      "aspect": "passive-structure",
+      "element_type": "Business Object",
+      "position": [
+        0.82,
+        0.8
+      ]
+    },
+    {
+      "id": "app-component",
+      "label": "CMMS 应用",
+      "layer": "application",
+      "aspect": "active-structure",
+      "element_type": "Application Component",
+      "position": [
+        0.18,
+        0.5
+      ]
+    },
+    {
+      "id": "app-service",
+      "label": "工单管理服务",
+      "layer": "application",
+      "aspect": "behavior",
+      "element_type": "Application Service",
+      "position": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "id": "data-object",
+      "label": "工单数据",
+      "layer": "application",
+      "aspect": "passive-structure",
+      "element_type": "Data Object",
+      "position": [
+        0.82,
+        0.5
+      ]
+    },
+    {
+      "id": "node",
+      "label": "应用运行节点",
+      "layer": "technology",
+      "aspect": "active-structure",
+      "element_type": "Node",
+      "position": [
+        0.18,
+        0.2
+      ]
+    },
+    {
+      "id": "tech-service",
+      "label": "数据库平台服务",
+      "layer": "technology",
+      "aspect": "behavior",
+      "element_type": "Technology Service",
+      "position": [
+        0.5,
+        0.2
+      ]
+    },
+    {
+      "id": "artifact",
+      "label": "CMMS 制品",
+      "layer": "technology",
+      "aspect": "passive-structure",
+      "element_type": "Artifact",
+      "position": [
+        0.82,
+        0.2
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "id": "r1",
+      "source": "business-role",
+      "target": "business-process",
+      "relationship": "assignment",
+      "evidence": "角色职责假设"
+    },
+    {
+      "id": "r2",
+      "source": "business-process",
+      "target": "business-object",
+      "relationship": "access",
+      "evidence": "流程输入假设"
+    },
+    {
+      "id": "r3",
+      "source": "app-component",
+      "target": "app-service",
+      "relationship": "assignment",
+      "evidence": "应用职责假设"
+    },
+    {
+      "id": "r4",
+      "source": "app-service",
+      "target": "data-object",
+      "relationship": "access",
+      "evidence": "服务数据假设"
+    },
+    {
+      "id": "r5",
+      "source": "app-service",
+      "target": "business-process",
+      "relationship": "serving",
+      "evidence": "应用支持业务假设"
+    },
+    {
+      "id": "r6",
+      "source": "node",
+      "target": "tech-service",
+      "relationship": "assignment",
+      "evidence": "节点职责假设"
+    },
+    {
+      "id": "r7",
+      "source": "tech-service",
+      "target": "artifact",
+      "relationship": "access",
+      "evidence": "平台制品假设"
+    },
+    {
+      "id": "r8",
+      "source": "tech-service",
+      "target": "app-service",
+      "relationship": "serving",
+      "evidence": "技术支持应用假设"
+    },
+    {
+      "id": "r9",
+      "source": "artifact",
+      "target": "app-component",
+      "relationship": "realization",
+      "evidence": "制品实现应用假设"
+    }
+  ]
+}

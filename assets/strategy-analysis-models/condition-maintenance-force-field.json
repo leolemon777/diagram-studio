@@ -1,0 +1,20 @@
+{
+  "id": "condition-maintenance-force-field",
+  "mode": "force-field",
+  "title": "状态维修转型力场分析",
+  "subtitle": "方向明确；只有在所有因素都有同口径评分时才编码箭头力度",
+  "data_status": "simulated",
+  "change_goal": "六个月内把关键泵状态维修覆盖率提高到 80%",
+  "evidence_basis": "模拟访谈与工单复盘",
+  "forces": [
+    {"id": "D1", "label": "非计划停机损失受到关注", "direction": "driving", "strength": 5, "evidence": "模拟损失复盘 R-01"},
+    {"id": "D2", "label": "已有部分在线监测基础", "direction": "driving", "strength": 4, "evidence": "模拟资产盘点 R-02"},
+    {"id": "D3", "label": "班组愿意参与试点", "direction": "driving", "strength": 3, "evidence": "模拟访谈 R-03"},
+    {"id": "D4", "label": "管理层设定可靠性目标", "direction": "driving", "strength": 4, "evidence": "模拟年度目标 R-04"},
+    {"id": "R1", "label": "数据质量和测点覆盖不足", "direction": "restraining", "strength": 5, "evidence": "模拟数据审计 R-05"},
+    {"id": "R2", "label": "诊断能力集中在少数专家", "direction": "restraining", "strength": 4, "evidence": "模拟能力盘点 R-06"},
+    {"id": "R3", "label": "现有工单流程不支持触发", "direction": "restraining", "strength": 3, "evidence": "模拟流程审计 R-07"},
+    {"id": "R4", "label": "试点期间资源冲突", "direction": "restraining", "strength": 2, "evidence": "模拟排程 R-08"}
+  ],
+  "assumptions": ["评分为 1–5 的模拟共识值", "力场分析用于形成行动，不代替投资决策"]
+}

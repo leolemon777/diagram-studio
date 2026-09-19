@@ -1,0 +1,99 @@
+{
+  "mode": "chemical-equation",
+  "title": "中和反应计量示意",
+  "subtitle": "反应式、原子守恒和工艺边界分栏表达",
+  "template": "science",
+  "data_status": "simulated",
+  "assumptions": [
+    "数据为教学模拟，不代表真实项目现状",
+    "真实交付前须替换数值、名称、品牌规范和审批信息"
+  ],
+  "metrics": [
+    {
+      "id": "atoms",
+      "label": "守恒元素",
+      "value": 4,
+      "unit": "种",
+      "evidence": "示例输入"
+    },
+    {
+      "id": "ratio",
+      "label": "碱酸摩尔比",
+      "value": "2:1",
+      "unit": "",
+      "evidence": "示例输入"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "b1",
+      "role": "reactants",
+      "label": "反应物",
+      "content": "H2SO4 + 2 NaOH",
+      "rect": [
+        0.04,
+        0.57,
+        0.27,
+        0.33
+      ],
+      "order": 1
+    },
+    {
+      "id": "b2",
+      "role": "reaction",
+      "label": "反应条件",
+      "content": "常温、充分混合；不含副反应",
+      "rect": [
+        0.365,
+        0.57,
+        0.27,
+        0.33
+      ],
+      "order": 2
+    },
+    {
+      "id": "b3",
+      "role": "products",
+      "label": "生成物",
+      "content": "Na2SO4 + 2 H2O",
+      "rect": [
+        0.69,
+        0.57,
+        0.27,
+        0.33
+      ],
+      "order": 3
+    },
+    {
+      "id": "b4",
+      "role": "reaction",
+      "label": "守恒核对",
+      "content": "H 4 / S 1 / O 6 / Na 2",
+      "rect": [
+        0.22,
+        0.14,
+        0.56,
+        0.26
+      ],
+      "order": 4
+    }
+  ],
+  "reactions": [
+    {
+      "id": "rx1",
+      "equation": "H2SO4 + 2 NaOH -> Na2SO4 + 2 H2O",
+      "atoms_left": {
+        "H": 4,
+        "S": 1,
+        "O": 6,
+        "Na": 2
+      },
+      "atoms_right": {
+        "H": 4,
+        "S": 1,
+        "O": 6,
+        "Na": 2
+      }
+    }
+  ]
+}

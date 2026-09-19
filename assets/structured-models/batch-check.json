@@ -1,0 +1,56 @@
+{
+  "title": "批次检查：结构化程序教学示例",
+  "assumptions": [
+    "虚构程序，仅展示结构；不用于现场控制。"
+  ],
+  "body": [
+    {
+      "id": "init",
+      "kind": "action",
+      "text": "初始化批次记录"
+    },
+    {
+      "id": "scan",
+      "kind": "while",
+      "condition": "仍有待检查项目",
+      "body": [
+        {
+          "id": "check",
+          "kind": "if",
+          "condition": "检查结果合格？",
+          "then": [
+            {
+              "id": "accept",
+              "kind": "action",
+              "text": "记录合格结果"
+            }
+          ],
+          "else": [
+            {
+              "id": "retry",
+              "kind": "repeat",
+              "until": "复核完成",
+              "body": [
+                {
+                  "id": "review",
+                  "kind": "action",
+                  "text": "执行复核并记录"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "next",
+          "kind": "action",
+          "text": "移至下一项目"
+        }
+      ]
+    },
+    {
+      "id": "finish",
+      "kind": "action",
+      "text": "输出批次汇总"
+    }
+  ]
+}

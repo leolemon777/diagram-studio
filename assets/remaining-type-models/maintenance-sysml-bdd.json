@@ -1,0 +1,144 @@
+{
+  "mode": "sysml-bdd",
+  "title": "SysML v1 块定义图 · 诊断装置",
+  "subtitle": "组成、泛化和值类型保持明确",
+  "template": "graph",
+  "data_status": "simulated",
+  "assumptions": [
+    "数据为教学模拟，不代表真实项目现状",
+    "真实交付前须替换数值、名称、品牌规范和审批信息"
+  ],
+  "metrics": [
+    {
+      "id": "blocks",
+      "label": "块",
+      "value": 6,
+      "unit": "个",
+      "evidence": "示例输入"
+    },
+    {
+      "id": "relations",
+      "label": "关系",
+      "value": 6,
+      "unit": "条",
+      "evidence": "示例输入"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "system",
+      "label": "诊断装置",
+      "kind": "block",
+      "position": [
+        0.5,
+        0.8
+      ],
+      "detail": "«block»"
+    },
+    {
+      "id": "sensor",
+      "label": "传感器",
+      "kind": "block",
+      "position": [
+        0.25,
+        0.52
+      ],
+      "detail": "«block»"
+    },
+    {
+      "id": "controller",
+      "label": "控制器",
+      "kind": "block",
+      "position": [
+        0.5,
+        0.52
+      ],
+      "detail": "«block»"
+    },
+    {
+      "id": "gateway",
+      "label": "边缘网关",
+      "kind": "block",
+      "position": [
+        0.75,
+        0.52
+      ],
+      "detail": "«block»"
+    },
+    {
+      "id": "pressure",
+      "label": "压力传感器",
+      "kind": "block",
+      "position": [
+        0.16,
+        0.22
+      ],
+      "detail": "«block»"
+    },
+    {
+      "id": "vibration",
+      "label": "振动传感器",
+      "kind": "block",
+      "position": [
+        0.34,
+        0.22
+      ],
+      "detail": "«block»"
+    },
+    {
+      "id": "unit",
+      "label": "压力单位",
+      "kind": "value-type",
+      "position": [
+        0.73,
+        0.2
+      ],
+      "detail": "«valueType»"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "system",
+      "target": "sensor",
+      "relation": "composition",
+      "label": "1..* 组成"
+    },
+    {
+      "id": "e2",
+      "source": "system",
+      "target": "controller",
+      "relation": "composition",
+      "label": "1 组成"
+    },
+    {
+      "id": "e3",
+      "source": "system",
+      "target": "gateway",
+      "relation": "composition",
+      "label": "1 组成"
+    },
+    {
+      "id": "e4",
+      "source": "pressure",
+      "target": "sensor",
+      "relation": "generalization",
+      "label": "泛化"
+    },
+    {
+      "id": "e5",
+      "source": "vibration",
+      "target": "sensor",
+      "relation": "generalization",
+      "label": "泛化"
+    },
+    {
+      "id": "e6",
+      "source": "pressure",
+      "target": "unit",
+      "relation": "typed-by",
+      "label": "值类型"
+    }
+  ],
+  "groups": []
+}

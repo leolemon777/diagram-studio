@@ -1,0 +1,42 @@
+{
+  "type": "processplant",
+  "title": "工艺流程 · 设备与物料路径",
+  "diagram_name": "工艺流程",
+  "family": "工程与空间",
+  "subtitle": "容器、输送与处理单元按物料方向连接；这是概念 PFD",
+  "eyebrow": "59 / DIAGRAM LIBRARY",
+  "footer": "原创结构范例 · 数据、实体、尺寸与假说均为演示输入；实际任务按用户资料替换",
+  "assumptions": [
+    "原创演示内容，不代表实际业务、研究结论或工程设计"
+  ],
+  "units": [
+    {
+      "id": "tank",
+      "label": "储存单元",
+      "tag": "T-01",
+      "kind": "tank",
+      "detail": "接收物料"
+    },
+    {
+      "id": "pump",
+      "label": "输送单元",
+      "tag": "P-01",
+      "kind": "pump",
+      "detail": "按流程输送"
+    },
+    {
+      "id": "process",
+      "label": "处理单元",
+      "tag": "U-01",
+      "kind": "process",
+      "detail": "执行既定处理"
+    },
+    {
+      "id": "out",
+      "label": "收集单元",
+      "tag": "T-02",
+      "kind": "tank",
+      "detail": "收集处理结果"
+    }
+  ]
+}

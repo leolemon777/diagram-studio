@@ -1,0 +1,48 @@
+{
+  "mode": "paired_comparison",
+  "title": "前后哑铃对照",
+  "subtitle": "同对象、同单位、同统计口径；旁注为调整后减调整前",
+  "data_status": "原创模拟数据",
+  "footer": "模拟示例 · 缺失不补零 · 输入数据、计算记录与重绘代码随图保留",
+  "assumptions": [
+    "数据只用于展示结构和计算，非实际经营结果",
+    "未进行天气或产品结构校正"
+  ],
+  "unit": "kWh / 吨",
+  "period_labels": [
+    "调整前",
+    "调整后"
+  ],
+  "pairs": [
+    {
+      "id": "0",
+      "label": "一号产线",
+      "before": 245,
+      "after": 221
+    },
+    {
+      "id": "1",
+      "label": "二号产线",
+      "before": 228,
+      "after": 212
+    },
+    {
+      "id": "2",
+      "label": "三号产线",
+      "before": 261,
+      "after": 238
+    },
+    {
+      "id": "3",
+      "label": "四号产线",
+      "before": 219,
+      "after": 225
+    },
+    {
+      "id": "4",
+      "label": "五号产线",
+      "before": 237,
+      "after": 218
+    }
+  ]
+}

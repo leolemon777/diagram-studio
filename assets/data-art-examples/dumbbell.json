@@ -1,0 +1,47 @@
+{
+  "recipe": "dumbbell",
+  "title": "改善前后，用一段距离连接。",
+  "subtitle": "比较同一工位的电单耗；观察方向，也保留变化的绝对量。",
+  "unit": "kWh / 千件",
+  "rows": [
+    {
+      "id": "s0",
+      "label": "装配 A",
+      "before": 540,
+      "after": 486
+    },
+    {
+      "id": "s1",
+      "label": "装配 B",
+      "before": 590,
+      "after": 515
+    },
+    {
+      "id": "s2",
+      "label": "检测 C",
+      "before": 620,
+      "after": 576
+    },
+    {
+      "id": "s3",
+      "label": "包装 D",
+      "before": 505,
+      "after": 498
+    },
+    {
+      "id": "s4",
+      "label": "贴标 E",
+      "before": 570,
+      "after": 523
+    },
+    {
+      "id": "s5",
+      "label": "入库 F",
+      "before": 530,
+      "after": 543
+    }
+  ],
+  "period": "2026 年 1 月与 6 月 / 同口径单耗",
+  "synthetic": true,
+  "source": "Apat 自拟数据，仅用于呈现图形效果；不代表现场测量。"
+}

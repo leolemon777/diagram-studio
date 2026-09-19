@@ -1,0 +1,187 @@
+{
+  "catalog_id": "cn-1050",
+  "mode": "uml-overview",
+  "title": "UML 常用视图选择图",
+  "subtitle": "按建模问题选择结构或行为视图",
+  "template": "graph",
+  "sector": "软件与数字产品",
+  "use_case": "软件团队常用的 UML 视图选择入口",
+  "data_status": "simulated",
+  "assumptions": [
+    "内容和数值为教学模拟",
+    "真实交付前须替换名称、事实、品牌、尺寸和审批信息"
+  ],
+  "metrics": [
+    {
+      "id": "views",
+      "label": "常用视图",
+      "value": 9,
+      "unit": "种",
+      "evidence": "模拟输入"
+    },
+    {
+      "id": "families",
+      "label": "视图家族",
+      "value": 2,
+      "unit": "组",
+      "evidence": "模拟输入"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "root",
+      "label": "UML 2.5.1",
+      "kind": "structural",
+      "position": [
+        0.5,
+        0.82
+      ]
+    },
+    {
+      "id": "s0",
+      "label": "类图",
+      "kind": "structural",
+      "position": [
+        0.12,
+        0.48
+      ]
+    },
+    {
+      "id": "s1",
+      "label": "对象图",
+      "kind": "structural",
+      "position": [
+        0.29000000000000004,
+        0.48
+      ]
+    },
+    {
+      "id": "s2",
+      "label": "组件图",
+      "kind": "structural",
+      "position": [
+        0.46,
+        0.48
+      ]
+    },
+    {
+      "id": "s3",
+      "label": "部署图",
+      "kind": "structural",
+      "position": [
+        0.63,
+        0.48
+      ]
+    },
+    {
+      "id": "s4",
+      "label": "包图",
+      "kind": "structural",
+      "position": [
+        0.8,
+        0.48
+      ]
+    },
+    {
+      "id": "b0",
+      "label": "用例图",
+      "kind": "behavioral",
+      "position": [
+        0.2,
+        0.18
+      ]
+    },
+    {
+      "id": "b1",
+      "label": "活动图",
+      "kind": "behavioral",
+      "position": [
+        0.4,
+        0.18
+      ]
+    },
+    {
+      "id": "b2",
+      "label": "状态机图",
+      "kind": "behavioral",
+      "position": [
+        0.6000000000000001,
+        0.18
+      ]
+    },
+    {
+      "id": "b3",
+      "label": "时序图",
+      "kind": "behavioral",
+      "position": [
+        0.8,
+        0.18
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "es0",
+      "source": "root",
+      "target": "s0",
+      "relation": "contains",
+      "label": "结构视图"
+    },
+    {
+      "id": "es1",
+      "source": "root",
+      "target": "s1",
+      "relation": "contains",
+      "label": "结构视图"
+    },
+    {
+      "id": "es2",
+      "source": "root",
+      "target": "s2",
+      "relation": "contains",
+      "label": "结构视图"
+    },
+    {
+      "id": "es3",
+      "source": "root",
+      "target": "s3",
+      "relation": "contains",
+      "label": "结构视图"
+    },
+    {
+      "id": "es4",
+      "source": "root",
+      "target": "s4",
+      "relation": "contains",
+      "label": "结构视图"
+    },
+    {
+      "id": "eb0",
+      "source": "root",
+      "target": "b0",
+      "relation": "contains",
+      "label": "行为视图"
+    },
+    {
+      "id": "eb1",
+      "source": "root",
+      "target": "b1",
+      "relation": "contains",
+      "label": "行为视图"
+    },
+    {
+      "id": "eb2",
+      "source": "root",
+      "target": "b2",
+      "relation": "contains",
+      "label": "行为视图"
+    },
+    {
+      "id": "eb3",
+      "source": "root",
+      "target": "b3",
+      "relation": "contains",
+      "label": "行为视图"
+    }
+  ]
+}

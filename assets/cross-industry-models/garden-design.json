@@ -1,0 +1,112 @@
+{
+  "catalog_id": "cn-1126",
+  "mode": "garden-plan",
+  "title": "社区口袋花园规划",
+  "subtitle": "步行、休憩、儿童和雨水花园分区",
+  "template": "spatial",
+  "sector": "建筑与景观",
+  "use_case": "住宅、园区和公共空间的常用景观表达",
+  "data_status": "simulated",
+  "assumptions": [
+    "内容和数值为教学模拟",
+    "真实交付前须替换名称、事实、品牌、尺寸和审批信息"
+  ],
+  "metrics": [
+    {
+      "id": "zones",
+      "label": "功能区",
+      "value": 5,
+      "unit": "个",
+      "evidence": "模拟输入"
+    },
+    {
+      "id": "area",
+      "label": "用地",
+      "value": 620,
+      "unit": "m²",
+      "evidence": "模拟输入"
+    }
+  ],
+  "zones": [
+    {
+      "id": "walk",
+      "label": "环形步道",
+      "kind": "circulation",
+      "rect": [
+        0.08,
+        0.12,
+        0.84,
+        0.14
+      ]
+    },
+    {
+      "id": "lawn",
+      "label": "开放草坪",
+      "kind": "planting",
+      "rect": [
+        0.12,
+        0.34,
+        0.35,
+        0.45
+      ]
+    },
+    {
+      "id": "rain",
+      "label": "雨水花园",
+      "kind": "planting",
+      "rect": [
+        0.52,
+        0.54,
+        0.34,
+        0.25
+      ]
+    },
+    {
+      "id": "play",
+      "label": "儿童活动",
+      "kind": "activity",
+      "rect": [
+        0.55,
+        0.3,
+        0.3,
+        0.18
+      ]
+    },
+    {
+      "id": "seat",
+      "label": "林下坐凳",
+      "kind": "amenity",
+      "rect": [
+        0.12,
+        0.82,
+        0.74,
+        0.09
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "id": "m1",
+      "zone": "walk",
+      "label": "步道宽度",
+      "value": 1.8,
+      "unit": "m"
+    },
+    {
+      "id": "m2",
+      "zone": "play",
+      "label": "安全缓冲",
+      "value": 1.5,
+      "unit": "m"
+    },
+    {
+      "id": "m3",
+      "zone": "rain",
+      "label": "下凹深度",
+      "value": 0.18,
+      "unit": "m"
+    }
+  ],
+  "view": "plan",
+  "scale_note": "概念方案；竖向、植物和无障碍需专项设计"
+}

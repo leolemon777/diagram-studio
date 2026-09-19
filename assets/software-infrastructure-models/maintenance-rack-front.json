@@ -1,0 +1,99 @@
+{
+  "mode": "rack-elevation",
+  "title": "设备维护机房 24U 机架前视图",
+  "subtitle": "按 U 位校验占用、空余、功率与设备深度",
+  "data_status": "simulated",
+  "assumptions": [
+    "只验证前视 U 位；承重、供电回路、散热和线缆弯曲需另做工程校核"
+  ],
+  "racks": [
+    {
+      "id": "rack-a",
+      "label": "维护服务机柜 A",
+      "total_u": 24,
+      "view": "front"
+    }
+  ],
+  "equipment": [
+    {
+      "id": "ups",
+      "rack_id": "rack-a",
+      "label": "UPS",
+      "start_u": 1,
+      "height_u": 4,
+      "category": "power",
+      "power_w": 0,
+      "depth_mm": 700
+    },
+    {
+      "id": "storage",
+      "rack_id": "rack-a",
+      "label": "备件影像存储",
+      "start_u": 5,
+      "height_u": 3,
+      "category": "storage",
+      "power_w": 620,
+      "depth_mm": 800
+    },
+    {
+      "id": "server-a",
+      "rack_id": "rack-a",
+      "label": "分析服务器 A",
+      "start_u": 8,
+      "height_u": 2,
+      "category": "server",
+      "power_w": 760,
+      "depth_mm": 780
+    },
+    {
+      "id": "server-b",
+      "rack_id": "rack-a",
+      "label": "分析服务器 B",
+      "start_u": 10,
+      "height_u": 2,
+      "category": "server",
+      "power_w": 760,
+      "depth_mm": 780
+    },
+    {
+      "id": "kvm",
+      "rack_id": "rack-a",
+      "label": "KVM 托盘",
+      "start_u": 12,
+      "height_u": 1,
+      "category": "network",
+      "power_w": 45,
+      "depth_mm": 600
+    },
+    {
+      "id": "access-switch",
+      "rack_id": "rack-a",
+      "label": "接入交换机",
+      "start_u": 14,
+      "height_u": 1,
+      "category": "network",
+      "power_w": 160,
+      "depth_mm": 450
+    },
+    {
+      "id": "patch-panel",
+      "rack_id": "rack-a",
+      "label": "光纤配线架",
+      "start_u": 15,
+      "height_u": 1,
+      "category": "patch",
+      "power_w": 0,
+      "depth_mm": 120
+    },
+    {
+      "id": "core-switch",
+      "rack_id": "rack-a",
+      "label": "核心交换机",
+      "start_u": 17,
+      "height_u": 2,
+      "category": "network",
+      "power_w": 420,
+      "depth_mm": 560
+    }
+  ]
+}

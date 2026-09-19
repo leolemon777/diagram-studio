@@ -1,0 +1,74 @@
+{
+  "type": "tree",
+  "direction": "right",
+  "width": 1100,
+  "title": "改善课题 · 从问题到验证",
+  "subtitle": "以可观察问题为根，按事实、原因、方案与验证展开",
+  "eyebrow": "04 / KNOWLEDGE STRUCTURE",
+  "root": {
+    "id": "root",
+    "label": "设备停机改善",
+    "detail": "结构化思考示例",
+    "children": [
+      {
+        "id": "fact",
+        "label": "确认事实",
+        "children": [
+          {
+            "id": "freq",
+            "label": "频次与时段"
+          },
+          {
+            "id": "impact",
+            "label": "影响与范围"
+          }
+        ]
+      },
+      {
+        "id": "cause",
+        "label": "分析原因",
+        "children": [
+          {
+            "id": "evidence",
+            "label": "现场证据"
+          },
+          {
+            "id": "hypothesis",
+            "label": "待验证假说"
+          }
+        ]
+      },
+      {
+        "id": "solution",
+        "label": "形成方案",
+        "children": [
+          {
+            "id": "action",
+            "label": "措施与负责人"
+          },
+          {
+            "id": "constraint",
+            "label": "约束与资源"
+          }
+        ]
+      },
+      {
+        "id": "validation",
+        "label": "验证效果",
+        "children": [
+          {
+            "id": "metric",
+            "label": "指标与口径"
+          },
+          {
+            "id": "review",
+            "label": "复盘与标准化"
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "思维导图示例 · 分支表示主题分解，不表示已证明的因果关系",
+  "family": "关系与结构",
+  "diagram_name": "思维导图"
+}

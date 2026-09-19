@@ -1,0 +1,226 @@
+{
+  "data_status": "simulated",
+  "assumptions": [
+    "示例对象、关系和名称均为教学模拟，不代表任何真实企业现状。"
+  ],
+  "mode": "kubernetes-architecture",
+  "title": "设备维护工作负载 Kubernetes 架构",
+  "subtitle": "控制平面、工作节点与 namespace 分开；Service 选择器、配置引用和持久卷逐项解析",
+  "clusters": [
+    {
+      "id": "cluster-prod",
+      "label": "maintenance-prod",
+      "version": "v1.x 教学占位"
+    }
+  ],
+  "namespaces": [
+    {
+      "id": "ns-maint",
+      "label": "maintenance",
+      "cluster_id": "cluster-prod"
+    }
+  ],
+  "control_plane_components": [
+    {
+      "id": "api",
+      "cluster_id": "cluster-prod",
+      "component": "kube-apiserver",
+      "responsibility": "API 入口",
+      "position": [
+        0.14,
+        0.81
+      ]
+    },
+    {
+      "id": "etcd",
+      "cluster_id": "cluster-prod",
+      "component": "etcd",
+      "responsibility": "集群状态",
+      "position": [
+        0.38,
+        0.81
+      ]
+    },
+    {
+      "id": "scheduler",
+      "cluster_id": "cluster-prod",
+      "component": "kube-scheduler",
+      "responsibility": "Pod 调度",
+      "position": [
+        0.62,
+        0.81
+      ]
+    },
+    {
+      "id": "controller",
+      "cluster_id": "cluster-prod",
+      "component": "kube-controller-manager",
+      "responsibility": "状态协调",
+      "position": [
+        0.86,
+        0.81
+      ]
+    }
+  ],
+  "worker_nodes": [
+    {
+      "id": "node-a",
+      "cluster_id": "cluster-prod",
+      "label": "Worker A",
+      "kubelet": "enabled",
+      "container_runtime": "containerd",
+      "position": [
+        0.2,
+        0.11
+      ]
+    },
+    {
+      "id": "node-b",
+      "cluster_id": "cluster-prod",
+      "label": "Worker B",
+      "kubelet": "enabled",
+      "container_runtime": "containerd",
+      "position": [
+        0.8,
+        0.11
+      ]
+    }
+  ],
+  "workloads": [
+    {
+      "id": "api-deploy",
+      "label": "维护 API",
+      "kind": "Deployment",
+      "namespace_id": "ns-maint",
+      "replicas": 3,
+      "pod_labels": {
+        "app": "maintenance-api"
+      },
+      "image": "registry.example/maintenance-api:simulated",
+      "position": [
+        0.48,
+        0.43
+      ]
+    },
+    {
+      "id": "worker-stateful",
+      "label": "事件处理器",
+      "kind": "StatefulSet",
+      "namespace_id": "ns-maint",
+      "replicas": 2,
+      "pod_labels": {
+        "app": "event-worker"
+      },
+      "image": "registry.example/event-worker:simulated",
+      "position": [
+        0.72,
+        0.43
+      ]
+    }
+  ],
+  "services": [
+    {
+      "id": "api-service",
+      "label": "maintenance-api",
+      "namespace_id": "ns-maint",
+      "selector": {
+        "app": "maintenance-api"
+      },
+      "ports": [
+        {
+          "port": 443,
+          "target_port": 8443,
+          "protocol": "TCP"
+        }
+      ],
+      "position": [
+        0.28,
+        0.5
+      ]
+    },
+    {
+      "id": "worker-service",
+      "label": "event-worker",
+      "namespace_id": "ns-maint",
+      "selector": {
+        "app": "event-worker"
+      },
+      "ports": [
+        {
+          "port": 9090,
+          "target_port": 9090,
+          "protocol": "TCP"
+        }
+      ],
+      "position": [
+        0.72,
+        0.58
+      ]
+    }
+  ],
+  "ingresses": [
+    {
+      "id": "ingress",
+      "label": "维护入口",
+      "namespace_id": "ns-maint",
+      "host": "maintenance.example.invalid",
+      "routes": [
+        {
+          "path": "/api",
+          "service_id": "api-service",
+          "port": 443
+        }
+      ],
+      "position": [
+        0.1,
+        0.5
+      ]
+    }
+  ],
+  "configuration": [
+    {
+      "id": "config",
+      "label": "应用配置",
+      "kind": "ConfigMap",
+      "namespace_id": "ns-maint",
+      "consumer_workload_ids": [
+        "api-deploy",
+        "worker-stateful"
+      ],
+      "position": [
+        0.4,
+        0.22
+      ]
+    },
+    {
+      "id": "secret",
+      "label": "数据库凭据",
+      "kind": "Secret",
+      "namespace_id": "ns-maint",
+      "consumer_workload_ids": [
+        "api-deploy"
+      ],
+      "values_redacted": true,
+      "position": [
+        0.6,
+        0.22
+      ]
+    }
+  ],
+  "persistent_volume_claims": [
+    {
+      "id": "pvc",
+      "label": "事件检查点",
+      "namespace_id": "ns-maint",
+      "storage_class": "standard-rwo",
+      "size_gib": 20,
+      "consumer_workload_ids": [
+        "worker-stateful"
+      ],
+      "position": [
+        0.82,
+        0.25
+      ]
+    }
+  ]
+}

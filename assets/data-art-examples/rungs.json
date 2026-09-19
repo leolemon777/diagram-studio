@@ -1,0 +1,42 @@
+{
+  "recipe": "rungs",
+  "title": "把产能，一格一格读出来。",
+  "subtitle": "相同工况下的每小时产能；让比较有刻度，也有分寸。",
+  "unit": "件 / h",
+  "rows": [
+    {
+      "id": "r1",
+      "label": "装配 A",
+      "value": 840
+    },
+    {
+      "id": "r2",
+      "label": "装配 B",
+      "value": 785
+    },
+    {
+      "id": "r3",
+      "label": "检测 C",
+      "value": 720
+    },
+    {
+      "id": "r4",
+      "label": "包装 D",
+      "value": 665
+    },
+    {
+      "id": "r5",
+      "label": "贴标 E",
+      "value": 610
+    },
+    {
+      "id": "r6",
+      "label": "入库 F",
+      "value": 560
+    }
+  ],
+  "period": "2026 年 / 模拟观测",
+  "synthetic": true,
+  "source": "Apat 自拟数据，仅用于呈现图形效果；不代表现场测量。",
+  "quantum": 20
+}

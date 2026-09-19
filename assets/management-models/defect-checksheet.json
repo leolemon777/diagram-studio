@@ -1,0 +1,26 @@
+{
+  "id": "defect-checksheet",
+  "mode": "checksheet",
+  "title": "包装线缺陷质量检查表",
+  "subtitle": "按日期记录首次发现的缺陷处数；模拟观测",
+  "data_status": "simulated",
+  "periods": ["9/13", "9/14", "9/15", "9/16", "9/17", "9/18"],
+  "categories": [
+    {"id": "seal", "label": "封口不完整"},
+    {"id": "label", "label": "标签偏移"},
+    {"id": "weight", "label": "净含量偏差"},
+    {"id": "print", "label": "喷码不清"},
+    {"id": "damage", "label": "包装破损"}
+  ],
+  "counts": {
+    "seal": [3, 2, 4, 1, 2, 1],
+    "label": [5, 4, 3, 5, 2, 3],
+    "weight": [1, 0, 2, 1, 1, 0],
+    "print": [2, 3, 1, 2, 4, 2],
+    "damage": [0, 1, 1, 0, 1, 1]
+  },
+  "count_unit": "处",
+  "counting_rule": "每班末按工件首次发现记录，复检同一处不重复累计",
+  "assumptions": ["日期与缺陷计数均为模拟数据", "检查表用于收集数据，不能单独证明原因"],
+  "footer": "模拟观测 · 非负整数计数 · 行列合计自动复算"
+}

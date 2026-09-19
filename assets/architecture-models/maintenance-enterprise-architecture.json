@@ -1,0 +1,243 @@
+{
+  "data_status": "simulated",
+  "assumptions": [
+    "示例对象、关系和名称均为教学模拟，不代表任何真实企业现状。"
+  ],
+  "mode": "enterprise-layered",
+  "title": "设备可靠性企业架构追踪图",
+  "subtitle": "战略、业务、应用、数据和技术层逐项可追踪；企业层级不等于软件分层",
+  "layers": [
+    {
+      "id": "strategy",
+      "label": "战略",
+      "kind": "strategy",
+      "order": 1
+    },
+    {
+      "id": "business",
+      "label": "业务",
+      "kind": "business",
+      "order": 2
+    },
+    {
+      "id": "application",
+      "label": "应用",
+      "kind": "application",
+      "order": 3
+    },
+    {
+      "id": "data",
+      "label": "数据",
+      "kind": "data",
+      "order": 4
+    },
+    {
+      "id": "technology",
+      "label": "技术",
+      "kind": "technology",
+      "order": 5
+    }
+  ],
+  "elements": [
+    {
+      "id": "goal",
+      "label": "关键设备可用率 ≥ 98%",
+      "layer_id": "strategy",
+      "responsibility": "经营目标",
+      "position": [
+        0.3,
+        0.8
+      ]
+    },
+    {
+      "id": "principle",
+      "label": "风险优先检修",
+      "layer_id": "strategy",
+      "responsibility": "投资原则",
+      "position": [
+        0.7,
+        0.8
+      ]
+    },
+    {
+      "id": "cap-plan",
+      "label": "维护策略与计划",
+      "layer_id": "business",
+      "responsibility": "设备管理部",
+      "position": [
+        0.2,
+        0.6
+      ]
+    },
+    {
+      "id": "cap-exec",
+      "label": "工单执行与反馈",
+      "layer_id": "business",
+      "responsibility": "维修中心",
+      "position": [
+        0.5,
+        0.6
+      ]
+    },
+    {
+      "id": "cap-predict",
+      "label": "状态监测与预测",
+      "layer_id": "business",
+      "responsibility": "可靠性团队",
+      "position": [
+        0.8,
+        0.6
+      ]
+    },
+    {
+      "id": "cmms",
+      "label": "CMMS",
+      "layer_id": "application",
+      "responsibility": "计划与工单系统",
+      "position": [
+        0.32,
+        0.4
+      ]
+    },
+    {
+      "id": "analytics",
+      "label": "状态分析平台",
+      "layer_id": "application",
+      "responsibility": "异常检测与预测",
+      "position": [
+        0.68,
+        0.4
+      ]
+    },
+    {
+      "id": "asset-data",
+      "label": "设备与工单数据域",
+      "layer_id": "data",
+      "responsibility": "CMMS 主责",
+      "position": [
+        0.32,
+        0.25
+      ]
+    },
+    {
+      "id": "condition-data",
+      "label": "状态时序数据域",
+      "layer_id": "data",
+      "responsibility": "分析平台主责",
+      "position": [
+        0.68,
+        0.25
+      ]
+    },
+    {
+      "id": "integration",
+      "label": "事件集成平台",
+      "layer_id": "technology",
+      "responsibility": "消息与接口",
+      "position": [
+        0.32,
+        0.1
+      ]
+    },
+    {
+      "id": "platform",
+      "label": "容器与数据库平台",
+      "layer_id": "technology",
+      "responsibility": "运行与存储",
+      "position": [
+        0.68,
+        0.1
+      ]
+    }
+  ],
+  "traces": [
+    {
+      "id": "t1",
+      "source": "goal",
+      "target": "cap-plan",
+      "relationship": "supports",
+      "evidence": "目标分解假设"
+    },
+    {
+      "id": "t2",
+      "source": "goal",
+      "target": "cap-exec",
+      "relationship": "supports",
+      "evidence": "目标分解假设"
+    },
+    {
+      "id": "t3",
+      "source": "principle",
+      "target": "cap-predict",
+      "relationship": "governs",
+      "evidence": "策略原则假设"
+    },
+    {
+      "id": "t4",
+      "source": "cap-plan",
+      "target": "cmms",
+      "relationship": "realizes",
+      "evidence": "应用能力映射假设"
+    },
+    {
+      "id": "t5",
+      "source": "cap-exec",
+      "target": "cmms",
+      "relationship": "realizes",
+      "evidence": "应用能力映射假设"
+    },
+    {
+      "id": "t6",
+      "source": "cap-predict",
+      "target": "analytics",
+      "relationship": "realizes",
+      "evidence": "应用能力映射假设"
+    },
+    {
+      "id": "t7",
+      "source": "cmms",
+      "target": "asset-data",
+      "relationship": "uses",
+      "evidence": "数据主责假设"
+    },
+    {
+      "id": "t8",
+      "source": "analytics",
+      "target": "condition-data",
+      "relationship": "uses",
+      "evidence": "数据主责假设"
+    },
+    {
+      "id": "t9",
+      "source": "asset-data",
+      "target": "integration",
+      "relationship": "hosts",
+      "evidence": "平台部署假设"
+    },
+    {
+      "id": "t10",
+      "source": "condition-data",
+      "target": "platform",
+      "relationship": "hosts",
+      "evidence": "平台部署假设"
+    },
+    {
+      "id": "t11",
+      "source": "cmms",
+      "target": "integration",
+      "relationship": "hosts",
+      "evidence": "集成依赖假设",
+      "rad": 0.06,
+      "render": false
+    },
+    {
+      "id": "t12",
+      "source": "analytics",
+      "target": "platform",
+      "relationship": "hosts",
+      "evidence": "运行依赖假设",
+      "rad": -0.06,
+      "render": false
+    }
+  ]
+}

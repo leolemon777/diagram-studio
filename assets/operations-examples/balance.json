@@ -1,0 +1,33 @@
+{
+  "mode": "balance",
+  "data_status": "模拟数据 · 方法与版式演示",
+  "title": "瓶颈在哪里，产能就在哪里",
+  "subtitle": "工位平衡 / 单件流、每工位一个等效作业资源",
+  "available_seconds": 27000,
+  "demand_units": 1000,
+  "stations": [
+    {
+      "name": "上料",
+      "cycle_seconds": 22
+    },
+    {
+      "name": "预装",
+      "cycle_seconds": 25
+    },
+    {
+      "name": "压装",
+      "cycle_seconds": 32
+    },
+    {
+      "name": "检测",
+      "cycle_seconds": 27
+    },
+    {
+      "name": "包装",
+      "cycle_seconds": 21
+    }
+  ],
+  "assumptions": [
+    "忽略爬坡、停机、不良及工位间阻塞；稳态理想产能不等于承诺交付量。"
+  ]
+}

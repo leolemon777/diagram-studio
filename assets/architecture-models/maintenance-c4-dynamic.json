@@ -1,0 +1,187 @@
+{
+  "data_status": "simulated",
+  "assumptions": [
+    "示例对象、关系和名称均为教学模拟，不代表任何真实企业现状。"
+  ],
+  "mode": "c4-dynamic",
+  "title": "预测告警转工单的 C4 动态图",
+  "subtitle": "静态元素 ID 保持稳定；带序号的交互说明一个运行场景",
+  "scenario": "预测告警经人工确认后创建维护工单",
+  "static_view_reference": "maintenance-platform-container-v1",
+  "elements": [
+    {
+      "id": "engineer",
+      "label": "可靠性工程师",
+      "type": "person",
+      "description": "确认预测告警",
+      "position": [
+        0.1,
+        0.72
+      ]
+    },
+    {
+      "id": "analytics",
+      "label": "状态分析平台",
+      "type": "software-system",
+      "description": "产生设备预警",
+      "position": [
+        0.32,
+        0.78
+      ]
+    },
+    {
+      "id": "event-bus",
+      "label": "企业事件总线",
+      "type": "container",
+      "description": "转发领域事件",
+      "position": [
+        0.55,
+        0.7
+      ]
+    },
+    {
+      "id": "maintenance-api",
+      "label": "维护 API",
+      "type": "container",
+      "description": "校验并创建工单",
+      "position": [
+        0.72,
+        0.47
+      ]
+    },
+    {
+      "id": "cmms-db",
+      "label": "维护数据库",
+      "type": "container",
+      "description": "保存工单状态",
+      "position": [
+        0.54,
+        0.22
+      ]
+    },
+    {
+      "id": "mobile",
+      "label": "移动点检",
+      "type": "container",
+      "description": "通知现场执行人员",
+      "position": [
+        0.25,
+        0.27
+      ]
+    }
+  ],
+  "relationship_registry": [
+    {
+      "id": "rel-1",
+      "source": "analytics",
+      "target": "engineer",
+      "description": "呈现待确认告警"
+    },
+    {
+      "id": "rel-2",
+      "source": "engineer",
+      "target": "analytics",
+      "description": "确认告警"
+    },
+    {
+      "id": "rel-3",
+      "source": "analytics",
+      "target": "event-bus",
+      "description": "发布已确认告警"
+    },
+    {
+      "id": "rel-4",
+      "source": "event-bus",
+      "target": "maintenance-api",
+      "description": "投递告警事件"
+    },
+    {
+      "id": "rel-5",
+      "source": "maintenance-api",
+      "target": "cmms-db",
+      "description": "保存工单"
+    },
+    {
+      "id": "rel-6",
+      "source": "maintenance-api",
+      "target": "mobile",
+      "description": "发送工单通知"
+    }
+  ],
+  "interactions": [
+    {
+      "order": 1,
+      "source": "analytics",
+      "target": "engineer",
+      "description": "显示预测告警",
+      "technology": "Web UI",
+      "static_relationship_id": "rel-1",
+      "label_offset": [
+        0,
+        0.045
+      ]
+    },
+    {
+      "order": 2,
+      "source": "engineer",
+      "target": "analytics",
+      "description": "确认并补充优先级",
+      "technology": "HTTPS/JSON",
+      "static_relationship_id": "rel-2",
+      "rad": 0.18,
+      "label_offset": [
+        0,
+        -0.04
+      ]
+    },
+    {
+      "order": 3,
+      "source": "analytics",
+      "target": "event-bus",
+      "description": "发布已确认告警",
+      "technology": "AMQP/TLS",
+      "static_relationship_id": "rel-3",
+      "label_offset": [
+        0,
+        0.04
+      ]
+    },
+    {
+      "order": 4,
+      "source": "event-bus",
+      "target": "maintenance-api",
+      "description": "投递告警事件",
+      "technology": "AMQP/TLS",
+      "static_relationship_id": "rel-4",
+      "label_offset": [
+        0.04,
+        0.01
+      ]
+    },
+    {
+      "order": 5,
+      "source": "maintenance-api",
+      "target": "cmms-db",
+      "description": "创建待计划工单",
+      "technology": "SQL/TLS",
+      "static_relationship_id": "rel-5",
+      "label_offset": [
+        0.05,
+        0
+      ]
+    },
+    {
+      "order": 6,
+      "source": "maintenance-api",
+      "target": "mobile",
+      "description": "推送新工单",
+      "technology": "HTTPS/JSON",
+      "static_relationship_id": "rel-6",
+      "rad": -0.1,
+      "label_offset": [
+        0,
+        -0.035
+      ]
+    }
+  ]
+}

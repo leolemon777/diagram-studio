@@ -1,0 +1,59 @@
+{
+  "title": "维修准备三点估计：假设输入",
+  "unit": "小时",
+  "mode": "pert",
+  "assumptions": [
+    "教学工期；不含工作日历和资源冲突。"
+  ],
+  "tasks": [
+    {
+      "id": "A",
+      "label": "准备",
+      "predecessors": [],
+      "optimistic": 1,
+      "likely": 2,
+      "pessimistic": 4
+    },
+    {
+      "id": "B",
+      "label": "机械作业",
+      "predecessors": [
+        "A"
+      ],
+      "optimistic": 3,
+      "likely": 4,
+      "pessimistic": 5
+    },
+    {
+      "id": "C",
+      "label": "电气作业",
+      "predecessors": [
+        "A"
+      ],
+      "optimistic": 3,
+      "likely": 4,
+      "pessimistic": 5
+    },
+    {
+      "id": "D",
+      "label": "联合检查",
+      "predecessors": [
+        "B",
+        "C"
+      ],
+      "optimistic": 0,
+      "likely": 1,
+      "pessimistic": 2
+    },
+    {
+      "id": "E",
+      "label": "资料整理",
+      "predecessors": [
+        "A"
+      ],
+      "optimistic": 1,
+      "likely": 2,
+      "pessimistic": 3
+    }
+  ]
+}

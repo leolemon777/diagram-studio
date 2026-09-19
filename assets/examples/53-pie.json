@@ -1,0 +1,31 @@
+{
+  "type": "plot",
+  "title": "饼图 · 同一总体的构成",
+  "diagram_name": "饼图",
+  "family": "数据图表",
+  "subtitle": "类别互斥且穷尽；扇形角度按真实比例计算",
+  "eyebrow": "53 / DIAGRAM LIBRARY",
+  "footer": "原创结构范例 · 数据、实体、尺寸与假说均为演示输入；实际任务按用户资料替换",
+  "assumptions": [
+    "原创演示内容，不代表实际业务、研究结论或工程设计"
+  ],
+  "mode": "pie",
+  "data": [
+    {
+      "label": "计划维护",
+      "value": 48
+    },
+    {
+      "label": "现场巡检",
+      "value": 32
+    },
+    {
+      "label": "故障处理",
+      "value": 14
+    },
+    {
+      "label": "技术改善",
+      "value": 6
+    }
+  ]
+}

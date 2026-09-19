@@ -1,0 +1,31 @@
+{
+  "type": "concentric",
+  "title": "同心层次 · 范围与边界",
+  "diagram_name": "同心层次",
+  "family": "关系与结构",
+  "subtitle": "由外到内表示包含关系，不表示数量大小",
+  "eyebrow": "28 / DIAGRAM LIBRARY",
+  "footer": "原创结构范例 · 数据、实体、尺寸与假说均为演示输入；实际任务按用户资料替换",
+  "assumptions": [
+    "原创演示内容，不代表实际业务、研究结论或工程设计"
+  ],
+  "center": "核心任务",
+  "items": [
+    {
+      "label": "外部环境",
+      "detail": "边界外的条件与约束"
+    },
+    {
+      "label": "组织环境",
+      "detail": "资源、角色和协作"
+    },
+    {
+      "label": "系统能力",
+      "detail": "支撑任务的功能"
+    },
+    {
+      "label": "工作过程",
+      "detail": "完成目标的活动"
+    }
+  ]
+}

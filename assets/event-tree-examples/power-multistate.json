@@ -1,0 +1,85 @@
+{
+  "title": "备用供电恢复状态 · 三分支事件树",
+  "scope": "电源扰动后30秒，以输出功率区间分类；三个区间互斥且完备",
+  "data_status": "教学示例：恢复状态与概率均为假设",
+  "mode": "conditional_probability",
+  "initiator": {
+    "id": "IE",
+    "label": "供电扰动发生",
+    "source": "教学假设"
+  },
+  "stages": [
+    {
+      "id": "B1",
+      "label": "30秒后的供电状态"
+    }
+  ],
+  "root": "D1",
+  "outcomes": [
+    {
+      "id": "O1",
+      "label": "恢复额定供电",
+      "description": "供电能力达到额定值"
+    },
+    {
+      "id": "O2",
+      "label": "部分恢复",
+      "description": "供电能力大于零但低于额定值"
+    },
+    {
+      "id": "O3",
+      "label": "未恢复",
+      "description": "供电能力为零"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "D1",
+      "kind": "decision",
+      "stage": "B1",
+      "context": "已经发生供电扰动，在30秒时点观察",
+      "partition_basis": "额定及以上、正值但低于额定、零，覆盖假设模型内全部状态",
+      "branches": [
+        {
+          "id": "full",
+          "label": "额定及以上",
+          "to": "L1",
+          "probability": 0.7,
+          "source": "教学假设条件概率；不是现场统计"
+        },
+        {
+          "id": "partial",
+          "label": "正值低于额定",
+          "to": "L2",
+          "probability": 0.2,
+          "source": "教学假设条件概率；不是现场统计"
+        },
+        {
+          "id": "none",
+          "label": "零输出",
+          "to": "L3",
+          "probability": 0.1,
+          "source": "教学假设条件概率；不是现场统计"
+        }
+      ]
+    },
+    {
+      "id": "L1",
+      "kind": "terminal",
+      "outcome": "O1",
+      "termination_reason": "完成30秒观察"
+    },
+    {
+      "id": "L2",
+      "kind": "terminal",
+      "outcome": "O2",
+      "termination_reason": "完成30秒观察"
+    },
+    {
+      "id": "L3",
+      "kind": "terminal",
+      "outcome": "O3",
+      "termination_reason": "完成30秒观察"
+    }
+  ]
+}

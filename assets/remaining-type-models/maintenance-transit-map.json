@@ -1,0 +1,223 @@
+{
+  "mode": "transit-map",
+  "title": "园区班车线路图",
+  "subtitle": "拓扑优先，站序和换乘关系可核对",
+  "template": "map",
+  "data_status": "simulated",
+  "assumptions": [
+    "数据为教学模拟，不代表真实项目现状",
+    "真实交付前须替换数值、名称、品牌规范和审批信息"
+  ],
+  "metrics": [
+    {
+      "id": "routes",
+      "label": "线路",
+      "value": 2,
+      "unit": "条",
+      "evidence": "示例输入"
+    },
+    {
+      "id": "stations",
+      "label": "站点",
+      "value": 11,
+      "unit": "个",
+      "evidence": "示例输入"
+    },
+    {
+      "id": "transfer",
+      "label": "换乘站",
+      "value": 1,
+      "unit": "个",
+      "evidence": "示例输入"
+    }
+  ],
+  "routes": [
+    {
+      "id": "r1",
+      "label": "红线 · 主厂区",
+      "color": "#A65448",
+      "points": [
+        [
+          0.08,
+          0.72
+        ],
+        [
+          0.26,
+          0.72
+        ],
+        [
+          0.45,
+          0.72
+        ],
+        [
+          0.58,
+          0.58
+        ],
+        [
+          0.75,
+          0.58
+        ],
+        [
+          0.91,
+          0.58
+        ]
+      ]
+    },
+    {
+      "id": "r2",
+      "label": "蓝线 · 仓储区",
+      "color": "#657487",
+      "points": [
+        [
+          0.18,
+          0.18
+        ],
+        [
+          0.18,
+          0.37
+        ],
+        [
+          0.34,
+          0.52
+        ],
+        [
+          0.58,
+          0.58
+        ],
+        [
+          0.7,
+          0.76
+        ],
+        [
+          0.86,
+          0.84
+        ]
+      ]
+    }
+  ],
+  "stations": [
+    {
+      "id": "s1",
+      "label": "北门",
+      "position": [
+        0.08,
+        0.72
+      ],
+      "route_ids": [
+        "r1"
+      ]
+    },
+    {
+      "id": "s2",
+      "label": "办公楼",
+      "position": [
+        0.26,
+        0.72
+      ],
+      "route_ids": [
+        "r1"
+      ]
+    },
+    {
+      "id": "s3",
+      "label": "一车间",
+      "position": [
+        0.45,
+        0.72
+      ],
+      "route_ids": [
+        "r1"
+      ]
+    },
+    {
+      "id": "s4",
+      "label": "能源站",
+      "position": [
+        0.58,
+        0.58
+      ],
+      "route_ids": [
+        "r1",
+        "r2"
+      ]
+    },
+    {
+      "id": "s5",
+      "label": "二车间",
+      "position": [
+        0.75,
+        0.58
+      ],
+      "route_ids": [
+        "r1"
+      ]
+    },
+    {
+      "id": "s6",
+      "label": "南门",
+      "position": [
+        0.91,
+        0.58
+      ],
+      "route_ids": [
+        "r1"
+      ]
+    },
+    {
+      "id": "s7",
+      "label": "仓库 A",
+      "position": [
+        0.18,
+        0.18
+      ],
+      "route_ids": [
+        "r2"
+      ]
+    },
+    {
+      "id": "s8",
+      "label": "仓库 B",
+      "position": [
+        0.18,
+        0.37
+      ],
+      "route_ids": [
+        "r2"
+      ]
+    },
+    {
+      "id": "s9",
+      "label": "质检中心",
+      "position": [
+        0.34,
+        0.52
+      ],
+      "route_ids": [
+        "r2"
+      ]
+    },
+    {
+      "id": "s10",
+      "label": "研发楼",
+      "position": [
+        0.7,
+        0.76
+      ],
+      "route_ids": [
+        "r2"
+      ]
+    },
+    {
+      "id": "s11",
+      "label": "东门",
+      "position": [
+        0.86,
+        0.84
+      ],
+      "route_ids": [
+        "r2"
+      ]
+    }
+  ],
+  "locations": []
+}

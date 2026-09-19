@@ -1,0 +1,61 @@
+{
+  "status": "experimental_project_copy",
+  "baseline": "diagram-studio-v38.zip",
+  "scope": "Four bounded studies, two expressions each; not a universal chart renderer or a released installed upgrade.",
+  "source_checks": {
+    "svg_parse": 8,
+    "same_source_digest_per_pair": 4,
+    "marketing_partition": [
+      380,
+      310,
+      124,
+      186
+    ],
+    "marketing_partition_total": 1000,
+    "education_source_scores_and_signed_changes": "passed",
+    "planning_arrow_count": 6,
+    "service_arrow_count": 7,
+    "service_matrix_relation_references": 7,
+    "invalid_cohort_rejected": true,
+    "invalid_finish_to_start_rejected": true
+  },
+  "browser_checks": {
+    "desktop_width": 1440,
+    "figures": 8,
+    "text_elements": 222,
+    "text_outside_svg": 0,
+    "text_to_text_overlap_over_2px": 0,
+    "method": "Actual browser getBoundingClientRect on SVG text; not a line-node collision detector.",
+    "mobile_width": 390,
+    "mobile_document_scroll_width": 390,
+    "mobile_figure_width": 860,
+    "mobile_figure_viewport_width": 356,
+    "mobile_scope": "Marketing views, compare, keyboard selection, horizontal scrolling and expanded data table.",
+    "four_topic_switches": "passed",
+    "single_and_comparison_views": "passed",
+    "keyboard_view_selection": "passed",
+    "source_table_disclosure": "passed"
+  },
+  "visual_review": {
+    "scope": "Viewed all eight expressions in browser screenshots; final focused reinspection of service feedback route and project dependency convergence.",
+    "repairs": [
+      "Separated opposing service routes near user confirmation.",
+      "Separated dependency arrow entries and routed around task captions."
+    ],
+    "real_user_comprehension_test": "not_performed",
+    "user_style_acceptance": "pending",
+    "native_editor_edit_save_reopen": "not_performed"
+  },
+  "skill_quick_validate": "passed",
+  "installation": "Not installed; original installed directory was absent during this turn.",
+  "artifact_sha256": {
+    "marketing-a.svg": "b789d7824cfebd53d03f5f630cd8ab2cfa337b0fe1c06e5fdba6bbc288096223",
+    "marketing-b.svg": "b956e81161d06d2639c4eca1b6e60c8649a402d7d7856396edd6577df311ac5c",
+    "education-b.svg": "5c99dd0e4f90eba1343f628ce3fca0d5d572051691fc94b944063a7027a8575f",
+    "education-a.svg": "dca9ff032090e1ee8484880dbb7d0940643069ad92892c8bb3e6353c8682eb01",
+    "planning-a.svg": "e7bb57b3fa0d4e53aafe105a2f25cfdad8df88b95c9fcdb5c04d7e8fceb63233",
+    "planning-b.svg": "b7775b32daf0af112dfc13660e1db2071b5f2eddf74acb7a691c400186b8e698",
+    "service-a.svg": "a0832858173c6fd545edffe8aff585d68ef6515aeaeb1039ebc3dabfcfcadff5",
+    "service-b.svg": "e64f3524b4e4657ef1c8103b9b036b62f8192c817fb1ff9c8c836d5b69f76271"
+  }
+}

@@ -1,0 +1,227 @@
+{
+  "title": "CTUD 串并联输入教学图",
+  "scope": "四个端口每扫描求值；假设信号，不代表现场回路",
+  "data_status": "Synthetic",
+  "semantics": "sequential_timed_scan",
+  "write_policy": "single_writer",
+  "variables": [
+    {
+      "id": "U",
+      "label": "U",
+      "source": "teaching",
+      "role": "input"
+    },
+    {
+      "id": "D",
+      "label": "D",
+      "source": "teaching",
+      "role": "input"
+    },
+    {
+      "id": "R",
+      "label": "R",
+      "source": "teaching",
+      "role": "input"
+    },
+    {
+      "id": "L",
+      "label": "L",
+      "source": "teaching",
+      "role": "input"
+    },
+    {
+      "id": "Full",
+      "label": "Full",
+      "source": "teaching",
+      "role": "output",
+      "initial": false
+    },
+    {
+      "id": "Empty",
+      "label": "Empty",
+      "source": "teaching",
+      "role": "output",
+      "initial": false
+    },
+    {
+      "id": "Seen",
+      "label": "Seen",
+      "source": "teaching",
+      "role": "output",
+      "initial": false
+    }
+  ],
+  "rungs": [
+    {
+      "id": "Counter",
+      "label": "组合输入与双输出",
+      "type": "CTUD",
+      "profile": "edge_int16_sample_every_call",
+      "cu": {
+        "id": "up_series",
+        "kind": "series",
+        "children": [
+          {
+            "id": "up_u",
+            "kind": "contact",
+            "var": "U",
+            "sense": "true"
+          },
+          {
+            "id": "up_parallel",
+            "kind": "parallel",
+            "children": [
+              {
+                "id": "up_d",
+                "kind": "contact",
+                "var": "D",
+                "sense": "false"
+              },
+              {
+                "id": "up_l",
+                "kind": "contact",
+                "var": "L",
+                "sense": "true"
+              }
+            ]
+          }
+        ]
+      },
+      "cd": {
+        "id": "down_parallel",
+        "kind": "parallel",
+        "children": [
+          {
+            "id": "down_d",
+            "kind": "contact",
+            "var": "D",
+            "sense": "true"
+          },
+          {
+            "id": "down_series",
+            "kind": "series",
+            "children": [
+              {
+                "id": "down_u",
+                "kind": "contact",
+                "var": "U",
+                "sense": "true"
+              },
+              {
+                "id": "down_r",
+                "kind": "contact",
+                "var": "R",
+                "sense": "true"
+              }
+            ]
+          }
+        ]
+      },
+      "reset": {
+        "id": "reset",
+        "kind": "contact",
+        "var": "R",
+        "sense": "true"
+      },
+      "load": {
+        "id": "load",
+        "kind": "contact",
+        "var": "L",
+        "sense": "true"
+      },
+      "pv": 1,
+      "initial": {
+        "cv": 0,
+        "previous_cu": false,
+        "previous_cd": false
+      },
+      "outputs": {
+        "qu": "Full",
+        "qd": "Empty"
+      }
+    },
+    {
+      "id": "Follow",
+      "label": "Read this scan",
+      "logic": {
+        "id": "read",
+        "kind": "contact",
+        "var": "Full",
+        "sense": "true"
+      },
+      "coil": {
+        "id": "coil",
+        "var": "Seen",
+        "kind": "assign"
+      }
+    }
+  ],
+  "scans": [
+    {
+      "id": "S0",
+      "label": "组合 0",
+      "time_ms": 0,
+      "inputs": {
+        "U": false,
+        "D": false,
+        "R": false,
+        "L": false
+      }
+    },
+    {
+      "id": "S1",
+      "label": "组合 1",
+      "time_ms": 10,
+      "inputs": {
+        "U": true,
+        "D": false,
+        "R": false,
+        "L": false
+      }
+    },
+    {
+      "id": "S2",
+      "label": "组合 2",
+      "time_ms": 20,
+      "inputs": {
+        "U": true,
+        "D": true,
+        "R": false,
+        "L": false
+      }
+    },
+    {
+      "id": "S3",
+      "label": "组合 3",
+      "time_ms": 30,
+      "inputs": {
+        "U": true,
+        "D": true,
+        "R": false,
+        "L": true
+      }
+    },
+    {
+      "id": "S4",
+      "label": "组合 4",
+      "time_ms": 40,
+      "inputs": {
+        "U": true,
+        "D": true,
+        "R": true,
+        "L": true
+      }
+    },
+    {
+      "id": "S5",
+      "label": "组合 5",
+      "time_ms": 50,
+      "inputs": {
+        "U": false,
+        "D": false,
+        "R": false,
+        "L": false
+      }
+    }
+  ]
+}

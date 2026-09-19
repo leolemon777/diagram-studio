@@ -1,0 +1,172 @@
+{
+  "recipe": "matrix",
+  "title": "停机分布，在班次之间显形。",
+  "subtitle": "以圆的面积比较分钟数；同一尺度看出高值聚集在哪里。",
+  "unit": "min",
+  "rows": [
+    {
+      "id": "m00",
+      "label": "早班 / 周一",
+      "column": "周一",
+      "group": "早班",
+      "value": 12
+    },
+    {
+      "id": "m01",
+      "label": "早班 / 周二",
+      "column": "周二",
+      "group": "早班",
+      "value": 26
+    },
+    {
+      "id": "m02",
+      "label": "早班 / 周三",
+      "column": "周三",
+      "group": "早班",
+      "value": 18
+    },
+    {
+      "id": "m03",
+      "label": "早班 / 周四",
+      "column": "周四",
+      "group": "早班",
+      "value": 40
+    },
+    {
+      "id": "m04",
+      "label": "早班 / 周五",
+      "column": "周五",
+      "group": "早班",
+      "value": 8
+    },
+    {
+      "id": "m05",
+      "label": "早班 / 周六",
+      "column": "周六",
+      "group": "早班",
+      "value": 32
+    },
+    {
+      "id": "m06",
+      "label": "早班 / 周日",
+      "column": "周日",
+      "group": "早班",
+      "value": 0
+    },
+    {
+      "id": "m10",
+      "label": "中班 / 周一",
+      "column": "周一",
+      "group": "中班",
+      "value": 19
+    },
+    {
+      "id": "m11",
+      "label": "中班 / 周二",
+      "column": "周二",
+      "group": "中班",
+      "value": 33
+    },
+    {
+      "id": "m12",
+      "label": "中班 / 周三",
+      "column": "周三",
+      "group": "中班",
+      "value": 25
+    },
+    {
+      "id": "m13",
+      "label": "中班 / 周四",
+      "column": "周四",
+      "group": "中班",
+      "value": 47
+    },
+    {
+      "id": "m14",
+      "label": "中班 / 周五",
+      "column": "周五",
+      "group": "中班",
+      "value": 15
+    },
+    {
+      "id": "m15",
+      "label": "中班 / 周六",
+      "column": "周六",
+      "group": "中班",
+      "value": 39
+    },
+    {
+      "id": "m16",
+      "label": "中班 / 周日",
+      "column": "周日",
+      "group": "中班",
+      "value": 23
+    },
+    {
+      "id": "m20",
+      "label": "夜班 / 周一",
+      "column": "周一",
+      "group": "夜班",
+      "value": 26
+    },
+    {
+      "id": "m21",
+      "label": "夜班 / 周二",
+      "column": "周二",
+      "group": "夜班",
+      "value": 40
+    },
+    {
+      "id": "m22",
+      "label": "夜班 / 周三",
+      "column": "周三",
+      "group": "夜班",
+      "value": 32
+    },
+    {
+      "id": "m23",
+      "label": "夜班 / 周四",
+      "column": "周四",
+      "group": "夜班",
+      "value": 54
+    },
+    {
+      "id": "m24",
+      "label": "夜班 / 周五",
+      "column": "周五",
+      "group": "夜班",
+      "value": null
+    },
+    {
+      "id": "m25",
+      "label": "夜班 / 周六",
+      "column": "周六",
+      "group": "夜班",
+      "value": 46
+    },
+    {
+      "id": "m26",
+      "label": "夜班 / 周日",
+      "column": "周日",
+      "group": "夜班",
+      "value": 30
+    }
+  ],
+  "period": "2026 年第 24 周 / 7 天 × 3 班",
+  "synthetic": true,
+  "source": "Apat 自拟数据，仅用于呈现图形效果；不代表现场测量。",
+  "columns": [
+    "周一",
+    "周二",
+    "周三",
+    "周四",
+    "周五",
+    "周六",
+    "周日"
+  ],
+  "groups": [
+    "早班",
+    "中班",
+    "夜班"
+  ]
+}

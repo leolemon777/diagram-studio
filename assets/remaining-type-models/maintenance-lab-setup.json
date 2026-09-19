@@ -1,0 +1,134 @@
+{
+  "mode": "lab-equipment",
+  "title": "润滑油含水量实验装置",
+  "subtitle": "设备、介质、方向和风险提示一并建模",
+  "template": "science",
+  "data_status": "simulated",
+  "assumptions": [
+    "数据为教学模拟，不代表真实项目现状",
+    "真实交付前须替换数值、名称、品牌规范和审批信息"
+  ],
+  "metrics": [
+    {
+      "id": "devices",
+      "label": "设备",
+      "value": 4,
+      "unit": "台",
+      "evidence": "示例输入"
+    },
+    {
+      "id": "hazards",
+      "label": "风险类别",
+      "value": 3,
+      "unit": "类",
+      "evidence": "示例输入"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "b1",
+      "role": "equipment",
+      "label": "样品与加热",
+      "content": "样品瓶 → 加热模块",
+      "rect": [
+        0.03,
+        0.72,
+        0.28,
+        0.18
+      ],
+      "order": 1
+    },
+    {
+      "id": "b2",
+      "role": "connection",
+      "label": "气路与测量",
+      "content": "载气 → 传感器 → 记录仪",
+      "rect": [
+        0.36,
+        0.72,
+        0.28,
+        0.18
+      ],
+      "order": 2
+    },
+    {
+      "id": "b3",
+      "role": "safety",
+      "label": "安全边界",
+      "content": "压力、化学品、热表面",
+      "rect": [
+        0.69,
+        0.72,
+        0.28,
+        0.18
+      ],
+      "order": 3
+    }
+  ],
+  "equipment": [
+    {
+      "id": "sample",
+      "tag": "V-01",
+      "label": "样品瓶",
+      "position": [
+        0.16,
+        0.42
+      ]
+    },
+    {
+      "id": "heater",
+      "tag": "H-01",
+      "label": "加热模块",
+      "position": [
+        0.36,
+        0.42
+      ]
+    },
+    {
+      "id": "sensor",
+      "tag": "S-01",
+      "label": "水分传感器",
+      "position": [
+        0.6,
+        0.42
+      ]
+    },
+    {
+      "id": "logger",
+      "tag": "D-01",
+      "label": "数据记录仪",
+      "position": [
+        0.82,
+        0.42
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "c1",
+      "source": "sample",
+      "target": "heater",
+      "medium": "样品",
+      "direction": "forward"
+    },
+    {
+      "id": "c2",
+      "source": "heater",
+      "target": "sensor",
+      "medium": "载气",
+      "direction": "forward"
+    },
+    {
+      "id": "c3",
+      "source": "sensor",
+      "target": "logger",
+      "medium": "4–20 mA",
+      "direction": "forward"
+    }
+  ],
+  "hazards": [
+    "pressure",
+    "chemical",
+    "heat"
+  ]
+}

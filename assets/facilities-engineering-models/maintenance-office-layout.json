@@ -1,0 +1,245 @@
+{
+  "mode": "facility-layout",
+  "profile": "office",
+  "title": "设备维护团队办公室布局",
+  "subtitle": "按真实尺寸组织员工区、公共区、设备区与连续通道",
+  "data_status": "simulated",
+  "assumptions": [
+    "模拟 20 m × 12 m 底图；尺寸、门窗、消防和无障碍要求需由属地项目替换"
+  ],
+  "plan": {
+    "width_m": 20,
+    "height_m": 12,
+    "scale_note": "1 m model unit"
+  },
+  "rooms": [
+    {
+      "id": "open-office",
+      "label": "开放办公区",
+      "zone": "员工区",
+      "rect": [
+        0.4,
+        0.4,
+        12.6,
+        7.2
+      ]
+    },
+    {
+      "id": "meeting",
+      "label": "会议室",
+      "zone": "公共区",
+      "rect": [
+        13.2,
+        0.4,
+        6.4,
+        4.1
+      ]
+    },
+    {
+      "id": "support",
+      "label": "设备与茶水区",
+      "zone": "支持区",
+      "rect": [
+        13.2,
+        4.7,
+        6.4,
+        2.9
+      ]
+    },
+    {
+      "id": "corridor",
+      "label": "主通道",
+      "zone": "通行区",
+      "rect": [
+        0.4,
+        7.8,
+        19.2,
+        3.8
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "desk-1",
+      "label": "工位 01",
+      "kind": "desk",
+      "rect": [
+        1.2,
+        1.2,
+        1.8,
+        1.1
+      ]
+    },
+    {
+      "id": "desk-2",
+      "label": "工位 02",
+      "kind": "desk",
+      "rect": [
+        4.0,
+        1.2,
+        1.8,
+        1.1
+      ]
+    },
+    {
+      "id": "desk-3",
+      "label": "工位 03",
+      "kind": "desk",
+      "rect": [
+        6.8,
+        1.2,
+        1.8,
+        1.1
+      ]
+    },
+    {
+      "id": "desk-4",
+      "label": "工位 04",
+      "kind": "desk",
+      "rect": [
+        9.6,
+        1.2,
+        1.8,
+        1.1
+      ]
+    },
+    {
+      "id": "desk-5",
+      "label": "工位 05",
+      "kind": "desk",
+      "rect": [
+        1.2,
+        4.0,
+        1.8,
+        1.1
+      ]
+    },
+    {
+      "id": "desk-6",
+      "label": "工位 06",
+      "kind": "desk",
+      "rect": [
+        4.0,
+        4.0,
+        1.8,
+        1.1
+      ]
+    },
+    {
+      "id": "desk-7",
+      "label": "工位 07",
+      "kind": "desk",
+      "rect": [
+        6.8,
+        4.0,
+        1.8,
+        1.1
+      ]
+    },
+    {
+      "id": "desk-8",
+      "label": "工位 08",
+      "kind": "desk",
+      "rect": [
+        9.6,
+        4.0,
+        1.8,
+        1.1
+      ]
+    },
+    {
+      "id": "meeting-table",
+      "label": "8人会议桌",
+      "kind": "meeting-table",
+      "rect": [
+        14.1,
+        1.3,
+        4.5,
+        2.0
+      ]
+    },
+    {
+      "id": "storage",
+      "label": "资料柜",
+      "kind": "storage",
+      "rect": [
+        11.7,
+        1.0,
+        0.8,
+        5.8
+      ]
+    },
+    {
+      "id": "printer",
+      "label": "打印点",
+      "kind": "printer",
+      "rect": [
+        14.0,
+        5.2,
+        1.2,
+        0.8
+      ]
+    },
+    {
+      "id": "pantry",
+      "label": "茶水台",
+      "kind": "pantry",
+      "rect": [
+        16.0,
+        5.0,
+        2.6,
+        1.4
+      ]
+    }
+  ],
+  "clearance_requirement_mm": 915,
+  "requirement_source": "示例参考 US Access Board 36 in；实际项目按属地规范复核",
+  "routes": [
+    {
+      "id": "accessible-main",
+      "label": "连续通行路径",
+      "points": [
+        [
+          0.4,
+          9.5
+        ],
+        [
+          10.0,
+          9.5
+        ],
+        [
+          16.5,
+          9.5
+        ],
+        [
+          16.5,
+          7.8
+        ]
+      ],
+      "clearance_mm": 1500,
+      "accessible": true,
+      "evidence": "模拟尺寸链"
+    },
+    {
+      "id": "desk-aisle",
+      "label": "工位间通道",
+      "points": [
+        [
+          0.8,
+          3.4
+        ],
+        [
+          10.8,
+          3.4
+        ],
+        [
+          10.8,
+          7.8
+        ]
+      ],
+      "clearance_mm": 1200,
+      "accessible": true,
+      "evidence": "模拟尺寸链"
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "catalog_id": "cn-1139",
+  "mode": "biology-diagram",
+  "title": "植物细胞光合作用示意",
+  "subtitle": "细胞结构、物质输入与能量转化分层表达",
+  "template": "science",
+  "sector": "生命科学与教育",
+  "use_case": "细胞、生态和生命过程的通用科普图",
+  "data_status": "simulated",
+  "assumptions": [
+    "内容和数值为教学模拟",
+    "真实交付前须替换名称、事实、品牌、尺寸和审批信息"
+  ],
+  "metrics": [
+    {
+      "id": "structures",
+      "label": "细胞结构",
+      "value": 2,
+      "unit": "层",
+      "evidence": "模拟输入"
+    },
+    {
+      "id": "flows",
+      "label": "物质与能量流",
+      "value": 3,
+      "unit": "条",
+      "evidence": "模拟输入"
+    }
+  ],
+  "concepts": [
+    {
+      "id": "cell",
+      "label": "植物细胞",
+      "kind": "structure",
+      "position": [
+        0.18,
+        0.55
+      ],
+      "source": "基础生物学"
+    },
+    {
+      "id": "chlor",
+      "label": "叶绿体",
+      "kind": "structure",
+      "position": [
+        0.4,
+        0.68
+      ],
+      "source": "基础生物学"
+    },
+    {
+      "id": "light",
+      "label": "光能",
+      "kind": "process",
+      "position": [
+        0.6,
+        0.82
+      ],
+      "source": "基础生物学"
+    },
+    {
+      "id": "co2",
+      "label": "二氧化碳 + 水",
+      "kind": "process",
+      "position": [
+        0.6,
+        0.45
+      ],
+      "source": "基础生物学"
+    },
+    {
+      "id": "sugar",
+      "label": "葡萄糖 + 氧气",
+      "kind": "process",
+      "position": [
+        0.82,
+        0.58
+      ],
+      "source": "基础生物学"
+    }
+  ],
+  "relations": [
+    {
+      "id": "r1",
+      "source": "cell",
+      "target": "chlor",
+      "relation": "contains"
+    },
+    {
+      "id": "r2",
+      "source": "light",
+      "target": "chlor",
+      "relation": "energy-input"
+    },
+    {
+      "id": "r3",
+      "source": "co2",
+      "target": "chlor",
+      "relation": "matter-input"
+    },
+    {
+      "id": "r4",
+      "source": "chlor",
+      "target": "sugar",
+      "relation": "produces"
+    }
+  ],
+  "claim_scope": "中学层级概念示意，不表达完整生化通路"
+}

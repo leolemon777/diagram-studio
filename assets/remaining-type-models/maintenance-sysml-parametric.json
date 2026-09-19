@@ -1,0 +1,101 @@
+{
+  "mode": "sysml-parametric",
+  "title": "SysML v1 参数图 · 泵效率约束",
+  "subtitle": "值属性、约束块、绑定和残差共同保留",
+  "template": "graph",
+  "data_status": "simulated",
+  "assumptions": [
+    "数据为教学模拟，不代表真实项目现状",
+    "真实交付前须替换数值、名称、品牌规范和审批信息"
+  ],
+  "metrics": [
+    {
+      "id": "eta",
+      "label": "计算效率",
+      "value": 88,
+      "unit": "%",
+      "evidence": "示例输入"
+    },
+    {
+      "id": "residual",
+      "label": "约束残差",
+      "value": 0,
+      "unit": "",
+      "evidence": "示例输入"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "pin",
+      "label": "输入功率 50 kW",
+      "kind": "value",
+      "position": [
+        0.15,
+        0.68
+      ],
+      "detail": "Pin"
+    },
+    {
+      "id": "pout",
+      "label": "输出功率 44 kW",
+      "kind": "value",
+      "position": [
+        0.15,
+        0.34
+      ],
+      "detail": "Pout"
+    },
+    {
+      "id": "constraint",
+      "label": "η = Pout / Pin",
+      "kind": "constraint",
+      "position": [
+        0.52,
+        0.52
+      ],
+      "detail": "«constraint»"
+    },
+    {
+      "id": "eta",
+      "label": "效率 η = 0.88",
+      "kind": "value",
+      "position": [
+        0.84,
+        0.52
+      ],
+      "detail": "dimensionless"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "pin",
+      "target": "constraint",
+      "relation": "binding",
+      "label": "Pin"
+    },
+    {
+      "id": "e2",
+      "source": "pout",
+      "target": "constraint",
+      "relation": "binding",
+      "label": "Pout"
+    },
+    {
+      "id": "e3",
+      "source": "constraint",
+      "target": "eta",
+      "relation": "binding",
+      "label": "η"
+    }
+  ],
+  "groups": [],
+  "constraints": [
+    {
+      "id": "c1",
+      "lhs": 0.88,
+      "rhs": 0.88,
+      "tolerance": 1e-12
+    }
+  ]
+}

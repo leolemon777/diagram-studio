@@ -1,0 +1,121 @@
+{
+  "title": "边沿检测 · 一次扫描脉冲",
+  "scope": "按明确毫秒时刻调用 · 功能块状态独立保存",
+  "data_status": "假设教学扫描；不代表实际设备",
+  "semantics": "sequential_timed_scan",
+  "write_policy": "single_writer",
+  "variables": [
+    {
+      "id": "Signal",
+      "label": "采样信号",
+      "role": "input",
+      "source": "假设扫描记录；不是现场I/O地址"
+    },
+    {
+      "id": "Rise",
+      "label": "上升沿脉冲",
+      "role": "output",
+      "source": "假设扫描记录；不是现场I/O地址",
+      "initial": false
+    },
+    {
+      "id": "Fall",
+      "label": "下降沿脉冲",
+      "role": "output",
+      "source": "假设扫描记录；不是现场I/O地址",
+      "initial": false
+    }
+  ],
+  "rungs": [
+    {
+      "id": "R1",
+      "label": "与显式先前输入比较；首次已高是否脉冲由初态决定",
+      "logic": {
+        "id": "R1_contact",
+        "kind": "contact",
+        "var": "Signal",
+        "sense": "true"
+      },
+      "block": {
+        "id": "E1",
+        "type": "R_TRIG",
+        "previous_input": false
+      },
+      "coil": {
+        "id": "R1_coil",
+        "kind": "assign",
+        "var": "Rise"
+      }
+    },
+    {
+      "id": "R2",
+      "label": "下降沿独立状态；本例先前输入也设为0",
+      "logic": {
+        "id": "R2_contact",
+        "kind": "contact",
+        "var": "Signal",
+        "sense": "true"
+      },
+      "block": {
+        "id": "E2",
+        "type": "F_TRIG",
+        "previous_input": false
+      },
+      "coil": {
+        "id": "R2_coil",
+        "kind": "assign",
+        "var": "Fall"
+      }
+    }
+  ],
+  "scans": [
+    {
+      "id": "S1",
+      "label": "首扫已高：相对初态0形成上升沿",
+      "time_ms": 0,
+      "inputs": {
+        "Signal": true
+      }
+    },
+    {
+      "id": "S2",
+      "label": "高保持，无新边沿",
+      "time_ms": 10,
+      "inputs": {
+        "Signal": true
+      }
+    },
+    {
+      "id": "S3",
+      "label": "下降沿",
+      "time_ms": 20,
+      "inputs": {
+        "Signal": false
+      }
+    },
+    {
+      "id": "S4",
+      "label": "低保持，无新边沿",
+      "time_ms": 30,
+      "inputs": {
+        "Signal": false
+      }
+    },
+    {
+      "id": "S5",
+      "label": "再次上升沿",
+      "time_ms": 40,
+      "inputs": {
+        "Signal": true
+      }
+    },
+    {
+      "id": "S6",
+      "label": "高保持，扫描间是否有窄脉冲未知",
+      "time_ms": 80,
+      "inputs": {
+        "Signal": true
+      }
+    }
+  ]
+}

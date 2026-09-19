@@ -1,0 +1,31 @@
+{
+  "type": "tapered",
+  "title": "金字塔结构 · 基础到决策",
+  "diagram_name": "金字塔结构",
+  "family": "关系与结构",
+  "subtitle": "形状表达层级，面积不代表数值比例",
+  "eyebrow": "26 / DIAGRAM LIBRARY",
+  "footer": "原创结构范例 · 数据、实体、尺寸与假说均为演示输入；实际任务按用户资料替换",
+  "assumptions": [
+    "原创演示内容，不代表实际业务、研究结论或工程设计"
+  ],
+  "mode": "pyramid",
+  "items": [
+    {
+      "label": "决策",
+      "detail": "判断与选择"
+    },
+    {
+      "label": "知识",
+      "detail": "经验证的解释"
+    },
+    {
+      "label": "信息",
+      "detail": "有上下文的记录"
+    },
+    {
+      "label": "数据",
+      "detail": "可追溯的原始观察"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "type": "plot",
+  "title": "瀑布图 · 起点、增减与终点",
+  "diagram_name": "瀑布图",
+  "family": "数据图表",
+  "subtitle": "增减从前一累计值起算；总量柱从零起算",
+  "eyebrow": "51 / DIAGRAM LIBRARY",
+  "footer": "原创结构范例 · 数据、实体、尺寸与假说均为演示输入；实际任务按用户资料替换",
+  "assumptions": [
+    "原创演示内容，不代表实际业务、研究结论或工程设计"
+  ],
+  "mode": "waterfall",
+  "data": [
+    {
+      "label": "期初",
+      "value": 80,
+      "total": true
+    },
+    {
+      "label": "新增",
+      "value": 25
+    },
+    {
+      "label": "恢复",
+      "value": 12
+    },
+    {
+      "label": "减少",
+      "value": -18
+    },
+    {
+      "label": "转出",
+      "value": -9
+    },
+    {
+      "label": "期末",
+      "value": 90,
+      "total": true
+    }
+  ]
+}

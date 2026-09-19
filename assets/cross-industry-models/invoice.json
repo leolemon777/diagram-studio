@@ -1,0 +1,117 @@
+{
+  "catalog_id": "cn-1099",
+  "mode": "invoice",
+  "title": "咨询服务发票",
+  "subtitle": "客户、项目、明细、税额与付款信息完整",
+  "template": "publication",
+  "sector": "商业与财务",
+  "use_case": "采购、销售和自由职业中的高频交易单据",
+  "data_status": "simulated",
+  "assumptions": [
+    "内容和数值为教学模拟",
+    "真实交付前须替换名称、事实、品牌、尺寸和审批信息"
+  ],
+  "metrics": [
+    {
+      "id": "items",
+      "label": "明细",
+      "value": 2,
+      "unit": "项",
+      "evidence": "模拟输入",
+      "value_source": "line_items_count"
+    },
+    {
+      "id": "total",
+      "label": "总额",
+      "value": 11024,
+      "unit": "元",
+      "evidence": "模拟输入",
+      "value_source": "financial_total"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "b1",
+      "role": "identity",
+      "label": "发票信息",
+      "content": "编号 INV-2026-0917 · 开票日期 2026-09-17",
+      "rect": [
+        0.05,
+        0.66,
+        0.9,
+        0.25
+      ],
+      "order": 1
+    },
+    {
+      "id": "b2",
+      "role": "parties",
+      "label": "双方信息",
+      "content": "开票方：青谷设计；客户：云桥科技",
+      "rect": [
+        0.05,
+        0.36,
+        0.43,
+        0.23
+      ],
+      "order": 2
+    },
+    {
+      "id": "b3",
+      "role": "items",
+      "label": "服务明细",
+      "content": "",
+      "content_source": "line_items",
+      "rect": [
+        0.52,
+        0.36,
+        0.43,
+        0.23
+      ],
+      "order": 3
+    },
+    {
+      "id": "b4",
+      "role": "total",
+      "label": "应付总额",
+      "content": "",
+      "content_source": "financial_summary",
+      "rect": [
+        0.05,
+        0.08,
+        0.9,
+        0.2
+      ],
+      "order": 4
+    }
+  ],
+  "sheet": {
+    "width": 210,
+    "height": 297,
+    "unit": "mm"
+  },
+  "audience": "企业客户",
+  "primary_action": "核对并付款",
+  "reading_order": [
+    "b1",
+    "b2",
+    "b3",
+    "b4"
+  ],
+  "line_items": [
+    {
+      "id": "i1",
+      "label": "品牌诊断工作坊",
+      "quantity": 1,
+      "unit_price": 6800
+    },
+    {
+      "id": "i2",
+      "label": "信息图设计",
+      "quantity": 3,
+      "unit_price": 1200
+    }
+  ],
+  "tax_rate": 0.06,
+  "declared_total": 11024
+}

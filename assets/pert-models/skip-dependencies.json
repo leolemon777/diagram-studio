@@ -1,0 +1,60 @@
+{
+  "title": "跨层依赖：维修与验收教学网络",
+  "unit": "天",
+  "mode": "deterministic",
+  "assumptions": [
+    "全部为假设工期，用于验证跨层连线；冗余依赖保留以检查绘图忠实性。"
+  ],
+  "tasks": [
+    {
+      "id": "A",
+      "label": "准备",
+      "duration": 2,
+      "predecessors": []
+    },
+    {
+      "id": "B",
+      "label": "机械检修",
+      "duration": 3,
+      "predecessors": [
+        "A"
+      ]
+    },
+    {
+      "id": "C",
+      "label": "电气检修",
+      "duration": 2,
+      "predecessors": [
+        "A"
+      ]
+    },
+    {
+      "id": "D",
+      "label": "联调",
+      "duration": 2,
+      "predecessors": [
+        "B",
+        "C",
+        "A"
+      ]
+    },
+    {
+      "id": "E",
+      "label": "试运行",
+      "duration": 2,
+      "predecessors": [
+        "D",
+        "B"
+      ]
+    },
+    {
+      "id": "F",
+      "label": "验收",
+      "duration": 1,
+      "predecessors": [
+        "E",
+        "A"
+      ]
+    }
+  ]
+}

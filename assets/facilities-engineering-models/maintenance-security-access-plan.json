@@ -1,0 +1,217 @@
+{
+  "mode": "security-access-plan",
+  "title": "设备维护办公室安全与门禁平面图",
+  "subtitle": "授权区域、门状态、读卡器和摄像机示意覆盖分开表达",
+  "data_status": "simulated",
+  "assumptions": [
+    "摄像机扇区只用于布局讨论，不代表像素密度、遮挡、盲区或隐私影响评估"
+  ],
+  "plan": {
+    "width_m": 20,
+    "height_m": 12
+  },
+  "rooms": [
+    {
+      "id": "open-office",
+      "label": "开放办公区",
+      "zone": "员工区",
+      "rect": [
+        0.4,
+        0.4,
+        12.6,
+        7.2
+      ]
+    },
+    {
+      "id": "meeting",
+      "label": "会议室",
+      "zone": "公共区",
+      "rect": [
+        13.2,
+        0.4,
+        6.4,
+        4.1
+      ]
+    },
+    {
+      "id": "support",
+      "label": "设备与茶水区",
+      "zone": "支持区",
+      "rect": [
+        13.2,
+        4.7,
+        6.4,
+        2.9
+      ]
+    },
+    {
+      "id": "corridor",
+      "label": "主通道",
+      "zone": "通行区",
+      "rect": [
+        0.4,
+        7.8,
+        19.2,
+        3.8
+      ]
+    }
+  ],
+  "access_zones": [
+    {
+      "id": "public",
+      "label": "公共区",
+      "authorization": "访客陪同",
+      "rect": [
+        0.4,
+        7.8,
+        19.2,
+        3.8
+      ]
+    },
+    {
+      "id": "staff",
+      "label": "员工区",
+      "authorization": "员工卡",
+      "rect": [
+        0.4,
+        0.4,
+        12.6,
+        7.2
+      ]
+    },
+    {
+      "id": "restricted",
+      "label": "设备区",
+      "authorization": "维护管理员",
+      "rect": [
+        13.2,
+        4.7,
+        6.4,
+        2.9
+      ]
+    }
+  ],
+  "doors": [
+    {
+      "id": "door-main",
+      "label": "主入口",
+      "from_zone": "public",
+      "to_zone": "staff",
+      "position": [
+        6.5,
+        7.8
+      ],
+      "label_at": [
+        5.25,
+        7.15
+      ],
+      "credential_rule": "员工卡 / 访客登记"
+    },
+    {
+      "id": "door-restricted",
+      "label": "设备区门",
+      "from_zone": "public",
+      "to_zone": "restricted",
+      "position": [
+        16.4,
+        7.8
+      ],
+      "label_at": [
+        17.55,
+        7.15
+      ],
+      "credential_rule": "维护管理员双因子"
+    }
+  ],
+  "devices": [
+    {
+      "id": "reader-main",
+      "label": "主入口读卡器",
+      "kind": "reader",
+      "tag": "CR-01",
+      "position": [
+        6.2,
+        8.1
+      ],
+      "label_at": [
+        5.75,
+        8.55
+      ],
+      "evidence": "模拟设备清册"
+    },
+    {
+      "id": "reader-restricted",
+      "label": "设备区读卡器",
+      "kind": "reader",
+      "tag": "CR-02",
+      "position": [
+        16.1,
+        8.1
+      ],
+      "label_at": [
+        15.7,
+        8.55
+      ],
+      "evidence": "模拟设备清册"
+    },
+    {
+      "id": "rex-main",
+      "label": "出门按钮",
+      "kind": "request-to-exit",
+      "tag": "REX-01",
+      "position": [
+        6.8,
+        7.5
+      ],
+      "label_at": [
+        7.5,
+        7.15
+      ],
+      "evidence": "模拟设备清册"
+    },
+    {
+      "id": "contact-main",
+      "label": "门磁",
+      "kind": "door-contact",
+      "tag": "DC-01",
+      "position": [
+        6.5,
+        7.6
+      ],
+      "label_at": [
+        6.5,
+        6.8
+      ],
+      "evidence": "模拟设备清册"
+    },
+    {
+      "id": "camera-west",
+      "label": "西侧摄像机",
+      "kind": "camera",
+      "tag": "CAM-01",
+      "position": [
+        1.0,
+        10.8
+      ],
+      "bearing_deg": 330,
+      "fov_deg": 70,
+      "range_m": 5.5,
+      "evidence": "模拟设备清册"
+    },
+    {
+      "id": "camera-east",
+      "label": "东侧摄像机",
+      "kind": "camera",
+      "tag": "CAM-02",
+      "position": [
+        19.0,
+        10.8
+      ],
+      "bearing_deg": 210,
+      "fov_deg": 70,
+      "range_m": 5.5,
+      "evidence": "模拟设备清册"
+    }
+  ],
+  "coverage_claim": "illustrative-only"
+}

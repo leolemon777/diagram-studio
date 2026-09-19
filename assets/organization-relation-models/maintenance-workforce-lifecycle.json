@@ -1,0 +1,35 @@
+{
+  "id": "maintenance-workforce-lifecycle",
+  "mode": "hr-lifecycle",
+  "title": "维修组织与人才生命周期",
+  "subtitle": "组织人数、岗位构成、流程责任和指标分层呈现",
+  "data_status": "simulated",
+  "units": [
+    {"id": "mechanical", "label": "机械维修", "leader": "机械主管", "headcount": 12},
+    {"id": "ei", "label": "电气仪表", "leader": "电仪主管", "headcount": 10},
+    {"id": "planning", "label": "计划可靠性", "leader": "可靠性经理", "headcount": 6}
+  ],
+  "roles": [
+    {"id": "mech-tech", "label": "机械技师", "unit_id": "mechanical", "count": 9},
+    {"id": "mech-lead", "label": "班组长", "unit_id": "mechanical", "count": 3},
+    {"id": "elec-tech", "label": "电气技师", "unit_id": "ei", "count": 6},
+    {"id": "inst-tech", "label": "仪表技师", "unit_id": "ei", "count": 4},
+    {"id": "planner", "label": "检修策划", "unit_id": "planning", "count": 3},
+    {"id": "reliability", "label": "可靠性工程师", "unit_id": "planning", "count": 3}
+  ],
+  "stages": [
+    {"id": "attract", "label": "需求与招聘", "owner": "HRBP", "order": 1},
+    {"id": "onboard", "label": "入职与资质", "owner": "培训专员", "order": 2},
+    {"id": "develop", "label": "技能发展", "owner": "专业主管", "order": 3},
+    {"id": "deploy", "label": "岗位配置", "owner": "维修经理", "order": 4},
+    {"id": "retain", "label": "保留与复盘", "owner": "HRBP", "order": 5}
+  ],
+  "metrics": [
+    {"id": "m1", "label": "关键岗到岗周期", "stage_id": "attract", "value": 42, "unit": "天"},
+    {"id": "m2", "label": "资质一次通过率", "stage_id": "onboard", "value": 88, "unit": "%"},
+    {"id": "m3", "label": "技能矩阵覆盖", "stage_id": "develop", "value": 79, "unit": "%"},
+    {"id": "m4", "label": "关键岗缺口", "stage_id": "deploy", "value": 3, "unit": "人"},
+    {"id": "m5", "label": "年度保留率", "stage_id": "retain", "value": 91, "unit": "%"}
+  ],
+  "assumptions": ["人数和指标均为模拟", "图中流程不替代劳动、人事或资质制度"]
+}

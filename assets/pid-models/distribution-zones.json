@@ -1,0 +1,255 @@
+{
+  "schema": "pid-topology-1",
+  "title": "供水母管与分区阀：配送 P&ID 教学拓扑",
+  "assumptions": [
+    "模拟供水槽经泵和母管分配至两个区域；连接存在不代表支路阀门开启。",
+    "不编造管径、标高、压力等级、泵曲线、水力平衡或终端需求。",
+    "独立教学符号未验证为完整 ISA 5.1 符号集，也不是 DEXPI 交换文件。"
+  ],
+  "items": [
+    {
+      "id": "tank",
+      "tag": "TK-801",
+      "kind": "tank",
+      "label": "供水槽",
+      "ports": [
+        {
+          "id": "tank_out",
+          "domain": "process",
+          "direction": "out"
+        }
+      ]
+    },
+    {
+      "id": "pump",
+      "tag": "P-801",
+      "kind": "pump",
+      "label": "配送泵",
+      "ports": [
+        {
+          "id": "pump_in",
+          "domain": "process",
+          "direction": "in"
+        },
+        {
+          "id": "pump_out",
+          "domain": "process",
+          "direction": "out"
+        }
+      ]
+    },
+    {
+      "id": "tap",
+      "tag": "J-800",
+      "kind": "junction",
+      "label": "母管测压点",
+      "ports": [
+        {
+          "id": "tap_in",
+          "domain": "process",
+          "direction": "in"
+        },
+        {
+          "id": "tap_out",
+          "domain": "process",
+          "direction": "out"
+        },
+        {
+          "id": "tap_sense",
+          "domain": "process",
+          "direction": "bidirectional"
+        }
+      ]
+    },
+    {
+      "id": "header",
+      "tag": "J-801",
+      "kind": "junction",
+      "label": "配送分支点",
+      "ports": [
+        {
+          "id": "header_in",
+          "domain": "process",
+          "direction": "in"
+        },
+        {
+          "id": "header_a",
+          "domain": "process",
+          "direction": "out"
+        },
+        {
+          "id": "header_b",
+          "domain": "process",
+          "direction": "out"
+        }
+      ]
+    },
+    {
+      "id": "valve_a",
+      "tag": "HV-801",
+      "kind": "valve",
+      "label": "A区分区阀",
+      "ports": [
+        {
+          "id": "valve_a_in",
+          "domain": "process",
+          "direction": "in"
+        },
+        {
+          "id": "valve_a_out",
+          "domain": "process",
+          "direction": "out"
+        }
+      ]
+    },
+    {
+      "id": "zone_a",
+      "tag": "B-801",
+      "kind": "boundary",
+      "label": "A区终端边界",
+      "ports": [
+        {
+          "id": "zone_a_in",
+          "domain": "process",
+          "direction": "in"
+        }
+      ]
+    },
+    {
+      "id": "valve_b",
+      "tag": "HV-802",
+      "kind": "valve",
+      "label": "B区分区阀",
+      "ports": [
+        {
+          "id": "valve_b_in",
+          "domain": "process",
+          "direction": "in"
+        },
+        {
+          "id": "valve_b_out",
+          "domain": "process",
+          "direction": "out"
+        }
+      ]
+    },
+    {
+      "id": "zone_b",
+      "tag": "B-802",
+      "kind": "boundary",
+      "label": "B区终端边界",
+      "ports": [
+        {
+          "id": "zone_b_in",
+          "domain": "process",
+          "direction": "in"
+        }
+      ]
+    },
+    {
+      "id": "pt",
+      "tag": "PT-801",
+      "kind": "instrument",
+      "label": "母管压力变送器",
+      "ports": [
+        {
+          "id": "pt_process",
+          "domain": "process",
+          "direction": "bidirectional"
+        },
+        {
+          "id": "pt_signal",
+          "domain": "signal",
+          "direction": "out"
+        }
+      ]
+    },
+    {
+      "id": "pi",
+      "tag": "PI-801",
+      "kind": "instrument",
+      "label": "母管压力显示",
+      "ports": [
+        {
+          "id": "pi_signal",
+          "domain": "signal",
+          "direction": "in"
+        }
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "C1",
+      "from": "tank_out",
+      "to": "pump_in",
+      "domain": "process",
+      "label": "泵吸入",
+      "flow": "forward"
+    },
+    {
+      "id": "C2",
+      "from": "pump_out",
+      "to": "tap_in",
+      "domain": "process",
+      "label": "配送母管入口",
+      "flow": "forward"
+    },
+    {
+      "id": "C3",
+      "from": "tap_out",
+      "to": "header_in",
+      "domain": "process",
+      "label": "母管至分支点",
+      "flow": "forward"
+    },
+    {
+      "id": "C4",
+      "from": "header_a",
+      "to": "valve_a_in",
+      "domain": "process",
+      "label": "A区支路",
+      "flow": "forward"
+    },
+    {
+      "id": "C5",
+      "from": "valve_a_out",
+      "to": "zone_a_in",
+      "domain": "process",
+      "label": "A区供水",
+      "flow": "forward"
+    },
+    {
+      "id": "C6",
+      "from": "header_b",
+      "to": "valve_b_in",
+      "domain": "process",
+      "label": "B区支路",
+      "flow": "forward"
+    },
+    {
+      "id": "C7",
+      "from": "valve_b_out",
+      "to": "zone_b_in",
+      "domain": "process",
+      "label": "B区供水",
+      "flow": "forward"
+    },
+    {
+      "id": "C8",
+      "from": "tap_sense",
+      "to": "pt_process",
+      "domain": "process",
+      "label": "母管测压连接",
+      "flow": "unknown"
+    },
+    {
+      "id": "C9",
+      "from": "pt_signal",
+      "to": "pi_signal",
+      "domain": "signal",
+      "label": "压力测量信号",
+      "flow": "forward"
+    }
+  ]
+}

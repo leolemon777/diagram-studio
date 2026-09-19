@@ -1,0 +1,64 @@
+{
+  "form": "workflow",
+  "title": "异常处置闭环",
+  "deck": "发现只是开始，复核才是结束。",
+  "eyebrow": "OPERATIONS / RESPONSE FLOW",
+  "kicker": "5 步 / 1 条返工路径",
+  "summary": "每次异常都留下处置与复核记录。",
+  "notes": [
+    "发现后记录现象与时间",
+    "措施对应到具体责任人",
+    "验证未通过则返回处置"
+  ],
+  "footer": "示例流程 · 验证通过后归档；未通过返回处理，不代表生产安全联锁逻辑。",
+  "nodes": [
+    {
+      "id": "detect",
+      "label": "发现异常",
+      "detail": "现场操作员"
+    },
+    {
+      "id": "record",
+      "label": "记录判定",
+      "detail": "班组长"
+    },
+    {
+      "id": "act",
+      "label": "实施处置",
+      "detail": "责任工程师"
+    },
+    {
+      "id": "verify",
+      "label": "验证通过？",
+      "detail": "班组复核",
+      "kind": "diamond"
+    },
+    {
+      "id": "close",
+      "label": "关闭归档",
+      "detail": "记录措施与结果"
+    }
+  ],
+  "edges": [
+    [
+      "detect",
+      "record"
+    ],
+    [
+      "record",
+      "act"
+    ],
+    [
+      "act",
+      "verify"
+    ],
+    [
+      "verify",
+      "close"
+    ]
+  ],
+  "feedback": [
+    "verify",
+    "act"
+  ]
+}

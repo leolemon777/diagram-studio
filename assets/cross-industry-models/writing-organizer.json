@@ -1,0 +1,99 @@
+{
+  "catalog_id": "ext-writing-organizer",
+  "mode": "writing-organizer",
+  "title": "议论文写作组织图",
+  "subtitle": "学习任务、提示语和完成标准同图表达",
+  "template": "organizer",
+  "sector": "教育与内容创作",
+  "use_case": "议论、说明和叙事写作的高频脚手架",
+  "data_status": "simulated",
+  "assumptions": [
+    "内容和数值为教学模拟",
+    "真实交付前须替换名称、事实、品牌、尺寸和审批信息"
+  ],
+  "metrics": [
+    {
+      "id": "slots",
+      "label": "填写区",
+      "value": 4,
+      "unit": "个",
+      "evidence": "模拟输入"
+    },
+    {
+      "id": "links",
+      "label": "逻辑关系",
+      "value": 3,
+      "unit": "条",
+      "evidence": "模拟输入"
+    }
+  ],
+  "slots": [
+    {
+      "id": "s1",
+      "label": "中心论点",
+      "prompt": "填写可验证的内容",
+      "rect": [
+        0.05,
+        0.66,
+        0.9,
+        0.25
+      ]
+    },
+    {
+      "id": "s2",
+      "label": "论据 1",
+      "prompt": "填写可验证的内容",
+      "rect": [
+        0.05,
+        0.36,
+        0.43,
+        0.23
+      ]
+    },
+    {
+      "id": "s3",
+      "label": "论据 2",
+      "prompt": "填写可验证的内容",
+      "rect": [
+        0.52,
+        0.36,
+        0.43,
+        0.23
+      ]
+    },
+    {
+      "id": "s4",
+      "label": "回应反方",
+      "prompt": "填写可验证的内容",
+      "rect": [
+        0.05,
+        0.08,
+        0.9,
+        0.2
+      ]
+    }
+  ],
+  "links": [
+    {
+      "id": "l1",
+      "source": "s1",
+      "target": "s2",
+      "relation": "supports"
+    },
+    {
+      "id": "l2",
+      "source": "s2",
+      "target": "s3",
+      "relation": "develops"
+    },
+    {
+      "id": "l3",
+      "source": "s3",
+      "target": "s4",
+      "relation": "concludes"
+    }
+  ],
+  "learning_goal": "从论点、论据到回应反方观点",
+  "completion_rule": "每项论据都回扣中心论点",
+  "recommended_variants": []
+}

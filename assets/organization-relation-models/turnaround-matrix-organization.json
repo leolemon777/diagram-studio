@@ -1,0 +1,26 @@
+{
+  "id": "turnaround-matrix-organization",
+  "mode": "matrix-org",
+  "title": "年度大修矩阵组织图",
+  "subtitle": "职能归属与项目分派分线表达，成员同时保留两类汇报关系",
+  "data_status": "simulated",
+  "departments": [
+    {"id": "mechanical", "label": "机械维修部", "manager": "陈主管"},
+    {"id": "ei", "label": "电气仪表部", "manager": "刘主管"},
+    {"id": "reliability", "label": "可靠性与计划", "manager": "周经理"}
+  ],
+  "projects": [
+    {"id": "p1", "label": "压缩机大修", "manager": "王项目经理", "objective": "按期恢复设计能力"},
+    {"id": "p2", "label": "循环水改造", "manager": "赵项目经理", "objective": "降低故障与能耗"},
+    {"id": "p3", "label": "配电年检", "manager": "孙项目经理", "objective": "完成缺陷闭环"}
+  ],
+  "members": [
+    {"id": "m1", "label": "何工", "role": "机械技术", "department_id": "mechanical", "project_ids": ["p1", "p2"]},
+    {"id": "m2", "label": "林师傅", "role": "钳工班长", "department_id": "mechanical", "project_ids": ["p1"]},
+    {"id": "m3", "label": "吴工", "role": "电气技术", "department_id": "ei", "project_ids": ["p2", "p3"]},
+    {"id": "m4", "label": "秦工", "role": "仪表技术", "department_id": "ei", "project_ids": ["p1", "p2"]},
+    {"id": "m5", "label": "郑工", "role": "检修策划", "department_id": "reliability", "project_ids": ["p1", "p3"]},
+    {"id": "m6", "label": "马工", "role": "可靠性分析", "department_id": "reliability", "project_ids": ["p2"]}
+  ],
+  "assumptions": ["组织、姓名和项目均为模拟", "矩阵图说明汇报接口，不自动赋予审批权限"]
+}

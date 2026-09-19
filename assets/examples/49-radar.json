@@ -1,0 +1,36 @@
+{
+  "type": "plot",
+  "title": "雷达结构 · 同量程多维比较",
+  "diagram_name": "雷达结构",
+  "family": "数据图表",
+  "subtitle": "各轴共享 0–100 量程；维度与评分均为演示",
+  "eyebrow": "49 / DIAGRAM LIBRARY",
+  "footer": "原创结构范例 · 数据、实体、尺寸与假说均为演示输入；实际任务按用户资料替换",
+  "assumptions": [
+    "原创演示内容，不代表实际业务、研究结论或工程设计"
+  ],
+  "mode": "radar",
+  "maximum": 100,
+  "data": [
+    {
+      "label": "完整性",
+      "value": 85
+    },
+    {
+      "label": "一致性",
+      "value": 72
+    },
+    {
+      "label": "可追溯",
+      "value": 88
+    },
+    {
+      "label": "时效性",
+      "value": 64
+    },
+    {
+      "label": "可理解",
+      "value": 79
+    }
+  ]
+}

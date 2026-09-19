@@ -1,0 +1,36 @@
+{
+  "type": "plot",
+  "title": "目标条图 · 实绩与目标",
+  "diagram_name": "目标条图",
+  "family": "数据图表",
+  "subtitle": "条长表示实绩，竖线表示目标；所有行共享量程",
+  "eyebrow": "56 / DIAGRAM LIBRARY",
+  "footer": "原创结构范例 · 数据、实体、尺寸与假说均为演示输入；实际任务按用户资料替换",
+  "assumptions": [
+    "原创演示内容，不代表实际业务、研究结论或工程设计"
+  ],
+  "mode": "bullet",
+  "maximum": 100,
+  "data": [
+    {
+      "label": "资料完整度",
+      "value": 76,
+      "target": 90
+    },
+    {
+      "label": "记录及时度",
+      "value": 88,
+      "target": 85
+    },
+    {
+      "label": "任务完成度",
+      "value": 64,
+      "target": 80
+    },
+    {
+      "label": "问题闭环度",
+      "value": 81,
+      "target": 90
+    }
+  ]
+}

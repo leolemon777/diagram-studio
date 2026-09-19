@@ -1,0 +1,80 @@
+{
+  "schema": "pid-topology-1",
+  "title": "管线与信号交叉：跨越而不连通",
+  "assumptions": [
+    "假设教学连接；信号来源的测量过程不在本图范围。",
+    "断口仅表达视觉跨越，底层连接连续。"
+  ],
+  "items": [
+    {
+      "id": "a",
+      "tag": "B-201",
+      "kind": "boundary",
+      "label": "管路入口",
+      "ports": [
+        {
+          "id": "a_port",
+          "domain": "process",
+          "direction": "out"
+        }
+      ]
+    },
+    {
+      "id": "b",
+      "tag": "B-202",
+      "kind": "boundary",
+      "label": "管路出口",
+      "ports": [
+        {
+          "id": "b_port",
+          "domain": "process",
+          "direction": "in"
+        }
+      ]
+    },
+    {
+      "id": "t",
+      "tag": "PT-201",
+      "kind": "instrument",
+      "label": "信号来源",
+      "ports": [
+        {
+          "id": "t_port",
+          "domain": "signal",
+          "direction": "out"
+        }
+      ]
+    },
+    {
+      "id": "r",
+      "tag": "B-203",
+      "kind": "boundary",
+      "label": "信号去向",
+      "ports": [
+        {
+          "id": "r_port",
+          "domain": "signal",
+          "direction": "in"
+        }
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "H",
+      "from": "a_port",
+      "to": "b_port",
+      "domain": "process",
+      "label": "过程连接",
+      "flow": "forward"
+    },
+    {
+      "id": "V",
+      "from": "t_port",
+      "to": "r_port",
+      "domain": "signal",
+      "label": "独立信号",
+      "flow": "forward"
+    }
+  ]
+}

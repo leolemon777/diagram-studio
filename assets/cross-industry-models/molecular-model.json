@@ -1,0 +1,109 @@
+{
+  "catalog_id": "cn-1144",
+  "mode": "molecular-model",
+  "title": "咖啡因二维分子结构示意",
+  "subtitle": "原子、键与官能团按二维教学模型表达",
+  "template": "science",
+  "sector": "科学与医药",
+  "use_case": "化学、制药和科普中的高频结构表达",
+  "data_status": "simulated",
+  "assumptions": [
+    "内容和数值为教学模拟",
+    "真实交付前须替换名称、事实、品牌、尺寸和审批信息"
+  ],
+  "metrics": [
+    {
+      "id": "atoms",
+      "label": "原子总数",
+      "value": 24,
+      "unit": "个",
+      "evidence": "模拟输入"
+    },
+    {
+      "id": "rings",
+      "label": "环",
+      "value": 2,
+      "unit": "个",
+      "evidence": "模拟输入"
+    }
+  ],
+  "concepts": [
+    {
+      "id": "c1",
+      "label": "C8H10N4O2",
+      "kind": "atom",
+      "position": [
+        0.18,
+        0.62
+      ],
+      "source": "PubChem 公开结构条目"
+    },
+    {
+      "id": "c2",
+      "label": "含氮杂环",
+      "kind": "atom",
+      "position": [
+        0.42,
+        0.72
+      ],
+      "source": "二维骨架示意"
+    },
+    {
+      "id": "c3",
+      "label": "羰基 ×2",
+      "kind": "atom",
+      "position": [
+        0.66,
+        0.65
+      ],
+      "source": "二维骨架示意"
+    },
+    {
+      "id": "c4",
+      "label": "共价键网络",
+      "kind": "bond",
+      "position": [
+        0.45,
+        0.34
+      ],
+      "source": "键连接关系"
+    },
+    {
+      "id": "c5",
+      "label": "甲基 ×3",
+      "kind": "atom",
+      "position": [
+        0.74,
+        0.3
+      ],
+      "source": "二维骨架示意"
+    }
+  ],
+  "relations": [
+    {
+      "id": "r1",
+      "source": "c1",
+      "target": "c2",
+      "relation": "contains"
+    },
+    {
+      "id": "r2",
+      "source": "c2",
+      "target": "c3",
+      "relation": "bonded"
+    },
+    {
+      "id": "r3",
+      "source": "c2",
+      "target": "c4",
+      "relation": "represented-by"
+    },
+    {
+      "id": "r4",
+      "source": "c4",
+      "target": "c5",
+      "relation": "connects"
+    }
+  ],
+  "claim_scope": "二维教学示意，不用于空间构象或药理结论"
+}

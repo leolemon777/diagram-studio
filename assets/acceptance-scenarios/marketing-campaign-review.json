@@ -1,0 +1,16 @@
+{
+  "type": "chart",
+  "mode": "bar",
+  "title": "秋季活动报名渠道复盘",
+  "subtitle": "模拟数据 · 同一统计周期内各渠道完成报名人数",
+  "eyebrow": "ACCEPTANCE / 营销电商",
+  "footer": "模拟数据 · 仅用于展示渠道比较口径，不代表投放结论",
+  "unit": "人",
+  "assumptions": ["数据为验收用模拟数据，统计口径为完成报名"],
+  "data": [
+    {"label":"自然搜索","value":186},
+    {"label":"社群转介绍","value":142},
+    {"label":"直播公开课","value":265},
+    {"label":"合作伙伴","value":98}
+  ]
+}

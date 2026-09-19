@@ -1,0 +1,135 @@
+{
+  "title": "接通延时 TON · 计时起点与中断复位",
+  "scope": "按明确毫秒时刻调用 · 功能块状态独立保存",
+  "data_status": "假设教学扫描；不代表实际设备",
+  "semantics": "sequential_timed_scan",
+  "write_policy": "single_writer",
+  "variables": [
+    {
+      "id": "Request",
+      "label": "持续请求",
+      "role": "input",
+      "source": "假设扫描记录；不是现场I/O地址"
+    },
+    {
+      "id": "Done",
+      "label": "延时到达",
+      "role": "output",
+      "source": "假设扫描记录；不是现场I/O地址",
+      "initial": false
+    }
+  ],
+  "rungs": [
+    {
+      "id": "R1",
+      "label": "请求连续为真满500ms，Q才为真；请求假时清零",
+      "logic": {
+        "id": "R1_contact",
+        "kind": "contact",
+        "var": "Request",
+        "sense": "true"
+      },
+      "block": {
+        "id": "T1",
+        "type": "TON",
+        "pt_ms": 500,
+        "initial": "reset"
+      },
+      "coil": {
+        "id": "R1_coil",
+        "kind": "assign",
+        "var": "Done"
+      }
+    }
+  ],
+  "scans": [
+    {
+      "id": "S1",
+      "label": "待机",
+      "time_ms": 0,
+      "inputs": {
+        "Request": false
+      }
+    },
+    {
+      "id": "S2",
+      "label": "上升沿，ET从0开始",
+      "time_ms": 50,
+      "inputs": {
+        "Request": true
+      }
+    },
+    {
+      "id": "S3",
+      "label": "50ms未到",
+      "time_ms": 100,
+      "inputs": {
+        "Request": true
+      }
+    },
+    {
+      "id": "S4",
+      "label": "499ms未到",
+      "time_ms": 549,
+      "inputs": {
+        "Request": true
+      }
+    },
+    {
+      "id": "S5",
+      "label": "刚好500ms",
+      "time_ms": 550,
+      "inputs": {
+        "Request": true
+      }
+    },
+    {
+      "id": "S6",
+      "label": "继续保持，ET封顶",
+      "time_ms": 560,
+      "inputs": {
+        "Request": true
+      }
+    },
+    {
+      "id": "S7",
+      "label": "请求假，立即清零",
+      "time_ms": 575,
+      "inputs": {
+        "Request": false
+      }
+    },
+    {
+      "id": "S8",
+      "label": "重新计时",
+      "time_ms": 600,
+      "inputs": {
+        "Request": true
+      }
+    },
+    {
+      "id": "S9",
+      "label": "未满即中断",
+      "time_ms": 800,
+      "inputs": {
+        "Request": false
+      }
+    },
+    {
+      "id": "S10",
+      "label": "第三次重新计时",
+      "time_ms": 900,
+      "inputs": {
+        "Request": true
+      }
+    },
+    {
+      "id": "S11",
+      "label": "本次满500ms",
+      "time_ms": 1400,
+      "inputs": {
+        "Request": true
+      }
+    }
+  ]
+}

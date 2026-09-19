@@ -1,0 +1,62 @@
+{
+  "type": "tree",
+  "direction": "down",
+  "title": "运维团队 · 职责结构",
+  "subtitle": "实线表示行政汇报；岗位职责独立于姓名",
+  "eyebrow": "03 / ORGANIZATION",
+  "root": {
+    "id": "lead",
+    "label": "运维负责人",
+    "detail": "统筹资源与改善",
+    "children": [
+      {
+        "id": "ops",
+        "label": "运行保障",
+        "detail": "巡检与异常响应",
+        "children": [
+          {
+            "id": "inspect",
+            "label": "现场巡检"
+          },
+          {
+            "id": "response",
+            "label": "故障响应"
+          }
+        ]
+      },
+      {
+        "id": "tech",
+        "label": "技术支持",
+        "detail": "可靠性与标准",
+        "children": [
+          {
+            "id": "reliability",
+            "label": "可靠性分析"
+          },
+          {
+            "id": "standard",
+            "label": "作业标准"
+          }
+        ]
+      },
+      {
+        "id": "plan",
+        "label": "计划协调",
+        "detail": "计划与资料",
+        "children": [
+          {
+            "id": "schedule",
+            "label": "维护计划"
+          },
+          {
+            "id": "docs",
+            "label": "资料管理"
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "原创组织示例 · 所有岗位均为虚构演示，不代表实际组织编制",
+  "family": "关系与结构",
+  "diagram_name": "组织结构"
+}

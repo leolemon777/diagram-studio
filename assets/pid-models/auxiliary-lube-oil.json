@@ -1,0 +1,177 @@
+{
+  "schema": "pid-topology-1",
+  "title": "润滑油供给与压力测量：辅机系统 P&ID 教学拓扑",
+  "assumptions": [
+    "模拟油箱至设备轴承边界的单泵润滑支路；未表示备用泵、冷却器或过滤器配置。",
+    "不编造油品、压力设定、低压联锁、启停逻辑或设备许可条件。",
+    "独立教学符号未验证为完整 ISA 5.1 符号集，也不是 DEXPI 交换文件。"
+  ],
+  "items": [
+    {
+      "id": "reservoir",
+      "tag": "TK-701",
+      "kind": "tank",
+      "label": "润滑油箱",
+      "ports": [
+        {
+          "id": "reservoir_out",
+          "domain": "process",
+          "direction": "out"
+        }
+      ]
+    },
+    {
+      "id": "pump",
+      "tag": "P-701",
+      "kind": "pump",
+      "label": "润滑油泵",
+      "ports": [
+        {
+          "id": "pump_in",
+          "domain": "process",
+          "direction": "in"
+        },
+        {
+          "id": "pump_out",
+          "domain": "process",
+          "direction": "out"
+        }
+      ]
+    },
+    {
+      "id": "tap",
+      "tag": "J-701",
+      "kind": "junction",
+      "label": "泵后测压点",
+      "ports": [
+        {
+          "id": "tap_in",
+          "domain": "process",
+          "direction": "in"
+        },
+        {
+          "id": "tap_out",
+          "domain": "process",
+          "direction": "out"
+        },
+        {
+          "id": "tap_sense",
+          "domain": "process",
+          "direction": "bidirectional"
+        }
+      ]
+    },
+    {
+      "id": "isolation",
+      "tag": "HV-701",
+      "kind": "valve",
+      "label": "设备入口隔离阀",
+      "ports": [
+        {
+          "id": "isolation_in",
+          "domain": "process",
+          "direction": "in"
+        },
+        {
+          "id": "isolation_out",
+          "domain": "process",
+          "direction": "out"
+        }
+      ]
+    },
+    {
+      "id": "bearing",
+      "tag": "B-701",
+      "kind": "boundary",
+      "label": "轴承供油边界",
+      "ports": [
+        {
+          "id": "bearing_in",
+          "domain": "process",
+          "direction": "in"
+        }
+      ]
+    },
+    {
+      "id": "pt",
+      "tag": "PT-701",
+      "kind": "instrument",
+      "label": "油压变送器",
+      "ports": [
+        {
+          "id": "pt_process",
+          "domain": "process",
+          "direction": "bidirectional"
+        },
+        {
+          "id": "pt_signal",
+          "domain": "signal",
+          "direction": "out"
+        }
+      ]
+    },
+    {
+      "id": "pi",
+      "tag": "PI-701",
+      "kind": "instrument",
+      "label": "油压显示",
+      "ports": [
+        {
+          "id": "pi_signal",
+          "domain": "signal",
+          "direction": "in"
+        }
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "C1",
+      "from": "reservoir_out",
+      "to": "pump_in",
+      "domain": "process",
+      "label": "泵吸入",
+      "flow": "forward"
+    },
+    {
+      "id": "C2",
+      "from": "pump_out",
+      "to": "tap_in",
+      "domain": "process",
+      "label": "泵出口",
+      "flow": "forward"
+    },
+    {
+      "id": "C3",
+      "from": "tap_out",
+      "to": "isolation_in",
+      "domain": "process",
+      "label": "润滑油供给",
+      "flow": "forward"
+    },
+    {
+      "id": "C4",
+      "from": "isolation_out",
+      "to": "bearing_in",
+      "domain": "process",
+      "label": "至设备轴承",
+      "flow": "forward"
+    },
+    {
+      "id": "C5",
+      "from": "tap_sense",
+      "to": "pt_process",
+      "domain": "process",
+      "label": "油压测量连接",
+      "flow": "unknown"
+    },
+    {
+      "id": "C6",
+      "from": "pt_signal",
+      "to": "pi_signal",
+      "domain": "signal",
+      "label": "油压测量信号",
+      "flow": "forward"
+    }
+  ]
+}

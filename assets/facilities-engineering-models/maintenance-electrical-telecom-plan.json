@@ -1,0 +1,327 @@
+{
+  "mode": "electrical-telecom-plan",
+  "title": "设备维护办公室电气与通信规划",
+  "subtitle": "电力和通信线路分层，终端编号关联回路或端口",
+  "data_status": "simulated",
+  "assumptions": [
+    "模拟线路与容量；不作为施工图、短路计算、选择性配合或综合布线认证依据"
+  ],
+  "plan": {
+    "width_m": 20,
+    "height_m": 12
+  },
+  "rooms": [
+    {
+      "id": "open-office",
+      "label": "开放办公区",
+      "zone": "员工区",
+      "rect": [
+        0.4,
+        0.4,
+        12.6,
+        7.2
+      ]
+    },
+    {
+      "id": "meeting",
+      "label": "会议室",
+      "zone": "公共区",
+      "rect": [
+        13.2,
+        0.4,
+        6.4,
+        4.1
+      ]
+    },
+    {
+      "id": "support",
+      "label": "设备与茶水区",
+      "zone": "支持区",
+      "rect": [
+        13.2,
+        4.7,
+        6.4,
+        2.9
+      ]
+    },
+    {
+      "id": "corridor",
+      "label": "主通道",
+      "zone": "通行区",
+      "rect": [
+        0.4,
+        7.8,
+        19.2,
+        3.8
+      ]
+    }
+  ],
+  "equipment": [
+    {
+      "id": "panel",
+      "label": "照明插座配电箱",
+      "system": "power",
+      "tag": "PDB-L1",
+      "rating": "125 A",
+      "position": [
+        18.7,
+        6.8
+      ]
+    },
+    {
+      "id": "rack",
+      "label": "通信机柜",
+      "system": "data",
+      "tag": "TR-01",
+      "rating": "24U",
+      "position": [
+        16.8,
+        6.8
+      ]
+    }
+  ],
+  "endpoints": [
+    {
+      "id": "socket-a",
+      "label": "办公插座组 A",
+      "system": "power",
+      "tag": "P-01",
+      "circuit_or_port": "L1-C01",
+      "position": [
+        3.0,
+        2.7
+      ]
+    },
+    {
+      "id": "socket-b",
+      "label": "办公插座组 B",
+      "system": "power",
+      "tag": "P-02",
+      "circuit_or_port": "L1-C02",
+      "position": [
+        8.5,
+        5.5
+      ]
+    },
+    {
+      "id": "light-a",
+      "label": "照明回路 A",
+      "system": "power",
+      "tag": "L-01",
+      "circuit_or_port": "L1-C03",
+      "position": [
+        5.5,
+        6.8
+      ]
+    },
+    {
+      "id": "data-a",
+      "label": "信息点 A",
+      "system": "data",
+      "tag": "D-01",
+      "circuit_or_port": "PP1-01",
+      "position": [
+        3.0,
+        2.2
+      ]
+    },
+    {
+      "id": "data-b",
+      "label": "信息点 B",
+      "system": "data",
+      "tag": "D-02",
+      "circuit_or_port": "PP1-02",
+      "position": [
+        8.5,
+        5.0
+      ]
+    },
+    {
+      "id": "ap",
+      "label": "无线接入点",
+      "system": "data",
+      "tag": "AP-01",
+      "circuit_or_port": "SW1-24",
+      "position": [
+        10.0,
+        9.8
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "id": "power-a",
+      "label": "插座回路 L1-C01",
+      "system": "power",
+      "source": "panel",
+      "target": "socket-a",
+      "points": [
+        [
+          18.7,
+          6.8
+        ],
+        [
+          12.7,
+          6.8
+        ],
+        [
+          12.7,
+          2.7
+        ],
+        [
+          3.0,
+          2.7
+        ]
+      ],
+      "label_at": [
+        7.2,
+        2.85
+      ],
+      "cable_spec": "3×2.5 mm²（模拟）",
+      "evidence": "模拟回路表"
+    },
+    {
+      "id": "power-b",
+      "label": "插座回路 L1-C02",
+      "system": "power",
+      "source": "panel",
+      "target": "socket-b",
+      "points": [
+        [
+          18.7,
+          6.8
+        ],
+        [
+          12.2,
+          6.8
+        ],
+        [
+          12.2,
+          5.5
+        ],
+        [
+          8.5,
+          5.5
+        ]
+      ],
+      "label_at": [
+        9.7,
+        5.75
+      ],
+      "cable_spec": "3×2.5 mm²（模拟）",
+      "evidence": "模拟回路表"
+    },
+    {
+      "id": "power-l",
+      "label": "照明回路 L1-C03",
+      "system": "power",
+      "source": "panel",
+      "target": "light-a",
+      "points": [
+        [
+          18.7,
+          6.8
+        ],
+        [
+          5.5,
+          6.8
+        ]
+      ],
+      "label_at": [
+        6.0,
+        7.0
+      ],
+      "cable_spec": "3×1.5 mm²（模拟）",
+      "evidence": "模拟回路表"
+    },
+    {
+      "id": "data-a-route",
+      "label": "数据链路 PP1-01",
+      "system": "data",
+      "source": "rack",
+      "target": "data-a",
+      "points": [
+        [
+          16.8,
+          6.8
+        ],
+        [
+          13.4,
+          6.8
+        ],
+        [
+          13.4,
+          2.2
+        ],
+        [
+          3.0,
+          2.2
+        ]
+      ],
+      "label_at": [
+        7.2,
+        2.0
+      ],
+      "cable_spec": "Cat 6A（模拟）",
+      "evidence": "模拟端口表"
+    },
+    {
+      "id": "data-b-route",
+      "label": "数据链路 PP1-02",
+      "system": "data",
+      "source": "rack",
+      "target": "data-b",
+      "points": [
+        [
+          16.8,
+          6.8
+        ],
+        [
+          13.0,
+          6.8
+        ],
+        [
+          13.0,
+          5.0
+        ],
+        [
+          8.5,
+          5.0
+        ]
+      ],
+      "label_at": [
+        9.7,
+        4.7
+      ],
+      "cable_spec": "Cat 6A（模拟）",
+      "evidence": "模拟端口表"
+    },
+    {
+      "id": "data-ap",
+      "label": "无线接入链路",
+      "system": "data",
+      "source": "rack",
+      "target": "ap",
+      "points": [
+        [
+          16.8,
+          6.8
+        ],
+        [
+          16.0,
+          9.8
+        ],
+        [
+          10.0,
+          9.8
+        ]
+      ],
+      "label_at": [
+        14.0,
+        10.0
+      ],
+      "cable_spec": "Cat 6A PoE（模拟）",
+      "evidence": "模拟端口表"
+    }
+  ]
+}

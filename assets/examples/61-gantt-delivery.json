@@ -1,0 +1,19 @@
+{
+  "type": "gantt",
+  "gantt_variant": "delivery",
+  "title": "线上课程上线计划 · 执行版",
+  "subtitle": "责任人、日期、进度与完成后开始依赖全部保留",
+  "eyebrow": "DELIVERY PLAN / 教育培训",
+  "footer": "模拟排期 · 状态截至 2026/09/18 · 自然日且包含结束日 · 未计算关键路径",
+  "assumptions": ["任务、日期和进度为演示数据"],
+  "tasks": [
+    {"id":"scope","phase":"01 · 定位","label":"需求调研与课程定位","owner":"产品负责人","start":"2026-09-14","end":"2026-09-16","progress":100},
+    {"id":"outline","phase":"02 · 内容与转化","label":"课程大纲与脚本","owner":"教研团队","start":"2026-09-17","end":"2026-09-22","progress":35,"depends":["scope"]},
+    {"id":"landing","phase":"02 · 内容与转化","label":"招生页面与报名流程","owner":"设计 / 运营","start":"2026-09-17","end":"2026-09-24","progress":25,"depends":["scope"]},
+    {"id":"record","phase":"03 · 制作与验证","label":"课程录制与剪辑","owner":"讲师 / 视频制作","start":"2026-09-23","end":"2026-10-01","progress":0,"depends":["outline"]},
+    {"id":"promote","phase":"03 · 制作与验证","label":"推广预热与学员招募","owner":"市场团队","start":"2026-09-25","end":"2026-10-06","progress":0,"depends":["landing"]},
+    {"id":"qa","phase":"03 · 制作与验证","label":"课程上传与体验测试","owner":"教研 / 测试","start":"2026-10-02","end":"2026-10-05","progress":0,"depends":["record"]},
+    {"id":"rehearsal","phase":"04 · 上线","label":"开课彩排与上线检查","owner":"项目负责人","start":"2026-10-07","end":"2026-10-08","progress":0,"depends":["qa","promote"]},
+    {"id":"launch","phase":"04 · 上线","label":"正式开课","owner":"全体项目组","start":"2026-10-09","end":"2026-10-09","progress":0,"milestone":true,"depends":["rehearsal"]}
+  ]
+}

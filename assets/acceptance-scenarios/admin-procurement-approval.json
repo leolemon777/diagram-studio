@@ -1,0 +1,22 @@
+{
+  "type": "graph",
+  "title": "行政采购申请审批流程",
+  "subtitle": "模拟场景 · 表达申请、预算核验、采购执行和退回补充的责任交接",
+  "eyebrow": "ACCEPTANCE / 行政办公",
+  "footer": "模拟流程 · 真实制度以组织审批规则为准",
+  "assumptions": ["流程与角色为验收用模拟数据"],
+  "nodes": [
+    {"id":"request","label":"提交采购申请","detail":"业务申请人","x":80,"y":275,"w":210,"h":80},
+    {"id":"manager","label":"业务负责人审核","detail":"范围与必要性","x":360,"y":275,"w":210,"h":80},
+    {"id":"finance","label":"预算与合规核验","detail":"财务 / 行政","x":640,"y":275,"w":210,"h":80},
+    {"id":"procure","label":"询价与下单","detail":"采购专员","x":920,"y":275,"w":210,"h":80},
+    {"id":"return","label":"补充说明后重提","detail":"退回分支","x":640,"y":470,"w":210,"h":80,"tone":"amber"}
+  ],
+  "edges": [
+    {"from":"request","to":"manager","label":"提交","tone":"accent"},
+    {"from":"manager","to":"finance","label":"通过","tone":"accent"},
+    {"from":"finance","to":"procure","label":"预算可用","tone":"teal"},
+    {"from":"finance","to":"return","label":"资料不足","tone":"amber","source_port":"bottom","target_port":"top"},
+    {"from":"return","to":"request","label":"补充后重提","tone":"amber","source_port":"left","target_port":"bottom","dashed":true}
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "schema": "pid-topology-1",
+  "title": "反应工序与温度测量：过程 P&ID 教学拓扑",
+  "assumptions": [
+    "模拟连续反应支路；连接只表达声明的拓扑，不代表阀位、流量或设备正在运行。",
+    "温度回路只画测量与显示，不编造控制设定、联锁、材质、管径或压力等级。",
+    "独立教学符号未验证为完整 ISA 5.1 符号集，也不是 DEXPI 交换文件。"
+  ],
+  "items": [
+    {
+      "id": "feed",
+      "tag": "B-401",
+      "kind": "boundary",
+      "label": "原料边界",
+      "ports": [
+        {
+          "id": "feed_out",
+          "domain": "process",
+          "direction": "out"
+        }
+      ]
+    },
+    {
+      "id": "inlet",
+      "tag": "HV-401",
+      "kind": "valve",
+      "label": "进料隔离阀",
+      "ports": [
+        {
+          "id": "inlet_in",
+          "domain": "process",
+          "direction": "in"
+        },
+        {
+          "id": "inlet_out",
+          "domain": "process",
+          "direction": "out"
+        }
+      ]
+    },
+    {
+      "id": "reactor",
+      "tag": "R-401",
+      "kind": "tank",
+      "label": "反应器",
+      "ports": [
+        {
+          "id": "reactor_in",
+          "domain": "process",
+          "direction": "in"
+        },
+        {
+          "id": "reactor_out",
+          "domain": "process",
+          "direction": "out"
+        },
+        {
+          "id": "reactor_temp",
+          "domain": "process",
+          "direction": "bidirectional"
+        }
+      ]
+    },
+    {
+      "id": "pump",
+      "tag": "P-401",
+      "kind": "pump",
+      "label": "产品输送泵",
+      "ports": [
+        {
+          "id": "pump_in",
+          "domain": "process",
+          "direction": "in"
+        },
+        {
+          "id": "pump_out",
+          "domain": "process",
+          "direction": "out"
+        }
+      ]
+    },
+    {
+      "id": "product",
+      "tag": "B-402",
+      "kind": "boundary",
+      "label": "产品边界",
+      "ports": [
+        {
+          "id": "product_in",
+          "domain": "process",
+          "direction": "in"
+        }
+      ]
+    },
+    {
+      "id": "tt",
+      "tag": "TT-401",
+      "kind": "instrument",
+      "label": "温度变送器",
+      "ports": [
+        {
+          "id": "tt_process",
+          "domain": "process",
+          "direction": "bidirectional"
+        },
+        {
+          "id": "tt_signal",
+          "domain": "signal",
+          "direction": "out"
+        }
+      ]
+    },
+    {
+      "id": "tic",
+      "tag": "TI-401",
+      "kind": "instrument",
+      "label": "温度显示",
+      "ports": [
+        {
+          "id": "tic_signal",
+          "domain": "signal",
+          "direction": "in"
+        }
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "C1",
+      "from": "feed_out",
+      "to": "inlet_in",
+      "domain": "process",
+      "label": "原料进料",
+      "flow": "forward"
+    },
+    {
+      "id": "C2",
+      "from": "inlet_out",
+      "to": "reactor_in",
+      "domain": "process",
+      "label": "反应器入口",
+      "flow": "forward"
+    },
+    {
+      "id": "C3",
+      "from": "reactor_out",
+      "to": "pump_in",
+      "domain": "process",
+      "label": "反应产物",
+      "flow": "forward"
+    },
+    {
+      "id": "C4",
+      "from": "pump_out",
+      "to": "product_in",
+      "domain": "process",
+      "label": "产品输出",
+      "flow": "forward"
+    },
+    {
+      "id": "C5",
+      "from": "reactor_temp",
+      "to": "tt_process",
+      "domain": "process",
+      "label": "温度测点（非流量断言）",
+      "flow": "unknown"
+    },
+    {
+      "id": "C6",
+      "from": "tt_signal",
+      "to": "tic_signal",
+      "domain": "signal",
+      "label": "温度测量信号",
+      "flow": "forward"
+    }
+  ]
+}

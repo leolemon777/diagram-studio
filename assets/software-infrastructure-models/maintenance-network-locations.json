@@ -1,0 +1,178 @@
+{
+  "mode": "network-location",
+  "map_accuracy": "schematic",
+  "title": "跨厂区设备维护网络位置关系",
+  "subtitle": "地点容器、网络角色、运营商链路与测量来源分开",
+  "data_status": "simulated",
+  "assumptions": [
+    "位置为示意，不表达真实比例、经纬度或线路走向"
+  ],
+  "sites": [
+    {
+      "id": "plant-a",
+      "label": "A 厂",
+      "location": "华东生产基地",
+      "location_source": "模拟资产台账",
+      "rect": [
+        0.04,
+        0.18,
+        0.26,
+        0.58
+      ]
+    },
+    {
+      "id": "plant-b",
+      "label": "B 厂",
+      "location": "华南生产基地",
+      "location_source": "模拟资产台账",
+      "rect": [
+        0.37,
+        0.18,
+        0.26,
+        0.58
+      ]
+    },
+    {
+      "id": "hub",
+      "label": "中心枢纽",
+      "location": "区域数据中心",
+      "location_source": "模拟资产台账",
+      "rect": [
+        0.7,
+        0.18,
+        0.26,
+        0.58
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "a-edge",
+      "label": "A 厂边界",
+      "role": "WAN 路由",
+      "site_id": "plant-a",
+      "position": [
+        0.12,
+        0.58
+      ]
+    },
+    {
+      "id": "a-ot",
+      "label": "A 厂 OT",
+      "role": "生产网络",
+      "site_id": "plant-a",
+      "position": [
+        0.22,
+        0.36
+      ]
+    },
+    {
+      "id": "b-edge",
+      "label": "B 厂边界",
+      "role": "WAN 路由",
+      "site_id": "plant-b",
+      "position": [
+        0.45,
+        0.58
+      ]
+    },
+    {
+      "id": "b-ot",
+      "label": "B 厂 OT",
+      "role": "生产网络",
+      "site_id": "plant-b",
+      "position": [
+        0.55,
+        0.36
+      ]
+    },
+    {
+      "id": "hub-edge",
+      "label": "中心边界",
+      "role": "双运营商路由",
+      "site_id": "hub",
+      "position": [
+        0.78,
+        0.58
+      ]
+    },
+    {
+      "id": "cmms",
+      "label": "CMMS 集群",
+      "role": "维护平台",
+      "site_id": "hub",
+      "position": [
+        0.88,
+        0.36
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "site-a-wan",
+      "source_site": "plant-a",
+      "target_site": "hub",
+      "capacity_mbps": 500,
+      "latency_ms": 18,
+      "carrier": "运营商 A",
+      "medium": "MPLS",
+      "route_source": "模拟链路监控 2026-09",
+      "source_anchor": [
+        0.3,
+        0.68
+      ],
+      "target_anchor": [
+        0.7,
+        0.68
+      ],
+      "label_offset": [
+        0,
+        0.045
+      ]
+    },
+    {
+      "id": "site-b-wan",
+      "source_site": "plant-b",
+      "target_site": "hub",
+      "capacity_mbps": 300,
+      "latency_ms": 26,
+      "carrier": "运营商 B",
+      "medium": "IPSec",
+      "route_source": "模拟链路监控 2026-09",
+      "source_anchor": [
+        0.63,
+        0.46
+      ],
+      "target_anchor": [
+        0.7,
+        0.46
+      ],
+      "label_offset": [
+        0,
+        0.055
+      ]
+    },
+    {
+      "id": "site-interconnect",
+      "source_site": "plant-a",
+      "target_site": "plant-b",
+      "capacity_mbps": 100,
+      "latency_ms": 42,
+      "carrier": "灾备隧道",
+      "medium": "IPSec",
+      "route_source": "模拟灾备演练记录",
+      "source_anchor": [
+        0.3,
+        0.28
+      ],
+      "target_anchor": [
+        0.37,
+        0.28
+      ],
+      "label_offset": [
+        0,
+        -0.055
+      ]
+    }
+  ]
+}

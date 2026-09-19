@@ -1,0 +1,176 @@
+{
+  "title": "冷却异常后的防护响应 · 定性事件树",
+  "scope": "假设的冷却流量异常；检测、自动隔离、人工处置按路径条件展开",
+  "data_status": "教学示例：只展示假设路径，不赋予数值概率",
+  "mode": "qualitative",
+  "initiator": {
+    "id": "IE",
+    "label": "冷却流量异常",
+    "source": "教学假设初始事件"
+  },
+  "stages": [
+    {
+      "id": "B1",
+      "label": "异常检测"
+    },
+    {
+      "id": "B2",
+      "label": "自动隔离"
+    },
+    {
+      "id": "B3",
+      "label": "人工处置"
+    }
+  ],
+  "outcomes": [
+    {
+      "id": "O1",
+      "label": "自动控制住异常",
+      "description": "自动隔离成功，后续人工屏障不再用于本树分类"
+    },
+    {
+      "id": "O2",
+      "label": "人工处置限制影响",
+      "description": "自动隔离失效后人工处置成功"
+    },
+    {
+      "id": "O3",
+      "label": "异常未被有效限制",
+      "description": "自动隔离和人工处置均未成功"
+    }
+  ],
+  "root": "D1",
+  "nodes": [
+    {
+      "id": "D1",
+      "kind": "decision",
+      "stage": "B1",
+      "context": "已经发生冷却流量异常",
+      "partition_basis": "在本节点的此前路径条件下，所列成功/失效互斥且覆盖全部状态",
+      "branches": [
+        {
+          "id": "yes",
+          "label": "检测成功",
+          "to": "D2a"
+        },
+        {
+          "id": "no",
+          "label": "检测失效",
+          "to": "D2b"
+        }
+      ]
+    },
+    {
+      "id": "D2a",
+      "kind": "decision",
+      "stage": "B2",
+      "context": "冷却流量异常且检测成功",
+      "partition_basis": "在本节点的此前路径条件下，所列成功/失效互斥且覆盖全部状态",
+      "branches": [
+        {
+          "id": "yes",
+          "label": "隔离成功",
+          "to": "L1"
+        },
+        {
+          "id": "no",
+          "label": "隔离失效",
+          "to": "D3a"
+        }
+      ]
+    },
+    {
+      "id": "D2b",
+      "kind": "decision",
+      "stage": "B2",
+      "context": "冷却流量异常且检测失效",
+      "partition_basis": "在本节点的此前路径条件下，所列成功/失效互斥且覆盖全部状态",
+      "branches": [
+        {
+          "id": "yes",
+          "label": "隔离成功",
+          "to": "L4"
+        },
+        {
+          "id": "no",
+          "label": "隔离失效",
+          "to": "D3b"
+        }
+      ]
+    },
+    {
+      "id": "D3a",
+      "kind": "decision",
+      "stage": "B3",
+      "context": "异常被检测但自动隔离失效",
+      "partition_basis": "在本节点的此前路径条件下，所列成功/失效互斥且覆盖全部状态",
+      "branches": [
+        {
+          "id": "yes",
+          "label": "处置成功",
+          "to": "L2"
+        },
+        {
+          "id": "no",
+          "label": "处置失效",
+          "to": "L3"
+        }
+      ]
+    },
+    {
+      "id": "D3b",
+      "kind": "decision",
+      "stage": "B3",
+      "context": "异常未检测且自动隔离失效",
+      "partition_basis": "在本节点的此前路径条件下，所列成功/失效互斥且覆盖全部状态",
+      "branches": [
+        {
+          "id": "yes",
+          "label": "处置成功",
+          "to": "L5"
+        },
+        {
+          "id": "no",
+          "label": "处置失效",
+          "to": "L6"
+        }
+      ]
+    },
+    {
+      "id": "L1",
+      "kind": "terminal",
+      "outcome": "O1",
+      "termination_reason": "隔离成功，按本示例范围终止；不推断人工处置必然成功"
+    },
+    {
+      "id": "L2",
+      "kind": "terminal",
+      "outcome": "O2",
+      "termination_reason": "已完成全部屏障判断"
+    },
+    {
+      "id": "L3",
+      "kind": "terminal",
+      "outcome": "O3",
+      "termination_reason": "已完成全部屏障判断"
+    },
+    {
+      "id": "L4",
+      "kind": "terminal",
+      "outcome": "O1",
+      "termination_reason": "隔离成功，按本示例范围终止；不推断人工处置必然成功"
+    },
+    {
+      "id": "L5",
+      "kind": "terminal",
+      "outcome": "O2",
+      "termination_reason": "已完成全部屏障判断"
+    },
+    {
+      "id": "L6",
+      "kind": "terminal",
+      "outcome": "O3",
+      "termination_reason": "已完成全部屏障判断"
+    }
+  ]
+}

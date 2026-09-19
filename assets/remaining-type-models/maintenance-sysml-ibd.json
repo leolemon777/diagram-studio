@@ -1,0 +1,170 @@
+{
+  "mode": "sysml-ibd",
+  "title": "SysML v1 内部块图 · 诊断装置",
+  "subtitle": "部件、端口、接口兼容性和内部连接可核对",
+  "template": "graph",
+  "data_status": "simulated",
+  "assumptions": [
+    "数据为教学模拟，不代表真实项目现状",
+    "真实交付前须替换数值、名称、品牌规范和审批信息"
+  ],
+  "metrics": [
+    {
+      "id": "parts",
+      "label": "部件",
+      "value": 3,
+      "unit": "个",
+      "evidence": "示例输入"
+    },
+    {
+      "id": "ports",
+      "label": "端口",
+      "value": 4,
+      "unit": "个",
+      "evidence": "示例输入"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "sensor",
+      "label": "传感器部件",
+      "kind": "part",
+      "position": [
+        0.14,
+        0.58
+      ],
+      "detail": "sensor:Sensor",
+      "width": 0.13
+    },
+    {
+      "id": "p1",
+      "label": "measurement",
+      "kind": "port",
+      "position": [
+        0.28,
+        0.58
+      ],
+      "detail": "flow",
+      "group": "inside",
+      "interface": "signal",
+      "width": 0.09
+    },
+    {
+      "id": "p2",
+      "label": "input",
+      "kind": "port",
+      "position": [
+        0.41,
+        0.58
+      ],
+      "detail": "flow",
+      "group": "inside",
+      "interface": "signal",
+      "width": 0.08
+    },
+    {
+      "id": "controller",
+      "label": "控制器部件",
+      "kind": "part",
+      "position": [
+        0.55,
+        0.58
+      ],
+      "detail": "controller:Controller",
+      "width": 0.13
+    },
+    {
+      "id": "p3",
+      "label": "event",
+      "kind": "port",
+      "position": [
+        0.68,
+        0.58
+      ],
+      "detail": "flow",
+      "group": "inside",
+      "interface": "event",
+      "width": 0.08
+    },
+    {
+      "id": "p4",
+      "label": "eventIn",
+      "kind": "port",
+      "position": [
+        0.79,
+        0.58
+      ],
+      "detail": "flow",
+      "group": "inside",
+      "interface": "event",
+      "width": 0.08
+    },
+    {
+      "id": "gateway",
+      "label": "网关部件",
+      "kind": "part",
+      "position": [
+        0.91,
+        0.58
+      ],
+      "detail": "gateway:Gateway",
+      "width": 0.12
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "sensor",
+      "target": "p1",
+      "relation": "ownership",
+      "label": "拥有"
+    },
+    {
+      "id": "e2",
+      "source": "p1",
+      "target": "p2",
+      "relation": "connector",
+      "label": "signal"
+    },
+    {
+      "id": "e3",
+      "source": "p2",
+      "target": "controller",
+      "relation": "ownership",
+      "label": "拥有"
+    },
+    {
+      "id": "e4",
+      "source": "controller",
+      "target": "p3",
+      "relation": "ownership",
+      "label": "拥有"
+    },
+    {
+      "id": "e5",
+      "source": "p3",
+      "target": "p4",
+      "relation": "connector",
+      "label": "event"
+    },
+    {
+      "id": "e6",
+      "source": "p4",
+      "target": "gateway",
+      "relation": "ownership",
+      "label": "拥有"
+    }
+  ],
+  "groups": [
+    {
+      "id": "inside",
+      "label": "诊断装置内部",
+      "rect": [
+        0.06,
+        0.24,
+        0.9,
+        0.55
+      ]
+    }
+  ]
+}

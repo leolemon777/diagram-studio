@@ -1,0 +1,172 @@
+{
+  "title": "上升沿计数 CTU · 复位与保持",
+  "scope": "按明确毫秒时刻调用 · 功能块状态独立保存",
+  "data_status": "假设教学扫描；不代表实际设备",
+  "semantics": "sequential_timed_scan",
+  "write_policy": "single_writer",
+  "variables": [
+    {
+      "id": "Pulse",
+      "label": "待计数信号",
+      "role": "input",
+      "source": "假设扫描记录；不是现场I/O地址"
+    },
+    {
+      "id": "Reset",
+      "label": "计数复位请求",
+      "role": "input",
+      "source": "假设扫描记录；不是现场I/O地址"
+    },
+    {
+      "id": "Reached",
+      "label": "计数到达",
+      "role": "output",
+      "source": "假设扫描记录；不是现场I/O地址",
+      "initial": false
+    }
+  ],
+  "rungs": [
+    {
+      "id": "R1",
+      "label": "CU是计数输入，RESET每扫描独立读取；不是跳过调用的使能",
+      "logic": {
+        "id": "R1_contact",
+        "kind": "contact",
+        "var": "Pulse",
+        "sense": "true"
+      },
+      "block": {
+        "id": "C1",
+        "type": "CTU",
+        "pv": 3,
+        "reset": "Reset",
+        "initial_cv": 0,
+        "previous_input": false
+      },
+      "coil": {
+        "id": "R1_coil",
+        "kind": "assign",
+        "var": "Reached"
+      }
+    }
+  ],
+  "scans": [
+    {
+      "id": "S1",
+      "label": "待机",
+      "time_ms": 0,
+      "inputs": {
+        "Pulse": false,
+        "Reset": false
+      }
+    },
+    {
+      "id": "S2",
+      "label": "第1次上升沿",
+      "time_ms": 10,
+      "inputs": {
+        "Pulse": true,
+        "Reset": false
+      }
+    },
+    {
+      "id": "S3",
+      "label": "高保持不重复计数",
+      "time_ms": 20,
+      "inputs": {
+        "Pulse": true,
+        "Reset": false
+      }
+    },
+    {
+      "id": "S4",
+      "label": "回低",
+      "time_ms": 30,
+      "inputs": {
+        "Pulse": false,
+        "Reset": false
+      }
+    },
+    {
+      "id": "S5",
+      "label": "第2次上升沿",
+      "time_ms": 40,
+      "inputs": {
+        "Pulse": true,
+        "Reset": false
+      }
+    },
+    {
+      "id": "S6",
+      "label": "回低",
+      "time_ms": 50,
+      "inputs": {
+        "Pulse": false,
+        "Reset": false
+      }
+    },
+    {
+      "id": "S7",
+      "label": "第3次达到PV",
+      "time_ms": 60,
+      "inputs": {
+        "Pulse": true,
+        "Reset": false
+      }
+    },
+    {
+      "id": "S8",
+      "label": "CU已低，Q仍保持",
+      "time_ms": 70,
+      "inputs": {
+        "Pulse": false,
+        "Reset": false
+      }
+    },
+    {
+      "id": "S9",
+      "label": "再上升，CV封顶",
+      "time_ms": 80,
+      "inputs": {
+        "Pulse": true,
+        "Reset": false
+      }
+    },
+    {
+      "id": "S10",
+      "label": "RESET真优先清零",
+      "time_ms": 90,
+      "inputs": {
+        "Pulse": true,
+        "Reset": true
+      }
+    },
+    {
+      "id": "S11",
+      "label": "复位释放但CU仍高，不算新边沿",
+      "time_ms": 100,
+      "inputs": {
+        "Pulse": true,
+        "Reset": false
+      }
+    },
+    {
+      "id": "S12",
+      "label": "回低",
+      "time_ms": 110,
+      "inputs": {
+        "Pulse": false,
+        "Reset": false
+      }
+    },
+    {
+      "id": "S13",
+      "label": "新上升沿重新计1",
+      "time_ms": 120,
+      "inputs": {
+        "Pulse": true,
+        "Reset": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "shutdown-raci",
+  "mode": "raci",
+  "title": "停机检修团队协作 RACI",
+  "subtitle": "每项工作只设一名最终问责人，并至少有一名执行者",
+  "data_status": "simulated",
+  "members": [
+    {"id": "manager", "label": "设备经理", "role": "项目发起"},
+    {"id": "planner", "label": "检修策划", "role": "计划统筹"},
+    {"id": "mechanical", "label": "机械班组", "role": "机械执行"},
+    {"id": "instrument", "label": "电仪班组", "role": "电仪执行"},
+    {"id": "operations", "label": "运行班组", "role": "隔离试车"}
+  ],
+  "work_items": [
+    {"id": "w1", "label": "冻结检修范围", "deliverable": "批准的工作包"},
+    {"id": "w2", "label": "完成能量隔离", "deliverable": "隔离确认单"},
+    {"id": "w3", "label": "泵组解体检修", "deliverable": "检修记录"},
+    {"id": "w4", "label": "联锁复核", "deliverable": "测试记录"},
+    {"id": "w5", "label": "联合试车", "deliverable": "试车签字"},
+    {"id": "w6", "label": "关闭遗留项", "deliverable": "关闭清单"}
+  ],
+  "assignments": [
+    {"work_id": "w1", "member_id": "manager", "responsibility": "A"}, {"work_id": "w1", "member_id": "planner", "responsibility": "R"}, {"work_id": "w1", "member_id": "mechanical", "responsibility": "C"}, {"work_id": "w1", "member_id": "instrument", "responsibility": "C"}, {"work_id": "w1", "member_id": "operations", "responsibility": "I"},
+    {"work_id": "w2", "member_id": "operations", "responsibility": "A"}, {"work_id": "w2", "member_id": "planner", "responsibility": "C"}, {"work_id": "w2", "member_id": "mechanical", "responsibility": "R"}, {"work_id": "w2", "member_id": "instrument", "responsibility": "R"},
+    {"work_id": "w3", "member_id": "planner", "responsibility": "A"}, {"work_id": "w3", "member_id": "mechanical", "responsibility": "R"}, {"work_id": "w3", "member_id": "operations", "responsibility": "I"},
+    {"work_id": "w4", "member_id": "planner", "responsibility": "A"}, {"work_id": "w4", "member_id": "instrument", "responsibility": "R"}, {"work_id": "w4", "member_id": "operations", "responsibility": "C"},
+    {"work_id": "w5", "member_id": "manager", "responsibility": "A"}, {"work_id": "w5", "member_id": "mechanical", "responsibility": "R"}, {"work_id": "w5", "member_id": "instrument", "responsibility": "R"}, {"work_id": "w5", "member_id": "operations", "responsibility": "R"}, {"work_id": "w5", "member_id": "planner", "responsibility": "C"},
+    {"work_id": "w6", "member_id": "manager", "responsibility": "A"}, {"work_id": "w6", "member_id": "planner", "responsibility": "R"}, {"work_id": "w6", "member_id": "mechanical", "responsibility": "C"}, {"work_id": "w6", "member_id": "instrument", "responsibility": "C"}, {"work_id": "w6", "member_id": "operations", "responsibility": "I"}
+  ],
+  "assumptions": ["角色和工作项均为模拟", "RACI只澄清责任，不替代批准权限文件"]
+}

@@ -1,0 +1,30 @@
+{
+  "type": "chart",
+  "mode": "donut",
+  "title": "维护任务 · 工作量构成",
+  "subtitle": "各分类互斥且属于同一总体；面积按数值比例计算",
+  "eyebrow": "10 / COMPOSITION",
+  "unit": "项",
+  "total_label": "维护任务",
+  "data": [
+    {
+      "label": "计划保养",
+      "value": 48
+    },
+    {
+      "label": "现场巡检",
+      "value": 32
+    },
+    {
+      "label": "故障处置",
+      "value": 14
+    },
+    {
+      "label": "技术改善",
+      "value": 6
+    }
+  ],
+  "footer": "样式演示 · 合成数据 · 合计 100 项",
+  "family": "数据图表",
+  "diagram_name": "环图构成"
+}

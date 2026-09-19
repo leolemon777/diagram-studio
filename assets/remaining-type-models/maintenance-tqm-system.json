@@ -1,0 +1,141 @@
+{
+  "mode": "tqm",
+  "title": "全面质量管理 · 设备可靠性闭环",
+  "subtitle": "顾客、领导、过程、人员、测量和改善形成治理循环",
+  "template": "graph",
+  "data_status": "simulated",
+  "assumptions": [
+    "数据为教学模拟，不代表真实项目现状",
+    "真实交付前须替换数值、名称、品牌规范和审批信息"
+  ],
+  "metrics": [
+    {
+      "id": "principles",
+      "label": "治理要素",
+      "value": 6,
+      "unit": "项",
+      "evidence": "示例输入"
+    },
+    {
+      "id": "loops",
+      "label": "闭环",
+      "value": 1,
+      "unit": "个",
+      "evidence": "示例输入"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "customer",
+      "label": "内部顾客",
+      "kind": "customer",
+      "position": [
+        0.08,
+        0.55
+      ],
+      "detail": "生产与安全"
+    },
+    {
+      "id": "leadership",
+      "label": "质量方针",
+      "kind": "leadership",
+      "position": [
+        0.28,
+        0.78
+      ],
+      "detail": "目标与资源"
+    },
+    {
+      "id": "process",
+      "label": "维修过程",
+      "kind": "process",
+      "position": [
+        0.5,
+        0.58
+      ],
+      "detail": "标准作业"
+    },
+    {
+      "id": "people",
+      "label": "班组能力",
+      "kind": "people",
+      "position": [
+        0.28,
+        0.28
+      ],
+      "detail": "培训与授权"
+    },
+    {
+      "id": "measure",
+      "label": "绩效测量",
+      "kind": "measurement",
+      "position": [
+        0.72,
+        0.78
+      ],
+      "detail": "可用率/重复故障"
+    },
+    {
+      "id": "improve",
+      "label": "持续改善",
+      "kind": "improvement",
+      "position": [
+        0.84,
+        0.35
+      ],
+      "detail": "PDCA"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "customer",
+      "target": "leadership",
+      "relation": "feedback",
+      "label": "需求"
+    },
+    {
+      "id": "e2",
+      "source": "leadership",
+      "target": "process",
+      "relation": "govern",
+      "label": "方针/资源"
+    },
+    {
+      "id": "e3",
+      "source": "people",
+      "target": "process",
+      "relation": "govern",
+      "label": "能力"
+    },
+    {
+      "id": "e4",
+      "source": "process",
+      "target": "measure",
+      "relation": "measure",
+      "label": "过程数据"
+    },
+    {
+      "id": "e5",
+      "source": "measure",
+      "target": "improve",
+      "relation": "improve",
+      "label": "差距"
+    },
+    {
+      "id": "e6",
+      "source": "improve",
+      "target": "process",
+      "relation": "feedback",
+      "label": "标准更新"
+    },
+    {
+      "id": "e7",
+      "source": "process",
+      "target": "customer",
+      "relation": "feedback",
+      "label": "价值"
+    }
+  ],
+  "groups": []
+}

@@ -1,0 +1,101 @@
+{
+  "mode": "storyboard",
+  "title": "泵站异常闭环 · 故事分镜",
+  "subtitle": "镜号、景别、时长、动作和音频逐镜保留",
+  "template": "storyboard",
+  "data_status": "simulated",
+  "assumptions": [
+    "数据为教学模拟，不代表真实项目现状",
+    "真实交付前须替换数值、名称、品牌规范和审批信息"
+  ],
+  "metrics": [
+    {
+      "id": "frames",
+      "label": "镜头",
+      "value": 8,
+      "unit": "个",
+      "evidence": "示例输入"
+    },
+    {
+      "id": "duration",
+      "label": "总时长",
+      "value": 40,
+      "unit": "s",
+      "evidence": "示例输入"
+    },
+    {
+      "id": "shots",
+      "label": "景别",
+      "value": 5,
+      "unit": "类",
+      "evidence": "示例输入"
+    }
+  ],
+  "frames": [
+    {
+      "id": "f1",
+      "number": 1,
+      "shot": "全景",
+      "duration_s": 5,
+      "action": "交代泵房与作业区域",
+      "audio": "环境声"
+    },
+    {
+      "id": "f2",
+      "number": 2,
+      "shot": "近景",
+      "duration_s": 4,
+      "action": "点检员观察压力表波动",
+      "audio": "现场声"
+    },
+    {
+      "id": "f3",
+      "number": 3,
+      "shot": "特写",
+      "duration_s": 4,
+      "action": "屏幕显示趋势异常",
+      "audio": "提示音"
+    },
+    {
+      "id": "f4",
+      "number": 4,
+      "shot": "中景",
+      "duration_s": 5,
+      "action": "AI 提示相关历史工单",
+      "audio": "旁白"
+    },
+    {
+      "id": "f5",
+      "number": 5,
+      "shot": "过肩",
+      "duration_s": 6,
+      "action": "点检员核对阀位和液位",
+      "audio": "现场声"
+    },
+    {
+      "id": "f6",
+      "number": 6,
+      "shot": "特写",
+      "duration_s": 5,
+      "action": "确认故障原因并创建工单",
+      "audio": "点击声"
+    },
+    {
+      "id": "f7",
+      "number": 7,
+      "shot": "中景",
+      "duration_s": 6,
+      "action": "维修后复测曲线恢复",
+      "audio": "旁白"
+    },
+    {
+      "id": "f8",
+      "number": 8,
+      "shot": "全景",
+      "duration_s": 5,
+      "action": "班组看板更新改善结果",
+      "audio": "音乐收束"
+    }
+  ],
+  "declared_duration_s": 40
+}

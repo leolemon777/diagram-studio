@@ -1,0 +1,162 @@
+{
+  "mode": "single-line",
+  "title": "设备维护低压配电单线示意",
+  "subtitle": "电源、保护、母线、变压器和负荷按径向关系与额定值表达",
+  "data_status": "simulated",
+  "assumptions": [
+    "额定值和导体为模拟；短路、保护整定、选择性、接地和电弧风险需由专业设计复核"
+  ],
+  "engineering_status": "illustrative-requires-design-review",
+  "nodes": [
+    {
+      "id": "utility",
+      "label": "园区 10 kV 电源",
+      "tag": "GRID",
+      "kind": "source",
+      "voltage_v": 10000,
+      "rating": "10 kV / 630 A",
+      "position": [
+        0.5,
+        0.9
+      ]
+    },
+    {
+      "id": "hv-breaker",
+      "label": "高压断路器",
+      "tag": "QF-HV",
+      "kind": "breaker",
+      "voltage_v": 10000,
+      "rating": "630 A",
+      "position": [
+        0.5,
+        0.78
+      ]
+    },
+    {
+      "id": "transformer",
+      "label": "干式变压器",
+      "tag": "T1",
+      "kind": "transformer",
+      "voltage_v": 10000,
+      "rating": "1000 kVA · 10/0.4 kV",
+      "position": [
+        0.5,
+        0.64
+      ]
+    },
+    {
+      "id": "lv-breaker",
+      "label": "低压总断路器",
+      "tag": "QF-LV",
+      "kind": "breaker",
+      "voltage_v": 400,
+      "rating": "1600 A",
+      "position": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "id": "bus",
+      "label": "低压母线",
+      "tag": "BUS-01",
+      "kind": "bus",
+      "voltage_v": 400,
+      "rating": "1600 A",
+      "position": [
+        0.5,
+        0.38
+      ]
+    },
+    {
+      "id": "load-ahu",
+      "label": "空调机组",
+      "tag": "MCC-01",
+      "kind": "load",
+      "voltage_v": 400,
+      "rating": "250 A",
+      "load_kw": 110,
+      "position": [
+        0.22,
+        0.2
+      ]
+    },
+    {
+      "id": "load-pump",
+      "label": "维修泵站",
+      "tag": "MCC-02",
+      "kind": "load",
+      "voltage_v": 400,
+      "rating": "400 A",
+      "load_kw": 180,
+      "position": [
+        0.5,
+        0.2
+      ]
+    },
+    {
+      "id": "load-office",
+      "label": "办公配电",
+      "tag": "PDB-L1",
+      "kind": "load",
+      "voltage_v": 400,
+      "rating": "125 A",
+      "load_kw": 45,
+      "position": [
+        0.78,
+        0.2
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "f1",
+      "source": "utility",
+      "target": "hv-breaker",
+      "conductor": "10 kV 电缆（模拟）",
+      "protection_basis": "模拟保护表"
+    },
+    {
+      "id": "f2",
+      "source": "hv-breaker",
+      "target": "transformer",
+      "conductor": "10 kV 电缆（模拟）",
+      "protection_basis": "模拟保护表"
+    },
+    {
+      "id": "f3",
+      "source": "transformer",
+      "target": "lv-breaker",
+      "conductor": "密集母线（模拟）",
+      "protection_basis": "模拟保护表"
+    },
+    {
+      "id": "f4",
+      "source": "lv-breaker",
+      "target": "bus",
+      "conductor": "1600 A 母排（模拟）",
+      "protection_basis": "模拟保护表"
+    },
+    {
+      "id": "f5",
+      "source": "bus",
+      "target": "load-ahu",
+      "conductor": "4×95 mm²（模拟）",
+      "protection_basis": "模拟负荷表"
+    },
+    {
+      "id": "f6",
+      "source": "bus",
+      "target": "load-pump",
+      "conductor": "4×185 mm²（模拟）",
+      "protection_basis": "模拟负荷表"
+    },
+    {
+      "id": "f7",
+      "source": "bus",
+      "target": "load-office",
+      "conductor": "4×35 mm²（模拟）",
+      "protection_basis": "模拟负荷表"
+    }
+  ]
+}

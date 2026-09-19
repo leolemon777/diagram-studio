@@ -1,0 +1,122 @@
+{
+  "mode": "press-release",
+  "title": "新闻稿 · 预测性维护试点投运",
+  "subtitle": "倒金字塔信息结构，事实、引语和背景可追踪",
+  "template": "publication",
+  "data_status": "simulated",
+  "assumptions": [
+    "数据为教学模拟，不代表真实项目现状",
+    "真实交付前须替换数值、名称、品牌规范和审批信息"
+  ],
+  "metrics": [
+    {
+      "id": "assets",
+      "label": "覆盖设备",
+      "value": 24,
+      "unit": "台",
+      "evidence": "示例输入"
+    },
+    {
+      "id": "signals",
+      "label": "信号",
+      "value": 6,
+      "unit": "类",
+      "evidence": "示例输入"
+    }
+  ],
+  "sheet": {
+    "width": 210,
+    "height": 297,
+    "unit": "mm"
+  },
+  "blocks": [
+    {
+      "id": "b1",
+      "role": "headline",
+      "label": "标题",
+      "content": "三号线预测性维护试点正式投运",
+      "rect": [
+        0.05,
+        0.76,
+        0.9,
+        0.16
+      ],
+      "order": 1
+    },
+    {
+      "id": "b2",
+      "role": "dateline",
+      "label": "电头",
+      "content": "杭州，2026 年 9 月 17 日",
+      "rect": [
+        0.05,
+        0.53,
+        0.43,
+        0.18
+      ],
+      "order": 2
+    },
+    {
+      "id": "b3",
+      "role": "lead",
+      "label": "导语",
+      "content": "试点覆盖 24 台关键泵，形成报警到工单闭环",
+      "rect": [
+        0.52,
+        0.53,
+        0.43,
+        0.18
+      ],
+      "order": 3
+    },
+    {
+      "id": "b4",
+      "role": "quote",
+      "label": "引语",
+      "content": "“数据必须服务现场判断。”——项目负责人",
+      "rect": [
+        0.05,
+        0.29,
+        0.43,
+        0.18
+      ],
+      "order": 4
+    },
+    {
+      "id": "b5",
+      "role": "facts",
+      "label": "关键事实",
+      "content": "24 台设备｜6 类信号｜响应时间 −32%",
+      "rect": [
+        0.52,
+        0.29,
+        0.43,
+        0.18
+      ],
+      "order": 5
+    },
+    {
+      "id": "b6",
+      "role": "boilerplate",
+      "label": "背景",
+      "content": "可靠性改善组负责设备全生命周期改进",
+      "rect": [
+        0.05,
+        0.07,
+        0.9,
+        0.15
+      ],
+      "order": 6
+    }
+  ],
+  "reading_order": [
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "b5",
+    "b6"
+  ],
+  "audience": "设备、生产与管理协同团队",
+  "primary_action": "确认责任、数据来源与下一步行动"
+}

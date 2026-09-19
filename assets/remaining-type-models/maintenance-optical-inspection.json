@@ -1,0 +1,113 @@
+{
+  "mode": "optics",
+  "title": "机器视觉薄透镜示意",
+  "subtitle": "光线、焦距、物距、像距和近轴模型边界同图表达",
+  "template": "science",
+  "data_status": "simulated",
+  "assumptions": [
+    "数据为教学模拟，不代表真实项目现状",
+    "真实交付前须替换数值、名称、品牌规范和审批信息"
+  ],
+  "metrics": [
+    {
+      "id": "do",
+      "label": "物距",
+      "value": 300,
+      "unit": "mm",
+      "evidence": "示例输入"
+    },
+    {
+      "id": "f",
+      "label": "焦距",
+      "value": 100,
+      "unit": "mm",
+      "evidence": "示例输入"
+    },
+    {
+      "id": "di",
+      "label": "像距",
+      "value": 150,
+      "unit": "mm",
+      "evidence": "示例输入"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "b1",
+      "role": "object",
+      "label": "物体",
+      "content": "距镜 300 mm，高 60 mm",
+      "rect": [
+        0.04,
+        0.7,
+        0.27,
+        0.2
+      ],
+      "order": 1
+    },
+    {
+      "id": "b2",
+      "role": "lens",
+      "label": "透镜",
+      "content": "焦距 100 mm；薄透镜近似",
+      "rect": [
+        0.365,
+        0.7,
+        0.27,
+        0.2
+      ],
+      "order": 2
+    },
+    {
+      "id": "b3",
+      "role": "image",
+      "label": "像面",
+      "content": "计算像距 150 mm，倒立缩小",
+      "rect": [
+        0.69,
+        0.7,
+        0.27,
+        0.2
+      ],
+      "order": 3
+    }
+  ],
+  "object_distance_mm": 300,
+  "focal_length_mm": 100,
+  "rays": [
+    {
+      "id": "r1",
+      "points": [
+        [
+          0.25,
+          0.62
+        ],
+        [
+          0.5,
+          0.62
+        ],
+        [
+          0.75,
+          0.335
+        ]
+      ]
+    },
+    {
+      "id": "r2",
+      "points": [
+        [
+          0.25,
+          0.62
+        ],
+        [
+          0.5,
+          0.43
+        ],
+        [
+          0.75,
+          0.335
+        ]
+      ]
+    }
+  ]
+}

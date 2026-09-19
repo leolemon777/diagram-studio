@@ -1,0 +1,147 @@
+{
+  "type": "graph",
+  "title": "用例关系 · 角色与目标",
+  "diagram_name": "用例关系",
+  "family": "系统与软件",
+  "subtitle": "系统边界包围用例；角色在边界外；线表示参与关系",
+  "eyebrow": "19 / DIAGRAM LIBRARY",
+  "footer": "原创结构范例 · 数据、实体、尺寸与假说均为演示输入；实际任务按用户资料替换",
+  "assumptions": [
+    "原创演示内容，不代表实际业务、研究结论或工程设计"
+  ],
+  "nodes": [
+    {
+      "id": "operator",
+      "label": "«actor»\n现场人员",
+      "x": 100,
+      "y": 380,
+      "w": 260,
+      "h": 120
+    },
+    {
+      "id": "manager",
+      "label": "«actor»\n运维负责人",
+      "x": 1230,
+      "y": 380,
+      "w": 270,
+      "h": 120
+    },
+    {
+      "id": "submit",
+      "label": "提交异常",
+      "x": 600,
+      "y": 250,
+      "w": 360,
+      "h": 110,
+      "kind": "ellipse"
+    },
+    {
+      "id": "query",
+      "label": "查询工单",
+      "x": 600,
+      "y": 430,
+      "w": 360,
+      "h": 110,
+      "kind": "ellipse"
+    },
+    {
+      "id": "assign",
+      "label": "分派任务",
+      "x": 600,
+      "y": 610,
+      "w": 360,
+      "h": 110,
+      "kind": "ellipse"
+    }
+  ],
+  "edges": [
+    {
+      "from": "operator",
+      "to": "submit",
+      "label": "",
+      "arrow": false,
+      "points": [
+        [
+          360,
+          420
+        ],
+        [
+          500,
+          420
+        ],
+        [
+          500,
+          305
+        ],
+        [
+          600,
+          305
+        ]
+      ]
+    },
+    {
+      "from": "operator",
+      "to": "query",
+      "label": "",
+      "arrow": false,
+      "points": [
+        [
+          360,
+          460
+        ],
+        [
+          500,
+          460
+        ],
+        [
+          500,
+          485
+        ],
+        [
+          600,
+          485
+        ]
+      ]
+    },
+    {
+      "from": "manager",
+      "to": "query",
+      "label": "",
+      "arrow": false
+    },
+    {
+      "from": "manager",
+      "to": "assign",
+      "label": "",
+      "arrow": false,
+      "points": [
+        [
+          1230,
+          460
+        ],
+        [
+          1090,
+          460
+        ],
+        [
+          1090,
+          665
+        ],
+        [
+          960,
+          665
+        ]
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "id": "system",
+      "x": 540,
+      "y": 190,
+      "w": 520,
+      "h": 580,
+      "label": "运维系统"
+    }
+  ]
+}

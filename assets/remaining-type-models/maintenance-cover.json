@@ -1,0 +1,87 @@
+{
+  "mode": "cover",
+  "title": "设备改善手册封面",
+  "subtitle": "标题层级、系列归属和版本信息完整",
+  "template": "publication",
+  "data_status": "simulated",
+  "assumptions": [
+    "数据为教学模拟，不代表真实项目现状",
+    "真实交付前须替换数值、名称、品牌规范和审批信息"
+  ],
+  "metrics": [
+    {
+      "id": "levels",
+      "label": "标题层级",
+      "value": 4,
+      "unit": "级",
+      "evidence": "示例输入"
+    }
+  ],
+  "sheet": {
+    "width": 210,
+    "height": 297,
+    "unit": "mm"
+  },
+  "blocks": [
+    {
+      "id": "b1",
+      "role": "series",
+      "label": "系列",
+      "content": "现场改善工具书 04",
+      "rect": [
+        0.05,
+        0.64,
+        0.9,
+        0.28
+      ],
+      "order": 1
+    },
+    {
+      "id": "b2",
+      "role": "title",
+      "label": "主标题",
+      "content": "关键设备点检与诊断",
+      "rect": [
+        0.05,
+        0.36,
+        0.43,
+        0.22
+      ],
+      "order": 2
+    },
+    {
+      "id": "b3",
+      "role": "subtitle",
+      "label": "副标题",
+      "content": "从症状、证据到闭环行动",
+      "rect": [
+        0.52,
+        0.36,
+        0.43,
+        0.22
+      ],
+      "order": 3
+    },
+    {
+      "id": "b4",
+      "role": "issue",
+      "label": "版本",
+      "content": "2026.09 · 内部试行版",
+      "rect": [
+        0.05,
+        0.07,
+        0.9,
+        0.22
+      ],
+      "order": 4
+    }
+  ],
+  "reading_order": [
+    "b1",
+    "b2",
+    "b3",
+    "b4"
+  ],
+  "audience": "设备、生产与管理协同团队",
+  "primary_action": "确认责任、数据来源与下一步行动"
+}

@@ -1,0 +1,94 @@
+{
+  "mode": "flyer",
+  "title": "停机复盘工作坊宣传单",
+  "subtitle": "收益、时间地点与报名动作同屏可读",
+  "template": "publication",
+  "data_status": "simulated",
+  "assumptions": [
+    "数据为教学模拟，不代表真实项目现状",
+    "真实交付前须替换数值、名称、品牌规范和审批信息"
+  ],
+  "metrics": [
+    {
+      "id": "duration",
+      "label": "活动时长",
+      "value": 120,
+      "unit": "min",
+      "evidence": "示例输入"
+    },
+    {
+      "id": "deadline",
+      "label": "报名截止",
+      "value": "09-25",
+      "unit": "",
+      "evidence": "示例输入"
+    }
+  ],
+  "sheet": {
+    "width": 210,
+    "height": 297,
+    "unit": "mm"
+  },
+  "blocks": [
+    {
+      "id": "b1",
+      "role": "headline",
+      "label": "活动标题",
+      "content": "把故障复盘变成下一次预防",
+      "rect": [
+        0.05,
+        0.64,
+        0.9,
+        0.28
+      ],
+      "order": 1
+    },
+    {
+      "id": "b2",
+      "role": "benefit",
+      "label": "你将获得",
+      "content": "一张因果图、一份行动表、一套复盘节奏",
+      "rect": [
+        0.05,
+        0.36,
+        0.43,
+        0.22
+      ],
+      "order": 2
+    },
+    {
+      "id": "b3",
+      "role": "details",
+      "label": "时间地点",
+      "content": "9 月 28 日 14:00｜培训室 A",
+      "rect": [
+        0.52,
+        0.36,
+        0.43,
+        0.22
+      ],
+      "order": 3
+    },
+    {
+      "id": "b4",
+      "role": "action",
+      "label": "报名",
+      "content": "9 月 25 日前扫码登记",
+      "rect": [
+        0.05,
+        0.07,
+        0.9,
+        0.22
+      ],
+      "order": 4
+    }
+  ],
+  "reading_order": [
+    "b1",
+    "b2",
+    "b3",
+    "b4"
+  ],
+  "audience": "设备、生产与管理协同团队",
+  "primary_action": "确认责任、数据来源与下一步行动"
+}

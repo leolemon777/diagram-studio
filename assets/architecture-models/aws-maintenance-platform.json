@@ -1,0 +1,244 @@
+{
+  "data_status": "simulated",
+  "assumptions": [
+    "示例对象、关系和名称均为教学模拟，不代表任何真实企业现状。"
+  ],
+  "mode": "cloud-architecture",
+  "provider": "AWS",
+  "title": "AWS 设备维护平台参考架构",
+  "subtitle": "账号、区域、VPC、可用区和服务流向分开；官方服务名配中性徽标",
+  "boundaries": [
+    {
+      "id": "account",
+      "label": "生产账号",
+      "kind": "account",
+      "parent_id": null,
+      "rect": [
+        0.02,
+        0.04,
+        0.96,
+        0.91
+      ],
+      "label_side": "right"
+    },
+    {
+      "id": "region",
+      "label": "ap-east-1 区域",
+      "kind": "region",
+      "parent_id": "account",
+      "rect": [
+        0.05,
+        0.07,
+        0.9,
+        0.82
+      ],
+      "label_side": "right"
+    },
+    {
+      "id": "vpc",
+      "label": "维护平台 VPC",
+      "kind": "vpc",
+      "parent_id": "region",
+      "rect": [
+        0.09,
+        0.1,
+        0.82,
+        0.68
+      ]
+    },
+    {
+      "id": "az-a",
+      "label": "可用区 A",
+      "kind": "availability-zone",
+      "parent_id": "vpc",
+      "rect": [
+        0.12,
+        0.13,
+        0.34,
+        0.5
+      ]
+    },
+    {
+      "id": "az-b",
+      "label": "可用区 B",
+      "kind": "availability-zone",
+      "parent_id": "vpc",
+      "rect": [
+        0.54,
+        0.13,
+        0.34,
+        0.5
+      ]
+    }
+  ],
+  "services": [
+    {
+      "id": "user",
+      "label": "维修用户",
+      "official_name": "维修用户",
+      "category": "external",
+      "boundary_id": null,
+      "scope": "external",
+      "position": [
+        0.08,
+        0.87
+      ]
+    },
+    {
+      "id": "cdn",
+      "label": "内容分发",
+      "official_name": "Amazon CloudFront",
+      "category": "edge",
+      "boundary_id": "region",
+      "scope": "global",
+      "position": [
+        0.27,
+        0.79
+      ]
+    },
+    {
+      "id": "alb",
+      "label": "入口负载均衡",
+      "official_name": "Application Load Balancer",
+      "category": "edge",
+      "boundary_id": "vpc",
+      "scope": "regional",
+      "position": [
+        0.5,
+        0.67
+      ]
+    },
+    {
+      "id": "app-a",
+      "label": "应用任务 A",
+      "official_name": "Amazon ECS on AWS Fargate",
+      "category": "compute",
+      "boundary_id": "az-a",
+      "scope": "zonal",
+      "position": [
+        0.28,
+        0.5
+      ]
+    },
+    {
+      "id": "app-b",
+      "label": "应用任务 B",
+      "official_name": "Amazon ECS on AWS Fargate",
+      "category": "compute",
+      "boundary_id": "az-b",
+      "scope": "zonal",
+      "position": [
+        0.7,
+        0.5
+      ]
+    },
+    {
+      "id": "queue",
+      "label": "工单事件队列",
+      "official_name": "Amazon SQS",
+      "category": "integration",
+      "boundary_id": "vpc",
+      "scope": "regional",
+      "position": [
+        0.5,
+        0.34
+      ]
+    },
+    {
+      "id": "db",
+      "label": "维护数据库",
+      "official_name": "Amazon Aurora PostgreSQL",
+      "category": "data",
+      "boundary_id": "vpc",
+      "scope": "regional",
+      "position": [
+        0.5,
+        0.17
+      ]
+    }
+  ],
+  "flows": [
+    {
+      "id": "f1",
+      "source": "user",
+      "target": "cdn",
+      "label": "Web 请求",
+      "protocol": "HTTPS",
+      "classification": "内部",
+      "security_control": "TLS + WAF 假设"
+    },
+    {
+      "id": "f2",
+      "source": "cdn",
+      "target": "alb",
+      "label": "动态请求",
+      "protocol": "HTTPS",
+      "classification": "内部",
+      "security_control": "TLS"
+    },
+    {
+      "id": "f3",
+      "source": "alb",
+      "target": "app-a",
+      "label": "路由",
+      "protocol": "HTTPS",
+      "classification": "内部",
+      "security_control": "安全组"
+    },
+    {
+      "id": "f4",
+      "source": "alb",
+      "target": "app-b",
+      "label": "路由",
+      "protocol": "HTTPS",
+      "classification": "内部",
+      "security_control": "安全组"
+    },
+    {
+      "id": "f5",
+      "source": "app-a",
+      "target": "queue",
+      "label": "工单事件",
+      "protocol": "AWS API",
+      "classification": "内部",
+      "security_control": "IAM 角色"
+    },
+    {
+      "id": "f6",
+      "source": "app-b",
+      "target": "queue",
+      "label": "工单事件",
+      "protocol": "AWS API",
+      "classification": "内部",
+      "security_control": "IAM 角色"
+    },
+    {
+      "id": "f7",
+      "source": "app-a",
+      "target": "db",
+      "label": "事务读写",
+      "protocol": "TLS/PostgreSQL",
+      "classification": "机密",
+      "security_control": "加密连接",
+      "rad": 0.12,
+      "label_offset": [
+        -0.06,
+        0
+      ]
+    },
+    {
+      "id": "f8",
+      "source": "app-b",
+      "target": "db",
+      "label": "事务读写",
+      "protocol": "TLS/PostgreSQL",
+      "classification": "机密",
+      "security_control": "加密连接",
+      "rad": -0.12,
+      "label_offset": [
+        0.06,
+        0
+      ]
+    }
+  ]
+}

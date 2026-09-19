@@ -1,0 +1,36 @@
+{
+  "mode": "forest",
+  "title": "森林图 · 效应估计与区间",
+  "subtitle": "输入提供的 95% CI；对数轴，比值的无效参考线为 1",
+  "footer": "原创合成演示数据 · 方法假设与输入模型随图保留",
+  "rows": [
+    {
+      "label": "条件 A",
+      "estimate": 0.72,
+      "low": 0.52,
+      "high": 0.99
+    },
+    {
+      "label": "条件 B",
+      "estimate": 0.91,
+      "low": 0.68,
+      "high": 1.23
+    },
+    {
+      "label": "条件 C",
+      "estimate": 1.18,
+      "low": 0.87,
+      "high": 1.6
+    },
+    {
+      "label": "条件 D",
+      "estimate": 0.82,
+      "low": 0.61,
+      "high": 1.1
+    }
+  ],
+  "scale": "log",
+  "reference": 1,
+  "interval_label": "95% CI supplied by input",
+  "xlabel": "效应比值（对数尺度）"
+}

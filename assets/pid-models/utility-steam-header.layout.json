@@ -1,0 +1,47 @@
+{
+  "positions": {
+    "boiler": [
+      180,
+      470
+    ],
+    "stop": [
+      430,
+      470
+    ],
+    "header": [
+      740,
+      470
+    ],
+    "turbine": [
+      1200,
+      470
+    ],
+    "pt": [
+      740,
+      300
+    ],
+    "pi": [
+      1050,
+      300
+    ]
+  },
+  "ports": {
+    "boiler_out": "right",
+    "stop_in": "left",
+    "stop_out": "right",
+    "header_in": "left",
+    "header_out": "right",
+    "header_sense": "top",
+    "turbine_in": "left",
+    "pt_process": "bottom",
+    "pt_signal": "right",
+    "pi_signal": "left"
+  },
+  "routes": {
+    "C1": [],
+    "C2": [],
+    "C3": [],
+    "C4": [],
+    "C5": []
+  }
+}

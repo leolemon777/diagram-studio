@@ -1,0 +1,152 @@
+{
+  "catalog_id": "cn-5006",
+  "mode": "family-tree",
+  "title": "林氏三代家庭树",
+  "subtitle": "亲子、伴侣和世代关系分层表达",
+  "template": "graph",
+  "sector": "家庭与关系",
+  "use_case": "家庭档案、教育和纪念内容中的高频关系图",
+  "data_status": "simulated",
+  "assumptions": [
+    "内容和数值为教学模拟",
+    "真实交付前须替换名称、事实、品牌、尺寸和审批信息"
+  ],
+  "metrics": [
+    {
+      "id": "people",
+      "label": "人物",
+      "value": 6,
+      "unit": "人",
+      "evidence": "模拟输入"
+    },
+    {
+      "id": "generations",
+      "label": "世代",
+      "value": 3,
+      "unit": "代",
+      "evidence": "模拟输入"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "gp1",
+      "label": "林国安",
+      "kind": "person",
+      "position": [
+        0.3,
+        0.78
+      ]
+    },
+    {
+      "id": "gp2",
+      "label": "周慧",
+      "kind": "person",
+      "position": [
+        0.52,
+        0.78
+      ]
+    },
+    {
+      "id": "p1",
+      "label": "林青",
+      "kind": "person",
+      "position": [
+        0.28,
+        0.48
+      ]
+    },
+    {
+      "id": "p2",
+      "label": "陈宇",
+      "kind": "person",
+      "position": [
+        0.5,
+        0.48
+      ]
+    },
+    {
+      "id": "c1",
+      "label": "林一",
+      "kind": "person",
+      "position": [
+        0.3,
+        0.18
+      ]
+    },
+    {
+      "id": "c2",
+      "label": "林夏",
+      "kind": "person",
+      "position": [
+        0.52,
+        0.18
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "gp1",
+      "target": "gp2",
+      "relation": "partner",
+      "label": "伴侣"
+    },
+    {
+      "id": "e2",
+      "source": "gp1",
+      "target": "p1",
+      "relation": "parent",
+      "label": "父女"
+    },
+    {
+      "id": "e3",
+      "source": "gp2",
+      "target": "p1",
+      "relation": "parent",
+      "label": "母女"
+    },
+    {
+      "id": "e4",
+      "source": "p1",
+      "target": "p2",
+      "relation": "partner",
+      "label": "伴侣"
+    },
+    {
+      "id": "e5",
+      "source": "p1",
+      "target": "c1",
+      "relation": "parent",
+      "label": "母子"
+    },
+    {
+      "id": "e6",
+      "source": "p2",
+      "target": "c1",
+      "relation": "parent",
+      "label": "父子",
+      "label_position": [
+        0.34,
+        0.35
+      ]
+    },
+    {
+      "id": "e7",
+      "source": "p1",
+      "target": "c2",
+      "relation": "parent",
+      "label": "母女",
+      "label_position": [
+        0.46,
+        0.30
+      ]
+    },
+    {
+      "id": "e8",
+      "source": "p2",
+      "target": "c2",
+      "relation": "parent",
+      "label": "父女"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "scope": "Editorial vector scene palettes; six additions evaluated on the 12-plate share atlas, not every renderer.",
+  "palettes": [
+    {"id":"paper","name":"暖纸墨线","original":true,"bg":"#F1EFEB","ink":"#34372F","muted":"#76796E","line":"#D2D3C9","accent":"#95684C","tint":"#E6E4DC","cool":"#516F7C"},
+    {"id":"blue","name":"蓝墨书页","original":true,"bg":"#F1EFEB","ink":"#2A4354","muted":"#748088","line":"#CCD2D3","accent":"#577D93","tint":"#E2E8E8","cool":"#956A51"},
+    {"id":"dark","name":"石墨图谱","original":true,"bg":"#20221F","ink":"#ECE9E0","muted":"#AAAFA3","line":"#42483F","accent":"#CFB58F","tint":"#2B3029","cool":"#95AFB9"},
+    {"id":"cedar","name":"苔绿手稿","description":"植物标本般的浅灰绿，沉静但不灰暗。","use":"经营复盘、改善分析、科研分布","bg":"#F0F2EA","ink":"#293B32","muted":"#58695D","line":"#CBD3C7","border":"#7A8978","accent":"#416B52","tint":"#E2E8DB","cool":"#85543F"},
+    {"id":"plum","name":"梅紫书页","description":"浅梅灰纸底与深莓墨，保留编辑图版的清晰度。","use":"策略、销售与研究摘要","bg":"#F5EFF2","ink":"#472F40","muted":"#745D70","line":"#D8CCD4","border":"#8D7388","accent":"#85556F","tint":"#ECDDE5","cool":"#456869"},
+    {"id":"midnight","name":"午夜靛蓝","description":"靛蓝暗底与冷银文字，少量暖砂承担第二语义。","use":"软件架构、网络和技术汇报","bg":"#171F30","ink":"#E8EDF4","muted":"#B3BFD0","line":"#424F66","border":"#7488A2","accent":"#A9BFE8","tint":"#222F45","cool":"#D1AC89"},
+    {"id":"petrol","name":"深海矿青","description":"矿青暗底，灰薄荷线条与骨白文字。","use":"系统架构、流程与模型连接","bg":"#102F33","ink":"#E8F1EA","muted":"#ABC4BC","line":"#42696A","border":"#658F87","accent":"#93C8B4","tint":"#193E42","cool":"#D7AF86"},
+    {"id":"ochre","name":"砂岩赭墨","description":"奶油砂纸与赭色墨线，暖而不黄艳。","use":"管理汇报、项目计划、销售复盘","bg":"#F5EDE1","ink":"#493C30","muted":"#6F5B43","line":"#D8CDBB","border":"#9B856A","accent":"#875828","tint":"#EBDFC9","cool":"#486369"},
+    {"id":"frost","name":"冷白钴墨","description":"近白冷底、钴蓝主线与清楚的灰阶。","use":"科研矩阵、三线表、清爽的结构说明","bg":"#F3F6F8","ink":"#253448","muted":"#5B6878","line":"#D0D8E1","border":"#76869B","accent":"#476A9C","tint":"#E4EBF2","cool":"#875961"}
+  ]
+}

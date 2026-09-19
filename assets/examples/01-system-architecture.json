@@ -1,0 +1,117 @@
+{
+  "type": "architecture",
+  "title": "设备运维平台 · 系统架构",
+  "subtitle": "从现场数据到运维决策，四层职责与三项横向支撑",
+  "eyebrow": "01 / SYSTEM ARCHITECTURE",
+  "layers": [
+    {
+      "label": "业务应用",
+      "description": "面向不同角色",
+      "tone": "accent",
+      "items": [
+        {
+          "id": "overview",
+          "label": "运行总览",
+          "detail": "状态 · 指标 · 趋势"
+        },
+        {
+          "id": "workorder",
+          "label": "运维工作台",
+          "detail": "工单 · 巡检 · 复盘"
+        },
+        {
+          "id": "mobile",
+          "label": "移动作业",
+          "detail": "现场记录 · 进度反馈"
+        }
+      ]
+    },
+    {
+      "label": "领域服务",
+      "description": "组织业务能力",
+      "tone": "teal",
+      "items": [
+        {
+          "id": "asset",
+          "label": "设备台账",
+          "detail": "资产与层级"
+        },
+        {
+          "id": "event",
+          "label": "事件中心",
+          "detail": "告警与规则"
+        },
+        {
+          "id": "maintenance",
+          "label": "作业服务",
+          "detail": "任务与闭环"
+        }
+      ]
+    },
+    {
+      "label": "数据能力",
+      "description": "统一口径与存储",
+      "tone": "accent",
+      "items": [
+        {
+          "id": "ts",
+          "label": "时序数据",
+          "detail": "测点与时间"
+        },
+        {
+          "id": "business",
+          "label": "业务记录",
+          "detail": "设备与工单"
+        },
+        {
+          "id": "files",
+          "label": "资料中心",
+          "detail": "手册与记录"
+        }
+      ]
+    },
+    {
+      "label": "现场接入",
+      "description": "连接真实设备",
+      "tone": "teal",
+      "items": [
+        {
+          "id": "gateway",
+          "label": "采集网关",
+          "detail": "协议适配与缓冲"
+        },
+        {
+          "id": "plc",
+          "label": "控制设备",
+          "detail": "PLC · 控制器"
+        },
+        {
+          "id": "sensor",
+          "label": "测量设备",
+          "detail": "仪表 · 传感器"
+        }
+      ]
+    }
+  ],
+  "crosscut": [
+    {
+      "label": "身份与权限",
+      "detail": "角色 · 授权"
+    },
+    {
+      "label": "可观测性",
+      "detail": "日志 · 指标"
+    },
+    {
+      "label": "数据治理",
+      "detail": "质量 · 元数据"
+    }
+  ],
+  "footer": "概念架构示例 · 横层表达职责构成，不表示逐层调用 · 技术选型待实际需求确认",
+  "assumptions": [
+    "这是原创示例，不是用户现场实际部署",
+    "横层未绘制未经确认的调用关系"
+  ],
+  "family": "系统与软件",
+  "diagram_name": "分层系统架构"
+}

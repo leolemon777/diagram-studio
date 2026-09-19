@@ -1,0 +1,29 @@
+{
+  "id": "maintenance-affinity-map",
+  "mode": "affinity-map",
+  "title": "维修痛点亲和图",
+  "subtitle": "先保留原始观察并分组，再为主题命名；少数意见不丢失",
+  "data_status": "simulated",
+  "observations": [
+    {"id": "o1", "text": "检修前一天才收到完整工作包", "source": "访谈 A01"},
+    {"id": "o2", "text": "隔离点照片分散在多个群聊", "source": "访谈 A02"},
+    {"id": "o3", "text": "同一备件有两套命名", "source": "观察 A03"},
+    {"id": "o4", "text": "领料后才发现密封规格不符", "source": "观察 A04"},
+    {"id": "o5", "text": "试车条件没有统一清单", "source": "访谈 A05"},
+    {"id": "o6", "text": "运行和维修对完成定义不同", "source": "访谈 A06"},
+    {"id": "o7", "text": "故障代码太粗，无法区分重复问题", "source": "数据复盘 A07"},
+    {"id": "o8", "text": "完工照片有时没有设备位号", "source": "抽样 A08"},
+    {"id": "o9", "text": "夜班更愿意使用纸质记录", "source": "访谈 A09"},
+    {"id": "o10", "text": "师傅口述经验没有进入标准作业", "source": "访谈 A10"},
+    {"id": "o11", "text": "紧急抢修时审批链太长", "source": "访谈 A11"},
+    {"id": "o12", "text": "移动端扫码在地下泵房信号弱", "source": "现场 A12"}
+  ],
+  "themes": [
+    {"id": "t1", "label": "准备信息不完整", "observation_ids": ["o1", "o2", "o5"]},
+    {"id": "t2", "label": "物料与命名不一致", "observation_ids": ["o3", "o4"]},
+    {"id": "t3", "label": "闭环证据不可追溯", "observation_ids": ["o6", "o7", "o8"]},
+    {"id": "t4", "label": "现场使用约束", "observation_ids": ["o9", "o10", "o11", "o12"]}
+  ],
+  "minority_observation_ids": ["o9", "o12"],
+  "assumptions": ["观察和来源编号均为模拟", "主题名称是一次整理结果，不代表统计显著性或最终根因"]
+}

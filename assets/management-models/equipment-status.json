@@ -1,0 +1,23 @@
+{
+  "id": "equipment-status",
+  "mode": "status",
+  "title": "关键设备状态表",
+  "subtitle": "状态含义、更新时间和过期判定同时显示；模拟记录",
+  "data_status": "simulated",
+  "as_of": "2026-09-17",
+  "stale_after_days": 7,
+  "status_definitions": [
+    {"id": "normal", "label": "正常", "meaning": "运行参数在当前控制限内", "color": "green"},
+    {"id": "watch", "label": "关注", "meaning": "可运行，已安排复查", "color": "amber"},
+    {"id": "stop", "label": "停机", "meaning": "禁止运行，等待检修放行", "color": "red"}
+  ],
+  "rows": [
+    {"id": "e1", "object": "P-101A 循环泵", "status": "normal", "updated_at": "2026-09-17", "owner": "运行一班"},
+    {"id": "e2", "object": "P-101B 备用泵", "status": "watch", "updated_at": "2026-09-15", "owner": "设备组"},
+    {"id": "e3", "object": "C-201 压缩机", "status": "stop", "updated_at": "2026-09-16", "owner": "检修组"},
+    {"id": "e4", "object": "E-301 换热器", "status": "normal", "updated_at": "2026-09-08", "owner": "运行二班"},
+    {"id": "e5", "object": "TK-401 储槽", "status": "watch", "updated_at": "2026-09-13", "owner": "工艺组"}
+  ],
+  "assumptions": ["截至日期和设备状态均为模拟数据", "颜色只作辅助，状态文字始终保留"],
+  "footer": "模拟状态 · 截止日期明确 · 超过 7 天自动标为过期"
+}

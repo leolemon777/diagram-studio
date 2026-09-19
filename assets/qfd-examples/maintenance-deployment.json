@@ -1,0 +1,361 @@
+{
+  "title": "维修监测改善 · 四阶段 QFD",
+  "scope": "使用者需求 → 技术特性 → 设计措施 → 实施过程 → 验收检查",
+  "data_status": "所有权重、关系、目标与责任角色均为模拟",
+  "method": "classic_weighted_sum_0139",
+  "method_basis": "经典0/1/3/9加权和逐阶段归一化；按ID完整继承，不作自动筛选",
+  "stages": [
+    {
+      "id": "S1",
+      "title": "需求转为技术特性",
+      "input_kind": "内部使用者需求",
+      "output_kind": "技术特性",
+      "weight_basis": "假设评审重要度5／4／3／2，按总和归一",
+      "relationship_basis": "示范性工程判断；0／1／3／9量表",
+      "inputs": [
+        {
+          "id": "R1",
+          "label": "减少非计划停机",
+          "weight": 5,
+          "source": "模拟维修班组需求"
+        },
+        {
+          "id": "R2",
+          "label": "缩短故障定位时间",
+          "weight": 4,
+          "source": "模拟维修班组需求"
+        },
+        {
+          "id": "R3",
+          "label": "降低维护工作量",
+          "weight": 3,
+          "source": "模拟维修班组需求"
+        },
+        {
+          "id": "R4",
+          "label": "控制改造投入",
+          "weight": 2,
+          "source": "模拟维修班组需求"
+        }
+      ],
+      "outputs": [
+        {
+          "id": "T1",
+          "label": "故障检出率",
+          "direction": "max",
+          "target": 95,
+          "unit": "%",
+          "source": "模拟工程评审目标",
+          "owner": "设备工程"
+        },
+        {
+          "id": "T2",
+          "label": "报警定位时间",
+          "direction": "min",
+          "target": 3,
+          "unit": "min",
+          "source": "模拟工程评审目标",
+          "owner": "设备工程"
+        },
+        {
+          "id": "T3",
+          "label": "月维护工时",
+          "direction": "min",
+          "target": 8,
+          "unit": "h",
+          "source": "模拟工程评审目标",
+          "owner": "设备工程"
+        },
+        {
+          "id": "T4",
+          "label": "改造预算",
+          "direction": "min",
+          "target": 10,
+          "unit": "万元",
+          "source": "模拟工程评审目标",
+          "owner": "设备工程"
+        },
+        {
+          "id": "T5",
+          "label": "记录完整率",
+          "direction": "max",
+          "target": 98,
+          "unit": "%",
+          "source": "模拟工程评审目标",
+          "owner": "设备工程"
+        }
+      ],
+      "relationships": [
+        [
+          9,
+          3,
+          1,
+          0,
+          3
+        ],
+        [
+          3,
+          9,
+          1,
+          0,
+          9
+        ],
+        [
+          1,
+          3,
+          9,
+          3,
+          3
+        ],
+        [
+          0,
+          0,
+          1,
+          9,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "S2",
+      "title": "技术特性转为设计措施",
+      "input_kind": "技术特性",
+      "output_kind": "设计措施",
+      "carry_mode": "full",
+      "input_ids": [
+        "T5",
+        "T1",
+        "T2",
+        "T3",
+        "T4"
+      ],
+      "relationship_basis": "假设评审：五项技术目标对四项措施的支撑关系",
+      "outputs": [
+        {
+          "id": "D1",
+          "label": "关键测点覆盖率",
+          "direction": "max",
+          "target": 95,
+          "unit": "%",
+          "owner": "仪控",
+          "source": "模拟跨专业评审目标，未作现场验证"
+        },
+        {
+          "id": "D2",
+          "label": "报警地址核对率",
+          "direction": "max",
+          "target": 100,
+          "unit": "%",
+          "owner": "自动化",
+          "source": "模拟跨专业评审目标，未作现场验证"
+        },
+        {
+          "id": "D3",
+          "label": "免拆维护点比例",
+          "direction": "max",
+          "target": 80,
+          "unit": "%",
+          "owner": "机械",
+          "source": "模拟跨专业评审目标，未作现场验证"
+        },
+        {
+          "id": "D4",
+          "label": "标准模块复用率",
+          "direction": "max",
+          "target": 75,
+          "unit": "%",
+          "owner": "设备工程",
+          "source": "模拟跨专业评审目标，未作现场验证"
+        }
+      ],
+      "relationships": [
+        [
+          9,
+          9,
+          1,
+          3
+        ],
+        [
+          9,
+          3,
+          1,
+          1
+        ],
+        [
+          3,
+          9,
+          1,
+          3
+        ],
+        [
+          1,
+          1,
+          9,
+          3
+        ],
+        [
+          1,
+          1,
+          3,
+          9
+        ]
+      ]
+    },
+    {
+      "id": "S3",
+      "title": "设计措施转为实施过程",
+      "input_kind": "设计措施",
+      "output_kind": "实施过程特性",
+      "carry_mode": "full",
+      "input_ids": [
+        "D1",
+        "D2",
+        "D3",
+        "D4"
+      ],
+      "relationship_basis": "假设评审：设计措施对调试、建档及维护策划的要求",
+      "outputs": [
+        {
+          "id": "P1",
+          "label": "测点逐点校验率",
+          "direction": "max",
+          "target": 100,
+          "unit": "%",
+          "owner": "仪控调试",
+          "source": "模拟跨专业评审目标，未作现场验证"
+        },
+        {
+          "id": "P2",
+          "label": "报警联调通过率",
+          "direction": "max",
+          "target": 100,
+          "unit": "%",
+          "owner": "自动化",
+          "source": "模拟跨专业评审目标，未作现场验证"
+        },
+        {
+          "id": "P3",
+          "label": "维护动作验证率",
+          "direction": "max",
+          "target": 100,
+          "unit": "%",
+          "owner": "维修班组",
+          "source": "模拟跨专业评审目标，未作现场验证"
+        },
+        {
+          "id": "P4",
+          "label": "备件编码完成率",
+          "direction": "max",
+          "target": 100,
+          "unit": "%",
+          "owner": "备件管理",
+          "source": "模拟跨专业评审目标，未作现场验证"
+        }
+      ],
+      "relationships": [
+        [
+          9,
+          3,
+          1,
+          1
+        ],
+        [
+          3,
+          9,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          9,
+          3
+        ],
+        [
+          1,
+          3,
+          3,
+          9
+        ]
+      ]
+    },
+    {
+      "id": "S4",
+      "title": "实施过程转为验收检查",
+      "input_kind": "实施过程特性",
+      "output_kind": "验收检查要求",
+      "carry_mode": "full",
+      "input_ids": [
+        "P1",
+        "P2",
+        "P3",
+        "P4"
+      ],
+      "relationship_basis": "假设评审：过程特性到验收记录和责任分工",
+      "outputs": [
+        {
+          "id": "C1",
+          "label": "校验记录完整率",
+          "direction": "max",
+          "target": 100,
+          "unit": "%",
+          "owner": "仪控验收",
+          "source": "模拟跨专业评审目标，未作现场验证"
+        },
+        {
+          "id": "C2",
+          "label": "报警用例执行率",
+          "direction": "max",
+          "target": 100,
+          "unit": "%",
+          "owner": "自动化验收",
+          "source": "模拟跨专业评审目标，未作现场验证"
+        },
+        {
+          "id": "C3",
+          "label": "维护演练完成率",
+          "direction": "max",
+          "target": 100,
+          "unit": "%",
+          "owner": "维修验收",
+          "source": "模拟跨专业评审目标，未作现场验证"
+        },
+        {
+          "id": "C4",
+          "label": "备件台账核对率",
+          "direction": "max",
+          "target": 100,
+          "unit": "%",
+          "owner": "仓储验收",
+          "source": "模拟跨专业评审目标，未作现场验证"
+        }
+      ],
+      "relationships": [
+        [
+          9,
+          3,
+          0,
+          1
+        ],
+        [
+          1,
+          9,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          9,
+          3
+        ],
+        [
+          1,
+          0,
+          3,
+          9
+        ]
+      ]
+    }
+  ]
+}

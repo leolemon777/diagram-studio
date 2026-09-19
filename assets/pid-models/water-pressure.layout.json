@@ -1,0 +1,54 @@
+{
+  "positions": {
+    "tank": [
+      170,
+      490
+    ],
+    "pump": [
+      440,
+      490
+    ],
+    "tee": [
+      720,
+      490
+    ],
+    "valve": [
+      990,
+      490
+    ],
+    "sink": [
+      1320,
+      490
+    ],
+    "pt": [
+      720,
+      340
+    ],
+    "display": [
+      1100,
+      340
+    ]
+  },
+  "ports": {
+    "tank_out": "right",
+    "pump_in": "left",
+    "pump_out": "right",
+    "tee_in": "left",
+    "tee_out": "right",
+    "tee_sense": "top",
+    "valve_in": "left",
+    "valve_out": "right",
+    "sink_in": "left",
+    "pt_sense": "bottom",
+    "pt_signal": "right",
+    "display_signal": "left"
+  },
+  "routes": {
+    "C1": [],
+    "C2": [],
+    "C3": [],
+    "C4": [],
+    "C5": [],
+    "C6": []
+  }
+}

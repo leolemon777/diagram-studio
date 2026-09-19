@@ -1,0 +1,155 @@
+{
+  "catalog_id": "cn-1238",
+  "mode": "website-concept",
+  "title": "公益募捐网站概念图",
+  "subtitle": "内容模型、信任证据与捐赠路径同图验证",
+  "template": "wireframe",
+  "sector": "软件与数字产品",
+  "use_case": "网站策划、内容设计和营销协作的高频入口",
+  "data_status": "simulated",
+  "assumptions": [
+    "内容和数值为教学模拟",
+    "真实交付前须替换名称、事实、品牌、尺寸和审批信息"
+  ],
+  "metrics": [
+    {
+      "id": "screens",
+      "label": "关键页面",
+      "value": 2,
+      "unit": "个",
+      "evidence": "模拟输入"
+    },
+    {
+      "id": "steps",
+      "label": "捐赠步骤",
+      "value": 3,
+      "unit": "步",
+      "evidence": "模拟输入"
+    }
+  ],
+  "screens": [
+    {
+      "id": "home",
+      "label": "首页",
+      "viewport": "1440×1024",
+      "rect": [
+        0.05,
+        0.1,
+        0.42,
+        0.78
+      ],
+      "regions": [
+        {
+          "id": "hero",
+          "role": "headline",
+          "label": "使命与核心行动",
+          "rect": [
+            0.04,
+            0.7,
+            0.92,
+            0.24
+          ]
+        },
+        {
+          "id": "impact",
+          "role": "evidence",
+          "label": "影响数据",
+          "rect": [
+            0.04,
+            0.43,
+            0.92,
+            0.19
+          ]
+        },
+        {
+          "id": "stories",
+          "role": "content",
+          "label": "受助故事",
+          "rect": [
+            0.04,
+            0.15,
+            0.92,
+            0.21
+          ]
+        },
+        {
+          "id": "footer",
+          "role": "footer",
+          "label": "透明度与联系",
+          "rect": [
+            0.04,
+            0.03,
+            0.92,
+            0.08
+          ]
+        }
+      ]
+    },
+    {
+      "id": "donate",
+      "label": "捐赠页",
+      "viewport": "1440×1024",
+      "rect": [
+        0.53,
+        0.1,
+        0.42,
+        0.78
+      ],
+      "regions": [
+        {
+          "id": "amount",
+          "role": "form",
+          "label": "金额与频率",
+          "rect": [
+            0.05,
+            0.65,
+            0.9,
+            0.25
+          ]
+        },
+        {
+          "id": "method",
+          "role": "form",
+          "label": "支付方式",
+          "rect": [
+            0.05,
+            0.37,
+            0.9,
+            0.2
+          ]
+        },
+        {
+          "id": "trust",
+          "role": "evidence",
+          "label": "安全与用途说明",
+          "rect": [
+            0.05,
+            0.16,
+            0.9,
+            0.14
+          ]
+        },
+        {
+          "id": "submit",
+          "role": "actions",
+          "label": "确认捐赠",
+          "rect": [
+            0.05,
+            0.04,
+            0.9,
+            0.08
+          ]
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "id": "i1",
+      "source_screen": "home",
+      "target_screen": "donate",
+      "trigger": "点击立即捐赠"
+    }
+  ],
+  "responsive_rule": "小屏保持内容顺序并将主行动固定在可见区"
+}

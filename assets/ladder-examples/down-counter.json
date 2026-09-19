@@ -1,0 +1,190 @@
+{
+  "title": "减计数 CTD · 装载优先与零值保持",
+  "scope": "按明确毫秒时刻调用 · 功能块状态独立保存",
+  "data_status": "假设教学扫描；不代表实际设备",
+  "semantics": "sequential_timed_scan",
+  "write_policy": "single_writer",
+  "variables": [
+    {
+      "id": "Pulse",
+      "label": "待计数信号",
+      "role": "input",
+      "source": "假设扫描记录；不是现场I/O地址"
+    },
+    {
+      "id": "Load",
+      "label": "装载预置值请求",
+      "role": "input",
+      "source": "假设扫描记录；不是现场I/O地址"
+    },
+    {
+      "id": "Empty",
+      "label": "剩余计数为零",
+      "role": "output",
+      "source": "假设扫描记录；不是现场I/O地址",
+      "initial": false
+    }
+  ],
+  "rungs": [
+    {
+      "id": "R1",
+      "label": "LOAD优先装载PV；否则仅CD上升沿减1，零值不回绕",
+      "logic": {
+        "id": "R1_contact",
+        "kind": "contact",
+        "var": "Pulse",
+        "sense": "true"
+      },
+      "block": {
+        "id": "C1",
+        "type": "CTD",
+        "pv": 3,
+        "load": "Load",
+        "initial_cv": 0,
+        "previous_input": false
+      },
+      "coil": {
+        "id": "R1_coil",
+        "kind": "assign",
+        "var": "Empty"
+      }
+    }
+  ],
+  "scans": [
+    {
+      "id": "S1",
+      "label": "初值为0，Q已为真",
+      "time_ms": 0,
+      "inputs": {
+        "Pulse": false,
+        "Load": false
+      }
+    },
+    {
+      "id": "S2",
+      "label": "装载3",
+      "time_ms": 10,
+      "inputs": {
+        "Pulse": false,
+        "Load": true
+      }
+    },
+    {
+      "id": "S3",
+      "label": "第1次上升沿，减为2",
+      "time_ms": 20,
+      "inputs": {
+        "Pulse": true,
+        "Load": false
+      }
+    },
+    {
+      "id": "S4",
+      "label": "高保持，不重复减数",
+      "time_ms": 30,
+      "inputs": {
+        "Pulse": true,
+        "Load": false
+      }
+    },
+    {
+      "id": "S5",
+      "label": "回低",
+      "time_ms": 40,
+      "inputs": {
+        "Pulse": false,
+        "Load": false
+      }
+    },
+    {
+      "id": "S6",
+      "label": "第2次减为1",
+      "time_ms": 50,
+      "inputs": {
+        "Pulse": true,
+        "Load": false
+      }
+    },
+    {
+      "id": "S7",
+      "label": "回低",
+      "time_ms": 60,
+      "inputs": {
+        "Pulse": false,
+        "Load": false
+      }
+    },
+    {
+      "id": "S8",
+      "label": "第3次减为0，Q真",
+      "time_ms": 70,
+      "inputs": {
+        "Pulse": true,
+        "Load": false
+      }
+    },
+    {
+      "id": "S9",
+      "label": "零值保持",
+      "time_ms": 80,
+      "inputs": {
+        "Pulse": false,
+        "Load": false
+      }
+    },
+    {
+      "id": "S10",
+      "label": "零时再上升，不回绕",
+      "time_ms": 90,
+      "inputs": {
+        "Pulse": true,
+        "Load": false
+      }
+    },
+    {
+      "id": "S11",
+      "label": "回低",
+      "time_ms": 100,
+      "inputs": {
+        "Pulse": false,
+        "Load": false
+      }
+    },
+    {
+      "id": "S12",
+      "label": "装载与上升沿同真，装载优先",
+      "time_ms": 110,
+      "inputs": {
+        "Pulse": true,
+        "Load": true
+      }
+    },
+    {
+      "id": "S13",
+      "label": "装载释放仍高，不虚构新边沿",
+      "time_ms": 120,
+      "inputs": {
+        "Pulse": true,
+        "Load": false
+      }
+    },
+    {
+      "id": "S14",
+      "label": "回低",
+      "time_ms": 130,
+      "inputs": {
+        "Pulse": false,
+        "Load": false
+      }
+    },
+    {
+      "id": "S15",
+      "label": "新边沿减为2",
+      "time_ms": 140,
+      "inputs": {
+        "Pulse": true,
+        "Load": false
+      }
+    }
+  ]
+}

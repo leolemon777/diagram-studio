@@ -1,0 +1,34 @@
+{
+  "id": "reliability-target-matrix",
+  "mode": "target-matrix",
+  "title": "设备可靠性目标矩阵",
+  "subtitle": "目标、行动、指标、责任与节奏可追踪；模拟计划",
+  "data_status": "simulated",
+  "objectives": [
+    {"id": "o1", "label": "减少非计划停机"},
+    {"id": "o2", "label": "缩短修复时间"},
+    {"id": "o3", "label": "提升点检闭环"}
+  ],
+  "initiatives": [
+    {"id": "i1", "label": "关键泵状态监测", "owner": "设备组", "cadence": "每周", "priority": "high"},
+    {"id": "i2", "label": "常用备件分级补库", "owner": "仓储组", "cadence": "每月", "priority": "medium"},
+    {"id": "i3", "label": "故障工单标准化", "owner": "检修组", "cadence": "双周", "priority": "high"},
+    {"id": "i4", "label": "点检异常 24h 复核", "owner": "运行组", "cadence": "每日", "priority": "medium"}
+  ],
+  "metrics": [
+    {"id": "m1", "label": "非计划停机", "operator": "<=", "target": 12, "unit": "h/月"},
+    {"id": "m2", "label": "平均修复时间", "operator": "<=", "target": 3.5, "unit": "h"},
+    {"id": "m3", "label": "工单完整率", "operator": ">=", "target": 98, "unit": "%"},
+    {"id": "m4", "label": "异常按期复核率", "operator": ">=", "target": 95, "unit": "%"}
+  ],
+  "links": [
+    {"initiative": "i1", "objective": "o1", "metric": "m1", "strength": "primary"},
+    {"initiative": "i2", "objective": "o2", "metric": "m2", "strength": "supporting"},
+    {"initiative": "i3", "objective": "o2", "metric": "m3", "strength": "primary"},
+    {"initiative": "i3", "objective": "o3", "metric": "m3", "strength": "supporting"},
+    {"initiative": "i4", "objective": "o3", "metric": "m4", "strength": "primary"},
+    {"initiative": "i4", "objective": "o1", "metric": "m4", "strength": "supporting"}
+  ],
+  "assumptions": ["目标、责任和数值均为模拟计划", "● 表示主责关系，○ 表示支持关系"],
+  "footer": "模拟计划 · 关系强度用符号和文字双重表达 · 指标目标可追踪"
+}

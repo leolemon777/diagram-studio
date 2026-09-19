@@ -1,0 +1,86 @@
+[
+  {
+    "id": "rungs",
+    "name": "刻度柱",
+    "input": "assets/data-art-examples/rungs.json",
+    "reference": "references/data-art.md",
+    "renderer": "scripts/data_art.py"
+  },
+  {
+    "id": "barcode",
+    "name": "日序条码",
+    "input": "assets/data-art-examples/barcode.json",
+    "reference": "references/data-art.md",
+    "renderer": "scripts/data_art.py"
+  },
+  {
+    "id": "area",
+    "name": "细线面积",
+    "input": "assets/data-art-examples/area.json",
+    "reference": "references/data-art.md",
+    "renderer": "scripts/data_art.py"
+  },
+  {
+    "id": "ring",
+    "name": "计量环",
+    "input": "assets/data-art-examples/ring.json",
+    "reference": "references/data-art.md",
+    "renderer": "scripts/data_art.py"
+  },
+  {
+    "id": "field",
+    "name": "计数点阵",
+    "input": "assets/data-art-examples/field.json",
+    "reference": "references/data-art.md",
+    "renderer": "scripts/data_art.py"
+  },
+  {
+    "id": "dumbbell",
+    "name": "前后哑铃",
+    "input": "assets/data-art-examples/dumbbell.json",
+    "reference": "references/data-art.md",
+    "renderer": "scripts/data_art.py"
+  },
+  {
+    "id": "scatter",
+    "name": "垂线散点",
+    "input": "assets/data-art-examples/scatter.json",
+    "reference": "references/data-art.md",
+    "renderer": "scripts/data_art.py"
+  },
+  {
+    "id": "matrix",
+    "name": "面积点阵",
+    "input": "assets/data-art-examples/matrix.json",
+    "reference": "references/data-art.md",
+    "renderer": "scripts/data_art.py"
+  },
+  {
+    "id": "distribution",
+    "name": "样本与箱线",
+    "input": "assets/data-art-examples/distribution.json",
+    "reference": "references/data-art.md",
+    "renderer": "scripts/data_art.py"
+  },
+  {
+    "id": "waterfall",
+    "name": "增减分解",
+    "input": "assets/data-art-examples/waterfall.json",
+    "reference": "references/data-art.md",
+    "renderer": "scripts/data_art.py"
+  },
+  {
+    "id": "multiples",
+    "name": "指数小多图",
+    "input": "assets/data-art-examples/multiples.json",
+    "reference": "references/data-art.md",
+    "renderer": "scripts/data_art.py"
+  },
+  {
+    "id": "parallel",
+    "name": "多维剖面",
+    "input": "assets/data-art-examples/parallel.json",
+    "reference": "references/data-art.md",
+    "renderer": "scripts/data_art.py"
+  }
+]

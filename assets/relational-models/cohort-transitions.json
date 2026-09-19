@@ -1,0 +1,36 @@
+{
+  "id": "cohort-transitions",
+  "mode": "alluvial",
+  "title": "维修工单从登记到闭环的去向",
+  "subtitle": "同一批 100 张模拟工单；每个阶段总量守恒",
+  "data_status": "simulated",
+  "stages": [
+    {"id": "intake", "label": "登记", "categories": [
+      {"id": "urgent", "label": "紧急"}, {"id": "routine", "label": "常规"}, {"id": "planned", "label": "计划"}]},
+    {"id": "handling", "label": "处理方式", "categories": [
+      {"id": "onsite", "label": "现场处置"}, {"id": "workshop", "label": "送修"}, {"id": "observe", "label": "跟踪观察"}]},
+    {"id": "result", "label": "闭环结果", "categories": [
+      {"id": "closed", "label": "按期关闭"}, {"id": "delayed", "label": "延期关闭"}, {"id": "rework", "label": "返工"}]}
+  ],
+  "links": [
+    {"source_stage": "intake", "source": "urgent", "target_stage": "handling", "target": "onsite", "value": 22},
+    {"source_stage": "intake", "source": "urgent", "target_stage": "handling", "target": "workshop", "value": 8},
+    {"source_stage": "intake", "source": "routine", "target_stage": "handling", "target": "onsite", "value": 24},
+    {"source_stage": "intake", "source": "routine", "target_stage": "handling", "target": "workshop", "value": 16},
+    {"source_stage": "intake", "source": "routine", "target_stage": "handling", "target": "observe", "value": 10},
+    {"source_stage": "intake", "source": "planned", "target_stage": "handling", "target": "onsite", "value": 8},
+    {"source_stage": "intake", "source": "planned", "target_stage": "handling", "target": "workshop", "value": 4},
+    {"source_stage": "intake", "source": "planned", "target_stage": "handling", "target": "observe", "value": 8},
+    {"source_stage": "handling", "source": "onsite", "target_stage": "result", "target": "closed", "value": 45},
+    {"source_stage": "handling", "source": "onsite", "target_stage": "result", "target": "delayed", "value": 5},
+    {"source_stage": "handling", "source": "onsite", "target_stage": "result", "target": "rework", "value": 4},
+    {"source_stage": "handling", "source": "workshop", "target_stage": "result", "target": "closed", "value": 20},
+    {"source_stage": "handling", "source": "workshop", "target_stage": "result", "target": "delayed", "value": 6},
+    {"source_stage": "handling", "source": "workshop", "target_stage": "result", "target": "rework", "value": 2},
+    {"source_stage": "handling", "source": "observe", "target_stage": "result", "target": "closed", "value": 11},
+    {"source_stage": "handling", "source": "observe", "target_stage": "result", "target": "delayed", "value": 5},
+    {"source_stage": "handling", "source": "observe", "target_stage": "result", "target": "rework", "value": 2}
+  ],
+  "assumptions": ["每张工单在每个阶段只归入一个类别", "图中流向不表示因果"],
+  "footer": "模拟工单 · 同一群体跨阶段追踪 · 流宽按工单数"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "weekly-maintenance-report",
+  "mode": "report-table",
+  "title": "维修周报明细与汇总",
+  "subtitle": "明细、单位与汇总口径分层呈现",
+  "data_status": "simulated",
+  "columns": [
+    {"id": "area", "label": "区域", "type": "text"},
+    {"id": "metric", "label": "指标", "type": "text"},
+    {"id": "plan", "label": "计划", "type": "number", "unit": "%"},
+    {"id": "actual", "label": "实际", "type": "number", "unit": "%"},
+    {"id": "variance", "label": "偏差", "type": "number", "unit": "百分点"},
+    {"id": "owner", "label": "责任", "type": "text"}
+  ],
+  "records": [
+    {"id": "r1", "values": {"area": "压缩空气", "metric": "计划检修完成率", "plan": 95, "actual": 96, "variance": 1, "owner": "机械组"}},
+    {"id": "r2", "values": {"area": "循环水", "metric": "计划检修完成率", "plan": 95, "actual": 92, "variance": -3, "owner": "公用组"}},
+    {"id": "r3", "values": {"area": "包装线", "metric": "计划检修完成率", "plan": 95, "actual": 98, "variance": 3, "owner": "生产维修"}},
+    {"id": "r4", "values": {"area": "动力配电", "metric": "计划检修完成率", "plan": 95, "actual": 94, "variance": -1, "owner": "电仪组"}}
+  ],
+  "summaries": [
+    {"column": "plan", "operation": "average"},
+    {"column": "actual", "operation": "average"},
+    {"column": "variance", "operation": "average"}
+  ],
+  "assumptions": ["全部记录为模拟周报", "汇总只对当前四条明细进行算术平均"]
+}

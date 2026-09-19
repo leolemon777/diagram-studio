@@ -1,0 +1,120 @@
+{
+  "catalog_id": "cn-1128",
+  "mode": "ceiling-plan",
+  "title": "共享办公室天花反向图",
+  "subtitle": "吊顶分区、灯具和设备检修边界分层",
+  "template": "spatial",
+  "sector": "建筑与家装",
+  "use_case": "室内设计和机电协调常用天花图",
+  "data_status": "simulated",
+  "assumptions": [
+    "内容和数值为教学模拟",
+    "真实交付前须替换名称、事实、品牌、尺寸和审批信息"
+  ],
+  "metrics": [
+    {
+      "id": "fixtures",
+      "label": "灯具组",
+      "value": 2,
+      "unit": "组",
+      "evidence": "模拟输入"
+    },
+    {
+      "id": "zones",
+      "label": "吊顶区",
+      "value": 2,
+      "unit": "区",
+      "evidence": "模拟输入"
+    }
+  ],
+  "zones": [
+    {
+      "id": "ceil1",
+      "label": "开放区吊顶",
+      "kind": "ceiling",
+      "rect": [
+        0.08,
+        0.45,
+        0.48,
+        0.4
+      ],
+      "label_position": [
+        0.32,
+        0.78
+      ]
+    },
+    {
+      "id": "ceil2",
+      "label": "会议区吊顶",
+      "kind": "ceiling",
+      "rect": [
+        0.6,
+        0.45,
+        0.3,
+        0.4
+      ],
+      "label_position": [
+        0.75,
+        0.78
+      ]
+    },
+    {
+      "id": "light1",
+      "label": "线性灯带 A",
+      "kind": "lighting",
+      "rect": [
+        0.16,
+        0.6,
+        0.32,
+        0.08
+      ]
+    },
+    {
+      "id": "light2",
+      "label": "会议灯带 B",
+      "kind": "lighting",
+      "rect": [
+        0.65,
+        0.6,
+        0.2,
+        0.08
+      ]
+    },
+    {
+      "id": "access",
+      "label": "检修口",
+      "kind": "service",
+      "rect": [
+        0.72,
+        0.49,
+        0.1,
+        0.08
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "id": "m1",
+      "zone": "light1",
+      "label": "灯带长度",
+      "value": 4.8,
+      "unit": "m"
+    },
+    {
+      "id": "m2",
+      "zone": "access",
+      "label": "检修口",
+      "value": 600,
+      "unit": "mm"
+    },
+    {
+      "id": "m3",
+      "zone": "ceil2",
+      "label": "吊顶标高",
+      "value": 2.9,
+      "unit": "m"
+    }
+  ],
+  "view": "plan",
+  "scale_note": "RCP 概念协调图；施工前与机电和消防综合复核"
+}

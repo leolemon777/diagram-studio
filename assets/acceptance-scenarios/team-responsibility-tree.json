@@ -1,0 +1,25 @@
+{
+  "type": "tree",
+  "direction": "down",
+  "title": "产品上线团队责任结构",
+  "subtitle": "模拟场景 · 用汇报关系和职责范围区分产品、交付、运营与数据工作",
+  "eyebrow": "ACCEPTANCE / 企业管理",
+  "footer": "模拟组织结构 · RACI 细项应另以责任矩阵确认",
+  "assumptions": ["岗位和职责为验收用模拟数据"],
+  "root": {
+    "id":"lead","label":"上线负责人","detail":"统筹范围、节奏与风险",
+    "children":[
+      {"id":"product","label":"产品负责人","detail":"需求优先级与验收","children":[
+        {"id":"design","label":"体验设计","detail":"界面与内容"},
+        {"id":"data","label":"数据分析","detail":"指标与复盘"}
+      ]},
+      {"id":"delivery","label":"交付负责人","detail":"研发与测试协同","children":[
+        {"id":"engineer","label":"研发","detail":"实现与发布"},
+        {"id":"qa","label":"测试","detail":"质量验证"}
+      ]},
+      {"id":"operations","label":"运营负责人","detail":"触达与培训","children":[
+        {"id":"support","label":"客户支持","detail":"反馈闭环"}
+      ]}
+    ]
+  }
+}

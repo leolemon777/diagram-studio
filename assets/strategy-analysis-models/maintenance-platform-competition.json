@@ -1,0 +1,23 @@
+{
+  "id": "maintenance-platform-competition",
+  "mode": "competitive-analysis",
+  "title": "维修平台竞争分析",
+  "subtitle": "同一范围、时点与量表；低优维度在计算时反向归一化",
+  "data_status": "simulated",
+  "market_scope": "中型流程工业维修协同平台",
+  "as_of": "2026-09-17",
+  "scoring_scale": [1, 5],
+  "dimensions": [
+    {"id": "workflow", "label": "工单闭环", "direction": "higher-better", "weight": 0.30, "basis": "场景任务完成度"},
+    {"id": "integration", "label": "系统集成", "direction": "higher-better", "weight": 0.25, "basis": "已验证接口覆盖"},
+    {"id": "onsite", "label": "现场支持", "direction": "higher-better", "weight": 0.25, "basis": "本地服务能力"},
+    {"id": "effort", "label": "实施负担", "direction": "lower-better", "weight": 0.20, "basis": "上线工时估算"}
+  ],
+  "competitors": [
+    {"id": "ours", "label": "本方案", "source": "模拟演示验证 S-01", "as_of": "2026-09-17", "scores": {"workflow": 5, "integration": 4, "onsite": 4, "effort": 3}},
+    {"id": "alpha", "label": "平台 Alpha", "source": "模拟资料快照 S-02", "as_of": "2026-09-17", "scores": {"workflow": 4, "integration": 5, "onsite": 2, "effort": 2}},
+    {"id": "beta", "label": "服务 Beta", "source": "模拟资料快照 S-03", "as_of": "2026-09-17", "scores": {"workflow": 3, "integration": 2, "onsite": 5, "effort": 4}},
+    {"id": "gamma", "label": "套件 Gamma", "source": "模拟资料快照 S-04", "as_of": "2026-09-17", "scores": {"workflow": 4, "integration": 3, "onsite": 3, "effort": 2}}
+  ],
+  "assumptions": ["评分和来源均为模拟数据", "正式选型需保留可复核的评分证据"]
+}

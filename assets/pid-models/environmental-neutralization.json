@@ -1,0 +1,229 @@
+{
+  "schema": "pid-topology-1",
+  "title": "废水均化、加药与 pH 测量：环境 P&ID 教学拓扑",
+  "assumptions": [
+    "模拟废水均化与加药汇流；未给污染物浓度、停留时间、处理效率或排放达标结论。",
+    "pH 回路只画采样测量与显示，不编造投加比例、联锁或控制算法。",
+    "独立教学符号未验证为完整 ISA 5.1 符号集，也不是 DEXPI 交换文件。"
+  ],
+  "items": [
+    {
+      "id": "influent",
+      "tag": "B-601",
+      "kind": "boundary",
+      "label": "废水入口",
+      "ports": [
+        {
+          "id": "influent_out",
+          "domain": "process",
+          "direction": "out"
+        }
+      ]
+    },
+    {
+      "id": "equalization",
+      "tag": "TK-601",
+      "kind": "tank",
+      "label": "均化槽",
+      "ports": [
+        {
+          "id": "eq_in",
+          "domain": "process",
+          "direction": "in"
+        },
+        {
+          "id": "eq_out",
+          "domain": "process",
+          "direction": "out"
+        },
+        {
+          "id": "eq_sample",
+          "domain": "process",
+          "direction": "bidirectional"
+        }
+      ]
+    },
+    {
+      "id": "transfer",
+      "tag": "P-601",
+      "kind": "pump",
+      "label": "提升泵",
+      "ports": [
+        {
+          "id": "transfer_in",
+          "domain": "process",
+          "direction": "in"
+        },
+        {
+          "id": "transfer_out",
+          "domain": "process",
+          "direction": "out"
+        }
+      ]
+    },
+    {
+      "id": "merge",
+      "tag": "J-601",
+      "kind": "junction",
+      "label": "加药汇流点",
+      "ports": [
+        {
+          "id": "merge_main",
+          "domain": "process",
+          "direction": "in"
+        },
+        {
+          "id": "merge_dose",
+          "domain": "process",
+          "direction": "in"
+        },
+        {
+          "id": "merge_out",
+          "domain": "process",
+          "direction": "out"
+        }
+      ]
+    },
+    {
+      "id": "dose_tank",
+      "tag": "TK-602",
+      "kind": "tank",
+      "label": "药剂槽",
+      "ports": [
+        {
+          "id": "dose_out",
+          "domain": "process",
+          "direction": "out"
+        }
+      ]
+    },
+    {
+      "id": "dose_valve",
+      "tag": "HV-602",
+      "kind": "valve",
+      "label": "加药隔离阀",
+      "ports": [
+        {
+          "id": "dose_valve_in",
+          "domain": "process",
+          "direction": "in"
+        },
+        {
+          "id": "dose_valve_out",
+          "domain": "process",
+          "direction": "out"
+        }
+      ]
+    },
+    {
+      "id": "effluent",
+      "tag": "B-602",
+      "kind": "boundary",
+      "label": "后续处理边界",
+      "ports": [
+        {
+          "id": "effluent_in",
+          "domain": "process",
+          "direction": "in"
+        }
+      ]
+    },
+    {
+      "id": "ait",
+      "tag": "AIT-601",
+      "kind": "instrument",
+      "label": "pH 分析变送器",
+      "ports": [
+        {
+          "id": "ait_process",
+          "domain": "process",
+          "direction": "bidirectional"
+        },
+        {
+          "id": "ait_signal",
+          "domain": "signal",
+          "direction": "out"
+        }
+      ]
+    },
+    {
+      "id": "ai",
+      "tag": "AI-601",
+      "kind": "instrument",
+      "label": "pH 显示",
+      "ports": [
+        {
+          "id": "ai_signal",
+          "domain": "signal",
+          "direction": "in"
+        }
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "C1",
+      "from": "influent_out",
+      "to": "eq_in",
+      "domain": "process",
+      "label": "废水进槽",
+      "flow": "forward"
+    },
+    {
+      "id": "C2",
+      "from": "eq_out",
+      "to": "transfer_in",
+      "domain": "process",
+      "label": "均化出水",
+      "flow": "forward"
+    },
+    {
+      "id": "C3",
+      "from": "transfer_out",
+      "to": "merge_main",
+      "domain": "process",
+      "label": "提升出水",
+      "flow": "forward"
+    },
+    {
+      "id": "C4",
+      "from": "dose_out",
+      "to": "dose_valve_in",
+      "domain": "process",
+      "label": "药剂供给",
+      "flow": "forward"
+    },
+    {
+      "id": "C5",
+      "from": "dose_valve_out",
+      "to": "merge_dose",
+      "domain": "process",
+      "label": "加药支路",
+      "flow": "forward"
+    },
+    {
+      "id": "C6",
+      "from": "merge_out",
+      "to": "effluent_in",
+      "domain": "process",
+      "label": "至后续处理",
+      "flow": "forward"
+    },
+    {
+      "id": "C7",
+      "from": "eq_sample",
+      "to": "ait_process",
+      "domain": "process",
+      "label": "pH 采样连接",
+      "flow": "unknown"
+    },
+    {
+      "id": "C8",
+      "from": "ait_signal",
+      "to": "ai_signal",
+      "domain": "signal",
+      "label": "pH 测量信号",
+      "flow": "forward"
+    }
+  ]
+}

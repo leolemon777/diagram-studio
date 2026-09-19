@@ -1,0 +1,72 @@
+{
+  "type": "sankey",
+  "title": "桑基结构 · 来源与去向",
+  "diagram_name": "桑基结构",
+  "family": "数据图表",
+  "subtitle": "带宽与流量成比例；由连接值计算两端总量，保持守恒",
+  "eyebrow": "55 / DIAGRAM LIBRARY",
+  "footer": "原创结构范例 · 数据、实体、尺寸与假说均为演示输入；实际任务按用户资料替换",
+  "assumptions": [
+    "原创演示内容，不代表实际业务、研究结论或工程设计"
+  ],
+  "sources": [
+    {
+      "id": "a",
+      "label": "来源 A"
+    },
+    {
+      "id": "b",
+      "label": "来源 B"
+    },
+    {
+      "id": "c",
+      "label": "来源 C"
+    }
+  ],
+  "targets": [
+    {
+      "id": "x",
+      "label": "去向 X"
+    },
+    {
+      "id": "y",
+      "label": "去向 Y"
+    },
+    {
+      "id": "z",
+      "label": "去向 Z"
+    }
+  ],
+  "links": [
+    {
+      "from": "a",
+      "to": "x",
+      "value": 20
+    },
+    {
+      "from": "a",
+      "to": "y",
+      "value": 15
+    },
+    {
+      "from": "b",
+      "to": "x",
+      "value": 10
+    },
+    {
+      "from": "b",
+      "to": "y",
+      "value": 25
+    },
+    {
+      "from": "b",
+      "to": "z",
+      "value": 10
+    },
+    {
+      "from": "c",
+      "to": "z",
+      "value": 20
+    }
+  ]
+}

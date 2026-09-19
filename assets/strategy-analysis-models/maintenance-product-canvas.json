@@ -1,0 +1,29 @@
+{
+  "id": "maintenance-product-canvas",
+  "mode": "product-canvas",
+  "title": "维修协同助手产品策划画布",
+  "subtitle": "先固定问题证据和实验，再决定功能承诺",
+  "data_status": "simulated",
+  "problems": [
+    {"id": "P1", "statement": "故障交接信息散落，复盘耗时", "user": "维修班长", "evidence": "模拟访谈 6/8 人提及"},
+    {"id": "P2", "statement": "点检异常缺少统一优先级", "user": "设备工程师", "evidence": "模拟工单样本 42 条"},
+    {"id": "P3", "statement": "现场处置经验难以复用", "user": "新入职维修员", "evidence": "模拟培训反馈 5 条"}
+  ],
+  "hypotheses": [
+    {"id": "H1", "problem_id": "P1", "statement": "结构化交接可减少复盘准备时间"},
+    {"id": "H2", "problem_id": "P2", "statement": "风险分级可提高高风险异常响应率"},
+    {"id": "H3", "problem_id": "P3", "statement": "相似案例检索可缩短首诊时间"}
+  ],
+  "experiments": [
+    {"id": "E1", "hypothesis_id": "H1", "method": "两周班组试用", "success_metric": "准备时间下降 ≥30%"},
+    {"id": "E2", "hypothesis_id": "H2", "method": "历史工单回放", "success_metric": "高风险召回率 ≥90%"},
+    {"id": "E3", "hypothesis_id": "H3", "method": "盲测检索任务", "success_metric": "首诊中位时长下降 ≥20%"}
+  ],
+  "features": [
+    {"id": "F1", "label": "交接记录模板", "hypothesis_id": "H1", "status": "committed"},
+    {"id": "F2", "label": "异常风险分级", "hypothesis_id": "H2", "status": "candidate"},
+    {"id": "F3", "label": "相似案例检索", "hypothesis_id": "H3", "status": "candidate"},
+    {"id": "F4", "label": "装饰性仪表大屏", "hypothesis_id": "H1", "status": "rejected"}
+  ],
+  "assumptions": ["问题和指标为模拟内容", "候选功能需通过实验后再进入承诺范围"]
+}

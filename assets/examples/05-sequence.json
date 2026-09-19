@@ -1,0 +1,62 @@
+{
+  "type": "sequence",
+  "title": "工单创建 · 服务交互时序",
+  "subtitle": "纵向表示先后；虚线表示返回，图中不暗示实际耗时",
+  "eyebrow": "05 / SEQUENCE",
+  "actors": [
+    {
+      "id": "operator",
+      "label": "作业人员"
+    },
+    {
+      "id": "client",
+      "label": "移动端"
+    },
+    {
+      "id": "service",
+      "label": "工单服务"
+    },
+    {
+      "id": "db",
+      "label": "业务存储"
+    }
+  ],
+  "messages": [
+    {
+      "from": "operator",
+      "to": "client",
+      "label": "填写异常信息"
+    },
+    {
+      "from": "client",
+      "to": "service",
+      "label": "提交创建请求"
+    },
+    {
+      "from": "service",
+      "to": "db",
+      "label": "保存工单记录"
+    },
+    {
+      "from": "db",
+      "to": "service",
+      "label": "返回工单编号",
+      "return": true
+    },
+    {
+      "from": "service",
+      "to": "client",
+      "label": "返回创建结果",
+      "return": true
+    },
+    {
+      "from": "client",
+      "to": "operator",
+      "label": "显示工单详情",
+      "return": true
+    }
+  ],
+  "footer": "基础时序示例 · 省略鉴权及异常片段；实施时按实际接口补充",
+  "family": "过程与时序",
+  "diagram_name": "交互时序"
+}

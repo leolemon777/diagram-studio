@@ -1,0 +1,54 @@
+{
+  "positions": {
+    "feed": [
+      150,
+      460
+    ],
+    "inlet": [
+      360,
+      460
+    ],
+    "reactor": [
+      610,
+      460
+    ],
+    "pump": [
+      880,
+      460
+    ],
+    "product": [
+      1160,
+      460
+    ],
+    "tt": [
+      610,
+      290
+    ],
+    "tic": [
+      930,
+      290
+    ]
+  },
+  "ports": {
+    "feed_out": "right",
+    "inlet_in": "left",
+    "inlet_out": "right",
+    "reactor_in": "left",
+    "reactor_out": "right",
+    "reactor_temp": "top",
+    "pump_in": "left",
+    "pump_out": "right",
+    "product_in": "left",
+    "tt_process": "bottom",
+    "tt_signal": "right",
+    "tic_signal": "left"
+  },
+  "routes": {
+    "C1": [],
+    "C2": [],
+    "C3": [],
+    "C4": [],
+    "C5": [],
+    "C6": []
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "maintenance-influence-map",
+  "mode": "influence-map",
+  "title": "重复故障影响关系图",
+  "subtitle": "关联与影响主张分开，影响边必须带因果依据",
+  "data_status": "simulated",
+  "nodes": [
+    {"id": "plan", "label": "计划准备度", "kind": "condition", "position": [0.08, 0.68]},
+    {"id": "spares", "label": "备件齐套率", "kind": "condition", "position": [0.08, 0.26]},
+    {"id": "quality", "label": "检修质量", "kind": "outcome", "position": [0.40, 0.70]},
+    {"id": "startup", "label": "试车稳定性", "kind": "outcome", "position": [0.40, 0.24]},
+    {"id": "operator", "label": "运行协同", "kind": "actor", "position": [0.72, 0.72]},
+    {"id": "repeat", "label": "重复故障", "kind": "outcome", "position": [0.72, 0.25]}
+  ],
+  "links": [
+    {"id": "l1", "source": "plan", "target": "quality", "verb": "提高前置准备", "claim_type": "influences", "evidence": "模拟复盘样本 12 项", "causal_basis": "工作包完整度与返工记录的过程追踪"},
+    {"id": "l2", "source": "spares", "target": "quality", "verb": "减少替代件使用", "claim_type": "influences", "evidence": "模拟缺件记录 8 项", "causal_basis": "缺件导致的替代方案和复验记录"},
+    {"id": "l3", "source": "operator", "target": "startup", "verb": "改善工况确认", "claim_type": "influences", "evidence": "模拟试车记录 10 项", "causal_basis": "同一机组前后试车步骤对照", "label_offset": [0.02, 0.055]},
+    {"id": "l4", "source": "quality", "target": "repeat", "verb": "降低返修概率", "claim_type": "influences", "evidence": "模拟返修闭环 15 项", "causal_basis": "质量缺陷与90日返修的逐单追踪", "label_offset": [-0.02, -0.055]},
+    {"id": "l5", "source": "startup", "target": "repeat", "verb": "降低早期失效", "claim_type": "influences", "evidence": "模拟启动曲线 9 项", "causal_basis": "异常启动与早期失效的时间顺序记录"},
+    {"id": "l6", "source": "plan", "target": "spares", "verb": "同时出现", "claim_type": "associated", "evidence": "模拟周计划与齐套率同周汇总"},
+    {"id": "l7", "source": "operator", "target": "plan", "verb": "同时变化", "claim_type": "associated", "evidence": "模拟跨班组评分"}
+  ],
+  "assumptions": ["节点、证据和关系均为模拟", "关联边不被解释为因果；影响边的依据仍需现场复核"]
+}

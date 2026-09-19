@@ -1,0 +1,25 @@
+{
+  "mode": "oee",
+  "data_status": "模拟数据 · 方法与版式演示",
+  "title": "产线效率，从损失中找增量",
+  "subtitle": "OEE 分解 / 改善前后同口径对照",
+  "periods": [
+    {
+      "name": "改善前",
+      "planned_minutes": 450,
+      "stop_minutes": 60,
+      "ideal_cycle_seconds": 24,
+      "total_count": 900,
+      "first_pass_good": 855
+    },
+    {
+      "name": "改善后",
+      "planned_minutes": 450,
+      "stop_minutes": 30,
+      "ideal_cycle_seconds": 24,
+      "total_count": 1000,
+      "first_pass_good": 980
+    }
+  ],
+  "footnote": "OEE = 时间开动率 × 性能效率 × 质量率；改进数值为演示假设。"
+}

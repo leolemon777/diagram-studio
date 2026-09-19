@@ -1,0 +1,144 @@
+{
+  "catalog_id": "cn-1083",
+  "mode": "desktop-wireframe",
+  "title": "客户服务台 · Windows 桌面原型",
+  "subtitle": "高密度数据表、详情和批量操作同屏",
+  "template": "wireframe",
+  "sector": "软件与数字产品",
+  "use_case": "企业软件和桌面工具常用界面原型",
+  "data_status": "simulated",
+  "assumptions": [
+    "内容和数值为教学模拟",
+    "真实交付前须替换名称、事实、品牌、尺寸和审批信息"
+  ],
+  "metrics": [
+    {
+      "id": "screens",
+      "label": "关键页面",
+      "value": 2,
+      "unit": "个",
+      "evidence": "模拟输入"
+    },
+    {
+      "id": "regions",
+      "label": "内容区",
+      "value": 7,
+      "unit": "个",
+      "evidence": "模拟输入"
+    }
+  ],
+  "screens": [
+    {
+      "id": "list",
+      "label": "工单列表",
+      "viewport": "1440×900",
+      "rect": [
+        0.05,
+        0.12,
+        0.42,
+        0.75
+      ],
+      "regions": [
+        {
+          "id": "nav",
+          "role": "navigation",
+          "label": "模块导航",
+          "rect": [
+            0.02,
+            0.05,
+            0.2,
+            0.9
+          ]
+        },
+        {
+          "id": "toolbar",
+          "role": "toolbar",
+          "label": "筛选与批量操作",
+          "rect": [
+            0.24,
+            0.79,
+            0.73,
+            0.16
+          ]
+        },
+        {
+          "id": "table",
+          "role": "data",
+          "label": "工单表格",
+          "rect": [
+            0.24,
+            0.08,
+            0.73,
+            0.67
+          ]
+        }
+      ]
+    },
+    {
+      "id": "detail",
+      "label": "工单详情",
+      "viewport": "1440×900",
+      "rect": [
+        0.53,
+        0.12,
+        0.42,
+        0.75
+      ],
+      "regions": [
+        {
+          "id": "head",
+          "role": "summary",
+          "label": "状态与负责人",
+          "rect": [
+            0.04,
+            0.78,
+            0.92,
+            0.16
+          ]
+        },
+        {
+          "id": "body",
+          "role": "content",
+          "label": "问题与处理记录",
+          "rect": [
+            0.04,
+            0.27,
+            0.58,
+            0.46
+          ]
+        },
+        {
+          "id": "side",
+          "role": "aside",
+          "label": "客户与 SLA",
+          "rect": [
+            0.66,
+            0.27,
+            0.3,
+            0.46
+          ]
+        },
+        {
+          "id": "actions",
+          "role": "actions",
+          "label": "保存 / 升级",
+          "rect": [
+            0.04,
+            0.07,
+            0.92,
+            0.13
+          ]
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "id": "i1",
+      "source_screen": "list",
+      "target_screen": "detail",
+      "trigger": "双击工单行"
+    }
+  ],
+  "responsive_rule": "窗口变窄时详情改为独立页"
+}

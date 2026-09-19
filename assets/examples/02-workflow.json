@@ -1,0 +1,195 @@
+{
+  "type": "graph",
+  "title": "设备异常处置 · 责任与闭环",
+  "subtitle": "三条责任泳道；判定分支明确，复验不通过时返回维修",
+  "eyebrow": "02 / SWIMLANE FLOW",
+  "height": 1060,
+  "groups": [
+    {
+      "id": "lane1",
+      "x": 64,
+      "y": 204,
+      "w": 1472,
+      "h": 162,
+      "label": "01  现场人员"
+    },
+    {
+      "id": "lane2",
+      "x": 64,
+      "y": 402,
+      "w": 1472,
+      "h": 250,
+      "label": "02  运维人员"
+    },
+    {
+      "id": "lane3",
+      "x": 64,
+      "y": 700,
+      "w": 1472,
+      "h": 190,
+      "label": "03  复验人员"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "report",
+      "x": 125,
+      "y": 265,
+      "w": 240,
+      "h": 68,
+      "label": "发现并上报异常",
+      "kind": "pill"
+    },
+    {
+      "id": "triage",
+      "x": 445,
+      "y": 460,
+      "w": 240,
+      "h": 84,
+      "label": "确认影响范围",
+      "detail": "记录现象与处置条件"
+    },
+    {
+      "id": "check",
+      "x": 775,
+      "y": 433,
+      "w": 232,
+      "h": 132,
+      "label": "需要维修？",
+      "kind": "diamond"
+    },
+    {
+      "id": "repair",
+      "x": 1100,
+      "y": 460,
+      "w": 246,
+      "h": 84,
+      "label": "执行维修",
+      "detail": "记录原因与处理"
+    },
+    {
+      "id": "verify",
+      "x": 1100,
+      "y": 760,
+      "w": 246,
+      "h": 84,
+      "label": "复验与恢复",
+      "tone": "teal"
+    },
+    {
+      "id": "close",
+      "x": 445,
+      "y": 760,
+      "w": 240,
+      "h": 84,
+      "label": "归档并关闭",
+      "detail": "复验通过或无需维修",
+      "kind": "pill",
+      "tone": "teal"
+    }
+  ],
+  "edges": [
+    {
+      "from": "report",
+      "to": "triage",
+      "points": [
+        [
+          365,
+          299
+        ],
+        [
+          565,
+          299
+        ],
+        [
+          565,
+          460
+        ]
+      ]
+    },
+    {
+      "from": "triage",
+      "to": "check"
+    },
+    {
+      "from": "check",
+      "to": "repair",
+      "label": "是"
+    },
+    {
+      "from": "check",
+      "to": "close",
+      "label": "否",
+      "points": [
+        [
+          891,
+          565
+        ],
+        [
+          891,
+          680
+        ],
+        [
+          565,
+          680
+        ],
+        [
+          565,
+          760
+        ]
+      ],
+      "label_at": [
+        924,
+        634
+      ]
+    },
+    {
+      "from": "repair",
+      "to": "verify",
+      "label": "提交复验",
+      "label_at": [
+        1290,
+        655
+      ]
+    },
+    {
+      "from": "verify",
+      "to": "close",
+      "label": "通过",
+      "source_port": "left",
+      "target_port": "right"
+    },
+    {
+      "from": "verify",
+      "to": "repair",
+      "label": "未通过",
+      "points": [
+        [
+          1346,
+          802
+        ],
+        [
+          1450,
+          802
+        ],
+        [
+          1450,
+          502
+        ],
+        [
+          1346,
+          502
+        ]
+      ],
+      "label_at": [
+        1450,
+        681
+      ],
+      "tone": "amber",
+      "dashed": true
+    }
+  ],
+  "footer": "业务流程示例 · 普通责任泳道图 · 未声明为 BPMN 标准模型",
+  "family": "过程与时序",
+  "diagram_name": "责任泳道"
+}

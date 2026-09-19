@@ -1,0 +1,111 @@
+{
+  "catalog_id": "cn-1133",
+  "mode": "direction-map",
+  "title": "会展中心步行导引图",
+  "subtitle": "从地铁口到登记处的无歧义转向序列",
+  "template": "route",
+  "sector": "旅游与公共服务",
+  "use_case": "园区、展会、校园和公共场所常用导引图",
+  "data_status": "simulated",
+  "assumptions": [
+    "内容和数值为教学模拟",
+    "真实交付前须替换名称、事实、品牌、尺寸和审批信息"
+  ],
+  "metrics": [
+    {
+      "id": "routes",
+      "label": "可选路线",
+      "value": 2,
+      "unit": "条",
+      "evidence": "模拟输入"
+    },
+    {
+      "id": "turns",
+      "label": "关键转向",
+      "value": 3,
+      "unit": "处",
+      "evidence": "模拟输入"
+    }
+  ],
+  "waypoints": [
+    {
+      "id": "metro",
+      "label": "地铁 B 口",
+      "kind": "origin",
+      "position": [
+        0.1,
+        0.2
+      ]
+    },
+    {
+      "id": "cross",
+      "label": "过街点",
+      "kind": "turn",
+      "position": [
+        0.28,
+        0.2
+      ]
+    },
+    {
+      "id": "gate",
+      "label": "园区南门",
+      "kind": "landmark",
+      "position": [
+        0.4,
+        0.44
+      ]
+    },
+    {
+      "id": "hall",
+      "label": "2 号馆",
+      "kind": "landmark",
+      "position": [
+        0.62,
+        0.44
+      ]
+    },
+    {
+      "id": "desk",
+      "label": "登记处",
+      "kind": "destination",
+      "position": [
+        0.82,
+        0.7
+      ]
+    },
+    {
+      "id": "accessible",
+      "label": "无障碍入口",
+      "kind": "destination",
+      "position": [
+        0.82,
+        0.42
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "id": "r1",
+      "label": "普通步行 约 650 m",
+      "waypoint_ids": [
+        "metro",
+        "cross",
+        "gate",
+        "hall",
+        "desk"
+      ]
+    },
+    {
+      "id": "r2",
+      "label": "无障碍路线 约 720 m",
+      "waypoint_ids": [
+        "metro",
+        "cross",
+        "gate",
+        "hall",
+        "accessible"
+      ]
+    }
+  ],
+  "distance_claim": "schematic"
+}

@@ -1,0 +1,195 @@
+{
+  "type": "fishbone",
+  "title": "产线产能提升",
+  "subtitle": "假设案例｜自动装配线单班合格产出：800 → 1,000 件｜六个方向，18 项候选因素",
+  "effect": "产能提升受限",
+  "width": 1920,
+  "height": 1080,
+  "baseline_good_units": 800,
+  "target_good_units": 1000,
+  "planned_minutes": 450,
+  "assumptions": [
+    "用户授权为展示效果自行设定内容；全部数值和因素均为原创模拟案例。",
+    "单班净可用450分钟，目标合格产出1000件，目标平均合格产出间隔为27秒/件，不等于允许每个工位都按27秒满负荷设计。",
+    "800件为示例现状设定，不由这些未经验证且可能重叠的候选损失倒推。",
+    "换型42分钟以单次为口径，不表示每班都发生；时间损失之间可能重叠，不直接相加。",
+    "鱼骨仅组织待验证假设；没有现场测量、原因验证或改善效果承诺。"
+  ],
+  "categories": [
+    {
+      "id": "people",
+      "label": "人｜技能与响应",
+      "position": "top",
+      "column": 0,
+      "causes": [
+        {
+          "id": "p1",
+          "label": "跨岗支援不及时",
+          "detail": "顶岗人员对瓶颈工位不熟",
+          "display_label": "跨岗支援不及时"
+        },
+        {
+          "id": "p2",
+          "label": "操作手法有差异",
+          "detail": "熟练工与新人节拍不一致",
+          "display_label": "操作手法有差异"
+        },
+        {
+          "id": "p3",
+          "label": "异常响应链条长",
+          "detail": "呼叫、确认与到场存在等待",
+          "display_label": "异常响应链条长"
+        }
+      ]
+    },
+    {
+      "id": "machine",
+      "label": "机｜设备与节拍",
+      "position": "top",
+      "column": 1,
+      "causes": [
+        {
+          "id": "m1",
+          "label": "瓶颈节拍 30秒/件",
+          "detail": "高于目标产出间隔 27秒",
+          "priority": true,
+          "display_label": "瓶颈节拍 30 s/件"
+        },
+        {
+          "id": "m2",
+          "label": "微停累计 18分钟/班",
+          "detail": "卡料、误检与复位频繁",
+          "priority": true,
+          "display_label": "微停 18 min/班"
+        },
+        {
+          "id": "m3",
+          "label": "夹具定位不稳定",
+          "detail": "重复找正与校准占用时间",
+          "display_label": "夹具定位不稳定"
+        }
+      ]
+    },
+    {
+      "id": "material",
+      "label": "料｜齐套与一致性",
+      "position": "top",
+      "column": 2,
+      "causes": [
+        {
+          "id": "r1",
+          "label": "等料约 8分钟/班",
+          "detail": "配送频次与实际消耗脱节",
+          "display_label": "等料 8 min/班"
+        },
+        {
+          "id": "r2",
+          "label": "来料尺寸有波动",
+          "detail": "卡装、挑选与二次处理增加",
+          "display_label": "来料尺寸有波动"
+        },
+        {
+          "id": "r3",
+          "label": "线边料位不固定",
+          "detail": "取料与物料确认耗时",
+          "display_label": "线边料位不固定"
+        }
+      ]
+    },
+    {
+      "id": "method",
+      "label": "法｜作业与换型",
+      "position": "bottom",
+      "column": 0,
+      "causes": [
+        {
+          "id": "f1",
+          "label": "工位负荷不均衡",
+          "detail": "部分工位等待，瓶颈工位忙碌",
+          "display_label": "工位负荷不均衡"
+        },
+        {
+          "id": "f2",
+          "label": "换型耗时 42分钟/次",
+          "detail": "备料、调机与首件确认串行",
+          "priority": true,
+          "display_label": "换型 42 min/次"
+        },
+        {
+          "id": "f3",
+          "label": "参数切换靠手调",
+          "detail": "缺少配方复用与首件标准",
+          "display_label": "参数切换靠手调"
+        }
+      ]
+    },
+    {
+      "id": "environment",
+      "label": "环｜布局与作业条件",
+      "position": "bottom",
+      "column": 1,
+      "causes": [
+        {
+          "id": "e1",
+          "label": "物流与人流交叉",
+          "detail": "补料、转运路径容易受阻",
+          "display_label": "物流与人流交叉"
+        },
+        {
+          "id": "e2",
+          "label": "取放距离过长",
+          "detail": "弯腰、转身与往返动作偏多",
+          "display_label": "取放距离过长"
+        },
+        {
+          "id": "e3",
+          "label": "作业照度不均",
+          "detail": "检查、识别与对位增加耗时",
+          "display_label": "作业照度不均"
+        }
+      ]
+    },
+    {
+      "id": "measurement",
+      "label": "测｜反馈与损失记录",
+      "position": "bottom",
+      "column": 2,
+      "causes": [
+        {
+          "id": "s1",
+          "label": "停机代码未统一",
+          "detail": "微停、待料与调机混在一起",
+          "display_label": "停机代码未统一"
+        },
+        {
+          "id": "s2",
+          "label": "小时产出反馈滞后",
+          "detail": "节拍偏差不能及时发现",
+          "display_label": "小时反馈滞后"
+        },
+        {
+          "id": "s3",
+          "label": "返工未独立记账",
+          "detail": "一次合格率与返修耗时不清",
+          "display_label": "返工未独立记账"
+        }
+      ]
+    }
+  ],
+  "validation_priorities": [
+    "瓶颈工位连续测时",
+    "微停事件逐条归类",
+    "换型步骤分段记录"
+  ],
+  "footer": "模拟案例 · 因素为待验证假设；时间损失可能重叠，不直接相加。",
+  "form": "fishbone",
+  "deck": "先识别约束，再验证原因。",
+  "eyebrow": "CAPACITY / CAUSE STUDY",
+  "kicker": "800 → 1,000 件 / 班",
+  "summary": "六个方向，18 项待验证因素。",
+  "notes": [
+    "瓶颈工位连续测时",
+    "微停事件逐条归类",
+    "换型步骤分段记录"
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "positions": {
+    "influent": [
+      140,
+      440
+    ],
+    "equalization": [
+      380,
+      440
+    ],
+    "transfer": [
+      620,
+      440
+    ],
+    "merge": [
+      960,
+      440
+    ],
+    "dose_tank": [
+      600,
+      250
+    ],
+    "dose_valve": [
+      800,
+      250
+    ],
+    "effluent": [
+      1320,
+      440
+    ],
+    "ait": [
+      200,
+      320
+    ],
+    "ai": [
+      440,
+      320
+    ]
+  },
+  "ports": {
+    "influent_out": "right",
+    "eq_in": "left",
+    "eq_out": "right",
+    "eq_sample": "top",
+    "transfer_in": "left",
+    "transfer_out": "right",
+    "merge_main": "left",
+    "merge_dose": "top",
+    "merge_out": "right",
+    "dose_out": "right",
+    "dose_valve_in": "left",
+    "dose_valve_out": "right",
+    "effluent_in": "left",
+    "ait_process": "bottom",
+    "ait_signal": "right",
+    "ai_signal": "left"
+  },
+  "routes": {
+    "C1": [],
+    "C2": [],
+    "C3": [],
+    "C4": [],
+    "C5": [
+      [
+        960,
+        250
+      ]
+    ],
+    "C6": [],
+    "C7": [
+      [
+        380,
+        370
+      ],
+      [
+        200,
+        370
+      ]
+    ],
+    "C8": []
+  }
+}

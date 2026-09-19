@@ -1,0 +1,51 @@
+{
+  "version": "v38",
+  "v38_evidence": {
+    "adaptive_types": ["graph", "tree", "architecture"],
+    "simulated_stress_cases": 4,
+    "source_node_counts": [21,18,27,5],
+    "browser_evidence": "assets/v38-browser-evidence.json",
+    "manual_visual_review": "four representative cases and selected reading pages; not every page",
+    "native_drawio_editing": "not run",
+    "user_visual_acceptance": "not received"
+  },
+  "status_vocabulary": {
+    "example_available": "A runnable model input exists; it is not a quality approval.",
+    "generated_with_semantic_validation": "The model passed this backend's structural, relationship, or arithmetic validation before rendering.",
+    "rendered_visual_check": "Actual Matplotlib text bounds, explicit containers, text overlaps, and missing-glyph warnings were checked after draw; this is not human or domain approval.",
+    "manual_visual_review": "A named rendered output was opened and inspected; native-editor, domain, and user approval require separate evidence."
+  },
+  "v37_evidence": {
+    "cross_industry_models": {
+      "count": 46,
+      "data_status": "simulated",
+      "generated_with_semantic_validation": "passed",
+      "rendered_visual_check": "passed",
+      "manual_visual_review": "representative acceptance set only"
+    },
+    "remaining_type_models": {
+      "count": 33,
+      "data_status": "simulated",
+      "generated_with_semantic_validation": "passed",
+      "rendered_visual_check": "passed",
+      "manual_visual_review": "not run for the complete set"
+    },
+    "cross_industry_acceptance_set": {
+      "count": 8,
+      "data_status": "simulated",
+      "generated_with_semantic_validation": "passed",
+      "rendered_visual_check": "finance only; not run for seven generic scenarios",
+      "mutation_check": "passed for all eight scenarios",
+      "manual_visual_review": "v37 original outputs reviewed; mutation outputs not manually reviewed",
+      "native_drawio_editing": "not run",
+      "domain_approval": "not run"
+    },
+    "gantt_variants": {
+      "shared_task_count": 8,
+      "variants": ["executive", "delivery", "print"],
+      "rendered_visual_check": "not run; generic geometry and text estimates only",
+      "manual_visual_review": "v37 original SVG layouts reviewed; native editor not run",
+      "critical_path": "not calculated"
+    }
+  }
+}

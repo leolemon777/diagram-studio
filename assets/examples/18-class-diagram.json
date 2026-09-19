@@ -1,0 +1,63 @@
+{
+  "type": "record",
+  "title": "类结构 · 属性、操作与关联",
+  "diagram_name": "类结构",
+  "family": "系统与软件",
+  "subtitle": "三个分区分别是类名、属性和操作；连线为关联，基数直接标注",
+  "eyebrow": "18 / DIAGRAM LIBRARY",
+  "footer": "原创结构范例 · 数据、实体、尺寸与假说均为演示输入；实际任务按用户资料替换",
+  "assumptions": [
+    "原创演示内容，不代表实际业务、研究结论或工程设计"
+  ],
+  "classes": [
+    {
+      "id": "device",
+      "label": "Device",
+      "x": 100,
+      "fields": [
+        "+ deviceId: String",
+        "+ name: String"
+      ],
+      "methods": [
+        "+ getStatus()"
+      ]
+    },
+    {
+      "id": "order",
+      "label": "WorkOrder",
+      "x": 620,
+      "fields": [
+        "+ orderId: String",
+        "+ deviceId: String"
+      ],
+      "methods": [
+        "+ submit()",
+        "+ close()"
+      ]
+    },
+    {
+      "id": "team",
+      "label": "Team",
+      "x": 1140,
+      "fields": [
+        "+ teamId: String",
+        "+ name: String"
+      ],
+      "methods": [
+        "+ assign()"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "device",
+      "to": "order",
+      "label": "1 : 0..N"
+    },
+    {
+      "from": "order",
+      "to": "team",
+      "label": "0..N : 1"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "recipe": "ring",
+  "title": "电用在何处，刻度给出分量。",
+  "subtitle": "五类用途共享一个总量；原始用量与百分比并列阅读。",
+  "unit": "MWh",
+  "rows": [
+    {
+      "id": "r1",
+      "label": "生产设备",
+      "value": 186
+    },
+    {
+      "id": "r2",
+      "label": "空压系统",
+      "value": 104
+    },
+    {
+      "id": "r3",
+      "label": "空调通风",
+      "value": 72
+    },
+    {
+      "id": "r4",
+      "label": "辅助设备",
+      "value": 50
+    },
+    {
+      "id": "r5",
+      "label": "照明其他",
+      "value": 28
+    }
+  ],
+  "period": "2026 年 6 月 / 分项用电",
+  "synthetic": true,
+  "source": "Apat 自拟数据，仅用于呈现图形效果；不代表现场测量。",
+  "quantum": 5
+}

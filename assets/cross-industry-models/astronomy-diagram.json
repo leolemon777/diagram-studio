@@ -1,0 +1,109 @@
+{
+  "catalog_id": "cn-1140",
+  "mode": "astronomy-diagram",
+  "title": "太阳系行星轨道科普图",
+  "subtitle": "天体、轨道层次和比例边界明确标注",
+  "template": "science",
+  "sector": "教育与科普",
+  "use_case": "学校教育和公众科普的常用天文图",
+  "data_status": "simulated",
+  "assumptions": [
+    "内容和数值为教学模拟",
+    "真实交付前须替换名称、事实、品牌、尺寸和审批信息"
+  ],
+  "metrics": [
+    {
+      "id": "bodies",
+      "label": "天体",
+      "value": 3,
+      "unit": "个",
+      "evidence": "模拟输入"
+    },
+    {
+      "id": "orbits",
+      "label": "轨道",
+      "value": 2,
+      "unit": "条",
+      "evidence": "模拟输入"
+    }
+  ],
+  "concepts": [
+    {
+      "id": "sun",
+      "label": "太阳",
+      "kind": "body",
+      "position": [
+        0.15,
+        0.52
+      ],
+      "source": "NASA Solar System Exploration"
+    },
+    {
+      "id": "earth",
+      "label": "地球",
+      "kind": "body",
+      "position": [
+        0.48,
+        0.64
+      ],
+      "source": "NASA Solar System Exploration"
+    },
+    {
+      "id": "mars",
+      "label": "火星",
+      "kind": "body",
+      "position": [
+        0.65,
+        0.38
+      ],
+      "source": "NASA Solar System Exploration"
+    },
+    {
+      "id": "orbit1",
+      "label": "地球轨道",
+      "kind": "orbit",
+      "position": [
+        0.4,
+        0.32
+      ],
+      "source": "非比例示意"
+    },
+    {
+      "id": "orbit2",
+      "label": "火星轨道",
+      "kind": "orbit",
+      "position": [
+        0.73,
+        0.6
+      ],
+      "source": "非比例示意"
+    }
+  ],
+  "relations": [
+    {
+      "id": "r1",
+      "source": "earth",
+      "target": "orbit1",
+      "relation": "travels-on"
+    },
+    {
+      "id": "r2",
+      "source": "orbit1",
+      "target": "sun",
+      "relation": "orbits"
+    },
+    {
+      "id": "r3",
+      "source": "mars",
+      "target": "orbit2",
+      "relation": "travels-on"
+    },
+    {
+      "id": "r4",
+      "source": "orbit2",
+      "target": "sun",
+      "relation": "orbits"
+    }
+  ],
+  "claim_scope": "轨道与天体尺寸均非比例，仅用于关系科普"
+}

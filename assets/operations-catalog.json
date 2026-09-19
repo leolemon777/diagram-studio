@@ -1,0 +1,56 @@
+[
+  {
+    "id": "oee",
+    "name": "OEE 效率与损失",
+    "input": "assets/operations-examples/oee.json",
+    "reference": "references/operations-atlas.md"
+  },
+  {
+    "id": "balance",
+    "name": "工位平衡",
+    "input": "assets/operations-examples/balance.json",
+    "reference": "references/operations-atlas.md"
+  },
+  {
+    "id": "control_imr",
+    "name": "I–MR 控制图",
+    "input": "assets/operations-examples/control_imr.json",
+    "reference": "references/operations-atlas.md"
+  },
+  {
+    "id": "vsm",
+    "name": "价值流图",
+    "input": "assets/operations-examples/vsm.json",
+    "reference": "references/operations-atlas.md"
+  },
+  {
+    "id": "sipoc",
+    "name": "SIPOC",
+    "input": "assets/operations-examples/sipoc.json",
+    "reference": "references/operations-atlas.md"
+  },
+  {
+    "id": "sales_review",
+    "name": "销售复盘",
+    "input": "assets/operations-examples/sales_review.json",
+    "reference": "references/operations-atlas.md"
+  },
+  {
+    "id": "sales_funnel",
+    "name": "销售转化",
+    "input": "assets/operations-examples/sales_funnel.json",
+    "reference": "references/operations-atlas.md"
+  },
+  {
+    "id": "inventory_review",
+    "name": "库存复盘",
+    "input": "assets/operations-examples/inventory_review.json",
+    "reference": "references/operations-atlas.md"
+  },
+  {
+    "id": "energy_review",
+    "name": "水电耗复盘",
+    "input": "assets/operations-examples/energy_review.json",
+    "reference": "references/operations-atlas.md"
+  }
+]

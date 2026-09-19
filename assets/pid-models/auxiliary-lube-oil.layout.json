@@ -1,0 +1,54 @@
+{
+  "positions": {
+    "reservoir": [
+      170,
+      470
+    ],
+    "pump": [
+      430,
+      470
+    ],
+    "tap": [
+      700,
+      470
+    ],
+    "isolation": [
+      980,
+      470
+    ],
+    "bearing": [
+      1280,
+      470
+    ],
+    "pt": [
+      700,
+      300
+    ],
+    "pi": [
+      1010,
+      300
+    ]
+  },
+  "ports": {
+    "reservoir_out": "right",
+    "pump_in": "left",
+    "pump_out": "right",
+    "tap_in": "left",
+    "tap_out": "right",
+    "tap_sense": "top",
+    "isolation_in": "left",
+    "isolation_out": "right",
+    "bearing_in": "left",
+    "pt_process": "bottom",
+    "pt_signal": "right",
+    "pi_signal": "left"
+  },
+  "routes": {
+    "C1": [],
+    "C2": [],
+    "C3": [],
+    "C4": [],
+    "C5": [],
+    "C6": []
+  }
+}

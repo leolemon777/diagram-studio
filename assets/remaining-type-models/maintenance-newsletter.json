@@ -1,0 +1,108 @@
+{
+  "mode": "newsletter",
+  "title": "维修班组简报 · 第 18 期",
+  "subtitle": "头条、更新、日程和联系信息保持固定栏目",
+  "template": "publication",
+  "data_status": "simulated",
+  "assumptions": [
+    "数据为教学模拟，不代表真实项目现状",
+    "真实交付前须替换数值、名称、品牌规范和审批信息"
+  ],
+  "metrics": [
+    {
+      "id": "updates",
+      "label": "更新",
+      "value": 3,
+      "unit": "条",
+      "evidence": "示例输入"
+    },
+    {
+      "id": "events",
+      "label": "日程",
+      "value": 2,
+      "unit": "项",
+      "evidence": "示例输入"
+    }
+  ],
+  "sheet": {
+    "width": 210,
+    "height": 297,
+    "unit": "mm"
+  },
+  "blocks": [
+    {
+      "id": "b1",
+      "role": "masthead",
+      "label": "刊头",
+      "content": "MAINTENANCE BRIEF / 第 18 期",
+      "rect": [
+        0.05,
+        0.72,
+        0.9,
+        0.2
+      ],
+      "order": 1
+    },
+    {
+      "id": "b2",
+      "role": "lead",
+      "label": "本周头条",
+      "content": "润滑标准升级后重复报警下降",
+      "rect": [
+        0.05,
+        0.47,
+        0.43,
+        0.19
+      ],
+      "order": 2
+    },
+    {
+      "id": "b3",
+      "role": "updates",
+      "label": "三条更新",
+      "content": "泵站试点｜备件盘点｜培训结业",
+      "rect": [
+        0.52,
+        0.47,
+        0.43,
+        0.19
+      ],
+      "order": 3
+    },
+    {
+      "id": "b4",
+      "role": "calendar",
+      "label": "下周安排",
+      "content": "周二检修窗｜周四复盘会",
+      "rect": [
+        0.05,
+        0.12,
+        0.56,
+        0.28
+      ],
+      "order": 4
+    },
+    {
+      "id": "b5",
+      "role": "contact",
+      "label": "编辑与反馈",
+      "content": "可靠性改善组 / ext.6208",
+      "rect": [
+        0.65,
+        0.12,
+        0.3,
+        0.28
+      ],
+      "order": 5
+    }
+  ],
+  "reading_order": [
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "b5"
+  ],
+  "audience": "设备、生产与管理协同团队",
+  "primary_action": "确认责任、数据来源与下一步行动"
+}

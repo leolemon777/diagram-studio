@@ -1,0 +1,50 @@
+{
+  "title": "双泵供水中断：共同供电与独立故障",
+  "scope": "假设工况：任一泵可满足需求；两台同时不可用时停止供水；不考虑切换时序",
+  "data_status": "假设模型 · 非现场故障结论",
+  "top": "T",
+  "events": [
+    {
+      "label": "两台供水泵均不可用",
+      "id": "T",
+      "kind": "AND",
+      "inputs": [
+        "L",
+        "R"
+      ]
+    },
+    {
+      "label": "A泵不可用",
+      "id": "L",
+      "kind": "OR",
+      "inputs": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "label": "B泵不可用",
+      "id": "R",
+      "kind": "OR",
+      "inputs": [
+        "B",
+        "C"
+      ]
+    },
+    {
+      "label": "A泵独立故障",
+      "id": "A",
+      "kind": "basic"
+    },
+    {
+      "label": "B泵独立故障",
+      "id": "B",
+      "kind": "basic"
+    },
+    {
+      "label": "共同供电丢失",
+      "id": "C",
+      "kind": "basic"
+    }
+  ]
+}

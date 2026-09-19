@@ -1,0 +1,56 @@
+{
+  "mode": "inventory_review",
+  "data_status": "模拟数据 · 方法与版式演示",
+  "title": "库存占了多少，结存是否对得上",
+  "subtitle": "库存复盘 / 数量台账、成本周转与期末账龄",
+  "period_days": 90,
+  "period_cogs": 540,
+  "average_inventory_cost": 180,
+  "ending_inventory_cost": 210,
+  "cost_unit": "万元",
+  "items": [
+    {
+      "name": "壳体",
+      "unit": "件",
+      "opening": 600,
+      "receipts": 1800,
+      "issues": 1700,
+      "closing": 700
+    },
+    {
+      "name": "电机",
+      "unit": "件",
+      "opening": 300,
+      "receipts": 1200,
+      "issues": 1100,
+      "closing": 400
+    },
+    {
+      "name": "线束",
+      "unit": "件",
+      "opening": 900,
+      "receipts": 2400,
+      "issues": 2200,
+      "closing": 1100
+    }
+  ],
+  "aging": [
+    {
+      "name": "0–30天",
+      "value": 126
+    },
+    {
+      "name": "31–60天",
+      "value": 48
+    },
+    {
+      "name": "61–90天",
+      "value": 24
+    },
+    {
+      "name": "90天以上",
+      "value": 12
+    }
+  ],
+  "footnote": "数量不同物料不混加；账龄与周转按成本口径；不按销售收入计算库存周转。"
+}

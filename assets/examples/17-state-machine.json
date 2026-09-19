@@ -1,0 +1,108 @@
+{
+  "type": "graph",
+  "title": "状态机 · 工单生命周期",
+  "diagram_name": "状态机",
+  "family": "过程与时序",
+  "subtitle": "边标注触发事件；退回与取消为明确转移",
+  "eyebrow": "17 / DIAGRAM LIBRARY",
+  "footer": "原创结构范例 · 数据、实体、尺寸与假说均为演示输入；实际任务按用户资料替换",
+  "assumptions": [
+    "原创演示内容，不代表实际业务、研究结论或工程设计"
+  ],
+  "nodes": [
+    {
+      "id": "new",
+      "label": "待分派",
+      "x": 140,
+      "y": 275,
+      "w": 250,
+      "h": 90,
+      "kind": "pill"
+    },
+    {
+      "id": "work",
+      "label": "处理中",
+      "x": 640,
+      "y": 275,
+      "w": 250,
+      "h": 90,
+      "kind": "pill"
+    },
+    {
+      "id": "verify",
+      "label": "待验收",
+      "x": 1140,
+      "y": 275,
+      "w": 250,
+      "h": 90,
+      "kind": "pill"
+    },
+    {
+      "id": "done",
+      "label": "已关闭",
+      "x": 1140,
+      "y": 625,
+      "w": 250,
+      "h": 90,
+      "kind": "pill"
+    },
+    {
+      "id": "cancel",
+      "label": "已取消",
+      "x": 140,
+      "y": 625,
+      "w": 250,
+      "h": 90,
+      "kind": "pill"
+    }
+  ],
+  "edges": [
+    {
+      "from": "new",
+      "to": "work",
+      "label": "分派成功"
+    },
+    {
+      "from": "work",
+      "to": "verify",
+      "label": "提交验收"
+    },
+    {
+      "from": "verify",
+      "to": "done",
+      "label": "验收通过"
+    },
+    {
+      "from": "verify",
+      "to": "work",
+      "label": "验收退回",
+      "points": [
+        [
+          1265,
+          275
+        ],
+        [
+          1265,
+          218
+        ],
+        [
+          765,
+          218
+        ],
+        [
+          765,
+          275
+        ]
+      ],
+      "label_at": [
+        1015,
+        203
+      ]
+    },
+    {
+      "from": "new",
+      "to": "cancel",
+      "label": "取消申请"
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "catalog_id": "cn-5017",
+  "mode": "resume",
+  "title": "产品设计师简历",
+  "subtitle": "经历、能力与作品证据围绕目标岗位组织",
+  "template": "publication",
+  "sector": "招聘与职业",
+  "use_case": "招聘、求职和人才服务中的高频文档",
+  "data_status": "simulated",
+  "assumptions": [
+    "内容和数值为教学模拟",
+    "真实交付前须替换名称、事实、品牌、尺寸和审批信息"
+  ],
+  "metrics": [
+    {
+      "id": "years",
+      "label": "经验",
+      "value": 6,
+      "unit": "年",
+      "evidence": "模拟输入"
+    },
+    {
+      "id": "cases",
+      "label": "重点案例",
+      "value": 3,
+      "unit": "个",
+      "evidence": "模拟输入"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "b1",
+      "role": "identity",
+      "label": "林澈 · 产品设计师",
+      "content": "上海 · 6 年经验 · lin@example.com",
+      "rect": [
+        0.05,
+        0.76,
+        0.9,
+        0.15
+      ],
+      "order": 1
+    },
+    {
+      "id": "b2",
+      "role": "summary",
+      "label": "职业概览",
+      "content": "擅长复杂企业产品、设计系统与数据体验",
+      "rect": [
+        0.05,
+        0.54,
+        0.43,
+        0.16
+      ],
+      "order": 2
+    },
+    {
+      "id": "b3",
+      "role": "experience",
+      "label": "工作经历",
+      "content": "2022–至今 云桥科技：负责分析平台与设计系统",
+      "rect": [
+        0.52,
+        0.54,
+        0.43,
+        0.16
+      ],
+      "order": 3
+    },
+    {
+      "id": "b4",
+      "role": "skills",
+      "label": "核心能力",
+      "content": "研究 · 交互 · 视觉 · 原型 · 可用性测试",
+      "rect": [
+        0.05,
+        0.31,
+        0.43,
+        0.16
+      ],
+      "order": 4
+    },
+    {
+      "id": "b5",
+      "role": "education",
+      "label": "教育背景",
+      "content": "数字媒体艺术学士",
+      "rect": [
+        0.52,
+        0.31,
+        0.43,
+        0.16
+      ],
+      "order": 5
+    },
+    {
+      "id": "b6",
+      "role": "portfolio",
+      "label": "作品入口",
+      "content": "三个案例：问题、过程、结果和个人贡献",
+      "rect": [
+        0.05,
+        0.08,
+        0.9,
+        0.16
+      ],
+      "order": 6
+    }
+  ],
+  "sheet": {
+    "width": 210,
+    "height": 297,
+    "unit": "mm"
+  },
+  "audience": "招聘经理",
+  "primary_action": "进入作品集并安排面试",
+  "reading_order": [
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "b5",
+    "b6"
+  ]
+}

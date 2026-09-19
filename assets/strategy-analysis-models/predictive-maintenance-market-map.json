@@ -1,0 +1,23 @@
+{
+  "id": "predictive-maintenance-market-map",
+  "mode": "market-map",
+  "title": "预测性维护方案市场定位图",
+  "subtitle": "统一市场范围和时点，并把观察事实与工作假设分开",
+  "data_status": "simulated",
+  "market_scope": "华东流程工业中型工厂 · 关键旋转设备预测性维护",
+  "as_of": "2026-Q3",
+  "evidence_basis": "模拟访谈与公开产品资料快照",
+  "axes": {
+    "x": {"label": "现场服务深度", "low": "远程工具", "high": "现场闭环"},
+    "y": {"label": "分析自动化程度", "low": "人工判断", "high": "自动建议"}
+  },
+  "entities": [
+    {"id": "self", "label": "本方案", "kind": "self", "x": 78, "y": 72, "basis": "observed", "evidence": "演示范围 M-01"},
+    {"id": "comp-a", "label": "诊断云 A", "kind": "competitor", "x": 36, "y": 82, "basis": "observed", "evidence": "资料快照 E-01"},
+    {"id": "comp-b", "label": "服务商 B", "kind": "competitor", "x": 82, "y": 38, "basis": "observed", "evidence": "资料快照 E-02"},
+    {"id": "comp-c", "label": "平台 C", "kind": "competitor", "x": 55, "y": 61, "basis": "observed", "evidence": "资料快照 E-03"},
+    {"id": "segment-1", "label": "少人值守工厂", "kind": "segment", "x": 86, "y": 88, "basis": "assumed", "assumption": "访谈待验证 H-01"},
+    {"id": "segment-2", "label": "预算受限工厂", "kind": "segment", "x": 30, "y": 48, "basis": "assumed", "assumption": "访谈待验证 H-02"}
+  ],
+  "assumptions": ["坐标用于演示，不代表真实市场评分", "正式分析需保存同一时点的证据快照"]
+}

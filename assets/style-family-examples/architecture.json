@@ -1,0 +1,91 @@
+{
+  "form": "architecture",
+  "title": "让现场数据形成闭环",
+  "deck": "从设备事件，到可追溯的改善。",
+  "eyebrow": "FACTORY / SYSTEM MAP",
+  "kicker": "3 层 / 6 个模块",
+  "summary": "采集、治理、决策各司其职。",
+  "notes": [
+    "边缘侧保留断网缓存",
+    "事件与工单统一关联",
+    "改善效果回到现场复核"
+  ],
+  "footer": "概念架构示例 · 连接表示逻辑数据流；协议、安全与容量需要按实际系统设计。",
+  "layers": [
+    {
+      "id": "edge",
+      "name": "现场采集",
+      "items": [
+        {
+          "id": "plc",
+          "label": "设备事件",
+          "detail": "PLC / 传感器"
+        },
+        {
+          "id": "gateway",
+          "label": "边缘网关",
+          "detail": "缓存与时间戳"
+        }
+      ]
+    },
+    {
+      "id": "data",
+      "name": "数据治理",
+      "items": [
+        {
+          "id": "stream",
+          "label": "事件管道",
+          "detail": "清洗与去重"
+        },
+        {
+          "id": "store",
+          "label": "时序数据",
+          "detail": "工单关联"
+        }
+      ]
+    },
+    {
+      "id": "action",
+      "name": "业务决策",
+      "items": [
+        {
+          "id": "analysis",
+          "label": "损失分析",
+          "detail": "瓶颈与异常"
+        },
+        {
+          "id": "workorder",
+          "label": "改善工单",
+          "detail": "责任与复核"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    [
+      "plc",
+      "gateway"
+    ],
+    [
+      "gateway",
+      "stream"
+    ],
+    [
+      "stream",
+      "store"
+    ],
+    [
+      "store",
+      "analysis"
+    ],
+    [
+      "analysis",
+      "workorder"
+    ]
+  ],
+  "feedback": [
+    "workorder",
+    "plc"
+  ],
+  "narrow_title": "让现场数据\n形成闭环"
+}

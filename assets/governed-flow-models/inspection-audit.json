@@ -1,0 +1,23 @@
+{
+  "id": "inspection-audit", "mode": "audit",
+  "title": "设备点检合规审计流程", "subtitle": "每个判定保留证据编号与依据；不通过进入整改和复核", "data_status": "simulated",
+  "nodes": [
+    {"id": "start", "type": "start", "label": "开始"},
+    {"id": "scope", "type": "action", "label": "确认审计范围", "owner": "审计员"},
+    {"id": "d1", "type": "decision", "label": "证据是否充分", "owner": "审计员", "evidence_id": "E-01", "basis": "记录完整性规则 R-12"},
+    {"id": "fix1", "type": "remediation", "label": "补充缺失证据", "owner": "运行班组"},
+    {"id": "review1", "type": "review", "label": "复核补充材料", "owner": "审计员"},
+    {"id": "d2", "type": "decision", "label": "点检是否符合要求", "owner": "审计员", "evidence_id": "E-02", "basis": "点检标准 S-08"},
+    {"id": "fix2", "type": "remediation", "label": "制定并实施整改", "owner": "设备组"},
+    {"id": "review2", "type": "review", "label": "验证整改结果", "owner": "审计员"},
+    {"id": "end", "type": "end", "label": "结束"}
+  ],
+  "edges": [
+    {"source": "start", "target": "scope"}, {"source": "scope", "target": "d1"},
+    {"source": "d1", "target": "d2", "label": "通过"}, {"source": "d1", "target": "fix1", "label": "不通过"},
+    {"source": "fix1", "target": "review1"}, {"source": "review1", "target": "d1"},
+    {"source": "d2", "target": "end", "label": "通过"}, {"source": "d2", "target": "fix2", "label": "不通过"},
+    {"source": "fix2", "target": "review2"}, {"source": "review2", "target": "d2"}
+  ],
+  "assumptions": ["编号、依据与角色均为模拟数据", "审计结论需以实际证据和制度为准"]
+}

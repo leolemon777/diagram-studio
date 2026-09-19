@@ -1,0 +1,122 @@
+{
+  "mode": "presentation",
+  "title": "设备改善汇报 · 六页演示骨架",
+  "subtitle": "一页一结论，证据与行动在阅读顺序中闭环",
+  "template": "publication",
+  "data_status": "simulated",
+  "assumptions": [
+    "数据为教学模拟，不代表真实项目现状",
+    "真实交付前须替换数值、名称、品牌规范和审批信息"
+  ],
+  "metrics": [
+    {
+      "id": "slides",
+      "label": "页数",
+      "value": 6,
+      "unit": "页",
+      "evidence": "示例输入"
+    },
+    {
+      "id": "evidence",
+      "label": "证据页",
+      "value": 2,
+      "unit": "页",
+      "evidence": "示例输入"
+    }
+  ],
+  "sheet": {
+    "width": 1920,
+    "height": 1080,
+    "unit": "px"
+  },
+  "blocks": [
+    {
+      "id": "b1",
+      "role": "title",
+      "label": "01 标题",
+      "content": "对象、周期、责任人",
+      "rect": [
+        0.05,
+        0.76,
+        0.9,
+        0.16
+      ],
+      "order": 1
+    },
+    {
+      "id": "b2",
+      "role": "problem",
+      "label": "02 问题",
+      "content": "停机损失与现场症状",
+      "rect": [
+        0.05,
+        0.53,
+        0.43,
+        0.18
+      ],
+      "order": 2
+    },
+    {
+      "id": "b3",
+      "role": "evidence",
+      "label": "03 证据",
+      "content": "趋势、照片、报警记录",
+      "rect": [
+        0.52,
+        0.53,
+        0.43,
+        0.18
+      ],
+      "order": 3
+    },
+    {
+      "id": "b4",
+      "role": "solution",
+      "label": "04 方案",
+      "content": "诊断规则与执行流程",
+      "rect": [
+        0.05,
+        0.29,
+        0.43,
+        0.18
+      ],
+      "order": 4
+    },
+    {
+      "id": "b5",
+      "role": "result",
+      "label": "05 结果",
+      "content": "可用率与工时变化",
+      "rect": [
+        0.52,
+        0.29,
+        0.43,
+        0.18
+      ],
+      "order": 5
+    },
+    {
+      "id": "b6",
+      "role": "action",
+      "label": "06 行动",
+      "content": "推广范围、责任和日期",
+      "rect": [
+        0.05,
+        0.07,
+        0.9,
+        0.15
+      ],
+      "order": 6
+    }
+  ],
+  "reading_order": [
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "b5",
+    "b6"
+  ],
+  "audience": "设备、生产与管理协同团队",
+  "primary_action": "确认责任、数据来源与下一步行动"
+}

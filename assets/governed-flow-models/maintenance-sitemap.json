@@ -1,0 +1,20 @@
+{
+  "id": "maintenance-sitemap", "mode": "sitemap",
+  "title": "设备维护门户网站地图", "subtitle": "实线为信息架构层级；虚线为跨页任务链接", "data_status": "simulated",
+  "pages": [
+    {"id": "home", "label": "首页", "url": "/", "access": "public", "parent": null},
+    {"id": "operations", "label": "运行总览", "url": "/operations", "access": "internal", "parent": "home"},
+    {"id": "assets", "label": "设备台账", "url": "/assets", "access": "internal", "parent": "operations"},
+    {"id": "workorders", "label": "工单中心", "url": "/work-orders", "access": "internal", "parent": "operations"},
+    {"id": "knowledge", "label": "知识库", "url": "/knowledge", "access": "public", "parent": "home"},
+    {"id": "procedures", "label": "作业规程", "url": "/knowledge/procedures", "access": "internal", "parent": "knowledge"},
+    {"id": "reports", "label": "可靠性报告", "url": "/reports", "access": "internal", "parent": "home"},
+    {"id": "admin", "label": "权限管理", "url": "/admin/access", "access": "admin", "parent": "home"}
+  ],
+  "cross_links": [
+    {"source": "assets", "target": "workorders", "label": "创建工单"},
+    {"source": "workorders", "target": "procedures", "label": "查规程"},
+    {"source": "workorders", "target": "reports", "label": "汇总"}
+  ],
+  "assumptions": ["页面、URL 和权限均为模拟信息架构", "跨页链接不改变主层级"]
+}

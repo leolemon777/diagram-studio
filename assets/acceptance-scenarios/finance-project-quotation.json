@@ -1,0 +1,31 @@
+{
+  "mode": "quotation",
+  "title": "设备改善项目报价单",
+  "subtitle": "模拟场景 · 范围、费用、交付和付款条款以明细数据为唯一计算来源",
+  "template": "publication",
+  "sector": "财务采购",
+  "use_case": "项目采购与供应商报价核对",
+  "data_status": "simulated",
+  "assumptions": ["名称和金额为验收用模拟数据，不构成商业报价"],
+  "metrics": [
+    {"id":"deliverables","label":"交付项目","value":2,"unit":"项","evidence":"模拟输入","value_source":"line_items_count"},
+    {"id":"total","label":"含税总价","value":25440,"unit":"元","evidence":"模拟输入","value_source":"financial_total"}
+  ],
+  "blocks": [
+    {"id":"identity","role":"identity","label":"报价信息","content":"编号 Q-2026-AC01 · 有效期 15 天","rect":[0.05,0.73,0.9,0.18],"order":1},
+    {"id":"scope","role":"scope","label":"项目范围","content":"现场调研、改善设计与交付复核","rect":[0.05,0.48,0.43,0.18],"order":2},
+    {"id":"items","role":"items","label":"费用明细","content":"","content_source":"line_items","rect":[0.52,0.48,0.43,0.18],"order":3},
+    {"id":"terms","role":"terms","label":"商务条款","content":"40% 启动 · 40% 中期 · 20% 交付","rect":[0.05,0.12,0.56,0.29],"order":4},
+    {"id":"total","role":"total","label":"报价合计","content":"","content_source":"financial_summary","rect":[0.65,0.12,0.3,0.29],"order":5}
+  ],
+  "sheet":{"width":210,"height":297,"unit":"mm"},
+  "audience":"采购方与项目负责人",
+  "primary_action":"核对范围、金额并确认条款",
+  "reading_order":["identity","scope","items","terms","total"],
+  "line_items":[
+    {"id":"site-review","label":"现场调研与改善方案","quantity":1,"unit_price":18800},
+    {"id":"handoff","label":"到货质检与交付复核","quantity":2,"unit_price":2600}
+  ],
+  "tax_rate":0.06,
+  "declared_total":25440
+}

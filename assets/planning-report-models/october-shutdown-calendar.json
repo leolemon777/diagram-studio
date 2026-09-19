@@ -1,0 +1,18 @@
+{
+  "id": "october-shutdown-calendar",
+  "mode": "project-calendar",
+  "title": "十月停机项目日历",
+  "subtitle": "真实月份、星期对齐，跨天事件按持续日期显示",
+  "data_status": "simulated",
+  "year": 2026,
+  "month": 10,
+  "events": [
+    {"id": "e1", "label": "备件到货核对", "resource": "仓储", "start": "2026-10-02", "end": "2026-10-02"},
+    {"id": "e2", "label": "1号泵检修", "resource": "机械组", "start": "2026-10-05", "end": "2026-10-07"},
+    {"id": "e3", "label": "电机试验", "resource": "电仪组", "start": "2026-10-08", "end": "2026-10-09"},
+    {"id": "e4", "label": "2号泵检修", "resource": "机械组", "start": "2026-10-12", "end": "2026-10-14"},
+    {"id": "e5", "label": "联锁测试", "resource": "电仪组", "start": "2026-10-19", "end": "2026-10-20"},
+    {"id": "e6", "label": "月度复盘", "resource": "项目组", "start": "2026-10-30", "end": "2026-10-30"}
+  ],
+  "assumptions": ["事件为模拟项目计划", "项目日历不替代现场资源确认"]
+}

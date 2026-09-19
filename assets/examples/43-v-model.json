@@ -1,0 +1,130 @@
+{
+  "type": "graph",
+  "title": "验证 V 模型 · 设计与验证对应",
+  "diagram_name": "验证 V 模型",
+  "family": "科研与分析",
+  "subtitle": "左右对应的是同层验证关系；底部实现连接设计与验证",
+  "eyebrow": "43 / DIAGRAM LIBRARY",
+  "footer": "原创结构范例 · 数据、实体、尺寸与假说均为演示输入；实际任务按用户资料替换",
+  "assumptions": [
+    "原创演示内容，不代表实际业务、研究结论或工程设计"
+  ],
+  "nodes": [
+    {
+      "id": "req",
+      "label": "需求定义",
+      "x": 90,
+      "y": 240,
+      "w": 260,
+      "h": 88
+    },
+    {
+      "id": "design",
+      "label": "系统设计",
+      "x": 390,
+      "y": 440,
+      "w": 260,
+      "h": 88
+    },
+    {
+      "id": "impl",
+      "label": "实现与集成",
+      "x": 670,
+      "y": 660,
+      "w": 260,
+      "h": 88
+    },
+    {
+      "id": "verify",
+      "label": "集成验证",
+      "x": 960,
+      "y": 440,
+      "w": 260,
+      "h": 88
+    },
+    {
+      "id": "accept",
+      "label": "需求验收",
+      "x": 1250,
+      "y": 240,
+      "w": 260,
+      "h": 88
+    }
+  ],
+  "edges": [
+    {
+      "from": "req",
+      "to": "design",
+      "label": "",
+      "points": [
+        [
+          350,
+          284
+        ],
+        [
+          520,
+          440
+        ]
+      ]
+    },
+    {
+      "from": "design",
+      "to": "impl",
+      "label": "",
+      "points": [
+        [
+          650,
+          484
+        ],
+        [
+          800,
+          660
+        ]
+      ]
+    },
+    {
+      "from": "impl",
+      "to": "verify",
+      "label": "",
+      "points": [
+        [
+          930,
+          704
+        ],
+        [
+          1090,
+          528
+        ]
+      ]
+    },
+    {
+      "from": "verify",
+      "to": "accept",
+      "label": "",
+      "points": [
+        [
+          1220,
+          484
+        ],
+        [
+          1380,
+          328
+        ]
+      ]
+    },
+    {
+      "from": "req",
+      "to": "accept",
+      "label": "需求层对应",
+      "dashed": true,
+      "arrow": false
+    },
+    {
+      "from": "design",
+      "to": "verify",
+      "label": "设计层对应",
+      "dashed": true,
+      "arrow": false
+    }
+  ]
+}

@@ -1,0 +1,1112 @@
+[
+  {
+    "group": "Flowchart",
+    "name": "Basic Flowchart",
+    "canonical_id": "cn-1009",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Flowchart",
+    "name": "Business Process Modeling Notation",
+    "canonical_id": "cn-1012",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Flowchart",
+    "name": "Swimlane Flowchart",
+    "canonical_id": "cn-1010",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Flowchart",
+    "name": "Workflow Diagram",
+    "canonical_id": "cn-1016",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Flowchart",
+    "name": "Cross-Functional Flowchart",
+    "canonical_id": "cn-1010",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Flowchart",
+    "name": "Data Flow Diagram",
+    "canonical_id": "cn-1011",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Flowchart",
+    "name": "IDEF0 Diagram",
+    "canonical_id": "cn-1014",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Flowchart",
+    "name": "SDL Diagram",
+    "canonical_id": "cn-1015",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Flowchart",
+    "name": "Highlight Flowchart",
+    "canonical_id": "cn-1009",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Flowchart",
+    "name": "Process Flowchart",
+    "canonical_id": "cn-1113",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Network Diagram",
+    "name": "3D Network Diagram",
+    "canonical_id": "ext-network3d",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Network Diagram",
+    "name": "Basic Network Diagram",
+    "canonical_id": "cn-1071",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Network Diagram",
+    "name": "Detail Network Diagram",
+    "canonical_id": "cn-1075",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Network Diagram",
+    "name": "Cisco Network Topoloy",
+    "canonical_id": "cn-1072",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Network Diagram",
+    "name": "Amazon Web Services (AWS) Diagram",
+    "canonical_id": "cn-1068",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Network Diagram",
+    "name": "Azure Diagram",
+    "canonical_id": "cn-1069",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Network Diagram",
+    "name": "Google Cloud Platform (GCP) Diagram",
+    "canonical_id": "cn-1070",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Network Diagram",
+    "name": "Logical Network Diagram",
+    "canonical_id": "cn-1076",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Network Diagram",
+    "name": "Rack Diagram",
+    "canonical_id": "cn-1077",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Network Diagram",
+    "name": "LDAP Diagram",
+    "canonical_id": "cn-1078",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Network Diagram",
+    "name": "Cisco Products",
+    "canonical_id": "cn-1073",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Network Diagram",
+    "name": "Cisco Micellaneous",
+    "canonical_id": "cn-1073",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Network Diagram",
+    "name": "Active Directory",
+    "canonical_id": "cn-1079",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Network Diagram",
+    "name": "Network Location Diagram",
+    "canonical_id": "cn-1080",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Mind Map",
+    "name": "Mind Map",
+    "canonical_id": "cn-1018",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Mind Map",
+    "name": "Concept Map",
+    "canonical_id": "cn-5012",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Mind Map",
+    "name": "Bubble Diagram",
+    "canonical_id": "cn-5013",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Mind Map",
+    "name": "Brainstorming Diagram",
+    "canonical_id": "cn-1018",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Infographics",
+    "name": "Education Infographic",
+    "canonical_id": "cn-1215",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Infographics",
+    "name": "Business Infographic",
+    "canonical_id": "cn-1214",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Infographics",
+    "name": "Environment Infographic",
+    "canonical_id": "cn-1216",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Infographics",
+    "name": "Food Infographic",
+    "canonical_id": "cn-1217",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Infographics",
+    "name": "Medical Infographic",
+    "canonical_id": "cn-1218",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Infographics",
+    "name": "Technology Infographic",
+    "canonical_id": "cn-1220",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Graphic Organizer",
+    "name": "Main Idea and Detail Graphic Organizer",
+    "canonical_id": "ext-main-idea",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Graphic Organizer",
+    "name": "Vocabulary Study Graphic Organizer",
+    "canonical_id": "ext-vocabulary",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Graphic Organizer",
+    "name": "Storyboard",
+    "canonical_id": "ext-storyboard",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Graphic Organizer",
+    "name": "Compare and Contrast Graphic Organizer",
+    "canonical_id": "ext-compare-organizer",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Graphic Organizer",
+    "name": "Sequence Chart",
+    "canonical_id": "ext-sequence-organizer",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Graphic Organizer",
+    "name": "Grid and Matrix Graphic Organizer",
+    "canonical_id": "ext-grid-organizer",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Graphic Organizer",
+    "name": "Writing Graphic Organizer",
+    "canonical_id": "ext-writing-organizer",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Graphic Organizer",
+    "name": "Reading Graphic Organizer",
+    "canonical_id": "ext-reading-organizer",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Business Form",
+    "name": "Invoice",
+    "canonical_id": "cn-1099",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Business Form",
+    "name": "Fax Cover Sheet",
+    "canonical_id": "ext-fax-cover",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Business Form",
+    "name": "Quotation Form",
+    "canonical_id": "cn-1103",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Business Form",
+    "name": "Inventory List",
+    "canonical_id": "cn-1102",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Business Form",
+    "name": "Expense Report",
+    "canonical_id": "cn-1101",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Business Form",
+    "name": "Report Form",
+    "canonical_id": "cn-1098",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Business Form",
+    "name": "Sales Form",
+    "canonical_id": "cn-1100",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Project Chart",
+    "name": "Gantt Chart",
+    "canonical_id": "cn-1195",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Project Chart",
+    "name": "Project Timeline",
+    "canonical_id": "cn-1151",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Project Chart",
+    "name": "Calendar",
+    "canonical_id": "cn-1198",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Project Chart",
+    "name": "House of Quality (HOQ)",
+    "canonical_id": "cn-1180",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Project Chart",
+    "name": "Quality Function Deployment (QFD)",
+    "canonical_id": "ext-qfd",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Project Chart",
+    "name": "Relationship Matrix",
+    "canonical_id": "cn-1161",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Project Chart",
+    "name": "Relation Diagram",
+    "canonical_id": "cn-1181",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Project Chart",
+    "name": "PERT Chart",
+    "canonical_id": "cn-1200",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Project Chart",
+    "name": "Status Table",
+    "canonical_id": "cn-5011",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Project Chart",
+    "name": "Decision Tree",
+    "canonical_id": "cn-1201",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Project Chart",
+    "name": "Work Breakdown Structure",
+    "canonical_id": "cn-5009",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Basic Diagram",
+    "name": "Circular Diagram",
+    "canonical_id": "cn-1148",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Basic Diagram",
+    "name": "Venn Diagram",
+    "canonical_id": "cn-1150",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Basic Diagram",
+    "name": "Pyramid Diagram",
+    "canonical_id": "cn-1106",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Basic Diagram",
+    "name": "List Diagram",
+    "canonical_id": "cn-1149",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Basic Diagram",
+    "name": "Arrow Diagram",
+    "canonical_id": "cn-1145",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Basic Diagram",
+    "name": "Circle Spoke Diagram",
+    "canonical_id": "cn-1147",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Basic Diagram",
+    "name": "Timeline",
+    "canonical_id": "cn-1151",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Organizational Chart",
+    "name": "Basic Organizational Chart",
+    "canonical_id": "cn-1026",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Organizational Chart",
+    "name": "Photo Organizational Chart",
+    "canonical_id": "cn-1026",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Organizational Chart",
+    "name": "Functional Organizational Chart",
+    "canonical_id": "cn-1026",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Organizational Chart",
+    "name": "Matrix Organizational Chart",
+    "canonical_id": "ext-orgmatrix",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Organizational Chart",
+    "name": "Family Tree",
+    "canonical_id": "cn-5006",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Organizational Chart",
+    "name": "Genogram",
+    "canonical_id": "ext-genogram",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Engineering Diagram",
+    "name": "Basic Electrical Diagram",
+    "canonical_id": "cn-1109",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Engineering Diagram",
+    "name": "Circuits and Logic Diagram",
+    "canonical_id": "cn-1110",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Engineering Diagram",
+    "name": "Industry Control System Diagram",
+    "canonical_id": "cn-1111",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Engineering Diagram",
+    "name": "Schematic Diagram",
+    "canonical_id": "cn-1109",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Engineering Diagram",
+    "name": "Wiring Diagram",
+    "canonical_id": "ext-wiring",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Engineering Diagram",
+    "name": "Process Flow Diagram",
+    "canonical_id": "cn-1113",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Engineering Diagram",
+    "name": "Piping and Instrumentation Diagram",
+    "canonical_id": "cn-1114",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Charts and Graphs",
+    "name": "Column Chart",
+    "canonical_id": "cn-1088",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Charts and Graphs",
+    "name": "Pie Chart",
+    "canonical_id": "cn-1090",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Charts and Graphs",
+    "name": "Bar Chart",
+    "canonical_id": "cn-1089",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Charts and Graphs",
+    "name": "Doughnut Chart",
+    "canonical_id": "cn-1091",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Charts and Graphs",
+    "name": "Spider Chart",
+    "canonical_id": "cn-1097",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Charts and Graphs",
+    "name": "Gauges Chart",
+    "canonical_id": "cn-1096",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Charts and Graphs",
+    "name": "Line Chart",
+    "canonical_id": "cn-1092",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Charts and Graphs",
+    "name": "Area Chart",
+    "canonical_id": "cn-1093",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Charts and Graphs",
+    "name": "Bubble Plot",
+    "canonical_id": "cn-1095",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Charts and Graphs",
+    "name": "Scatter Chart",
+    "canonical_id": "cn-1094",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Charts and Graphs",
+    "name": "Comparison Chart",
+    "canonical_id": "cn-5010",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Graphic Design",
+    "name": "Presentation",
+    "canonical_id": "cn-1156",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Graphic Design",
+    "name": "Flyer",
+    "canonical_id": "cn-1207",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Graphic Design",
+    "name": "Poster",
+    "canonical_id": "cn-1212",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Graphic Design",
+    "name": "Banner",
+    "canonical_id": "cn-1203",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Graphic Design",
+    "name": "Certificate",
+    "canonical_id": "cn-1205",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Graphic Design",
+    "name": "Newsletter",
+    "canonical_id": "cn-5018",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Graphic Design",
+    "name": "Brochure",
+    "canonical_id": "cn-1204",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Graphic Design",
+    "name": "CD Label",
+    "canonical_id": "cn-1208",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Graphic Design",
+    "name": "Book Cover",
+    "canonical_id": "cn-1206",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Graphic Design",
+    "name": "Magazine Cover",
+    "canonical_id": "cn-1209",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Graphic Design",
+    "name": "Annual Report",
+    "canonical_id": "cn-1202",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Database Diagram",
+    "name": "Chen ERD Diagram",
+    "canonical_id": "cn-1063",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Database Diagram",
+    "name": "Database Model Diagram",
+    "canonical_id": "cn-1064",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Database Diagram",
+    "name": "Express-G Diagram",
+    "canonical_id": "cn-1065",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Database Diagram",
+    "name": "Martin ERD Diagram",
+    "canonical_id": "cn-1066",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Database Diagram",
+    "name": "ORM Diagram",
+    "canonical_id": "cn-1067",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Database Diagram",
+    "name": "ER Diagram",
+    "canonical_id": "cn-1064",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Website Wireframe",
+    "name": "Website Wireframe",
+    "canonical_id": "cn-1082",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Website Wireframe",
+    "name": "iPhone UI Wireframe",
+    "canonical_id": "cn-1084",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Website Wireframe",
+    "name": "iPad UI Wireframe",
+    "canonical_id": "cn-1237",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Website Wireframe",
+    "name": "Android UI Wireframe",
+    "canonical_id": "cn-1085",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Website Wireframe",
+    "name": "Windows UI Wireframe",
+    "canonical_id": "cn-1083",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Website Wireframe",
+    "name": "Conceptual Web Site",
+    "canonical_id": "cn-1238",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Website Wireframe",
+    "name": "Web Site Map",
+    "canonical_id": "cn-1239",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Map",
+    "name": "Directional Map",
+    "canonical_id": "cn-1133",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Map",
+    "name": "3D Directional Map",
+    "canonical_id": "cn-1132",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Map",
+    "name": "Subway Map",
+    "canonical_id": "cn-1134",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Map",
+    "name": "Geo Map",
+    "canonical_id": "cn-1135",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Floor Plan",
+    "name": "Home Plan",
+    "canonical_id": "cn-1121",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Floor Plan",
+    "name": "Office Layout",
+    "canonical_id": "cn-1122",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Floor Plan",
+    "name": "Electrical Wiring Plan",
+    "canonical_id": "cn-1123",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Floor Plan",
+    "name": "Electrical and Telecom Plan",
+    "canonical_id": "cn-1123",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Floor Plan",
+    "name": "Seating Plan",
+    "canonical_id": "cn-1124",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Floor Plan",
+    "name": "Landscaping Design",
+    "canonical_id": "cn-1126",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Floor Plan",
+    "name": "HVAC Plan",
+    "canonical_id": "cn-1129",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Floor Plan",
+    "name": "Fire and Emergency Plan",
+    "canonical_id": "cn-1127",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Floor Plan",
+    "name": "Reflected Ceiling Plan",
+    "canonical_id": "cn-1128",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Floor Plan",
+    "name": "Plumbing and Piping Plan",
+    "canonical_id": "ext-plumbing",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Floor Plan",
+    "name": "Interior Design",
+    "canonical_id": "cn-1121",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Floor Plan",
+    "name": "Garden Plan",
+    "canonical_id": "cn-1126",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Floor Plan",
+    "name": "Wardrobe Plan",
+    "canonical_id": "cn-1131",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Floor Plan",
+    "name": "Wine Cellar Plan",
+    "canonical_id": "ext-winecellar",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Business Diagram",
+    "name": "Audit Diagram",
+    "canonical_id": "cn-1017",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Business Diagram",
+    "name": "Business Matrix",
+    "canonical_id": "cn-1161",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Business Diagram",
+    "name": "Fishbone Diagram",
+    "canonical_id": "cn-1185",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Business Diagram",
+    "name": "Cause and Effect Diagram",
+    "canonical_id": "cn-1185",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Business Diagram",
+    "name": "Enterprise Architecture",
+    "canonical_id": "cn-1159",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Business Diagram",
+    "name": "Fault Tree Analysis",
+    "canonical_id": "cn-1178",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Business Diagram",
+    "name": "Marketing Diagram",
+    "canonical_id": "cn-1108",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Business Diagram",
+    "name": "Value Stream Map",
+    "canonical_id": "cn-1184",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Business Diagram",
+    "name": "Value Chain Analysis",
+    "canonical_id": "cn-1194",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Business Diagram",
+    "name": "PEST Analysis Diagram",
+    "canonical_id": "cn-1193",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Business Diagram",
+    "name": "Five Forces Chart",
+    "canonical_id": "cn-1189",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Business Diagram",
+    "name": "Force Field Analysis",
+    "canonical_id": "cn-1190",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Business Diagram",
+    "name": "Causal Loop Diagram",
+    "canonical_id": "ext-causalloop",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Business Diagram",
+    "name": "Event Tree Analysis",
+    "canonical_id": "ext-eventtree",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Business Diagram",
+    "name": "TQM Diagram",
+    "canonical_id": "cn-1183",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Business Diagram",
+    "name": "EPC Diagram",
+    "canonical_id": "cn-1013",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Business Diagram",
+    "name": "Circle Spoke Diagram",
+    "canonical_id": "cn-1147",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Business Diagram",
+    "name": "Dendrogram",
+    "canonical_id": "ext-dendrogram",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Business Diagram",
+    "name": "Gear Diagram",
+    "canonical_id": "ext-gear",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Business Diagram",
+    "name": "Ladder Diagram",
+    "canonical_id": "ext-ladder",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Business Diagram",
+    "name": "Radial Diagram",
+    "canonical_id": "cn-1147",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Business Diagram",
+    "name": "Target Diagram",
+    "canonical_id": "cn-1162",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Card",
+    "name": "Business Card",
+    "canonical_id": "cn-1224",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Card",
+    "name": "Invitation Card",
+    "canonical_id": "cn-1226",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Card",
+    "name": "Post Card",
+    "canonical_id": "cn-1227",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Card",
+    "name": "Christmas Card",
+    "canonical_id": "cn-1229",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Card",
+    "name": "Thank You Card",
+    "canonical_id": "cn-1225",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Card",
+    "name": "New Year Card",
+    "canonical_id": "cn-1234",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Card",
+    "name": "Valentine Day Card",
+    "canonical_id": "cn-1235",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Card",
+    "name": "Halloween Card",
+    "canonical_id": "cn-1230",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Card",
+    "name": "Easter Card",
+    "canonical_id": "cn-1233",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Science Illustration",
+    "name": "Mechanics Diagram",
+    "canonical_id": "cn-1137",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Science Illustration",
+    "name": "Laboratory Equipment Diagram",
+    "canonical_id": "cn-1142",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Science Illustration",
+    "name": "Chemistry Equation Diagram",
+    "canonical_id": "cn-1141",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Science Illustration",
+    "name": "Optics Diagram",
+    "canonical_id": "cn-1138",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Science Illustration",
+    "name": "Molecular Model",
+    "canonical_id": "cn-1144",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Science Illustration",
+    "name": "Human Organs Anatomy",
+    "canonical_id": "cn-1143",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Science Illustration",
+    "name": "Biology Diagram",
+    "canonical_id": "cn-1139",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Science Illustration",
+    "name": "Astronomy Diagram",
+    "canonical_id": "cn-1140",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Science Illustration",
+    "name": "Geography Diagram",
+    "canonical_id": "cn-1135",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Science Illustration",
+    "name": "Mathematics Illustration",
+    "canonical_id": "cn-1136",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Software Design Diagram",
+    "name": "UML Model Diagram",
+    "canonical_id": "cn-1050",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Software Design Diagram",
+    "name": "Booch OOD",
+    "canonical_id": "cn-1051",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Software Design Diagram",
+    "name": "COM and OLE Diagram",
+    "canonical_id": "cn-1236",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Software Design Diagram",
+    "name": "Jacobson Use Case Diagram",
+    "canonical_id": "cn-1054",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Software Design Diagram",
+    "name": "Jackson Diagram",
+    "canonical_id": "cn-1055",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Software Design Diagram",
+    "name": "Program Flowchart",
+    "canonical_id": "cn-1056",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Software Design Diagram",
+    "name": "Nassi-Shneiderman Diagram",
+    "canonical_id": "cn-1058",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Software Design Diagram",
+    "name": "ROOM Diagram",
+    "canonical_id": "cn-1059",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Software Design Diagram",
+    "name": "Shlaer-Mellor OOA Diagram",
+    "canonical_id": "cn-1060",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Software Design Diagram",
+    "name": "SSADM Diagram",
+    "canonical_id": "cn-1061",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  },
+  {
+    "group": "Software Design Diagram",
+    "name": "Yordon and Code Diagram",
+    "canonical_id": "cn-1062",
+    "mapping": "分类/同义或变体映射；不把同义项重复计作独立结构"
+  }
+]

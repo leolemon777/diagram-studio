@@ -1,0 +1,168 @@
+{
+  "title": "启停自保持 · 本扫描写入与反馈",
+  "scope": "明确扫描顺序 · 输入快照与内部状态分开",
+  "data_status": "假设教学示例",
+  "semantics": "sequential_boolean_scan",
+  "write_policy": "single_writer",
+  "variables": [
+    {
+      "id": "Enable",
+      "label": "运行允许",
+      "role": "input",
+      "source": "假设教学信号，不对应现场地址"
+    },
+    {
+      "id": "StopRequest",
+      "label": "普通停止请求",
+      "role": "input",
+      "source": "假设教学信号，不对应现场地址"
+    },
+    {
+      "id": "Start",
+      "label": "启动请求",
+      "role": "input",
+      "source": "假设教学信号，不对应现场地址"
+    },
+    {
+      "id": "Run",
+      "label": "运行记忆",
+      "role": "memory",
+      "source": "假设教学信号，不对应现场地址",
+      "initial": false
+    },
+    {
+      "id": "Lamp",
+      "label": "运行指示",
+      "role": "output",
+      "source": "假设教学信号，不对应现场地址",
+      "initial": false
+    }
+  ],
+  "rungs": [
+    {
+      "id": "R1",
+      "label": "停止优先；启动或上次保持状态满足时置运行",
+      "logic": {
+        "id": "start_logic",
+        "kind": "series",
+        "children": [
+          {
+            "id": "c_enable",
+            "kind": "contact",
+            "var": "Enable",
+            "sense": "true"
+          },
+          {
+            "id": "c_stop",
+            "kind": "contact",
+            "var": "StopRequest",
+            "sense": "false"
+          },
+          {
+            "id": "hold_branch",
+            "kind": "parallel",
+            "children": [
+              {
+                "id": "c_start",
+                "kind": "contact",
+                "var": "Start",
+                "sense": "true"
+              },
+              {
+                "id": "c_hold",
+                "kind": "contact",
+                "var": "Run",
+                "sense": "true"
+              }
+            ]
+          }
+        ]
+      },
+      "coil": {
+        "id": "R1_coil",
+        "kind": "assign",
+        "var": "Run"
+      }
+    },
+    {
+      "id": "R2",
+      "label": "读取 R1 刚写入的 Run，更新指示",
+      "logic": {
+        "id": "c_lamp",
+        "kind": "contact",
+        "var": "Run",
+        "sense": "true"
+      },
+      "coil": {
+        "id": "R2_coil",
+        "kind": "assign",
+        "var": "Lamp"
+      }
+    }
+  ],
+  "scans": [
+    {
+      "id": "S1",
+      "label": "待机",
+      "inputs": {
+        "Enable": true,
+        "StopRequest": false,
+        "Start": false
+      }
+    },
+    {
+      "id": "S2",
+      "label": "启动",
+      "inputs": {
+        "Enable": true,
+        "StopRequest": false,
+        "Start": true
+      }
+    },
+    {
+      "id": "S3",
+      "label": "松开启动仍保持",
+      "inputs": {
+        "Enable": true,
+        "StopRequest": false,
+        "Start": false
+      }
+    },
+    {
+      "id": "S4",
+      "label": "启动与停止同真，停止优先",
+      "inputs": {
+        "Enable": true,
+        "StopRequest": true,
+        "Start": true
+      }
+    },
+    {
+      "id": "S5",
+      "label": "停止松开，不自动重启",
+      "inputs": {
+        "Enable": true,
+        "StopRequest": false,
+        "Start": false
+      }
+    },
+    {
+      "id": "S6",
+      "label": "重新启动",
+      "inputs": {
+        "Enable": true,
+        "StopRequest": false,
+        "Start": true
+      }
+    },
+    {
+      "id": "S7",
+      "label": "允许丢失，运行清零",
+      "inputs": {
+        "Enable": false,
+        "StopRequest": false,
+        "Start": false
+      }
+    }
+  ]
+}

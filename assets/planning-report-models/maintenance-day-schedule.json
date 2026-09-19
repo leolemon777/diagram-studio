@@ -1,0 +1,17 @@
+{
+  "id": "maintenance-day-schedule",
+  "mode": "schedule",
+  "title": "停机检修日程",
+  "subtitle": "时长、间隙、责任人与冲突由同一时间轴核对",
+  "data_status": "simulated",
+  "timezone": "Asia/Shanghai",
+  "activities": [
+    {"id": "a1", "label": "安全交底", "owner": "机械组", "start": "2026-09-21T08:00", "end": "2026-09-21T09:00", "status": "confirmed"},
+    {"id": "a2", "label": "泵组解体", "owner": "机械组", "start": "2026-09-21T09:30", "end": "2026-09-21T12:00", "status": "confirmed"},
+    {"id": "a3", "label": "电机绝缘测试", "owner": "电仪组", "start": "2026-09-21T08:30", "end": "2026-09-21T10:30", "status": "confirmed"},
+    {"id": "a4", "label": "联锁复核", "owner": "电仪组", "start": "2026-09-21T10:00", "end": "2026-09-21T11:00", "status": "confirmed"},
+    {"id": "a5", "label": "回装与找正", "owner": "机械组", "start": "2026-09-21T13:00", "end": "2026-09-21T16:30", "status": "tentative"},
+    {"id": "a6", "label": "联合试车", "owner": "运行班组", "start": "2026-09-21T16:30", "end": "2026-09-21T18:00", "status": "tentative"}
+  ],
+  "assumptions": ["活动与时区为模拟安排", "电仪组的30分钟重叠用于演示冲突显式标记"]
+}

@@ -1,0 +1,108 @@
+{
+  "mode": "invitation",
+  "title": "设备改善成果开放日邀请卡",
+  "subtitle": "主办、日期、地点和 RSVP 信息完整",
+  "template": "publication",
+  "data_status": "simulated",
+  "assumptions": [
+    "数据为教学模拟，不代表真实项目现状",
+    "真实交付前须替换数值、名称、品牌规范和审批信息"
+  ],
+  "metrics": [
+    {
+      "id": "deadline",
+      "label": "回复截止",
+      "value": "10-10",
+      "unit": "",
+      "evidence": "示例输入"
+    },
+    {
+      "id": "start",
+      "label": "开始时间",
+      "value": "13:30",
+      "unit": "",
+      "evidence": "示例输入"
+    }
+  ],
+  "sheet": {
+    "width": 148,
+    "height": 210,
+    "unit": "mm"
+  },
+  "blocks": [
+    {
+      "id": "b1",
+      "role": "occasion",
+      "label": "活动",
+      "content": "设备改善成果开放日",
+      "rect": [
+        0.05,
+        0.72,
+        0.9,
+        0.2
+      ],
+      "order": 1
+    },
+    {
+      "id": "b2",
+      "role": "host",
+      "label": "主办",
+      "content": "设备与数字化改善中心",
+      "rect": [
+        0.05,
+        0.47,
+        0.43,
+        0.19
+      ],
+      "order": 2
+    },
+    {
+      "id": "b3",
+      "role": "datetime",
+      "label": "时间",
+      "content": "2026 年 10 月 16 日 13:30",
+      "rect": [
+        0.52,
+        0.47,
+        0.43,
+        0.19
+      ],
+      "order": 3
+    },
+    {
+      "id": "b4",
+      "role": "venue",
+      "label": "地点",
+      "content": "创新中心一楼展厅",
+      "rect": [
+        0.05,
+        0.12,
+        0.56,
+        0.28
+      ],
+      "order": 4
+    },
+    {
+      "id": "b5",
+      "role": "rsvp",
+      "label": "确认",
+      "content": "请于 10 月 10 日前回复",
+      "rect": [
+        0.65,
+        0.12,
+        0.3,
+        0.28
+      ],
+      "order": 5
+    }
+  ],
+  "reading_order": [
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "b5"
+  ],
+  "audience": "设备、生产与管理协同团队",
+  "primary_action": "确认责任、数据来源与下一步行动"
+}

@@ -1,0 +1,270 @@
+{
+  "mode": "ui-wireframe",
+  "platform": "android",
+  "title": "设备维护 Android 状态与返回流程",
+  "subtitle": "列表、详情、权限状态三屏；系统栏与返回行为逐步说明",
+  "data_status": "simulated",
+  "assumptions": [
+    "低保真结构验证；厂商皮肤、真实权限 API 和实现代码另行处理"
+  ],
+  "screens": [
+    {
+      "id": "list",
+      "label": "工单列表",
+      "state": "default",
+      "viewport_width": 412,
+      "safe_areas": [
+        "status-bar",
+        "navigation-bar"
+      ],
+      "rect": [
+        0.05,
+        0.12,
+        0.2,
+        0.74
+      ]
+    },
+    {
+      "id": "detail",
+      "label": "工单详情",
+      "state": "selected",
+      "viewport_width": 412,
+      "safe_areas": [
+        "status-bar",
+        "navigation-bar"
+      ],
+      "rect": [
+        0.4,
+        0.12,
+        0.2,
+        0.74
+      ]
+    },
+    {
+      "id": "permission",
+      "label": "相机权限",
+      "state": "permission",
+      "viewport_width": 412,
+      "safe_areas": [
+        "status-bar",
+        "navigation-bar"
+      ],
+      "rect": [
+        0.75,
+        0.12,
+        0.2,
+        0.74
+      ]
+    }
+  ],
+  "components": [
+    {
+      "id": "a-status1",
+      "screen_id": "list",
+      "label": "状态栏",
+      "type": "status-bar",
+      "rect": [
+        0.04,
+        0.93,
+        0.92,
+        0.04
+      ],
+      "interactive": false
+    },
+    {
+      "id": "a-app1",
+      "screen_id": "list",
+      "label": "工单 · 搜索",
+      "type": "app-bar",
+      "rect": [
+        0.04,
+        0.82,
+        0.92,
+        0.09
+      ],
+      "interactive": true,
+      "action": "搜索工单",
+      "accessible_name": "搜索"
+    },
+    {
+      "id": "a-list",
+      "screen_id": "list",
+      "label": "优先级工单列表",
+      "type": "list",
+      "rect": [
+        0.04,
+        0.19,
+        0.92,
+        0.59
+      ],
+      "interactive": true,
+      "action": "选择工单",
+      "accessible_name": "工单列表"
+    },
+    {
+      "id": "a-system1",
+      "screen_id": "list",
+      "label": "系统导航栏",
+      "type": "navigation-bar",
+      "rect": [
+        0.04,
+        0.04,
+        0.92,
+        0.08
+      ],
+      "interactive": false
+    },
+    {
+      "id": "a-status2",
+      "screen_id": "detail",
+      "label": "状态栏",
+      "type": "status-bar",
+      "rect": [
+        0.04,
+        0.93,
+        0.92,
+        0.04
+      ],
+      "interactive": false
+    },
+    {
+      "id": "a-app2",
+      "screen_id": "detail",
+      "label": "返回 · WO-2409",
+      "type": "app-bar",
+      "rect": [
+        0.04,
+        0.82,
+        0.92,
+        0.09
+      ],
+      "interactive": true,
+      "action": "返回列表",
+      "accessible_name": "返回"
+    },
+    {
+      "id": "a-card2",
+      "screen_id": "detail",
+      "label": "设备 / 故障 / 作业票",
+      "type": "card",
+      "rect": [
+        0.04,
+        0.38,
+        0.92,
+        0.4
+      ],
+      "interactive": false
+    },
+    {
+      "id": "a-button2",
+      "screen_id": "detail",
+      "label": "拍照取证",
+      "type": "button",
+      "rect": [
+        0.04,
+        0.22,
+        0.92,
+        0.1
+      ],
+      "interactive": true,
+      "action": "请求相机权限",
+      "accessible_name": "拍照取证"
+    },
+    {
+      "id": "a-system2",
+      "screen_id": "detail",
+      "label": "系统导航栏",
+      "type": "navigation-bar",
+      "rect": [
+        0.04,
+        0.04,
+        0.92,
+        0.08
+      ],
+      "interactive": false
+    },
+    {
+      "id": "a-status3",
+      "screen_id": "permission",
+      "label": "状态栏",
+      "type": "status-bar",
+      "rect": [
+        0.04,
+        0.93,
+        0.92,
+        0.04
+      ],
+      "interactive": false
+    },
+    {
+      "id": "a-app3",
+      "screen_id": "permission",
+      "label": "工单详情",
+      "type": "app-bar",
+      "rect": [
+        0.04,
+        0.82,
+        0.92,
+        0.09
+      ],
+      "interactive": false
+    },
+    {
+      "id": "a-dialog",
+      "screen_id": "permission",
+      "label": "允许使用相机？",
+      "type": "dialog",
+      "rect": [
+        0.08,
+        0.4,
+        0.84,
+        0.3
+      ],
+      "interactive": true,
+      "action": "允许或拒绝权限",
+      "accessible_name": "相机权限请求"
+    },
+    {
+      "id": "a-message",
+      "screen_id": "permission",
+      "label": "拒绝后提供手动上传",
+      "type": "message",
+      "rect": [
+        0.08,
+        0.24,
+        0.84,
+        0.1
+      ],
+      "interactive": false
+    },
+    {
+      "id": "a-system3",
+      "screen_id": "permission",
+      "label": "系统导航栏",
+      "type": "navigation-bar",
+      "rect": [
+        0.04,
+        0.04,
+        0.92,
+        0.08
+      ],
+      "interactive": false
+    }
+  ],
+  "transitions": [
+    {
+      "id": "a-t1",
+      "source_screen": "list",
+      "target_screen": "detail",
+      "trigger": "点按工单",
+      "back_behavior": "返回列表并保留滚动位置"
+    },
+    {
+      "id": "a-t2",
+      "source_screen": "detail",
+      "target_screen": "permission",
+      "trigger": "点按拍照取证",
+      "back_behavior": "关闭权限状态并返回详情"
+    }
+  ]
+}

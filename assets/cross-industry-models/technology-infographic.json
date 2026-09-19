@@ -1,0 +1,112 @@
+{
+  "catalog_id": "cn-1220",
+  "mode": "technology-infographic",
+  "title": "生成式 AI 工作流信息图",
+  "subtitle": "事实、语境、证据和行动按阅读顺序组织",
+  "template": "publication",
+  "sector": "科技与互联网",
+  "use_case": "技术原理、产品能力和趋势传播的常用信息图",
+  "data_status": "simulated",
+  "assumptions": [
+    "内容和数值为教学模拟",
+    "真实交付前须替换名称、事实、品牌、尺寸和审批信息"
+  ],
+  "metrics": [
+    {
+      "id": "blocks",
+      "label": "内容模块",
+      "value": 5,
+      "unit": "个",
+      "evidence": "模拟输入"
+    },
+    {
+      "id": "evidence",
+      "label": "证据点",
+      "value": 2,
+      "unit": "项",
+      "evidence": "模拟输入"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "b1",
+      "role": "headline",
+      "label": "主题",
+      "content": "生成式 AI 工作流信息图",
+      "rect": [
+        0.05,
+        0.73,
+        0.9,
+        0.18
+      ],
+      "order": 1
+    },
+    {
+      "id": "b2",
+      "role": "context",
+      "label": "背景",
+      "content": "系统过程 · 输入—检索—生成—审核—反馈",
+      "rect": [
+        0.05,
+        0.48,
+        0.43,
+        0.18
+      ],
+      "order": 2
+    },
+    {
+      "id": "b3",
+      "role": "evidence",
+      "label": "核心证据",
+      "content": "5 个阶段",
+      "rect": [
+        0.52,
+        0.48,
+        0.43,
+        0.18
+      ],
+      "order": 3
+    },
+    {
+      "id": "b4",
+      "role": "method",
+      "label": "口径",
+      "content": "示例数据；真实发布前替换来源与日期",
+      "rect": [
+        0.05,
+        0.12,
+        0.56,
+        0.29
+      ],
+      "order": 4
+    },
+    {
+      "id": "b5",
+      "role": "action",
+      "label": "下一步",
+      "content": "建立人工审核节点",
+      "rect": [
+        0.65,
+        0.12,
+        0.3,
+        0.29
+      ],
+      "order": 5
+    }
+  ],
+  "sheet": {
+    "width": 1080,
+    "height": 1350,
+    "unit": "px"
+  },
+  "audience": "科技与互联网受众",
+  "primary_action": "建立人工审核节点",
+  "reading_order": [
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "b5"
+  ],
+  "source_note": "模拟事实结构；真实交付需列明公开来源、日期和口径"
+}

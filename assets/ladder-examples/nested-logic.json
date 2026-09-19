@@ -1,0 +1,201 @@
+{
+  "title": "嵌套串并联 · 模式选择与取反输出",
+  "scope": "明确扫描顺序 · 输入快照与内部状态分开",
+  "data_status": "假设教学示例",
+  "semantics": "sequential_boolean_scan",
+  "write_policy": "single_writer",
+  "variables": [
+    {
+      "id": "Auto",
+      "label": "自动模式",
+      "role": "input",
+      "source": "假设教学信号，不对应现场地址"
+    },
+    {
+      "id": "Demand",
+      "label": "自动请求",
+      "role": "input",
+      "source": "假设教学信号，不对应现场地址"
+    },
+    {
+      "id": "Manual",
+      "label": "手动模式",
+      "role": "input",
+      "source": "假设教学信号，不对应现场地址"
+    },
+    {
+      "id": "Jog",
+      "label": "点动请求",
+      "role": "input",
+      "source": "假设教学信号，不对应现场地址"
+    },
+    {
+      "id": "Ready",
+      "label": "设备就绪",
+      "role": "input",
+      "source": "假设教学信号，不对应现场地址"
+    },
+    {
+      "id": "Alarm",
+      "label": "报警状态",
+      "role": "input",
+      "source": "假设教学信号，不对应现场地址"
+    },
+    {
+      "id": "Command",
+      "label": "逻辑运行命令",
+      "role": "output",
+      "source": "假设教学信号，不对应现场地址",
+      "initial": false
+    },
+    {
+      "id": "NotRunning",
+      "label": "非运行指示",
+      "role": "output",
+      "source": "假设教学信号，不对应现场地址",
+      "initial": false
+    }
+  ],
+  "rungs": [
+    {
+      "id": "R1",
+      "label": "两条模式支路汇合，再检查就绪且无报警",
+      "logic": {
+        "id": "logic",
+        "kind": "series",
+        "children": [
+          {
+            "id": "modes",
+            "kind": "parallel",
+            "children": [
+              {
+                "id": "auto_path",
+                "kind": "series",
+                "children": [
+                  {
+                    "id": "c_auto",
+                    "kind": "contact",
+                    "var": "Auto",
+                    "sense": "true"
+                  },
+                  {
+                    "id": "c_demand",
+                    "kind": "contact",
+                    "var": "Demand",
+                    "sense": "true"
+                  }
+                ]
+              },
+              {
+                "id": "manual_path",
+                "kind": "series",
+                "children": [
+                  {
+                    "id": "c_manual",
+                    "kind": "contact",
+                    "var": "Manual",
+                    "sense": "true"
+                  },
+                  {
+                    "id": "c_jog",
+                    "kind": "contact",
+                    "var": "Jog",
+                    "sense": "true"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "permits",
+            "kind": "series",
+            "children": [
+              {
+                "id": "c_ready",
+                "kind": "contact",
+                "var": "Ready",
+                "sense": "true"
+              },
+              {
+                "id": "c_alarm",
+                "kind": "contact",
+                "var": "Alarm",
+                "sense": "false"
+              }
+            ]
+          }
+        ]
+      },
+      "coil": {
+        "id": "R1_coil",
+        "kind": "assign",
+        "var": "Command"
+      }
+    },
+    {
+      "id": "R2",
+      "label": "取反赋值：输入逻辑为假时，输出为真",
+      "logic": {
+        "id": "c_not",
+        "kind": "contact",
+        "var": "Command",
+        "sense": "true"
+      },
+      "coil": {
+        "id": "R2_coil",
+        "kind": "negated",
+        "var": "NotRunning"
+      }
+    }
+  ],
+  "scans": [
+    {
+      "id": "S1",
+      "label": "自动有效",
+      "inputs": {
+        "Auto": true,
+        "Demand": true,
+        "Manual": false,
+        "Jog": false,
+        "Ready": true,
+        "Alarm": false
+      }
+    },
+    {
+      "id": "S2",
+      "label": "手动有效",
+      "inputs": {
+        "Auto": false,
+        "Demand": false,
+        "Manual": true,
+        "Jog": true,
+        "Ready": true,
+        "Alarm": false
+      }
+    },
+    {
+      "id": "S3",
+      "label": "跨支路信号不能拼接",
+      "inputs": {
+        "Auto": true,
+        "Demand": false,
+        "Manual": false,
+        "Jog": true,
+        "Ready": true,
+        "Alarm": false
+      }
+    },
+    {
+      "id": "S4",
+      "label": "报警阻断",
+      "inputs": {
+        "Auto": true,
+        "Demand": true,
+        "Manual": false,
+        "Jog": false,
+        "Ready": true,
+        "Alarm": true
+      }
+    }
+  ]
+}

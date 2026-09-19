@@ -1,0 +1,143 @@
+{
+  "title": "断开延时 TOF · 下降沿与提前恢复",
+  "scope": "按明确毫秒时刻调用 · 功能块状态独立保存",
+  "data_status": "假设教学扫描；不代表实际设备",
+  "semantics": "sequential_timed_scan",
+  "write_policy": "single_writer",
+  "variables": [
+    {
+      "id": "Request",
+      "label": "持续请求",
+      "role": "input",
+      "source": "假设扫描记录；不是现场I/O地址"
+    },
+    {
+      "id": "Done",
+      "label": "延时保持输出",
+      "role": "output",
+      "source": "假设扫描记录；不是现场I/O地址",
+      "initial": false
+    }
+  ],
+  "rungs": [
+    {
+      "id": "R1",
+      "label": "输入真立即接通；输入假后延迟300ms断开，恢复真则取消计时",
+      "logic": {
+        "id": "R1_contact",
+        "kind": "contact",
+        "var": "Request",
+        "sense": "true"
+      },
+      "block": {
+        "id": "T1",
+        "type": "TOF",
+        "pt_ms": 300,
+        "initial": "reset"
+      },
+      "coil": {
+        "id": "R1_coil",
+        "kind": "assign",
+        "var": "Done"
+      }
+    }
+  ],
+  "scans": [
+    {
+      "id": "S1",
+      "label": "首扫为低，不凭空产生延时保持",
+      "time_ms": 0,
+      "inputs": {
+        "Request": false
+      }
+    },
+    {
+      "id": "S2",
+      "label": "输入高，立即接通",
+      "time_ms": 20,
+      "inputs": {
+        "Request": true
+      }
+    },
+    {
+      "id": "S3",
+      "label": "下降沿，开始断开延时",
+      "time_ms": 50,
+      "inputs": {
+        "Request": false
+      }
+    },
+    {
+      "id": "S4",
+      "label": "已过150ms，仍保持",
+      "time_ms": 200,
+      "inputs": {
+        "Request": false
+      }
+    },
+    {
+      "id": "S5",
+      "label": "提前恢复，取消本次计时",
+      "time_ms": 250,
+      "inputs": {
+        "Request": true
+      }
+    },
+    {
+      "id": "S6",
+      "label": "再次下降，重新从0计时",
+      "time_ms": 300,
+      "inputs": {
+        "Request": false
+      }
+    },
+    {
+      "id": "S7",
+      "label": "299ms未到，仍保持",
+      "time_ms": 599,
+      "inputs": {
+        "Request": false
+      }
+    },
+    {
+      "id": "S8",
+      "label": "恰好300ms，断开",
+      "time_ms": 600,
+      "inputs": {
+        "Request": false
+      }
+    },
+    {
+      "id": "S9",
+      "label": "继续低，ET封顶",
+      "time_ms": 650,
+      "inputs": {
+        "Request": false
+      }
+    },
+    {
+      "id": "S10",
+      "label": "再次接通并清ET",
+      "time_ms": 700,
+      "inputs": {
+        "Request": true
+      }
+    },
+    {
+      "id": "S11",
+      "label": "新的下降沿",
+      "time_ms": 710,
+      "inputs": {
+        "Request": false
+      }
+    },
+    {
+      "id": "S12",
+      "label": "本次满300ms",
+      "time_ms": 1010,
+      "inputs": {
+        "Request": false
+      }
+    }
+  ]
+}

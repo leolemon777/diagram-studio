@@ -1,0 +1,140 @@
+{
+  "title": "CTUD 双向计数：假设扫描序列",
+  "profile": "edge_int16_sample_every_call",
+  "assumptions": [
+    "教学输入；每扫描调用一次，复位或装载也采样边沿。"
+  ],
+  "initial": {
+    "cv": 0,
+    "previous_cu": false,
+    "previous_cd": false
+  },
+  "scans": [
+    {
+      "id": "S0",
+      "time_ms": 0,
+      "cu": false,
+      "cd": false,
+      "reset": false,
+      "load": false,
+      "pv": 2
+    },
+    {
+      "id": "S1",
+      "time_ms": 100,
+      "cu": true,
+      "cd": false,
+      "reset": false,
+      "load": false,
+      "pv": 2
+    },
+    {
+      "id": "S2",
+      "time_ms": 200,
+      "cu": true,
+      "cd": false,
+      "reset": false,
+      "load": false,
+      "pv": 2
+    },
+    {
+      "id": "S3",
+      "time_ms": 300,
+      "cu": false,
+      "cd": false,
+      "reset": false,
+      "load": false,
+      "pv": 2
+    },
+    {
+      "id": "S4",
+      "time_ms": 400,
+      "cu": true,
+      "cd": true,
+      "reset": false,
+      "load": false,
+      "pv": 2
+    },
+    {
+      "id": "S5",
+      "time_ms": 500,
+      "cu": true,
+      "cd": true,
+      "reset": true,
+      "load": true,
+      "pv": 2
+    },
+    {
+      "id": "S6",
+      "time_ms": 600,
+      "cu": true,
+      "cd": true,
+      "reset": false,
+      "load": false,
+      "pv": 2
+    },
+    {
+      "id": "S7",
+      "time_ms": 700,
+      "cu": false,
+      "cd": false,
+      "reset": false,
+      "load": true,
+      "pv": 2
+    },
+    {
+      "id": "S8",
+      "time_ms": 800,
+      "cu": false,
+      "cd": true,
+      "reset": false,
+      "load": false,
+      "pv": 2
+    },
+    {
+      "id": "S9",
+      "time_ms": 900,
+      "cu": false,
+      "cd": false,
+      "reset": false,
+      "load": false,
+      "pv": 2
+    },
+    {
+      "id": "S10",
+      "time_ms": 1000,
+      "cu": false,
+      "cd": true,
+      "reset": false,
+      "load": false,
+      "pv": 2
+    },
+    {
+      "id": "S11",
+      "time_ms": 1100,
+      "cu": false,
+      "cd": false,
+      "reset": false,
+      "load": false,
+      "pv": 2
+    },
+    {
+      "id": "S12",
+      "time_ms": 1200,
+      "cu": false,
+      "cd": true,
+      "reset": false,
+      "load": false,
+      "pv": 2
+    },
+    {
+      "id": "S13",
+      "time_ms": 1300,
+      "cu": false,
+      "cd": false,
+      "reset": false,
+      "load": false,
+      "pv": -2
+    }
+  ]
+}

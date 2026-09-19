@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>表达实验室 · 图表的另一种读法</title>
+<style>
+:root{--paper:#f3f2ec;--canvas:#faf9f5;--ink:#242e32;--muted:#5d696d;--line:#d1d7d0;--accent:#286d65;--light:#dee9e3}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:"PingFang SC","Microsoft YaHei",sans-serif}button,a,summary{touch-action:manipulation}button{font:inherit;color:inherit;cursor:pointer}a{color:var(--accent);text-underline-offset:5px}button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:5px}.page{max-width:1600px;margin:auto;padding:32px 54px 48px}.mast{display:flex;justify-content:space-between;border-bottom:1px solid var(--ink);padding-bottom:19px;font-size:12px;letter-spacing:2px}.mast span:last-child{color:var(--muted);letter-spacing:0}.intro{display:grid;grid-template-columns:1.3fr 1fr;gap:50px;align-items:end;padding:39px 0 33px}.intro h1{font-family:"Songti SC",serif;font-size:clamp(30px,3.4vw,50px);font-weight:500;letter-spacing:1px;margin:0;line-height:1.25}.intro p{color:var(--muted);font-size:15px;line-height:1.9;margin:0;max-width:590px}.intro strong{color:var(--ink);font-weight:500}.topics{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);gap:0}.topic{background:none;border:0;text-align:left;padding:19px 20px 19px 0;position:relative}.topic+button{padding-left:22px;border-left:1px solid var(--line)}.topic[aria-pressed="true"]::after{content:"";position:absolute;bottom:-1px;left:0;right:0;height:3px;background:var(--accent)}.topic small{font:12px Menlo,monospace;color:var(--muted);display:block;margin-bottom:9px}.topic b{font-size:17px;font-weight:500}.topic span{display:block;color:var(--muted);font-size:13px;margin-top:6px}.studyhead{display:flex;justify-content:space-between;gap:20px;align-items:end;margin:32px 0 22px}.studyhead h2{font:500 29px "Songti SC",serif;margin:0 0 10px}.studyhead p{font-size:14px;color:var(--muted);margin:0;line-height:1.7;max-width:760px}.switches{display:flex;gap:7px;flex-wrap:wrap;justify-content:flex-end;flex-shrink:0}.switches button{background:transparent;border:1px solid var(--line);padding:10px 15px;font-size:13px}.switches button[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--canvas)}.switches .compare{border-color:var(--muted)}.frame{border:1px solid var(--line);background:var(--canvas)}.figure{overflow-x:auto;overscroll-behavior-x:contain}.figure svg{display:block;width:100%;height:auto;min-width:860px}.canvas-label{display:flex;justify-content:space-between;align-items:center;padding:14px 20px;border-bottom:1px solid var(--line);font-size:13px;color:var(--muted)}.figure-wrap+.figure-wrap{border-top:2px solid var(--ink)}.canvas-label b{font-weight:500;color:var(--ink)}.notes{display:grid;grid-template-columns:1fr 1fr 1.15fr;border-top:1px solid var(--line);padding:20px 24px;gap:28px;background:var(--paper)}.notes small{display:block;font-size:11px;color:var(--accent);letter-spacing:1px;margin-bottom:8px}.notes p{font-size:13px;line-height:1.8;margin:0}.notes .reading{border-left:1px solid var(--line);padding-left:23px}.below{display:grid;grid-template-columns:1.3fr 1fr;gap:40px;margin-top:29px}.below details{border-top:1px solid var(--line);padding-top:18px}summary{cursor:pointer;font-size:14px}table{width:100%;font-size:13px;border-collapse:collapse;margin-top:20px;text-align:left}caption{text-align:left;font-size:12px;color:var(--muted);padding:0 0 12px}td,th{border-bottom:1px solid var(--line);padding:12px 6px}th{font-weight:500}details p{font-size:13px;color:var(--muted);line-height:1.8}footer{border-top:1px solid var(--ink);margin-top:40px;padding-top:17px;display:flex;gap:20px;justify-content:space-between;color:var(--muted);font-size:12px;line-height:1.8}.mobile-hint{display:none;font-size:12px;color:var(--muted)}.status{font-size:12px;color:var(--muted)}[hidden]{display:none!important}
+@media(min-width:1450px){.page{padding-left:72px;padding-right:72px}}
+@media(max-width:1000px){.page{padding:24px}.intro{gap:24px}.studyhead{display:block}.switches{justify-content:flex-start;margin-top:18px}.notes{grid-template-columns:1fr 1fr}.notes .reading{grid-column:1/-1;border-left:0;border-top:1px solid var(--line);padding:15px 0 0}.mobile-hint{display:block}}
+@media(max-width:760px){.page{padding:20px 16px}.mast{font-size:10px;letter-spacing:.6px}.intro{display:block;padding:24px 0}.intro p{margin-top:18px;font-size:14px}.topics{grid-template-columns:1fr 1fr}.topic{padding-top:14px;padding-bottom:14px}.topic:nth-child(3){padding-left:0;border-left:0;border-top:1px solid var(--line)}.topic:nth-child(4){border-top:1px solid var(--line)}.topic b{font-size:16px}.topic span{display:none}.studyhead h2{font-size:26px}.notes{display:block;padding:18px}.notes>div+div{margin-top:16px}.below{display:block}.below details+details{margin-top:20px}footer{display:block}footer span{display:block;margin-bottom:8px}}
+@media print{body{background:white}.page{padding:0}.mast,.intro,.topics,.switches,.below,footer,.mobile-hint{display:none}.studyhead{margin:0 0 16px}.figure svg{min-width:0}.figure-wrap{break-inside:avoid}.canvas-label a{display:none}.notes{font-size:11px}.frame{border:0}}
+</style>
+</head>
+<body><main class="page">
+<header class="mast"><span>DIAGRAM STUDIO / 表达实验室</span><span>04 个场景 · 08 种表达 · 模拟数据</span></header>
+<section class="intro"><h1>换一种表达，<br>依然一眼读懂。</h1><p>尝试改变图形结构、阅读顺序与信息重点。<br><strong>同一份事实，两种读法。</strong> 对照它们擅长回答的问题，再判断哪一种适合你的内容。</p></section>
+<nav class="topics" aria-label="选择图表场景" id="topics"></nav>
+<section aria-labelledby="study-title">
+<div class="studyhead"><div><h2 id="study-title"></h2><p id="study-lead"></p></div><div class="switches" aria-label="表达方式"><button id="view-a" aria-pressed="true"></button><button id="view-b" aria-pressed="false"></button><button class="compare" id="compare" aria-pressed="false">展开对照</button></div></div>
+<p class="mobile-hint">图表保留文字尺寸；窄屏可横向滚动查看。</p>
+<div class="frame" id="figures"></div>
+</section>
+<div class="below"><details id="data-details"><summary>查看两种表达共用的原始数据</summary><div id="data-table"></div><p><a href="source-models.json" download>下载模型 JSON</a> · 本页可以离线打开，图中没有真实业务记录。</p></details>
+<details><summary>这次尝试了哪些设计角度？</summary><p>阅读任务：先明确读者要找的答案。<br>图形编码：重新组合位置、长度、点、线与分组。<br>阅读顺序：让结论、证据与细节逐层出现。<br>视觉气质：用留白、字重、线条与注释建立层次。<br>使用介质：大屏看全貌，窄屏保留可读字重与滚动。<br>理解成本：保留单位、方向、原值与原始数据，检查是否造成误读。</p><p>这些是成熟图形语法的表达实验，不宣称发明了新的统计图型。矩阵等表达需按读者熟悉程度选择。</p></details></div>
+<footer><span>实验工作副本 / 适用规则待继续用真实需求验证</span><span>数量、变化、时间、关系 · 各场景内部共用一份源数据</span></footer>
+</main>
+<script>
+const studies=__STUDIES__;
+let current=0,view=0,compare=false;
+const topics=document.getElementById('topics');
+studies.forEach((s,i)=>{const b=document.createElement('button');b.className='topic';b.type='button';b.innerHTML=`<small>0${i+1} / ${s.label}</small><b>${s.question}</b><span>${s.views.join(' / ')}</span>`;b.addEventListener('click',()=>{current=i;render()});topics.append(b)});
+function render(){
+ const s=studies[current];
+ [...topics.children].forEach((b,i)=>b.setAttribute('aria-pressed',String(i===current)));
+ document.getElementById('study-title').textContent=s.title;
+ document.getElementById('study-lead').textContent=s.lead;
+ for(let i=0;i<2;i++){const b=document.getElementById(i?'view-b':'view-a');b.textContent=s.views[i];b.setAttribute('aria-pressed',String(!compare&&view===i))}
+ const cb=document.getElementById('compare');cb.setAttribute('aria-pressed',String(compare));cb.textContent=compare?'收起对照':'展开对照';
+ document.getElementById('figures').innerHTML=(compare?[0,1]:[view]).map(i=>`<article class="figure-wrap" data-variant="${i}"><div class="canvas-label"><b>${i?'B':'A'} / ${s.views[i]}</b><a href="${s.key}-${i?'b':'a'}.svg" download>下载 SVG</a></div><div class="figure" tabindex="0" aria-label="${s.views[i]}，可横向滚动">${s.svgs[i]}</div><div class="notes"><div><small>适合回答</small><p>${s.use[i]}</p></div><div><small>需要留意</small><p>${s.trade[i]}</p></div><div class="reading"><small>试着从图里找到答案</small><p>${s.read[i]}</p></div></div></article>`).join('');
+ document.getElementById('data-table').innerHTML=s.table;
+}
+document.getElementById('view-a').onclick=()=>{view=0;compare=false;render()};
+document.getElementById('view-b').onclick=()=>{view=1;compare=false;render()};
+document.getElementById('compare').onclick=()=>{compare=!compare;render()};
+render();
+</script></body></html>

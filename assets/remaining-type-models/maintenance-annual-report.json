@@ -1,0 +1,122 @@
+{
+  "mode": "annual-report",
+  "title": "设备可靠性年报 · 2026",
+  "subtitle": "章节、口径、数据期和展望保持一致",
+  "template": "publication",
+  "data_status": "simulated",
+  "assumptions": [
+    "数据为教学模拟，不代表真实项目现状",
+    "真实交付前须替换数值、名称、品牌规范和审批信息"
+  ],
+  "metrics": [
+    {
+      "id": "availability",
+      "label": "可用率",
+      "value": 96.2,
+      "unit": "%",
+      "evidence": "模拟年度台账"
+    },
+    {
+      "id": "training",
+      "label": "培训",
+      "value": 620,
+      "unit": "h",
+      "evidence": "模拟培训记录"
+    }
+  ],
+  "sheet": {
+    "width": 210,
+    "height": 297,
+    "unit": "mm"
+  },
+  "blocks": [
+    {
+      "id": "b1",
+      "role": "cover",
+      "label": "封面",
+      "content": "2026 设备可靠性年报",
+      "rect": [
+        0.05,
+        0.76,
+        0.9,
+        0.16
+      ],
+      "order": 1
+    },
+    {
+      "id": "b2",
+      "role": "letter",
+      "label": "负责人寄语",
+      "content": "从抢修转向计划与预防",
+      "rect": [
+        0.05,
+        0.53,
+        0.43,
+        0.18
+      ],
+      "order": 2
+    },
+    {
+      "id": "b3",
+      "role": "performance",
+      "label": "经营表现",
+      "content": "可用率 96.2%，同比 +1.4pp",
+      "rect": [
+        0.52,
+        0.53,
+        0.43,
+        0.18
+      ],
+      "order": 3
+    },
+    {
+      "id": "b4",
+      "role": "operations",
+      "label": "运营改善",
+      "content": "重复故障下降 18%",
+      "rect": [
+        0.05,
+        0.29,
+        0.43,
+        0.18
+      ],
+      "order": 4
+    },
+    {
+      "id": "b5",
+      "role": "people",
+      "label": "团队与安全",
+      "content": "培训 620 h；零损工事故",
+      "rect": [
+        0.52,
+        0.29,
+        0.43,
+        0.18
+      ],
+      "order": 5
+    },
+    {
+      "id": "b6",
+      "role": "outlook",
+      "label": "2027 展望",
+      "content": "扩大状态监测覆盖",
+      "rect": [
+        0.05,
+        0.07,
+        0.9,
+        0.15
+      ],
+      "order": 6
+    }
+  ],
+  "reading_order": [
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "b5",
+    "b6"
+  ],
+  "audience": "设备、生产与管理协同团队",
+  "primary_action": "确认责任、数据来源与下一步行动"
+}

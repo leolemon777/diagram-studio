@@ -1,0 +1,40 @@
+{
+  "title": "设备维修平台：组件接口协作",
+  "scope": "黑盒组件视图；区分提供与要求接口，以装配连接表达兼容接口的协作，并单列普通依赖",
+  "assumptions": [
+    "示例描述逻辑组件，不代表物理部署节点",
+    "每个简单端口在当前教学子集中只参与一条装配连接",
+    "接口兼容性在本例中以同一接口标识表示"
+  ],
+  "components": [
+    {"id": "mobile", "name": "移动报障端", "column": 0, "row": 0, "kind": "client component"},
+    {"id": "portal", "name": "维修业务门户", "column": 1, "row": 0, "kind": "application component"},
+    {"id": "workorders", "name": "工单服务", "column": 2, "row": 0, "kind": "domain component"},
+    {"id": "assets", "name": "设备台账服务", "column": 3, "row": 0, "kind": "domain component"},
+    {"id": "identity", "name": "统一身份服务", "column": 1, "row": 1, "kind": "platform component"},
+    {"id": "notify", "name": "通知网关", "column": 3, "row": 1, "kind": "integration component"}
+  ],
+  "interfaces": [
+    {"id": "incident", "name": "IIncidentSubmission"},
+    {"id": "orders", "name": "IWorkOrders"},
+    {"id": "assetdata", "name": "IAssetData"},
+    {"id": "auth", "name": "IAuthentication"}
+  ],
+  "ports": [
+    {"id": "mobile_incident", "name": "incidentClient", "component": "mobile", "interface": "incident", "direction": "required", "side": "right", "order": 0},
+    {"id": "portal_incident", "name": "incidentApi", "component": "portal", "interface": "incident", "direction": "provided", "side": "left", "order": 0},
+    {"id": "portal_orders", "name": "workOrderClient", "component": "portal", "interface": "orders", "direction": "required", "side": "right", "order": 0},
+    {"id": "workorders_orders", "name": "workOrderApi", "component": "workorders", "interface": "orders", "direction": "provided", "side": "left", "order": 0},
+    {"id": "workorders_assets", "name": "assetClient", "component": "workorders", "interface": "assetdata", "direction": "required", "side": "right", "order": 0},
+    {"id": "assets_assetdata", "name": "assetApi", "component": "assets", "interface": "assetdata", "direction": "provided", "side": "left", "order": 0},
+    {"id": "portal_auth", "name": "authClient", "component": "portal", "interface": "auth", "direction": "required", "side": "bottom", "order": 0},
+    {"id": "identity_auth", "name": "authApi", "component": "identity", "interface": "auth", "direction": "provided", "side": "top", "order": 0}
+  ],
+  "relations": [
+    {"id": "assembly_incident", "kind": "assembly", "source": "mobile_incident", "target": "portal_incident"},
+    {"id": "assembly_orders", "kind": "assembly", "source": "portal_orders", "target": "workorders_orders"},
+    {"id": "assembly_assets", "kind": "assembly", "source": "workorders_assets", "target": "assets_assetdata"},
+    {"id": "assembly_auth", "kind": "assembly", "source": "portal_auth", "target": "identity_auth"},
+    {"id": "dependency_notify", "kind": "dependency", "source": "workorders", "target": "notify", "label": "«use» 通知投递"}
+  ]
+}

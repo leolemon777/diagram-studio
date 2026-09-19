@@ -1,0 +1,153 @@
+{
+  "mode": "circuit-logic",
+  "title": "泵站低压补水控制 · 电路与逻辑",
+  "subtitle": "信号、逻辑、负载和真值表共同保留",
+  "template": "graph",
+  "data_status": "simulated",
+  "assumptions": [
+    "数据为教学模拟，不代表真实项目现状",
+    "真实交付前须替换数值、名称、品牌规范和审批信息"
+  ],
+  "metrics": [
+    {
+      "id": "inputs",
+      "label": "离散输入",
+      "value": 2,
+      "unit": "点",
+      "evidence": "示例输入"
+    },
+    {
+      "id": "true",
+      "label": "有效组合",
+      "value": 1,
+      "unit": "/4",
+      "evidence": "示例输入"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "ps",
+      "label": "压力低 PS-01",
+      "kind": "sensor",
+      "position": [
+        0.14,
+        0.68
+      ],
+      "detail": "1=低压"
+    },
+    {
+      "id": "ls",
+      "label": "液位允许 LS-02",
+      "kind": "sensor",
+      "position": [
+        0.14,
+        0.36
+      ],
+      "detail": "1=允许"
+    },
+    {
+      "id": "p24",
+      "label": "24 VDC",
+      "kind": "source",
+      "position": [
+        0.14,
+        0.88
+      ],
+      "detail": "控制电源"
+    },
+    {
+      "id": "and",
+      "label": "AND",
+      "kind": "gate",
+      "position": [
+        0.48,
+        0.55
+      ],
+      "detail": "PS ∧ LS"
+    },
+    {
+      "id": "relay",
+      "label": "继电器 K1",
+      "kind": "gate",
+      "position": [
+        0.7,
+        0.55
+      ],
+      "detail": "隔离输出"
+    },
+    {
+      "id": "pump",
+      "label": "补水泵 M-01",
+      "kind": "load",
+      "position": [
+        0.88,
+        0.55
+      ],
+      "detail": "运行命令"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "p24",
+      "target": "ps",
+      "relation": "supply",
+      "label": "24 VDC"
+    },
+    {
+      "id": "e2",
+      "source": "ps",
+      "target": "and",
+      "relation": "signal",
+      "label": "压力低"
+    },
+    {
+      "id": "e3",
+      "source": "ls",
+      "target": "and",
+      "relation": "signal",
+      "label": "液位允许"
+    },
+    {
+      "id": "e4",
+      "source": "and",
+      "target": "relay",
+      "relation": "logic",
+      "label": "双条件成立"
+    },
+    {
+      "id": "e5",
+      "source": "relay",
+      "target": "pump",
+      "relation": "command",
+      "label": "启动"
+    }
+  ],
+  "groups": [],
+  "root": "p24",
+  "must_reach": [
+    "pump"
+  ],
+  "truth_table": [
+    {
+      "pressure_low": false,
+      "level_ok": false,
+      "pump_run": false
+    },
+    {
+      "pressure_low": false,
+      "level_ok": true,
+      "pump_run": false
+    },
+    {
+      "pressure_low": true,
+      "level_ok": false,
+      "pump_run": false
+    },
+    {
+      "pressure_low": true,
+      "level_ok": true,
+      "pump_run": true
+    }
+  ]
+}

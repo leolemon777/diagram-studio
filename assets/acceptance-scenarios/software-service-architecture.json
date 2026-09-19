@@ -1,0 +1,33 @@
+{
+  "type": "architecture",
+  "title": "预约服务系统架构总览",
+  "subtitle": "模拟场景 · 将入口、业务服务、数据服务和治理能力分层展示",
+  "eyebrow": "ACCEPTANCE / 软件产品",
+  "footer": "模拟架构 · 部署规格、安全控制和接口契约需在实施设计中确认",
+  "assumptions": ["组件与关系为验收用模拟数据"],
+  "layers": [
+    {"label":"访问入口","description":"用户与员工入口","tone":"accent","items":[
+      {"id":"web","label":"预约门户","detail":"客户自助"},
+      {"id":"staff","label":"员工工作台","detail":"排班与服务"}
+    ],"flow":"请求进入"},
+    {"label":"业务服务","description":"核心业务编排","tone":"teal","items":[
+      {"id":"booking","label":"预约服务","detail":"时段与状态"},
+      {"id":"notice","label":"通知服务","detail":"短信与提醒"},
+      {"id":"identity","label":"身份服务","detail":"账户与权限"}
+    ],"flow":"读写业务数据"},
+    {"label":"数据与治理","description":"数据、审计与运营支撑","tone":"amber","items":[
+      {"id":"db","label":"事务数据库","detail":"预约与排班"},
+      {"id":"audit","label":"审计日志","detail":"操作追踪"},
+      {"id":"metrics","label":"运行指标","detail":"服务质量"}
+    ]}
+  ],
+  "crosscut_title":"横向控制",
+  "crosscut":[
+    {"label":"权限控制","detail":"最小授权"},
+    {"label":"备份恢复","detail":"数据连续性"}
+  ],
+  "edges":[
+    {"from":"booking","to":"db","label":"预约记录","tone":"teal"},
+    {"from":"booking","to":"notice","label":"提醒事件","tone":"accent"}
+  ]
+}

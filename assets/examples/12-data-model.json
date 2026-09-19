@@ -1,0 +1,57 @@
+{
+  "type": "graph",
+  "title": "设备与工单 · 逻辑数据关系",
+  "subtitle": "三个实体与两条关系；基数直接标注，字段仅展示关键标识",
+  "eyebrow": "12 / DATA MODEL",
+  "nodes": [
+    {
+      "id": "device",
+      "x": 100,
+      "y": 340,
+      "w": 350,
+      "h": 210,
+      "label": "设备 Device",
+      "detail": "PK  device_id\n设备名称\n所属位置",
+      "kind": "rect"
+    },
+    {
+      "id": "ticket",
+      "x": 625,
+      "y": 340,
+      "w": 350,
+      "h": 210,
+      "label": "工单 WorkOrder",
+      "detail": "PK  work_order_id\nFK  device_id\nFK  assigned_team_id",
+      "kind": "rect",
+      "tone": "teal"
+    },
+    {
+      "id": "team",
+      "x": 1150,
+      "y": 340,
+      "w": 350,
+      "h": 210,
+      "label": "作业团队 Team",
+      "detail": "PK  team_id\n团队名称\n责任范围",
+      "kind": "rect"
+    }
+  ],
+  "edges": [
+    {
+      "from": "device",
+      "to": "ticket",
+      "label": "1 : 0..N",
+      "arrow": false
+    },
+    {
+      "from": "team",
+      "to": "ticket",
+      "label": "0..N : 1",
+      "arrow": false,
+      "tone": "teal"
+    }
+  ],
+  "footer": "逻辑数据模型示例 · 每张工单属于一台设备、一个作业团队；不代表既有数据库结构",
+  "family": "系统与软件",
+  "diagram_name": "逻辑数据模型"
+}

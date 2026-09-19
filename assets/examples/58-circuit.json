@@ -1,0 +1,15 @@
+{
+  "type": "circuit",
+  "title": "基本电路 · 断开回路示意",
+  "diagram_name": "基本电路",
+  "family": "工程与空间",
+  "subtitle": "电源、开关与负载以导线连接；仅作拓扑教学，不给出额定参数",
+  "eyebrow": "58 / DIAGRAM LIBRARY",
+  "footer": "原创结构范例 · 数据、实体、尺寸与假说均为演示输入；实际任务按用户资料替换",
+  "assumptions": [
+    "原创演示内容，不代表实际业务、研究结论或工程设计"
+  ],
+  "source": "直流电源",
+  "load": "电阻 R",
+  "switch": "开关 S（断开）"
+}

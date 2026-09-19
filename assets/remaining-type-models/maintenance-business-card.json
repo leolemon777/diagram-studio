@@ -1,0 +1,94 @@
+{
+  "mode": "business-card",
+  "title": "可靠性工程师名片",
+  "subtitle": "身份、角色、组织和联系方式保持最小充分集",
+  "template": "publication",
+  "data_status": "simulated",
+  "assumptions": [
+    "数据为教学模拟，不代表真实项目现状",
+    "真实交付前须替换数值、名称、品牌规范和审批信息"
+  ],
+  "metrics": [
+    {
+      "id": "sides",
+      "label": "版面",
+      "value": 1,
+      "unit": "面",
+      "evidence": "示例输入"
+    },
+    {
+      "id": "contacts",
+      "label": "联系方式",
+      "value": 2,
+      "unit": "项",
+      "evidence": "示例输入"
+    }
+  ],
+  "sheet": {
+    "width": 90,
+    "height": 54,
+    "unit": "mm"
+  },
+  "blocks": [
+    {
+      "id": "b1",
+      "role": "identity",
+      "label": "姓名",
+      "content": "林工 / LIN WEI",
+      "rect": [
+        0.05,
+        0.64,
+        0.9,
+        0.28
+      ],
+      "order": 1
+    },
+    {
+      "id": "b2",
+      "role": "role",
+      "label": "角色",
+      "content": "可靠性工程师",
+      "rect": [
+        0.05,
+        0.36,
+        0.43,
+        0.22
+      ],
+      "order": 2
+    },
+    {
+      "id": "b3",
+      "role": "contact",
+      "label": "联系",
+      "content": "lin.wei@example.com｜6208",
+      "rect": [
+        0.52,
+        0.36,
+        0.43,
+        0.22
+      ],
+      "order": 3
+    },
+    {
+      "id": "b4",
+      "role": "organization",
+      "label": "组织",
+      "content": "设备与数字化改善中心",
+      "rect": [
+        0.05,
+        0.07,
+        0.9,
+        0.22
+      ],
+      "order": 4
+    }
+  ],
+  "reading_order": [
+    "b1",
+    "b2",
+    "b3",
+    "b4"
+  ],
+  "audience": "设备、生产与管理协同团队",
+  "primary_action": "确认责任、数据来源与下一步行动"
+}

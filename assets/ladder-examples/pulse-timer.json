@@ -1,0 +1,152 @@
+{
+  "title": "脉冲 TP · 不重触发与重新准备",
+  "scope": "按明确毫秒时刻调用 · 功能块状态独立保存",
+  "data_status": "假设教学扫描；不代表实际设备",
+  "semantics": "sequential_timed_scan",
+  "write_policy": "single_writer",
+  "variables": [
+    {
+      "id": "Request",
+      "label": "持续请求",
+      "role": "input",
+      "source": "假设扫描记录；不是现场I/O地址"
+    },
+    {
+      "id": "Done",
+      "label": "定宽脉冲输出",
+      "role": "output",
+      "source": "假设扫描记录；不是现场I/O地址",
+      "initial": false
+    }
+  ],
+  "rungs": [
+    {
+      "id": "R1",
+      "label": "脉冲期间输入变化不缩短或重启；本模型完成后低扫描才重新准备",
+      "logic": {
+        "id": "R1_contact",
+        "kind": "contact",
+        "var": "Request",
+        "sense": "true"
+      },
+      "block": {
+        "id": "T1",
+        "type": "TP",
+        "pt_ms": 300,
+        "initial": "reset",
+        "rearm_policy": "low_scan_after_completion"
+      },
+      "coil": {
+        "id": "R1_coil",
+        "kind": "assign",
+        "var": "Done"
+      }
+    }
+  ],
+  "scans": [
+    {
+      "id": "S1",
+      "label": "待机",
+      "time_ms": 0,
+      "inputs": {
+        "Request": false
+      }
+    },
+    {
+      "id": "S2",
+      "label": "上升沿启动300ms脉冲",
+      "time_ms": 10,
+      "inputs": {
+        "Request": true
+      }
+    },
+    {
+      "id": "S3",
+      "label": "输入提前低，脉冲继续",
+      "time_ms": 60,
+      "inputs": {
+        "Request": false
+      }
+    },
+    {
+      "id": "S4",
+      "label": "忙时再上升，不重触发",
+      "time_ms": 100,
+      "inputs": {
+        "Request": true
+      }
+    },
+    {
+      "id": "S5",
+      "label": "再次回低，仍继续",
+      "time_ms": 200,
+      "inputs": {
+        "Request": false
+      }
+    },
+    {
+      "id": "S6",
+      "label": "299ms仍为高",
+      "time_ms": 309,
+      "inputs": {
+        "Request": false
+      }
+    },
+    {
+      "id": "S7",
+      "label": "完成调用同现上升沿，不接受重触发",
+      "time_ms": 310,
+      "inputs": {
+        "Request": true
+      }
+    },
+    {
+      "id": "S8",
+      "label": "完成后仍高，等待低扫描",
+      "time_ms": 320,
+      "inputs": {
+        "Request": true
+      }
+    },
+    {
+      "id": "S9",
+      "label": "观测低，重新准备并清ET",
+      "time_ms": 330,
+      "inputs": {
+        "Request": false
+      }
+    },
+    {
+      "id": "S10",
+      "label": "新上升沿启动下一脉冲",
+      "time_ms": 340,
+      "inputs": {
+        "Request": true
+      }
+    },
+    {
+      "id": "S11",
+      "label": "恰好到时，Q低ET封顶",
+      "time_ms": 640,
+      "inputs": {
+        "Request": true
+      }
+    },
+    {
+      "id": "S12",
+      "label": "低扫描重新准备",
+      "time_ms": 650,
+      "inputs": {
+        "Request": false
+      }
+    },
+    {
+      "id": "S13",
+      "label": "第三次启动",
+      "time_ms": 660,
+      "inputs": {
+        "Request": true
+      }
+    }
+  ]
+}

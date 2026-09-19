@@ -1,0 +1,40 @@
+{
+  "mode": "vsm",
+  "data_status": "模拟数据 · 方法与版式演示",
+  "title": "从来料到交付，看见等待",
+  "subtitle": "价值流当前态 / 实线表示物料，虚线表示信息；时间线长度为示意",
+  "supplier": "零件供应商",
+  "customer": "成品客户",
+  "state": "当前态",
+  "information_flow": "客户周需求 → 计划排程 → 各工序日任务",
+  "finished_wait_minutes": 30,
+  "processes": [
+    {
+      "name": "来料检验",
+      "cycle_seconds": 35,
+      "wait_before_minutes": 90,
+      "inventory_before": 200
+    },
+    {
+      "name": "装配",
+      "cycle_seconds": 65,
+      "wait_before_minutes": 120,
+      "inventory_before": 300
+    },
+    {
+      "name": "功能检测",
+      "cycle_seconds": 42,
+      "wait_before_minutes": 45,
+      "inventory_before": 100
+    },
+    {
+      "name": "包装出货",
+      "cycle_seconds": 28,
+      "wait_before_minutes": 60,
+      "inventory_before": 160
+    }
+  ],
+  "assumptions": [
+    "等待时间为演示观测值，并非由库存与需求反推。加工时间不直接等同增值时间。"
+  ]
+}

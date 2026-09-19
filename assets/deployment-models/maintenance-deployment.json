@@ -1,0 +1,47 @@
+{
+  "title": "设备维修平台：现场—边缘—中心部署",
+  "scope": "运行实例、执行环境、制品和逻辑组件分层表达；通信路径仅表示当前教学拓扑",
+  "assumptions": [
+    "这是模拟教学拓扑，不代表任何实际工厂网络或安全配置。",
+    "协议标签仅用于展示通信路径，未完成带宽、冗余、故障域或网络安全工程校核。",
+    "每个制品在当前子集中只显化一个逻辑组件，真实系统可存在多重显化与多实例部署。"
+  ],
+  "devices": [
+    {"id": "tablet", "name": "维修平板", "instance": "tablet-01", "type": "MaintenanceTablet", "column": 0, "row": 0},
+    {"id": "edge", "name": "产线边缘网关", "instance": "edge-01", "type": "EdgeGateway", "column": 1, "row": 0},
+    {"id": "app", "name": "应用主机", "instance": "app-01", "type": "LinuxHost", "column": 2, "row": 0},
+    {"id": "db", "name": "数据库主机", "instance": "db-01", "type": "LinuxHost", "column": 3, "row": 0}
+  ],
+  "environments": [
+    {"id": "android", "name": "移动运行环境", "instance": "android-runtime", "type": "AndroidRuntime", "device": "tablet", "order": 0},
+    {"id": "edge_runtime", "name": "边缘执行环境", "instance": "edge-runtime", "type": "ContainerRuntime", "device": "edge", "order": 0},
+    {"id": "jvm", "name": "应用执行环境", "instance": "jvm-runtime", "type": "JVM", "device": "app", "order": 0},
+    {"id": "postgres", "name": "数据执行环境", "instance": "postgres-runtime", "type": "PostgreSQL", "device": "db", "order": 0}
+  ],
+  "artifacts": [
+    {"id": "field_client", "name": "field-client.apk", "target": "android", "order": 0, "kind": "executable"},
+    {"id": "edge_agent", "name": "edge-agent.jar", "target": "edge_runtime", "order": 0, "kind": "executable"},
+    {"id": "maintenance_api", "name": "maintenance-api.jar", "target": "jvm", "order": 0, "kind": "executable"},
+    {"id": "report_worker", "name": "report-worker.jar", "target": "jvm", "order": 1, "kind": "executable"},
+    {"id": "maintenance_schema", "name": "maintenance-schema.sql", "target": "postgres", "order": 0, "kind": "source"}
+  ],
+  "components": [
+    {"id": "mobile_component", "name": "移动报障组件", "column": 0},
+    {"id": "edge_component", "name": "边缘采集组件", "column": 1},
+    {"id": "api_component", "name": "维修 API 组件", "column": 2},
+    {"id": "worker_component", "name": "报表任务组件", "column": 3},
+    {"id": "data_component", "name": "数据存储组件", "column": 4}
+  ],
+  "manifestations": [
+    {"id": "m01", "artifact": "field_client", "component": "mobile_component"},
+    {"id": "m02", "artifact": "edge_agent", "component": "edge_component"},
+    {"id": "m03", "artifact": "maintenance_api", "component": "api_component"},
+    {"id": "m04", "artifact": "report_worker", "component": "worker_component"},
+    {"id": "m05", "artifact": "maintenance_schema", "component": "data_component"}
+  ],
+  "communication_paths": [
+    {"id": "c01", "source": "tablet", "target": "edge", "label": "HTTPS"},
+    {"id": "c02", "source": "edge", "target": "app", "label": "MQTT/TLS"},
+    {"id": "c03", "source": "app", "target": "db", "label": "JDBC/TLS"}
+  ]
+}

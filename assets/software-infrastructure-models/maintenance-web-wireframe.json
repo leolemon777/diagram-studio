@@ -1,0 +1,225 @@
+{
+  "mode": "ui-wireframe",
+  "platform": "web",
+  "title": "设备维护门户响应式网站线框",
+  "subtitle": "桌面与 320 CSS px 视图保留相同地标、任务和状态",
+  "data_status": "simulated",
+  "reflow_policy": "single-axis-at-320",
+  "assumptions": [
+    "低保真结构验证；视觉品牌、真实交互和前端代码另行实现"
+  ],
+  "screens": [
+    {
+      "id": "desktop",
+      "label": "工单总览 · 桌面",
+      "state": "default",
+      "viewport_width": 1440,
+      "safe_areas": [],
+      "rect": [
+        0.04,
+        0.15,
+        0.55,
+        0.7
+      ]
+    },
+    {
+      "id": "mobile",
+      "label": "工单总览 · 窄屏",
+      "state": "reflow",
+      "viewport_width": 320,
+      "safe_areas": [],
+      "rect": [
+        0.69,
+        0.15,
+        0.22,
+        0.7
+      ]
+    }
+  ],
+  "components": [
+    {
+      "id": "d-header",
+      "screen_id": "desktop",
+      "label": "设备维护门户",
+      "type": "header",
+      "rect": [
+        0.03,
+        0.89,
+        0.94,
+        0.08
+      ],
+      "interactive": false
+    },
+    {
+      "id": "d-nav",
+      "screen_id": "desktop",
+      "label": "总览 / 工单 / 设备",
+      "type": "nav",
+      "rect": [
+        0.03,
+        0.8,
+        0.94,
+        0.07
+      ],
+      "interactive": true,
+      "action": "切换一级页面",
+      "accessible_name": "主导航"
+    },
+    {
+      "id": "d-filter",
+      "screen_id": "desktop",
+      "label": "状态 / 区域 / 负责人",
+      "type": "filter",
+      "rect": [
+        0.03,
+        0.69,
+        0.24,
+        0.07
+      ],
+      "interactive": true,
+      "action": "筛选工单",
+      "accessible_name": "工单筛选"
+    },
+    {
+      "id": "d-main",
+      "screen_id": "desktop",
+      "label": "工单列表与优先级",
+      "type": "main",
+      "rect": [
+        0.3,
+        0.3,
+        0.67,
+        0.46
+      ],
+      "interactive": false
+    },
+    {
+      "id": "d-card",
+      "screen_id": "desktop",
+      "label": "逾期 12 · 今日 36",
+      "type": "card",
+      "rect": [
+        0.03,
+        0.48,
+        0.24,
+        0.17
+      ],
+      "interactive": true,
+      "action": "查看逾期工单",
+      "accessible_name": "逾期工单摘要"
+    },
+    {
+      "id": "d-button",
+      "screen_id": "desktop",
+      "label": "新建工单",
+      "type": "button",
+      "rect": [
+        0.03,
+        0.35,
+        0.24,
+        0.08
+      ],
+      "interactive": true,
+      "action": "打开新建表单",
+      "accessible_name": "新建工单"
+    },
+    {
+      "id": "d-footer",
+      "screen_id": "desktop",
+      "label": "帮助 / 版本 / 数据时间",
+      "type": "footer",
+      "rect": [
+        0.03,
+        0.04,
+        0.94,
+        0.08
+      ],
+      "interactive": false
+    },
+    {
+      "id": "m-header",
+      "screen_id": "mobile",
+      "label": "设备维护",
+      "type": "header",
+      "rect": [
+        0.05,
+        0.9,
+        0.9,
+        0.07
+      ],
+      "interactive": false
+    },
+    {
+      "id": "m-nav",
+      "screen_id": "mobile",
+      "label": "菜单",
+      "type": "nav",
+      "rect": [
+        0.05,
+        0.81,
+        0.9,
+        0.07
+      ],
+      "interactive": true,
+      "action": "展开一级导航",
+      "accessible_name": "打开主导航"
+    },
+    {
+      "id": "m-filter",
+      "screen_id": "mobile",
+      "label": "筛选",
+      "type": "filter",
+      "rect": [
+        0.05,
+        0.71,
+        0.9,
+        0.07
+      ],
+      "interactive": true,
+      "action": "打开筛选面板",
+      "accessible_name": "筛选工单"
+    },
+    {
+      "id": "m-main",
+      "screen_id": "mobile",
+      "label": "工单卡片纵向重排",
+      "type": "main",
+      "rect": [
+        0.05,
+        0.29,
+        0.9,
+        0.39
+      ],
+      "interactive": false
+    },
+    {
+      "id": "m-button",
+      "screen_id": "mobile",
+      "label": "新建工单",
+      "type": "button",
+      "rect": [
+        0.05,
+        0.18,
+        0.9,
+        0.07
+      ],
+      "interactive": true,
+      "action": "打开新建表单",
+      "accessible_name": "新建工单"
+    },
+    {
+      "id": "m-footer",
+      "screen_id": "mobile",
+      "label": "帮助 / 数据时间",
+      "type": "footer",
+      "rect": [
+        0.05,
+        0.05,
+        0.9,
+        0.08
+      ],
+      "interactive": false
+    }
+  ],
+  "transitions": []
+}

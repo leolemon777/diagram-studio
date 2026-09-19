@@ -1,0 +1,61 @@
+{
+  "title": "运行模式选择：多分支教学示例",
+  "assumptions": [
+    "假设程序，标签仅作离散选择说明；未执行。"
+  ],
+  "body": [
+    {
+      "id": "read",
+      "kind": "action",
+      "text": "读取模式选择值"
+    },
+    {
+      "id": "select",
+      "kind": "case",
+      "expression": "运行模式 mode",
+      "branches": [
+        {
+          "label": "自动 AUTO",
+          "body": [
+            {
+              "id": "auto",
+              "kind": "action",
+              "text": "执行自动任务"
+            },
+            {
+              "id": "record",
+              "kind": "action",
+              "text": "记录完成状态"
+            }
+          ]
+        },
+        {
+          "label": "手动 MANUAL",
+          "body": [
+            {
+              "id": "manual",
+              "kind": "action",
+              "text": "等待手动指令"
+            }
+          ]
+        },
+        {
+          "label": "待机 IDLE",
+          "body": []
+        }
+      ],
+      "default": [
+        {
+          "id": "error",
+          "kind": "action",
+          "text": "记录未知模式"
+        }
+      ]
+    },
+    {
+      "id": "end",
+      "kind": "action",
+      "text": "输出本次处理结果"
+    }
+  ]
+}

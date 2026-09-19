@@ -1,0 +1,136 @@
+{
+  "mode": "c",
+  "title": "相同检验范围，监测缺陷总数",
+  "sampling_plan": "每次检查1 m²表面；同一区域可以出现多个缺陷",
+  "baseline_count": 20,
+  "data_status": "模拟数据 · 图型与方法演示",
+  "unit": "mm",
+  "exposure_unit": "m²",
+  "samples": [
+    {
+      "id": "S01",
+      "exposure": 1,
+      "defects": 16
+    },
+    {
+      "id": "S02",
+      "exposure": 1,
+      "defects": 14
+    },
+    {
+      "id": "S03",
+      "exposure": 1,
+      "defects": 18
+    },
+    {
+      "id": "S04",
+      "exposure": 1,
+      "defects": 16
+    },
+    {
+      "id": "S05",
+      "exposure": 1,
+      "defects": 12
+    },
+    {
+      "id": "S06",
+      "exposure": 1,
+      "defects": 20
+    },
+    {
+      "id": "S07",
+      "exposure": 1,
+      "defects": 10
+    },
+    {
+      "id": "S08",
+      "exposure": 1,
+      "defects": 12
+    },
+    {
+      "id": "S09",
+      "exposure": 1,
+      "defects": 10
+    },
+    {
+      "id": "S10",
+      "exposure": 1,
+      "defects": 17
+    },
+    {
+      "id": "S11",
+      "exposure": 1,
+      "defects": 19
+    },
+    {
+      "id": "S12",
+      "exposure": 1,
+      "defects": 17
+    },
+    {
+      "id": "S13",
+      "exposure": 1,
+      "defects": 14
+    },
+    {
+      "id": "S14",
+      "exposure": 1,
+      "defects": 16
+    },
+    {
+      "id": "S15",
+      "exposure": 1,
+      "defects": 15
+    },
+    {
+      "id": "S16",
+      "exposure": 1,
+      "defects": 13
+    },
+    {
+      "id": "S17",
+      "exposure": 1,
+      "defects": 14
+    },
+    {
+      "id": "S18",
+      "exposure": 1,
+      "defects": 16
+    },
+    {
+      "id": "S19",
+      "exposure": 1,
+      "defects": 11
+    },
+    {
+      "id": "S20",
+      "exposure": 1,
+      "defects": 20
+    },
+    {
+      "id": "S21",
+      "exposure": 1,
+      "defects": 11
+    },
+    {
+      "id": "S22",
+      "exposure": 1,
+      "defects": 19
+    },
+    {
+      "id": "S23",
+      "exposure": 1,
+      "defects": 16
+    },
+    {
+      "id": "S24",
+      "exposure": 1,
+      "defects": 31
+    },
+    {
+      "id": "S25",
+      "exposure": 1,
+      "defects": 13
+    }
+  ]
+}

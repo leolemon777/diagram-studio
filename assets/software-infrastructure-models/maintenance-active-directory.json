@@ -1,0 +1,208 @@
+{
+  "mode": "active-directory",
+  "view": "logical",
+  "title": "设备维护 Active Directory 逻辑结构",
+  "subtitle": "林、域、OU、对象、委派与信任；站点复制另图",
+  "data_status": "simulated",
+  "assumptions": [
+    "示例不包含真实账号、SID、密码或现场 GPO"
+  ],
+  "forests": [
+    {
+      "id": "corp-forest",
+      "label": "example.internal",
+      "schema_version": "Windows Server 2025",
+      "rect": [
+        0.04,
+        0.08,
+        0.62,
+        0.79
+      ]
+    },
+    {
+      "id": "partner-forest",
+      "label": "partner.example",
+      "schema_version": "Windows Server 2022",
+      "rect": [
+        0.71,
+        0.18,
+        0.25,
+        0.64
+      ]
+    }
+  ],
+  "domains": [
+    {
+      "id": "corp-domain",
+      "label": "公司域",
+      "dns_name": "corp.example.internal",
+      "forest_id": "corp-forest",
+      "rect": [
+        0.07,
+        0.12,
+        0.56,
+        0.68
+      ]
+    },
+    {
+      "id": "partner-domain",
+      "label": "外协域",
+      "dns_name": "service.partner.example",
+      "forest_id": "partner-forest",
+      "rect": [
+        0.74,
+        0.23,
+        0.19,
+        0.5
+      ]
+    }
+  ],
+  "organizational_units": [
+    {
+      "id": "ops-ou",
+      "label": "生产运营",
+      "domain_id": "corp-domain",
+      "parent_ou_id": null,
+      "delegated_to": "OPS-Admins",
+      "gpo_links": [
+        "OPS-Baseline"
+      ],
+      "rect": [
+        0.1,
+        0.48,
+        0.22,
+        0.23
+      ]
+    },
+    {
+      "id": "maint-ou",
+      "label": "设备维护",
+      "domain_id": "corp-domain",
+      "parent_ou_id": null,
+      "delegated_to": "MAINT-Admins",
+      "gpo_links": [
+        "Maintenance-Workstations"
+      ],
+      "rect": [
+        0.36,
+        0.48,
+        0.23,
+        0.23
+      ]
+    },
+    {
+      "id": "server-ou",
+      "label": "维护服务器",
+      "domain_id": "corp-domain",
+      "parent_ou_id": "maint-ou",
+      "delegated_to": "Server-Admins",
+      "gpo_links": [
+        "Server-Hardening"
+      ],
+      "rect": [
+        0.18,
+        0.2,
+        0.34,
+        0.18
+      ]
+    },
+    {
+      "id": "partner-ou",
+      "label": "服务工程师",
+      "domain_id": "partner-domain",
+      "parent_ou_id": null,
+      "delegated_to": "Partner-Admins",
+      "gpo_links": [
+        "Partner-MFA"
+      ],
+      "rect": [
+        0.77,
+        0.35,
+        0.13,
+        0.23
+      ]
+    }
+  ],
+  "objects": [
+    {
+      "id": "planner",
+      "label": "计划员",
+      "ou_id": "ops-ou",
+      "object_type": "user",
+      "position": [
+        0.16,
+        0.58
+      ]
+    },
+    {
+      "id": "ops-group",
+      "label": "OPS-Users",
+      "ou_id": "ops-ou",
+      "object_type": "group",
+      "position": [
+        0.26,
+        0.58
+      ]
+    },
+    {
+      "id": "maint-user",
+      "label": "维修主管",
+      "ou_id": "maint-ou",
+      "object_type": "user",
+      "position": [
+        0.42,
+        0.58
+      ]
+    },
+    {
+      "id": "maint-group",
+      "label": "MAINT-Users",
+      "ou_id": "maint-ou",
+      "object_type": "group",
+      "position": [
+        0.53,
+        0.58
+      ]
+    },
+    {
+      "id": "cmms-server",
+      "label": "CMMS-SRV01",
+      "ou_id": "server-ou",
+      "object_type": "computer",
+      "position": [
+        0.29,
+        0.29
+      ]
+    },
+    {
+      "id": "cmms-service",
+      "label": "svc-cmms",
+      "ou_id": "server-ou",
+      "object_type": "service-account",
+      "position": [
+        0.43,
+        0.29
+      ]
+    },
+    {
+      "id": "partner-user",
+      "label": "外协工程师",
+      "ou_id": "partner-ou",
+      "object_type": "user",
+      "position": [
+        0.835,
+        0.46
+      ]
+    }
+  ],
+  "trusts": [
+    {
+      "id": "partner-trust",
+      "source_domain": "corp-domain",
+      "target_domain": "partner-domain",
+      "direction": "one-way",
+      "transitivity": "non-transitive",
+      "evidence": "模拟身份边界决策"
+    }
+  ]
+}

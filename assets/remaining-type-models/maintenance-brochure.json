@@ -1,0 +1,122 @@
+{
+  "mode": "brochure",
+  "title": "预测性维护三折页",
+  "subtitle": "六面内容按折叠顺序组织，避免跨面依赖",
+  "template": "publication",
+  "data_status": "simulated",
+  "assumptions": [
+    "数据为教学模拟，不代表真实项目现状",
+    "真实交付前须替换数值、名称、品牌规范和审批信息"
+  ],
+  "metrics": [
+    {
+      "id": "panels",
+      "label": "折页面板",
+      "value": 6,
+      "unit": "面",
+      "evidence": "示例输入"
+    },
+    {
+      "id": "proof",
+      "label": "量化证据",
+      "value": 1,
+      "unit": "项",
+      "evidence": "示例输入"
+    }
+  ],
+  "sheet": {
+    "width": 297,
+    "height": 210,
+    "unit": "mm"
+  },
+  "blocks": [
+    {
+      "id": "b1",
+      "role": "cover",
+      "label": "封面",
+      "content": "从异常信号到计划维修",
+      "rect": [
+        0.05,
+        0.76,
+        0.9,
+        0.16
+      ],
+      "order": 1
+    },
+    {
+      "id": "b2",
+      "role": "problem",
+      "label": "问题",
+      "content": "停机、误报与信息断点",
+      "rect": [
+        0.05,
+        0.53,
+        0.43,
+        0.18
+      ],
+      "order": 2
+    },
+    {
+      "id": "b3",
+      "role": "solution",
+      "label": "方案",
+      "content": "采集—诊断—工单—复盘",
+      "rect": [
+        0.52,
+        0.53,
+        0.43,
+        0.18
+      ],
+      "order": 3
+    },
+    {
+      "id": "b4",
+      "role": "proof",
+      "label": "证据",
+      "content": "三个月试点：响应时间 −32%",
+      "rect": [
+        0.05,
+        0.29,
+        0.43,
+        0.18
+      ],
+      "order": 4
+    },
+    {
+      "id": "b5",
+      "role": "action",
+      "label": "下一步",
+      "content": "预约 30 分钟现场评估",
+      "rect": [
+        0.52,
+        0.29,
+        0.43,
+        0.18
+      ],
+      "order": 5
+    },
+    {
+      "id": "b6",
+      "role": "contact",
+      "label": "联系",
+      "content": "可靠性改善组 / 分机 6208",
+      "rect": [
+        0.05,
+        0.07,
+        0.9,
+        0.15
+      ],
+      "order": 6
+    }
+  ],
+  "reading_order": [
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "b5",
+    "b6"
+  ],
+  "audience": "设备、生产与管理协同团队",
+  "primary_action": "确认责任、数据来源与下一步行动"
+}

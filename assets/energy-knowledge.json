@@ -1,0 +1,228 @@
+[
+  {
+    "mode": "indexed",
+    "canonical_id": "ext-energy-indexed",
+    "name": "基准指数趋势",
+    "category": "趋势比较",
+    "inputs": "连续月份、正数基准、各系列用量及单位",
+    "rule": "各系列首月设为100；展示相对变化，不表示水电绝对量可比较；缺失保留断点",
+    "choice": "适合单位不同但要比较涨跌幅；基准为零时换用绝对差值",
+    "variants": [
+      "基期变更",
+      "多指标"
+    ],
+    "sources": [
+      "matplotlib",
+      "eia-units"
+    ],
+    "example": "assets/energy-examples/indexed.json",
+    "validated": "本轮合成示例已计算和导出；视觉与数值检查记录随交付保存，其他变体需另验"
+  },
+  {
+    "mode": "month_change",
+    "canonical_id": "ext-energy-month-change",
+    "name": "环比增减柱图",
+    "category": "趋势比较",
+    "inputs": "连续月份与上月可比用量",
+    "rule": "当前月/上月减1；上月为零或缺失时无定义，不写0%；增减保留正负",
+    "choice": "突出逐月变化；首月无前期比较，保留空值",
+    "variants": [
+      "单项",
+      "分面"
+    ],
+    "sources": [
+      "matplotlib",
+      "eia-units"
+    ],
+    "example": "assets/energy-examples/month_change.json",
+    "validated": "本轮合成示例已计算和导出；视觉与数值检查记录随交付保存，其他变体需另验"
+  },
+  {
+    "mode": "year_change",
+    "canonical_id": "ext-energy-year-change",
+    "name": "同比变化图",
+    "category": "趋势比较",
+    "inputs": "至少13个月且年月完整的可比用量",
+    "rule": "对齐上年同月，不能把前12条有效记录当作上年；基期零值无定义",
+    "choice": "有季节性时补充环比；总量未按天数、产量或天气校正",
+    "variants": [
+      "百分比",
+      "同月绝对差"
+    ],
+    "sources": [
+      "fpp-seasonal",
+      "eia-units"
+    ],
+    "example": "assets/energy-examples/year_change.json",
+    "validated": "本轮合成示例已计算和导出；视觉与数值检查记录随交付保存，其他变体需另验"
+  },
+  {
+    "mode": "seasonal",
+    "canonical_id": "ext-energy-seasonal",
+    "name": "跨年季节叠线",
+    "category": "趋势比较",
+    "inputs": "至少两个日历年、月份、同单位用量",
+    "rule": "每年映射到1至12月；缺失留空；曲线差异本身不证明节能",
+    "choice": "比连续长折线更便于比较同月份；不做季节调整",
+    "variants": [
+      "完整年度",
+      "部分年度"
+    ],
+    "sources": [
+      "fpp-seasonal"
+    ],
+    "example": "assets/energy-examples/seasonal.json",
+    "validated": "本轮合成示例已计算和导出；视觉与数值检查记录随交付保存，其他变体需另验"
+  },
+  {
+    "mode": "cumulative",
+    "canonical_id": "ext-energy-cumulative",
+    "name": "年内累计用量",
+    "category": "运行分析",
+    "inputs": "从1月开始的连续月度增量",
+    "rule": "先核对增量与表读数；每年1月重置；缺失后本年累计未知，下一年重新起算",
+    "choice": "看年度用量进度；不使用累计曲线判断月度波动",
+    "variants": [
+      "单年",
+      "跨年进度"
+    ],
+    "sources": [
+      "matplotlib",
+      "eia-units"
+    ],
+    "example": "assets/energy-examples/cumulative.json",
+    "validated": "本轮合成示例已计算和导出；视觉与数值检查记录随交付保存，其他变体需另验"
+  },
+  {
+    "mode": "intensity",
+    "canonical_id": "ext-energy-intensity",
+    "name": "单位产量能耗",
+    "category": "运行分析",
+    "inputs": "同期间耗量、产量、各自单位",
+    "rule": "单耗=耗量/产量；零产量无定义；汇总用总耗量/总产量，不取月单耗简单均值",
+    "choice": "适合产出可比时观察效率；不替代气象、产品结构等因素校正",
+    "variants": [
+      "电单耗",
+      "水单耗"
+    ],
+    "sources": [
+      "doe-intensity"
+    ],
+    "example": "assets/energy-examples/intensity.json",
+    "validated": "本轮合成示例已计算和导出；视觉与数值检查记录随交付保存，其他变体需另验"
+  },
+  {
+    "mode": "target_gap",
+    "canonical_id": "ext-energy-target-gap",
+    "name": "目标偏差图",
+    "category": "目标与比较",
+    "inputs": "月实际量、明确提供的目标量",
+    "rule": "偏差=(实际/目标-1)×100；正值为超目标、负值为低于目标；目标零时无定义",
+    "choice": "需要用户提供目标；不能自动把历史均值命名为目标",
+    "variants": [
+      "单指标",
+      "分面"
+    ],
+    "sources": [
+      "matplotlib",
+      "doe-intensity"
+    ],
+    "example": "assets/energy-examples/target_gap.json",
+    "validated": "本轮合成示例已计算和导出；视觉与数值检查记录随交付保存，其他变体需另验"
+  },
+  {
+    "mode": "calendar",
+    "canonical_id": "ext-energy-calendar",
+    "name": "日历热力图",
+    "category": "运行分析",
+    "inputs": "同一公历年的逐日日期、用量、单位",
+    "rule": "按真实星期定位；闰日保留；无记录和零耗量分开；同一色阶",
+    "choice": "适合寻找日期模式；精确读数同时交付逐日CSV",
+    "variants": [
+      "平年",
+      "闰年",
+      "缺失日"
+    ],
+    "sources": [
+      "matplotlib"
+    ],
+    "example": "assets/energy-examples/calendar.json",
+    "validated": "本轮合成示例已计算和导出；视觉与数值检查记录随交付保存，其他变体需另验"
+  },
+  {
+    "mode": "load_duration",
+    "canonical_id": "ext-energy-load-duration",
+    "name": "负荷持续曲线",
+    "category": "运行分析",
+    "inputs": "等间隔、带时区时间戳、区间平均kW、间隔小时数",
+    "rule": "负荷按高到低排列后横轴为累计时长；曲线积分为kWh；最后时间戳代表区间起点",
+    "choice": "适合看高负荷持续时间；排序消除时间顺序，不能据此判断峰值发生时间",
+    "variants": [
+      "小时",
+      "15分钟"
+    ],
+    "sources": [
+      "eia-units",
+      "matplotlib"
+    ],
+    "example": "assets/energy-examples/load_duration.json",
+    "validated": "本轮合成示例已计算和导出；视觉与数值检查记录随交付保存，其他变体需另验"
+  },
+  {
+    "mode": "rolling",
+    "canonical_id": "ext-energy-rolling",
+    "name": "后向移动均值",
+    "category": "趋势比较",
+    "inputs": "连续月份、原始量、窗口长度",
+    "rule": "包含当前及前k-1期；完整窗口才计算；不填前段或缺失窗口；与原始线同绘",
+    "choice": "平滑必须明确标识；区别于居中移动均值和预测",
+    "variants": [
+      "3月窗口",
+      "6月窗口"
+    ],
+    "sources": [
+      "pandas-rolling",
+      "fpp-moving"
+    ],
+    "example": "assets/energy-examples/rolling.json",
+    "validated": "本轮合成示例已计算和导出；视觉与数值检查记录随交付保存，其他变体需另验"
+  },
+  {
+    "mode": "cumulative_deviation",
+    "canonical_id": "ext-energy-cumulative-deviation",
+    "name": "累计目标偏差",
+    "category": "目标与比较",
+    "inputs": "同期间实际增量与提供的目标增量",
+    "rule": "从起点累计实际减目标；缺失后无法确定累计；这不是带阈值的统计CUSUM控制图",
+    "choice": "看相对计划的累计超耗或节余；不能归因为某项措施",
+    "variants": [
+      "月度预算",
+      "持续预算"
+    ],
+    "sources": [
+      "matplotlib",
+      "doe-intensity"
+    ],
+    "example": "assets/energy-examples/cumulative_deviation.json",
+    "validated": "本轮合成示例已计算和导出；视觉与数值检查记录随交付保存，其他变体需另验"
+  },
+  {
+    "mode": "paired_comparison",
+    "canonical_id": "ext-energy-paired-comparison",
+    "name": "前后哑铃对照",
+    "category": "目标与比较",
+    "inputs": "对象唯一ID、相同口径前后值、两期标签",
+    "rule": "每条连接对应同一个对象；单位、期间长度和范围要可比；变化不自动证明因果",
+    "choice": "少量对象前后比较比两组柱更紧凑；显著性检验另行分析",
+    "variants": [
+      "设备",
+      "车间",
+      "实验组"
+    ],
+    "sources": [
+      "matplotlib"
+    ],
+    "example": "assets/energy-examples/paired_comparison.json",
+    "validated": "本轮合成示例已计算和导出；视觉与数值检查记录随交付保存，其他变体需另验"
+  }
+]

@@ -1,0 +1,136 @@
+{
+  "catalog_id": "cn-1101",
+  "mode": "expense-report",
+  "title": "项目差旅费用报销表",
+  "subtitle": "人员、项目、票据和审批链可追踪",
+  "template": "publication",
+  "sector": "商业与财务",
+  "use_case": "组织费用管理和项目报销中的高频表单",
+  "data_status": "simulated",
+  "assumptions": [
+    "内容和数值为教学模拟",
+    "真实交付前须替换名称、事实、品牌、尺寸和审批信息"
+  ],
+  "metrics": [
+    {
+      "id": "receipts",
+      "label": "票据",
+      "value": 5,
+      "unit": "张",
+      "evidence": "模拟输入"
+    },
+    {
+      "id": "total",
+      "label": "合计",
+      "value": 2252,
+      "unit": "元",
+      "evidence": "模拟输入",
+      "value_source": "financial_total"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "b1",
+      "role": "identity",
+      "label": "报销人",
+      "content": "林澈 · 产品部 · 项目 P-2409",
+      "rect": [
+        0.05,
+        0.73,
+        0.9,
+        0.18
+      ],
+      "order": 1
+    },
+    {
+      "id": "b2",
+      "role": "trip",
+      "label": "差旅信息",
+      "content": "上海—北京 · 2026-09-10 至 09-12",
+      "rect": [
+        0.05,
+        0.48,
+        0.43,
+        0.18
+      ],
+      "order": 2
+    },
+    {
+      "id": "b3",
+      "role": "items",
+      "label": "费用明细",
+      "content": "",
+      "content_source": "line_items",
+      "rect": [
+        0.52,
+        0.48,
+        0.43,
+        0.18
+      ],
+      "order": 3
+    },
+    {
+      "id": "b4",
+      "role": "evidence",
+      "label": "票据附件",
+      "content": "电子票 5 张 · 行程单 1 张",
+      "rect": [
+        0.05,
+        0.12,
+        0.56,
+        0.29
+      ],
+      "order": 4
+    },
+    {
+      "id": "b5",
+      "role": "total",
+      "label": "报销合计",
+      "content": "",
+      "content_source": "financial_summary",
+      "rect": [
+        0.65,
+        0.12,
+        0.3,
+        0.29
+      ],
+      "order": 5
+    }
+  ],
+  "sheet": {
+    "width": 210,
+    "height": 297,
+    "unit": "mm"
+  },
+  "audience": "财务与审批人",
+  "primary_action": "核验票据并审批",
+  "reading_order": [
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "b5"
+  ],
+  "line_items": [
+    {
+      "id": "i1",
+      "label": "高铁票",
+      "quantity": 2,
+      "unit_price": 553
+    },
+    {
+      "id": "i2",
+      "label": "住宿",
+      "quantity": 2,
+      "unit_price": 480
+    },
+    {
+      "id": "i3",
+      "label": "市内交通",
+      "quantity": 1,
+      "unit_price": 186
+    }
+  ],
+  "tax_rate": 0,
+  "declared_total": 2252
+}

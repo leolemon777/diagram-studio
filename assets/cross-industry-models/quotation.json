@@ -1,0 +1,137 @@
+{
+  "catalog_id": "cn-1103",
+  "mode": "quotation",
+  "title": "数字服务项目报价单",
+  "subtitle": "范围、价格、交付物和有效期共同约束报价",
+  "template": "publication",
+  "sector": "商业与销售",
+  "use_case": "项目销售、采购和服务业中的高频报价文档",
+  "data_status": "simulated",
+  "assumptions": [
+    "内容和数值为教学模拟",
+    "真实交付前须替换名称、事实、品牌、尺寸和审批信息"
+  ],
+  "metrics": [
+    {
+      "id": "deliverables",
+      "label": "交付模块",
+      "value": 3,
+      "unit": "项",
+      "evidence": "模拟输入",
+      "value_source": "line_items_count"
+    },
+    {
+      "id": "total",
+      "label": "含税总价",
+      "value": 61480,
+      "unit": "元",
+      "evidence": "模拟输入",
+      "value_source": "financial_total"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "b1",
+      "role": "identity",
+      "label": "报价信息",
+      "content": "编号 Q-2026-117 · 有效期 30 天",
+      "rect": [
+        0.05,
+        0.73,
+        0.9,
+        0.18
+      ],
+      "order": 1
+    },
+    {
+      "id": "b2",
+      "role": "scope",
+      "label": "项目范围",
+      "content": "用户研究、交互原型、视觉系统",
+      "rect": [
+        0.05,
+        0.48,
+        0.43,
+        0.18
+      ],
+      "order": 2
+    },
+    {
+      "id": "b3",
+      "role": "items",
+      "label": "费用明细",
+      "content": "",
+      "content_source": "line_items",
+      "rect": [
+        0.52,
+        0.48,
+        0.43,
+        0.18
+      ],
+      "order": 3
+    },
+    {
+      "id": "b4",
+      "role": "terms",
+      "label": "商务条款",
+      "content": "40% 启动 · 40% 中期 · 20% 交付",
+      "rect": [
+        0.05,
+        0.12,
+        0.56,
+        0.29
+      ],
+      "order": 4
+    },
+    {
+      "id": "b5",
+      "role": "total",
+      "label": "报价合计",
+      "content": "",
+      "content_source": "financial_summary",
+      "rect": [
+        0.65,
+        0.12,
+        0.3,
+        0.29
+      ],
+      "order": 5
+    }
+  ],
+  "sheet": {
+    "width": 210,
+    "height": 297,
+    "unit": "mm"
+  },
+  "audience": "采购方与项目负责人",
+  "primary_action": "确认范围并签署",
+  "reading_order": [
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "b5"
+  ],
+  "line_items": [
+    {
+      "id": "i1",
+      "label": "研究与访谈",
+      "quantity": 1,
+      "unit_price": 16000
+    },
+    {
+      "id": "i2",
+      "label": "交互原型",
+      "quantity": 1,
+      "unit_price": 24000
+    },
+    {
+      "id": "i3",
+      "label": "视觉系统",
+      "quantity": 1,
+      "unit_price": 18000
+    }
+  ],
+  "tax_rate": 0.06,
+  "declared_total": 61480
+}

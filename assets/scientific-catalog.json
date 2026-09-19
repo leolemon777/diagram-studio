@@ -1,0 +1,245 @@
+[
+  {
+    "id": "violin",
+    "title": "小提琴图 · 密度与原始观测",
+    "category": "分布",
+    "choice": "比较形态用小提琴；样本少时优先原始点与箱线图",
+    "sources": [
+      "kde",
+      "matplotlib"
+    ],
+    "layout_issues": []
+  },
+  {
+    "id": "kde",
+    "title": "密度曲线 · 比较分布形态",
+    "category": "分布",
+    "choice": "连续且样本充足时使用；有界变量应考虑边界修正或改用 ECDF",
+    "sources": [
+      "kde"
+    ],
+    "layout_issues": []
+  },
+  {
+    "id": "histogram",
+    "title": "直方图 · 不等宽分箱的密度",
+    "category": "分布",
+    "choice": "保留分箱边界，等高不一定等频；避免为结论挑选分箱",
+    "sources": [
+      "numpy-hist",
+      "matplotlib"
+    ],
+    "layout_issues": []
+  },
+  {
+    "id": "regression",
+    "title": "线性回归 · 均值置信带",
+    "category": "关系与配对",
+    "choice": "先检查残差与数据来源；重复测量不能当作独立样本",
+    "sources": [
+      "regression"
+    ],
+    "layout_issues": []
+  },
+  {
+    "id": "hexbin",
+    "title": "六边形密度 · 高密度观测",
+    "category": "关系与配对",
+    "choice": "点重叠严重时优于普通散点；少量点直接展示原始点",
+    "sources": [
+      "matplotlib"
+    ],
+    "layout_issues": []
+  },
+  {
+    "id": "correlation",
+    "title": "相关矩阵 · 固定正负尺度",
+    "category": "关系与配对",
+    "choice": "先选 Pearson 或 Spearman；统一样本口径，相关不等于因果",
+    "sources": [
+      "scipy"
+    ],
+    "layout_issues": []
+  },
+  {
+    "id": "paired",
+    "title": "配对变化 · 保留个体对应关系",
+    "category": "关系与配对",
+    "choice": "同一个体前后比较保留配对ID；独立两组不能强连线",
+    "sources": [
+      "scipy"
+    ],
+    "layout_issues": []
+  },
+  {
+    "id": "bland_altman",
+    "title": "Bland–Altman · 测量一致性",
+    "category": "关系与配对",
+    "choice": "评估一致性不以相关系数替代；先确定业务上可接受的差值",
+    "sources": [
+      "bland"
+    ],
+    "layout_issues": []
+  },
+  {
+    "id": "forest",
+    "title": "森林图 · 效应估计与区间",
+    "category": "效应与生存",
+    "choice": "比值用正数与对数轴；差值的参考线应改为 0；此图不自动做荟萃分析",
+    "sources": [
+      "matplotlib"
+    ],
+    "layout_issues": []
+  },
+  {
+    "id": "survival",
+    "title": "Kaplan–Meier · 带删失的事件时间",
+    "category": "效应与生存",
+    "choice": "有右删失时采用KM；不能把删失当作事件或成功结局",
+    "sources": [
+      "lifelines"
+    ],
+    "layout_issues": []
+  },
+  {
+    "id": "roc",
+    "title": "ROC · 排序区分能力",
+    "category": "模型评估",
+    "choice": "使用独立测试集或OOF预测；正类、分母、分箱及样本量保持可追溯",
+    "sources": [
+      "sklearn"
+    ],
+    "layout_issues": []
+  },
+  {
+    "id": "pr",
+    "title": "PR · 关注阳性检出",
+    "category": "模型评估",
+    "choice": "使用独立测试集或OOF预测；正类、分母、分箱及样本量保持可追溯",
+    "sources": [
+      "sklearn"
+    ],
+    "layout_issues": []
+  },
+  {
+    "id": "calibration",
+    "title": "校准曲线 · 概率与实际频率",
+    "category": "模型评估",
+    "choice": "使用独立测试集或OOF预测；正类、分母、分箱及样本量保持可追溯",
+    "sources": [
+      "calibration"
+    ],
+    "layout_issues": []
+  },
+  {
+    "id": "confusion",
+    "title": "混淆矩阵 · 明确方向和分母",
+    "category": "模型评估",
+    "choice": "同时看计数和归一化；零样本行不得伪装为正确率0%",
+    "sources": [
+      "sklearn"
+    ],
+    "layout_issues": []
+  },
+  {
+    "id": "contour",
+    "title": "等高线 · 标量场的连续结构",
+    "category": "场与高维",
+    "choice": "优先等高线表达空间量；仅在深度信息必要时改用3D表面",
+    "sources": [
+      "matplotlib"
+    ],
+    "layout_issues": []
+  },
+  {
+    "id": "quiver",
+    "title": "矢量场 · 方向与大小共同表达",
+    "category": "场与高维",
+    "choice": "保留等比例坐标轴与矢量标尺；不得仅画装饰性方向箭头",
+    "sources": [
+      "matplotlib"
+    ],
+    "layout_issues": []
+  },
+  {
+    "id": "dendrogram",
+    "title": "聚类树 · 距离与链接方法可追溯",
+    "category": "场与高维",
+    "choice": "树高是链接距离；更换尺度或链接方法可能改变树，不当作真实谱系",
+    "sources": [
+      "linkage"
+    ],
+    "layout_issues": []
+  },
+  {
+    "id": "upset",
+    "title": "UpSet · 用矩阵表达多集合交集",
+    "category": "场与高维",
+    "choice": "超过少数集合时比韦恩图更容易比较；明确包含交集或互斥交集",
+    "sources": [
+      "upset"
+    ],
+    "layout_issues": []
+  },
+  {
+    "id": "summary_table",
+    "title": "三线表 · 原始观测的描述统计",
+    "category": "科研表格",
+    "choice": "精确汇报数值用表；分布判断应搭配原始点或分布图",
+    "sources": [
+      "numpy-quantile",
+      "scipy"
+    ],
+    "layout_issues": []
+  },
+  {
+    "id": "ablation_table",
+    "title": "消融实验表 · 配置与重复运行",
+    "category": "科研表格",
+    "choice": "基线与增量组件写清；重复次数与方向标识，不把均值最优当显著性",
+    "sources": [
+      "numpy-quantile"
+    ],
+    "layout_issues": []
+  },
+  {
+    "id": "qq",
+    "title": "正态概率图 · 检查分布偏离",
+    "category": "分布",
+    "choice": "用作诊断而非显著性检验替代；尾部偏离要结合样本量判断",
+    "sources": [
+      "qq"
+    ],
+    "layout_issues": []
+  },
+  {
+    "id": "volcano",
+    "title": "火山图 · 效应量与调整后概率",
+    "category": "组学",
+    "choice": "标明 p 还是 q、校正方法和效应阈值；输入0值不能悄悄截断",
+    "sources": [
+      "deseq2"
+    ],
+    "layout_issues": []
+  },
+  {
+    "id": "manhattan",
+    "title": "曼哈顿图 · 按位置排列检验结果",
+    "category": "组学",
+    "choice": "记录坐标版本、位置单位和多重检验策略；阈值不可对所有任务固定",
+    "sources": [
+      "qqman"
+    ],
+    "layout_issues": []
+  },
+  {
+    "id": "small_multiples",
+    "title": "小倍图 · 同尺度比较多条序列",
+    "category": "场与高维",
+    "choice": "多组轨迹拥挤时拆成共享尺度的小图；禁止每格自由缩放制造差异",
+    "sources": [
+      "matplotlib"
+    ],
+    "layout_issues": []
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "id": "white",
+  "name": "纯白精研",
+  "description": "纯白画布、石墨文字、蓝墨数据；针对字重、线条与图形编码逐项精修。",
+  "use": "白底报告、科研图版、销售分析与系统架构",
+  "bg": "#FFFFFF",
+  "ink": "#202B36",
+  "muted": "#596A78",
+  "line": "#E3E8ED",
+  "border": "#7C8C99",
+  "accent": "#315F82",
+  "tint": "#EEF3F7",
+  "cool": "#945740",
+  "cool_tint": "#F7EEE9",
+  "network_faint": "#CAD4DE",
+  "type": {
+    "heading": {"font":"serif","weight":400,"size_at_1920":52},
+    "body": {"font":"sans","weight":400},
+    "node": {"font":"sans","weight":500},
+    "metric": {"font":"grotesk","weight":500},
+    "table_numeric": {"font":"mono","weight":400}
+  },
+  "notes": "This is a visual grammar, not only a palette. Pure white remains #FFFFFF in raster and vector outputs. The 12 share-atlas recipes have explicit refinements; other forms require semantic role mapping and visual QA."
+}

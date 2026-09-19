@@ -1,0 +1,33 @@
+{
+  "id": "maintenance-stakeholder-network",
+  "mode": "people-network",
+  "title": "设备维修改善人物关系图",
+  "subtitle": "关系类型、方向、动词和依据逐边保留",
+  "data_status": "simulated",
+  "people": [
+    {"id": "planner", "label": "检修策划员", "role": "计划统筹", "group": "维修", "position": [0.42, 0.50]},
+    {"id": "mechanic", "label": "机械班长", "role": "执行负责人", "group": "维修", "position": [0.10, 0.72]},
+    {"id": "instrument", "label": "电仪工程师", "role": "联锁与仪表", "group": "维修", "position": [0.10, 0.24]},
+    {"id": "operator", "label": "运行班长", "role": "隔离与试车", "group": "运行", "position": [0.68, 0.76]},
+    {"id": "warehouse", "label": "备件管理员", "role": "物料保障", "group": "供应", "position": [0.72, 0.26]},
+    {"id": "safety", "label": "安全工程师", "role": "作业许可", "group": "EHS", "position": [0.42, 0.88]},
+    {"id": "manager", "label": "设备经理", "role": "升级决策", "group": "管理", "position": [0.43, 0.08]}
+  ],
+  "relation_types": [
+    {"id": "collab", "label": "协作", "directed": false, "style": "solid"},
+    {"id": "handoff", "label": "交接", "directed": true, "style": "solid"},
+    {"id": "advice", "label": "专业建议", "directed": true, "style": "dashed"},
+    {"id": "escalate", "label": "升级", "directed": true, "style": "dotted"}
+  ],
+  "relations": [
+    {"id": "r1", "source": "planner", "target": "mechanic", "type": "collab", "verb": "共同排程", "evidence": "模拟会议纪要 M-01"},
+    {"id": "r2", "source": "planner", "target": "instrument", "type": "collab", "verb": "共同排程", "evidence": "模拟会议纪要 M-01"},
+    {"id": "r3", "source": "operator", "target": "planner", "type": "handoff", "verb": "移交窗口", "evidence": "模拟停机计划 P-02"},
+    {"id": "r4", "source": "warehouse", "target": "planner", "type": "handoff", "verb": "确认到货", "evidence": "模拟备件表 S-03"},
+    {"id": "r5", "source": "safety", "target": "planner", "type": "advice", "verb": "复核许可", "evidence": "模拟许可评审 E-04"},
+    {"id": "r6", "source": "instrument", "target": "operator", "type": "advice", "verb": "说明联锁", "evidence": "模拟联锁清单 I-05"},
+    {"id": "r7", "source": "planner", "target": "manager", "type": "escalate", "verb": "升级资源冲突", "evidence": "模拟升级记录 G-06"},
+    {"id": "r8", "source": "mechanic", "target": "operator", "type": "handoff", "verb": "交付试车", "evidence": "模拟完工单 W-07"}
+  ],
+  "assumptions": ["人物、岗位和关系均为模拟", "关系图只表达已声明互动，不据此推断私人关系或因果"]
+}

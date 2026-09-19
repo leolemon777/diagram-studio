@@ -1,0 +1,166 @@
+{
+  "data_status": "simulated",
+  "assumptions": [
+    "示例对象、关系和名称均为教学模拟，不代表任何真实企业现状。"
+  ],
+  "mode": "c4-component",
+  "title": "维护 API 容器的 C4 组件图",
+  "subtitle": "只展开一个容器；组件职责、实现技术和外部依赖逐边标注",
+  "scope": {
+    "software_system": "设备维护平台",
+    "container_id": "maintenance-api",
+    "container_label": "维护 API"
+  },
+  "components": [
+    {
+      "id": "work-order-controller",
+      "label": "工单接口组件",
+      "container_id": "maintenance-api",
+      "responsibility": "接收与校验工单请求",
+      "technology": "REST Controller",
+      "position": [
+        0.34,
+        0.7
+      ]
+    },
+    {
+      "id": "work-order-service",
+      "label": "工单领域组件",
+      "container_id": "maintenance-api",
+      "responsibility": "执行工单规则与状态转换",
+      "technology": "Domain Service",
+      "position": [
+        0.5,
+        0.49
+      ]
+    },
+    {
+      "id": "asset-adapter",
+      "label": "设备资料适配器",
+      "container_id": "maintenance-api",
+      "responsibility": "读取设备与位置资料",
+      "technology": "Repository Adapter",
+      "position": [
+        0.34,
+        0.2
+      ]
+    },
+    {
+      "id": "event-publisher",
+      "label": "事件发布组件",
+      "container_id": "maintenance-api",
+      "responsibility": "发布工单领域事件",
+      "technology": "Message Publisher",
+      "position": [
+        0.66,
+        0.33
+      ]
+    },
+    {
+      "id": "audit-component",
+      "label": "审计组件",
+      "container_id": "maintenance-api",
+      "responsibility": "记录关键变更证据",
+      "technology": "Audit Service",
+      "position": [
+        0.66,
+        0.7
+      ]
+    }
+  ],
+  "externals": [
+    {
+      "id": "planner",
+      "label": "维修计划员",
+      "type": "person",
+      "description": "创建与批准工单",
+      "position": [
+        0.08,
+        0.7
+      ]
+    },
+    {
+      "id": "asset-db",
+      "label": "设备资料库",
+      "type": "container",
+      "description": "设备与位置主数据",
+      "position": [
+        0.92,
+        0.18
+      ]
+    },
+    {
+      "id": "event-bus",
+      "label": "企业事件总线",
+      "type": "software-system",
+      "description": "传播工单事件",
+      "position": [
+        0.92,
+        0.68
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "id": "r1",
+      "source": "planner",
+      "target": "work-order-controller",
+      "description": "提交工单",
+      "technology": "HTTPS/JSON",
+      "evidence": "用例假设"
+    },
+    {
+      "id": "r2",
+      "source": "work-order-controller",
+      "target": "work-order-service",
+      "description": "调用工单规则",
+      "technology": "in-process",
+      "evidence": "组件职责假设"
+    },
+    {
+      "id": "r3",
+      "source": "work-order-service",
+      "target": "asset-adapter",
+      "description": "查询设备资料",
+      "technology": "interface call",
+      "evidence": "领域依赖假设"
+    },
+    {
+      "id": "r4",
+      "source": "asset-adapter",
+      "target": "asset-db",
+      "description": "读取设备数据",
+      "technology": "SQL/TLS",
+      "evidence": "数据访问假设",
+      "label_offset": [
+        0,
+        -0.035
+      ]
+    },
+    {
+      "id": "r5",
+      "source": "work-order-service",
+      "target": "event-publisher",
+      "description": "提交领域事件",
+      "technology": "in-process",
+      "evidence": "事件设计假设"
+    },
+    {
+      "id": "r6",
+      "source": "event-publisher",
+      "target": "event-bus",
+      "description": "发布工单事件",
+      "technology": "AMQP/TLS",
+      "evidence": "集成假设"
+    },
+    {
+      "id": "r7",
+      "source": "work-order-service",
+      "target": "audit-component",
+      "description": "记录状态变更",
+      "technology": "in-process",
+      "evidence": "审计假设",
+      "rad": -0.08
+    }
+  ]
+}

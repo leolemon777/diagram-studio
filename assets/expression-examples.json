@@ -1,0 +1,29 @@
+{
+  "simulation": true,
+  "marketing": {
+    "title": "一次活动，用户去了哪里？",
+    "unit": "人",
+    "cohort": "同一批用户，按首次到达阶段去重，阶段依次嵌套",
+    "stages": [{"id":"visit","name":"访问","value":1000},{"id":"interest","name":"查看详情","value":620},{"id":"intent","name":"提交意向","value":310},{"id":"paid","name":"完成购买","value":186}]
+  },
+  "education": {
+    "title": "同样一次学习，变化并不相同",
+    "unit": "分",
+    "scale": [0,100],
+    "context": "同一班级前后两次模拟测评的课程平均分，仅作描述对照",
+    "courses": [{"id":"reading","name":"阅读理解","before":68,"after":82},{"id":"writing","name":"写作表达","before":61,"after":78},{"id":"math","name":"数学应用","before":75,"after":83},{"id":"science","name":"科学探究","before":80,"after":76}]
+  },
+  "planning": {
+    "title": "一次产品上线，两种计划视角",
+    "context": "时间为项目开始后的第几周，区间使用 [开始, 结束)，均为完成后开始依赖",
+    "horizon": 8,
+    "tasks": [{"id":"a","name":"用户研究","start":0,"end":2},{"id":"b","name":"方案设计","start":2,"end":4},{"id":"c","name":"内容准备","start":2,"end":5},{"id":"d","name":"产品开发","start":4,"end":6},{"id":"e","name":"联合验证","start":6,"end":7},{"id":"f","name":"正式上线","start":7,"end":8}],
+    "links": [["a","b"],["a","c"],["b","d"],["c","e"],["d","e"],["e","f"]]
+  },
+  "service": {
+    "title": "服务如何向前，又在哪里返回？",
+    "context": "演示客户服务的顺序、分支与返工关系，不表示处理量或耗时",
+    "nodes": [{"id":"a","name":"收到咨询"},{"id":"b","name":"内容分流"},{"id":"c","name":"自助解答"},{"id":"d","name":"人工处理"},{"id":"e","name":"用户确认"},{"id":"f","name":"关闭服务"}],
+    "edges": [{"id":"r1","from":"a","to":"b","label":"登记"},{"id":"r2","from":"b","to":"c","label":"常见问题"},{"id":"r3","from":"b","to":"d","label":"复杂问题"},{"id":"r4","from":"c","to":"e","label":"提交结果"},{"id":"r5","from":"d","to":"e","label":"提交结果"},{"id":"r6","from":"e","to":"f","label":"已解决"},{"id":"r7","from":"e","to":"d","label":"未解决"}]
+  }
+}

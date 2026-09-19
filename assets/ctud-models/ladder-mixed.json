@@ -1,0 +1,152 @@
+{
+  "title": "CTUD与TON混合扫描",
+  "scope": "计数达到阈值后延时输出；全部输入为教学假设",
+  "data_status": "Synthetic",
+  "semantics": "sequential_timed_scan",
+  "write_policy": "single_writer",
+  "variables": [
+    {
+      "id": "U",
+      "label": "U",
+      "source": "teaching",
+      "role": "input"
+    },
+    {
+      "id": "D",
+      "label": "D",
+      "source": "teaching",
+      "role": "input"
+    },
+    {
+      "id": "R",
+      "label": "R",
+      "source": "teaching",
+      "role": "input"
+    },
+    {
+      "id": "L",
+      "label": "L",
+      "source": "teaching",
+      "role": "input"
+    },
+    {
+      "id": "Full",
+      "label": "Full",
+      "source": "teaching",
+      "role": "output",
+      "initial": false
+    },
+    {
+      "id": "Empty",
+      "label": "Empty",
+      "source": "teaching",
+      "role": "output",
+      "initial": false
+    },
+    {
+      "id": "Seen",
+      "label": "Seen",
+      "source": "teaching",
+      "role": "output",
+      "initial": false
+    }
+  ],
+  "rungs": [
+    {
+      "id": "Counter",
+      "label": "Dual counter",
+      "type": "CTUD",
+      "profile": "edge_int16_sample_every_call",
+      "cu": {
+        "id": "cu",
+        "kind": "contact",
+        "var": "U",
+        "sense": "true"
+      },
+      "cd": {
+        "id": "cd",
+        "kind": "contact",
+        "var": "D",
+        "sense": "true"
+      },
+      "reset": {
+        "id": "reset",
+        "kind": "contact",
+        "var": "R",
+        "sense": "true"
+      },
+      "load": {
+        "id": "load",
+        "kind": "contact",
+        "var": "L",
+        "sense": "true"
+      },
+      "pv": 1,
+      "initial": {
+        "cv": 0,
+        "previous_cu": false,
+        "previous_cd": false
+      },
+      "outputs": {
+        "qu": "Full",
+        "qd": "Empty"
+      }
+    },
+    {
+      "id": "Follow",
+      "label": "Read this scan",
+      "logic": {
+        "id": "read",
+        "kind": "contact",
+        "var": "Full",
+        "sense": "true"
+      },
+      "coil": {
+        "id": "coil",
+        "var": "Seen",
+        "kind": "assign"
+      },
+      "block": {
+        "id": "Timer",
+        "type": "TON",
+        "pt_ms": 5,
+        "initial": "reset"
+      }
+    }
+  ],
+  "scans": [
+    {
+      "id": "S0",
+      "label": "Scan",
+      "time_ms": 0,
+      "inputs": {
+        "U": false,
+        "D": false,
+        "R": false,
+        "L": false
+      }
+    },
+    {
+      "id": "S1",
+      "label": "Scan",
+      "time_ms": 10,
+      "inputs": {
+        "U": true,
+        "D": false,
+        "R": false,
+        "L": false
+      }
+    },
+    {
+      "id": "S2",
+      "label": "Scan",
+      "time_ms": 20,
+      "inputs": {
+        "U": true,
+        "D": false,
+        "R": false,
+        "L": false
+      }
+    }
+  ]
+}

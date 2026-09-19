@@ -1,0 +1,26 @@
+{
+  "id": "reliability-team-canvas",
+  "mode": "team-canvas",
+  "title": "可靠性改善团队管理画布",
+  "subtitle": "目的、决策范围、执行约定和风险责任保持可操作",
+  "data_status": "simulated",
+  "purpose": "在十二周内降低关键泵重复故障，并形成可复用的状态维修闭环",
+  "success_definition": "重复故障率下降30%，三项关键检查进入标准工作，现场班组能独立执行",
+  "members": [
+    {"id": "lead", "label": "可靠性工程师", "role": "团队负责人", "decision_scope": "分析方法与试点优先级"},
+    {"id": "planner", "label": "检修策划", "role": "行动协调", "decision_scope": "周计划与资源协调"},
+    {"id": "mechanic", "label": "机械班长", "role": "现场验证", "decision_scope": "检修工艺和班组安排"},
+    {"id": "operator", "label": "运行代表", "role": "工况确认", "decision_scope": "运行窗口与试车条件"}
+  ],
+  "agreements": [
+    {"id": "a1", "rule": "每周三前更新行动证据和阻塞项", "owner_id": "planner", "review_date": "2026-10-02"},
+    {"id": "a2", "rule": "没有现场记录的根因只标为待验证假设", "owner_id": "lead", "review_date": "2026-10-02"},
+    {"id": "a3", "rule": "涉及运行窗口的试验提前两班确认", "owner_id": "operator", "review_date": "2026-10-09"}
+  ],
+  "risks": [
+    {"id": "r1", "statement": "停机窗口被生产计划压缩", "owner_id": "planner", "mitigation": "准备在线检查替代项并升级冲突"},
+    {"id": "r2", "statement": "振动测点一致性不足", "owner_id": "lead", "mitigation": "固定测点和采样工况后再比较"},
+    {"id": "r3", "statement": "班组执行负荷过高", "owner_id": "mechanic", "mitigation": "每周限制并行试验数量"}
+  ],
+  "assumptions": ["团队目标和人员为模拟", "复核日期仅用于演示可执行约定"]
+}

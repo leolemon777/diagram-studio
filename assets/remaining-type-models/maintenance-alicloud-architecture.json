@@ -1,0 +1,215 @@
+{
+  "mode": "alicloud-architecture",
+  "title": "阿里云 · 维修应用参考架构",
+  "subtitle": "服务名来自官方产品文档；图形为中性矢量，不捆绑厂商图标",
+  "template": "graph",
+  "data_status": "simulated",
+  "assumptions": [
+    "数据为教学模拟，不代表真实项目现状",
+    "真实交付前须替换数值、名称、品牌规范和审批信息"
+  ],
+  "metrics": [
+    {
+      "id": "zones",
+      "label": "可用区",
+      "value": 2,
+      "unit": "个",
+      "evidence": "Alibaba Cloud 官方文档"
+    },
+    {
+      "id": "flows",
+      "label": "数据流",
+      "value": 9,
+      "unit": "条",
+      "evidence": "Alibaba Cloud 官方文档"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "edge",
+      "label": "WAF / CDN",
+      "kind": "edge",
+      "position": [
+        0.12,
+        0.55
+      ],
+      "detail": "公网接入",
+      "group": "public"
+    },
+    {
+      "id": "lb",
+      "label": "ALB",
+      "kind": "network",
+      "position": [
+        0.32,
+        0.55
+      ],
+      "detail": "跨可用区",
+      "group": "vpc"
+    },
+    {
+      "id": "c1",
+      "label": "ECS 应用 A",
+      "kind": "compute",
+      "position": [
+        0.51,
+        0.7
+      ],
+      "detail": "AZ-A",
+      "group": "vpc",
+      "zone": "AZ-A"
+    },
+    {
+      "id": "c2",
+      "label": "ECS 应用 B",
+      "kind": "compute",
+      "position": [
+        0.51,
+        0.38
+      ],
+      "detail": "AZ-B",
+      "group": "vpc",
+      "zone": "AZ-B"
+    },
+    {
+      "id": "db",
+      "label": "RDS 高可用版",
+      "kind": "data",
+      "position": [
+        0.72,
+        0.55
+      ],
+      "detail": "高可用数据库",
+      "group": "vpc"
+    },
+    {
+      "id": "obs",
+      "label": "CloudMonitor",
+      "kind": "operations",
+      "position": [
+        0.9,
+        0.68
+      ],
+      "detail": "日志/指标",
+      "group": "ops"
+    },
+    {
+      "id": "iam",
+      "label": "RAM",
+      "kind": "operations",
+      "position": [
+        0.9,
+        0.36
+      ],
+      "detail": "最小权限",
+      "group": "ops",
+      "identity_control": true
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "edge",
+      "target": "lb",
+      "relation": "ingress",
+      "label": "HTTPS"
+    },
+    {
+      "id": "e2",
+      "source": "lb",
+      "target": "c1",
+      "relation": "route",
+      "label": "健康流量"
+    },
+    {
+      "id": "e3",
+      "source": "lb",
+      "target": "c2",
+      "relation": "route",
+      "label": "健康流量"
+    },
+    {
+      "id": "e4",
+      "source": "c1",
+      "target": "db",
+      "relation": "data",
+      "label": "事务"
+    },
+    {
+      "id": "e5",
+      "source": "c2",
+      "target": "db",
+      "relation": "data",
+      "label": "事务"
+    },
+    {
+      "id": "e6",
+      "source": "c1",
+      "target": "obs",
+      "relation": "telemetry",
+      "label": "日志/指标"
+    },
+    {
+      "id": "e7",
+      "source": "c2",
+      "target": "obs",
+      "relation": "telemetry",
+      "label": "日志/指标",
+      "label_position": [
+        0.75,
+        0.43
+      ]
+    },
+    {
+      "id": "e8",
+      "source": "iam",
+      "target": "c1",
+      "relation": "authorize",
+      "label": "角色授权",
+      "label_position": [
+        0.67,
+        0.64
+      ]
+    },
+    {
+      "id": "e9",
+      "source": "iam",
+      "target": "c2",
+      "relation": "authorize",
+      "label": "角色授权"
+    }
+  ],
+  "groups": [
+    {
+      "id": "public",
+      "label": "公网入口",
+      "rect": [
+        0.03,
+        0.18,
+        0.18,
+        0.64
+      ]
+    },
+    {
+      "id": "vpc",
+      "label": "生产 VPC",
+      "rect": [
+        0.24,
+        0.1,
+        0.58,
+        0.8
+      ]
+    },
+    {
+      "id": "ops",
+      "label": "治理与运维",
+      "rect": [
+        0.84,
+        0.18,
+        0.13,
+        0.64
+      ]
+    }
+  ],
+  "provider": "Alibaba Cloud"
+}

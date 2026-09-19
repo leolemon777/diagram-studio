@@ -1,0 +1,441 @@
+[
+  {
+    "mode": "violin",
+    "canonical_id": "ext-violin",
+    "name": "小提琴图",
+    "category": "分布",
+    "inputs": "每组原始样本、组名、带宽规则、单位",
+    "rule": "核密度不是组人数；保留样本量和原始点；常数样本改点图；带宽改变会影响多峰表现",
+    "variants": [
+      "原始点叠加",
+      "等宽密度"
+    ],
+    "choice": "比较形态用小提琴；样本少时优先原始点与箱线图",
+    "sources": [
+      "kde",
+      "matplotlib"
+    ],
+    "example": "assets/scientific-examples/violin.json",
+    "validated": "合成示例已计算、导出并目视检查；不表示所有数据规模/变体已验证"
+  },
+  {
+    "mode": "kde",
+    "canonical_id": "ext-kde",
+    "name": "核密度估计图",
+    "category": "分布",
+    "inputs": "原始连续样本、带宽方法、边界约束",
+    "rule": "密度积分口径明确；同组比较用同一方法；不把平滑峰当成已证实群体",
+    "variants": [
+      "Scott",
+      "Silverman",
+      "给定带宽因子"
+    ],
+    "choice": "连续且样本充足时使用；有界变量应考虑边界修正或改用 ECDF",
+    "sources": [
+      "kde"
+    ],
+    "example": "assets/scientific-examples/kde.json",
+    "validated": "合成示例已计算、导出并目视检查；不表示所有数据规模/变体已验证"
+  },
+  {
+    "mode": "histogram",
+    "canonical_id": "ext-histogram",
+    "name": "直方图",
+    "category": "分布",
+    "inputs": "完整样本、严格递增且覆盖全部样本的分箱边界",
+    "rule": "不等宽箱用密度面积；最后箱包含右边界；不能隐式丢弃范围外数据",
+    "variants": [
+      "计数",
+      "密度",
+      "多组共用分箱"
+    ],
+    "choice": "保留分箱边界，等高不一定等频；避免为结论挑选分箱",
+    "sources": [
+      "numpy-hist",
+      "matplotlib"
+    ],
+    "example": "assets/scientific-examples/histogram.json",
+    "validated": "合成示例已计算、导出并目视检查；不表示所有数据规模/变体已验证"
+  },
+  {
+    "mode": "regression",
+    "canonical_id": "ext-regression",
+    "name": "回归散点与置信带",
+    "category": "关系与配对",
+    "inputs": "成对X/Y、独立性背景、单位、模型假设",
+    "rule": "OLS区分均值CI与预测区间；只在观测X范围显示；相关不证明因果",
+    "variants": [
+      "均值点态CI",
+      "原始散点"
+    ],
+    "choice": "先检查残差与数据来源；重复测量不能当作独立样本",
+    "sources": [
+      "regression"
+    ],
+    "example": "assets/scientific-examples/regression.json",
+    "validated": "合成示例已计算、导出并目视检查；不表示所有数据规模/变体已验证"
+  },
+  {
+    "mode": "hexbin",
+    "canonical_id": "ext-hexbin",
+    "name": "六边形密度图",
+    "category": "关系与配对",
+    "inputs": "成对原始观测、格子分辨率、单位",
+    "rule": "每格计数可复算；网格分辨率影响结构；稀少数据优先原始散点",
+    "variants": [
+      "观测数",
+      "不同格子尺寸"
+    ],
+    "choice": "点重叠严重时优于普通散点；少量点直接展示原始点",
+    "sources": [
+      "matplotlib"
+    ],
+    "example": "assets/scientific-examples/hexbin.json",
+    "validated": "合成示例已计算、导出并目视检查；不表示所有数据规模/变体已验证"
+  },
+  {
+    "mode": "correlation",
+    "canonical_id": "ext-correlation",
+    "name": "相关矩阵图",
+    "category": "关系与配对",
+    "inputs": "逐行观测、逐列变量、Pearson或Spearman方法",
+    "rule": "拒绝常数变量；固定-1到1色标；不能隐式改变各格样本量",
+    "variants": [
+      "Pearson",
+      "Spearman"
+    ],
+    "choice": "先选 Pearson 或 Spearman；统一样本口径，相关不等于因果",
+    "sources": [
+      "scipy"
+    ],
+    "example": "assets/scientific-examples/correlation.json",
+    "validated": "合成示例已计算、导出并目视检查；不表示所有数据规模/变体已验证"
+  },
+  {
+    "mode": "paired",
+    "canonical_id": "ext-paired",
+    "name": "配对变化图",
+    "category": "关系与配对",
+    "inputs": "唯一对象ID、同一对象两次观测、条件顺序",
+    "rule": "连线代表同一对象；不能把独立组强行配对；不自动生成显著性星号",
+    "variants": [
+      "前后比较",
+      "方法配对"
+    ],
+    "choice": "同一个体前后比较保留配对ID；独立两组不能强连线",
+    "sources": [
+      "scipy"
+    ],
+    "example": "assets/scientific-examples/paired.json",
+    "validated": "合成示例已计算、导出并目视检查；不表示所有数据规模/变体已验证"
+  },
+  {
+    "mode": "bland_altman",
+    "canonical_id": "ext-bland-altman",
+    "name": "Bland–Altman一致性图",
+    "category": "关系与配对",
+    "inputs": "配对测量、对象ID、差值方向、业务可接受界限",
+    "rule": "均值横轴和差值纵轴；偏倚±1.96样本SD为近似一致性界限，非CI；需检查独立性和差值分布",
+    "variants": [
+      "固定差值",
+      "另行研究比例差值"
+    ],
+    "choice": "评估一致性不以相关系数替代；先确定业务上可接受的差值",
+    "sources": [
+      "bland"
+    ],
+    "example": "assets/scientific-examples/bland_altman.json",
+    "validated": "合成示例已计算、导出并目视检查；不表示所有数据规模/变体已验证"
+  },
+  {
+    "mode": "forest",
+    "canonical_id": "ext-forest",
+    "name": "森林图",
+    "category": "效应与生存",
+    "inputs": "输入效应估计和上下界、区间含义、差值或比值",
+    "rule": "比值对数轴且界限为正，参考线1；差值线性轴参考0；不自动合并研究或伪造权重",
+    "variants": [
+      "比值",
+      "差值"
+    ],
+    "choice": "比值用正数与对数轴；差值的参考线应改为 0；此图不自动做荟萃分析",
+    "sources": [
+      "matplotlib"
+    ],
+    "example": "assets/scientific-examples/forest.json",
+    "validated": "合成示例已计算、导出并目视检查；不表示所有数据规模/变体已验证"
+  },
+  {
+    "mode": "survival",
+    "canonical_id": "ext-survival",
+    "name": "生存曲线",
+    "category": "效应与生存",
+    "inputs": "各对象时间、0/1事件指示、分组、时间起点",
+    "rule": "KM右删失；同一时间事件按发生前风险集计算；显示删失和风险集；本实现不支持左截断或竞争风险",
+    "variants": [
+      "KM",
+      "95% log-log CI"
+    ],
+    "choice": "有右删失时采用KM；不能把删失当作事件或成功结局",
+    "sources": [
+      "lifelines"
+    ],
+    "example": "assets/scientific-examples/survival.json",
+    "validated": "合成示例已计算、导出并目视检查；不表示所有数据规模/变体已验证"
+  },
+  {
+    "mode": "roc",
+    "canonical_id": "ext-roc",
+    "name": "ROC曲线",
+    "category": "模型评估",
+    "inputs": "二分类真实标签0/1、连续评分、独立测试或OOF来源",
+    "rule": "真阳性率对假阳性率；两类必须存在；报告正类；不拿训练集表现冒充泛化",
+    "variants": [
+      "单模型",
+      "多模型另行扩展"
+    ],
+    "choice": "使用独立测试集或OOF预测；正类、分母、分箱及样本量保持可追溯",
+    "sources": [
+      "sklearn"
+    ],
+    "example": "assets/scientific-examples/roc.json",
+    "validated": "合成示例已计算、导出并目视检查；不表示所有数据规模/变体已验证"
+  },
+  {
+    "mode": "pr",
+    "canonical_id": "ext-precision-recall",
+    "name": "精确率召回率曲线",
+    "category": "模型评估",
+    "inputs": "二分类标签、评分、正类与样本总体",
+    "rule": "AP采用召回增量加权；不得和梯形PR-AUC混称；显示阳性基准比例",
+    "variants": [
+      "PR阶梯",
+      "AP"
+    ],
+    "choice": "使用独立测试集或OOF预测；正类、分母、分箱及样本量保持可追溯",
+    "sources": [
+      "sklearn"
+    ],
+    "example": "assets/scientific-examples/pr.json",
+    "validated": "合成示例已计算、导出并目视检查；不表示所有数据规模/变体已验证"
+  },
+  {
+    "mode": "calibration",
+    "canonical_id": "ext-calibration",
+    "name": "概率校准曲线",
+    "category": "模型评估",
+    "inputs": "0到1概率、二分类标签、覆盖0到1的分箱边界",
+    "rule": "平均预测对实际频率；每箱人数；空箱不补0；Brier不只反映校准",
+    "variants": [
+      "等宽分箱",
+      "自定义边界"
+    ],
+    "choice": "使用独立测试集或OOF预测；正类、分母、分箱及样本量保持可追溯",
+    "sources": [
+      "calibration"
+    ],
+    "example": "assets/scientific-examples/calibration.json",
+    "validated": "合成示例已计算、导出并目视检查；不表示所有数据规模/变体已验证"
+  },
+  {
+    "mode": "confusion",
+    "canonical_id": "ext-confusion",
+    "name": "混淆矩阵",
+    "category": "模型评估",
+    "inputs": "真实标签、预测标签、完整类别顺序",
+    "rule": "行真实列预测；计数与归一化分母明确；零样本类别单独标记",
+    "variants": [
+      "原始计数",
+      "行百分比"
+    ],
+    "choice": "同时看计数和归一化；零样本行不得伪装为正确率0%",
+    "sources": [
+      "sklearn"
+    ],
+    "example": "assets/scientific-examples/confusion.json",
+    "validated": "合成示例已计算、导出并目视检查；不表示所有数据规模/变体已验证"
+  },
+  {
+    "mode": "contour",
+    "canonical_id": "ext-contour",
+    "name": "等高线图",
+    "category": "场与高维",
+    "inputs": "递增X/Y网格、Z矩阵、坐标及Z单位",
+    "rule": "矩阵形状匹配网格；不能将绘图插值冒充额外测量；共享等值级别用于跨图比较",
+    "variants": [
+      "等值线",
+      "填色等值面"
+    ],
+    "choice": "优先等高线表达空间量；仅在深度信息必要时改用3D表面",
+    "sources": [
+      "matplotlib"
+    ],
+    "example": "assets/scientific-examples/contour.json",
+    "validated": "合成示例已计算、导出并目视检查；不表示所有数据规模/变体已验证"
+  },
+  {
+    "mode": "quiver",
+    "canonical_id": "ext-quiver",
+    "name": "矢量场图",
+    "category": "场与高维",
+    "inputs": "X/Y网格、U/V分量、坐标与矢量尺度",
+    "rule": "角度在数据坐标中定义；固定箭长比例、单位标尺与等比例坐标；不是装饰箭头",
+    "variants": [
+      "方向与大小",
+      "规则网格"
+    ],
+    "choice": "保留等比例坐标轴与矢量标尺；不得仅画装饰性方向箭头",
+    "sources": [
+      "matplotlib"
+    ],
+    "example": "assets/scientific-examples/quiver.json",
+    "validated": "合成示例已计算、导出并目视检查；不表示所有数据规模/变体已验证"
+  },
+  {
+    "mode": "dendrogram",
+    "canonical_id": "ext-dendrogram",
+    "name": "聚类树状图",
+    "category": "场与高维",
+    "inputs": "观测×变量矩阵、标签、标准化约定、距离和链接方法",
+    "rule": "Ward仅用Euclidean；树高为链接距离；尺度影响结构；树不是因果或真实谱系",
+    "variants": [
+      "average",
+      "single",
+      "complete",
+      "Ward"
+    ],
+    "choice": "树高是链接距离；更换尺度或链接方法可能改变树，不当作真实谱系",
+    "sources": [
+      "linkage"
+    ],
+    "example": "assets/scientific-examples/dendrogram.json",
+    "validated": "合成示例已计算、导出并目视检查；不表示所有数据规模/变体已验证"
+  },
+  {
+    "mode": "upset",
+    "canonical_id": "ext-upset",
+    "name": "UpSet集合交集图",
+    "category": "场与高维",
+    "inputs": "集合名称和成员ID、交集定义",
+    "rule": "按互斥成员组合统计；实点属于灰点排除；集合去重且交集合计等于并集；此布局支持2到6集合",
+    "variants": [
+      "互斥交集",
+      "集合大小"
+    ],
+    "choice": "超过少数集合时比韦恩图更容易比较；明确包含交集或互斥交集",
+    "sources": [
+      "upset"
+    ],
+    "example": "assets/scientific-examples/upset.json",
+    "validated": "合成示例已计算、导出并目视检查；不表示所有数据规模/变体已验证"
+  },
+  {
+    "mode": "summary_table",
+    "canonical_id": "ext-summary-table",
+    "name": "科研描述统计三线表",
+    "category": "科研表格",
+    "inputs": "各组原始观测、显式null缺失、单位",
+    "rule": "n和缺失分别计数；SD用ddof=1；四分位用线性插值；没有原始数据不杜撰统计量",
+    "variants": [
+      "均值±SD",
+      "中位数和四分位"
+    ],
+    "choice": "精确汇报数值用表；分布判断应搭配原始点或分布图",
+    "sources": [
+      "numpy-quantile",
+      "scipy"
+    ],
+    "example": "assets/scientific-examples/summary_table.json",
+    "validated": "合成示例已计算、导出并目视检查；不表示所有数据规模/变体已验证"
+  },
+  {
+    "mode": "ablation_table",
+    "canonical_id": "ext-ablation-table",
+    "name": "消融实验表",
+    "category": "科研表格",
+    "inputs": "配置、每次运行指标、划分与随机种子说明、优化方向",
+    "rule": "均值±样本SD来自至少2次真实运行；同一划分可比；最优均值不自动意味着显著提升",
+    "variants": [
+      "多指标",
+      "组件消融"
+    ],
+    "choice": "基线与增量组件写清；重复次数与方向标识，不把均值最优当显著性",
+    "sources": [
+      "numpy-quantile"
+    ],
+    "example": "assets/scientific-examples/ablation_table.json",
+    "validated": "合成示例已计算、导出并目视检查；不表示所有数据规模/变体已验证"
+  },
+  {
+    "mode": "qq",
+    "canonical_id": "ext-normal-probability",
+    "name": "正态概率图",
+    "category": "分布",
+    "inputs": "原始连续样本、理论分布约定",
+    "rule": "当前实现是SciPy正态概率图和Filliben位置；视觉贴线不能证明正态或替代研究设计",
+    "variants": [
+      "正态参考",
+      "诊断残差"
+    ],
+    "choice": "用作诊断而非显著性检验替代；尾部偏离要结合样本量判断",
+    "sources": [
+      "qq"
+    ],
+    "example": "assets/scientific-examples/qq.json",
+    "validated": "合成示例已计算、导出并目视检查；不表示所有数据规模/变体已验证"
+  },
+  {
+    "mode": "volcano",
+    "canonical_id": "ext-volcano",
+    "name": "火山图",
+    "category": "组学",
+    "inputs": "log2FC、p或q字段、校正方法、概率阈值、效应阈值",
+    "rule": "区分p与q；0值要求回查精度或显式约定；不从坐标反推生物意义；本实现不做差异检验",
+    "variants": [
+      "原始p",
+      "调整后q"
+    ],
+    "choice": "标明 p 还是 q、校正方法和效应阈值；输入0值不能悄悄截断",
+    "sources": [
+      "deseq2"
+    ],
+    "example": "assets/scientific-examples/volcano.json",
+    "validated": "合成示例已计算、导出并目视检查；不表示所有数据规模/变体已验证"
+  },
+  {
+    "mode": "manhattan",
+    "canonical_id": "ext-manhattan",
+    "name": "曼哈顿图",
+    "category": "组学",
+    "inputs": "染色体顺序、位置和版本、p或q、阈值依据",
+    "rule": "位置单位与顺序明确；不为所有研究固定同一阈值；0值不能偷偷截断",
+    "variants": [
+      "全基因组",
+      "区域检验"
+    ],
+    "choice": "记录坐标版本、位置单位和多重检验策略；阈值不可对所有任务固定",
+    "sources": [
+      "qqman"
+    ],
+    "example": "assets/scientific-examples/manhattan.json",
+    "validated": "合成示例已计算、导出并目视检查；不表示所有数据规模/变体已验证"
+  },
+  {
+    "mode": "small_multiples",
+    "canonical_id": "ext-smallmultiples",
+    "name": "小倍图",
+    "category": "场与高维",
+    "inputs": "多组递增数值X与对应Y、共用单位",
+    "rule": "各面板共享X/Y范围；不平滑原始趋势；禁止自由缩放制造大小差异",
+    "variants": [
+      "同轴多序列",
+      "最多6面板"
+    ],
+    "choice": "多组轨迹拥挤时拆成共享尺度的小图；禁止每格自由缩放制造差异",
+    "sources": [
+      "matplotlib"
+    ],
+    "example": "assets/scientific-examples/small_multiples.json",
+    "validated": "合成示例已计算、导出并目视检查；不表示所有数据规模/变体已验证"
+  }
+]

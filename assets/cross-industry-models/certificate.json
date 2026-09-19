@@ -1,0 +1,111 @@
+{
+  "catalog_id": "cn-1205",
+  "mode": "certificate",
+  "title": "数据素养培训结业证书",
+  "subtitle": "获证人、课程、机构和日期完整",
+  "template": "publication",
+  "sector": "教育与组织管理",
+  "use_case": "培训、比赛和员工认可中的高频证书",
+  "data_status": "simulated",
+  "assumptions": [
+    "内容和数值为教学模拟",
+    "真实交付前须替换名称、事实、品牌、尺寸和审批信息"
+  ],
+  "metrics": [
+    {
+      "id": "hours",
+      "label": "课程时长",
+      "value": 16,
+      "unit": "学时",
+      "evidence": "模拟输入"
+    },
+    {
+      "id": "certificate",
+      "label": "证书编号",
+      "value": "DL-0917-028",
+      "unit": "",
+      "evidence": "模拟输入"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "b1",
+      "role": "award",
+      "label": "结业证书",
+      "content": "DATA LITERACY PROGRAM",
+      "rect": [
+        0.05,
+        0.73,
+        0.9,
+        0.18
+      ],
+      "order": 1
+    },
+    {
+      "id": "b2",
+      "role": "recipient",
+      "label": "授予",
+      "content": "周岚",
+      "rect": [
+        0.05,
+        0.48,
+        0.43,
+        0.18
+      ],
+      "order": 2
+    },
+    {
+      "id": "b3",
+      "role": "course",
+      "label": "完成课程",
+      "content": "数据分析与可视化基础 · 16 学时",
+      "rect": [
+        0.52,
+        0.48,
+        0.43,
+        0.18
+      ],
+      "order": 3
+    },
+    {
+      "id": "b4",
+      "role": "issuer",
+      "label": "颁发机构",
+      "content": "云桥学习中心",
+      "rect": [
+        0.05,
+        0.12,
+        0.56,
+        0.29
+      ],
+      "order": 4
+    },
+    {
+      "id": "b5",
+      "role": "date",
+      "label": "颁发日期",
+      "content": "2026-09-17",
+      "rect": [
+        0.65,
+        0.12,
+        0.3,
+        0.29
+      ],
+      "order": 5
+    }
+  ],
+  "sheet": {
+    "width": 297,
+    "height": 210,
+    "unit": "mm"
+  },
+  "audience": "学员与用人部门",
+  "primary_action": "验证证书信息",
+  "reading_order": [
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "b5"
+  ]
+}

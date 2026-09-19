@@ -1,0 +1,112 @@
+{
+  "catalog_id": "cn-1130",
+  "mode": "elevation",
+  "title": "社区图书馆入口立面",
+  "subtitle": "洞口、招牌、材料分缝和无障碍入口同图表达",
+  "template": "spatial",
+  "sector": "建筑与家装",
+  "use_case": "建筑与室内设计常用正立面表达",
+  "data_status": "simulated",
+  "assumptions": [
+    "内容和数值为教学模拟",
+    "真实交付前须替换名称、事实、品牌、尺寸和审批信息"
+  ],
+  "metrics": [
+    {
+      "id": "openings",
+      "label": "洞口",
+      "value": 3,
+      "unit": "个",
+      "evidence": "模拟输入"
+    },
+    {
+      "id": "width",
+      "label": "立面宽",
+      "value": 12,
+      "unit": "m",
+      "evidence": "模拟输入"
+    }
+  ],
+  "zones": [
+    {
+      "id": "wall",
+      "label": "主立面",
+      "kind": "facade",
+      "rect": [
+        0.08,
+        0.18,
+        0.84,
+        0.64
+      ]
+    },
+    {
+      "id": "door",
+      "label": "入口门",
+      "kind": "opening",
+      "rect": [
+        0.42,
+        0.18,
+        0.18,
+        0.42
+      ]
+    },
+    {
+      "id": "window1",
+      "label": "阅读窗 A",
+      "kind": "opening",
+      "rect": [
+        0.15,
+        0.3,
+        0.2,
+        0.3
+      ]
+    },
+    {
+      "id": "window2",
+      "label": "阅读窗 B",
+      "kind": "opening",
+      "rect": [
+        0.66,
+        0.3,
+        0.2,
+        0.3
+      ]
+    },
+    {
+      "id": "sign",
+      "label": "图书馆标识",
+      "kind": "signage",
+      "rect": [
+        0.34,
+        0.68,
+        0.32,
+        0.09
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "id": "m1",
+      "zone": "door",
+      "label": "门洞宽度",
+      "value": 1.8,
+      "unit": "m"
+    },
+    {
+      "id": "m2",
+      "zone": "sign",
+      "label": "标识离地",
+      "value": 3.4,
+      "unit": "m"
+    },
+    {
+      "id": "m3",
+      "zone": "wall",
+      "label": "立面总宽",
+      "value": 12.0,
+      "unit": "m"
+    }
+  ],
+  "view": "front",
+  "scale_note": "概念立面；结构、节能和幕墙节点另行设计"
+}

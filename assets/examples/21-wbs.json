@@ -1,0 +1,61 @@
+{
+  "type": "tree",
+  "title": "工作分解结构 · 按交付物拆解",
+  "diagram_name": "工作分解结构",
+  "family": "计划与协作",
+  "subtitle": "父节点范围由子交付物分解；不把分解线当作时间依赖",
+  "eyebrow": "21 / DIAGRAM LIBRARY",
+  "footer": "原创结构范例 · 数据、实体、尺寸与假说均为演示输入；实际任务按用户资料替换",
+  "assumptions": [
+    "原创演示内容，不代表实际业务、研究结论或工程设计"
+  ],
+  "direction": "down",
+  "root": {
+    "id": "project",
+    "label": "试点交付",
+    "children": [
+      {
+        "id": "data",
+        "label": "数据交付",
+        "children": [
+          {
+            "id": "list",
+            "label": "测点清单"
+          },
+          {
+            "id": "dict",
+            "label": "数据字典"
+          }
+        ]
+      },
+      {
+        "id": "app",
+        "label": "应用交付",
+        "children": [
+          {
+            "id": "ui",
+            "label": "业务界面"
+          },
+          {
+            "id": "api",
+            "label": "接口服务"
+          }
+        ]
+      },
+      {
+        "id": "qa",
+        "label": "验证交付",
+        "children": [
+          {
+            "id": "cases",
+            "label": "验证用例"
+          },
+          {
+            "id": "report",
+            "label": "验证报告"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "catalog_id": "cn-1143",
+  "mode": "human-anatomy",
+  "title": "人体呼吸系统科普图",
+  "subtitle": "器官路径与功能说明保持同一阅读方向",
+  "template": "science",
+  "sector": "医疗与健康",
+  "use_case": "医疗教育和公众健康中的高频人体示意",
+  "data_status": "simulated",
+  "assumptions": [
+    "内容和数值为教学模拟",
+    "真实交付前须替换名称、事实、品牌、尺寸和审批信息"
+  ],
+  "metrics": [
+    {
+      "id": "organs",
+      "label": "主要结构",
+      "value": 4,
+      "unit": "个",
+      "evidence": "模拟输入"
+    },
+    {
+      "id": "steps",
+      "label": "气流阶段",
+      "value": 3,
+      "unit": "步",
+      "evidence": "模拟输入"
+    }
+  ],
+  "concepts": [
+    {
+      "id": "sys",
+      "label": "呼吸系统",
+      "kind": "system",
+      "position": [
+        0.5,
+        0.82
+      ],
+      "source": "人体解剖通用知识"
+    },
+    {
+      "id": "nose",
+      "label": "鼻腔",
+      "kind": "organ",
+      "position": [
+        0.22,
+        0.6
+      ],
+      "source": "人体解剖通用知识"
+    },
+    {
+      "id": "trachea",
+      "label": "气管",
+      "kind": "organ",
+      "position": [
+        0.45,
+        0.54
+      ],
+      "source": "人体解剖通用知识"
+    },
+    {
+      "id": "lung",
+      "label": "肺",
+      "kind": "organ",
+      "position": [
+        0.7,
+        0.54
+      ],
+      "source": "人体解剖通用知识"
+    },
+    {
+      "id": "alveoli",
+      "label": "肺泡",
+      "kind": "organ",
+      "position": [
+        0.7,
+        0.24
+      ],
+      "source": "人体解剖通用知识"
+    }
+  ],
+  "relations": [
+    {
+      "id": "r1",
+      "source": "sys",
+      "target": "nose",
+      "relation": "contains"
+    },
+    {
+      "id": "r2",
+      "source": "nose",
+      "target": "trachea",
+      "relation": "airflow"
+    },
+    {
+      "id": "r3",
+      "source": "trachea",
+      "target": "lung",
+      "relation": "airflow"
+    },
+    {
+      "id": "r4",
+      "source": "lung",
+      "target": "alveoli",
+      "relation": "gas-exchange"
+    }
+  ],
+  "claim_scope": "公众健康教育示意，不用于诊断"
+}

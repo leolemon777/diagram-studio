@@ -1,0 +1,81 @@
+{
+  "recipe": "parallel",
+  "title": "一条产线，有不止一种轮廓。",
+  "subtitle": "四个独立维度并排展开；每一条线，始终对应同一条产线。",
+  "unit": "分轴量纲",
+  "rows": [
+    {
+      "id": "line0",
+      "label": "产线 A",
+      "values": {
+        "uptime": 94,
+        "yield": 98.2,
+        "speed": 840,
+        "change": 20
+      }
+    },
+    {
+      "id": "line1",
+      "label": "产线 B",
+      "values": {
+        "uptime": 88,
+        "yield": 97.1,
+        "speed": 785,
+        "change": 38
+      }
+    },
+    {
+      "id": "line2",
+      "label": "产线 C",
+      "values": {
+        "uptime": 91,
+        "yield": 99.1,
+        "speed": 720,
+        "change": 12
+      }
+    },
+    {
+      "id": "line3",
+      "label": "产线 D",
+      "values": {
+        "uptime": 82,
+        "yield": 95.8,
+        "speed": 665,
+        "change": 47
+      }
+    }
+  ],
+  "period": "2026 年 6 月 / 固定轴范围",
+  "synthetic": true,
+  "source": "Apat 自拟数据，仅用于呈现图形效果；不代表现场测量。",
+  "dimensions": [
+    {
+      "id": "uptime",
+      "label": "开机率",
+      "unit": "%",
+      "min": 70,
+      "max": 100
+    },
+    {
+      "id": "yield",
+      "label": "合格率",
+      "unit": "%",
+      "min": 90,
+      "max": 100
+    },
+    {
+      "id": "speed",
+      "label": "产出速度",
+      "unit": "件 / h",
+      "min": 500,
+      "max": 1000
+    },
+    {
+      "id": "change",
+      "label": "换型时间",
+      "unit": "min",
+      "min": 0,
+      "max": 60
+    }
+  ]
+}

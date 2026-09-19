@@ -1,0 +1,94 @@
+{
+  "mode": "knowledge-card",
+  "title": "现场知识卡 · 轴承温升",
+  "subtitle": "术语、定义、行动和来源在一张卡内闭环",
+  "template": "publication",
+  "data_status": "simulated",
+  "assumptions": [
+    "数据为教学模拟，不代表真实项目现状",
+    "真实交付前须替换数值、名称、品牌规范和审批信息"
+  ],
+  "metrics": [
+    {
+      "id": "fields",
+      "label": "知识字段",
+      "value": 4,
+      "unit": "项",
+      "evidence": "示例输入"
+    },
+    {
+      "id": "actions",
+      "label": "行动建议",
+      "value": 1,
+      "unit": "条",
+      "evidence": "示例输入"
+    }
+  ],
+  "sheet": {
+    "width": 1080,
+    "height": 1350,
+    "unit": "px"
+  },
+  "blocks": [
+    {
+      "id": "b1",
+      "role": "term",
+      "label": "术语",
+      "content": "温升 ΔT",
+      "rect": [
+        0.05,
+        0.64,
+        0.9,
+        0.28
+      ],
+      "order": 1
+    },
+    {
+      "id": "b2",
+      "role": "definition",
+      "label": "定义",
+      "content": "轴承温度减去同一时刻环境温度",
+      "rect": [
+        0.05,
+        0.36,
+        0.43,
+        0.22
+      ],
+      "order": 2
+    },
+    {
+      "id": "b3",
+      "role": "action",
+      "label": "行动",
+      "content": "连续上升先核对负载、润滑与对中",
+      "rect": [
+        0.52,
+        0.36,
+        0.43,
+        0.22
+      ],
+      "order": 3
+    },
+    {
+      "id": "b4",
+      "role": "source",
+      "label": "来源",
+      "content": "设备手册 + 本地报警规则 v3",
+      "rect": [
+        0.05,
+        0.07,
+        0.9,
+        0.22
+      ],
+      "order": 4
+    }
+  ],
+  "reading_order": [
+    "b1",
+    "b2",
+    "b3",
+    "b4"
+  ],
+  "audience": "设备、生产与管理协同团队",
+  "primary_action": "确认责任、数据来源与下一步行动"
+}

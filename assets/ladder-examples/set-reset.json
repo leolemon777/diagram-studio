@@ -1,0 +1,124 @@
+{
+  "title": "置位与复位 · 显式后写入优先",
+  "scope": "明确扫描顺序 · 输入快照与内部状态分开",
+  "data_status": "假设教学示例",
+  "semantics": "sequential_boolean_scan",
+  "write_policy": "ordered_last_write",
+  "variables": [
+    {
+      "id": "SetRequest",
+      "label": "置位请求",
+      "role": "input",
+      "source": "假设教学信号，不对应现场地址"
+    },
+    {
+      "id": "ResetRequest",
+      "label": "复位请求",
+      "role": "input",
+      "source": "假设教学信号，不对应现场地址"
+    },
+    {
+      "id": "Latch",
+      "label": "锁存记忆",
+      "role": "memory",
+      "source": "假设教学信号，不对应现场地址",
+      "initial": false
+    },
+    {
+      "id": "Lamp",
+      "label": "锁存指示",
+      "role": "output",
+      "source": "假设教学信号，不对应现场地址",
+      "initial": false
+    }
+  ],
+  "rungs": [
+    {
+      "id": "R1",
+      "label": "条件为真时置位，否则保持",
+      "logic": {
+        "id": "c_set",
+        "kind": "contact",
+        "var": "SetRequest",
+        "sense": "true"
+      },
+      "coil": {
+        "id": "R1_coil",
+        "kind": "set",
+        "var": "Latch"
+      }
+    },
+    {
+      "id": "R2",
+      "label": "条件为真时复位；本例排在置位之后",
+      "logic": {
+        "id": "c_reset",
+        "kind": "contact",
+        "var": "ResetRequest",
+        "sense": "true"
+      },
+      "coil": {
+        "id": "R2_coil",
+        "kind": "reset",
+        "var": "Latch"
+      }
+    },
+    {
+      "id": "R3",
+      "label": "读取本扫描最终锁存值",
+      "logic": {
+        "id": "c_out",
+        "kind": "contact",
+        "var": "Latch",
+        "sense": "true"
+      },
+      "coil": {
+        "id": "R3_coil",
+        "kind": "assign",
+        "var": "Lamp"
+      }
+    }
+  ],
+  "scans": [
+    {
+      "id": "S1",
+      "label": "待机",
+      "inputs": {
+        "SetRequest": false,
+        "ResetRequest": false
+      }
+    },
+    {
+      "id": "S2",
+      "label": "置位",
+      "inputs": {
+        "SetRequest": true,
+        "ResetRequest": false
+      }
+    },
+    {
+      "id": "S3",
+      "label": "无请求仍保持",
+      "inputs": {
+        "SetRequest": false,
+        "ResetRequest": false
+      }
+    },
+    {
+      "id": "S4",
+      "label": "置复位同真，本顺序复位胜出",
+      "inputs": {
+        "SetRequest": true,
+        "ResetRequest": true
+      }
+    },
+    {
+      "id": "S5",
+      "label": "无请求仍为零",
+      "inputs": {
+        "SetRequest": false,
+        "ResetRequest": false
+      }
+    }
+  ]
+}

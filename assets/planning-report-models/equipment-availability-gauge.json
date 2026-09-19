@@ -1,0 +1,22 @@
+{
+  "id": "equipment-availability-gauge",
+  "mode": "gauge",
+  "title": "关键设备完好率仪表",
+  "subtitle": "刻度、阈值、目标与方向均由输入显式给出",
+  "data_status": "simulated",
+  "metric": {
+    "label": "关键设备完好率",
+    "unit": "%",
+    "min": 90,
+    "max": 100,
+    "value": 96.4,
+    "target": 97,
+    "direction": "higher-better"
+  },
+  "thresholds": [
+    {"label": "需处置", "min": 90, "max": 94, "color": "red", "basis": "模拟管理阈值 A-01"},
+    {"label": "关注", "min": 94, "max": 97, "color": "amber", "basis": "模拟管理阈值 A-01"},
+    {"label": "达标", "min": 97, "max": 100, "color": "green", "basis": "模拟目标值 T-01"}
+  ],
+  "assumptions": ["区间和目标仅用于演示", "现场阈值必须来自已批准的指标定义"]
+}

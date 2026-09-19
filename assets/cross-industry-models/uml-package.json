@@ -1,0 +1,138 @@
+{
+  "catalog_id": "ext-uml-package",
+  "mode": "uml-package",
+  "title": "电商平台 UML 包图",
+  "subtitle": "按业务域分包并标明依赖方向",
+  "template": "graph",
+  "sector": "软件与数字产品",
+  "use_case": "大型软件与数据项目常用的分层依赖视图",
+  "data_status": "simulated",
+  "assumptions": [
+    "内容和数值为教学模拟",
+    "真实交付前须替换名称、事实、品牌、尺寸和审批信息"
+  ],
+  "metrics": [
+    {
+      "id": "packages",
+      "label": "包",
+      "value": 6,
+      "unit": "个",
+      "evidence": "模拟输入"
+    },
+    {
+      "id": "dependencies",
+      "label": "依赖",
+      "value": 6,
+      "unit": "条",
+      "evidence": "模拟输入"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "ui",
+      "label": "presentation",
+      "kind": "package",
+      "position": [
+        0.18,
+        0.66
+      ]
+    },
+    {
+      "id": "order",
+      "label": "order",
+      "kind": "package",
+      "position": [
+        0.43,
+        0.66
+      ]
+    },
+    {
+      "id": "catalog",
+      "label": "catalog",
+      "kind": "package",
+      "position": [
+        0.68,
+        0.66
+      ]
+    },
+    {
+      "id": "pay",
+      "label": "payment",
+      "kind": "package",
+      "position": [
+        0.43,
+        0.3
+      ]
+    },
+    {
+      "id": "infra",
+      "label": "infrastructure",
+      "kind": "package",
+      "position": [
+        0.68,
+        0.3
+      ]
+    },
+    {
+      "id": "core",
+      "label": "domain-core",
+      "kind": "package",
+      "position": [
+        0.18,
+        0.3
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "p1",
+      "source": "ui",
+      "target": "order",
+      "relation": "dependency",
+      "label": "uses"
+    },
+    {
+      "id": "p2",
+      "source": "ui",
+      "target": "catalog",
+      "relation": "dependency",
+      "label": "uses"
+    },
+    {
+      "id": "p3",
+      "source": "order",
+      "target": "pay",
+      "relation": "dependency",
+      "label": "charges",
+      "label_position": [
+        0.50,
+        0.52
+      ]
+    },
+    {
+      "id": "p4",
+      "source": "order",
+      "target": "core",
+      "relation": "containment",
+      "label": "domain"
+    },
+    {
+      "id": "p5",
+      "source": "catalog",
+      "target": "core",
+      "relation": "containment",
+      "label": "domain",
+      "label_position": [
+        0.52,
+        0.41
+      ]
+    },
+    {
+      "id": "p6",
+      "source": "pay",
+      "target": "infra",
+      "relation": "dependency",
+      "label": "adapter"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "title": "双泵失效概率：重复事件不能重复计数",
+  "scope": "假设工况：任一泵可满足需求；两台同时不可用时停止供水；不考虑切换时序",
+  "data_status": "假设模型 · 非现场故障结论",
+  "top": "T",
+  "events": [
+    {
+      "label": "两台供水泵均不可用",
+      "id": "T",
+      "kind": "AND",
+      "inputs": [
+        "L",
+        "R"
+      ]
+    },
+    {
+      "label": "A泵不可用",
+      "id": "L",
+      "kind": "OR",
+      "inputs": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "label": "B泵不可用",
+      "id": "R",
+      "kind": "OR",
+      "inputs": [
+        "B",
+        "C"
+      ]
+    },
+    {
+      "label": "A泵独立故障",
+      "id": "A",
+      "kind": "basic",
+      "probability": 0.1,
+      "probability_source": "synthetic value"
+    },
+    {
+      "label": "B泵独立故障",
+      "id": "B",
+      "kind": "basic",
+      "probability": 0.2,
+      "probability_source": "synthetic value"
+    },
+    {
+      "label": "共同供电丢失",
+      "id": "C",
+      "kind": "basic",
+      "probability": 0.3,
+      "probability_source": "synthetic value"
+    }
+  ],
+  "probability_model": "independent_bernoulli",
+  "probability_basis": "单次假设任务内失效概率；A=0.1，B=0.2，C=0.3",
+  "independence_justification": "教学假设：A、B、C三个基本事件独立；C在图中重复但仍是同一变量"
+}

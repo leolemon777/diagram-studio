@@ -1,0 +1,309 @@
+{
+  "title": "采购协作 · 审批与回执",
+  "pools": [
+    {
+      "id": "Company",
+      "name": "采购方",
+      "x": 60,
+      "y": 100,
+      "w": 1200,
+      "h": 320
+    },
+    {
+      "id": "Supplier",
+      "name": "供应商",
+      "x": 60,
+      "y": 480,
+      "w": 1200,
+      "h": 210
+    }
+  ],
+  "nodes": [
+    {
+      "id": "Start",
+      "pool": "Company",
+      "kind": "startEvent",
+      "name": "发起",
+      "x": 120,
+      "y": 230
+    },
+    {
+      "id": "Submit",
+      "pool": "Company",
+      "kind": "userTask",
+      "name": "提交采购申请",
+      "x": 210,
+      "y": 208
+    },
+    {
+      "id": "Review",
+      "pool": "Company",
+      "kind": "userTask",
+      "name": "审核申请",
+      "x": 390,
+      "y": 208
+    },
+    {
+      "id": "Decision",
+      "pool": "Company",
+      "kind": "exclusiveGateway",
+      "name": "审核结果",
+      "x": 585,
+      "y": 223,
+      "label_box": [
+        555,
+        188,
+        110,
+        24
+      ]
+    },
+    {
+      "id": "Revise",
+      "pool": "Company",
+      "kind": "userTask",
+      "name": "修改申请",
+      "x": 400,
+      "y": 325,
+      "h": 60
+    },
+    {
+      "id": "Send",
+      "pool": "Company",
+      "kind": "sendTask",
+      "name": "发送订单",
+      "x": 730,
+      "y": 208
+    },
+    {
+      "id": "Receipt",
+      "pool": "Company",
+      "kind": "receiveTask",
+      "name": "等待回执",
+      "x": 930,
+      "y": 208
+    },
+    {
+      "id": "End",
+      "pool": "Company",
+      "kind": "endEvent",
+      "name": "已确认",
+      "x": 1120,
+      "y": 230
+    },
+    {
+      "id": "VendorStart",
+      "pool": "Supplier",
+      "kind": "startEvent",
+      "name": "开始接单",
+      "x": 120,
+      "y": 550
+    },
+    {
+      "id": "Order",
+      "pool": "Supplier",
+      "kind": "receiveTask",
+      "name": "接收订单",
+      "x": 255,
+      "y": 528
+    },
+    {
+      "id": "Fulfil",
+      "pool": "Supplier",
+      "kind": "task",
+      "name": "确认供货信息",
+      "x": 500,
+      "y": 528
+    },
+    {
+      "id": "Reply",
+      "pool": "Supplier",
+      "kind": "sendTask",
+      "name": "发送回执",
+      "x": 760,
+      "y": 528
+    },
+    {
+      "id": "VendorEnd",
+      "pool": "Supplier",
+      "kind": "endEvent",
+      "name": "完成",
+      "x": 1120,
+      "y": 550
+    }
+  ],
+  "flows": [
+    {
+      "id": "F1",
+      "from": "Start",
+      "to": "Submit",
+      "name": ""
+    },
+    {
+      "id": "F2",
+      "from": "Submit",
+      "to": "Review",
+      "name": ""
+    },
+    {
+      "id": "F3",
+      "from": "Review",
+      "to": "Decision",
+      "name": ""
+    },
+    {
+      "id": "F4",
+      "from": "Decision",
+      "to": "Send",
+      "name": "通过"
+    },
+    {
+      "id": "F5",
+      "from": "Decision",
+      "to": "Revise",
+      "name": "退回",
+      "points": [
+        [
+          610,
+          273
+        ],
+        [
+          610,
+          355
+        ],
+        [
+          520,
+          355
+        ]
+      ],
+      "label_box": [
+        570,
+        305,
+        40,
+        20
+      ]
+    },
+    {
+      "id": "F6",
+      "from": "Revise",
+      "to": "Submit",
+      "name": "",
+      "points": [
+        [
+          400,
+          355
+        ],
+        [
+          270,
+          355
+        ],
+        [
+          270,
+          288
+        ]
+      ]
+    },
+    {
+      "id": "F7",
+      "from": "Send",
+      "to": "Receipt",
+      "name": ""
+    },
+    {
+      "id": "F8",
+      "from": "Receipt",
+      "to": "End",
+      "name": ""
+    },
+    {
+      "id": "V1",
+      "from": "VendorStart",
+      "to": "Order",
+      "name": ""
+    },
+    {
+      "id": "V2",
+      "from": "Order",
+      "to": "Fulfil",
+      "name": ""
+    },
+    {
+      "id": "V3",
+      "from": "Fulfil",
+      "to": "Reply",
+      "name": ""
+    },
+    {
+      "id": "V4",
+      "from": "Reply",
+      "to": "VendorEnd",
+      "name": ""
+    }
+  ],
+  "messages": [
+    {
+      "id": "M1",
+      "from": "Send",
+      "to": "Order",
+      "name": "订单",
+      "points": [
+        [
+          790,
+          288
+        ],
+        [
+          790,
+          445
+        ],
+        [
+          315,
+          445
+        ],
+        [
+          315,
+          528
+        ]
+      ],
+      "label_box": [
+        540,
+        427,
+        45,
+        20
+      ]
+    },
+    {
+      "id": "M2",
+      "from": "Reply",
+      "to": "Receipt",
+      "name": "回执",
+      "points": [
+        [
+          820,
+          528
+        ],
+        [
+          820,
+          459
+        ],
+        [
+          990,
+          459
+        ],
+        [
+          990,
+          288
+        ]
+      ],
+      "label_box": [
+        1000,
+        425,
+        45,
+        20
+      ]
+    }
+  ],
+  "assumptions": [
+    "原创演示；非实际采购事实",
+    "审批仅示范人工条件标签，不包含执行引擎表达式",
+    "采购方与供应商各一个池，本例未展开内部角色泳道"
+  ]
+}

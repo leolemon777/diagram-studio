@@ -1,0 +1,17 @@
+{
+  "id": "startup-checklist",
+  "mode": "checklist",
+  "title": "循环水泵开机前检查清单",
+  "subtitle": "每一项使用可观察准则和显式结果；模拟记录",
+  "data_status": "simulated",
+  "rows": [
+    {"id": "c1", "item": "联轴器防护罩", "criterion": "固定螺栓齐全，无松动", "result": "passed", "owner": "张工", "evidence": "照片 P-01"},
+    {"id": "c2", "item": "润滑油位", "criterion": "视窗油位处于 1/2–2/3", "result": "passed", "owner": "张工", "evidence": "油位 58%"},
+    {"id": "c3", "item": "入口阀门", "criterion": "阀位指示为全开", "result": "passed", "owner": "李工", "evidence": "阀位 100%"},
+    {"id": "c4", "item": "出口压力表", "criterion": "零位偏差不超过 0.02 MPa", "result": "failed", "owner": "李工", "evidence": "零位 +0.04 MPa"},
+    {"id": "c5", "item": "电机绝缘", "criterion": "500 V 兆欧表读数不低于 20 MΩ", "result": "pending", "owner": "王工", "evidence": ""},
+    {"id": "c6", "item": "备用旁路", "criterion": "本次工况无需启用并已挂牌", "result": "not-applicable", "owner": "王工", "evidence": "旁路停用牌 B-03"}
+  ],
+  "assumptions": ["结果和证据均为演示数据", "不通过项必须处置后才能开机"],
+  "footer": "模拟记录 · 结果不由文字是否填写推断 · 验收准则可观察"
+}

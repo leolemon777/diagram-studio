@@ -1,0 +1,168 @@
+{
+  "schema": "pid-topology-1",
+  "title": "隔离阀与旁路：显式分流和汇流",
+  "assumptions": [
+    "假设管网；两条路径表示连接存在，不表示阀门开启或介质实际流动。",
+    "主路与旁路阀门状态均未知；未给压力、管径、介质和保护设定。"
+  ],
+  "items": [
+    {
+      "id": "tank",
+      "tag": "TK-301",
+      "kind": "tank",
+      "label": "供给槽",
+      "ports": [
+        {
+          "id": "tank_out",
+          "domain": "process",
+          "direction": "out"
+        }
+      ]
+    },
+    {
+      "id": "split",
+      "tag": "J-301",
+      "kind": "junction",
+      "label": "分流节点",
+      "ports": [
+        {
+          "id": "split_in",
+          "domain": "process",
+          "direction": "in"
+        },
+        {
+          "id": "split_main",
+          "domain": "process",
+          "direction": "out"
+        },
+        {
+          "id": "split_bypass",
+          "domain": "process",
+          "direction": "out"
+        }
+      ]
+    },
+    {
+      "id": "main",
+      "tag": "HV-301",
+      "kind": "valve",
+      "label": "主路阀·状态未给",
+      "ports": [
+        {
+          "id": "main_in",
+          "domain": "process",
+          "direction": "in"
+        },
+        {
+          "id": "main_out",
+          "domain": "process",
+          "direction": "out"
+        }
+      ]
+    },
+    {
+      "id": "bypass",
+      "tag": "HV-302",
+      "kind": "valve",
+      "label": "旁路阀·状态未给",
+      "ports": [
+        {
+          "id": "bypass_in",
+          "domain": "process",
+          "direction": "in"
+        },
+        {
+          "id": "bypass_out",
+          "domain": "process",
+          "direction": "out"
+        }
+      ]
+    },
+    {
+      "id": "merge",
+      "tag": "J-302",
+      "kind": "junction",
+      "label": "汇流节点",
+      "ports": [
+        {
+          "id": "merge_main",
+          "domain": "process",
+          "direction": "in"
+        },
+        {
+          "id": "merge_bypass",
+          "domain": "process",
+          "direction": "in"
+        },
+        {
+          "id": "merge_out",
+          "domain": "process",
+          "direction": "out"
+        }
+      ]
+    },
+    {
+      "id": "sink",
+      "tag": "B-301",
+      "kind": "boundary",
+      "label": "下游边界",
+      "ports": [
+        {
+          "id": "sink_in",
+          "domain": "process",
+          "direction": "in"
+        }
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "C1",
+      "from": "tank_out",
+      "to": "split_in",
+      "domain": "process",
+      "label": "供给",
+      "flow": "forward"
+    },
+    {
+      "id": "C2",
+      "from": "split_main",
+      "to": "main_in",
+      "domain": "process",
+      "label": "主路入口",
+      "flow": "forward"
+    },
+    {
+      "id": "C3",
+      "from": "main_out",
+      "to": "merge_main",
+      "domain": "process",
+      "label": "主路出口",
+      "flow": "forward"
+    },
+    {
+      "id": "C4",
+      "from": "split_bypass",
+      "to": "bypass_in",
+      "domain": "process",
+      "label": "旁路入口",
+      "flow": "forward"
+    },
+    {
+      "id": "C5",
+      "from": "bypass_out",
+      "to": "merge_bypass",
+      "domain": "process",
+      "label": "旁路出口",
+      "flow": "forward"
+    },
+    {
+      "id": "C6",
+      "from": "merge_out",
+      "to": "sink_in",
+      "domain": "process",
+      "label": "下游",
+      "flow": "forward"
+    }
+  ]
+}

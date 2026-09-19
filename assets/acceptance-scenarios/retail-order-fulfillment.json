@@ -1,0 +1,22 @@
+{
+  "type": "graph",
+  "title": "零售订单履约状态流",
+  "subtitle": "模拟场景 · 从下单、库存分配、出库配送到签收的状态与异常回流",
+  "eyebrow": "ACCEPTANCE / 零售物流",
+  "footer": "模拟流程 · 库存、时效和异常处理规则需以实际系统口径为准",
+  "assumptions": ["订单状态与数据单位为验收用模拟数据"],
+  "nodes": [
+    {"id":"order","label":"订单已提交","detail":"订单号与商品明细","x":70,"y":300,"w":210,"h":80},
+    {"id":"allocate","label":"库存分配","detail":"可用库存与仓库","x":340,"y":300,"w":210,"h":80},
+    {"id":"ship","label":"拣货出库","detail":"包裹与物流单","x":610,"y":300,"w":210,"h":80},
+    {"id":"deliver","label":"配送与签收","detail":"时效与签收状态","x":880,"y":300,"w":210,"h":80},
+    {"id":"exception","label":"缺货或地址异常","detail":"人工处理后回流","x":340,"y":500,"w":250,"h":80,"tone":"amber"}
+  ],
+  "edges": [
+    {"from":"order","to":"allocate","label":"订单行","tone":"accent"},
+    {"from":"allocate","to":"ship","label":"库存锁定","tone":"teal"},
+    {"from":"ship","to":"deliver","label":"运单状态","tone":"teal"},
+    {"from":"allocate","to":"exception","label":"不可履约","tone":"amber","source_port":"bottom","target_port":"top"},
+    {"from":"exception","to":"order","label":"变更或取消","tone":"amber","dashed":true,"source_port":"left","target_port":"bottom"}
+  ]
+}

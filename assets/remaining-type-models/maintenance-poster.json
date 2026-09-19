@@ -1,0 +1,94 @@
+{
+  "mode": "poster",
+  "title": "安全点检海报",
+  "subtitle": "远看主题、近看证据、最后落到单一行动",
+  "template": "publication",
+  "data_status": "simulated",
+  "assumptions": [
+    "数据为教学模拟，不代表真实项目现状",
+    "真实交付前须替换数值、名称、品牌规范和审批信息"
+  ],
+  "metrics": [
+    {
+      "id": "signals",
+      "label": "关键信号",
+      "value": 3,
+      "unit": "类",
+      "evidence": "示例输入"
+    },
+    {
+      "id": "actions",
+      "label": "主行动",
+      "value": 1,
+      "unit": "个",
+      "evidence": "示例输入"
+    }
+  ],
+  "sheet": {
+    "width": 594,
+    "height": 841,
+    "unit": "mm"
+  },
+  "blocks": [
+    {
+      "id": "b1",
+      "role": "headline",
+      "label": "主标题",
+      "content": "停机前，先看这三个信号",
+      "rect": [
+        0.05,
+        0.64,
+        0.9,
+        0.28
+      ],
+      "order": 1
+    },
+    {
+      "id": "b2",
+      "role": "visual",
+      "label": "视觉主体",
+      "content": "振动｜温度｜电流",
+      "rect": [
+        0.05,
+        0.36,
+        0.43,
+        0.22
+      ],
+      "order": 2
+    },
+    {
+      "id": "b3",
+      "role": "evidence",
+      "label": "判定依据",
+      "content": "越过趋势线先复核，再升级",
+      "rect": [
+        0.52,
+        0.36,
+        0.43,
+        0.22
+      ],
+      "order": 3
+    },
+    {
+      "id": "b4",
+      "role": "action",
+      "label": "行动",
+      "content": "异常即拍照并提交工单",
+      "rect": [
+        0.05,
+        0.07,
+        0.9,
+        0.22
+      ],
+      "order": 4
+    }
+  ],
+  "reading_order": [
+    "b1",
+    "b2",
+    "b3",
+    "b4"
+  ],
+  "audience": "设备、生产与管理协同团队",
+  "primary_action": "确认责任、数据来源与下一步行动"
+}

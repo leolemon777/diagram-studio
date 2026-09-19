@@ -1,0 +1,87 @@
+{
+  "mode": "magazine",
+  "title": "可靠性季刊 · 秋季号",
+  "subtitle": "刊名、主专题、栏目和期号形成杂志封面层级",
+  "template": "publication",
+  "data_status": "simulated",
+  "assumptions": [
+    "数据为教学模拟，不代表真实项目现状",
+    "真实交付前须替换数值、名称、品牌规范和审批信息"
+  ],
+  "metrics": [
+    {
+      "id": "features",
+      "label": "栏目",
+      "value": 4,
+      "unit": "个",
+      "evidence": "示例输入"
+    }
+  ],
+  "sheet": {
+    "width": 210,
+    "height": 285,
+    "unit": "mm"
+  },
+  "blocks": [
+    {
+      "id": "b1",
+      "role": "masthead",
+      "label": "刊名",
+      "content": "RELIABILITY / 可靠性季刊",
+      "rect": [
+        0.05,
+        0.64,
+        0.9,
+        0.28
+      ],
+      "order": 1
+    },
+    {
+      "id": "b2",
+      "role": "lead",
+      "label": "封面专题",
+      "content": "停机之前：如何读懂振动趋势",
+      "rect": [
+        0.05,
+        0.36,
+        0.43,
+        0.22
+      ],
+      "order": 2
+    },
+    {
+      "id": "b3",
+      "role": "features",
+      "label": "本期栏目",
+      "content": "现场｜数据｜人物｜方法",
+      "rect": [
+        0.52,
+        0.36,
+        0.43,
+        0.22
+      ],
+      "order": 3
+    },
+    {
+      "id": "b4",
+      "role": "issue",
+      "label": "期号",
+      "content": "2026 AUTUMN · NO.04",
+      "rect": [
+        0.05,
+        0.07,
+        0.9,
+        0.22
+      ],
+      "order": 4
+    }
+  ],
+  "reading_order": [
+    "b1",
+    "b2",
+    "b3",
+    "b4"
+  ],
+  "audience": "设备、生产与管理协同团队",
+  "primary_action": "确认责任、数据来源与下一步行动"
+}

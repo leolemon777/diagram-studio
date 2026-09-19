@@ -1,0 +1,39 @@
+{
+  "type": "plot",
+  "title": "分组柱状图 · 同类指标的并列比较",
+  "diagram_name": "分组柱状图",
+  "family": "数据图表",
+  "subtitle": "各系列共享零基线和相同量纲",
+  "eyebrow": "44 / DIAGRAM LIBRARY",
+  "footer": "原创结构范例 · 数据、实体、尺寸与假说均为演示输入；实际任务按用户资料替换",
+  "assumptions": [
+    "原创演示内容，不代表实际业务、研究结论或工程设计"
+  ],
+  "mode": "grouped",
+  "categories": [
+    "一组",
+    "二组",
+    "三组",
+    "四组"
+  ],
+  "series": [
+    {
+      "label": "期间 A",
+      "values": [
+        22,
+        35,
+        28,
+        42
+      ]
+    },
+    {
+      "label": "期间 B",
+      "values": [
+        28,
+        31,
+        37,
+        46
+      ]
+    }
+  ]
+}

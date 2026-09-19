@@ -1,0 +1,28 @@
+{
+  "id": "reliability-strategy-canvas",
+  "mode": "strategy-canvas",
+  "title": "关键设备可靠性策略画布",
+  "subtitle": "证据、选择、放弃、行动和衡量形成可追踪链路",
+  "data_status": "simulated",
+  "evidence": [
+    {"id": "E1", "finding": "三类泵贡献 67% 非计划停机", "source": "模拟停机记录 2026-H1"},
+    {"id": "E2", "finding": "低风险设备预防维修过度", "source": "模拟工时分析 A-02"},
+    {"id": "E3", "finding": "振动数据覆盖率仅 58%", "source": "模拟点检审计 A-03"}
+  ],
+  "choices": [
+    {"id": "C1", "statement": "优先治理三类关键泵", "give_up": "暂不平均投入所有设备", "evidence_ids": ["E1"]},
+    {"id": "C2", "statement": "低风险设备改为状态触发", "give_up": "停止固定频次过度维护", "evidence_ids": ["E2"]},
+    {"id": "C3", "statement": "先补齐关键测点数据", "give_up": "暂缓高级算法采购", "evidence_ids": ["E3"]}
+  ],
+  "actions": [
+    {"id": "A1", "label": "完成关键泵失效模式复核", "owner": "可靠性组", "choice_id": "C1"},
+    {"id": "A2", "label": "试点状态触发工单", "owner": "维修计划组", "choice_id": "C2"},
+    {"id": "A3", "label": "补装 12 个振动测点", "owner": "电仪组", "choice_id": "C3"}
+  ],
+  "metrics": [
+    {"id": "M1", "label": "关键泵非计划停机", "unit": "h/月", "baseline": 31, "target": 18, "action_id": "A1"},
+    {"id": "M2", "label": "低风险计划工时", "unit": "h/月", "baseline": 96, "target": 68, "action_id": "A2"},
+    {"id": "M3", "label": "振动数据覆盖率", "unit": "%", "baseline": 58, "target": 90, "action_id": "A3"}
+  ],
+  "assumptions": ["数值为模拟策略讨论数据", "目标需经业务责任人批准"]
+}

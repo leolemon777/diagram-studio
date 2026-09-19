@@ -1,0 +1,49 @@
+{
+  "title": "维修准备与并行作业：假设工期",
+  "unit": "小时",
+  "mode": "deterministic",
+  "assumptions": [
+    "教学工期；不含工作日历和资源冲突。"
+  ],
+  "tasks": [
+    {
+      "id": "A",
+      "label": "准备",
+      "predecessors": [],
+      "duration": 2
+    },
+    {
+      "id": "B",
+      "label": "机械作业",
+      "predecessors": [
+        "A"
+      ],
+      "duration": 4
+    },
+    {
+      "id": "C",
+      "label": "电气作业",
+      "predecessors": [
+        "A"
+      ],
+      "duration": 4
+    },
+    {
+      "id": "D",
+      "label": "联合检查",
+      "predecessors": [
+        "B",
+        "C"
+      ],
+      "duration": 1
+    },
+    {
+      "id": "E",
+      "label": "资料整理",
+      "predecessors": [
+        "A"
+      ],
+      "duration": 2
+    }
+  ]
+}

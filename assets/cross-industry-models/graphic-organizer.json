@@ -1,0 +1,104 @@
+{
+  "catalog_id": "cn-1242",
+  "mode": "graphic-organizer",
+  "title": "图形组织器选型卡",
+  "subtitle": "根据学习任务选择结构，而不是只选外形",
+  "template": "organizer",
+  "sector": "教育与知识工作",
+  "use_case": "跨学科课堂和工作坊中的通用组织图入口",
+  "data_status": "simulated",
+  "assumptions": [
+    "内容和数值为教学模拟",
+    "真实交付前须替换名称、事实、品牌、尺寸和审批信息"
+  ],
+  "metrics": [
+    {
+      "id": "variants",
+      "label": "推荐结构",
+      "value": 4,
+      "unit": "种",
+      "evidence": "模拟输入"
+    },
+    {
+      "id": "questions",
+      "label": "选择问题",
+      "value": 4,
+      "unit": "项",
+      "evidence": "模拟输入"
+    }
+  ],
+  "slots": [
+    {
+      "id": "goal",
+      "label": "学习目标",
+      "prompt": "要解释、比较、排序还是归纳？",
+      "rect": [
+        0.05,
+        0.62,
+        0.26,
+        0.24
+      ]
+    },
+    {
+      "id": "content",
+      "label": "信息材料",
+      "prompt": "概念、证据、步骤和关系是什么？",
+      "rect": [
+        0.37,
+        0.62,
+        0.26,
+        0.24
+      ]
+    },
+    {
+      "id": "choice",
+      "label": "结构选择",
+      "prompt": "树图、双气泡、序列图或矩阵",
+      "rect": [
+        0.69,
+        0.62,
+        0.26,
+        0.24
+      ]
+    },
+    {
+      "id": "check",
+      "label": "完成检查",
+      "prompt": "是否支持学习者复述和迁移？",
+      "rect": [
+        0.37,
+        0.18,
+        0.26,
+        0.24
+      ]
+    }
+  ],
+  "links": [
+    {
+      "id": "l1",
+      "source": "goal",
+      "target": "content",
+      "relation": "defines"
+    },
+    {
+      "id": "l2",
+      "source": "content",
+      "target": "choice",
+      "relation": "selects"
+    },
+    {
+      "id": "l3",
+      "source": "choice",
+      "target": "check",
+      "relation": "evaluates"
+    }
+  ],
+  "learning_goal": "为学习任务选择合适的组织结构",
+  "completion_rule": "四个问题都有可观察答案",
+  "recommended_variants": [
+    "树图",
+    "双气泡",
+    "序列图",
+    "矩阵"
+  ]
+}

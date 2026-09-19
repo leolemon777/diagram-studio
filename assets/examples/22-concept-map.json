@@ -1,0 +1,99 @@
+{
+  "type": "graph",
+  "title": "概念图 · 用连接词说明关系",
+  "diagram_name": "概念图",
+  "family": "关系与结构",
+  "subtitle": "概念之间用可读命题连接，允许交叉关系",
+  "eyebrow": "22 / DIAGRAM LIBRARY",
+  "footer": "原创结构范例 · 数据、实体、尺寸与假说均为演示输入；实际任务按用户资料替换",
+  "assumptions": [
+    "原创演示内容，不代表实际业务、研究结论或工程设计"
+  ],
+  "nodes": [
+    {
+      "id": "asset",
+      "label": "设备",
+      "x": 120,
+      "y": 240,
+      "w": 240,
+      "h": 88
+    },
+    {
+      "id": "event",
+      "label": "异常事件",
+      "x": 670,
+      "y": 240,
+      "w": 240,
+      "h": 88
+    },
+    {
+      "id": "order",
+      "label": "工单",
+      "x": 1220,
+      "y": 240,
+      "w": 240,
+      "h": 88
+    },
+    {
+      "id": "history",
+      "label": "运行历史",
+      "x": 120,
+      "y": 590,
+      "w": 240,
+      "h": 88
+    },
+    {
+      "id": "evidence",
+      "label": "分析证据",
+      "x": 670,
+      "y": 590,
+      "w": 240,
+      "h": 88
+    },
+    {
+      "id": "action",
+      "label": "改善措施",
+      "x": 1220,
+      "y": 590,
+      "w": 240,
+      "h": 88
+    }
+  ],
+  "edges": [
+    {
+      "from": "asset",
+      "to": "event",
+      "label": "可能产生"
+    },
+    {
+      "from": "event",
+      "to": "order",
+      "label": "触发"
+    },
+    {
+      "from": "asset",
+      "to": "history",
+      "label": "积累"
+    },
+    {
+      "from": "history",
+      "to": "evidence",
+      "label": "用于形成"
+    },
+    {
+      "from": "evidence",
+      "to": "action",
+      "label": "支持提出"
+    },
+    {
+      "from": "order",
+      "to": "action",
+      "label": "记录执行"
+    },
+    {
+      "from": "event",
+      "to": "evidence",
+      "label": "提供线索"
+    }
+  ]
+}

@@ -1,0 +1,202 @@
+{
+  "mode": "chen-erd",
+  "title": "设备维护概念数据模型 · Chen ER",
+  "subtitle": "实体、属性、联系、基数与弱实体分开编码",
+  "data_status": "simulated",
+  "assumptions": [
+    "用于概念设计教学，不等同于物理表结构或DDL"
+  ],
+  "entities": [
+    {
+      "id": "work-order",
+      "label": "工单",
+      "weak": false,
+      "position": [
+        0.18,
+        0.58
+      ]
+    },
+    {
+      "id": "asset",
+      "label": "设备",
+      "weak": false,
+      "position": [
+        0.5,
+        0.78
+      ]
+    },
+    {
+      "id": "technician",
+      "label": "维修员",
+      "weak": false,
+      "position": [
+        0.82,
+        0.58
+      ]
+    },
+    {
+      "id": "work-log",
+      "label": "工时记录",
+      "weak": true,
+      "position": [
+        0.5,
+        0.27
+      ]
+    }
+  ],
+  "attributes": [
+    {
+      "id": "wo-id",
+      "label": "工单号",
+      "entity_id": "work-order",
+      "kind": "simple",
+      "key": true,
+      "position": [
+        0.05,
+        0.72
+      ]
+    },
+    {
+      "id": "wo-state",
+      "label": "状态",
+      "entity_id": "work-order",
+      "kind": "simple",
+      "key": false,
+      "position": [
+        0.06,
+        0.46
+      ]
+    },
+    {
+      "id": "asset-id",
+      "label": "设备编码",
+      "entity_id": "asset",
+      "kind": "simple",
+      "key": true,
+      "position": [
+        0.37,
+        0.91
+      ]
+    },
+    {
+      "id": "asset-tags",
+      "label": "关键标签",
+      "entity_id": "asset",
+      "kind": "multivalued",
+      "key": false,
+      "position": [
+        0.63,
+        0.91
+      ]
+    },
+    {
+      "id": "tech-id",
+      "label": "员工号",
+      "entity_id": "technician",
+      "kind": "simple",
+      "key": true,
+      "position": [
+        0.94,
+        0.72
+      ]
+    },
+    {
+      "id": "tech-level",
+      "label": "技能等级",
+      "entity_id": "technician",
+      "kind": "derived",
+      "key": false,
+      "position": [
+        0.94,
+        0.46
+      ]
+    },
+    {
+      "id": "log-seq",
+      "label": "记录序号",
+      "entity_id": "work-log",
+      "kind": "simple",
+      "key": true,
+      "position": [
+        0.38,
+        0.12
+      ]
+    },
+    {
+      "id": "hours",
+      "label": "工时",
+      "entity_id": "work-log",
+      "kind": "simple",
+      "key": false,
+      "position": [
+        0.62,
+        0.12
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "id": "targets",
+      "label": "针对",
+      "position": [
+        0.33,
+        0.69
+      ],
+      "identifying": false,
+      "roles": [
+        {
+          "entity_id": "work-order",
+          "cardinality": "N",
+          "participation": "total"
+        },
+        {
+          "entity_id": "asset",
+          "cardinality": "1",
+          "participation": "partial"
+        }
+      ]
+    },
+    {
+      "id": "assigned",
+      "label": "指派",
+      "position": [
+        0.67,
+        0.69
+      ],
+      "identifying": false,
+      "roles": [
+        {
+          "entity_id": "work-order",
+          "cardinality": "N",
+          "participation": "partial"
+        },
+        {
+          "entity_id": "technician",
+          "cardinality": "1",
+          "participation": "partial"
+        }
+      ]
+    },
+    {
+      "id": "contains",
+      "label": "包含",
+      "position": [
+        0.5,
+        0.43
+      ],
+      "identifying": true,
+      "roles": [
+        {
+          "entity_id": "work-order",
+          "cardinality": "1",
+          "participation": "partial"
+        },
+        {
+          "entity_id": "work-log",
+          "cardinality": "N",
+          "participation": "total"
+        }
+      ]
+    }
+  ]
+}

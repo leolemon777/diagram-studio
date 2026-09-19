@@ -1,0 +1,242 @@
+{
+  "mode": "evacuation-plan",
+  "title": "设备维护办公室消防疏散示意",
+  "subtitle": "当前位置、两条独立路线、真实出口和现场核对证据逐段保留",
+  "data_status": "simulated",
+  "assumptions": [
+    "仅为方法示例；出口数量、疏散距离、耐火分隔、标志和集合点必须由属地专业人员核对"
+  ],
+  "plan": {
+    "width_m": 20,
+    "height_m": 12
+  },
+  "rooms": [
+    {
+      "id": "open-office",
+      "label": "开放办公区",
+      "zone": "员工区",
+      "rect": [
+        0.4,
+        0.4,
+        12.6,
+        7.2
+      ]
+    },
+    {
+      "id": "meeting",
+      "label": "会议室",
+      "zone": "公共区",
+      "rect": [
+        13.2,
+        0.4,
+        6.4,
+        4.1
+      ]
+    },
+    {
+      "id": "support",
+      "label": "设备与茶水区",
+      "zone": "支持区",
+      "rect": [
+        13.2,
+        4.7,
+        6.4,
+        2.9
+      ]
+    },
+    {
+      "id": "corridor",
+      "label": "主通道",
+      "zone": "通行区",
+      "rect": [
+        0.4,
+        7.8,
+        19.2,
+        3.8
+      ]
+    }
+  ],
+  "compliance_status": "requires-local-review",
+  "nodes": [
+    {
+      "id": "current",
+      "label": "你在这里",
+      "kind": "current",
+      "position": [
+        6.0,
+        3.5
+      ]
+    },
+    {
+      "id": "north-r1",
+      "label": "R1 进入主通道",
+      "kind": "waypoint",
+      "position": [
+        5.2,
+        8.8
+      ],
+      "label_at": [
+        4.45,
+        8.35
+      ]
+    },
+    {
+      "id": "north-r2",
+      "label": "R2 进入主通道",
+      "kind": "waypoint",
+      "position": [
+        6.8,
+        9.2
+      ],
+      "label_at": [
+        7.55,
+        8.65
+      ]
+    },
+    {
+      "id": "west-turn",
+      "label": "西侧转点",
+      "kind": "waypoint",
+      "position": [
+        2.0,
+        9.5
+      ],
+      "label_at": [
+        2.0,
+        10.1
+      ]
+    },
+    {
+      "id": "east-turn",
+      "label": "东侧转点",
+      "kind": "waypoint",
+      "position": [
+        17.5,
+        9.5
+      ],
+      "label_at": [
+        17.5,
+        10.1
+      ]
+    },
+    {
+      "id": "exit-west",
+      "label": "西安全出口",
+      "kind": "exit",
+      "position": [
+        0,
+        9.5
+      ],
+      "label_at": [
+        0.55,
+        8.95
+      ]
+    },
+    {
+      "id": "exit-east",
+      "label": "东安全出口",
+      "kind": "exit",
+      "position": [
+        20,
+        9.5
+      ],
+      "label_at": [
+        19.45,
+        8.95
+      ]
+    },
+    {
+      "id": "assembly",
+      "label": "室外集合点",
+      "kind": "assembly",
+      "position": [
+        10.0,
+        11.5
+      ],
+      "label_at": [
+        10.0,
+        10.95
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "r1a",
+      "source": "current",
+      "target": "north-r1",
+      "route_id": "R1",
+      "length_m": 5.3,
+      "label_at": [
+        5.15,
+        6.1
+      ],
+      "verified_against": "模拟底图 2026-09",
+      "blocked": false
+    },
+    {
+      "id": "r1b",
+      "source": "north-r1",
+      "target": "west-turn",
+      "route_id": "R1",
+      "length_m": 3.9,
+      "label_at": [
+        3.45,
+        9.1
+      ],
+      "verified_against": "模拟底图 2026-09",
+      "blocked": false
+    },
+    {
+      "id": "r1c",
+      "source": "west-turn",
+      "target": "exit-west",
+      "route_id": "R1",
+      "length_m": 2.0,
+      "label_at": [
+        1.0,
+        9.15
+      ],
+      "verified_against": "模拟底图 2026-09",
+      "blocked": false
+    },
+    {
+      "id": "r2a",
+      "source": "current",
+      "target": "north-r2",
+      "route_id": "R2",
+      "length_m": 5.7,
+      "label_at": [
+        6.85,
+        6.0
+      ],
+      "verified_against": "模拟底图 2026-09",
+      "blocked": false
+    },
+    {
+      "id": "r2b",
+      "source": "north-r2",
+      "target": "east-turn",
+      "route_id": "R2",
+      "length_m": 11.3,
+      "label_at": [
+        12.3,
+        9.35
+      ],
+      "verified_against": "模拟底图 2026-09",
+      "blocked": false
+    },
+    {
+      "id": "r2c",
+      "source": "east-turn",
+      "target": "exit-east",
+      "route_id": "R2",
+      "length_m": 2.5,
+      "label_at": [
+        18.75,
+        9.15
+      ],
+      "verified_against": "模拟底图 2026-09",
+      "blocked": false
+    }
+  ]
+}

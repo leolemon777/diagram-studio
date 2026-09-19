@@ -1,0 +1,27 @@
+{
+  "id": "maintenance-decision",
+  "mode": "decision",
+  "title": "关键泵维护策略加权决策",
+  "subtitle": "评分证据与主观权重分开记录；模拟评估",
+  "data_status": "simulated",
+  "score_scale": {"min": 1, "max": 5, "meaning": "1 较差，5 较优"},
+  "criteria": [
+    {"id": "safety", "label": "安全风险", "weight": 0.35},
+    {"id": "availability", "label": "可用率", "weight": 0.30},
+    {"id": "cost", "label": "全周期成本", "weight": 0.20},
+    {"id": "feasibility", "label": "实施可行性", "weight": 0.15}
+  ],
+  "alternatives": [
+    {"id": "predictive", "label": "状态预测维护", "scores": {
+      "safety": {"score": 5, "evidence": "提前识别异常"}, "availability": {"score": 5, "evidence": "按状态安排窗口"},
+      "cost": {"score": 4, "evidence": "需传感投入"}, "feasibility": {"score": 3, "evidence": "需补采集能力"}}},
+    {"id": "periodic", "label": "固定周期维护", "scores": {
+      "safety": {"score": 4, "evidence": "周期覆盖主要风险"}, "availability": {"score": 3, "evidence": "计划停机较固定"},
+      "cost": {"score": 3, "evidence": "可能过度维护"}, "feasibility": {"score": 5, "evidence": "现有流程成熟"}}},
+    {"id": "run-to-failure", "label": "故障后维护", "scores": {
+      "safety": {"score": 1, "evidence": "突发停机风险高"}, "availability": {"score": 1, "evidence": "修复时间不可控"},
+      "cost": {"score": 2, "evidence": "直接投入低但损失高"}, "feasibility": {"score": 4, "evidence": "组织要求最低"}}}
+  ],
+  "assumptions": ["权重与评分用于演示，不代表现场批准结论", "敏感性仅做单项权重正负 10% 扰动"],
+  "footer": "模拟决策 · 权重和为 100% · 评分均附依据 · 含敏感性检查"
+}

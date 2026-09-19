@@ -1,0 +1,79 @@
+{
+  "mode": "quality-seven-tools",
+  "title": "品管七大手法 · 选型总览",
+  "subtitle": "同一缺陷数据集对应七种问题，避免只看图形不看任务",
+  "template": "quality",
+  "data_status": "simulated",
+  "assumptions": [
+    "数据为教学模拟，不代表真实项目现状",
+    "真实交付前须替换数值、名称、品牌规范和审批信息"
+  ],
+  "metrics": [
+    {
+      "id": "tools",
+      "label": "质量工具",
+      "value": 7,
+      "unit": "种",
+      "evidence": "示例输入"
+    },
+    {
+      "id": "records",
+      "label": "样本记录",
+      "value": 120,
+      "unit": "条",
+      "evidence": "示例输入"
+    }
+  ],
+  "tools": [
+    {
+      "id": "check-sheet",
+      "label": "检查表",
+      "question": "缺陷在哪里发生？",
+      "sample_value": 58,
+      "evidence": "同一模拟缺陷台账"
+    },
+    {
+      "id": "pareto",
+      "label": "帕累托图",
+      "question": "少数关键缺陷是什么？",
+      "sample_value": 42,
+      "evidence": "同一模拟缺陷台账"
+    },
+    {
+      "id": "fishbone",
+      "label": "因果图",
+      "question": "可能原因有哪些？",
+      "sample_value": 18,
+      "evidence": "同一模拟缺陷台账"
+    },
+    {
+      "id": "histogram",
+      "label": "直方图",
+      "question": "过程分布是什么形态？",
+      "sample_value": 1.8,
+      "evidence": "同一模拟缺陷台账"
+    },
+    {
+      "id": "control-chart",
+      "label": "控制图",
+      "question": "波动是否稳定？",
+      "sample_value": 2.7,
+      "evidence": "同一模拟缺陷台账"
+    },
+    {
+      "id": "scatter",
+      "label": "散点图",
+      "question": "两个变量是否相关？",
+      "sample_value": 0.72,
+      "evidence": "同一模拟缺陷台账"
+    },
+    {
+      "id": "stratification",
+      "label": "分层法",
+      "question": "差异来自哪一层？",
+      "sample_value": 3,
+      "evidence": "同一模拟缺陷台账"
+    }
+  ],
+  "same_dataset": true
+}

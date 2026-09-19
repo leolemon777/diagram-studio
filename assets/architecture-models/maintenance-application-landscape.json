@@ -1,0 +1,237 @@
+{
+  "data_status": "simulated",
+  "assumptions": [
+    "示例对象、关系和名称均为教学模拟，不代表任何真实企业现状。"
+  ],
+  "mode": "application-landscape",
+  "title": "设备维护企业应用组合与集成责任",
+  "subtitle": "能力映射、同步/事件/批处理集成与数据主责分开表达",
+  "capabilities": [
+    {
+      "id": "cap-plan",
+      "label": "维护计划",
+      "owner": "设备管理部",
+      "position": [
+        0.12,
+        0.86
+      ]
+    },
+    {
+      "id": "cap-execute",
+      "label": "工单执行",
+      "owner": "维修中心",
+      "position": [
+        0.35,
+        0.86
+      ]
+    },
+    {
+      "id": "cap-predict",
+      "label": "状态预测",
+      "owner": "可靠性团队",
+      "position": [
+        0.58,
+        0.86
+      ]
+    },
+    {
+      "id": "cap-finance",
+      "label": "成本核算",
+      "owner": "财务部",
+      "position": [
+        0.81,
+        0.86
+      ]
+    }
+  ],
+  "applications": [
+    {
+      "id": "cmms",
+      "label": "CMMS 维护管理",
+      "owner": "设备管理部",
+      "lifecycle": "invest",
+      "position": [
+        0.16,
+        0.56
+      ]
+    },
+    {
+      "id": "mobile",
+      "label": "移动点检",
+      "owner": "维修中心",
+      "lifecycle": "maintain",
+      "position": [
+        0.36,
+        0.56
+      ]
+    },
+    {
+      "id": "analytics",
+      "label": "状态分析平台",
+      "owner": "可靠性团队",
+      "lifecycle": "invest",
+      "position": [
+        0.59,
+        0.56
+      ]
+    },
+    {
+      "id": "erp",
+      "label": "ERP 财务供应链",
+      "owner": "信息与财务",
+      "lifecycle": "maintain",
+      "position": [
+        0.83,
+        0.56
+      ]
+    },
+    {
+      "id": "hub",
+      "label": "企业集成中枢",
+      "owner": "信息中心",
+      "lifecycle": "migrate",
+      "position": [
+        0.5,
+        0.32
+      ]
+    }
+  ],
+  "capability_links": [
+    {
+      "capability_id": "cap-plan",
+      "application_id": "cmms",
+      "coverage": "primary",
+      "evidence": "能力访谈假设"
+    },
+    {
+      "capability_id": "cap-execute",
+      "application_id": "mobile",
+      "coverage": "primary",
+      "evidence": "能力访谈假设"
+    },
+    {
+      "capability_id": "cap-execute",
+      "application_id": "cmms",
+      "coverage": "supporting",
+      "evidence": "工单闭环假设"
+    },
+    {
+      "capability_id": "cap-predict",
+      "application_id": "analytics",
+      "coverage": "primary",
+      "evidence": "能力访谈假设"
+    },
+    {
+      "capability_id": "cap-finance",
+      "application_id": "erp",
+      "coverage": "primary",
+      "evidence": "成本归集假设"
+    },
+    {
+      "capability_id": "cap-plan",
+      "application_id": "hub",
+      "coverage": "supporting",
+      "evidence": "集成编排假设",
+      "render": false
+    }
+  ],
+  "integrations": [
+    {
+      "id": "i1",
+      "source": "mobile",
+      "target": "cmms",
+      "pattern": "sync",
+      "payload": "点检结果",
+      "evidence": "接口清单假设",
+      "label_offset": [
+        0,
+        0.035
+      ]
+    },
+    {
+      "id": "i2",
+      "source": "analytics",
+      "target": "hub",
+      "pattern": "event",
+      "payload": "设备预警",
+      "evidence": "事件目录假设",
+      "label_offset": [
+        0.04,
+        0
+      ]
+    },
+    {
+      "id": "i3",
+      "source": "hub",
+      "target": "cmms",
+      "pattern": "event",
+      "payload": "预测工单",
+      "evidence": "事件目录假设",
+      "label_offset": [
+        -0.04,
+        0
+      ]
+    },
+    {
+      "id": "i4",
+      "source": "cmms",
+      "target": "erp",
+      "pattern": "batch",
+      "payload": "工时与领料",
+      "evidence": "日结接口假设",
+      "rad": 0.22,
+      "label_offset": [
+        0,
+        -0.15
+      ]
+    },
+    {
+      "id": "i5",
+      "source": "erp",
+      "target": "hub",
+      "pattern": "sync",
+      "payload": "物料可用量",
+      "evidence": "接口清单假设",
+      "label_offset": [
+        0.02,
+        0.02
+      ]
+    }
+  ],
+  "data_domains": [
+    {
+      "id": "d-asset",
+      "label": "设备主数据",
+      "system_of_record": "cmms",
+      "classification": "内部",
+      "position": [
+        0.18,
+        0.12
+      ]
+    },
+    {
+      "id": "d-sensor",
+      "label": "状态时序数据",
+      "system_of_record": "analytics",
+      "classification": "内部",
+      "position": [
+        0.6,
+        0.12
+      ],
+      "label_offset": [
+        0.05,
+        0
+      ]
+    },
+    {
+      "id": "d-cost",
+      "label": "成本与库存",
+      "system_of_record": "erp",
+      "classification": "机密",
+      "position": [
+        0.82,
+        0.12
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "maintenance-cause-hierarchy",
+  "mode": "sunburst",
+  "title": "设备停机原因层级",
+  "subtitle": "模拟停机时长 120 h；角度按子树总量划分",
+  "data_status": "simulated",
+  "root": {"id": "downtime", "label": "停机 120h", "children": [
+    {"id": "mechanical", "label": "机械 48", "children": [
+      {"id": "bearing", "label": "轴承 22", "value": 22},
+      {"id": "seal", "label": "密封 16", "value": 16},
+      {"id": "alignment", "label": "对中 10", "value": 10}]},
+    {"id": "electrical", "label": "电气 36", "children": [
+      {"id": "motor", "label": "电机 18", "value": 18},
+      {"id": "sensor", "label": "传感 11", "value": 11},
+      {"id": "wiring", "label": "线路 7", "value": 7}]},
+    {"id": "process", "label": "工艺 24", "children": [
+      {"id": "blockage", "label": "堵塞 15", "value": 15},
+      {"id": "quality", "label": "介质 9", "value": 9}]},
+    {"id": "external", "label": "外部 12", "children": [
+      {"id": "power", "label": "供电 7", "value": 7},
+      {"id": "utility", "label": "公用 5", "value": 5}]}
+  ]},
+  "assumptions": ["叶节点互斥并覆盖全部停机时长", "分类层级不等于根因证明"],
+  "footer": "模拟数据 · 叶节点求和生成父节点 · 径向表示层级"
+}

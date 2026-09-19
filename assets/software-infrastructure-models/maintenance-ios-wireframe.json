@@ -1,0 +1,293 @@
+{
+  "mode": "ui-wireframe",
+  "platform": "ios",
+  "title": "设备维护 iPhone 低保真流程",
+  "subtitle": "列表、详情、填报三屏；安全区与底部导航显式",
+  "data_status": "simulated",
+  "assumptions": [
+    "结构借鉴平台通用模式，不复制系统截图或专有 UI 素材"
+  ],
+  "screens": [
+    {
+      "id": "list",
+      "label": "工单",
+      "state": "default",
+      "viewport_width": 393,
+      "safe_areas": [
+        "top",
+        "bottom"
+      ],
+      "rect": [
+        0.05,
+        0.12,
+        0.2,
+        0.74
+      ]
+    },
+    {
+      "id": "detail",
+      "label": "工单详情",
+      "state": "selected",
+      "viewport_width": 393,
+      "safe_areas": [
+        "top",
+        "bottom"
+      ],
+      "rect": [
+        0.4,
+        0.12,
+        0.2,
+        0.74
+      ]
+    },
+    {
+      "id": "form",
+      "label": "处理记录",
+      "state": "editing",
+      "viewport_width": 393,
+      "safe_areas": [
+        "top",
+        "bottom"
+      ],
+      "rect": [
+        0.75,
+        0.12,
+        0.2,
+        0.74
+      ]
+    }
+  ],
+  "components": [
+    {
+      "id": "i-status1",
+      "screen_id": "list",
+      "label": "状态栏",
+      "type": "status-bar",
+      "rect": [
+        0.05,
+        0.93,
+        0.9,
+        0.04
+      ],
+      "interactive": false
+    },
+    {
+      "id": "i-nav1",
+      "screen_id": "list",
+      "label": "工单 · 搜索",
+      "type": "app-bar",
+      "rect": [
+        0.05,
+        0.82,
+        0.9,
+        0.09
+      ],
+      "interactive": true,
+      "action": "搜索工单",
+      "accessible_name": "搜索"
+    },
+    {
+      "id": "i-list",
+      "screen_id": "list",
+      "label": "逾期 / 今日 / 待件",
+      "type": "list",
+      "rect": [
+        0.05,
+        0.19,
+        0.9,
+        0.6
+      ],
+      "interactive": true,
+      "action": "选择工单",
+      "accessible_name": "工单列表"
+    },
+    {
+      "id": "i-tabs1",
+      "screen_id": "list",
+      "label": "总览 · 工单 · 我的",
+      "type": "tab-bar",
+      "rect": [
+        0.05,
+        0.06,
+        0.9,
+        0.1
+      ],
+      "interactive": true,
+      "action": "切换一级页面",
+      "accessible_name": "标签栏"
+    },
+    {
+      "id": "i-status2",
+      "screen_id": "detail",
+      "label": "状态栏",
+      "type": "status-bar",
+      "rect": [
+        0.05,
+        0.93,
+        0.9,
+        0.04
+      ],
+      "interactive": false
+    },
+    {
+      "id": "i-nav2",
+      "screen_id": "detail",
+      "label": "返回 · WO-2409",
+      "type": "app-bar",
+      "rect": [
+        0.05,
+        0.82,
+        0.9,
+        0.09
+      ],
+      "interactive": true,
+      "action": "返回工单列表",
+      "accessible_name": "返回"
+    },
+    {
+      "id": "i-card2",
+      "screen_id": "detail",
+      "label": "设备 / 故障 / 安全措施",
+      "type": "card",
+      "rect": [
+        0.05,
+        0.39,
+        0.9,
+        0.39
+      ],
+      "interactive": false
+    },
+    {
+      "id": "i-button2",
+      "screen_id": "detail",
+      "label": "开始处理",
+      "type": "button",
+      "rect": [
+        0.05,
+        0.24,
+        0.9,
+        0.1
+      ],
+      "interactive": true,
+      "action": "打开处理记录",
+      "accessible_name": "开始处理"
+    },
+    {
+      "id": "i-tabs2",
+      "screen_id": "detail",
+      "label": "总览 · 工单 · 我的",
+      "type": "tab-bar",
+      "rect": [
+        0.05,
+        0.06,
+        0.9,
+        0.1
+      ],
+      "interactive": true,
+      "action": "切换一级页面",
+      "accessible_name": "标签栏"
+    },
+    {
+      "id": "i-status3",
+      "screen_id": "form",
+      "label": "状态栏",
+      "type": "status-bar",
+      "rect": [
+        0.05,
+        0.93,
+        0.9,
+        0.04
+      ],
+      "interactive": false
+    },
+    {
+      "id": "i-nav3",
+      "screen_id": "form",
+      "label": "取消 · 处理记录",
+      "type": "app-bar",
+      "rect": [
+        0.05,
+        0.82,
+        0.9,
+        0.09
+      ],
+      "interactive": true,
+      "action": "取消编辑",
+      "accessible_name": "取消"
+    },
+    {
+      "id": "i-field1",
+      "screen_id": "form",
+      "label": "处理说明",
+      "type": "field",
+      "rect": [
+        0.05,
+        0.57,
+        0.9,
+        0.18
+      ],
+      "interactive": true,
+      "action": "输入处理说明",
+      "accessible_name": "处理说明"
+    },
+    {
+      "id": "i-field2",
+      "screen_id": "form",
+      "label": "耗时 / 备件",
+      "type": "field",
+      "rect": [
+        0.05,
+        0.39,
+        0.9,
+        0.13
+      ],
+      "interactive": true,
+      "action": "输入耗时和备件",
+      "accessible_name": "耗时和备件"
+    },
+    {
+      "id": "i-button3",
+      "screen_id": "form",
+      "label": "保存记录",
+      "type": "button",
+      "rect": [
+        0.05,
+        0.24,
+        0.9,
+        0.1
+      ],
+      "interactive": true,
+      "action": "保存记录",
+      "accessible_name": "保存处理记录"
+    },
+    {
+      "id": "i-tabs3",
+      "screen_id": "form",
+      "label": "总览 · 工单 · 我的",
+      "type": "tab-bar",
+      "rect": [
+        0.05,
+        0.06,
+        0.9,
+        0.1
+      ],
+      "interactive": true,
+      "action": "切换一级页面",
+      "accessible_name": "标签栏"
+    }
+  ],
+  "transitions": [
+    {
+      "id": "i-t1",
+      "source_screen": "list",
+      "target_screen": "detail",
+      "trigger": "点按工单"
+    },
+    {
+      "id": "i-t2",
+      "source_screen": "detail",
+      "target_screen": "form",
+      "trigger": "开始处理"
+    }
+  ]
+}

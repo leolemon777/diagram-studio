@@ -1,0 +1,21 @@
+{
+  "version": 38,
+  "date": "2026-09-18",
+  "method": "Actual SVG documents loaded in the Codex in-app browser; fonts.ready, getBBox, container/diamond containment and within-group text intersection checks.",
+  "review_page": "output/adaptive-v38/review.html",
+  "generated_by": "scripts/adaptive_examples.py",
+  "rendered_visual_check": "passed",
+  "pages": 51,
+  "text_lines": 958,
+  "issues": 0,
+  "cases": {
+    "education-tree": {"pages":16,"text_lines":304,"issues":0},
+    "retail-workflow": {"pages":15,"text_lines":295,"issues":0},
+    "software-architecture": {"pages":16,"text_lines":281,"issues":0},
+    "product-feedback": {"pages":4,"text_lines":78,"issues":0}
+  },
+  "manual_visual_review": "Representative overall and reading views inspected; tree trunk routing, mixed-size line spacing, and tall-canvas reading mode revised from visual findings. Not all pages manually inspected.",
+  "native_editor_save_reopen": "not-run",
+  "user_aesthetic_acceptance": "not-received",
+  "limitations": "Evidence applies to these four simulated cases on this browser and installed font. It does not certify all inputs, specialist backends, native editors or aesthetic quality."
+}

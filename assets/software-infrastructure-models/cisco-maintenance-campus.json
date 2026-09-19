@@ -1,0 +1,372 @@
+{
+  "mode": "network-topology",
+  "profile": "cisco-campus",
+  "title": "设备维护园区三层网络拓扑",
+  "subtitle": "接入、汇聚、核心与冗余路径分开；接口和链路属性逐边保留",
+  "data_status": "simulated",
+  "assumptions": [
+    "设备型号仅作示例；未连接真实配置或资产库"
+  ],
+  "devices": [
+    {
+      "id": "internet",
+      "label": "互联网",
+      "role": "internet",
+      "layer": "external",
+      "vendor": "运营商",
+      "model": "外部网络",
+      "management_ip": "203.0.113.1",
+      "position": [
+        0.5,
+        0.92
+      ]
+    },
+    {
+      "id": "wan-edge",
+      "label": "园区边界路由器",
+      "role": "wan-edge",
+      "layer": "edge",
+      "vendor": "Cisco",
+      "model": "Catalyst 8300",
+      "management_ip": "10.255.0.1",
+      "position": [
+        0.5,
+        0.81
+      ]
+    },
+    {
+      "id": "firewall",
+      "label": "安全边界",
+      "role": "firewall",
+      "layer": "edge",
+      "vendor": "Cisco",
+      "model": "Secure Firewall",
+      "management_ip": "10.255.0.2",
+      "position": [
+        0.5,
+        0.68
+      ]
+    },
+    {
+      "id": "core-a",
+      "label": "核心 A",
+      "role": "core",
+      "layer": "core",
+      "vendor": "Cisco",
+      "model": "Catalyst 9500",
+      "management_ip": "10.255.1.1",
+      "position": [
+        0.36,
+        0.55
+      ]
+    },
+    {
+      "id": "core-b",
+      "label": "核心 B",
+      "role": "core",
+      "layer": "core",
+      "vendor": "Cisco",
+      "model": "Catalyst 9500",
+      "management_ip": "10.255.1.2",
+      "position": [
+        0.64,
+        0.55
+      ]
+    },
+    {
+      "id": "dist-a",
+      "label": "办公汇聚",
+      "role": "distribution",
+      "layer": "distribution",
+      "vendor": "Cisco",
+      "model": "Catalyst 9300",
+      "management_ip": "10.255.2.1",
+      "position": [
+        0.3,
+        0.4
+      ]
+    },
+    {
+      "id": "dist-b",
+      "label": "生产汇聚",
+      "role": "distribution",
+      "layer": "distribution",
+      "vendor": "Cisco",
+      "model": "Catalyst 9300",
+      "management_ip": "10.255.2.2",
+      "position": [
+        0.7,
+        0.4
+      ]
+    },
+    {
+      "id": "access-office",
+      "label": "办公接入",
+      "role": "access",
+      "layer": "access",
+      "vendor": "Cisco",
+      "model": "Catalyst 9200",
+      "management_ip": "10.255.3.1",
+      "position": [
+        0.18,
+        0.22
+      ]
+    },
+    {
+      "id": "access-ot",
+      "label": "OT 接入",
+      "role": "access",
+      "layer": "access",
+      "vendor": "Cisco",
+      "model": "Catalyst IE3400",
+      "management_ip": "10.255.3.2",
+      "position": [
+        0.82,
+        0.22
+      ]
+    },
+    {
+      "id": "cmms",
+      "label": "CMMS 服务",
+      "role": "server",
+      "layer": "service",
+      "vendor": "通用",
+      "model": "虚拟服务器",
+      "management_ip": "10.20.10.20",
+      "position": [
+        0.5,
+        0.22
+      ]
+    }
+  ],
+  "segments": [
+    {
+      "id": "edge-zone",
+      "label": "边界传输区",
+      "kind": "security-zone"
+    },
+    {
+      "id": "core-transit",
+      "label": "核心传输",
+      "kind": "subnet",
+      "cidr": "10.255.0.0/29"
+    },
+    {
+      "id": "campus-routed",
+      "label": "园区三层上联",
+      "kind": "subnet",
+      "cidr": "10.255.16.0/28"
+    },
+    {
+      "id": "office-vlan",
+      "label": "办公终端",
+      "kind": "vlan",
+      "vlan_id": 110,
+      "cidr": "10.10.10.0/24"
+    },
+    {
+      "id": "ot-vlan",
+      "label": "OT 控制",
+      "kind": "vlan",
+      "vlan_id": 210,
+      "cidr": "10.20.20.0/24"
+    },
+    {
+      "id": "service-subnet",
+      "label": "服务区",
+      "kind": "subnet",
+      "cidr": "10.20.10.0/24"
+    }
+  ],
+  "links": [
+    {
+      "id": "l1",
+      "source": "internet",
+      "target": "wan-edge",
+      "source_interface": "eth0",
+      "target_interface": "Gi0/0",
+      "plane": "L3",
+      "capacity_mbps": 1000,
+      "medium": "fiber",
+      "purpose": "互联网出口",
+      "evidence": "模拟链路表",
+      "segment_id": null,
+      "interface_side": 1
+    },
+    {
+      "id": "l2",
+      "source": "wan-edge",
+      "target": "firewall",
+      "source_interface": "Gi0/1",
+      "target_interface": "outside",
+      "plane": "L3",
+      "capacity_mbps": 1000,
+      "medium": "fiber",
+      "purpose": "边界检查",
+      "evidence": "模拟链路表",
+      "segment_id": "edge-zone",
+      "interface_side": -1
+    },
+    {
+      "id": "l3",
+      "source": "firewall",
+      "target": "core-a",
+      "source_interface": "inside-a",
+      "target_interface": "Te1/0/1",
+      "plane": "L3",
+      "capacity_mbps": 10000,
+      "medium": "fiber",
+      "purpose": "主路径 A",
+      "evidence": "模拟链路表",
+      "segment_id": "core-transit",
+      "redundancy_group": "edge-paths",
+      "label_offset": [
+        -0.05,
+        0.015
+      ],
+      "interface_side": 1
+    },
+    {
+      "id": "l4",
+      "source": "firewall",
+      "target": "core-b",
+      "source_interface": "inside-b",
+      "target_interface": "Te1/0/1",
+      "plane": "L3",
+      "capacity_mbps": 10000,
+      "medium": "fiber",
+      "purpose": "主路径 B",
+      "evidence": "模拟链路表",
+      "segment_id": "core-transit",
+      "redundancy_group": "edge-paths",
+      "label_offset": [
+        0.05,
+        0.015
+      ],
+      "interface_side": -1
+    },
+    {
+      "id": "l5",
+      "source": "core-a",
+      "target": "dist-a",
+      "source_interface": "Te1/0/2",
+      "target_interface": "Te1/0/1",
+      "plane": "L3",
+      "capacity_mbps": 10000,
+      "medium": "fiber",
+      "purpose": "办公上联 A",
+      "evidence": "模拟链路表",
+      "segment_id": "campus-routed",
+      "redundancy_group": "office-uplinks",
+      "label_offset": [
+        -0.025,
+        0.012
+      ],
+      "interface_side": 1
+    },
+    {
+      "id": "l6",
+      "source": "core-b",
+      "target": "dist-a",
+      "source_interface": "Te1/0/2",
+      "target_interface": "Te1/0/2",
+      "plane": "L3",
+      "capacity_mbps": 10000,
+      "medium": "fiber",
+      "purpose": "办公上联 B",
+      "evidence": "模拟链路表",
+      "segment_id": "campus-routed",
+      "redundancy_group": "office-uplinks",
+      "label_offset": [
+        0.03,
+        -0.012
+      ],
+      "interface_side": -1
+    },
+    {
+      "id": "l7",
+      "source": "core-a",
+      "target": "dist-b",
+      "source_interface": "Te1/0/3",
+      "target_interface": "Te1/0/1",
+      "plane": "L3",
+      "capacity_mbps": 10000,
+      "medium": "fiber",
+      "purpose": "生产上联 A",
+      "evidence": "模拟链路表",
+      "segment_id": "campus-routed",
+      "redundancy_group": "ot-uplinks",
+      "label_offset": [
+        -0.035,
+        -0.015
+      ],
+      "interface_side": -1
+    },
+    {
+      "id": "l8",
+      "source": "core-b",
+      "target": "dist-b",
+      "source_interface": "Te1/0/3",
+      "target_interface": "Te1/0/2",
+      "plane": "L3",
+      "capacity_mbps": 10000,
+      "medium": "fiber",
+      "purpose": "生产上联 B",
+      "evidence": "模拟链路表",
+      "segment_id": "campus-routed",
+      "redundancy_group": "ot-uplinks",
+      "label_offset": [
+        0.03,
+        0.012
+      ],
+      "interface_side": 1
+    },
+    {
+      "id": "l9",
+      "source": "dist-a",
+      "target": "access-office",
+      "source_interface": "Gi1/0/1",
+      "target_interface": "Te0/1",
+      "plane": "L2",
+      "capacity_mbps": 1000,
+      "medium": "fiber",
+      "purpose": "办公 VLAN",
+      "evidence": "模拟链路表",
+      "segment_id": "office-vlan",
+      "interface_side": 1
+    },
+    {
+      "id": "l10",
+      "source": "dist-b",
+      "target": "access-ot",
+      "source_interface": "Gi1/0/1",
+      "target_interface": "Te0/1",
+      "plane": "L2",
+      "capacity_mbps": 1000,
+      "medium": "fiber",
+      "purpose": "OT VLAN",
+      "evidence": "模拟链路表",
+      "segment_id": "ot-vlan",
+      "interface_side": -1
+    },
+    {
+      "id": "l11",
+      "source": "core-a",
+      "target": "cmms",
+      "source_interface": "Te1/0/4",
+      "target_interface": "eth0",
+      "plane": "L3",
+      "capacity_mbps": 10000,
+      "medium": "virtual",
+      "purpose": "服务区访问",
+      "evidence": "模拟链路表",
+      "segment_id": "service-subnet",
+      "rad": -0.12,
+      "label_offset": [
+        0,
+        -0.025
+      ],
+      "interface_side": 1
+    }
+  ]
+}

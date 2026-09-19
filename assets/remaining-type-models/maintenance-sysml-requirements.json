@@ -1,0 +1,144 @@
+{
+  "mode": "sysml-requirement",
+  "title": "SysML v1 需求图 · 泵站状态诊断",
+  "subtitle": "需求、派生需求、满足与验证关系可追踪",
+  "template": "graph",
+  "data_status": "simulated",
+  "assumptions": [
+    "数据为教学模拟，不代表真实项目现状",
+    "真实交付前须替换数值、名称、品牌规范和审批信息"
+  ],
+  "metrics": [
+    {
+      "id": "req",
+      "label": "需求",
+      "value": 3,
+      "unit": "条",
+      "evidence": "示例输入"
+    },
+    {
+      "id": "trace",
+      "label": "追踪关系",
+      "value": 6,
+      "unit": "条",
+      "evidence": "示例输入"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "r1",
+      "label": "REQ-01\n5 s 内识别停机",
+      "kind": "requirement",
+      "position": [
+        0.2,
+        0.7
+      ],
+      "detail": "«requirement»"
+    },
+    {
+      "id": "r2",
+      "label": "REQ-02\n误报率 < 2%",
+      "kind": "requirement",
+      "position": [
+        0.52,
+        0.7
+      ],
+      "detail": "«requirement»"
+    },
+    {
+      "id": "r3",
+      "label": "REQ-03\n保存审计证据",
+      "kind": "requirement",
+      "position": [
+        0.8,
+        0.7
+      ],
+      "detail": "«requirement»"
+    },
+    {
+      "id": "b1",
+      "label": "诊断模块",
+      "kind": "block",
+      "position": [
+        0.34,
+        0.3
+      ],
+      "detail": "«block»"
+    },
+    {
+      "id": "b2",
+      "label": "事件存储",
+      "kind": "block",
+      "position": [
+        0.66,
+        0.3
+      ],
+      "detail": "«block»"
+    },
+    {
+      "id": "t1",
+      "label": "停机回放测试",
+      "kind": "test",
+      "position": [
+        0.12,
+        0.3
+      ],
+      "detail": "«testCase»"
+    },
+    {
+      "id": "t2",
+      "label": "误报样本测试",
+      "kind": "test",
+      "position": [
+        0.88,
+        0.3
+      ],
+      "detail": "«testCase»"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "r1",
+      "target": "r2",
+      "relation": "deriveReqt",
+      "label": "«deriveReqt»"
+    },
+    {
+      "id": "e2",
+      "source": "b1",
+      "target": "r1",
+      "relation": "satisfy",
+      "label": "«satisfy»"
+    },
+    {
+      "id": "e3",
+      "source": "b1",
+      "target": "r2",
+      "relation": "satisfy",
+      "label": "«satisfy»"
+    },
+    {
+      "id": "e4",
+      "source": "b2",
+      "target": "r3",
+      "relation": "satisfy",
+      "label": "«satisfy»"
+    },
+    {
+      "id": "e5",
+      "source": "t1",
+      "target": "r1",
+      "relation": "verify",
+      "label": "«verify»"
+    },
+    {
+      "id": "e6",
+      "source": "t2",
+      "target": "r2",
+      "relation": "verify",
+      "label": "«verify»"
+    }
+  ],
+  "groups": []
+}

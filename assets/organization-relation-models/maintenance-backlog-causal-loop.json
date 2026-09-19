@@ -1,0 +1,29 @@
+{
+  "id": "maintenance-backlog-causal-loop",
+  "mode": "causal-loop",
+  "title": "维修积压因果回路图",
+  "subtitle": "逐边标注作用极性，回路类型由极性乘积复算",
+  "data_status": "simulated",
+  "variables": [
+    {"id": "backlog", "label": "维修积压量", "position": [0.12, 0.52]},
+    {"id": "overtime", "label": "加班强度", "position": [0.33, 0.82]},
+    {"id": "fatigue", "label": "人员疲劳", "position": [0.62, 0.72]},
+    {"id": "rework", "label": "返工量", "position": [0.66, 0.35]},
+    {"id": "priority", "label": "优先级治理", "position": [0.31, 0.18]},
+    {"id": "closure", "label": "有效关闭率", "position": [0.05, 0.12]}
+  ],
+  "links": [
+    {"id": "l1", "source": "backlog", "target": "overtime", "polarity": 1, "delay": false, "evidence": "模拟周度积压与加班记录"},
+    {"id": "l2", "source": "overtime", "target": "fatigue", "polarity": 1, "delay": true, "evidence": "模拟连续工时与疲劳观察"},
+    {"id": "l3", "source": "fatigue", "target": "rework", "polarity": 1, "delay": false, "evidence": "模拟返工复盘记录"},
+    {"id": "l4", "source": "rework", "target": "backlog", "polarity": 1, "delay": false, "evidence": "模拟返工工单回流"},
+    {"id": "l5", "source": "backlog", "target": "priority", "polarity": 1, "delay": false, "evidence": "模拟优先级会议记录"},
+    {"id": "l6", "source": "priority", "target": "closure", "polarity": 1, "delay": true, "evidence": "模拟治理措施与关闭结果"},
+    {"id": "l7", "source": "closure", "target": "backlog", "polarity": -1, "delay": false, "evidence": "模拟关闭工单对积压余额的影响"}
+  ],
+  "loops": [
+    {"id": "R1", "label": "赶工—疲劳—返工", "link_ids": ["l1", "l2", "l3", "l4"], "declared_type": "reinforcing"},
+    {"id": "B1", "label": "优先级治理与关闭", "link_ids": ["l5", "l6", "l7"], "declared_type": "balancing"}
+  ],
+  "assumptions": ["变量和证据均为模拟", "因果回路用于形成待验证假设，不证明关系强度或预测未来数值"]
+}

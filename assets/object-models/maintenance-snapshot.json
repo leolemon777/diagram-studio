@@ -1,0 +1,11 @@
+{
+ "title":"维修工单：对象快照教学示例",
+ "snapshot":"假设场景 T0：工单已分派，尚未完成",
+ "assumptions":["虚构数据；快照不表达状态变化或调用顺序。"],
+ "objects":[
+  {"id":"job","name":"job17","classifiers":["MaintenanceJob"],"slots":[{"feature":"status","values":[{"kind":"literal","value":"assigned"}]},{"feature":"assignee","values":[{"kind":"reference","object":"worker"}]},{"feature":"notes","values":[]}]},
+  {"id":"worker","name":"technicianA","classifiers":["Technician"],"slots":[{"feature":"available","values":[{"kind":"literal","value":false}]}]},
+  {"id":"asset","name":"","classifiers":["Pump"],"slots":[{"feature":"runningHours","values":[{"kind":"literal","value":0}]},{"feature":"retiredAt","values":[{"kind":"literal","value":null}]}]}
+ ],
+ "links":[{"id":"jobAsset","association":"MaintenanceTarget","ends":[{"role":"jobs","object":"job"},{"role":"target","object":"asset"}]}]
+}

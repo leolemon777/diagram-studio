@@ -1,0 +1,99 @@
+{
+  "catalog_id": "ext-reading-organizer",
+  "mode": "reading-organizer",
+  "title": "阅读 KWL 组织图",
+  "subtitle": "学习任务、提示语和完成标准同图表达",
+  "template": "organizer",
+  "sector": "教育与阅读",
+  "use_case": "情节、论证和 KWL 阅读活动的高频工具",
+  "data_status": "simulated",
+  "assumptions": [
+    "内容和数值为教学模拟",
+    "真实交付前须替换名称、事实、品牌、尺寸和审批信息"
+  ],
+  "metrics": [
+    {
+      "id": "slots",
+      "label": "填写区",
+      "value": 4,
+      "unit": "个",
+      "evidence": "模拟输入"
+    },
+    {
+      "id": "links",
+      "label": "逻辑关系",
+      "value": 3,
+      "unit": "条",
+      "evidence": "模拟输入"
+    }
+  ],
+  "slots": [
+    {
+      "id": "s1",
+      "label": "已知道 K",
+      "prompt": "填写可验证的内容",
+      "rect": [
+        0.05,
+        0.66,
+        0.9,
+        0.25
+      ]
+    },
+    {
+      "id": "s2",
+      "label": "想知道 W",
+      "prompt": "填写可验证的内容",
+      "rect": [
+        0.05,
+        0.36,
+        0.43,
+        0.23
+      ]
+    },
+    {
+      "id": "s3",
+      "label": "学到了 L",
+      "prompt": "填写可验证的内容",
+      "rect": [
+        0.52,
+        0.36,
+        0.43,
+        0.23
+      ]
+    },
+    {
+      "id": "s4",
+      "label": "新问题",
+      "prompt": "填写可验证的内容",
+      "rect": [
+        0.05,
+        0.08,
+        0.9,
+        0.2
+      ]
+    }
+  ],
+  "links": [
+    {
+      "id": "l1",
+      "source": "s1",
+      "target": "s2",
+      "relation": "supports"
+    },
+    {
+      "id": "l2",
+      "source": "s2",
+      "target": "s3",
+      "relation": "develops"
+    },
+    {
+      "id": "l3",
+      "source": "s3",
+      "target": "s4",
+      "relation": "concludes"
+    }
+  ],
+  "learning_goal": "连接已有知识、问题和阅读收获",
+  "completion_rule": "阅读前后都有记录且问题有回应",
+  "recommended_variants": []
+}

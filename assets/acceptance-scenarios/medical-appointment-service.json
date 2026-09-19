@@ -1,0 +1,22 @@
+{
+  "type": "graph",
+  "title": "门诊预约到随访服务流程",
+  "subtitle": "模拟场景 · 明确患者、服务台、医生与随访环节之间的交接",
+  "eyebrow": "ACCEPTANCE / 医疗服务",
+  "footer": "模拟服务图 · 不包含诊疗决策或医疗建议",
+  "assumptions": ["服务节点为验收用模拟数据，不构成医疗流程规范"],
+  "nodes": [
+    {"id":"patient","label":"患者预约","detail":"选择时段并提交资料","x":80,"y":320,"w":210,"h":80},
+    {"id":"desk","label":"服务台确认","detail":"身份与号源核验","x":360,"y":320,"w":210,"h":80},
+    {"id":"visit","label":"门诊服务","detail":"到诊登记与服务交接","x":640,"y":320,"w":210,"h":80},
+    {"id":"followup","label":"随访提醒","detail":"满意度与复诊提示","x":920,"y":320,"w":210,"h":80},
+    {"id":"reschedule","label":"改期处理","detail":"不可到诊或号源变化","x":360,"y":500,"w":210,"h":80,"tone":"amber"}
+  ],
+  "edges": [
+    {"from":"patient","to":"desk","label":"预约信息","tone":"accent"},
+    {"from":"desk","to":"visit","label":"确认到诊","tone":"teal"},
+    {"from":"visit","to":"followup","label":"服务完成","tone":"teal"},
+    {"from":"desk","to":"reschedule","label":"需改期","tone":"amber","source_port":"bottom","target_port":"top"},
+    {"from":"reschedule","to":"patient","label":"确认新时段","tone":"amber","dashed":true,"source_port":"left","target_port":"bottom"}
+  ]
+}

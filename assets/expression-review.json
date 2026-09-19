@@ -1,0 +1,43 @@
+{
+  "status": "experimental_project_copy",
+  "baseline": "diagram-studio-v38.zip",
+  "scope": "Four bounded studies, two expressions each; not a universal chart renderer or a released installed upgrade.",
+  "source_checks": {
+    "svg_parse": 8,
+    "same_source_digest_per_pair": 4,
+    "marketing_partition": [380, 310, 124, 186],
+    "marketing_partition_total": 1000,
+    "education_source_scores_and_signed_changes": "passed",
+    "planning_arrow_count": 6,
+    "service_arrow_count": 7,
+    "service_matrix_relation_references": 7,
+    "invalid_cohort_rejected": true,
+    "invalid_finish_to_start_rejected": true
+  },
+  "browser_checks": {
+    "desktop_width": 1440,
+    "figures": 8,
+    "text_elements": 222,
+    "text_outside_svg": 0,
+    "text_to_text_overlap_over_2px": 0,
+    "method": "Actual browser getBoundingClientRect on SVG text; not a line-node collision detector.",
+    "mobile_width": 390,
+    "mobile_document_scroll_width": 390,
+    "mobile_figure_width": 860,
+    "mobile_figure_viewport_width": 356,
+    "mobile_scope": "Marketing views, compare, keyboard selection, horizontal scrolling and expanded data table.",
+    "four_topic_switches": "passed",
+    "single_and_comparison_views": "passed",
+    "keyboard_view_selection": "passed",
+    "source_table_disclosure": "passed"
+  },
+  "visual_review": {
+    "scope": "Viewed all eight expressions in browser screenshots; final focused reinspection of service feedback route and project dependency convergence.",
+    "repairs": ["Separated opposing service routes near user confirmation.", "Separated dependency arrow entries and routed around task captions."],
+    "real_user_comprehension_test": "not_performed",
+    "user_style_acceptance": "pending",
+    "native_editor_edit_save_reopen": "not_performed"
+  },
+  "skill_quick_validate": "passed",
+  "installation": "Not installed; original installed directory was absent during this turn."
+}

@@ -1,0 +1,18 @@
+{
+  "id": "regional-sales-table",
+  "mode": "sales-table",
+  "title": "区域设备备件销售表",
+  "subtitle": "订单数、销量和销售额分列，小计不重复计入总计",
+  "data_status": "simulated",
+  "period": "2026-Q3",
+  "currency": "CNY",
+  "records": [
+    {"id": "s1", "region": "华东", "product": "振动传感器", "orders": 18, "units": 42, "revenue": 126000},
+    {"id": "s2", "region": "华东", "product": "温度变送器", "orders": 12, "units": 25, "revenue": 87500},
+    {"id": "s3", "region": "华南", "product": "振动传感器", "orders": 15, "units": 31, "revenue": 93000},
+    {"id": "s4", "region": "华南", "product": "温度变送器", "orders": 10, "units": 19, "revenue": 66500},
+    {"id": "s5", "region": "华北", "product": "振动传感器", "orders": 9, "units": 20, "revenue": 60000},
+    {"id": "s6", "region": "华北", "product": "温度变送器", "orders": 8, "units": 16, "revenue": 56000}
+  ],
+  "assumptions": ["销售记录为模拟数据", "一条记录代表唯一的区域与产品组合"]
+}

@@ -1,0 +1,60 @@
+{
+  "positions": {
+    "tank": [
+      160,
+      490
+    ],
+    "split": [
+      350,
+      490
+    ],
+    "main": [
+      760,
+      490
+    ],
+    "bypass": [
+      760,
+      300
+    ],
+    "merge": [
+      1200,
+      490
+    ],
+    "sink": [
+      1430,
+      490
+    ]
+  },
+  "ports": {
+    "tank_out": "right",
+    "split_in": "left",
+    "split_main": "right",
+    "split_bypass": "top",
+    "main_in": "left",
+    "main_out": "right",
+    "bypass_in": "left",
+    "bypass_out": "right",
+    "merge_main": "left",
+    "merge_bypass": "top",
+    "merge_out": "right",
+    "sink_in": "left"
+  },
+  "routes": {
+    "C1": [],
+    "C2": [],
+    "C3": [],
+    "C4": [
+      [
+        350,
+        300
+      ]
+    ],
+    "C5": [
+      [
+        1200,
+        300
+      ]
+    ],
+    "C6": []
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "type": "gantt",
+  "title": "运维平台试点 · 实施计划",
+  "subtitle": "按自然日定位，包含结束日；箭头表示完成后开始的依赖",
+  "eyebrow": "06 / PROJECT PLAN",
+  "tasks": [
+    {
+      "id": "research",
+      "label": "现场需求与范围确认",
+      "owner": "业务与运维",
+      "start": "2026-10-01",
+      "end": "2026-10-05",
+      "progress": 100
+    },
+    {
+      "id": "design",
+      "label": "数据与架构设计",
+      "owner": "技术小组",
+      "start": "2026-10-06",
+      "end": "2026-10-12",
+      "progress": 65,
+      "depends": [
+        "research"
+      ]
+    },
+    {
+      "id": "prototype",
+      "label": "试点链路实现",
+      "owner": "开发与实施",
+      "start": "2026-10-13",
+      "end": "2026-10-22",
+      "progress": 20,
+      "depends": [
+        "design"
+      ]
+    },
+    {
+      "id": "qa",
+      "label": "现场联调与验证",
+      "owner": "运维与测试",
+      "start": "2026-10-23",
+      "end": "2026-10-28",
+      "progress": 0,
+      "depends": [
+        "prototype"
+      ]
+    },
+    {
+      "id": "accept",
+      "label": "试点验收",
+      "owner": "项目小组",
+      "start": "2026-10-29",
+      "end": "2026-10-29",
+      "progress": 0,
+      "milestone": true,
+      "depends": [
+        "qa"
+      ]
+    }
+  ],
+  "footer": "排期和进度均为演示数据 · 未计算关键路径",
+  "family": "计划与协作",
+  "diagram_name": "甘特排期"
+}

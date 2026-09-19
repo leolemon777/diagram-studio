@@ -1,0 +1,46 @@
+{
+  "title": "设备维修请求泳道看板",
+  "service": "从维修请求进入准备队列，到复验完成并关闭工单",
+  "snapshot": "2026-09-17 09:00",
+  "assumptions": [
+    "本图数据为教学用模拟快照，不代表真实工厂工单状态",
+    "进入待执行列即为承诺点，进入已完成列即为交付点",
+    "阻塞项继续计入WIP；泳道表示工作类型，不表示个人绩效"
+  ],
+  "columns": [
+    {"id": "requested", "name": "请求池", "order": 0, "stage": "queue"},
+    {"id": "ready", "name": "待执行", "order": 1, "stage": "wip", "wip_limit": 3, "pull_criteria": "安全隔离方案和备件已确认"},
+    {"id": "doing", "name": "处理中", "order": 2, "stage": "wip", "wip_limit": 3, "pull_criteria": "责任人已接单且现场许可有效"},
+    {"id": "verify", "name": "复验", "order": 3, "stage": "wip", "wip_limit": 2, "pull_criteria": "维修记录完整且设备已恢复安全状态"},
+    {"id": "done", "name": "已完成", "order": 4, "stage": "done"}
+  ],
+  "lanes": [
+    {"id": "breakdown", "name": "故障抢修", "order": 0, "wip_limit": 4},
+    {"id": "planned", "name": "计划检修", "order": 1, "wip_limit": 4},
+    {"id": "improvement", "name": "改善任务", "order": 2, "wip_limit": 3}
+  ],
+  "cards": [
+    {"id": "WO-2417", "title": "循环泵异常振动", "lane": "breakdown", "column": "doing", "owner": "陈工", "service_class": "expedite", "blocked": true, "blocked_reason": "等待联轴器到场", "age_days": 2},
+    {"id": "WO-2413", "title": "空压机温升复核", "lane": "breakdown", "column": "verify", "owner": "李工", "service_class": "standard", "blocked": false, "age_days": 1},
+    {"id": "PM-078", "title": "冷却塔季度保养", "lane": "planned", "column": "ready", "owner": "王工", "service_class": "standard", "blocked": false, "age_days": 1},
+    {"id": "PM-081", "title": "配电柜红外检测", "lane": "planned", "column": "doing", "owner": "赵工", "service_class": "fixed_date", "blocked": false, "age_days": 3, "due": "09-18"},
+    {"id": "PM-074", "title": "污水泵月度点检", "lane": "planned", "column": "done", "owner": "王工", "service_class": "standard", "blocked": false},
+    {"id": "CI-033", "title": "新增润滑点标签", "lane": "improvement", "column": "requested", "owner": "周工", "service_class": "intangible", "blocked": false},
+    {"id": "CI-029", "title": "优化备件货位编码", "lane": "improvement", "column": "ready", "owner": "周工", "service_class": "intangible", "blocked": false, "age_days": 1},
+    {"id": "CI-027", "title": "水压波动报警联调", "lane": "improvement", "column": "verify", "owner": "孙工", "service_class": "standard", "blocked": false, "age_days": 4},
+    {"id": "CI-021", "title": "点检表移动端改版", "lane": "improvement", "column": "done", "owner": "周工", "service_class": "standard", "blocked": false}
+  ],
+  "policies": [
+    {"id": "pull", "title": "拉动", "rule": "下游有容量且满足列入口条件后，才从左侧拉入新卡。"},
+    {"id": "blocked", "title": "阻塞", "rule": "阻塞卡保留在当前列并继续计入WIP；每日明确责任人与解除动作。"},
+    {"id": "expedite", "title": "加急", "rule": "全板最多一张加急卡，须由值班负责人确认；不隐藏被挤占的普通工作。"},
+    {"id": "done", "title": "完成", "rule": "现场复验、记录归档和工单签字全部完成后，才进入已完成列。"}
+  ],
+  "flow_metrics": {
+    "throughput_period": "最近7天",
+    "throughput": 6,
+    "throughput_unit": "工单/周",
+    "sle_days": 5,
+    "sle_probability": 0.85
+  }
+}

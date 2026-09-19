@@ -1,0 +1,104 @@
+{
+  "mode": "mechanics",
+  "title": "吊装横梁自由体图",
+  "subtitle": "受力方向、大小、证据和静力平衡显式保留",
+  "template": "science",
+  "data_status": "simulated",
+  "assumptions": [
+    "数据为教学模拟，不代表真实项目现状",
+    "真实交付前须替换数值、名称、品牌规范和审批信息"
+  ],
+  "metrics": [
+    {
+      "id": "load",
+      "label": "载荷",
+      "value": 10,
+      "unit": "kN",
+      "evidence": "示例输入"
+    },
+    {
+      "id": "residual",
+      "label": "合力残差",
+      "value": 0,
+      "unit": "N",
+      "evidence": "示例输入"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "b1",
+      "role": "body",
+      "label": "对象",
+      "content": "吊装横梁与中央载荷",
+      "rect": [
+        0.04,
+        0.68,
+        0.28,
+        0.22
+      ],
+      "order": 1
+    },
+    {
+      "id": "b2",
+      "role": "force",
+      "label": "载荷",
+      "content": "W = 10 kN，向下",
+      "rect": [
+        0.36,
+        0.68,
+        0.28,
+        0.22
+      ],
+      "order": 2
+    },
+    {
+      "id": "b3",
+      "role": "balance",
+      "label": "平衡",
+      "content": "R1 + R2 − W = 0",
+      "rect": [
+        0.68,
+        0.68,
+        0.28,
+        0.22
+      ],
+      "order": 3
+    }
+  ],
+  "forces": [
+    {
+      "id": "f1",
+      "label": "R1 5 kN",
+      "fx_n": 0,
+      "fy_n": 5000,
+      "origin": [
+        0.42,
+        0.44
+      ],
+      "evidence": "对称支承假设"
+    },
+    {
+      "id": "f2",
+      "label": "R2 5 kN",
+      "fx_n": 0,
+      "fy_n": 5000,
+      "origin": [
+        0.58,
+        0.44
+      ],
+      "evidence": "对称支承假设"
+    },
+    {
+      "id": "f3",
+      "label": "W 10 kN",
+      "fx_n": 0,
+      "fy_n": -10000,
+      "origin": [
+        0.5,
+        0.44
+      ],
+      "evidence": "模拟载荷清单"
+    }
+  ],
+  "balance_tolerance_n": 0.001
+}

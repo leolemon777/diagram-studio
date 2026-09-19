@@ -1,0 +1,38 @@
+{
+  "recipe": "waterfall",
+  "title": "总量怎样改变，逐项对账。",
+  "subtitle": "从基期走向期末；节能措施与负荷增加共享一条累计路径。",
+  "unit": "MWh",
+  "rows": [
+    {
+      "id": "r1",
+      "label": "漏气治理",
+      "value": -28
+    },
+    {
+      "id": "r2",
+      "label": "待机优化",
+      "value": -22
+    },
+    {
+      "id": "r3",
+      "label": "峰谷调整",
+      "value": -14
+    },
+    {
+      "id": "r4",
+      "label": "负荷增加",
+      "value": 9
+    },
+    {
+      "id": "r5",
+      "label": "照明改造",
+      "value": -6
+    }
+  ],
+  "period": "2026 年月度示例 / 增减核算",
+  "synthetic": true,
+  "source": "Apat 自拟数据，仅用于呈现图形效果；不代表现场测量。",
+  "quantum": 5,
+  "start": 320
+}

@@ -1,0 +1,123 @@
+{
+  "catalog_id": "cn-1121",
+  "mode": "home-plan",
+  "title": "两居室家庭功能规划",
+  "subtitle": "动静分区、收纳和连续动线共同表达",
+  "template": "spatial",
+  "sector": "建筑与家装",
+  "use_case": "住宅规划和装修沟通中的高频平面表达",
+  "data_status": "simulated",
+  "assumptions": [
+    "内容和数值为教学模拟",
+    "真实交付前须替换名称、事实、品牌、尺寸和审批信息"
+  ],
+  "metrics": [
+    {
+      "id": "rooms",
+      "label": "功能区",
+      "value": 6,
+      "unit": "个",
+      "evidence": "模拟输入"
+    },
+    {
+      "id": "area",
+      "label": "建筑面积",
+      "value": 89,
+      "unit": "m²",
+      "evidence": "模拟输入"
+    }
+  ],
+  "zones": [
+    {
+      "id": "living",
+      "label": "客餐厅",
+      "kind": "living",
+      "rect": [
+        0.08,
+        0.48,
+        0.46,
+        0.39
+      ]
+    },
+    {
+      "id": "kitchen",
+      "label": "厨房",
+      "kind": "service",
+      "rect": [
+        0.56,
+        0.63,
+        0.22,
+        0.24
+      ]
+    },
+    {
+      "id": "bed1",
+      "label": "主卧",
+      "kind": "private",
+      "rect": [
+        0.08,
+        0.1,
+        0.31,
+        0.3
+      ]
+    },
+    {
+      "id": "bed2",
+      "label": "次卧",
+      "kind": "private",
+      "rect": [
+        0.41,
+        0.1,
+        0.27,
+        0.3
+      ]
+    },
+    {
+      "id": "bath",
+      "label": "卫生间",
+      "kind": "service",
+      "rect": [
+        0.7,
+        0.1,
+        0.18,
+        0.3
+      ]
+    },
+    {
+      "id": "entry",
+      "label": "玄关收纳",
+      "kind": "storage",
+      "rect": [
+        0.8,
+        0.63,
+        0.12,
+        0.24
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "id": "m1",
+      "zone": "living",
+      "label": "开间",
+      "value": 5.4,
+      "unit": "m"
+    },
+    {
+      "id": "m2",
+      "zone": "bed1",
+      "label": "净宽",
+      "value": 3.2,
+      "unit": "m"
+    },
+    {
+      "id": "m3",
+      "zone": "entry",
+      "label": "柜深",
+      "value": 0.6,
+      "unit": "m"
+    }
+  ],
+  "view": "plan",
+  "scale_note": "示意比例 1:80；尺寸以现场复测为准"
+}

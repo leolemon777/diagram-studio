@@ -1,0 +1,641 @@
+[
+  {
+    "id": "01-system-architecture",
+    "title": "设备运维平台 · 系统架构",
+    "name": "分层系统架构",
+    "family": "系统与软件",
+    "type": "architecture",
+    "subtitle": "从现场数据到运维决策，四层职责与三项横向支撑",
+    "assumptions": [
+      "这是原创示例，不是用户现场实际部署",
+      "横层未绘制未经确认的调用关系"
+    ]
+  },
+  {
+    "id": "02-workflow",
+    "title": "设备异常处置 · 责任与闭环",
+    "name": "责任泳道",
+    "family": "过程与时序",
+    "type": "graph",
+    "subtitle": "三条责任泳道；判定分支明确，复验不通过时返回维修",
+    "assumptions": []
+  },
+  {
+    "id": "03-organization",
+    "title": "运维团队 · 职责结构",
+    "name": "组织结构",
+    "family": "关系与结构",
+    "type": "tree",
+    "subtitle": "实线表示行政汇报；岗位职责独立于姓名",
+    "assumptions": []
+  },
+  {
+    "id": "04-mindmap",
+    "title": "改善课题 · 从问题到验证",
+    "name": "思维导图",
+    "family": "关系与结构",
+    "type": "tree",
+    "subtitle": "以可观察问题为根，按事实、原因、方案与验证展开",
+    "assumptions": []
+  },
+  {
+    "id": "05-sequence",
+    "title": "工单创建 · 服务交互时序",
+    "name": "交互时序",
+    "family": "过程与时序",
+    "type": "sequence",
+    "subtitle": "纵向表示先后；虚线表示返回，图中不暗示实际耗时",
+    "assumptions": []
+  },
+  {
+    "id": "06-gantt",
+    "title": "运维平台试点 · 实施计划",
+    "name": "甘特排期",
+    "family": "计划与协作",
+    "type": "gantt",
+    "subtitle": "按自然日定位，包含结束日；箭头表示完成后开始的依赖",
+    "assumptions": []
+  },
+  {
+    "id": "07-swot",
+    "title": "设备数据平台 · 试点分析",
+    "name": "SWOT 分析",
+    "family": "商业与管理",
+    "type": "matrix",
+    "subtitle": "四类因素对应不同含义；条目均为待验证的假说",
+    "assumptions": []
+  },
+  {
+    "id": "08-bar-chart",
+    "title": "异常类型 · 频次比较",
+    "name": "横条比较",
+    "family": "数据图表",
+    "type": "chart",
+    "subtitle": "同一统计期间、同一计数口径；横条从零开始",
+    "assumptions": []
+  },
+  {
+    "id": "09-line-chart",
+    "title": "月度停机时间 · 趋势观察",
+    "name": "折线趋势",
+    "family": "数据图表",
+    "type": "chart",
+    "subtitle": "等间隔月份；保留原始数值，不使用平滑曲线",
+    "assumptions": []
+  },
+  {
+    "id": "10-donut-chart",
+    "title": "维护任务 · 工作量构成",
+    "name": "环图构成",
+    "family": "数据图表",
+    "type": "chart",
+    "subtitle": "各分类互斥且属于同一总体；面积按数值比例计算",
+    "assumptions": []
+  },
+  {
+    "id": "11-fishbone",
+    "title": "重复停机 · 原因假说整理",
+    "name": "鱼骨原因分析",
+    "family": "科研与分析",
+    "type": "fishbone",
+    "subtitle": "鱼骨用于组织待验证原因；连线不等于因果证据",
+    "assumptions": []
+  },
+  {
+    "id": "12-data-model",
+    "title": "设备与工单 · 逻辑数据关系",
+    "name": "逻辑数据模型",
+    "family": "系统与软件",
+    "type": "graph",
+    "subtitle": "三个实体与两条关系；基数直接标注，字段仅展示关键标识",
+    "assumptions": []
+  },
+  {
+    "id": "13-c4-context",
+    "title": "系统上下文 · 使用者与外部系统",
+    "name": "系统上下文",
+    "family": "系统与软件",
+    "type": "graph",
+    "subtitle": "只画目标系统、使用者和外部依赖；连线标明交互内容",
+    "assumptions": [
+      "原创演示内容，不代表实际业务、研究结论或工程设计"
+    ]
+  },
+  {
+    "id": "14-deployment",
+    "title": "部署拓扑 · 环境与运行实例",
+    "name": "部署拓扑",
+    "family": "系统与软件",
+    "type": "graph",
+    "subtitle": "逻辑服务、运行实例与网络边界分开；图中实例数量仅为演示",
+    "assumptions": [
+      "原创演示内容，不代表实际业务、研究结论或工程设计"
+    ]
+  },
+  {
+    "id": "15-network-topology",
+    "title": "网络拓扑 · 星形连接",
+    "name": "网络拓扑",
+    "family": "系统与软件",
+    "type": "radial",
+    "subtitle": "连线表示链路，中心是接入交换节点；不暗示冗余与安全隔离",
+    "assumptions": [
+      "原创演示内容，不代表实际业务、研究结论或工程设计"
+    ]
+  },
+  {
+    "id": "16-data-flow",
+    "title": "数据流图 · 输入、处理与存储",
+    "name": "数据流图",
+    "family": "系统与软件",
+    "type": "graph",
+    "subtitle": "处理过程使用动词；外部实体、数据存储和命名数据流分开",
+    "assumptions": [
+      "原创演示内容，不代表实际业务、研究结论或工程设计"
+    ]
+  },
+  {
+    "id": "17-state-machine",
+    "title": "状态机 · 工单生命周期",
+    "name": "状态机",
+    "family": "过程与时序",
+    "type": "graph",
+    "subtitle": "边标注触发事件；退回与取消为明确转移",
+    "assumptions": [
+      "原创演示内容，不代表实际业务、研究结论或工程设计"
+    ]
+  },
+  {
+    "id": "18-class-diagram",
+    "title": "类结构 · 属性、操作与关联",
+    "name": "类结构",
+    "family": "系统与软件",
+    "type": "record",
+    "subtitle": "三个分区分别是类名、属性和操作；连线为关联，基数直接标注",
+    "assumptions": [
+      "原创演示内容，不代表实际业务、研究结论或工程设计"
+    ]
+  },
+  {
+    "id": "19-use-case",
+    "title": "用例关系 · 角色与目标",
+    "name": "用例关系",
+    "family": "系统与软件",
+    "type": "graph",
+    "subtitle": "系统边界包围用例；角色在边界外；线表示参与关系",
+    "assumptions": [
+      "原创演示内容，不代表实际业务、研究结论或工程设计"
+    ]
+  },
+  {
+    "id": "20-research-route",
+    "title": "科研技术路线 · 问题到验证",
+    "name": "科研技术路线",
+    "family": "科研与分析",
+    "type": "graph",
+    "subtitle": "研究问题、并行方法和验证环节分别呈现；全部为拟研究方案",
+    "assumptions": [
+      "原创演示内容，不代表实际业务、研究结论或工程设计"
+    ]
+  },
+  {
+    "id": "21-wbs",
+    "title": "工作分解结构 · 按交付物拆解",
+    "name": "工作分解结构",
+    "family": "计划与协作",
+    "type": "tree",
+    "subtitle": "父节点范围由子交付物分解；不把分解线当作时间依赖",
+    "assumptions": [
+      "原创演示内容，不代表实际业务、研究结论或工程设计"
+    ]
+  },
+  {
+    "id": "22-concept-map",
+    "title": "概念图 · 用连接词说明关系",
+    "name": "概念图",
+    "family": "关系与结构",
+    "type": "graph",
+    "subtitle": "概念之间用可读命题连接，允许交叉关系",
+    "assumptions": [
+      "原创演示内容，不代表实际业务、研究结论或工程设计"
+    ]
+  },
+  {
+    "id": "23-hub-spoke",
+    "title": "辐射结构 · 中心议题与分支",
+    "name": "辐射结构",
+    "family": "关系与结构",
+    "type": "radial",
+    "subtitle": "辐射线表示主题关联，没有先后顺序",
+    "assumptions": [
+      "原创演示内容，不代表实际业务、研究结论或工程设计"
+    ]
+  },
+  {
+    "id": "24-cycle",
+    "title": "循环结构 · PDCA 闭环",
+    "name": "循环结构",
+    "family": "过程与时序",
+    "type": "cycle",
+    "subtitle": "箭头沿同一方向闭环；每个阶段有明确产出",
+    "assumptions": [
+      "原创演示内容，不代表实际业务、研究结论或工程设计"
+    ]
+  },
+  {
+    "id": "25-funnel",
+    "title": "漏斗结构 · 阶段留存",
+    "name": "漏斗结构",
+    "family": "信息表达",
+    "type": "tapered",
+    "subtitle": "每层顶边宽度表示阶段数量；连续阶段数量不得递增",
+    "assumptions": [
+      "原创演示内容，不代表实际业务、研究结论或工程设计"
+    ]
+  },
+  {
+    "id": "26-pyramid",
+    "title": "金字塔结构 · 基础到决策",
+    "name": "金字塔结构",
+    "family": "关系与结构",
+    "type": "tapered",
+    "subtitle": "形状表达层级，面积不代表数值比例",
+    "assumptions": [
+      "原创演示内容，不代表实际业务、研究结论或工程设计"
+    ]
+  },
+  {
+    "id": "27-venn",
+    "title": "韦恩结构 · 两类集合及交集",
+    "name": "韦恩结构",
+    "family": "关系与结构",
+    "type": "venn",
+    "subtitle": "交叠表示共同成员；圆面积不编码集合大小",
+    "assumptions": [
+      "原创演示内容，不代表实际业务、研究结论或工程设计"
+    ]
+  },
+  {
+    "id": "28-concentric",
+    "title": "同心层次 · 范围与边界",
+    "name": "同心层次",
+    "family": "关系与结构",
+    "type": "concentric",
+    "subtitle": "由外到内表示包含关系，不表示数量大小",
+    "assumptions": [
+      "原创演示内容，不代表实际业务、研究结论或工程设计"
+    ]
+  },
+  {
+    "id": "29-timeline",
+    "title": "时间线 · 里程碑的真实间隔",
+    "name": "时间线",
+    "family": "计划与协作",
+    "type": "timeline",
+    "subtitle": "日期按自然日距离定位；上下错开说明，避免均匀排期造成误读",
+    "assumptions": [
+      "原创演示内容，不代表实际业务、研究结论或工程设计"
+    ]
+  },
+  {
+    "id": "30-roadmap",
+    "title": "路线图 · 工作流与阶段",
+    "name": "路线图",
+    "family": "计划与协作",
+    "type": "table",
+    "subtitle": "每行是一条工作流；每列是阶段，单元格给出交付重点",
+    "assumptions": [
+      "原创演示内容，不代表实际业务、研究结论或工程设计"
+    ]
+  },
+  {
+    "id": "31-dependency-network",
+    "title": "任务依赖网络 · 并行与汇合",
+    "name": "任务依赖网络",
+    "family": "计划与协作",
+    "type": "graph",
+    "subtitle": "箭头表示前置依赖；未进行工期计算，因此不标注关键路径",
+    "assumptions": [
+      "原创演示内容，不代表实际业务、研究结论或工程设计"
+    ]
+  },
+  {
+    "id": "32-decision-tree",
+    "title": "决策树 · 互斥分支与结论",
+    "name": "决策树",
+    "family": "过程与时序",
+    "type": "graph",
+    "subtitle": "每个问题都有明确分支，叶子是行动结果",
+    "assumptions": [
+      "原创演示内容，不代表实际业务、研究结论或工程设计"
+    ]
+  },
+  {
+    "id": "33-business-model-canvas",
+    "title": "商业模式画布 · 九个相互关联的要素",
+    "name": "商业模式画布",
+    "family": "商业与管理",
+    "type": "bmc",
+    "subtitle": "保留九格的含义与位置；条目为待验证假说",
+    "assumptions": [
+      "原创演示内容，不代表实际业务、研究结论或工程设计"
+    ]
+  },
+  {
+    "id": "34-pest",
+    "title": "PEST 分析 · 外部条件的四个维度",
+    "name": "PEST 分析",
+    "family": "商业与管理",
+    "type": "matrix",
+    "subtitle": "四个维度均需来源与时间范围；本图只提供研究问题",
+    "assumptions": [
+      "原创演示内容，不代表实际业务、研究结论或工程设计"
+    ]
+  },
+  {
+    "id": "35-five-forces",
+    "title": "五力分析 · 行业关系",
+    "name": "五力分析",
+    "family": "商业与管理",
+    "type": "radial",
+    "subtitle": "中心为现有竞争，四周呈现外部力量；关系强弱需要证据",
+    "assumptions": [
+      "原创演示内容，不代表实际业务、研究结论或工程设计"
+    ]
+  },
+  {
+    "id": "36-quadrant",
+    "title": "四象限 · 影响与实施难度",
+    "name": "四象限",
+    "family": "商业与管理",
+    "type": "quadrant",
+    "subtitle": "坐标为演示评分，真实优先级需要公开评分依据",
+    "assumptions": [
+      "原创演示内容，不代表实际业务、研究结论或工程设计"
+    ]
+  },
+  {
+    "id": "37-raci",
+    "title": "RACI 矩阵 · 责任与协作",
+    "name": "RACI 矩阵",
+    "family": "计划与协作",
+    "type": "table",
+    "subtitle": "每行一个 A；R 执行、A 负责、C 咨询、I 知会",
+    "assumptions": [
+      "原创演示内容，不代表实际业务、研究结论或工程设计"
+    ]
+  },
+  {
+    "id": "38-customer-journey",
+    "title": "用户旅程 · 任务、触点与困难",
+    "name": "用户旅程",
+    "family": "商业与管理",
+    "type": "table",
+    "subtitle": "按使用者的经历组织阶段，区分行为与改进假说",
+    "assumptions": [
+      "原创演示内容，不代表实际业务、研究结论或工程设计"
+    ]
+  },
+  {
+    "id": "39-service-blueprint",
+    "title": "服务蓝图 · 前台与后台协作",
+    "name": "服务蓝图",
+    "family": "商业与管理",
+    "type": "table",
+    "subtitle": "阶段为列，用户、前台、后台和支撑为行；表中边界需按组织调整",
+    "assumptions": [
+      "原创演示内容，不代表实际业务、研究结论或工程设计"
+    ]
+  },
+  {
+    "id": "40-risk-matrix",
+    "title": "风险矩阵 · 等级映射",
+    "name": "风险矩阵",
+    "family": "商业与管理",
+    "type": "plot",
+    "subtitle": "示例等级 = 可能性等级 × 影响等级；序数评分不是概率",
+    "assumptions": [
+      "原创演示内容，不代表实际业务、研究结论或工程设计"
+    ]
+  },
+  {
+    "id": "41-comparison",
+    "title": "对比矩阵 · 方案与判断依据",
+    "name": "对比矩阵",
+    "family": "商业与管理",
+    "type": "table",
+    "subtitle": "相同维度逐项对照；不使用未经提供的评分",
+    "assumptions": [
+      "原创演示内容，不代表实际业务、研究结论或工程设计"
+    ]
+  },
+  {
+    "id": "42-value-chain",
+    "title": "价值链 · 主要活动与产出",
+    "name": "价值链",
+    "family": "商业与管理",
+    "type": "chevrons",
+    "subtitle": "箭头表示价值活动的阅读顺序，不自动代表系统调用",
+    "assumptions": [
+      "原创演示内容，不代表实际业务、研究结论或工程设计"
+    ]
+  },
+  {
+    "id": "43-v-model",
+    "title": "验证 V 模型 · 设计与验证对应",
+    "name": "验证 V 模型",
+    "family": "科研与分析",
+    "type": "graph",
+    "subtitle": "左右对应的是同层验证关系；底部实现连接设计与验证",
+    "assumptions": [
+      "原创演示内容，不代表实际业务、研究结论或工程设计"
+    ]
+  },
+  {
+    "id": "44-grouped-bar",
+    "title": "分组柱状图 · 同类指标的并列比较",
+    "name": "分组柱状图",
+    "family": "数据图表",
+    "type": "plot",
+    "subtitle": "各系列共享零基线和相同量纲",
+    "assumptions": [
+      "原创演示内容，不代表实际业务、研究结论或工程设计"
+    ]
+  },
+  {
+    "id": "45-stacked-bar",
+    "title": "堆叠柱状图 · 总量与内部构成",
+    "name": "堆叠柱状图",
+    "family": "数据图表",
+    "type": "plot",
+    "subtitle": "每根柱的组成必须互斥且量纲一致",
+    "assumptions": [
+      "原创演示内容，不代表实际业务、研究结论或工程设计"
+    ]
+  },
+  {
+    "id": "46-scatter",
+    "title": "散点图 · 成对观测",
+    "name": "散点图",
+    "family": "数据图表",
+    "type": "plot",
+    "subtitle": "每一点是一组配对值；位置不自动证明因果",
+    "assumptions": [
+      "原创演示内容，不代表实际业务、研究结论或工程设计"
+    ]
+  },
+  {
+    "id": "47-bubble",
+    "title": "气泡图 · 两个坐标与第三个量",
+    "name": "气泡图",
+    "family": "数据图表",
+    "type": "plot",
+    "subtitle": "气泡面积与第三个量成比例，半径不是线性编码",
+    "assumptions": [
+      "原创演示内容，不代表实际业务、研究结论或工程设计"
+    ]
+  },
+  {
+    "id": "48-heatmap",
+    "title": "热力矩阵 · 行列交叉强度",
+    "name": "热力矩阵",
+    "family": "数据图表",
+    "type": "plot",
+    "subtitle": "同一色阶映射同一量纲，数值直接保留",
+    "assumptions": [
+      "原创演示内容，不代表实际业务、研究结论或工程设计"
+    ]
+  },
+  {
+    "id": "49-radar",
+    "title": "雷达结构 · 同量程多维比较",
+    "name": "雷达结构",
+    "family": "数据图表",
+    "type": "plot",
+    "subtitle": "各轴共享 0–100 量程；维度与评分均为演示",
+    "assumptions": [
+      "原创演示内容，不代表实际业务、研究结论或工程设计"
+    ]
+  },
+  {
+    "id": "50-histogram",
+    "title": "直方图 · 连续观测的频数分布",
+    "name": "直方图",
+    "family": "数据图表",
+    "type": "plot",
+    "subtitle": "分箱等宽且相邻；柱面积与频数成比例",
+    "assumptions": [
+      "原创演示内容，不代表实际业务、研究结论或工程设计"
+    ]
+  },
+  {
+    "id": "51-waterfall",
+    "title": "瀑布图 · 起点、增减与终点",
+    "name": "瀑布图",
+    "family": "数据图表",
+    "type": "plot",
+    "subtitle": "增减从前一累计值起算；总量柱从零起算",
+    "assumptions": [
+      "原创演示内容，不代表实际业务、研究结论或工程设计"
+    ]
+  },
+  {
+    "id": "52-area",
+    "title": "面积图 · 等间隔趋势与量值",
+    "name": "面积图",
+    "family": "数据图表",
+    "type": "plot",
+    "subtitle": "底部从零开始；横轴为等间隔类别，面积不额外表示独立指标",
+    "assumptions": [
+      "原创演示内容，不代表实际业务、研究结论或工程设计"
+    ]
+  },
+  {
+    "id": "53-pie",
+    "title": "饼图 · 同一总体的构成",
+    "name": "饼图",
+    "family": "数据图表",
+    "type": "plot",
+    "subtitle": "类别互斥且穷尽；扇形角度按真实比例计算",
+    "assumptions": [
+      "原创演示内容，不代表实际业务、研究结论或工程设计"
+    ]
+  },
+  {
+    "id": "54-treemap",
+    "title": "矩形树图 · 面积编码构成",
+    "name": "矩形树图",
+    "family": "数据图表",
+    "type": "treemap",
+    "subtitle": "每块面积与数值成比例；当前为单层构成",
+    "assumptions": [
+      "原创演示内容，不代表实际业务、研究结论或工程设计"
+    ]
+  },
+  {
+    "id": "55-sankey",
+    "title": "桑基结构 · 来源与去向",
+    "name": "桑基结构",
+    "family": "数据图表",
+    "type": "sankey",
+    "subtitle": "带宽与流量成比例；由连接值计算两端总量，保持守恒",
+    "assumptions": [
+      "原创演示内容，不代表实际业务、研究结论或工程设计"
+    ]
+  },
+  {
+    "id": "56-bullet",
+    "title": "目标条图 · 实绩与目标",
+    "name": "目标条图",
+    "family": "数据图表",
+    "type": "plot",
+    "subtitle": "条长表示实绩，竖线表示目标；所有行共享量程",
+    "assumptions": [
+      "原创演示内容，不代表实际业务、研究结论或工程设计"
+    ]
+  },
+  {
+    "id": "57-floorplan",
+    "title": "空间布置 · 按尺寸表达区域",
+    "name": "空间布置",
+    "family": "工程与空间",
+    "type": "floorplan",
+    "subtitle": "平面区划按输入尺寸同比缩放；不含建筑、消防或施工校核",
+    "assumptions": [
+      "原创演示内容，不代表实际业务、研究结论或工程设计"
+    ]
+  },
+  {
+    "id": "58-circuit",
+    "title": "基本电路 · 断开回路示意",
+    "name": "基本电路",
+    "family": "工程与空间",
+    "type": "circuit",
+    "subtitle": "电源、开关与负载以导线连接；仅作拓扑教学，不给出额定参数",
+    "assumptions": [
+      "原创演示内容，不代表实际业务、研究结论或工程设计"
+    ]
+  },
+  {
+    "id": "59-process-flow",
+    "title": "工艺流程 · 设备与物料路径",
+    "name": "工艺流程",
+    "family": "工程与空间",
+    "type": "processplant",
+    "subtitle": "容器、输送与处理单元按物料方向连接；这是概念 PFD",
+    "assumptions": [
+      "原创演示内容，不代表实际业务、研究结论或工程设计"
+    ]
+  },
+  {
+    "id": "60-numbered-information",
+    "title": "编号信息结构 · 观点与证据",
+    "name": "编号信息结构",
+    "family": "信息表达",
+    "type": "infographic",
+    "subtitle": "每个观点配一条解释；编号用于阅读顺序，不代表量值",
+    "assumptions": [
+      "原创演示内容，不代表实际业务、研究结论或工程设计"
+    ]
+  }
+]

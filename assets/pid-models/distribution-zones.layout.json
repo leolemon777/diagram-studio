@@ -1,0 +1,89 @@
+{
+  "positions": {
+    "tank": [
+      150,
+      450
+    ],
+    "pump": [
+      350,
+      450
+    ],
+    "tap": [
+      570,
+      450
+    ],
+    "header": [
+      780,
+      450
+    ],
+    "valve_a": [
+      1050,
+      450
+    ],
+    "zone_a": [
+      1380,
+      450
+    ],
+    "valve_b": [
+      1050,
+      260
+    ],
+    "zone_b": [
+      1380,
+      260
+    ],
+    "pt": [
+      250,
+      320
+    ],
+    "pi": [
+      470,
+      320
+    ]
+  },
+  "ports": {
+    "tank_out": "right",
+    "pump_in": "left",
+    "pump_out": "right",
+    "tap_in": "left",
+    "tap_out": "right",
+    "tap_sense": "top",
+    "header_in": "left",
+    "header_a": "right",
+    "header_b": "top",
+    "valve_a_in": "left",
+    "valve_a_out": "right",
+    "zone_a_in": "left",
+    "valve_b_in": "left",
+    "valve_b_out": "right",
+    "zone_b_in": "left",
+    "pt_process": "bottom",
+    "pt_signal": "right",
+    "pi_signal": "left"
+  },
+  "routes": {
+    "C1": [],
+    "C2": [],
+    "C3": [],
+    "C4": [],
+    "C5": [],
+    "C6": [
+      [
+        780,
+        260
+      ]
+    ],
+    "C7": [],
+    "C8": [
+      [
+        570,
+        370
+      ],
+      [
+        250,
+        370
+      ]
+    ],
+    "C9": []
+  }
+}

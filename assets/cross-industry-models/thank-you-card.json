@@ -1,0 +1,97 @@
+{
+  "catalog_id": "cn-1225",
+  "mode": "thank-you-card",
+  "title": "项目协作感谢卡",
+  "subtitle": "收件人、核心信息和署名保持清晰",
+  "template": "publication",
+  "sector": "客户与员工沟通",
+  "use_case": "客户关系、活动和团队认可中的常用卡片",
+  "data_status": "simulated",
+  "assumptions": [
+    "内容和数值为教学模拟",
+    "真实交付前须替换名称、事实、品牌、尺寸和审批信息"
+  ],
+  "metrics": [
+    {
+      "id": "message",
+      "label": "核心信息",
+      "value": 1,
+      "unit": "条",
+      "evidence": "模拟输入"
+    },
+    {
+      "id": "roles",
+      "label": "信息角色",
+      "value": 4,
+      "unit": "项",
+      "evidence": "模拟输入"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "b1",
+      "role": "headline",
+      "label": "主题",
+      "content": "感谢你把复杂问题讲清楚",
+      "rect": [
+        0.05,
+        0.66,
+        0.9,
+        0.25
+      ],
+      "order": 1
+    },
+    {
+      "id": "b2",
+      "role": "recipient",
+      "label": "收件人",
+      "content": "致：研究与客服团队",
+      "rect": [
+        0.05,
+        0.36,
+        0.43,
+        0.23
+      ],
+      "order": 2
+    },
+    {
+      "id": "b3",
+      "role": "message",
+      "label": "正文",
+      "content": "从访谈到上线，你们的证据让每次决策更可靠。",
+      "rect": [
+        0.52,
+        0.36,
+        0.43,
+        0.23
+      ],
+      "order": 3
+    },
+    {
+      "id": "b4",
+      "role": "sender",
+      "label": "署名",
+      "content": "产品团队",
+      "rect": [
+        0.05,
+        0.08,
+        0.9,
+        0.2
+      ],
+      "order": 4
+    }
+  ],
+  "sheet": {
+    "width": 148,
+    "height": 105,
+    "unit": "mm"
+  },
+  "audience": "客户、员工或公众",
+  "primary_action": "阅读并回应",
+  "reading_order": [
+    "b1",
+    "b2",
+    "b3",
+    "b4"
+  ]
+}
