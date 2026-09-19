@@ -19,6 +19,8 @@
 
 ## 怎么用
 
+如果不知道该选哪种图，克隆仓库后在浏览器打开本地的[中英双语选图向导](demos/chooser/index.html)：按“想让读者看懂什么 → 图型 → 风格”选择，填入自己的内容后复制生成的 `$diagram-studio` 指令。向导覆盖 15 种常见形式，提供选型提示；它本身不渲染任意输入，完整成图仍由 Codex 使用 Skill 完成。风格缩略图是方向示意，实际支持范围见[风格家族](references/style-families.md)。
+
 ### 1. 安装给 Codex
 
 在 macOS 或 Linux 的终端运行：

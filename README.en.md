@@ -19,6 +19,8 @@ You can also compare **different visual expressions of the same source data**, c
 
 ## How to use it
 
+If you are unsure which form to use, clone the repository and open the local [bilingual diagram chooser](demos/chooser/index.html) in a browser. Select the reader's question, a diagram form, and a visual direction; then enter your content and copy the resulting `$diagram-studio` prompt. It covers 15 common forms and explains the choice. The chooser itself does not render arbitrary input; Codex uses the skill to make the final diagram. Style thumbnails are directional sketches; see the [validated style scope](references/style-families.md).
+
 ### 1. Install it for Codex
 
 On macOS or Linux, run:

@@ -1,6 +1,6 @@
 interface:
-  display_name: "图示设计工坊"
-  short_description: "从需求生成专业架构、流程与数据图表，统一风格并交付矢量图和可编辑源文件"
+  display_name: "图示设计工坊 · Diagram Studio"
+  short_description: "自然语言绘制架构、流程与数据图表 · Diagrams from briefs"
   default_prompt: "使用 $diagram-studio，根据我的需求生成清晰、专业、可编辑的图示。"
 policy:
   allow_implicit_invocation: true
