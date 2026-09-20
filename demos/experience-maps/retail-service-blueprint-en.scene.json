@@ -1,0 +1,1102 @@
+{
+  "width": 1600,
+  "height": 1116,
+  "theme": "light",
+  "palette": {
+    "bg": "#F1EFEB",
+    "panel": "#FEFDF9",
+    "ink": "#30302D",
+    "muted": "#6D6A63",
+    "line": "#D8D3C8",
+    "accent": "#AC6046",
+    "teal": "#67685E",
+    "amber": "#8C7964",
+    "red": "#554C46",
+    "tint": "#F0E4DA",
+    "tint2": "#ECECE5"
+  },
+  "nodes": [
+    {
+      "id": "_v1",
+      "x": 64,
+      "y": 190,
+      "w": 1472,
+      "h": 34,
+      "label": "Customer: A customer ordering online for store pickup  ·  Goal: Receive the right item on time and know how exceptions are handled",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 18,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v2",
+      "x": 64,
+      "y": 256,
+      "w": 234,
+      "h": 36,
+      "label": "Service stage",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "blueprint-stage-order",
+      "x": 324.0,
+      "y": 234,
+      "w": 291.0,
+      "h": 76,
+      "label": "01 / order",
+      "detail": "Order online",
+      "kind": "panel",
+      "tone": "accent",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "01 / order",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "Order online",
+          16,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "blueprint-stage-prepare",
+      "x": 627.0,
+      "y": 234,
+      "w": 291.0,
+      "h": 76,
+      "label": "02 / prepare",
+      "detail": "Prepare in store",
+      "kind": "panel",
+      "tone": "teal",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "02 / prepare",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "Prepare in store",
+          16,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "blueprint-stage-pickup",
+      "x": 930.0,
+      "y": 234,
+      "w": 291.0,
+      "h": 76,
+      "label": "03 / pickup",
+      "detail": "Collect in store",
+      "kind": "panel",
+      "tone": "teal",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "03 / pickup",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "Collect in store",
+          16,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "blueprint-stage-aftercare",
+      "x": 1233.0,
+      "y": 234,
+      "w": 291.0,
+      "h": 76,
+      "label": "04 / aftercare",
+      "detail": "Resolve issue",
+      "kind": "panel",
+      "tone": "teal",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "04 / aftercare",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "Resolve issue",
+          16,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "_v7",
+      "x": 64,
+      "y": 346,
+      "w": 234,
+      "h": 84,
+      "label": "Customer action\n[customer] · customer",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "blueprint-c_order",
+      "x": 324.0,
+      "y": 326,
+      "w": 291.0,
+      "h": 112,
+      "label": "[c_order] Selects store and pays",
+      "detail": "",
+      "kind": "panel",
+      "tone": "accent",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[c_order] Selects store",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "and pays",
+          20,
+          true,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "blueprint-empty-customer-prepare",
+      "x": 627.0,
+      "y": 326,
+      "w": 291.0,
+      "h": 112,
+      "label": "— Not recorded",
+      "detail": "",
+      "kind": "panel",
+      "tone": "accent",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "— Not recorded",
+          20,
+          true,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "blueprint-c_pickup",
+      "x": 930.0,
+      "y": 326,
+      "w": 291.0,
+      "h": 112,
+      "label": "[c_pickup] Shows code and checks item",
+      "detail": "",
+      "kind": "panel",
+      "tone": "accent",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[c_pickup] Shows code",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "and checks item",
+          20,
+          true,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "blueprint-c_after",
+      "x": 1233.0,
+      "y": 326,
+      "w": 291.0,
+      "h": 112,
+      "label": "[c_after] Reports missing or damaged item",
+      "detail": "",
+      "kind": "panel",
+      "tone": "accent",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[c_after] Reports missing",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "or damaged item",
+          20,
+          true,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "_v12",
+      "x": 64,
+      "y": 468,
+      "w": 234,
+      "h": 84,
+      "label": "Frontstage contact\n[frontstage] · frontstage",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "blueprint-f_order",
+      "x": 324.0,
+      "y": 448,
+      "w": 291.0,
+      "h": 112,
+      "label": "[f_order] Shows stock promise and pickup time",
+      "detail": "Owner: Commerce page",
+      "kind": "panel",
+      "tone": "teal",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[f_order] Shows stock",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "promise and pickup time",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "Owner: Commerce page",
+          16,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "blueprint-empty-frontstage-prepare",
+      "x": 627.0,
+      "y": 448,
+      "w": 291.0,
+      "h": 112,
+      "label": "— Not recorded",
+      "detail": "",
+      "kind": "panel",
+      "tone": "teal",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "— Not recorded",
+          20,
+          true,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "blueprint-f_pickup",
+      "x": 930.0,
+      "y": 448,
+      "w": 291.0,
+      "h": 112,
+      "label": "[f_pickup] Checks code and hands over bag",
+      "detail": "Owner: Store associate",
+      "kind": "panel",
+      "tone": "teal",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[f_pickup] Checks code",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "and hands over bag",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "Owner: Store associate",
+          16,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "blueprint-f_after",
+      "x": 1233.0,
+      "y": 448,
+      "w": 291.0,
+      "h": 112,
+      "label": "[f_after] Logs issue and response time",
+      "detail": "Owner: Support agent",
+      "kind": "panel",
+      "tone": "teal",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[f_after] Logs issue and",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "response time",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "Owner: Support agent",
+          16,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "_v17",
+      "x": 64,
+      "y": 590,
+      "w": 234,
+      "h": 84,
+      "label": "Backstage fulfilment\n[backstage] · backstage",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "blueprint-b_order",
+      "x": 324.0,
+      "y": 570,
+      "w": 291.0,
+      "h": 112,
+      "label": "[b_order] Reserves stock and creates store task",
+      "detail": "Owner: Order service",
+      "kind": "panel",
+      "tone": "amber",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[b_order] Reserves stock",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "and creates store task",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "Owner: Order service",
+          16,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "blueprint-b_prepare",
+      "x": 627.0,
+      "y": 570,
+      "w": 291.0,
+      "h": 112,
+      "label": "[b_prepare] Picks, checks, and labels the order",
+      "detail": "Owner: Store stockroom",
+      "kind": "panel",
+      "tone": "amber",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[b_prepare] Picks, check",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "s, and labels the order",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "Owner: Store stockroom",
+          16,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "blueprint-empty-backstage-pickup",
+      "x": 930.0,
+      "y": 570,
+      "w": 291.0,
+      "h": 112,
+      "label": "— Not recorded",
+      "detail": "",
+      "kind": "panel",
+      "tone": "amber",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "— Not recorded",
+          20,
+          true,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "blueprint-b_after",
+      "x": 1233.0,
+      "y": 570,
+      "w": 291.0,
+      "h": 112,
+      "label": "[b_after] Checks order, stock, and refund rule",
+      "detail": "Owner: Aftercare specialist",
+      "kind": "panel",
+      "tone": "amber",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[b_after] Checks order,",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "stock, and refund rule",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "Owner: Aftercare specialist",
+          16,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "_v22",
+      "x": 64,
+      "y": 712,
+      "w": 234,
+      "h": 105,
+      "label": "Support capability\n[support] · support",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "blueprint-empty-support-order",
+      "x": 324.0,
+      "y": 692,
+      "w": 291.0,
+      "h": 133,
+      "label": "— Not recorded",
+      "detail": "",
+      "kind": "panel",
+      "tone": "muted",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "— Not recorded",
+          20,
+          true,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "blueprint-s_prepare",
+      "x": 627.0,
+      "y": 692,
+      "w": 291.0,
+      "h": 133,
+      "label": "[s_prepare] Sends overdue preparation alert",
+      "detail": "Owner: Message centre",
+      "kind": "panel",
+      "tone": "muted",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[s_prepare] Sends",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "overdue preparation",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "alert",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "Owner: Message centre",
+          16,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "blueprint-s_pickup",
+      "x": 930.0,
+      "y": 692,
+      "w": 291.0,
+      "h": 133,
+      "label": "[s_pickup] Maintains code and verification log",
+      "detail": "Owner: Identity service",
+      "kind": "panel",
+      "tone": "muted",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[s_pickup] Maintains",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "code and verification log",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "Owner: Identity service",
+          16,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "blueprint-s_after",
+      "x": 1233.0,
+      "y": 692,
+      "w": 291.0,
+      "h": 133,
+      "label": "[s_after] Provides refund and case APIs",
+      "detail": "Owner: Aftercare platform",
+      "kind": "panel",
+      "tone": "muted",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[s_after] Provides refund",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "and case APIs",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "Owner: Aftercare platform",
+          16,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "_v27",
+      "x": 64,
+      "y": 855,
+      "w": 234,
+      "h": 105,
+      "label": "System record\n[system] · system",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "blueprint-sys_order",
+      "x": 324.0,
+      "y": 835,
+      "w": 291.0,
+      "h": 133,
+      "label": "[sys_order] Records payment, store, and promise",
+      "detail": "Owner: Order database",
+      "kind": "panel",
+      "tone": "red",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[sys_order] Records",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "payment, store, and",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "promise",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "Owner: Order database",
+          16,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "blueprint-sys_prepare",
+      "x": 627.0,
+      "y": 835,
+      "w": 291.0,
+      "h": 133,
+      "label": "[sys_prepare] Records pick status and exception",
+      "detail": "Owner: Stock database",
+      "kind": "panel",
+      "tone": "red",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[sys_prepare] Records",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "pick status and",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "exception",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "Owner: Stock database",
+          16,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "blueprint-empty-system-pickup",
+      "x": 930.0,
+      "y": 835,
+      "w": 291.0,
+      "h": 133,
+      "label": "— Not recorded",
+      "detail": "",
+      "kind": "panel",
+      "tone": "red",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "— Not recorded",
+          20,
+          true,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "blueprint-sys_after",
+      "x": 1233.0,
+      "y": 835,
+      "w": 291.0,
+      "h": 133,
+      "label": "[sys_after] Records evidence and resolution",
+      "detail": "Owner: Service desk",
+      "kind": "panel",
+      "tone": "red",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[sys_after] Records",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "evidence and resolution",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "Owner: Service desk",
+          16,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "_v32",
+      "x": 64,
+      "y": 531,
+      "w": 234,
+      "h": 28,
+      "label": "Visible / invisible",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v33",
+      "x": 64,
+      "y": 653,
+      "w": 234,
+      "h": 28,
+      "label": "Core flow / support",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v34",
+      "x": 64,
+      "y": 982,
+      "w": 1472,
+      "h": 34,
+      "label": "Boundaries carry service semantics; handoff arrows show declared collaboration only and are never inferred from adjacency.",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 15,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v35",
+      "x": 64,
+      "y": 34,
+      "w": 1472,
+      "h": 22,
+      "label": "DIAGRAM STUDIO  /  专业图示",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v36",
+      "x": 64,
+      "y": 69,
+      "w": 1472,
+      "h": 56,
+      "label": "Retail buy-online-pick-up blueprint",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 36,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v37",
+      "x": 64,
+      "y": 130,
+      "w": 1472,
+      "h": 38,
+      "label": "Place visible experience, fulfilment, and support on one service chain",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v38",
+      "x": 64,
+      "y": 1053,
+      "w": 1472,
+      "h": 1,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "line",
+      "stroke": "none",
+      "check": false
+    },
+    {
+      "id": "_v39",
+      "x": 64,
+      "y": 1066,
+      "w": 1472,
+      "h": 36,
+      "label": "示例方案 · 非实际部署 / 业务事实",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    }
+  ],
+  "edges": [
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          64,
+          560
+        ],
+        [
+          1536,
+          560
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "arrow": false,
+      "tone": "ink",
+      "width": 2
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          64,
+          682
+        ],
+        [
+          1536,
+          682
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "arrow": false,
+      "tone": "ink",
+      "width": 2
+    },
+    {
+      "source": "blueprint-c_order",
+      "target": "blueprint-b_order",
+      "label": "Order submitted",
+      "points": [
+        [
+          324.0,
+          382.0
+        ],
+        [
+          324.0,
+          626.0
+        ]
+      ],
+      "source_port": "left",
+      "target_port": "left",
+      "tone": "accent",
+      "width": 1.5,
+      "arrow": true
+    },
+    {
+      "source": "blueprint-b_prepare",
+      "target": "blueprint-f_pickup",
+      "label": "Ready for pickup",
+      "points": [
+        [
+          918.0,
+          626.0
+        ],
+        [
+          924.0,
+          626.0
+        ],
+        [
+          924.0,
+          504.0
+        ],
+        [
+          930.0,
+          504.0
+        ]
+      ],
+      "source_port": "right",
+      "target_port": "left",
+      "tone": "accent",
+      "width": 1.5,
+      "arrow": true
+    },
+    {
+      "source": "blueprint-f_after",
+      "target": "blueprint-b_after",
+      "label": "Issue case",
+      "points": [
+        [
+          1378.5,
+          560
+        ],
+        [
+          1378.5,
+          565.0
+        ],
+        [
+          1378.5,
+          570
+        ]
+      ],
+      "source_port": "bottom",
+      "target_port": "top",
+      "tone": "accent",
+      "width": 1.5,
+      "arrow": true
+    }
+  ],
+  "meta": {
+    "experience_map": "service-blueprint",
+    "service_blueprint": {
+      "stages": [
+        "order",
+        "prepare",
+        "pickup",
+        "aftercare"
+      ],
+      "lanes": [
+        "customer",
+        "frontstage",
+        "backstage",
+        "support",
+        "system"
+      ],
+      "boundaries": [
+        "Visible / invisible",
+        "Core flow / support"
+      ],
+      "handoffs": 3,
+      "stable_ids": [
+        "aftercare",
+        "b_after",
+        "b_order",
+        "b_prepare",
+        "backstage",
+        "c_after",
+        "c_order",
+        "c_pickup",
+        "customer",
+        "f_after",
+        "f_order",
+        "f_pickup",
+        "frontstage",
+        "order",
+        "pickup",
+        "prepare",
+        "s_after",
+        "s_pickup",
+        "s_prepare",
+        "support",
+        "sys_after",
+        "sys_order",
+        "sys_prepare",
+        "system"
+      ]
+    }
+  },
+  "assumptions": []
+}

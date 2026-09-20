@@ -18,7 +18,9 @@
 | `donut` | 环形占比图 | `scripts/render.py#chart:donut` | SVG, draw.io, scene/QA, HTML | `generated_with_semantic_validation` |
 | `histogram` / `scatter` | 直方图 / 散点图 | `scripts/render.py#plot` | SVG, draw.io, scene/QA, HTML | `generated_with_semantic_validation` |
 | `affinity` | 亲和图 | `scripts/organization_relations.py#affinity-map` | SVG, PNG, input/calculation/QA JSON | `manual_visual_review` |
-| `journey` / `retro` | 用户旅程 / 复盘行动板 | `scripts/render.py#table` | SVG, draw.io, scene/QA, HTML | `manual_visual_review` |
+| `journey` | 用户旅程图 | `scripts/render.py#journey` | SVG, draw.io, scene/QA, HTML | `manual_visual_review` |
+| `service-blueprint` | 服务蓝图 | `scripts/render.py#service-blueprint` | SVG, draw.io, scene/QA, HTML | `manual_visual_review` |
+| `retro` | 复盘行动板 | `scripts/render.py#table` | SVG, draw.io, scene/QA, HTML | `manual_visual_review` |
 | `storymap` | 用户故事地图 | `scripts/render.py#storymap` | SVG, draw.io, scene/brief/QA, HTML | `manual_visual_review` |
 
 证据级别只说明已执行的检查；人工查看不等于领域或用户批准。登记格式是交付协议，生成后仍要按项目实际检查。入口数量不代表完成率。

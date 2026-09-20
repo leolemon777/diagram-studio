@@ -1,0 +1,1072 @@
+{
+  "width": 1600,
+  "height": 1074,
+  "theme": "light",
+  "palette": {
+    "bg": "#F1EFEB",
+    "panel": "#FEFDF9",
+    "ink": "#30302D",
+    "muted": "#6D6A63",
+    "line": "#D8D3C8",
+    "accent": "#AC6046",
+    "teal": "#67685E",
+    "amber": "#8C7964",
+    "red": "#554C46",
+    "tint": "#F0E4DA",
+    "tint2": "#ECECE5"
+  },
+  "nodes": [
+    {
+      "id": "_v1",
+      "x": 64,
+      "y": 190,
+      "w": 1472,
+      "h": 34,
+      "label": "用户：线上下单、到店取货的顾客  ·  目标：准时拿到正确商品并知道异常如何处理",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 18,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v2",
+      "x": 64,
+      "y": 256,
+      "w": 234,
+      "h": 36,
+      "label": "服务阶段 / Stage",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "blueprint-stage-order",
+      "x": 324.0,
+      "y": 234,
+      "w": 291.0,
+      "h": 76,
+      "label": "01 / order",
+      "detail": "线上下单",
+      "kind": "panel",
+      "tone": "accent",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "01 / order",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "线上下单",
+          16,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "blueprint-stage-prepare",
+      "x": 627.0,
+      "y": 234,
+      "w": 291.0,
+      "h": 76,
+      "label": "02 / prepare",
+      "detail": "门店备货",
+      "kind": "panel",
+      "tone": "teal",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "02 / prepare",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "门店备货",
+          16,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "blueprint-stage-pickup",
+      "x": 930.0,
+      "y": 234,
+      "w": 291.0,
+      "h": 76,
+      "label": "03 / pickup",
+      "detail": "到店取货",
+      "kind": "panel",
+      "tone": "teal",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "03 / pickup",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "到店取货",
+          16,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "blueprint-stage-aftercare",
+      "x": 1233.0,
+      "y": 234,
+      "w": 291.0,
+      "h": 76,
+      "label": "04 / aftercare",
+      "detail": "售后处理",
+      "kind": "panel",
+      "tone": "teal",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "04 / aftercare",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "售后处理",
+          16,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "_v7",
+      "x": 64,
+      "y": 346,
+      "w": 234,
+      "h": 84,
+      "label": "顾客动作\n[customer] · customer",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "blueprint-c_order",
+      "x": 324.0,
+      "y": 326,
+      "w": 291.0,
+      "h": 112,
+      "label": "[c_order] 选择门店并支付",
+      "detail": "",
+      "kind": "panel",
+      "tone": "accent",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[c_order] 选择门店并支付",
+          20,
+          true,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "blueprint-empty-customer-prepare",
+      "x": 627.0,
+      "y": 326,
+      "w": 291.0,
+      "h": 112,
+      "label": "— 未记录",
+      "detail": "",
+      "kind": "panel",
+      "tone": "accent",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "— 未记录",
+          20,
+          true,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "blueprint-c_pickup",
+      "x": 930.0,
+      "y": 326,
+      "w": 291.0,
+      "h": 112,
+      "label": "[c_pickup] 出示取货码并核对商品",
+      "detail": "",
+      "kind": "panel",
+      "tone": "accent",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[c_pickup] 出示取货",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "码并核对商品",
+          20,
+          true,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "blueprint-c_after",
+      "x": 1233.0,
+      "y": 326,
+      "w": 291.0,
+      "h": 112,
+      "label": "[c_after] 反馈缺件或损坏",
+      "detail": "",
+      "kind": "panel",
+      "tone": "accent",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[c_after] 反馈缺件或损坏",
+          20,
+          true,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "_v12",
+      "x": 64,
+      "y": 468,
+      "w": 234,
+      "h": 84,
+      "label": "前台接触\n[frontstage] · frontstage",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "blueprint-f_order",
+      "x": 324.0,
+      "y": 448,
+      "w": 291.0,
+      "h": 112,
+      "label": "[f_order] 展示库存承诺与取货时间",
+      "detail": "负责人：电商页面",
+      "kind": "panel",
+      "tone": "teal",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[f_order] 展示库存承",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "诺与取货时间",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "负责人：电商页面",
+          16,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "blueprint-empty-frontstage-prepare",
+      "x": 627.0,
+      "y": 448,
+      "w": 291.0,
+      "h": 112,
+      "label": "— 未记录",
+      "detail": "",
+      "kind": "panel",
+      "tone": "teal",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "— 未记录",
+          20,
+          true,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "blueprint-f_pickup",
+      "x": 930.0,
+      "y": 448,
+      "w": 291.0,
+      "h": 112,
+      "label": "[f_pickup] 核验取货码并交付袋装商品",
+      "detail": "负责人：门店员工",
+      "kind": "panel",
+      "tone": "teal",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[f_pickup] 核验取货码并交",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "付袋装商品",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "负责人：门店员工",
+          16,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "blueprint-f_after",
+      "x": 1233.0,
+      "y": 448,
+      "w": 291.0,
+      "h": 112,
+      "label": "[f_after] 登记问题并给出处理时限",
+      "detail": "负责人：客服",
+      "kind": "panel",
+      "tone": "teal",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[f_after] 登记问题并",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "给出处理时限",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "负责人：客服",
+          16,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "_v17",
+      "x": 64,
+      "y": 590,
+      "w": 234,
+      "h": 84,
+      "label": "后台履约\n[backstage] · backstage",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "blueprint-b_order",
+      "x": 324.0,
+      "y": 570,
+      "w": 291.0,
+      "h": 112,
+      "label": "[b_order] 锁定库存并生成门店任务",
+      "detail": "负责人：订单服务",
+      "kind": "panel",
+      "tone": "amber",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[b_order] 锁定库存并",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "生成门店任务",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "负责人：订单服务",
+          16,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "blueprint-b_prepare",
+      "x": 627.0,
+      "y": 570,
+      "w": 291.0,
+      "h": 112,
+      "label": "[b_prepare] 拣货、复核并贴取货标签",
+      "detail": "负责人：门店仓",
+      "kind": "panel",
+      "tone": "amber",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[b_prepare] 拣货、复核并",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "贴取货标签",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "负责人：门店仓",
+          16,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "blueprint-empty-backstage-pickup",
+      "x": 930.0,
+      "y": 570,
+      "w": 291.0,
+      "h": 112,
+      "label": "— 未记录",
+      "detail": "",
+      "kind": "panel",
+      "tone": "amber",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "— 未记录",
+          20,
+          true,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "blueprint-b_after",
+      "x": 1233.0,
+      "y": 570,
+      "w": 291.0,
+      "h": 112,
+      "label": "[b_after] 核对订单、库存与退款条件",
+      "detail": "负责人：售后专员",
+      "kind": "panel",
+      "tone": "amber",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[b_after] 核对订单、库",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "存与退款条件",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "负责人：售后专员",
+          16,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "_v22",
+      "x": 64,
+      "y": 712,
+      "w": 234,
+      "h": 84,
+      "label": "支撑能力\n[support] · support",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "blueprint-empty-support-order",
+      "x": 324.0,
+      "y": 692,
+      "w": 291.0,
+      "h": 112,
+      "label": "— 未记录",
+      "detail": "",
+      "kind": "panel",
+      "tone": "muted",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "— 未记录",
+          20,
+          true,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "blueprint-s_prepare",
+      "x": 627.0,
+      "y": 692,
+      "w": 291.0,
+      "h": 112,
+      "label": "[s_prepare] 推送备货超时提醒",
+      "detail": "负责人：消息中心",
+      "kind": "panel",
+      "tone": "muted",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[s_prepare] 推送",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "备货超时提醒",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "负责人：消息中心",
+          16,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "blueprint-s_pickup",
+      "x": 930.0,
+      "y": 692,
+      "w": 291.0,
+      "h": 112,
+      "label": "[s_pickup] 维护取货码与核验日志",
+      "detail": "负责人：身份服务",
+      "kind": "panel",
+      "tone": "muted",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[s_pickup] 维护取货",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "码与核验日志",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "负责人：身份服务",
+          16,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "blueprint-s_after",
+      "x": 1233.0,
+      "y": 692,
+      "w": 291.0,
+      "h": 112,
+      "label": "[s_after] 提供退款与客服工单接口",
+      "detail": "负责人：售后平台",
+      "kind": "panel",
+      "tone": "muted",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[s_after] 提供退款与",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "客服工单接口",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "负责人：售后平台",
+          16,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "_v27",
+      "x": 64,
+      "y": 834,
+      "w": 234,
+      "h": 84,
+      "label": "系统记录\n[system] · system",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "blueprint-sys_order",
+      "x": 324.0,
+      "y": 814,
+      "w": 291.0,
+      "h": 112,
+      "label": "[sys_order] 记录支付、门店和承诺时间",
+      "detail": "负责人：订单数据库",
+      "kind": "panel",
+      "tone": "red",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[sys_order] 记录支付、门店",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "和承诺时间",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "负责人：订单数据库",
+          16,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "blueprint-sys_prepare",
+      "x": 627.0,
+      "y": 814,
+      "w": 291.0,
+      "h": 112,
+      "label": "[sys_prepare] 记录拣货状态与异常原因",
+      "detail": "负责人：库存数据库",
+      "kind": "panel",
+      "tone": "red",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[sys_prepare] 记录拣货状",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "态与异常原因",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "负责人：库存数据库",
+          16,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "blueprint-empty-system-pickup",
+      "x": 930.0,
+      "y": 814,
+      "w": 291.0,
+      "h": 112,
+      "label": "— 未记录",
+      "detail": "",
+      "kind": "panel",
+      "tone": "red",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "— 未记录",
+          20,
+          true,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "blueprint-sys_after",
+      "x": 1233.0,
+      "y": 814,
+      "w": 291.0,
+      "h": 112,
+      "label": "[sys_after] 记录售后证据与处理结果",
+      "detail": "负责人：服务台",
+      "kind": "panel",
+      "tone": "red",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[sys_after] 记录售后证",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "据与处理结果",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "负责人：服务台",
+          16,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "_v32",
+      "x": 64,
+      "y": 531,
+      "w": 234,
+      "h": 28,
+      "label": "可见 / 不可见",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v33",
+      "x": 64,
+      "y": 653,
+      "w": 234,
+      "h": 28,
+      "label": "主流程 / 支撑",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v34",
+      "x": 64,
+      "y": 940,
+      "w": 1472,
+      "h": 34,
+      "label": "分界线承载服务语义；交接箭头只表示输入中声明的协作，不从相邻位置推断。",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 15,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v35",
+      "x": 64,
+      "y": 34,
+      "w": 1472,
+      "h": 22,
+      "label": "DIAGRAM STUDIO  /  专业图示",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v36",
+      "x": 64,
+      "y": 69,
+      "w": 1472,
+      "h": 56,
+      "label": "零售到店自提服务蓝图",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 36,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v37",
+      "x": 64,
+      "y": 130,
+      "w": 1472,
+      "h": 38,
+      "label": "把可见体验、后台履约和支撑系统放在同一条服务链上",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v38",
+      "x": 64,
+      "y": 1011,
+      "w": 1472,
+      "h": 1,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "line",
+      "stroke": "none",
+      "check": false
+    },
+    {
+      "id": "_v39",
+      "x": 64,
+      "y": 1024,
+      "w": 1472,
+      "h": 36,
+      "label": "示例方案 · 非实际部署 / 业务事实",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    }
+  ],
+  "edges": [
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          64,
+          560
+        ],
+        [
+          1536,
+          560
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "arrow": false,
+      "tone": "ink",
+      "width": 2
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          64,
+          682
+        ],
+        [
+          1536,
+          682
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "arrow": false,
+      "tone": "ink",
+      "width": 2
+    },
+    {
+      "source": "blueprint-c_order",
+      "target": "blueprint-b_order",
+      "label": "订单提交",
+      "points": [
+        [
+          324.0,
+          382.0
+        ],
+        [
+          324.0,
+          626.0
+        ]
+      ],
+      "source_port": "left",
+      "target_port": "left",
+      "tone": "accent",
+      "width": 1.5,
+      "arrow": true
+    },
+    {
+      "source": "blueprint-b_prepare",
+      "target": "blueprint-f_pickup",
+      "label": "备货完成",
+      "points": [
+        [
+          918.0,
+          626.0
+        ],
+        [
+          924.0,
+          626.0
+        ],
+        [
+          924.0,
+          504.0
+        ],
+        [
+          930.0,
+          504.0
+        ]
+      ],
+      "source_port": "right",
+      "target_port": "left",
+      "tone": "accent",
+      "width": 1.5,
+      "arrow": true
+    },
+    {
+      "source": "blueprint-f_after",
+      "target": "blueprint-b_after",
+      "label": "问题单",
+      "points": [
+        [
+          1378.5,
+          560
+        ],
+        [
+          1378.5,
+          565.0
+        ],
+        [
+          1378.5,
+          570
+        ]
+      ],
+      "source_port": "bottom",
+      "target_port": "top",
+      "tone": "accent",
+      "width": 1.5,
+      "arrow": true
+    }
+  ],
+  "meta": {
+    "experience_map": "service-blueprint",
+    "service_blueprint": {
+      "stages": [
+        "order",
+        "prepare",
+        "pickup",
+        "aftercare"
+      ],
+      "lanes": [
+        "customer",
+        "frontstage",
+        "backstage",
+        "support",
+        "system"
+      ],
+      "boundaries": [
+        "可见 / 不可见",
+        "主流程 / 支撑"
+      ],
+      "handoffs": 3,
+      "stable_ids": [
+        "aftercare",
+        "b_after",
+        "b_order",
+        "b_prepare",
+        "backstage",
+        "c_after",
+        "c_order",
+        "c_pickup",
+        "customer",
+        "f_after",
+        "f_order",
+        "f_pickup",
+        "frontstage",
+        "order",
+        "pickup",
+        "prepare",
+        "s_after",
+        "s_pickup",
+        "s_prepare",
+        "support",
+        "sys_after",
+        "sys_order",
+        "sys_prepare",
+        "system"
+      ]
+    }
+  },
+  "assumptions": []
+}

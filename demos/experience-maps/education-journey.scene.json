@@ -1,0 +1,1088 @@
+{
+  "width": 1600,
+  "height": 1315,
+  "theme": "light",
+  "palette": {
+    "bg": "#F1EFEB",
+    "panel": "#FEFDF9",
+    "ink": "#30302D",
+    "muted": "#6D6A63",
+    "line": "#D8D3C8",
+    "accent": "#AC6046",
+    "teal": "#67685E",
+    "amber": "#8C7964",
+    "red": "#554C46",
+    "tint": "#F0E4DA",
+    "tint2": "#ECECE5"
+  },
+  "nodes": [
+    {
+      "id": "_v1",
+      "x": 64,
+      "y": 190,
+      "w": 1472,
+      "h": 34,
+      "label": "用户：准备转行的在职学习者  ·  目标：确认课程适合自己并完成报名",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 18,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v2",
+      "x": 64,
+      "y": 261,
+      "w": 210,
+      "h": 36,
+      "label": "阶段 / Stage",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "journey-stage-discover",
+      "x": 302.0,
+      "y": 236,
+      "w": 294.5,
+      "h": 86,
+      "label": "01 / discover",
+      "detail": "发现课程",
+      "kind": "panel",
+      "tone": "accent",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "01 / discover",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "发现课程",
+          16,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "journey-stage-compare",
+      "x": 610.5,
+      "y": 236,
+      "w": 294.5,
+      "h": 86,
+      "label": "02 / compare",
+      "detail": "比较方案",
+      "kind": "panel",
+      "tone": "teal",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "02 / compare",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "比较方案",
+          16,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "journey-stage-trial",
+      "x": 919.0,
+      "y": 236,
+      "w": 294.5,
+      "h": 86,
+      "label": "03 / trial",
+      "detail": "试听与确认",
+      "kind": "panel",
+      "tone": "teal",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "03 / trial",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "试听与确认",
+          16,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "journey-stage-enroll",
+      "x": 1227.5,
+      "y": 236,
+      "w": 294.5,
+      "h": 86,
+      "label": "04 / enroll",
+      "detail": "提交报名",
+      "kind": "panel",
+      "tone": "teal",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "04 / enroll",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "提交报名",
+          16,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "_v7",
+      "x": 64,
+      "y": 360,
+      "w": 210,
+      "h": 78,
+      "label": "用户行为 / Behavior",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "journey-behavior-discover",
+      "x": 302.0,
+      "y": 340,
+      "w": 294.5,
+      "h": 106,
+      "label": "搜索主题，比较课程页",
+      "detail": "",
+      "kind": "panel",
+      "tone": "accent",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "搜索主题，比较课程页",
+          20,
+          true,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "journey-behavior-compare",
+      "x": 610.5,
+      "y": 340,
+      "w": 294.5,
+      "h": 106,
+      "label": "打开两三个课程，查看大纲与案例",
+      "detail": "",
+      "kind": "panel",
+      "tone": "accent",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "打开两三个课程，查",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "看大纲与案例",
+          20,
+          true,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "journey-behavior-trial",
+      "x": 919.0,
+      "y": 340,
+      "w": 294.5,
+      "h": 106,
+      "label": "观看片段，确认难度和授课方式",
+      "detail": "",
+      "kind": "panel",
+      "tone": "accent",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "观看片段，确认难",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "度和授课方式",
+          20,
+          true,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "journey-behavior-enroll",
+      "x": 1227.5,
+      "y": 340,
+      "w": 294.5,
+      "h": 106,
+      "label": "填写信息，选择支付方式并提交",
+      "detail": "",
+      "kind": "panel",
+      "tone": "accent",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "填写信息，选择支",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "付方式并提交",
+          20,
+          true,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "_v12",
+      "x": 64,
+      "y": 478,
+      "w": 210,
+      "h": 72,
+      "label": "触点 / Touchpoint",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "journey-touchpoint-discover",
+      "x": 302.0,
+      "y": 458,
+      "w": 294.5,
+      "h": 100,
+      "label": "搜索结果与课程详情页",
+      "detail": "",
+      "kind": "panel",
+      "tone": "teal",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "搜索结果与课程详情页",
+          20,
+          true,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "journey-touchpoint-compare",
+      "x": 610.5,
+      "y": 458,
+      "w": 294.5,
+      "h": 100,
+      "label": "课程对比页、试听视频",
+      "detail": "",
+      "kind": "panel",
+      "tone": "teal",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "课程对比页、试听视频",
+          20,
+          true,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "journey-touchpoint-trial",
+      "x": 919.0,
+      "y": 458,
+      "w": 294.5,
+      "h": 100,
+      "label": "试听页、答疑区",
+      "detail": "",
+      "kind": "panel",
+      "tone": "teal",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "试听页、答疑区",
+          20,
+          true,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "journey-touchpoint-enroll",
+      "x": 1227.5,
+      "y": 458,
+      "w": 294.5,
+      "h": 100,
+      "label": "报名表、支付页、确认邮件",
+      "detail": "",
+      "kind": "panel",
+      "tone": "teal",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "报名表、支付页、确认邮件",
+          20,
+          true,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "_v17",
+      "x": 64,
+      "y": 590,
+      "w": 210,
+      "h": 105,
+      "label": "观察与来源 / Evidence",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "journey-evidence-discover",
+      "x": 302.0,
+      "y": 570,
+      "w": 294.5,
+      "h": 133,
+      "label": "[ev_search] 多数人先看课程目标和学习时长 · 来源：5 次访谈摘要",
+      "detail": "",
+      "kind": "panel",
+      "tone": "muted",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[ev_search] 多数人先看课",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "程目标和学习时长 · 来源：",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "5 次访谈摘要",
+          20,
+          true,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "journey-evidence-compare",
+      "x": 610.5,
+      "y": 570,
+      "w": 294.5,
+      "h": 133,
+      "label": "[ev_compare] 用户找不到不同班型的差异 · 来源：可用性测试 U03",
+      "detail": "",
+      "kind": "panel",
+      "tone": "muted",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[ev_compare] 用户找不到",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "不同班型的差异 · 来源：可",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "用性测试 U03",
+          20,
+          true,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "journey-evidence-trial",
+      "x": 919.0,
+      "y": 570,
+      "w": 294.5,
+      "h": 133,
+      "label": "[ev_trial] 作业示例比宣传口号更能帮助判断难度 · 来源：回访记录 R02",
+      "detail": "",
+      "kind": "panel",
+      "tone": "muted",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[ev_trial] 作业示例比宣传口",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "号更能帮助判断难度 · 来",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "源：回访记录 R02",
+          20,
+          true,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "journey-evidence-enroll",
+      "x": 1227.5,
+      "y": 570,
+      "w": 294.5,
+      "h": 133,
+      "label": "[ev_enroll] 表单错误提示没有说明如何修正 · 来源：日志分析 2026-09",
+      "detail": "",
+      "kind": "panel",
+      "tone": "muted",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[ev_enroll] 表单错误提示没",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "有说明如何修正 · 来源：日",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "志分析 2026-09",
+          20,
+          true,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "_v22",
+      "x": 64,
+      "y": 735,
+      "w": 210,
+      "h": 105,
+      "label": "机会假说 / Opportunity",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "journey-opportunity-discover",
+      "x": 302.0,
+      "y": 715,
+      "w": 294.5,
+      "h": 133,
+      "label": "[opp_fit] 把适合人群与每周投入放在首屏 · 依据：ev_search",
+      "detail": "",
+      "kind": "panel",
+      "tone": "amber",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[opp_fit] 把适合人群与每周",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "投入放在首屏 · 依据：",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "ev_search",
+          20,
+          true,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "journey-opportunity-compare",
+      "x": 610.5,
+      "y": 715,
+      "w": 294.5,
+      "h": 133,
+      "label": "[opp_compare] 用同一口径并列班型、作业和辅导 · 依据：ev_compare",
+      "detail": "",
+      "kind": "panel",
+      "tone": "amber",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[opp_compare] 用同一口",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "径并列班型、作业和辅导 ·",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "依据：ev_compare",
+          20,
+          true,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "journey-opportunity-trial",
+      "x": 919.0,
+      "y": 715,
+      "w": 294.5,
+      "h": 133,
+      "label": "[opp_trial] 展示真实作业与反馈样例 · 依据：ev_trial",
+      "detail": "",
+      "kind": "panel",
+      "tone": "amber",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[opp_trial] 展示真实作业与",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "反馈样例 · 依据：ev_trial",
+          20,
+          true,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "journey-opportunity-enroll",
+      "x": 1227.5,
+      "y": 715,
+      "w": 294.5,
+      "h": 133,
+      "label": "[opp_enroll] 在提交前集中展示待确认信息 · 依据：ev_enroll",
+      "detail": "",
+      "kind": "panel",
+      "tone": "amber",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[opp_enroll] 在提交前集中",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "展示待确认信息 · 依据：",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "ev_enroll",
+          20,
+          true,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "_v27",
+      "x": 64,
+      "y": 880,
+      "w": 210,
+      "h": 132,
+      "label": "拟议行动 / Action",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "journey-action-discover",
+      "x": 302.0,
+      "y": 860,
+      "w": 294.5,
+      "h": 160,
+      "label": "[act_fit] 重写课程首屏信息架构 · 负责人：课程团队 · 验收：首屏可回答适合谁、投入多少",
+      "detail": "",
+      "kind": "panel",
+      "tone": "red",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[act_fit] 重写课程首屏信息",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "架构 · 负责人：课程团队",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "· 验收：首屏可回答适合",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "谁、投入多少",
+          20,
+          true,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "journey-action-compare",
+      "x": 610.5,
+      "y": 860,
+      "w": 294.5,
+      "h": 160,
+      "label": "[act_compare] 增加三列课程对比组件 · 负责人：产品设计 · 验收：用户能在 30 秒内选出一个班型",
+      "detail": "",
+      "kind": "panel",
+      "tone": "red",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[act_compare] 增加三列",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "课程对比组件 · 负责人：产",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "品设计 · 验收：用户能在",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "30 秒内选出一个班型",
+          20,
+          true,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "journey-action-trial",
+      "x": 919.0,
+      "y": 860,
+      "w": 294.5,
+      "h": 160,
+      "label": "[act_trial] 建立作业样例卡片模板 · 负责人：教研组 · 验收：每门课至少有两份已脱敏样例",
+      "detail": "",
+      "kind": "panel",
+      "tone": "red",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[act_trial] 建立作业样例卡",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "片模板 · 负责人：教研组",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "· 验收：每门课至少有两份",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "已脱敏样例",
+          20,
+          true,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "journey-action-enroll",
+      "x": 1227.5,
+      "y": 860,
+      "w": 294.5,
+      "h": 160,
+      "label": "[act_enroll] 增加提交前确认与逐字段提示 · 负责人：增长工程 · 验收：错误修正后可回到原位置",
+      "detail": "",
+      "kind": "panel",
+      "tone": "red",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[act_enroll] 增加提交前确",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "认与逐字段提示 · 负责人：",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "增长工程 · 验收：错误修正",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "后可回到原位置",
+          20,
+          true,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "_v32",
+      "x": 64,
+      "y": 1052,
+      "w": 210,
+      "h": 105,
+      "label": "体验感受 / Emotion",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "journey-emotion-discover",
+      "x": 302.0,
+      "y": 1032,
+      "w": 294.5,
+      "h": 133,
+      "label": "好奇但谨慎 · 依据：访谈：担心时间投入与实际回报",
+      "detail": "",
+      "kind": "panel",
+      "tone": "teal",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "好奇但谨慎 · 依据：访谈：",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "担心时间投入与实际回报",
+          20,
+          true,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "journey-emotion-compare",
+      "x": 610.5,
+      "y": 1032,
+      "w": 294.5,
+      "h": 133,
+      "label": "信息过载 · 依据：观察：用户在多个标签页之间来回切换",
+      "detail": "",
+      "kind": "panel",
+      "tone": "teal",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "信息过载 · 依据：观察：用",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "户在多个标签页",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "之间来回切换",
+          20,
+          true,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "journey-emotion-trial",
+      "x": 919.0,
+      "y": 1032,
+      "w": 294.5,
+      "h": 133,
+      "label": "逐渐安心 · 依据：回访：看见作业示例后更愿意继续",
+      "detail": "",
+      "kind": "panel",
+      "tone": "teal",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "逐渐安心 · 依据：回访：看",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "见作业示例后更愿意继续",
+          20,
+          true,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "journey-emotion-enroll",
+      "x": 1227.5,
+      "y": 1032,
+      "w": 294.5,
+      "h": 133,
+      "label": "期待但怕出错 · 依据：日志：支付前反复返回修改联系方式",
+      "detail": "",
+      "kind": "panel",
+      "tone": "teal",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "期待但怕出错 · 依据：日",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "志：支付前反复返回",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "修改联系方式",
+          20,
+          true,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "_v37",
+      "x": 64,
+      "y": 1181,
+      "w": 1472,
+      "h": 34,
+      "label": "证据先于机会，机会先于行动；空位表示尚未提出，不表示没有问题。",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 15,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v38",
+      "x": 64,
+      "y": 34,
+      "w": 1472,
+      "h": 22,
+      "label": "DIAGRAM STUDIO  /  专业图示",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v39",
+      "x": 64,
+      "y": 69,
+      "w": 1472,
+      "h": 56,
+      "label": "成人课程报名旅程",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 36,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v40",
+      "x": 64,
+      "y": 130,
+      "w": 1472,
+      "h": 38,
+      "label": "以可追溯证据组织体验改进",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v41",
+      "x": 64,
+      "y": 1252,
+      "w": 1472,
+      "h": 1,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "line",
+      "stroke": "none",
+      "check": false
+    },
+    {
+      "id": "_v42",
+      "x": 64,
+      "y": 1265,
+      "w": 1472,
+      "h": 36,
+      "label": "示例方案 · 非实际部署 / 业务事实",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    }
+  ],
+  "edges": [],
+  "meta": {
+    "experience_map": "journey",
+    "journey": {
+      "stages": [
+        "discover",
+        "compare",
+        "trial",
+        "enroll"
+      ],
+      "stable_ids": [
+        "act_compare",
+        "act_enroll",
+        "act_fit",
+        "act_trial",
+        "compare",
+        "discover",
+        "enroll",
+        "ev_compare",
+        "ev_enroll",
+        "ev_search",
+        "ev_trial",
+        "opp_compare",
+        "opp_enroll",
+        "opp_fit",
+        "opp_trial",
+        "trial"
+      ],
+      "lanes": [
+        "behavior",
+        "touchpoint",
+        "evidence",
+        "opportunity",
+        "action",
+        "emotion"
+      ],
+      "trace_counts": {
+        "evidence": 4,
+        "opportunities": 4,
+        "actions": 4
+      }
+    }
+  },
+  "assumptions": []
+}

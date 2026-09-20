@@ -1,0 +1,158 @@
+{
+  "type": "journey",
+  "language": "en",
+  "title": "Adult course enrolment journey",
+  "subtitle": "Traceable evidence for experience improvement",
+  "persona": "A working learner changing careers",
+  "goal": "Confirm fit and complete enrolment",
+  "stages": [
+    {
+      "id": "discover",
+      "label": "Discover course",
+      "behavior": "Searches topics and compares course pages",
+      "touchpoint": "Search results and course detail page",
+      "emotion": {
+        "label": "Curious but cautious",
+        "basis": "Interviews: worried about time and return"
+      },
+      "evidence": [
+        {
+          "id": "ev_search",
+          "text": "Most people check outcomes and weekly hours first",
+          "source": "Five interview summaries"
+        }
+      ],
+      "opportunities": [
+        {
+          "id": "opp_fit",
+          "text": "Put fit and weekly effort above the fold",
+          "evidence": [
+            "ev_search"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "id": "act_fit",
+          "text": "Rewrite the course hero information",
+          "owner": "Curriculum team",
+          "check": "Hero answers who it is for and weekly effort",
+          "opportunities": [
+            "opp_fit"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "compare",
+      "label": "Compare options",
+      "behavior": "Opens two or three courses and checks the syllabus",
+      "touchpoint": "Comparison page and sample lesson",
+      "emotion": {
+        "label": "Overloaded",
+        "basis": "Observation: switches between several tabs"
+      },
+      "evidence": [
+        {
+          "id": "ev_compare",
+          "text": "Learners cannot find differences between class formats",
+          "source": "Usability test U03"
+        }
+      ],
+      "opportunities": [
+        {
+          "id": "opp_compare",
+          "text": "Compare format, assignments, and support in one view",
+          "evidence": [
+            "ev_compare"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "id": "act_compare",
+          "text": "Add a three-column comparison component",
+          "owner": "Product design",
+          "check": "Learner selects a format within 30 seconds",
+          "opportunities": [
+            "opp_compare"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "trial",
+      "label": "Try and confirm",
+      "behavior": "Watches a sample and checks difficulty",
+      "touchpoint": "Sample lesson and Q&A",
+      "emotion": {
+        "label": "More confident",
+        "basis": "Follow-up: sample work made the choice easier"
+      },
+      "evidence": [
+        {
+          "id": "ev_trial",
+          "text": "Sample work helps judge difficulty better than slogans",
+          "source": "Follow-up R02"
+        }
+      ],
+      "opportunities": [
+        {
+          "id": "opp_trial",
+          "text": "Show real work and feedback examples",
+          "evidence": [
+            "ev_trial"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "id": "act_trial",
+          "text": "Create a reusable sample-work card",
+          "owner": "Teaching team",
+          "check": "Every course has two anonymised samples",
+          "opportunities": [
+            "opp_trial"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "enroll",
+      "label": "Submit enrolment",
+      "behavior": "Fills details, pays, and submits",
+      "touchpoint": "Form, payment page, confirmation email",
+      "emotion": {
+        "label": "Hopeful but afraid of errors",
+        "basis": "Logs: repeatedly edits contact details before payment"
+      },
+      "evidence": [
+        {
+          "id": "ev_enroll",
+          "text": "Form errors do not explain how to fix them",
+          "source": "September 2026 log review"
+        }
+      ],
+      "opportunities": [
+        {
+          "id": "opp_enroll",
+          "text": "Summarise all details before final submit",
+          "evidence": [
+            "ev_enroll"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "id": "act_enroll",
+          "text": "Add review and field-level recovery",
+          "owner": "Growth engineering",
+          "check": "A corrected field returns to its original position",
+          "opportunities": [
+            "opp_enroll"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "type": "service-blueprint",
+  "language": "en",
+  "title": "Retail buy-online-pick-up blueprint",
+  "subtitle": "Place visible experience, fulfilment, and support on one service chain",
+  "customer": "A customer ordering online for store pickup",
+  "goal": "Receive the right item on time and know how exceptions are handled",
+  "stages": [
+    {"id": "order", "label": "Order online"},
+    {"id": "prepare", "label": "Prepare in store"},
+    {"id": "pickup", "label": "Collect in store"},
+    {"id": "aftercare", "label": "Resolve issue"}
+  ],
+  "lanes": [
+    {"id": "customer", "label": "Customer action", "kind": "customer", "items": [
+      {"id": "c_order", "stage": "order", "text": "Selects store and pays"},
+      {"id": "c_pickup", "stage": "pickup", "text": "Shows code and checks item"},
+      {"id": "c_after", "stage": "aftercare", "text": "Reports missing or damaged item"}
+    ]},
+    {"id": "frontstage", "label": "Frontstage contact", "kind": "frontstage", "items": [
+      {"id": "f_order", "stage": "order", "text": "Shows stock promise and pickup time", "owner": "Commerce page"},
+      {"id": "f_pickup", "stage": "pickup", "text": "Checks code and hands over bag", "owner": "Store associate"},
+      {"id": "f_after", "stage": "aftercare", "text": "Logs issue and response time", "owner": "Support agent"}
+    ]},
+    {"id": "backstage", "label": "Backstage fulfilment", "kind": "backstage", "items": [
+      {"id": "b_order", "stage": "order", "text": "Reserves stock and creates store task", "owner": "Order service"},
+      {"id": "b_prepare", "stage": "prepare", "text": "Picks, checks, and labels the order", "owner": "Store stockroom"},
+      {"id": "b_after", "stage": "aftercare", "text": "Checks order, stock, and refund rule", "owner": "Aftercare specialist"}
+    ]},
+    {"id": "support", "label": "Support capability", "kind": "support", "items": [
+      {"id": "s_prepare", "stage": "prepare", "text": "Sends overdue preparation alert", "owner": "Message centre"},
+      {"id": "s_pickup", "stage": "pickup", "text": "Maintains code and verification log", "owner": "Identity service"},
+      {"id": "s_after", "stage": "aftercare", "text": "Provides refund and case APIs", "owner": "Aftercare platform"}
+    ]},
+    {"id": "system", "label": "System record", "kind": "system", "items": [
+      {"id": "sys_order", "stage": "order", "text": "Records payment, store, and promise", "owner": "Order database"},
+      {"id": "sys_prepare", "stage": "prepare", "text": "Records pick status and exception", "owner": "Stock database"},
+      {"id": "sys_after", "stage": "aftercare", "text": "Records evidence and resolution", "owner": "Service desk"}
+    ]}
+  ],
+  "boundaries": [
+    {"after": "frontstage", "before": "backstage", "label": "Visible / invisible"},
+    {"after": "backstage", "before": "support", "label": "Core flow / support"}
+  ],
+  "handoffs": [
+    {"from": {"lane": "customer", "stage": "order"}, "to": {"lane": "backstage", "stage": "order"}, "label": "Order submitted"},
+    {"from": {"lane": "backstage", "stage": "prepare"}, "to": {"lane": "frontstage", "stage": "pickup"}, "label": "Ready for pickup"},
+    {"from": {"lane": "frontstage", "stage": "aftercare"}, "to": {"lane": "backstage", "stage": "aftercare"}, "label": "Issue case"}
+  ]
+}

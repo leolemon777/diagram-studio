@@ -1,0 +1,158 @@
+{
+  "type": "journey",
+  "language": "zh",
+  "title": "成人课程报名旅程",
+  "subtitle": "以可追溯证据组织体验改进",
+  "persona": "准备转行的在职学习者",
+  "goal": "确认课程适合自己并完成报名",
+  "stages": [
+    {
+      "id": "discover",
+      "label": "发现课程",
+      "behavior": "搜索主题，比较课程页",
+      "touchpoint": "搜索结果与课程详情页",
+      "emotion": {
+        "label": "好奇但谨慎",
+        "basis": "访谈：担心时间投入与实际回报"
+      },
+      "evidence": [
+        {
+          "id": "ev_search",
+          "text": "多数人先看课程目标和学习时长",
+          "source": "5 次访谈摘要"
+        }
+      ],
+      "opportunities": [
+        {
+          "id": "opp_fit",
+          "text": "把适合人群与每周投入放在首屏",
+          "evidence": [
+            "ev_search"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "id": "act_fit",
+          "text": "重写课程首屏信息架构",
+          "owner": "课程团队",
+          "check": "首屏可回答适合谁、投入多少",
+          "opportunities": [
+            "opp_fit"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "compare",
+      "label": "比较方案",
+      "behavior": "打开两三个课程，查看大纲与案例",
+      "touchpoint": "课程对比页、试听视频",
+      "emotion": {
+        "label": "信息过载",
+        "basis": "观察：用户在多个标签页之间来回切换"
+      },
+      "evidence": [
+        {
+          "id": "ev_compare",
+          "text": "用户找不到不同班型的差异",
+          "source": "可用性测试 U03"
+        }
+      ],
+      "opportunities": [
+        {
+          "id": "opp_compare",
+          "text": "用同一口径并列班型、作业和辅导",
+          "evidence": [
+            "ev_compare"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "id": "act_compare",
+          "text": "增加三列课程对比组件",
+          "owner": "产品设计",
+          "check": "用户能在 30 秒内选出一个班型",
+          "opportunities": [
+            "opp_compare"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "trial",
+      "label": "试听与确认",
+      "behavior": "观看片段，确认难度和授课方式",
+      "touchpoint": "试听页、答疑区",
+      "emotion": {
+        "label": "逐渐安心",
+        "basis": "回访：看见作业示例后更愿意继续"
+      },
+      "evidence": [
+        {
+          "id": "ev_trial",
+          "text": "作业示例比宣传口号更能帮助判断难度",
+          "source": "回访记录 R02"
+        }
+      ],
+      "opportunities": [
+        {
+          "id": "opp_trial",
+          "text": "展示真实作业与反馈样例",
+          "evidence": [
+            "ev_trial"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "id": "act_trial",
+          "text": "建立作业样例卡片模板",
+          "owner": "教研组",
+          "check": "每门课至少有两份已脱敏样例",
+          "opportunities": [
+            "opp_trial"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "enroll",
+      "label": "提交报名",
+      "behavior": "填写信息，选择支付方式并提交",
+      "touchpoint": "报名表、支付页、确认邮件",
+      "emotion": {
+        "label": "期待但怕出错",
+        "basis": "日志：支付前反复返回修改联系方式"
+      },
+      "evidence": [
+        {
+          "id": "ev_enroll",
+          "text": "表单错误提示没有说明如何修正",
+          "source": "日志分析 2026-09"
+        }
+      ],
+      "opportunities": [
+        {
+          "id": "opp_enroll",
+          "text": "在提交前集中展示待确认信息",
+          "evidence": [
+            "ev_enroll"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "id": "act_enroll",
+          "text": "增加提交前确认与逐字段提示",
+          "owner": "增长工程",
+          "check": "错误修正后可回到原位置",
+          "opportunities": [
+            "opp_enroll"
+          ]
+        }
+      ]
+    }
+  ]
+}

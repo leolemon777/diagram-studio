@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "protocol_version": "diagram-studio/delivery-1",
+  "version_id": "v-5dcb2efc7346",
+  "source_name": "retail-service-blueprint-en",
+  "input_sha256": "5dcb2efc73469b04701515196fc142d8422ddf09123e1ea7f6042298cb85c3ec",
+  "theme": "light",
+  "checks": {
+    "geometry": {
+      "status": "passed",
+      "warnings": []
+    },
+    "composition": {
+      "status": "not-run",
+      "findings": []
+    },
+    "content_integrity": {
+      "status": "passed",
+      "source_ids": 24,
+      "source_relations": 3,
+      "source_texts": 46,
+      "missing_ids": [],
+      "missing_relations": [],
+      "missing_text": [],
+      "scope": "stable source IDs, explicit relation endpoints and source display text; not domain correctness"
+    },
+    "browser_text_bounds": {
+      "status": "not-run"
+    },
+    "manual_visual_review": {
+      "status": "not-run"
+    },
+    "native_editor": {
+      "status": "not-run"
+    }
+  },
+  "files": {
+    "retail-service-blueprint-en.brief.json": "1f6ff679a543a5ebb8e8116e626f35b97a67b8aab667c02a58769232c9dc749d",
+    "retail-service-blueprint-en.drawio": "cd8b88545c54caf0662ae103bf6064748e6bc030c984e704700caab891fd654f",
+    "retail-service-blueprint-en.qa.json": "5e925702afacd33dec67ffa882d297f82a80c43244ee04f552632f5357845c0d",
+    "retail-service-blueprint-en.scene.json": "a39eb4a43282f4be41844a26ad1311012e0290a69e1edf55e462f800ed37b225",
+    "retail-service-blueprint-en.svg": "debb801a9751037677a5f10e735ecb89579e1cd4f2bcfdc93dbdeb18e6881190"
+  },
+  "delivery_scope": "Generation, semantic content checks and QA finish before replacement. Individual files are replaced; promotion is not a multi-file atomic transaction."
+}

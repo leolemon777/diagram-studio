@@ -1,0 +1,250 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1537" viewBox="0 0 1600 1537" role="img" aria-labelledby="diagram-title diagram-desc">
+<title id="diagram-title">Adult course enrolment journey</title>
+<desc id="diagram-desc">Traceable evidence for experience improvement</desc>
+<rect width="100%" height="100%" fill="#F1EFEB"/>
+<defs>
+<marker id="arrow-accent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#AC6046"/></marker>
+<marker id="arrow-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#67685E"/></marker>
+<marker id="arrow-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#8C7964"/></marker>
+<marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#554C46"/></marker>
+<marker id="arrow-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#6D6A63"/></marker>
+<marker id="arrow-line" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#D8D3C8"/></marker>
+<marker id="arrow-ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#30302D"/></marker>
+</defs>
+<g font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, Arial, sans-serif">
+<g id="journey-stage-discover" data-kind="panel" data-content-text="false" data-box="302.0,236,294.5,86">
+<rect x="302.0" y="236" width="294.5" height="86" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="326.0" y="265" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">01 / discover</text>
+<text x="326.0" y="288.0" text-anchor="start" font-size="16" font-weight="400" fill="#6D6A63">Discover course</text>
+</g>
+<g id="journey-stage-compare" data-kind="panel" data-content-text="false" data-box="610.5,236,294.5,86">
+<rect x="610.5" y="236" width="294.5" height="86" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="634.5" y="265" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">02 / compare</text>
+<text x="634.5" y="288.0" text-anchor="start" font-size="16" font-weight="400" fill="#6D6A63">Compare options</text>
+</g>
+<g id="journey-stage-trial" data-kind="panel" data-content-text="false" data-box="919.0,236,294.5,86">
+<rect x="919.0" y="236" width="294.5" height="86" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="943.0" y="265" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">03 / trial</text>
+<text x="943.0" y="288.0" text-anchor="start" font-size="16" font-weight="400" fill="#6D6A63">Try and confirm</text>
+</g>
+<g id="journey-stage-enroll" data-kind="panel" data-content-text="false" data-box="1227.5,236,294.5,86">
+<rect x="1227.5" y="236" width="294.5" height="86" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="1251.5" y="265" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">04 / enroll</text>
+<text x="1251.5" y="288.0" text-anchor="start" font-size="16" font-weight="400" fill="#6D6A63">Submit enrolment</text>
+</g>
+<g id="journey-behavior-discover" data-kind="panel" data-content-text="false" data-box="302.0,340,294.5,133">
+<rect x="302.0" y="340" width="294.5" height="133" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="326.0" y="369" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">Searches topics and</text>
+<text x="326.0" y="396.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">compares course pages</text>
+</g>
+<g id="journey-behavior-compare" data-kind="panel" data-content-text="false" data-box="610.5,340,294.5,133">
+<rect x="610.5" y="340" width="294.5" height="133" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="634.5" y="369" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">Opens two or three</text>
+<text x="634.5" y="396.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">courses and checks the</text>
+<text x="634.5" y="423.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">syllabus</text>
+</g>
+<g id="journey-behavior-trial" data-kind="panel" data-content-text="false" data-box="919.0,340,294.5,133">
+<rect x="919.0" y="340" width="294.5" height="133" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="943.0" y="369" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">Watches a sample and</text>
+<text x="943.0" y="396.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">checks difficulty</text>
+</g>
+<g id="journey-behavior-enroll" data-kind="panel" data-content-text="false" data-box="1227.5,340,294.5,133">
+<rect x="1227.5" y="340" width="294.5" height="133" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="1251.5" y="369" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">Fills details, pays, and</text>
+<text x="1251.5" y="396.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">submits</text>
+</g>
+<g id="journey-touchpoint-discover" data-kind="panel" data-content-text="false" data-box="302.0,485,294.5,106">
+<rect x="302.0" y="485" width="294.5" height="106" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="326.0" y="514" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">Search results and course</text>
+<text x="326.0" y="541.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">detail page</text>
+</g>
+<g id="journey-touchpoint-compare" data-kind="panel" data-content-text="false" data-box="610.5,485,294.5,106">
+<rect x="610.5" y="485" width="294.5" height="106" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="634.5" y="514" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">Comparison page and</text>
+<text x="634.5" y="541.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">sample lesson</text>
+</g>
+<g id="journey-touchpoint-trial" data-kind="panel" data-content-text="false" data-box="919.0,485,294.5,106">
+<rect x="919.0" y="485" width="294.5" height="106" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="943.0" y="514" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">Sample lesson and Q&amp;A</text>
+</g>
+<g id="journey-touchpoint-enroll" data-kind="panel" data-content-text="false" data-box="1227.5,485,294.5,106">
+<rect x="1227.5" y="485" width="294.5" height="106" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="1251.5" y="514" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">Form, payment page,</text>
+<text x="1251.5" y="541.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">confirmation email</text>
+</g>
+<g id="journey-evidence-discover" data-kind="panel" data-content-text="false" data-box="302.0,603,294.5,187">
+<rect x="302.0" y="603" width="294.5" height="187" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="326.0" y="632" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">[ev_search] Most people</text>
+<text x="326.0" y="659.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">check outcomes and</text>
+<text x="326.0" y="686.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">weekly hours first ·</text>
+<text x="326.0" y="713.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">Source: Five interview</text>
+<text x="326.0" y="740.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">summaries</text>
+</g>
+<g id="journey-evidence-compare" data-kind="panel" data-content-text="false" data-box="610.5,603,294.5,187">
+<rect x="610.5" y="603" width="294.5" height="187" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="634.5" y="632" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">[ev_compare] Learners</text>
+<text x="634.5" y="659.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">cannot find differences</text>
+<text x="634.5" y="686.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">between class formats ·</text>
+<text x="634.5" y="713.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">Source: Usability test U03</text>
+</g>
+<g id="journey-evidence-trial" data-kind="panel" data-content-text="false" data-box="919.0,603,294.5,187">
+<rect x="919.0" y="603" width="294.5" height="187" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="943.0" y="632" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">[ev_trial] Sample work</text>
+<text x="943.0" y="659.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">helps judge difficulty</text>
+<text x="943.0" y="686.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">better than slogans ·</text>
+<text x="943.0" y="713.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">Source: Follow-up R02</text>
+</g>
+<g id="journey-evidence-enroll" data-kind="panel" data-content-text="false" data-box="1227.5,603,294.5,187">
+<rect x="1227.5" y="603" width="294.5" height="187" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="1251.5" y="632" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">[ev_enroll] Form errors do</text>
+<text x="1251.5" y="659.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">not explain how to fix</text>
+<text x="1251.5" y="686.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">them · Source:</text>
+<text x="1251.5" y="713.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">September 2026 log</text>
+<text x="1251.5" y="740.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">review</text>
+</g>
+<g id="journey-opportunity-discover" data-kind="panel" data-content-text="false" data-box="302.0,802,294.5,187">
+<rect x="302.0" y="802" width="294.5" height="187" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="326.0" y="831" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">[opp_fit] Put fit and</text>
+<text x="326.0" y="858.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">weekly effort above the</text>
+<text x="326.0" y="885.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">fold · Evidence:</text>
+<text x="326.0" y="912.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">ev_search</text>
+</g>
+<g id="journey-opportunity-compare" data-kind="panel" data-content-text="false" data-box="610.5,802,294.5,187">
+<rect x="610.5" y="802" width="294.5" height="187" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="634.5" y="831" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">[opp_compare]</text>
+<text x="634.5" y="858.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">Compare format,</text>
+<text x="634.5" y="885.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">assignments, and support</text>
+<text x="634.5" y="912.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">in one view · Evidence:</text>
+<text x="634.5" y="939.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">ev_compare</text>
+</g>
+<g id="journey-opportunity-trial" data-kind="panel" data-content-text="false" data-box="919.0,802,294.5,187">
+<rect x="919.0" y="802" width="294.5" height="187" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="943.0" y="831" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">[opp_trial] Show real work</text>
+<text x="943.0" y="858.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63"> and feedback examples</text>
+<text x="943.0" y="885.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">· Evidence: ev_trial</text>
+</g>
+<g id="journey-opportunity-enroll" data-kind="panel" data-content-text="false" data-box="1227.5,802,294.5,187">
+<rect x="1227.5" y="802" width="294.5" height="187" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="1251.5" y="831" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">[opp_enroll] Summarise all</text>
+<text x="1251.5" y="858.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63"> details before final submit</text>
+<text x="1251.5" y="885.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63"> · Evidence: ev_enroll</text>
+</g>
+<g id="journey-action-discover" data-kind="panel" data-content-text="false" data-box="302.0,1001,294.5,214">
+<rect x="302.0" y="1001" width="294.5" height="214" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="326.0" y="1030" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">[act_fit] Rewrite the</text>
+<text x="326.0" y="1057.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">course hero information ·</text>
+<text x="326.0" y="1084.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63"> Owner: Curriculum team</text>
+<text x="326.0" y="1111.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">· Check: Hero answers</text>
+<text x="326.0" y="1138.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">who it is for and weekly</text>
+<text x="326.0" y="1165.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">effort</text>
+</g>
+<g id="journey-action-compare" data-kind="panel" data-content-text="false" data-box="610.5,1001,294.5,214">
+<rect x="610.5" y="1001" width="294.5" height="214" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="634.5" y="1030" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">[act_compare] Add a</text>
+<text x="634.5" y="1057.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">three-column comparison</text>
+<text x="634.5" y="1084.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63"> component · Owner:</text>
+<text x="634.5" y="1111.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">Product design · Check:</text>
+<text x="634.5" y="1138.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">Learner selects a format</text>
+<text x="634.5" y="1165.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">within 30 seconds</text>
+</g>
+<g id="journey-action-trial" data-kind="panel" data-content-text="false" data-box="919.0,1001,294.5,214">
+<rect x="919.0" y="1001" width="294.5" height="214" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="943.0" y="1030" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">[act_trial] Create a</text>
+<text x="943.0" y="1057.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">reusable sample-work</text>
+<text x="943.0" y="1084.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">card · Owner: Teaching</text>
+<text x="943.0" y="1111.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">team · Check: Every</text>
+<text x="943.0" y="1138.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">course has two</text>
+<text x="943.0" y="1165.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">anonymised samples</text>
+</g>
+<g id="journey-action-enroll" data-kind="panel" data-content-text="false" data-box="1227.5,1001,294.5,214">
+<rect x="1227.5" y="1001" width="294.5" height="214" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="1251.5" y="1030" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">[act_enroll] Add review</text>
+<text x="1251.5" y="1057.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">and field-level recovery ·</text>
+<text x="1251.5" y="1084.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63"> Owner: Growth</text>
+<text x="1251.5" y="1111.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">engineering · Check: A</text>
+<text x="1251.5" y="1138.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">corrected field returns to</text>
+<text x="1251.5" y="1165.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">its original position</text>
+</g>
+<g id="journey-emotion-discover" data-kind="panel" data-content-text="false" data-box="302.0,1227,294.5,160">
+<rect x="302.0" y="1227" width="294.5" height="160" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="326.0" y="1256" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">Curious but cautious ·</text>
+<text x="326.0" y="1283.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">Evidence: Interviews:</text>
+<text x="326.0" y="1310.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">worried about time and</text>
+<text x="326.0" y="1337.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">return</text>
+</g>
+<g id="journey-emotion-compare" data-kind="panel" data-content-text="false" data-box="610.5,1227,294.5,160">
+<rect x="610.5" y="1227" width="294.5" height="160" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="634.5" y="1256" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">Overloaded · Evidence:</text>
+<text x="634.5" y="1283.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">Observation: switches</text>
+<text x="634.5" y="1310.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">between several tabs</text>
+</g>
+<g id="journey-emotion-trial" data-kind="panel" data-content-text="false" data-box="919.0,1227,294.5,160">
+<rect x="919.0" y="1227" width="294.5" height="160" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="943.0" y="1256" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">More confident ·</text>
+<text x="943.0" y="1283.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">Evidence: Follow-up:</text>
+<text x="943.0" y="1310.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">sample work made the</text>
+<text x="943.0" y="1337.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">choice easier</text>
+</g>
+<g id="journey-emotion-enroll" data-kind="panel" data-content-text="false" data-box="1227.5,1227,294.5,160">
+<rect x="1227.5" y="1227" width="294.5" height="160" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="1251.5" y="1256" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">Hopeful but afraid of</text>
+<text x="1251.5" y="1283.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">errors · Evidence: Logs:</text>
+<text x="1251.5" y="1310.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">repeatedly edits contact</text>
+<text x="1251.5" y="1337.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">details before payment</text>
+</g>
+<g id="_v1" data-kind="text" data-content-text="false" data-box="64,190,1472,34">
+
+<text x="64" y="212.85" text-anchor="start" font-size="18" font-weight="400" fill="#6D6A63">Persona: A working learner changing careers  ·  Goal: Confirm fit and complete enrolment</text>
+</g>
+<g id="_v2" data-kind="text" data-content-text="false" data-box="64,261,210,36">
+
+<text x="64" y="284.525" text-anchor="start" font-size="17" font-weight="400" fill="#6D6A63">Stage</text>
+</g>
+<g id="_v7" data-kind="text" data-content-text="false" data-box="64,360,210,105">
+
+<text x="64" y="418.025" text-anchor="start" font-size="17" font-weight="400" fill="#6D6A63">Behavior</text>
+</g>
+<g id="_v12" data-kind="text" data-content-text="false" data-box="64,505,210,78">
+
+<text x="64" y="549.525" text-anchor="start" font-size="17" font-weight="400" fill="#6D6A63">Touchpoint</text>
+</g>
+<g id="_v17" data-kind="text" data-content-text="false" data-box="64,623,210,159">
+
+<text x="64" y="708.025" text-anchor="start" font-size="17" font-weight="400" fill="#6D6A63">Evidence &amp; source</text>
+</g>
+<g id="_v22" data-kind="text" data-content-text="false" data-box="64,822,210,159">
+
+<text x="64" y="907.025" text-anchor="start" font-size="17" font-weight="400" fill="#6D6A63">Opportunity</text>
+</g>
+<g id="_v27" data-kind="text" data-content-text="false" data-box="64,1021,210,186">
+
+<text x="64" y="1119.525" text-anchor="start" font-size="17" font-weight="400" fill="#6D6A63">Action</text>
+</g>
+<g id="_v32" data-kind="text" data-content-text="false" data-box="64,1247,210,132">
+
+<text x="64" y="1318.525" text-anchor="start" font-size="17" font-weight="400" fill="#6D6A63">Emotion</text>
+</g>
+<g id="_v37" data-kind="text" data-content-text="false" data-box="64,1403,1472,34">
+
+<text x="64" y="1424.875" text-anchor="start" font-size="15" font-weight="400" fill="#6D6A63">Evidence precedes opportunity, and opportunity precedes action; an empty cell means no proposal yet, not no problem.</text>
+</g>
+<g id="_v38" data-kind="text" data-content-text="false" data-box="64,34,1472,22">
+
+<text x="64" y="49.55" text-anchor="start" font-size="14" font-weight="400" fill="#AC6046">DIAGRAM STUDIO  /  专业图示</text>
+</g>
+<g id="_v39" data-kind="text" data-content-text="false" data-box="64,69,1472,56">
+
+<text x="64" y="108.7" text-anchor="start" font-size="36" font-weight="400" fill="#30302D">Adult course enrolment journey</text>
+</g>
+<g id="_v40" data-kind="text" data-content-text="false" data-box="64,130,1472,38">
+
+<text x="64" y="154.525" text-anchor="start" font-size="17" font-weight="400" fill="#6D6A63">Traceable evidence for experience improvement</text>
+</g>
+<g id="_v41" data-kind="rect" data-content-text="false" data-box="64,1474,1472,1">
+<rect x="64" y="1474" width="1472" height="1" rx="0" fill="#D8D3C8" stroke="none" stroke-width="1.5"/>
+</g>
+<g id="_v42" data-kind="text" data-content-text="false" data-box="64,1487,1472,36">
+
+<text x="64" y="1509.55" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">示例方案 · 非实际部署 / 业务事实</text>
+</g>
+</g></svg>

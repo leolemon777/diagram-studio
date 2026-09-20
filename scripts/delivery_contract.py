@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import re
 import shutil
 from pathlib import Path
 
@@ -105,6 +106,65 @@ def expected_content(data):
             for key in ("label", "detail", "source"):
                 if _text(story.get(key)):
                     texts.add(_text(story[key]))
+    elif kind == "journey":
+        for stage in data.get("stages", []):
+            if _text(stage.get("id")):
+                ids.add(stage["id"])
+            for key in ("label", "behavior", "touchpoint"):
+                if _text(stage.get(key)):
+                    texts.add(_text(stage[key]))
+            emotion = stage.get("emotion", {})
+            for key in ("label", "basis"):
+                if _text(emotion.get(key)):
+                    texts.add(_text(emotion[key]))
+            for item in stage.get("evidence", []):
+                if _text(item.get("id")):
+                    ids.add(item["id"])
+                for key in ("text", "source"):
+                    if _text(item.get(key)):
+                        texts.add(_text(item[key]))
+            for item in stage.get("opportunities", []):
+                if _text(item.get("id")):
+                    ids.add(item["id"])
+                if _text(item.get("text")):
+                    texts.add(_text(item["text"]))
+            for item in stage.get("actions", []):
+                if _text(item.get("id")):
+                    ids.add(item["id"])
+                for key in ("text", "owner", "check"):
+                    if _text(item.get(key)):
+                        texts.add(_text(item[key]))
+    elif kind == "service-blueprint":
+        item_lookup = {}
+        for stage in data.get("stages", []):
+            if _text(stage.get("id")):
+                ids.add(stage["id"])
+            if _text(stage.get("label")):
+                texts.add(_text(stage["label"]))
+        for lane in data.get("lanes", []):
+            if _text(lane.get("id")):
+                ids.add(lane["id"])
+            if _text(lane.get("label")):
+                texts.add(_text(lane["label"]))
+            if _text(lane.get("kind")):
+                texts.add(_text(lane["kind"]))
+            for item in lane.get("items", []):
+                if _text(item.get("id")):
+                    ids.add(item["id"])
+                for key in ("text", "owner"):
+                    if _text(item.get(key)):
+                        texts.add(_text(item[key]))
+                item_lookup[(lane.get("id"), item.get("stage"))] = item.get("id")
+        for boundary in data.get("boundaries", []):
+            if _text(boundary.get("label")):
+                texts.add(_text(boundary["label"]))
+        for handoff in data.get("handoffs", []):
+            if _text(handoff.get("label")):
+                texts.add(_text(handoff["label"]))
+            start = handoff.get("from", {})
+            end = handoff.get("to", {})
+            if item_lookup.get((start.get("lane"), start.get("stage"))) and item_lookup.get((end.get("lane"), end.get("stage"))):
+                relations.add(("blueprint-" + item_lookup[(start["lane"], start["stage"])], "blueprint-" + item_lookup[(end["lane"], end["stage"])]))
     elif kind in {"chart", "plot"}:
         rows = data.get("data", [])
         for row in rows:
@@ -129,6 +189,15 @@ def content_integrity(data, scene):
     scene_ids = {n.get("id") for n in scene_nodes if n.get("id")}
     if data.get("type") == "storymap":
         present_ids = {value[6:] for value in scene_ids if value.startswith("story-")}
+    elif data.get("type") == "journey":
+        present_ids = {value[len("journey-stage-"):] for value in scene_ids if value.startswith("journey-stage-")}
+        scene_blob = "\n".join(_text(n.get("label")) + "\n" + _text(n.get("detail")) for n in scene_nodes)
+        present_ids |= set(re.findall(r"\[([A-Za-z][A-Za-z0-9_-]{0,63})\]", scene_blob))
+    elif data.get("type") == "service-blueprint":
+        present_ids = {value[len("blueprint-stage-"):] for value in scene_ids if value.startswith("blueprint-stage-")}
+        present_ids |= {value[len("blueprint-"):] for value in scene_ids if value.startswith("blueprint-") and not value.startswith("blueprint-stage-") and not value.startswith("blueprint-empty-")}
+        scene_blob = "\n".join(_text(n.get("label")) + "\n" + _text(n.get("detail")) for n in scene_nodes)
+        present_ids |= set(re.findall(r"\[([A-Za-z][A-Za-z0-9_-]{0,63})\]", scene_blob))
     else:
         present_ids = scene_ids
     missing_ids = sorted(set(expected["ids"]) - present_ids)

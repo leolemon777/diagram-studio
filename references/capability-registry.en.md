@@ -18,7 +18,9 @@ The machine-readable source is [`assets/capability-registry.json`](../assets/cap
 | `donut` | Donut chart | `scripts/render.py#chart:donut` | SVG, draw.io, scene/QA, HTML | `generated_with_semantic_validation` |
 | `histogram` / `scatter` | Histogram / scatter | `scripts/render.py#plot` | SVG, draw.io, scene/QA, HTML | `generated_with_semantic_validation` |
 | `affinity` | Affinity map | `scripts/organization_relations.py#affinity-map` | SVG, PNG, input/calculation/QA JSON | `manual_visual_review` |
-| `journey` / `retro` | Journey / retrospective board | `scripts/render.py#table` | SVG, draw.io, scene/QA, HTML | `manual_visual_review` |
+| `journey` | Journey map | `scripts/render.py#journey` | SVG, draw.io, scene/QA, HTML | `manual_visual_review` |
+| `service-blueprint` | Service blueprint | `scripts/render.py#service-blueprint` | SVG, draw.io, scene/QA, HTML | `manual_visual_review` |
+| `retro` | Retrospective board | `scripts/render.py#table` | SVG, draw.io, scene/QA, HTML | `manual_visual_review` |
 | `storymap` | User story map | `scripts/render.py#storymap` | SVG, draw.io, scene/brief/QA, HTML | `manual_visual_review` |
 
 Evidence levels describe checks that were actually run; manual review is not domain or user approval. Registered formats are delivery contracts and still require project-level inspection. The number of entries is not a completion percentage.

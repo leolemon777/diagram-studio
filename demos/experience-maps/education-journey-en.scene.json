@@ -1,0 +1,1256 @@
+{
+  "width": 1600,
+  "height": 1537,
+  "theme": "light",
+  "palette": {
+    "bg": "#F1EFEB",
+    "panel": "#FEFDF9",
+    "ink": "#30302D",
+    "muted": "#6D6A63",
+    "line": "#D8D3C8",
+    "accent": "#AC6046",
+    "teal": "#67685E",
+    "amber": "#8C7964",
+    "red": "#554C46",
+    "tint": "#F0E4DA",
+    "tint2": "#ECECE5"
+  },
+  "nodes": [
+    {
+      "id": "_v1",
+      "x": 64,
+      "y": 190,
+      "w": 1472,
+      "h": 34,
+      "label": "Persona: A working learner changing careers  ·  Goal: Confirm fit and complete enrolment",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 18,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v2",
+      "x": 64,
+      "y": 261,
+      "w": 210,
+      "h": 36,
+      "label": "Stage",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "journey-stage-discover",
+      "x": 302.0,
+      "y": 236,
+      "w": 294.5,
+      "h": 86,
+      "label": "01 / discover",
+      "detail": "Discover course",
+      "kind": "panel",
+      "tone": "accent",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "01 / discover",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "Discover course",
+          16,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "journey-stage-compare",
+      "x": 610.5,
+      "y": 236,
+      "w": 294.5,
+      "h": 86,
+      "label": "02 / compare",
+      "detail": "Compare options",
+      "kind": "panel",
+      "tone": "teal",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "02 / compare",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "Compare options",
+          16,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "journey-stage-trial",
+      "x": 919.0,
+      "y": 236,
+      "w": 294.5,
+      "h": 86,
+      "label": "03 / trial",
+      "detail": "Try and confirm",
+      "kind": "panel",
+      "tone": "teal",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "03 / trial",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "Try and confirm",
+          16,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "journey-stage-enroll",
+      "x": 1227.5,
+      "y": 236,
+      "w": 294.5,
+      "h": 86,
+      "label": "04 / enroll",
+      "detail": "Submit enrolment",
+      "kind": "panel",
+      "tone": "teal",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "04 / enroll",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "Submit enrolment",
+          16,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "_v7",
+      "x": 64,
+      "y": 360,
+      "w": 210,
+      "h": 105,
+      "label": "Behavior",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "journey-behavior-discover",
+      "x": 302.0,
+      "y": 340,
+      "w": 294.5,
+      "h": 133,
+      "label": "Searches topics and compares course pages",
+      "detail": "",
+      "kind": "panel",
+      "tone": "accent",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "Searches topics and",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "compares course pages",
+          20,
+          true,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "journey-behavior-compare",
+      "x": 610.5,
+      "y": 340,
+      "w": 294.5,
+      "h": 133,
+      "label": "Opens two or three courses and checks the syllabus",
+      "detail": "",
+      "kind": "panel",
+      "tone": "accent",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "Opens two or three",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "courses and checks the",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "syllabus",
+          20,
+          true,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "journey-behavior-trial",
+      "x": 919.0,
+      "y": 340,
+      "w": 294.5,
+      "h": 133,
+      "label": "Watches a sample and checks difficulty",
+      "detail": "",
+      "kind": "panel",
+      "tone": "accent",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "Watches a sample and",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "checks difficulty",
+          20,
+          true,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "journey-behavior-enroll",
+      "x": 1227.5,
+      "y": 340,
+      "w": 294.5,
+      "h": 133,
+      "label": "Fills details, pays, and submits",
+      "detail": "",
+      "kind": "panel",
+      "tone": "accent",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "Fills details, pays, and",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "submits",
+          20,
+          true,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "_v12",
+      "x": 64,
+      "y": 505,
+      "w": 210,
+      "h": 78,
+      "label": "Touchpoint",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "journey-touchpoint-discover",
+      "x": 302.0,
+      "y": 485,
+      "w": 294.5,
+      "h": 106,
+      "label": "Search results and course detail page",
+      "detail": "",
+      "kind": "panel",
+      "tone": "teal",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "Search results and course",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "detail page",
+          20,
+          true,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "journey-touchpoint-compare",
+      "x": 610.5,
+      "y": 485,
+      "w": 294.5,
+      "h": 106,
+      "label": "Comparison page and sample lesson",
+      "detail": "",
+      "kind": "panel",
+      "tone": "teal",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "Comparison page and",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "sample lesson",
+          20,
+          true,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "journey-touchpoint-trial",
+      "x": 919.0,
+      "y": 485,
+      "w": 294.5,
+      "h": 106,
+      "label": "Sample lesson and Q&A",
+      "detail": "",
+      "kind": "panel",
+      "tone": "teal",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "Sample lesson and Q&A",
+          20,
+          true,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "journey-touchpoint-enroll",
+      "x": 1227.5,
+      "y": 485,
+      "w": 294.5,
+      "h": 106,
+      "label": "Form, payment page, confirmation email",
+      "detail": "",
+      "kind": "panel",
+      "tone": "teal",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "Form, payment page,",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "confirmation email",
+          20,
+          true,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "_v17",
+      "x": 64,
+      "y": 623,
+      "w": 210,
+      "h": 159,
+      "label": "Evidence & source",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "journey-evidence-discover",
+      "x": 302.0,
+      "y": 603,
+      "w": 294.5,
+      "h": 187,
+      "label": "[ev_search] Most people check outcomes and weekly hours first · Source: Five interview summaries",
+      "detail": "",
+      "kind": "panel",
+      "tone": "muted",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[ev_search] Most people",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "check outcomes and",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "weekly hours first ·",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "Source: Five interview",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "summaries",
+          20,
+          true,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "journey-evidence-compare",
+      "x": 610.5,
+      "y": 603,
+      "w": 294.5,
+      "h": 187,
+      "label": "[ev_compare] Learners cannot find differences between class formats · Source: Usability test U03",
+      "detail": "",
+      "kind": "panel",
+      "tone": "muted",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[ev_compare] Learners",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "cannot find differences",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "between class formats ·",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "Source: Usability test U03",
+          20,
+          true,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "journey-evidence-trial",
+      "x": 919.0,
+      "y": 603,
+      "w": 294.5,
+      "h": 187,
+      "label": "[ev_trial] Sample work helps judge difficulty better than slogans · Source: Follow-up R02",
+      "detail": "",
+      "kind": "panel",
+      "tone": "muted",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[ev_trial] Sample work",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "helps judge difficulty",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "better than slogans ·",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "Source: Follow-up R02",
+          20,
+          true,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "journey-evidence-enroll",
+      "x": 1227.5,
+      "y": 603,
+      "w": 294.5,
+      "h": 187,
+      "label": "[ev_enroll] Form errors do not explain how to fix them · Source: September 2026 log review",
+      "detail": "",
+      "kind": "panel",
+      "tone": "muted",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[ev_enroll] Form errors do",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "not explain how to fix",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "them · Source:",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "September 2026 log",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "review",
+          20,
+          true,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "_v22",
+      "x": 64,
+      "y": 822,
+      "w": 210,
+      "h": 159,
+      "label": "Opportunity",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "journey-opportunity-discover",
+      "x": 302.0,
+      "y": 802,
+      "w": 294.5,
+      "h": 187,
+      "label": "[opp_fit] Put fit and weekly effort above the fold · Evidence: ev_search",
+      "detail": "",
+      "kind": "panel",
+      "tone": "amber",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[opp_fit] Put fit and",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "weekly effort above the",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "fold · Evidence:",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "ev_search",
+          20,
+          true,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "journey-opportunity-compare",
+      "x": 610.5,
+      "y": 802,
+      "w": 294.5,
+      "h": 187,
+      "label": "[opp_compare] Compare format, assignments, and support in one view · Evidence: ev_compare",
+      "detail": "",
+      "kind": "panel",
+      "tone": "amber",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[opp_compare]",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "Compare format,",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "assignments, and support",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "in one view · Evidence:",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "ev_compare",
+          20,
+          true,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "journey-opportunity-trial",
+      "x": 919.0,
+      "y": 802,
+      "w": 294.5,
+      "h": 187,
+      "label": "[opp_trial] Show real work and feedback examples · Evidence: ev_trial",
+      "detail": "",
+      "kind": "panel",
+      "tone": "amber",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[opp_trial] Show real work",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          " and feedback examples",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "· Evidence: ev_trial",
+          20,
+          true,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "journey-opportunity-enroll",
+      "x": 1227.5,
+      "y": 802,
+      "w": 294.5,
+      "h": 187,
+      "label": "[opp_enroll] Summarise all details before final submit · Evidence: ev_enroll",
+      "detail": "",
+      "kind": "panel",
+      "tone": "amber",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[opp_enroll] Summarise all",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          " details before final submit",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          " · Evidence: ev_enroll",
+          20,
+          true,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "_v27",
+      "x": 64,
+      "y": 1021,
+      "w": 210,
+      "h": 186,
+      "label": "Action",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "journey-action-discover",
+      "x": 302.0,
+      "y": 1001,
+      "w": 294.5,
+      "h": 214,
+      "label": "[act_fit] Rewrite the course hero information · Owner: Curriculum team · Check: Hero answers who it is for and weekly effort",
+      "detail": "",
+      "kind": "panel",
+      "tone": "red",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[act_fit] Rewrite the",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "course hero information ·",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          " Owner: Curriculum team",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "· Check: Hero answers",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "who it is for and weekly",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "effort",
+          20,
+          true,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "journey-action-compare",
+      "x": 610.5,
+      "y": 1001,
+      "w": 294.5,
+      "h": 214,
+      "label": "[act_compare] Add a three-column comparison component · Owner: Product design · Check: Learner selects a format within 30 seconds",
+      "detail": "",
+      "kind": "panel",
+      "tone": "red",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[act_compare] Add a",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "three-column comparison",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          " component · Owner:",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "Product design · Check:",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "Learner selects a format",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "within 30 seconds",
+          20,
+          true,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "journey-action-trial",
+      "x": 919.0,
+      "y": 1001,
+      "w": 294.5,
+      "h": 214,
+      "label": "[act_trial] Create a reusable sample-work card · Owner: Teaching team · Check: Every course has two anonymised samples",
+      "detail": "",
+      "kind": "panel",
+      "tone": "red",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[act_trial] Create a",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "reusable sample-work",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "card · Owner: Teaching",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "team · Check: Every",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "course has two",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "anonymised samples",
+          20,
+          true,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "journey-action-enroll",
+      "x": 1227.5,
+      "y": 1001,
+      "w": 294.5,
+      "h": 214,
+      "label": "[act_enroll] Add review and field-level recovery · Owner: Growth engineering · Check: A corrected field returns to its original position",
+      "detail": "",
+      "kind": "panel",
+      "tone": "red",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[act_enroll] Add review",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "and field-level recovery ·",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          " Owner: Growth",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "engineering · Check: A",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "corrected field returns to",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "its original position",
+          20,
+          true,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "_v32",
+      "x": 64,
+      "y": 1247,
+      "w": 210,
+      "h": 132,
+      "label": "Emotion",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "journey-emotion-discover",
+      "x": 302.0,
+      "y": 1227,
+      "w": 294.5,
+      "h": 160,
+      "label": "Curious but cautious · Evidence: Interviews: worried about time and return",
+      "detail": "",
+      "kind": "panel",
+      "tone": "teal",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "Curious but cautious ·",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "Evidence: Interviews:",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "worried about time and",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "return",
+          20,
+          true,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "journey-emotion-compare",
+      "x": 610.5,
+      "y": 1227,
+      "w": 294.5,
+      "h": 160,
+      "label": "Overloaded · Evidence: Observation: switches between several tabs",
+      "detail": "",
+      "kind": "panel",
+      "tone": "teal",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "Overloaded · Evidence:",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "Observation: switches",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "between several tabs",
+          20,
+          true,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "journey-emotion-trial",
+      "x": 919.0,
+      "y": 1227,
+      "w": 294.5,
+      "h": 160,
+      "label": "More confident · Evidence: Follow-up: sample work made the choice easier",
+      "detail": "",
+      "kind": "panel",
+      "tone": "teal",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "More confident ·",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "Evidence: Follow-up:",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "sample work made the",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "choice easier",
+          20,
+          true,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "journey-emotion-enroll",
+      "x": 1227.5,
+      "y": 1227,
+      "w": 294.5,
+      "h": 160,
+      "label": "Hopeful but afraid of errors · Evidence: Logs: repeatedly edits contact details before payment",
+      "detail": "",
+      "kind": "panel",
+      "tone": "teal",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "Hopeful but afraid of",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "errors · Evidence: Logs:",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "repeatedly edits contact",
+          20,
+          true,
+          "muted"
+        ],
+        [
+          "details before payment",
+          20,
+          true,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "_v37",
+      "x": 64,
+      "y": 1403,
+      "w": 1472,
+      "h": 34,
+      "label": "Evidence precedes opportunity, and opportunity precedes action; an empty cell means no proposal yet, not no problem.",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 15,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v38",
+      "x": 64,
+      "y": 34,
+      "w": 1472,
+      "h": 22,
+      "label": "DIAGRAM STUDIO  /  专业图示",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v39",
+      "x": 64,
+      "y": 69,
+      "w": 1472,
+      "h": 56,
+      "label": "Adult course enrolment journey",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 36,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v40",
+      "x": 64,
+      "y": 130,
+      "w": 1472,
+      "h": 38,
+      "label": "Traceable evidence for experience improvement",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v41",
+      "x": 64,
+      "y": 1474,
+      "w": 1472,
+      "h": 1,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "line",
+      "stroke": "none",
+      "check": false
+    },
+    {
+      "id": "_v42",
+      "x": 64,
+      "y": 1487,
+      "w": 1472,
+      "h": 36,
+      "label": "示例方案 · 非实际部署 / 业务事实",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    }
+  ],
+  "edges": [],
+  "meta": {
+    "experience_map": "journey",
+    "journey": {
+      "stages": [
+        "discover",
+        "compare",
+        "trial",
+        "enroll"
+      ],
+      "stable_ids": [
+        "act_compare",
+        "act_enroll",
+        "act_fit",
+        "act_trial",
+        "compare",
+        "discover",
+        "enroll",
+        "ev_compare",
+        "ev_enroll",
+        "ev_search",
+        "ev_trial",
+        "opp_compare",
+        "opp_enroll",
+        "opp_fit",
+        "opp_trial",
+        "trial"
+      ],
+      "lanes": [
+        "behavior",
+        "touchpoint",
+        "evidence",
+        "opportunity",
+        "action",
+        "emotion"
+      ],
+      "trace_counts": {
+        "evidence": 4,
+        "opportunities": 4,
+        "actions": 4
+      }
+    }
+  },
+  "assumptions": []
+}

@@ -1,0 +1,50 @@
+{
+  "type": "service-blueprint",
+  "language": "zh",
+  "title": "零售到店自提服务蓝图",
+  "subtitle": "把可见体验、后台履约和支撑系统放在同一条服务链上",
+  "customer": "线上下单、到店取货的顾客",
+  "goal": "准时拿到正确商品并知道异常如何处理",
+  "stages": [
+    {"id": "order", "label": "线上下单"},
+    {"id": "prepare", "label": "门店备货"},
+    {"id": "pickup", "label": "到店取货"},
+    {"id": "aftercare", "label": "售后处理"}
+  ],
+  "lanes": [
+    {"id": "customer", "label": "顾客动作", "kind": "customer", "items": [
+      {"id": "c_order", "stage": "order", "text": "选择门店并支付"},
+      {"id": "c_pickup", "stage": "pickup", "text": "出示取货码并核对商品"},
+      {"id": "c_after", "stage": "aftercare", "text": "反馈缺件或损坏"}
+    ]},
+    {"id": "frontstage", "label": "前台接触", "kind": "frontstage", "items": [
+      {"id": "f_order", "stage": "order", "text": "展示库存承诺与取货时间", "owner": "电商页面"},
+      {"id": "f_pickup", "stage": "pickup", "text": "核验取货码并交付袋装商品", "owner": "门店员工"},
+      {"id": "f_after", "stage": "aftercare", "text": "登记问题并给出处理时限", "owner": "客服"}
+    ]},
+    {"id": "backstage", "label": "后台履约", "kind": "backstage", "items": [
+      {"id": "b_order", "stage": "order", "text": "锁定库存并生成门店任务", "owner": "订单服务"},
+      {"id": "b_prepare", "stage": "prepare", "text": "拣货、复核并贴取货标签", "owner": "门店仓"},
+      {"id": "b_after", "stage": "aftercare", "text": "核对订单、库存与退款条件", "owner": "售后专员"}
+    ]},
+    {"id": "support", "label": "支撑能力", "kind": "support", "items": [
+      {"id": "s_prepare", "stage": "prepare", "text": "推送备货超时提醒", "owner": "消息中心"},
+      {"id": "s_pickup", "stage": "pickup", "text": "维护取货码与核验日志", "owner": "身份服务"},
+      {"id": "s_after", "stage": "aftercare", "text": "提供退款与客服工单接口", "owner": "售后平台"}
+    ]},
+    {"id": "system", "label": "系统记录", "kind": "system", "items": [
+      {"id": "sys_order", "stage": "order", "text": "记录支付、门店和承诺时间", "owner": "订单数据库"},
+      {"id": "sys_prepare", "stage": "prepare", "text": "记录拣货状态与异常原因", "owner": "库存数据库"},
+      {"id": "sys_after", "stage": "aftercare", "text": "记录售后证据与处理结果", "owner": "服务台"}
+    ]}
+  ],
+  "boundaries": [
+    {"after": "frontstage", "before": "backstage", "label": "可见 / 不可见"},
+    {"after": "backstage", "before": "support", "label": "主流程 / 支撑"}
+  ],
+  "handoffs": [
+    {"from": {"lane": "customer", "stage": "order"}, "to": {"lane": "backstage", "stage": "order"}, "label": "订单提交"},
+    {"from": {"lane": "backstage", "stage": "prepare"}, "to": {"lane": "frontstage", "stage": "pickup"}, "label": "备货完成"},
+    {"from": {"lane": "frontstage", "stage": "aftercare"}, "to": {"lane": "backstage", "stage": "aftercare"}, "label": "问题单"}
+  ]
+}

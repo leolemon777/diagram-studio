@@ -17,6 +17,8 @@ English users can read the [English usage guide](README.en.md); the same input m
 
 用户故事地图读取 [故事地图输入与生成](references/story-map.md)（[English](references/story-map.en.md)），使用 `render.py` 的 `type: "storymap"`。按活动 × 交付切片测量排版，保持故事唯一归属和来源；切片完整性由团队确认，不自动计算日期或依赖。
 
+用户要体验研究时，读取 [旅程图与服务蓝图](references/experience-maps.md)（[English](references/experience-maps.en.md)）。`type: "journey"` 使用专用后端追踪阶段、行为、触点、证据、机会和行动；`type: "service-blueprint"` 使用专用后端表达顾客、前台、后台、支撑和系统记录，并要求输入声明分界线与交接。两者都保留稳定 ID 和中英内容，不把情绪编成分数，也不从相邻位置猜关系。
+
 能力与交付选项统一读取 [能力登记](references/capability-registry.md)（[English](references/capability-registry.en.md)）及其机器可读源 `assets/capability-registry.json`。先运行 `python3 scripts/capability_registry.py --check`；登记中的后端、格式和证据等级优先于旧页面文字。证据等级低于实际查看时，向用户明确限制，不能把登记入口当成已验收的渲染器。
 
 ## 内容自适应与视觉修正

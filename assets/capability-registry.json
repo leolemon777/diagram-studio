@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "version": "v45",
+  "version": "v46",
   "updated": "2026-09-20",
   "purpose": "Single source for chooser labels, backend capability, delivery formats and acceptance evidence.",
   "status_vocabulary": {
@@ -280,14 +280,28 @@
           "label": {"zh": "用户旅程图", "en": "Journey map"},
           "why": {"zh": "按用户阶段追踪体验，区分证据与改进假说", "en": "Follow user stages and separate evidence from hypotheses"},
           "minimum_input": {"zh": "用户、目标、阶段、触点、证据、机会；缺少情绪数据不编分数", "en": "Persona, goal, stages, touchpoints, evidence, opportunities; no invented emotion scores"},
-          "input_model": {"kind": "brief", "type": "table", "required": ["columns", "rows"]},
-          "backend": {"kind": "shared-renderer-extra", "module": "scripts/render.py", "entry": "table"},
+          "input_model": {"kind": "brief", "type": "journey", "required": ["persona", "goal", "stages"]},
+          "backend": {"kind": "dedicated-renderer", "module": "scripts/render.py", "entry": "journey"},
           "formats": ["svg", "drawio", "scene.json", "qa.json", "html"],
-          "layout_limits": {"zh": "按阶段和体验维度排表；长文需要增加行高或拆阶段。", "en": "Align stages and experience dimensions; increase row height or split stages for long text."},
+          "layout_limits": {"zh": "阶段 2–8 个；保留行为、触点、证据、机会和行动追踪，长文拆阶段或详页。", "en": "Two to eight stages; retain behavior, touchpoint, evidence, opportunity and action trace; split dense maps."},
           "languages": ["zh", "en"],
-          "examples": ["assets/workshop-examples/retail-journey.json", "assets/examples/38-customer-journey.json"],
-          "evidence": {"level": "manual_visual_review", "reference": "assets/boardmix-study-evidence.json", "detail": {"zh": "零售旅程示例已查看；观察→机会→行动的来源链仍须由输入提供。", "en": "The retail journey example was viewed; the observation-to-opportunity-to-action chain must still come from input."}},
-          "scope": {"zh": "不把情绪图标自动当连续量表；机会要回链到观察。", "en": "Emotion icons are not automatically a continuous scale; opportunities trace back to observations."}
+          "examples": ["assets/experience-models/education-journey.json", "assets/experience-models/education-journey-en.json"],
+          "evidence": {"level": "manual_visual_review", "reference": "assets/v46-experience-maps-evidence.json", "detail": {"zh": "中英案例通过阶段、证据、机会、行动引用、内容保留和浏览器文字检查。", "en": "Chinese and English cases pass stage, evidence, opportunity, action-reference, content-preservation and browser text checks."}},
+          "scope": {"zh": "情绪必须有依据，不编造分数；机会回链证据，行动回链机会。", "en": "Emotion needs a basis and never becomes an invented score; opportunities trace to evidence and actions trace to opportunities."}
+        },
+        {
+          "id": "service-blueprint",
+          "label": {"zh": "服务蓝图", "en": "Service blueprint"},
+          "why": {"zh": "把用户、前台、后台、支撑和系统记录放在同一服务链上", "en": "Place customer, frontstage, backstage, support and system records on one service chain"},
+          "minimum_input": {"zh": "服务阶段、3–6 条语义泳道、每格动作、分界线与交接", "en": "Service stages, 3–6 semantic lanes, cell actions, boundaries and handoffs"},
+          "input_model": {"kind": "brief", "type": "service-blueprint", "required": ["customer", "goal", "stages", "lanes"]},
+          "backend": {"kind": "dedicated-renderer", "module": "scripts/render.py", "entry": "service-blueprint"},
+          "formats": ["svg", "drawio", "scene.json", "qa.json", "html"],
+          "layout_limits": {"zh": "阶段 2–8 个、泳道 3–6 条；只绘制输入声明的分界线和交接，不从相邻位置推断。", "en": "Two to eight stages and three to six lanes; draw only declared boundaries and handoffs, never infer from adjacency."},
+          "languages": ["zh", "en"],
+          "examples": ["assets/experience-models/retail-service-blueprint.json", "assets/experience-models/retail-service-blueprint-en.json"],
+          "evidence": {"level": "manual_visual_review", "reference": "assets/v46-experience-maps-evidence.json", "detail": {"zh": "中英案例通过泳道、分界线、交接端点、内容保留和浏览器文字检查。", "en": "Chinese and English cases pass lane, boundary, handoff-endpoint, content-preservation and browser text checks."}},
+          "scope": {"zh": "表达服务协作语义，不等于实时服务蓝图软件或流程执行系统。", "en": "Expresses service collaboration semantics; it is not a live blueprint workspace or process execution system."}
         },
         {
           "id": "retro",
@@ -324,7 +338,7 @@
     "workflow": "flow",
     "swimlane-workflow": "swimlane",
     "user-journey": "journey",
-    "service-blueprint": "swimlane",
+    "service-blueprint": "service-blueprint",
     "roadmap": "timeline",
     "story-map": "storymap"
   }

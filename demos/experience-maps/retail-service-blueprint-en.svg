@@ -1,0 +1,220 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1116" viewBox="0 0 1600 1116" role="img" aria-labelledby="diagram-title diagram-desc">
+<title id="diagram-title">Retail buy-online-pick-up blueprint</title>
+<desc id="diagram-desc">Place visible experience, fulfilment, and support on one service chain</desc>
+<rect width="100%" height="100%" fill="#F1EFEB"/>
+<defs>
+<marker id="arrow-accent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#AC6046"/></marker>
+<marker id="arrow-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#67685E"/></marker>
+<marker id="arrow-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#8C7964"/></marker>
+<marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#554C46"/></marker>
+<marker id="arrow-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#6D6A63"/></marker>
+<marker id="arrow-line" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#D8D3C8"/></marker>
+<marker id="arrow-ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#30302D"/></marker>
+</defs>
+<g font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, Arial, sans-serif">
+<g id="blueprint-stage-order" data-kind="panel" data-content-text="false" data-box="324.0,234,291.0,76">
+<rect x="324.0" y="234" width="291.0" height="76" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="348.0" y="263" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">01 / order</text>
+<text x="348.0" y="286.0" text-anchor="start" font-size="16" font-weight="400" fill="#6D6A63">Order online</text>
+</g>
+<g id="blueprint-stage-prepare" data-kind="panel" data-content-text="false" data-box="627.0,234,291.0,76">
+<rect x="627.0" y="234" width="291.0" height="76" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="651.0" y="263" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">02 / prepare</text>
+<text x="651.0" y="286.0" text-anchor="start" font-size="16" font-weight="400" fill="#6D6A63">Prepare in store</text>
+</g>
+<g id="blueprint-stage-pickup" data-kind="panel" data-content-text="false" data-box="930.0,234,291.0,76">
+<rect x="930.0" y="234" width="291.0" height="76" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="954.0" y="263" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">03 / pickup</text>
+<text x="954.0" y="286.0" text-anchor="start" font-size="16" font-weight="400" fill="#6D6A63">Collect in store</text>
+</g>
+<g id="blueprint-stage-aftercare" data-kind="panel" data-content-text="false" data-box="1233.0,234,291.0,76">
+<rect x="1233.0" y="234" width="291.0" height="76" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="1257.0" y="263" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">04 / aftercare</text>
+<text x="1257.0" y="286.0" text-anchor="start" font-size="16" font-weight="400" fill="#6D6A63">Resolve issue</text>
+</g>
+<g id="blueprint-c_order" data-kind="panel" data-content-text="false" data-box="324.0,326,291.0,112">
+<rect x="324.0" y="326" width="291.0" height="112" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="348.0" y="355" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">[c_order] Selects store</text>
+<text x="348.0" y="382.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">and pays</text>
+</g>
+<g id="blueprint-empty-customer-prepare" data-kind="panel" data-content-text="false" data-box="627.0,326,291.0,112">
+<rect x="627.0" y="326" width="291.0" height="112" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="651.0" y="355" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">— Not recorded</text>
+</g>
+<g id="blueprint-c_pickup" data-kind="panel" data-content-text="false" data-box="930.0,326,291.0,112">
+<rect x="930.0" y="326" width="291.0" height="112" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="954.0" y="355" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">[c_pickup] Shows code</text>
+<text x="954.0" y="382.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">and checks item</text>
+</g>
+<g id="blueprint-c_after" data-kind="panel" data-content-text="false" data-box="1233.0,326,291.0,112">
+<rect x="1233.0" y="326" width="291.0" height="112" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="1257.0" y="355" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">[c_after] Reports missing</text>
+<text x="1257.0" y="382.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">or damaged item</text>
+</g>
+<g id="blueprint-f_order" data-kind="panel" data-content-text="false" data-box="324.0,448,291.0,112">
+<rect x="324.0" y="448" width="291.0" height="112" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="348.0" y="477" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">[f_order] Shows stock</text>
+<text x="348.0" y="504.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">promise and pickup time</text>
+<text x="348.0" y="527.0" text-anchor="start" font-size="16" font-weight="400" fill="#6D6A63">Owner: Commerce page</text>
+</g>
+<g id="blueprint-empty-frontstage-prepare" data-kind="panel" data-content-text="false" data-box="627.0,448,291.0,112">
+<rect x="627.0" y="448" width="291.0" height="112" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="651.0" y="477" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">— Not recorded</text>
+</g>
+<g id="blueprint-f_pickup" data-kind="panel" data-content-text="false" data-box="930.0,448,291.0,112">
+<rect x="930.0" y="448" width="291.0" height="112" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="954.0" y="477" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">[f_pickup] Checks code</text>
+<text x="954.0" y="504.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">and hands over bag</text>
+<text x="954.0" y="527.0" text-anchor="start" font-size="16" font-weight="400" fill="#6D6A63">Owner: Store associate</text>
+</g>
+<g id="blueprint-f_after" data-kind="panel" data-content-text="false" data-box="1233.0,448,291.0,112">
+<rect x="1233.0" y="448" width="291.0" height="112" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="1257.0" y="477" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">[f_after] Logs issue and</text>
+<text x="1257.0" y="504.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">response time</text>
+<text x="1257.0" y="527.0" text-anchor="start" font-size="16" font-weight="400" fill="#6D6A63">Owner: Support agent</text>
+</g>
+<g id="blueprint-b_order" data-kind="panel" data-content-text="false" data-box="324.0,570,291.0,112">
+<rect x="324.0" y="570" width="291.0" height="112" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="348.0" y="599" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">[b_order] Reserves stock</text>
+<text x="348.0" y="626.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">and creates store task</text>
+<text x="348.0" y="649.0" text-anchor="start" font-size="16" font-weight="400" fill="#6D6A63">Owner: Order service</text>
+</g>
+<g id="blueprint-b_prepare" data-kind="panel" data-content-text="false" data-box="627.0,570,291.0,112">
+<rect x="627.0" y="570" width="291.0" height="112" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="651.0" y="599" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">[b_prepare] Picks, check</text>
+<text x="651.0" y="626.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">s, and labels the order</text>
+<text x="651.0" y="649.0" text-anchor="start" font-size="16" font-weight="400" fill="#6D6A63">Owner: Store stockroom</text>
+</g>
+<g id="blueprint-empty-backstage-pickup" data-kind="panel" data-content-text="false" data-box="930.0,570,291.0,112">
+<rect x="930.0" y="570" width="291.0" height="112" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="954.0" y="599" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">— Not recorded</text>
+</g>
+<g id="blueprint-b_after" data-kind="panel" data-content-text="false" data-box="1233.0,570,291.0,112">
+<rect x="1233.0" y="570" width="291.0" height="112" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="1257.0" y="599" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">[b_after] Checks order,</text>
+<text x="1257.0" y="626.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">stock, and refund rule</text>
+<text x="1257.0" y="649.0" text-anchor="start" font-size="16" font-weight="400" fill="#6D6A63">Owner: Aftercare specialist</text>
+</g>
+<g id="blueprint-empty-support-order" data-kind="panel" data-content-text="false" data-box="324.0,692,291.0,133">
+<rect x="324.0" y="692" width="291.0" height="133" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="348.0" y="721" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">— Not recorded</text>
+</g>
+<g id="blueprint-s_prepare" data-kind="panel" data-content-text="false" data-box="627.0,692,291.0,133">
+<rect x="627.0" y="692" width="291.0" height="133" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="651.0" y="721" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">[s_prepare] Sends</text>
+<text x="651.0" y="748.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">overdue preparation</text>
+<text x="651.0" y="775.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">alert</text>
+<text x="651.0" y="798.0" text-anchor="start" font-size="16" font-weight="400" fill="#6D6A63">Owner: Message centre</text>
+</g>
+<g id="blueprint-s_pickup" data-kind="panel" data-content-text="false" data-box="930.0,692,291.0,133">
+<rect x="930.0" y="692" width="291.0" height="133" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="954.0" y="721" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">[s_pickup] Maintains</text>
+<text x="954.0" y="748.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">code and verification log</text>
+<text x="954.0" y="771.0" text-anchor="start" font-size="16" font-weight="400" fill="#6D6A63">Owner: Identity service</text>
+</g>
+<g id="blueprint-s_after" data-kind="panel" data-content-text="false" data-box="1233.0,692,291.0,133">
+<rect x="1233.0" y="692" width="291.0" height="133" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="1257.0" y="721" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">[s_after] Provides refund</text>
+<text x="1257.0" y="748.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">and case APIs</text>
+<text x="1257.0" y="771.0" text-anchor="start" font-size="16" font-weight="400" fill="#6D6A63">Owner: Aftercare platform</text>
+</g>
+<g id="blueprint-sys_order" data-kind="panel" data-content-text="false" data-box="324.0,835,291.0,133">
+<rect x="324.0" y="835" width="291.0" height="133" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="348.0" y="864" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">[sys_order] Records</text>
+<text x="348.0" y="891.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">payment, store, and</text>
+<text x="348.0" y="918.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">promise</text>
+<text x="348.0" y="941.0" text-anchor="start" font-size="16" font-weight="400" fill="#6D6A63">Owner: Order database</text>
+</g>
+<g id="blueprint-sys_prepare" data-kind="panel" data-content-text="false" data-box="627.0,835,291.0,133">
+<rect x="627.0" y="835" width="291.0" height="133" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="651.0" y="864" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">[sys_prepare] Records</text>
+<text x="651.0" y="891.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">pick status and</text>
+<text x="651.0" y="918.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">exception</text>
+<text x="651.0" y="941.0" text-anchor="start" font-size="16" font-weight="400" fill="#6D6A63">Owner: Stock database</text>
+</g>
+<g id="blueprint-empty-system-pickup" data-kind="panel" data-content-text="false" data-box="930.0,835,291.0,133">
+<rect x="930.0" y="835" width="291.0" height="133" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="954.0" y="864" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">— Not recorded</text>
+</g>
+<g id="blueprint-sys_after" data-kind="panel" data-content-text="false" data-box="1233.0,835,291.0,133">
+<rect x="1233.0" y="835" width="291.0" height="133" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="1257.0" y="864" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">[sys_after] Records</text>
+<text x="1257.0" y="891.0" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">evidence and resolution</text>
+<text x="1257.0" y="914.0" text-anchor="start" font-size="16" font-weight="400" fill="#6D6A63">Owner: Service desk</text>
+</g>
+<path d="M64,560 L1536,560" fill="none" stroke="#30302D" stroke-width="2" stroke-linejoin="round"/>
+<path d="M64,682 L1536,682" fill="none" stroke="#30302D" stroke-width="2" stroke-linejoin="round"/>
+<path d="M324.0,382.0 L324.0,626.0" fill="none" stroke="#AC6046" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#arrow-accent)"/>
+<path d="M918.0,626.0 L924.0,626.0 L924.0,504.0 L930.0,504.0" fill="none" stroke="#AC6046" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#arrow-accent)"/>
+<path d="M1378.5,560 L1378.5,565.0 L1378.5,570" fill="none" stroke="#AC6046" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#arrow-accent)"/>
+<g id="_v1" data-kind="text" data-content-text="false" data-box="64,190,1472,34">
+
+<text x="64" y="212.85" text-anchor="start" font-size="18" font-weight="400" fill="#6D6A63">Customer: A customer ordering online for store pickup  ·  Goal: Receive the right item on time and know how exceptions are handled</text>
+</g>
+<g id="_v2" data-kind="text" data-content-text="false" data-box="64,256,234,36">
+
+<text x="64" y="279.525" text-anchor="start" font-size="17" font-weight="400" fill="#6D6A63">Service stage</text>
+</g>
+<g id="_v7" data-kind="text" data-content-text="false" data-box="64,346,234,84">
+
+<text x="64" y="382.05" text-anchor="start" font-size="17" font-weight="400" fill="#6D6A63">Customer action</text>
+<text x="64" y="405.0" text-anchor="start" font-size="17" font-weight="400" fill="#6D6A63">[customer] · customer</text>
+</g>
+<g id="_v12" data-kind="text" data-content-text="false" data-box="64,468,234,84">
+
+<text x="64" y="504.05" text-anchor="start" font-size="17" font-weight="400" fill="#6D6A63">Frontstage contact</text>
+<text x="64" y="527.0" text-anchor="start" font-size="17" font-weight="400" fill="#6D6A63">[frontstage] · frontstage</text>
+</g>
+<g id="_v17" data-kind="text" data-content-text="false" data-box="64,590,234,84">
+
+<text x="64" y="626.05" text-anchor="start" font-size="17" font-weight="400" fill="#6D6A63">Backstage fulfilment</text>
+<text x="64" y="649.0" text-anchor="start" font-size="17" font-weight="400" fill="#6D6A63">[backstage] · backstage</text>
+</g>
+<g id="_v22" data-kind="text" data-content-text="false" data-box="64,712,234,105">
+
+<text x="64" y="758.55" text-anchor="start" font-size="17" font-weight="400" fill="#6D6A63">Support capability</text>
+<text x="64" y="781.5" text-anchor="start" font-size="17" font-weight="400" fill="#6D6A63">[support] · support</text>
+</g>
+<g id="_v27" data-kind="text" data-content-text="false" data-box="64,855,234,105">
+
+<text x="64" y="901.55" text-anchor="start" font-size="17" font-weight="400" fill="#6D6A63">System record</text>
+<text x="64" y="924.5" text-anchor="start" font-size="17" font-weight="400" fill="#6D6A63">[system] · system</text>
+</g>
+<g id="_v32" data-kind="text" data-content-text="false" data-box="64,531,234,28">
+
+<text x="64" y="549.55" text-anchor="start" font-size="14" font-weight="400" fill="#AC6046">Visible / invisible</text>
+</g>
+<g id="_v33" data-kind="text" data-content-text="false" data-box="64,653,234,28">
+
+<text x="64" y="671.55" text-anchor="start" font-size="14" font-weight="400" fill="#AC6046">Core flow / support</text>
+</g>
+<g id="_v34" data-kind="text" data-content-text="false" data-box="64,982,1472,34">
+
+<text x="64" y="1003.875" text-anchor="start" font-size="15" font-weight="400" fill="#6D6A63">Boundaries carry service semantics; handoff arrows show declared collaboration only and are never inferred from adjacency.</text>
+</g>
+<g id="_v35" data-kind="text" data-content-text="false" data-box="64,34,1472,22">
+
+<text x="64" y="49.55" text-anchor="start" font-size="14" font-weight="400" fill="#AC6046">DIAGRAM STUDIO  /  专业图示</text>
+</g>
+<g id="_v36" data-kind="text" data-content-text="false" data-box="64,69,1472,56">
+
+<text x="64" y="108.7" text-anchor="start" font-size="36" font-weight="400" fill="#30302D">Retail buy-online-pick-up blueprint</text>
+</g>
+<g id="_v37" data-kind="text" data-content-text="false" data-box="64,130,1472,38">
+
+<text x="64" y="154.525" text-anchor="start" font-size="17" font-weight="400" fill="#6D6A63">Place visible experience, fulfilment, and support on one service chain</text>
+</g>
+<g id="_v38" data-kind="rect" data-content-text="false" data-box="64,1053,1472,1">
+<rect x="64" y="1053" width="1472" height="1" rx="0" fill="#D8D3C8" stroke="none" stroke-width="1.5"/>
+</g>
+<g id="_v39" data-kind="text" data-content-text="false" data-box="64,1066,1472,36">
+
+<text x="64" y="1088.55" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">示例方案 · 非实际部署 / 业务事实</text>
+</g>
+<rect x="253.9" y="474.0" width="140.2" height="25" rx="4" fill="#F1EFEB"/>
+<text x="324.0" y="491.0" font-size="15" text-anchor="middle" fill="#AC6046">Order submitted</text>
+<rect x="851.65" y="535.0" width="144.7" height="25" rx="4" fill="#F1EFEB"/>
+<text x="924.0" y="552.0" font-size="15" text-anchor="middle" fill="#AC6046">Ready for pickup</text>
+<rect x="1329.775" y="532.5" width="97.44999999999999" height="25" rx="4" fill="#F1EFEB"/>
+<text x="1378.5" y="549.5" font-size="15" text-anchor="middle" fill="#AC6046">Issue case</text>
+</g></svg>

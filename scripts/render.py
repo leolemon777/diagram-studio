@@ -352,6 +352,8 @@ from layouts import BUILDERS as EXTRA_BUILDERS
 BUILDERS.update(EXTRA_BUILDERS)
 from story_map import build as story_map_build
 BUILDERS['storymap']=story_map_build
+from experience_maps import BUILDERS as EXPERIENCE_BUILDERS
+BUILDERS.update(EXPERIENCE_BUILDERS)
 
 def label_lines(n):
     if '_lines' in n:return n['_lines']

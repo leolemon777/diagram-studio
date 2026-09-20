@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "protocol_version": "diagram-studio/delivery-1",
+  "version_id": "v-5af4539d6c31",
+  "source_name": "education-journey",
+  "input_sha256": "5af4539d6c31e26f9dc1f21a2dec106029823f57b18b8ccbae8f64bf2308c94e",
+  "theme": "light",
+  "checks": {
+    "geometry": {
+      "status": "passed",
+      "warnings": []
+    },
+    "composition": {
+      "status": "not-run",
+      "findings": []
+    },
+    "content_integrity": {
+      "status": "passed",
+      "source_ids": 16,
+      "source_relations": 0,
+      "source_texts": 44,
+      "missing_ids": [],
+      "missing_relations": [],
+      "missing_text": [],
+      "scope": "stable source IDs, explicit relation endpoints and source display text; not domain correctness"
+    },
+    "browser_text_bounds": {
+      "status": "not-run"
+    },
+    "manual_visual_review": {
+      "status": "not-run"
+    },
+    "native_editor": {
+      "status": "not-run"
+    }
+  },
+  "files": {
+    "education-journey.brief.json": "f3cea8831dea62a733091343b4681c1466b3d8407c6d7adab35dd4aa623f4501",
+    "education-journey.drawio": "2b97264dfb48a910ddb70e648bf163cd53a54c9cd27ee6b1f788120bdf34919d",
+    "education-journey.qa.json": "c9bf4ae22ba5776d3ad65c79062be46aebb87157d94f7b585681e5d255fd92df",
+    "education-journey.scene.json": "8aae1550729f33c118e2523de5de46b359200dbe0032b0a293c63e3384fbdcfe",
+    "education-journey.svg": "0edfd1cda8aa8996cf69f2291aa9c4676736e0d0252e79588b91d88494a7341f"
+  },
+  "delivery_scope": "Generation, semantic content checks and QA finish before replacement. Individual files are replaced; promotion is not a multi-file atomic transaction."
+}

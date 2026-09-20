@@ -1,0 +1,30 @@
+{
+  "version": "v46",
+  "forms": ["journey", "service-blueprint"],
+  "examples": [
+    "demos/experience-maps/education-journey.svg",
+    "demos/experience-maps/education-journey-en.svg",
+    "demos/experience-maps/retail-service-blueprint.svg",
+    "demos/experience-maps/retail-service-blueprint-en.svg"
+  ],
+  "automated": {
+    "registry": "python3 scripts/capability_registry.py --check",
+    "tests": "bundled Python: 51 tests OK",
+    "content_integrity": "four examples: stable IDs, 3 blueprint handoffs, and source display text passed",
+    "geometry": "four examples: no audit errors or connector crossings"
+  },
+  "browser": {
+    "url": "http://127.0.0.1:8773/demos/experience-maps/index.html?v=47",
+    "scope": "Chinese and English journey maps and service blueprints opened in the Codex in-app browser",
+    "checks": [
+      "Long card text wraps inside the card bounds",
+      "Journey order reads stage → behavior/touchpoint → evidence → opportunity → action",
+      "Blueprint lane labels, visible/invisible boundaries and declared handoff labels are readable",
+      "English lane labels do not split mid-word after the final layout fix"
+    ],
+    "status": "manual_visual_review"
+  },
+  "limits": [
+    "This review covers the four named examples and browser rendering; it does not certify domain facts or native editor roundtrip for every output."
+  ]
+}

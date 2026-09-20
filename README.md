@@ -19,7 +19,7 @@
 
 ## 怎么用
 
-如果不知道该选哪种图，克隆仓库后在浏览器打开本地的[中英双语选图向导](demos/chooser/index.html)：按“想让读者看懂什么 → 图型 → 风格”选择，填入自己的内容后复制生成的 `$diagram-studio` 指令。向导覆盖 19 种常见形式，提供选型提示；它本身不渲染任意输入，完整成图仍由 Codex 使用 Skill 完成。向导的后端、格式和证据状态来自[能力登记](references/capability-registry.md)，不会只根据旧页面文案宣称支持。风格缩略图是方向示意，实际支持范围见[风格家族](references/style-families.md)。
+如果不知道该选哪种图，克隆仓库后在浏览器打开本地的[中英双语选图向导](demos/chooser/index.html)：按“想让读者看懂什么 → 图型 → 风格”选择，填入自己的内容后复制生成的 `$diagram-studio` 指令。向导覆盖 20 种常见形式，提供选型提示；它本身不渲染任意输入，完整成图仍由 Codex 使用 Skill 完成。向导的后端、格式和证据状态来自[能力登记](references/capability-registry.md)，不会只根据旧页面文案宣称支持。风格缩略图是方向示意，实际支持范围见[风格家族](references/style-families.md)。
 
 ### 1. 安装给 Codex
 
@@ -59,7 +59,7 @@ python3 scripts/expression_lab.py --out /tmp/diagram-expression-lab
 
 ## 多元白板方法与 UI/UX
 
-结合 Boardmix 公开研究及登录后四种模板的实看，选图向导新增“洞察与共创”：亲和图、旅程、复盘行动板、用户故事地图。按目的解释选择，并显示实际支持范围与示例；切换保留输入和键盘焦点。新增教育、零售、营销三个原创模拟案例。故事地图现有专用自适应生成器、完整中英文成图和 SVG/draw.io/JSON；[打开演示](demos/storymap/index.html)，[查看输入与边界](references/story-map.md)。选图向导按类型限制实际可用格式并记住各分类的图型选择；实时协作和投票服务未实现。后续累计实看 12 种模板，并由 Grok CLI 调研 8 条 X 候选；[证据与后续重点](references/boardmix-deep-study.md) 明确区分画布观察和仅正文线索。见 [方法与来源](references/boardmix-study.md) 和 [实际示例](demos/workshop-study/index.html)。
+结合 Boardmix 公开研究及登录后四种模板的实看，选图向导新增“洞察与共创”：亲和图、旅程、服务蓝图、复盘行动板、用户故事地图。按目的解释选择，并显示实际支持范围与示例；切换保留输入和键盘焦点。旅程图和服务蓝图现在分别有专用中英后端，保留证据链、服务分界线和显式交接；[输入规则](references/experience-maps.md)。故事地图现有专用自适应生成器、完整中英文成图和 SVG/draw.io/JSON；[打开演示](demos/storymap/index.html)，[查看输入与边界](references/story-map.md)。选图向导按类型限制实际可用格式并记住各分类的图型选择；实时协作和投票服务未实现。后续累计实看 12 种模板，并由 Grok CLI 调研 8 条 X 候选；[证据与后续重点](references/boardmix-deep-study.md) 明确区分画布观察和仅正文线索。见 [方法与来源](references/boardmix-study.md) 和 [实际示例](demos/workshop-study/index.html)。
 
 ## 五类精修与验收
 
