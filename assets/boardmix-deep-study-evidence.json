@@ -1,0 +1,47 @@
+{
+  "date": "2026-09-20",
+  "new_templates": [
+    "architecture",
+    "service blueprint",
+    "user journey",
+    "roadmap",
+    "fashion planning",
+    "research methods roadmap",
+    "event storming",
+    "lean canvas"
+  ],
+  "cumulative_distinct_templates_visually_inspected": 12,
+  "scope": "Composition inspected in editor; not exhaustive text or native round-trip validation",
+  "interactions_checked": [
+    "template details and insertion into research copy",
+    "sticky selection and text-edit toolbar entry",
+    "reading mode entry and exit",
+    "image export settings only",
+    "research board rename"
+  ],
+  "export_performed": false,
+  "grok": {
+    "native_x_tools": [
+      "x_keyword_search",
+      "x_semantic_search",
+      "x_user_search",
+      "x_thread_fetch"
+    ],
+    "candidate_count": 8,
+    "images_viewed_by_grok": 0,
+    "supplementary_web_fetches": "cancelled",
+    "final_stop_reason": "end_turn",
+    "candidate_report": "references/boardmix-deep-study.md"
+  },
+  "independent_checks": [
+    "Sahn Lam X post and reply read in browser; media gated by login",
+    "BuilderIO official repository read; visual-plan and visual-recap descriptions confirmed"
+  ],
+  "remaining": [
+    "community/style sampling",
+    "long text and connector/container editing behavior",
+    "actual export and roundtrip",
+    "collaboration/voting/presentation",
+    "X media visual inspection"
+  ]
+}

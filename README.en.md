@@ -59,7 +59,7 @@ The first four commands generate architecture and workflow examples in English a
 
 ## Diverse whiteboard methods and UX
 
-Public research and authenticated inspection of four Boardmix templates inform a new Insights & workshops route: affinity, journey, retrospective and user story mapping. The chooser explains purpose, required content and actual support, links to examples, and preserves input and keyboard focus. Three original simulated studies cover education, retail and marketing. Story mapping is a method recipe requiring a newly checked layout; live collaboration and voting services are not implemented. See [methods and sources](references/boardmix-study.en.md) and [examples](demos/workshop-study/index.html).
+Public research and authenticated inspection of four Boardmix templates inform a new Insights & workshops route: affinity, journey, retrospective and user story mapping. The chooser explains purpose, required content and actual support, links to examples, and preserves input and keyboard focus. Three original simulated studies cover education, retail and marketing. Story mapping is a method recipe requiring a newly checked layout; live collaboration and voting services are not implemented. A follow-up brings the visual sample to 12 templates and adds eight Grok CLI X leads; [evidence and priorities](references/boardmix-deep-study.en.md) distinguish canvas inspection from text-only leads. See [methods and sources](references/boardmix-study.en.md) and [examples](demos/workshop-study/index.html).
 
 ## Five refined forms and their checks
 

@@ -2,6 +2,8 @@
 
 Use for research synthesis, workshops, journey maps, retrospectives, user story maps, moodboards and purpose-based diagram selection. Public research dated 2026-09-20; [sources and comparison](boardmix-study.md). The initial public phase stopped at a login overlay. After the user signed in, four template boards were opened in the editor and visually inspected. Voting, AI generation, export, collaboration and version recovery were not tested. No commercial templates or proprietary algorithms were copied.
 
+Follow-up: [eight additional templates, editor interactions and Grok X research](boardmix-deep-study.en.md). Cumulative visual sample: 12 templates; remaining gaps are explicit.
+
 ## Authenticated template inspection
 
 On 2026-09-20, four separate template boards were opened using the application UI. Guided brainstorming and sailboat retrospective were labeled member-free at their entry points. Moodboard and user story map were also inspected. Private board URLs, account details and template assets are not distributed.
