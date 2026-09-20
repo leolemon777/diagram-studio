@@ -17,7 +17,8 @@
     "sticky selection and text-edit toolbar entry",
     "reading mode entry and exit",
     "image export settings only",
-    "research board rename"
+    "research board rename",
+    "v43 synthetic long Chinese sticky grows vertically at 100%; undo restores earlier text and height"
   ],
   "export_performed": false,
   "grok": {
@@ -35,13 +36,15 @@
   },
   "independent_checks": [
     "Sahn Lam X post and reply read in browser; media gated by login",
-    "BuilderIO official repository read; visual-plan and visual-recap descriptions confirmed"
+    "BuilderIO official repository read; visual-plan and visual-recap descriptions confirmed",
+    "v43 Honghao Peng post read; X media gated; linked public Boardmix work opened read-only: overview, error detail, named-pin overall process; 7 named pins visible"
   ],
   "remaining": [
     "community/style sampling",
-    "long text and connector/container editing behavior",
+    "additional text styles, connector/container editing behavior",
     "actual export and roundtrip",
     "collaboration/voting/presentation",
     "X media visual inspection"
-  ]
+  ],
+  "public_user_works_visually_inspected": 1
 }

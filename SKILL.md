@@ -15,6 +15,8 @@ English users can read the [English usage guide](README.en.md); the same input m
 
 万兴图示是研究参考，交付使用独立编写的规则和代码。观察范围见 [研究依据](references/research.md)，不要声称已复制全部模板、符号、私有提示词或算法。
 
+用户故事地图读取 [故事地图输入与生成](references/story-map.md)（[English](references/story-map.en.md)），使用 `render.py` 的 `type: "storymap"`。按活动 × 交付切片测量排版，保持故事唯一归属和来源；切片完整性由团队确认，不自动计算日期或依赖。
+
 ## 内容自适应与视觉修正
 
 高质量的普通流程、分层架构、执行甘特、单系列对比和趋势，先读 [五类精修规则](references/refinement.md)，优先使用 `layout.profile: "refined"`。按已有真实关系设置主线，保留正负值、实际日期间隔与缺测；用同内容修改样例复查排版。固定坐标、其他甘特版本与专业后端按其原有规则处理，不强套此模式。

@@ -1,0 +1,1439 @@
+{
+  "width": 1500,
+  "height": 1224,
+  "theme": "light",
+  "palette": {
+    "bg": "#F1EFEB",
+    "panel": "#FEFDF9",
+    "ink": "#30302D",
+    "muted": "#6D6A63",
+    "line": "#D8D3C8",
+    "accent": "#AC6046",
+    "teal": "#67685E",
+    "amber": "#8C7964",
+    "red": "#554C46",
+    "tint": "#F0E4DA",
+    "tint2": "#ECECE5"
+  },
+  "nodes": [
+    {
+      "id": "_v1",
+      "x": 64,
+      "y": 210,
+      "w": 1372,
+      "h": 30,
+      "label": "用户 / 首次报名的学习者  ·  理解课程、完成报名并开始第一节课",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 19,
+      "align": "left",
+      "check": false,
+      "_lines": [
+        [
+          "用户 / 首次报名的学习者  ·  理解课程、完成报名并开始第一节课",
+          19,
+          false,
+          "ink"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "content_text": true
+    },
+    {
+      "id": "_v2",
+      "x": 64,
+      "y": 264,
+      "w": 1372,
+      "h": 25,
+      "label": "从左向右：用户活动  /  从上向下：交付切片  /  空位表示未安排，不是零",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 15,
+      "align": "left",
+      "check": false,
+      "_lines": [
+        [
+          "从左向右：用户活动  /  从上向下：交付切片  /  空位表示未安排，不是零",
+          15,
+          false,
+          "muted"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "content_text": true
+    },
+    {
+      "id": "_v3",
+      "x": 64,
+      "y": 333,
+      "w": 186,
+      "h": 27,
+      "label": "交付目标",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "left",
+      "check": false,
+      "_lines": [
+        [
+          "交付目标",
+          17,
+          false,
+          "muted"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "content_text": true
+    },
+    {
+      "id": "_v4",
+      "x": 294.0,
+      "y": 313,
+      "w": 344.6666666666667,
+      "h": 23,
+      "label": "01 / discover",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 14,
+      "align": "left",
+      "check": false,
+      "_lines": [
+        [
+          "01 / discover",
+          14,
+          false,
+          "accent"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "content_text": true
+    },
+    {
+      "id": "_v5",
+      "x": 294.0,
+      "y": 344,
+      "w": 344.6666666666667,
+      "h": 36,
+      "label": "判断是否适合我",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 23,
+      "align": "left",
+      "check": false,
+      "_lines": [
+        [
+          "判断是否适合我",
+          23,
+          true,
+          "ink"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "content_text": true
+    },
+    {
+      "id": "_v6",
+      "x": 678.6666666666667,
+      "y": 313,
+      "w": 344.6666666666667,
+      "h": 23,
+      "label": "02 / enroll",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 14,
+      "align": "left",
+      "check": false,
+      "_lines": [
+        [
+          "02 / enroll",
+          14,
+          false,
+          "accent"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "content_text": true
+    },
+    {
+      "id": "_v7",
+      "x": 678.6666666666667,
+      "y": 344,
+      "w": 344.6666666666667,
+      "h": 36,
+      "label": "完成报名",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 23,
+      "align": "left",
+      "check": false,
+      "_lines": [
+        [
+          "完成报名",
+          23,
+          true,
+          "ink"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "content_text": true
+    },
+    {
+      "id": "_v8",
+      "x": 1063.3333333333335,
+      "y": 313,
+      "w": 344.6666666666667,
+      "h": 23,
+      "label": "03 / learn",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 14,
+      "align": "left",
+      "check": false,
+      "_lines": [
+        [
+          "03 / learn",
+          14,
+          false,
+          "accent"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "content_text": true
+    },
+    {
+      "id": "_v9",
+      "x": 1063.3333333333335,
+      "y": 344,
+      "w": 344.6666666666667,
+      "h": 36,
+      "label": "开始学习",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 23,
+      "align": "left",
+      "check": false,
+      "_lines": [
+        [
+          "开始学习",
+          23,
+          true,
+          "ink"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "content_text": true
+    },
+    {
+      "id": "_v10",
+      "x": 64,
+      "y": 426,
+      "w": 3,
+      "h": 191,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "accent",
+      "stroke": "none",
+      "radius": 0,
+      "check": false
+    },
+    {
+      "id": "_v11",
+      "x": 82,
+      "y": 424,
+      "w": 176,
+      "h": 23,
+      "label": "R1",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 14,
+      "align": "left",
+      "check": false,
+      "_lines": [
+        [
+          "R1",
+          14,
+          false,
+          "accent"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "content_text": true
+    },
+    {
+      "id": "_v12",
+      "x": 82,
+      "y": 457,
+      "w": 176,
+      "h": 36,
+      "label": "先走通一次",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 23,
+      "align": "left",
+      "check": false,
+      "_lines": [
+        [
+          "先走通一次",
+          23,
+          true,
+          "ink"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "content_text": true
+    },
+    {
+      "id": "_v13",
+      "x": 82,
+      "y": 505,
+      "w": 176,
+      "h": 73,
+      "label": "学习者可以独立选课、报名并进入第一课。",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "left",
+      "check": false,
+      "_lines": [
+        [
+          "学习者可以独立选",
+          17,
+          false,
+          "muted"
+        ],
+        [
+          "课、报名并进",
+          17,
+          false,
+          "muted"
+        ],
+        [
+          "入第一课。",
+          17,
+          false,
+          "muted"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "content_text": true
+    },
+    {
+      "id": "story-S01",
+      "x": 282.0,
+      "y": 424,
+      "w": 368.6666666666667,
+      "h": 187,
+      "label": "",
+      "detail": "",
+      "kind": "panel",
+      "tone": "accent",
+      "fill": "panel",
+      "stroke": "line",
+      "radius": 3,
+      "check": false
+    },
+    {
+      "id": "storytext-S01-0",
+      "x": 298.0,
+      "y": 440,
+      "w": 336.6666666666667,
+      "h": 23,
+      "label": "S01",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 14,
+      "align": "left",
+      "check": false,
+      "_lines": [
+        [
+          "S01",
+          14,
+          false,
+          "accent"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "content_text": true
+    },
+    {
+      "id": "storytext-S01-1",
+      "x": 298.0,
+      "y": 470,
+      "w": 336.6666666666667,
+      "h": 31,
+      "label": "看清基础要求",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 20,
+      "align": "left",
+      "check": false,
+      "_lines": [
+        [
+          "看清基础要求",
+          20,
+          true,
+          "ink"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "content_text": true
+    },
+    {
+      "id": "storytext-S01-2",
+      "x": 298.0,
+      "y": 508,
+      "w": 336.6666666666667,
+      "h": 50,
+      "label": "查看课程适合的人群、需要的基础和一次练习样例。",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 17,
+      "align": "left",
+      "check": false,
+      "_lines": [
+        [
+          "查看课程适合的人群、需要的基础",
+          17,
+          false,
+          "ink"
+        ],
+        [
+          "和一次练习样例。",
+          17,
+          false,
+          "ink"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "content_text": true
+    },
+    {
+      "id": "storytext-S01-3",
+      "x": 298.0,
+      "y": 565,
+      "w": 336.6666666666667,
+      "h": 23,
+      "label": "来源：模拟访谈 E01 / E02",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false,
+      "_lines": [
+        [
+          "来源：模拟访谈 E01 / E02",
+          14,
+          false,
+          "muted"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "content_text": true
+    },
+    {
+      "id": "story-S02",
+      "x": 666.6666666666667,
+      "y": 424,
+      "w": 368.6666666666667,
+      "h": 187,
+      "label": "",
+      "detail": "",
+      "kind": "panel",
+      "tone": "accent",
+      "fill": "panel",
+      "stroke": "line",
+      "radius": 3,
+      "check": false
+    },
+    {
+      "id": "storytext-S02-0",
+      "x": 682.6666666666667,
+      "y": 440,
+      "w": 336.6666666666667,
+      "h": 23,
+      "label": "S02",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 14,
+      "align": "left",
+      "check": false,
+      "_lines": [
+        [
+          "S02",
+          14,
+          false,
+          "accent"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "content_text": true
+    },
+    {
+      "id": "storytext-S02-1",
+      "x": 682.6666666666667,
+      "y": 470,
+      "w": 336.6666666666667,
+      "h": 31,
+      "label": "确认报名结果",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 20,
+      "align": "left",
+      "check": false,
+      "_lines": [
+        [
+          "确认报名结果",
+          20,
+          true,
+          "ink"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "content_text": true
+    },
+    {
+      "id": "storytext-S02-2",
+      "x": 682.6666666666667,
+      "y": 508,
+      "w": 336.6666666666667,
+      "h": 50,
+      "label": "成功后明确展示课程名称、开课时区和下一步入口。",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 17,
+      "align": "left",
+      "check": false,
+      "_lines": [
+        [
+          "成功后明确展示课程名称、开课时",
+          17,
+          false,
+          "ink"
+        ],
+        [
+          "区和下一步入口。",
+          17,
+          false,
+          "ink"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "content_text": true
+    },
+    {
+      "id": "storytext-S02-3",
+      "x": 682.6666666666667,
+      "y": 565,
+      "w": 336.6666666666667,
+      "h": 23,
+      "label": "来源：模拟访谈 E03",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false,
+      "_lines": [
+        [
+          "来源：模拟访谈 E03",
+          14,
+          false,
+          "muted"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "content_text": true
+    },
+    {
+      "id": "story-S03",
+      "x": 1051.3333333333335,
+      "y": 424,
+      "w": 368.6666666666667,
+      "h": 187,
+      "label": "",
+      "detail": "",
+      "kind": "panel",
+      "tone": "accent",
+      "fill": "panel",
+      "stroke": "line",
+      "radius": 3,
+      "check": false
+    },
+    {
+      "id": "storytext-S03-0",
+      "x": 1067.3333333333335,
+      "y": 440,
+      "w": 336.6666666666667,
+      "h": 23,
+      "label": "S03",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 14,
+      "align": "left",
+      "check": false,
+      "_lines": [
+        [
+          "S03",
+          14,
+          false,
+          "accent"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "content_text": true
+    },
+    {
+      "id": "storytext-S03-1",
+      "x": 1067.3333333333335,
+      "y": 470,
+      "w": 336.6666666666667,
+      "h": 31,
+      "label": "进入第一课",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 20,
+      "align": "left",
+      "check": false,
+      "_lines": [
+        [
+          "进入第一课",
+          20,
+          true,
+          "ink"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "content_text": true
+    },
+    {
+      "id": "storytext-S03-2",
+      "x": 1067.3333333333335,
+      "y": 508,
+      "w": 336.6666666666667,
+      "h": 50,
+      "label": "从确认页或报名邮件进入课程；按钮提供可读名称。",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 17,
+      "align": "left",
+      "check": false,
+      "_lines": [
+        [
+          "从确认页或报名邮件进入课程；按",
+          17,
+          false,
+          "ink"
+        ],
+        [
+          "钮提供可读名称。",
+          17,
+          false,
+          "ink"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "content_text": true
+    },
+    {
+      "id": "storytext-S03-3",
+      "x": 1067.3333333333335,
+      "y": 565,
+      "w": 336.6666666666667,
+      "h": 23,
+      "label": "来源：模拟访谈 E04 / E05",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false,
+      "_lines": [
+        [
+          "来源：模拟访谈 E04 / E05",
+          14,
+          false,
+          "muted"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "content_text": true
+    },
+    {
+      "id": "_v29",
+      "x": 64,
+      "y": 669,
+      "w": 3,
+      "h": 392,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "line",
+      "stroke": "none",
+      "radius": 0,
+      "check": false
+    },
+    {
+      "id": "_v30",
+      "x": 82,
+      "y": 667,
+      "w": 176,
+      "h": 23,
+      "label": "R2",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 14,
+      "align": "left",
+      "check": false,
+      "_lines": [
+        [
+          "R2",
+          14,
+          false,
+          "accent"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "content_text": true
+    },
+    {
+      "id": "_v31",
+      "x": 82,
+      "y": 700,
+      "w": 176,
+      "h": 36,
+      "label": "减少不确定",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 23,
+      "align": "left",
+      "check": false,
+      "_lines": [
+        [
+          "减少不确定",
+          23,
+          true,
+          "ink"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "content_text": true
+    },
+    {
+      "id": "_v32",
+      "x": 82,
+      "y": 748,
+      "w": 176,
+      "h": 73,
+      "label": "补充信任信息与异常恢复，使首次使用更安心。",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "left",
+      "check": false,
+      "_lines": [
+        [
+          "补充信任信息与异常",
+          17,
+          false,
+          "muted"
+        ],
+        [
+          "恢复，使首次使",
+          17,
+          false,
+          "muted"
+        ],
+        [
+          "用更安心。",
+          17,
+          false,
+          "muted"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "content_text": true
+    },
+    {
+      "id": "story-S04",
+      "x": 282.0,
+      "y": 667,
+      "w": 368.6666666666667,
+      "h": 187,
+      "label": "",
+      "detail": "",
+      "kind": "panel",
+      "tone": "accent",
+      "fill": "panel",
+      "stroke": "line",
+      "radius": 3,
+      "check": false
+    },
+    {
+      "id": "storytext-S04-0",
+      "x": 298.0,
+      "y": 683,
+      "w": 336.6666666666667,
+      "h": 23,
+      "label": "S04",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 14,
+      "align": "left",
+      "check": false,
+      "_lines": [
+        [
+          "S04",
+          14,
+          false,
+          "accent"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "content_text": true
+    },
+    {
+      "id": "storytext-S04-1",
+      "x": 298.0,
+      "y": 713,
+      "w": 336.6666666666667,
+      "h": 31,
+      "label": "预览学习方式",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 20,
+      "align": "left",
+      "check": false,
+      "_lines": [
+        [
+          "预览学习方式",
+          20,
+          true,
+          "ink"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "content_text": true
+    },
+    {
+      "id": "storytext-S04-2",
+      "x": 298.0,
+      "y": 751,
+      "w": 336.6666666666667,
+      "h": 50,
+      "label": "展示一段有字幕的课程预览，说明练习与答疑安排。",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 17,
+      "align": "left",
+      "check": false,
+      "_lines": [
+        [
+          "展示一段有字幕的课程预览，说明",
+          17,
+          false,
+          "ink"
+        ],
+        [
+          "练习与答疑安排。",
+          17,
+          false,
+          "ink"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "content_text": true
+    },
+    {
+      "id": "storytext-S04-3",
+      "x": 298.0,
+      "y": 808,
+      "w": 336.6666666666667,
+      "h": 23,
+      "label": "来源：模拟反馈 E06",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false,
+      "_lines": [
+        [
+          "来源：模拟反馈 E06",
+          14,
+          false,
+          "muted"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "content_text": true
+    },
+    {
+      "id": "story-S05",
+      "x": 666.6666666666667,
+      "y": 667,
+      "w": 368.6666666666667,
+      "h": 187,
+      "label": "",
+      "detail": "",
+      "kind": "panel",
+      "tone": "accent",
+      "fill": "panel",
+      "stroke": "line",
+      "radius": 3,
+      "check": false
+    },
+    {
+      "id": "storytext-S05-0",
+      "x": 682.6666666666667,
+      "y": 683,
+      "w": 336.6666666666667,
+      "h": 23,
+      "label": "S05",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 14,
+      "align": "left",
+      "check": false,
+      "_lines": [
+        [
+          "S05",
+          14,
+          false,
+          "accent"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "content_text": true
+    },
+    {
+      "id": "storytext-S05-1",
+      "x": 682.6666666666667,
+      "y": 713,
+      "w": 336.6666666666667,
+      "h": 31,
+      "label": "恢复通知失败",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 20,
+      "align": "left",
+      "check": false,
+      "_lines": [
+        [
+          "恢复通知失败",
+          20,
+          true,
+          "ink"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "content_text": true
+    },
+    {
+      "id": "storytext-S05-2",
+      "x": 682.6666666666667,
+      "y": 751,
+      "w": 336.6666666666667,
+      "h": 50,
+      "label": "邮件未收到时可重新发送，并清楚说明报名状态，避免重复支付。",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 17,
+      "align": "left",
+      "check": false,
+      "_lines": [
+        [
+          "邮件未收到时可重新发送，并清楚说明报名",
+          17,
+          false,
+          "ink"
+        ],
+        [
+          "状态，避免重复支付。",
+          17,
+          false,
+          "ink"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "content_text": true
+    },
+    {
+      "id": "storytext-S05-3",
+      "x": 682.6666666666667,
+      "y": 808,
+      "w": 336.6666666666667,
+      "h": 23,
+      "label": "来源：原创改进假说 H01",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false,
+      "_lines": [
+        [
+          "来源：原创改进假说 H01",
+          14,
+          false,
+          "muted"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "content_text": true
+    },
+    {
+      "id": "story-S06",
+      "x": 666.6666666666667,
+      "y": 868,
+      "w": 368.6666666666667,
+      "h": 187,
+      "label": "",
+      "detail": "",
+      "kind": "panel",
+      "tone": "accent",
+      "fill": "panel",
+      "stroke": "line",
+      "radius": 3,
+      "check": false
+    },
+    {
+      "id": "storytext-S06-0",
+      "x": 682.6666666666667,
+      "y": 884,
+      "w": 336.6666666666667,
+      "h": 23,
+      "label": "S06",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 14,
+      "align": "left",
+      "check": false,
+      "_lines": [
+        [
+          "S06",
+          14,
+          false,
+          "accent"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "content_text": true
+    },
+    {
+      "id": "storytext-S06-1",
+      "x": 682.6666666666667,
+      "y": 914,
+      "w": 336.6666666666667,
+      "h": 31,
+      "label": "查找退改规则",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 20,
+      "align": "left",
+      "check": false,
+      "_lines": [
+        [
+          "查找退改规则",
+          20,
+          true,
+          "ink"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "content_text": true
+    },
+    {
+      "id": "storytext-S06-2",
+      "x": 682.6666666666667,
+      "y": 952,
+      "w": 336.6666666666667,
+      "h": 50,
+      "label": "在确认付款前提供取消规则与支持联系方式。",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 17,
+      "align": "left",
+      "check": false,
+      "_lines": [
+        [
+          "在确认付款前提供取消规则",
+          17,
+          false,
+          "ink"
+        ],
+        [
+          "与支持联系方式。",
+          17,
+          false,
+          "ink"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "content_text": true
+    },
+    {
+      "id": "storytext-S06-3",
+      "x": 682.6666666666667,
+      "y": 1009,
+      "w": 336.6666666666667,
+      "h": 23,
+      "label": "来源：原创改进假说 H02",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false,
+      "_lines": [
+        [
+          "来源：原创改进假说 H02",
+          14,
+          false,
+          "muted"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "content_text": true
+    },
+    {
+      "id": "_v48",
+      "x": 1067.3333333333335,
+      "y": 685,
+      "w": 336.6666666666667,
+      "h": 26,
+      "label": "— 未安排",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 16,
+      "align": "left",
+      "check": false,
+      "_lines": [
+        [
+          "— 未安排",
+          16,
+          false,
+          "muted"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "content_text": true
+    },
+    {
+      "id": "_v49",
+      "x": 64,
+      "y": 1103,
+      "w": 1372,
+      "h": 25,
+      "label": "每个故事只安排一次；切片目标需由团队确认。此图不推断日期、工期或优先级分数。",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 15,
+      "align": "left",
+      "check": false,
+      "_lines": [
+        [
+          "每个故事只安排一次；切片目标需由团队确认。此图不推断日期、工期或优先级分数。",
+          15,
+          false,
+          "muted"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "content_text": true
+    },
+    {
+      "id": "_v50",
+      "x": 64,
+      "y": 34,
+      "w": 1372,
+      "h": 23,
+      "label": "EXPERIENCE / RELEASE SLICES",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 14,
+      "align": "left",
+      "check": false,
+      "_lines": [
+        [
+          "EXPERIENCE / RELEASE SLICES",
+          14,
+          false,
+          "accent"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "content_text": false
+    },
+    {
+      "id": "_v51",
+      "x": 64,
+      "y": 78,
+      "w": 1372,
+      "h": 53,
+      "label": "从报名到首次学习，每次交付都能走通",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 36,
+      "align": "left",
+      "check": false,
+      "_lines": [
+        [
+          "从报名到首次学习，每次交付都能走通",
+          36,
+          true,
+          "ink"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "content_text": false
+    },
+    {
+      "id": "_v52",
+      "x": 64,
+      "y": 139,
+      "w": 1372,
+      "h": 29,
+      "label": "在线课程 · 用户故事地图 · 原创模拟方案",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 18,
+      "align": "left",
+      "check": false,
+      "_lines": [
+        [
+          "在线课程 · 用户故事地图 · 原创模拟方案",
+          18,
+          false,
+          "muted"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "content_text": false
+    },
+    {
+      "id": "_v53",
+      "x": 64,
+      "y": 1179,
+      "w": 1372,
+      "h": 25,
+      "label": "模拟方案 · 顺序来自示例输入，不代表真实产品承诺；交付切片不是时间比例。",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 15,
+      "align": "left",
+      "check": false,
+      "_lines": [
+        [
+          "模拟方案 · 顺序来自示例输入，不代表真实产品承诺；交付切片不是时间比例。",
+          15,
+          false,
+          "muted"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "content_text": false
+    }
+  ],
+  "edges": [
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          64,
+          400
+        ],
+        [
+          1436,
+          400
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "arrow": false,
+      "tone": "line",
+      "width": 1
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          64,
+          643
+        ],
+        [
+          1436,
+          643
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "arrow": false,
+      "tone": "line",
+      "width": 1
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          64,
+          1167
+        ],
+        [
+          1436,
+          1167
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "arrow": false,
+      "tone": "line",
+      "width": 1
+    }
+  ],
+  "meta": {
+    "refined_layout": {
+      "version": 43,
+      "profile": "story-map",
+      "manual_visual_review": "not-run",
+      "font_measurement": "font-glyph-metrics"
+    },
+    "story_map": {
+      "activities": [
+        "discover",
+        "enroll",
+        "learn"
+      ],
+      "releases": [
+        {
+          "release": "R1",
+          "y": 400,
+          "height": 243
+        },
+        {
+          "release": "R2",
+          "y": 643,
+          "height": 444
+        }
+      ],
+      "assignments": [
+        {
+          "story": "S01",
+          "activity": "discover",
+          "release": "R1",
+          "box": [
+            282.0,
+            424,
+            368.6666666666667,
+            187
+          ]
+        },
+        {
+          "story": "S02",
+          "activity": "enroll",
+          "release": "R1",
+          "box": [
+            666.6666666666667,
+            424,
+            368.6666666666667,
+            187
+          ]
+        },
+        {
+          "story": "S03",
+          "activity": "learn",
+          "release": "R1",
+          "box": [
+            1051.3333333333335,
+            424,
+            368.6666666666667,
+            187
+          ]
+        },
+        {
+          "story": "S04",
+          "activity": "discover",
+          "release": "R2",
+          "box": [
+            282.0,
+            667,
+            368.6666666666667,
+            187
+          ]
+        },
+        {
+          "story": "S05",
+          "activity": "enroll",
+          "release": "R2",
+          "box": [
+            666.6666666666667,
+            667,
+            368.6666666666667,
+            187
+          ]
+        },
+        {
+          "story": "S06",
+          "activity": "enroll",
+          "release": "R2",
+          "box": [
+            666.6666666666667,
+            868,
+            368.6666666666667,
+            187
+          ]
+        }
+      ],
+      "calendar_scale": false
+    }
+  },
+  "assumptions": []
+}

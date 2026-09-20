@@ -1,0 +1,237 @@
+<svg data-quality="refined" xmlns="http://www.w3.org/2000/svg" width="1500" height="1272" viewBox="0 0 1500 1272" role="img" aria-labelledby="diagram-title diagram-desc">
+<title id="diagram-title">A complete first learning experience, one release at a time</title>
+<desc id="diagram-desc">Online education · User story map · Original simulated proposal</desc>
+<rect width="100%" height="100%" fill="#F1EFEB"/>
+<defs>
+<marker id="arrow-accent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#AC6046"/></marker>
+<marker id="arrow-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#67685E"/></marker>
+<marker id="arrow-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#8C7964"/></marker>
+<marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#554C46"/></marker>
+<marker id="arrow-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#6D6A63"/></marker>
+<marker id="arrow-line" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#D8D3C8"/></marker>
+<marker id="arrow-ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#30302D"/></marker>
+</defs>
+<g font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, Arial, sans-serif">
+<g id="story-S01" data-kind="panel" data-content-text="false" data-box="282.0,424,368.6666666666667,187">
+<rect x="282.0" y="424" width="368.6666666666667" height="187" rx="3" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="story-S02" data-kind="panel" data-content-text="false" data-box="666.6666666666667,424,368.6666666666667,187">
+<rect x="666.6666666666667" y="424" width="368.6666666666667" height="187" rx="3" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="story-S03" data-kind="panel" data-content-text="false" data-box="1051.3333333333335,424,368.6666666666667,187">
+<rect x="1051.3333333333335" y="424" width="368.6666666666667" height="187" rx="3" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="story-S04" data-kind="panel" data-content-text="false" data-box="282.0,697,368.6666666666667,187">
+<rect x="282.0" y="697" width="368.6666666666667" height="187" rx="3" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="story-S05" data-kind="panel" data-content-text="false" data-box="666.6666666666667,697,368.6666666666667,210">
+<rect x="666.6666666666667" y="697" width="368.6666666666667" height="210" rx="3" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="story-S06" data-kind="panel" data-content-text="false" data-box="666.6666666666667,921,368.6666666666667,187">
+<rect x="666.6666666666667" y="921" width="368.6666666666667" height="187" rx="3" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<path d="M64,400 L1436,400" fill="none" stroke="#D8D3C8" stroke-width="1" stroke-linejoin="round"/>
+<path d="M64,673 L1436,673" fill="none" stroke="#D8D3C8" stroke-width="1" stroke-linejoin="round"/>
+<path d="M64,1215 L1436,1215" fill="none" stroke="#D8D3C8" stroke-width="1" stroke-linejoin="round"/>
+<g id="_v1" data-kind="text" data-content-text="true" data-box="64,210,1372,30" font-family="Heiti TC">
+
+<text x="64" y="231.175" text-anchor="start" font-size="19" font-weight="400" fill="#30302D">User / A first-time course learner  ·  Understand the course, enroll and start the first lesson</text>
+</g>
+<g id="_v2" data-kind="text" data-content-text="true" data-box="64,264,1372,25" font-family="Heiti TC">
+
+<text x="64" y="281.375" text-anchor="start" font-size="15" font-weight="400" fill="#6D6A63">Left to right: user activities  /  Top to bottom: release slices  /  Empty means not scheduled, not zero</text>
+</g>
+<g id="_v3" data-kind="text" data-content-text="true" data-box="64,333,186,27" font-family="Heiti TC">
+
+<text x="64" y="352.025" text-anchor="start" font-size="17" font-weight="400" fill="#6D6A63">Release outcome</text>
+</g>
+<g id="_v4" data-kind="text" data-content-text="true" data-box="294.0,313,344.6666666666667,23" font-family="Heiti TC">
+
+<text x="294.0" y="329.05" text-anchor="start" font-size="14" font-weight="400" fill="#AC6046">01 / discover</text>
+</g>
+<g id="_v5" data-kind="text" data-content-text="true" data-box="294.0,344,344.6666666666667,36" font-family="Heiti TC">
+
+<text x="294.0" y="369.475" text-anchor="start" font-size="23" font-weight="600" fill="#30302D">Decide if it fits</text>
+</g>
+<g id="_v6" data-kind="text" data-content-text="true" data-box="678.6666666666667,313,344.6666666666667,23" font-family="Heiti TC">
+
+<text x="678.6666666666667" y="329.05" text-anchor="start" font-size="14" font-weight="400" fill="#AC6046">02 / enroll</text>
+</g>
+<g id="_v7" data-kind="text" data-content-text="true" data-box="678.6666666666667,344,344.6666666666667,36" font-family="Heiti TC">
+
+<text x="678.6666666666667" y="369.475" text-anchor="start" font-size="23" font-weight="600" fill="#30302D">Enroll with confidence</text>
+</g>
+<g id="_v8" data-kind="text" data-content-text="true" data-box="1063.3333333333335,313,344.6666666666667,23" font-family="Heiti TC">
+
+<text x="1063.3333333333335" y="329.05" text-anchor="start" font-size="14" font-weight="400" fill="#AC6046">03 / learn</text>
+</g>
+<g id="_v9" data-kind="text" data-content-text="true" data-box="1063.3333333333335,344,344.6666666666667,36" font-family="Heiti TC">
+
+<text x="1063.3333333333335" y="369.475" text-anchor="start" font-size="23" font-weight="600" fill="#30302D">Start learning</text>
+</g>
+<g id="_v10" data-kind="rect" data-content-text="false" data-box="64,426,3,221">
+<rect x="64" y="426" width="3" height="221" rx="0" fill="#AC6046" stroke="none" stroke-width="1.5"/>
+</g>
+<g id="_v11" data-kind="text" data-content-text="true" data-box="82,424,176,23" font-family="Heiti TC">
+
+<text x="82" y="440.05" text-anchor="start" font-size="14" font-weight="400" fill="#AC6046">R1</text>
+</g>
+<g id="_v12" data-kind="text" data-content-text="true" data-box="82,457,176,67" font-family="Heiti TC">
+
+<text x="82" y="482.45" text-anchor="start" font-size="23" font-weight="600" fill="#30302D">Make it work</text>
+<text x="82" y="513.5" text-anchor="start" font-size="23" font-weight="600" fill="#30302D">end to end</text>
+</g>
+<g id="_v13" data-kind="text" data-content-text="true" data-box="82,536,176,96" font-family="Heiti TC">
+
+<text x="82" y="555.1" text-anchor="start" font-size="17" font-weight="400" fill="#6D6A63">Select a course,</text>
+<text x="82" y="578.0500000000001" text-anchor="start" font-size="17" font-weight="400" fill="#6D6A63">enroll and reach the</text>
+<text x="82" y="601.0000000000001" text-anchor="start" font-size="17" font-weight="400" fill="#6D6A63">first lesson</text>
+<text x="82" y="623.9500000000002" text-anchor="start" font-size="17" font-weight="400" fill="#6D6A63">independently.</text>
+</g>
+<g id="storytext-S01-0" data-kind="text" data-content-text="true" data-box="298.0,440,336.6666666666667,23" font-family="Heiti TC">
+
+<text x="298.0" y="456.05" text-anchor="start" font-size="14" font-weight="400" fill="#AC6046">S01</text>
+</g>
+<g id="storytext-S01-1" data-kind="text" data-content-text="true" data-box="298.0,470,336.6666666666667,31" font-family="Heiti TC">
+
+<text x="298.0" y="492.0" text-anchor="start" font-size="20" font-weight="600" fill="#30302D">Understand prerequisites</text>
+</g>
+<g id="storytext-S01-2" data-kind="text" data-content-text="true" data-box="298.0,508,336.6666666666667,50" font-family="Heiti TC">
+
+<text x="298.0" y="527.05" text-anchor="start" font-size="17" font-weight="400" fill="#30302D">See who the course is for, prerequisite</text>
+<text x="298.0" y="550.0" text-anchor="start" font-size="17" font-weight="400" fill="#30302D">knowledge and a sample exercise.</text>
+</g>
+<g id="storytext-S01-3" data-kind="text" data-content-text="true" data-box="298.0,565,336.6666666666667,23" font-family="Heiti TC">
+
+<text x="298.0" y="581.05" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">Source: Simulated interviews E01 / E02</text>
+</g>
+<g id="storytext-S02-0" data-kind="text" data-content-text="true" data-box="682.6666666666667,440,336.6666666666667,23" font-family="Heiti TC">
+
+<text x="682.6666666666667" y="456.05" text-anchor="start" font-size="14" font-weight="400" fill="#AC6046">S02</text>
+</g>
+<g id="storytext-S02-1" data-kind="text" data-content-text="true" data-box="682.6666666666667,470,336.6666666666667,31" font-family="Heiti TC">
+
+<text x="682.6666666666667" y="492.0" text-anchor="start" font-size="20" font-weight="600" fill="#30302D">Confirm enrollment</text>
+</g>
+<g id="storytext-S02-2" data-kind="text" data-content-text="true" data-box="682.6666666666667,508,336.6666666666667,50" font-family="Heiti TC">
+
+<text x="682.6666666666667" y="527.05" text-anchor="start" font-size="17" font-weight="400" fill="#30302D">Show the course, start-time zone and a</text>
+<text x="682.6666666666667" y="550.0" text-anchor="start" font-size="17" font-weight="400" fill="#30302D">clear next step after success.</text>
+</g>
+<g id="storytext-S02-3" data-kind="text" data-content-text="true" data-box="682.6666666666667,565,336.6666666666667,23" font-family="Heiti TC">
+
+<text x="682.6666666666667" y="581.05" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">Source: Simulated interview E03</text>
+</g>
+<g id="storytext-S03-0" data-kind="text" data-content-text="true" data-box="1067.3333333333335,440,336.6666666666667,23" font-family="Heiti TC">
+
+<text x="1067.3333333333335" y="456.05" text-anchor="start" font-size="14" font-weight="400" fill="#AC6046">S03</text>
+</g>
+<g id="storytext-S03-1" data-kind="text" data-content-text="true" data-box="1067.3333333333335,470,336.6666666666667,31" font-family="Heiti TC">
+
+<text x="1067.3333333333335" y="492.0" text-anchor="start" font-size="20" font-weight="600" fill="#30302D">Reach the first lesson</text>
+</g>
+<g id="storytext-S03-2" data-kind="text" data-content-text="true" data-box="1067.3333333333335,508,336.6666666666667,50" font-family="Heiti TC">
+
+<text x="1067.3333333333335" y="527.05" text-anchor="start" font-size="17" font-weight="400" fill="#30302D">Enter from confirmation or email; give</text>
+<text x="1067.3333333333335" y="550.0" text-anchor="start" font-size="17" font-weight="400" fill="#30302D">the entry button an accessible name.</text>
+</g>
+<g id="storytext-S03-3" data-kind="text" data-content-text="true" data-box="1067.3333333333335,565,336.6666666666667,23" font-family="Heiti TC">
+
+<text x="1067.3333333333335" y="581.05" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">Source: Simulated interviews E04 / E05</text>
+</g>
+<g id="_v29" data-kind="rect" data-content-text="false" data-box="64,699,3,415">
+<rect x="64" y="699" width="3" height="415" rx="0" fill="#D8D3C8" stroke="none" stroke-width="1.5"/>
+</g>
+<g id="_v30" data-kind="text" data-content-text="true" data-box="82,697,176,23" font-family="Heiti TC">
+
+<text x="82" y="713.05" text-anchor="start" font-size="14" font-weight="400" fill="#AC6046">R2</text>
+</g>
+<g id="_v31" data-kind="text" data-content-text="true" data-box="82,730,176,67" font-family="Heiti TC">
+
+<text x="82" y="755.45" text-anchor="start" font-size="23" font-weight="600" fill="#30302D">Reduce</text>
+<text x="82" y="786.5" text-anchor="start" font-size="23" font-weight="600" fill="#30302D">uncertainty</text>
+</g>
+<g id="_v32" data-kind="text" data-content-text="true" data-box="82,809,176,96" font-family="Heiti TC">
+
+<text x="82" y="828.1" text-anchor="start" font-size="17" font-weight="400" fill="#6D6A63">Add trust and</text>
+<text x="82" y="851.0500000000001" text-anchor="start" font-size="17" font-weight="400" fill="#6D6A63">recovery information</text>
+<text x="82" y="874.0000000000001" text-anchor="start" font-size="17" font-weight="400" fill="#6D6A63"> for a calmer first</text>
+<text x="82" y="896.9500000000002" text-anchor="start" font-size="17" font-weight="400" fill="#6D6A63">visit.</text>
+</g>
+<g id="storytext-S04-0" data-kind="text" data-content-text="true" data-box="298.0,713,336.6666666666667,23" font-family="Heiti TC">
+
+<text x="298.0" y="729.05" text-anchor="start" font-size="14" font-weight="400" fill="#AC6046">S04</text>
+</g>
+<g id="storytext-S04-1" data-kind="text" data-content-text="true" data-box="298.0,743,336.6666666666667,31" font-family="Heiti TC">
+
+<text x="298.0" y="765.0" text-anchor="start" font-size="20" font-weight="600" fill="#30302D">Preview the learning experience</text>
+</g>
+<g id="storytext-S04-2" data-kind="text" data-content-text="true" data-box="298.0,781,336.6666666666667,50" font-family="Heiti TC">
+
+<text x="298.0" y="800.05" text-anchor="start" font-size="17" font-weight="400" fill="#30302D">Offer a captioned preview and explain</text>
+<text x="298.0" y="823.0" text-anchor="start" font-size="17" font-weight="400" fill="#30302D">practice and support sessions.</text>
+</g>
+<g id="storytext-S04-3" data-kind="text" data-content-text="true" data-box="298.0,838,336.6666666666667,23" font-family="Heiti TC">
+
+<text x="298.0" y="854.05" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">Source: Simulated feedback E06</text>
+</g>
+<g id="storytext-S05-0" data-kind="text" data-content-text="true" data-box="682.6666666666667,713,336.6666666666667,23" font-family="Heiti TC">
+
+<text x="682.6666666666667" y="729.05" text-anchor="start" font-size="14" font-weight="400" fill="#AC6046">S05</text>
+</g>
+<g id="storytext-S05-1" data-kind="text" data-content-text="true" data-box="682.6666666666667,743,336.6666666666667,31" font-family="Heiti TC">
+
+<text x="682.6666666666667" y="765.0" text-anchor="start" font-size="20" font-weight="600" fill="#30302D">Recover from a missing email</text>
+</g>
+<g id="storytext-S05-2" data-kind="text" data-content-text="true" data-box="682.6666666666667,781,336.6666666666667,73" font-family="Heiti TC">
+
+<text x="682.6666666666667" y="800.075" text-anchor="start" font-size="17" font-weight="400" fill="#30302D">Resend confirmation and show</text>
+<text x="682.6666666666667" y="823.0250000000001" text-anchor="start" font-size="17" font-weight="400" fill="#30302D">enrollment status to prevent duplicate</text>
+<text x="682.6666666666667" y="845.9750000000001" text-anchor="start" font-size="17" font-weight="400" fill="#30302D">payment.</text>
+</g>
+<g id="storytext-S05-3" data-kind="text" data-content-text="true" data-box="682.6666666666667,861,336.6666666666667,23" font-family="Heiti TC">
+
+<text x="682.6666666666667" y="877.05" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">Source: Proposed improvement H01</text>
+</g>
+<g id="storytext-S06-0" data-kind="text" data-content-text="true" data-box="682.6666666666667,937,336.6666666666667,23" font-family="Heiti TC">
+
+<text x="682.6666666666667" y="953.05" text-anchor="start" font-size="14" font-weight="400" fill="#AC6046">S06</text>
+</g>
+<g id="storytext-S06-1" data-kind="text" data-content-text="true" data-box="682.6666666666667,967,336.6666666666667,31" font-family="Heiti TC">
+
+<text x="682.6666666666667" y="989.0" text-anchor="start" font-size="20" font-weight="600" fill="#30302D">Find cancellation terms</text>
+</g>
+<g id="storytext-S06-2" data-kind="text" data-content-text="true" data-box="682.6666666666667,1005,336.6666666666667,50" font-family="Heiti TC">
+
+<text x="682.6666666666667" y="1024.05" text-anchor="start" font-size="17" font-weight="400" fill="#30302D">Explain cancellation rules and support</text>
+<text x="682.6666666666667" y="1047.0" text-anchor="start" font-size="17" font-weight="400" fill="#30302D">contacts before payment.</text>
+</g>
+<g id="storytext-S06-3" data-kind="text" data-content-text="true" data-box="682.6666666666667,1062,336.6666666666667,23" font-family="Heiti TC">
+
+<text x="682.6666666666667" y="1078.05" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">Source: Proposed improvement H02</text>
+</g>
+<g id="_v48" data-kind="text" data-content-text="true" data-box="1067.3333333333335,715,336.6666666666667,26" font-family="Heiti TC">
+
+<text x="1067.3333333333335" y="733.2" text-anchor="start" font-size="16" font-weight="400" fill="#6D6A63">— Not scheduled</text>
+</g>
+<g id="_v49" data-kind="text" data-content-text="true" data-box="64,1156,1372,25" font-family="Heiti TC">
+
+<text x="64" y="1173.375" text-anchor="start" font-size="15" font-weight="400" fill="#6D6A63">Each story is assigned once. Confirm slice outcomes with the team. Dates, durations and priority scores are not inferred.</text>
+</g>
+<g id="_v50" data-kind="text" data-content-text="false" data-box="64,34,1372,23" font-family="Heiti TC">
+
+<text x="64" y="50.05" text-anchor="start" font-size="14" font-weight="400" fill="#AC6046">EXPERIENCE / RELEASE SLICES</text>
+</g>
+<g id="_v51" data-kind="text" data-content-text="false" data-box="64,78,1372,53" font-family="Heiti TC">
+
+<text x="64" y="116.2" text-anchor="start" font-size="36" font-weight="600" fill="#30302D">A complete first learning experience, one release at a time</text>
+</g>
+<g id="_v52" data-kind="text" data-content-text="false" data-box="64,139,1372,29" font-family="Heiti TC">
+
+<text x="64" y="159.35" text-anchor="start" font-size="18" font-weight="400" fill="#6D6A63">Online education · User story map · Original simulated proposal</text>
+</g>
+<g id="_v53" data-kind="text" data-content-text="false" data-box="64,1227,1372,25" font-family="Heiti TC">
+
+<text x="64" y="1244.375" text-anchor="start" font-size="15" font-weight="400" fill="#6D6A63">Simulated proposal · Input order is not a product commitment. Release slices are not calendar intervals.</text>
+</g>
+</g></svg>

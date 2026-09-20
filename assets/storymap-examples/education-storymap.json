@@ -1,0 +1,87 @@
+{
+  "type": "storymap",
+  "title": "从报名到首次学习，每次交付都能走通",
+  "subtitle": "在线课程 · 用户故事地图 · 原创模拟方案",
+  "eyebrow": "EXPERIENCE / RELEASE SLICES",
+  "language": "zh",
+  "width": 1500,
+  "persona": "首次报名的学习者",
+  "goal": "理解课程、完成报名并开始第一节课",
+  "footer": "模拟方案 · 顺序来自示例输入，不代表真实产品承诺；交付切片不是时间比例。",
+  "activities": [
+    {
+      "id": "discover",
+      "label": "判断是否适合我"
+    },
+    {
+      "id": "enroll",
+      "label": "完成报名"
+    },
+    {
+      "id": "learn",
+      "label": "开始学习"
+    }
+  ],
+  "releases": [
+    {
+      "id": "R1",
+      "label": "先走通一次",
+      "goal": "学习者可以独立选课、报名并进入第一课。"
+    },
+    {
+      "id": "R2",
+      "label": "减少不确定",
+      "goal": "补充信任信息与异常恢复，使首次使用更安心。"
+    }
+  ],
+  "stories": [
+    {
+      "id": "S01",
+      "activity": "discover",
+      "release": "R1",
+      "label": "看清基础要求",
+      "detail": "查看课程适合的人群、需要的基础和一次练习样例。",
+      "source": "模拟访谈 E01 / E02"
+    },
+    {
+      "id": "S02",
+      "activity": "enroll",
+      "release": "R1",
+      "label": "确认报名结果",
+      "detail": "成功后明确展示课程名称、开课时区和下一步入口。",
+      "source": "模拟访谈 E03"
+    },
+    {
+      "id": "S03",
+      "activity": "learn",
+      "release": "R1",
+      "label": "进入第一课",
+      "detail": "从确认页或报名邮件进入课程；按钮提供可读名称。",
+      "source": "模拟访谈 E04 / E05"
+    },
+    {
+      "id": "S04",
+      "activity": "discover",
+      "release": "R2",
+      "label": "预览学习方式",
+      "detail": "展示一段有字幕的课程预览，说明练习与答疑安排。",
+      "source": "模拟反馈 E06"
+    },
+    {
+      "id": "S05",
+      "activity": "enroll",
+      "release": "R2",
+      "label": "恢复通知失败",
+      "detail": "邮件未收到时可重新发送，并清楚说明报名状态，避免重复支付。",
+      "source": "原创改进假说 H01"
+    },
+    {
+      "id": "S06",
+      "activity": "enroll",
+      "release": "R2",
+      "label": "查找退改规则",
+      "detail": "在确认付款前提供取消规则与支持联系方式。",
+      "source": "原创改进假说 H02"
+    }
+  ]
+}

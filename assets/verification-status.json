@@ -1,5 +1,5 @@
 {
-  "version": "v40",
+  "version": "v43",
   "v38_evidence": {
     "adaptive_types": [
       "graph",
@@ -75,6 +75,14 @@
     "browser_evidence": "assets/v40-browser-evidence.json",
     "native_drawio_editing": "workflow node text edit, save, reload only",
     "mobile": "not verified: viewport override ineffective",
+    "user_visual_acceptance": "not received"
+  },
+  "v43_evidence": {
+    "dedicated_type": "storymap",
+    "regression_tests": 40,
+    "new_tests": 6,
+    "browser_evidence": "assets/v43-storymap-evidence.json",
+    "native_drawio_editing": "XML structure only; native editor not run",
     "user_visual_acceptance": "not received"
   }
 }

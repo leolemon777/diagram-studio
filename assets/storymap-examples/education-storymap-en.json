@@ -1,0 +1,87 @@
+{
+  "type": "storymap",
+  "title": "A complete first learning experience, one release at a time",
+  "subtitle": "Online education · User story map · Original simulated proposal",
+  "eyebrow": "EXPERIENCE / RELEASE SLICES",
+  "language": "en",
+  "width": 1500,
+  "persona": "A first-time course learner",
+  "goal": "Understand the course, enroll and start the first lesson",
+  "footer": "Simulated proposal · Input order is not a product commitment. Release slices are not calendar intervals.",
+  "activities": [
+    {
+      "id": "discover",
+      "label": "Decide if it fits"
+    },
+    {
+      "id": "enroll",
+      "label": "Enroll with confidence"
+    },
+    {
+      "id": "learn",
+      "label": "Start learning"
+    }
+  ],
+  "releases": [
+    {
+      "id": "R1",
+      "label": "Make it work end to end",
+      "goal": "Select a course, enroll and reach the first lesson independently."
+    },
+    {
+      "id": "R2",
+      "label": "Reduce uncertainty",
+      "goal": "Add trust and recovery information for a calmer first visit."
+    }
+  ],
+  "stories": [
+    {
+      "id": "S01",
+      "activity": "discover",
+      "release": "R1",
+      "label": "Understand prerequisites",
+      "detail": "See who the course is for, prerequisite knowledge and a sample exercise.",
+      "source": "Simulated interviews E01 / E02"
+    },
+    {
+      "id": "S02",
+      "activity": "enroll",
+      "release": "R1",
+      "label": "Confirm enrollment",
+      "detail": "Show the course, start-time zone and a clear next step after success.",
+      "source": "Simulated interview E03"
+    },
+    {
+      "id": "S03",
+      "activity": "learn",
+      "release": "R1",
+      "label": "Reach the first lesson",
+      "detail": "Enter from confirmation or email; give the entry button an accessible name.",
+      "source": "Simulated interviews E04 / E05"
+    },
+    {
+      "id": "S04",
+      "activity": "discover",
+      "release": "R2",
+      "label": "Preview the learning experience",
+      "detail": "Offer a captioned preview and explain practice and support sessions.",
+      "source": "Simulated feedback E06"
+    },
+    {
+      "id": "S05",
+      "activity": "enroll",
+      "release": "R2",
+      "label": "Recover from a missing email",
+      "detail": "Resend confirmation and show enrollment status to prevent duplicate payment.",
+      "source": "Proposed improvement H01"
+    },
+    {
+      "id": "S06",
+      "activity": "enroll",
+      "release": "R2",
+      "label": "Find cancellation terms",
+      "detail": "Explain cancellation rules and support contacts before payment.",
+      "source": "Proposed improvement H02"
+    }
+  ]
+}

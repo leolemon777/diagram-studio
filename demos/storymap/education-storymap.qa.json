@@ -1,0 +1,16 @@
+{
+  "errors": [],
+  "warnings": [],
+  "nodes": 53,
+  "edges": 3,
+  "scope": "geometry, text estimate, axis-aligned edge/node crossings; not semantic or visual acceptance",
+  "font_measurement": "font-glyph-metrics",
+  "rendered_visual_check": "not-run",
+  "manual_visual_review": "not-run",
+  "refined_layout": {
+    "version": 43,
+    "profile": "story-map",
+    "manual_visual_review": "not-run",
+    "font_measurement": "font-glyph-metrics"
+  }
+}

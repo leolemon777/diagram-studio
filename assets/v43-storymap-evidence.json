@@ -1,0 +1,107 @@
+{
+  "version": 43,
+  "date": "2026-09-20",
+  "data_status": "original simulated example",
+  "method": "Actual browser SVG text bounds and font-size checks; viewport dimensions confirmed through rendered-page DOM. Final narrow-screen check used tab-scoped device-metrics emulation; temporary overrides cleared.",
+  "regression": {
+    "command": "python -m unittest discover -s tests",
+    "passed": 40,
+    "new_story_map_tests": 6
+  },
+  "records": [
+    {
+      "file": "demos/storymap/education-storymap.svg",
+      "sha256": "5f6c6d856b93c5aeca1ef28ae1618d7e80d79c7f0043754eaf6438374d16b9dd",
+      "language": "zh",
+      "text_count": 55,
+      "browser_text_bounds": "passed",
+      "issues": [],
+      "readable_views": [
+        {
+          "viewport": [
+            1280,
+            720
+          ],
+          "minimum_content_font_px": 14
+        },
+        {
+          "viewport": [
+            390,
+            844
+          ],
+          "minimum_content_font_px": 14
+        }
+      ]
+    },
+    {
+      "file": "demos/storymap/education-storymap-en.svg",
+      "sha256": "b406fa9b42cfac5adf71bd36716c41a941dcba98cf1904d0f4b6459d66312a7d",
+      "language": "en",
+      "text_count": 60,
+      "browser_text_bounds": "passed",
+      "issues": [],
+      "readable_views": [
+        {
+          "viewport": [
+            1280,
+            720
+          ],
+          "minimum_content_font_px": 14
+        },
+        {
+          "viewport": [
+            390,
+            844
+          ],
+          "minimum_content_font_px": 14
+        }
+      ]
+    }
+  ],
+  "overview_checks": [
+    {
+      "language": "zh",
+      "viewport": [
+        1280,
+        720
+      ],
+      "minimum_content_font_px": 11.21,
+      "readability": "review-required",
+      "warning_visible": true,
+      "note": "initial SVG revision; final header IDs subsequently made measured"
+    },
+    {
+      "language": "en",
+      "viewport": [
+        1280,
+        720
+      ],
+      "minimum_content_font_px": 11.21,
+      "readability": "review-required",
+      "warning_visible": true
+    },
+    {
+      "language": "en",
+      "viewport": [
+        390,
+        844
+      ],
+      "minimum_content_font_px": 3.4,
+      "readability": "review-required",
+      "warning_visible": true
+    }
+  ],
+  "page_overflow_390px": false,
+  "manual_visual_review": "Representative Chinese/English regions, English second release, narrow overview and revised warning placement; not every extreme-content unit fixture",
+  "chooser_checks": [
+    "affinity has SVG/model JSON and SVG, no draw.io",
+    "storymap links real bilingual demo and dedicated schema",
+    "category change restores selected storymap",
+    "language change preserves typed content and selected type",
+    "content input retains focus while prompt updates",
+    "final storymap format explicitly includes SVG, draw.io and JSON"
+  ],
+  "native_drawio": "XML object structure and IDs checked; native editor edit/save/reopen not run",
+  "user_visual_acceptance": "not received",
+  "research_followup": "Synthetic Boardmix sticky long-text growth/undo and one public user work inspected; see boardmix-deep-study-evidence.json"
+}

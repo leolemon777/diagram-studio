@@ -338,6 +338,8 @@ def build(d,theme):
     if selected(d):
         build_adaptive(s,d)
         if refined:s.meta['refined_layout']={'version':40,'profile':'refined','manual_visual_review':'not-run'}
+    elif d['type']=='storymap':
+        BUILDERS['storymap'](s,d)
     elif refined:
         from refined_layout import build as refined_build
         refined_build(s,d)
@@ -347,6 +349,8 @@ BUILDERS={'architecture':architecture,'graph':graph,'tree':tree,'sequence':seque
 
 from layouts import BUILDERS as EXTRA_BUILDERS
 BUILDERS.update(EXTRA_BUILDERS)
+from story_map import build as story_map_build
+BUILDERS['storymap']=story_map_build
 
 def label_lines(n):
     if '_lines' in n:return n['_lines']

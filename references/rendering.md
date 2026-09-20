@@ -37,6 +37,7 @@
 | sequence | `actors:[{id,label}]`，`messages:[{from,to,label,return}]` | 05-sequence.json |
 | gantt | `tasks:[{id,label,owner,start,end,progress,depends,milestone}]` | 06-gantt.json |
 | matrix | `columns`，`cell_height`，`cells:[{label,tone,items:[]}]` | 07-swot.json |
+| storymap | `persona/goal/activities/releases/stories`；详见 [故事地图](story-map.md) | assets/storymap-examples/education-storymap.json |
 | chart | `mode:bar|line|donut`，`data:[{label,value}]`，`unit` | 08/09/10 开头的实例 |
 | fishbone | `effect`，`effect_detail`，`categories:[{label,causes:[]}]` | 11-fishbone.json |
 

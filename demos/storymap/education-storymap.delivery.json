@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "input_sha256": "0b83fc2a696d0eb238f49116a0c29fb5b04906b7c39b6afec2f4898ff6cb80ca",
+  "theme": "light",
+  "checks": {
+    "geometry": {
+      "status": "passed",
+      "warnings": []
+    },
+    "composition": {
+      "status": "not-run",
+      "findings": []
+    },
+    "browser_text_bounds": {
+      "status": "not-run"
+    },
+    "manual_visual_review": {
+      "status": "not-run"
+    },
+    "native_editor": {
+      "status": "not-run"
+    }
+  },
+  "files": {
+    "adaptive_reader.js": "9bc0a1eb6bfcf6bc88f5546bab128557ab8cc5daaee9887bcfa3e4d23b426fcf",
+    "browser_quality.js": "e02da63376abe62d68f626d97701d2aacf761f59e6312a420643eab270339e1b",
+    "education-storymap-reading.drawio": "6cf6504e70181a615abb1487f264ab8b538b457a61e3392c30e689316fc3d891",
+    "education-storymap-reading.json": "399f4265043ea9399d76abffcc97d047d9edbcfcad44a08333e6c571a9db6549",
+    "education-storymap.brief.json": "8b6bcadcc83a81b8b34a5439cdda5dde4bd4790e4ef441e6b2e3e5745d8c2569",
+    "education-storymap.drawio": "952d0c03d42d63d579c68def24fcb7a57fb4236cf4854be8d98082324512568c",
+    "education-storymap.html": "3f1e35978756a1c68bbc34aec9ffc1a39011a42a2b3472b96330b9497857f648",
+    "education-storymap.qa.json": "f2013dae791fbc5866e9ef12ba8cd7e55cbd84b7cafa5aa48905b17f29957a11",
+    "education-storymap.scene.json": "93914b9882f07c551e146c721a6f74eb097fba97f70ed84304b889f0332098b7",
+    "education-storymap.svg": "5f6c6d856b93c5aeca1ef28ae1618d7e80d79c7f0043754eaf6438374d16b9dd"
+  },
+  "delivery_scope": "Generation and QA finish before replacement. Individual files are replaced; promotion is not a multi-file atomic transaction."
+}

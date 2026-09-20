@@ -21,7 +21,7 @@ Observation depth varies: full composition was seen, with closer service-bluepri
 
 ## Interaction evidence
 
-Template preview/use was exercised. Selecting a journey note exposed a floating toolbar; double-clicking exposed font controls. Long-text reflow was not tested. Reading mode was entered and exited: editing tools hid, pin navigation remained, and Escape was documented in the UI. This does not guarantee readable overview text.
+Template preview/use was exercised. Selecting a journey note exposed a floating toolbar; double-clicking exposed font controls. A v43 follow-up added three paragraphs to a separate synthetic research sticky at 100% view: its width remained while height grew, and undo restored the earlier text and height. This one sample does not establish all text styles, container behavior or exported-file round trips. Reading mode was entered and exited: editing tools hid, pin navigation remained, and Escape was documented in the UI. This does not guarantee readable overview text.
 
 The image-export settings dialog showed format/background, resolution, all-area vs pin pagination, watermark and container-label options. No final export was performed. The dialog still showed two original pin pages after additional templates were added: pagination count alone cannot prove export coverage. The research board rename succeeded.
 
@@ -29,7 +29,7 @@ The image-export settings dialog showed format/background, resolution, all-area 
 
 Grok CLI ran native X keyword, semantic, user and thread tools. Logged calls include repeated searches; they are not independent sample counts. Its supplementary web fetches were cancelled before reading; a resumed session produced the final report from prior X results. It returned eight candidates, **without visually inspecting any attached images**:
 
-- Honghao Peng: Boardmix upgrade troubleshooting board — reported workflow, board not inspected.
+- Honghao Peng: post independently read in v43; X media still login-gated. The linked public Boardmix work was opened read-only and visually inspected, as described below.
 - Carl Vellotti: customer journey ending in actionable opportunities — method lead, image not inspected.
 - Steve / Builder.io: whole-user-flow storyboard — official repository independently confirms visual-plan/visual-recap purposes; tools were not installed or run.
 - Sahn Lam: cache hit/miss sequence diagram — post and author reply independently read in browser; media opened a login prompt, image not inspected.
@@ -39,6 +39,12 @@ Grok CLI ran native X keyword, semantic, user and thread tools. Logged calls inc
 - Ona: fintech user flow and information architecture — personal workflow lead, composition unknown.
 
 All eight source links and verification levels are in the [linked matrix](boardmix-deep-study.md#xgrok-cli-调研结果与复核). No engagement metrics or unverified dates are used to rank quality. Sparse Boardmix results in this batch do not prove a lack of good work on X. Ads and tool lists were excluded from visual conclusions.
+
+## Public work follow-up (v43)
+
+The Boardmix work linked publicly from Honghao Peng’s post opened read-only. It is a user work, not an additional template in the 12-template count. Inspection covered the long-board overview, one error/solution detail, and the overall-process area reached via a named pin. Steps combine text with screenshots marked by arrows and rectangles. Seven named pins cover prerequisites, overview, environment, execution, useful links and configuration. Not every section was read in full, and no commands in the work were executed. X-attached images remain unviewed.
+
+Independent implications: connect steps with evidence and explanations; name navigation for reader tasks. v43 now implements a [dedicated story map](story-map.en.md) with measured card/row expansion, unique assignments, sources, complete bilingual content and explicit download scope. Affinity choices no longer offer unsupported draw.io output.
 
 ## Implementation priorities
 
@@ -50,4 +56,4 @@ These are rules and proposals, not claims of completed new renderers.
 4. Make export scope explicit before format/background and preview. List included sections and omissions; verify actual output before claiming completeness.
 5. Support mixed reference boards across industries; each asset type should answer a question and retain source/assumption status.
 
-Remaining: systematic community/style sampling; long-text behavior, connector binding and routing, container move/resize and undo; actual exported-file round trips; collaboration/voting/presentation flows; visual inspection of X media. Prioritize common behaviors and novel structure, not niche duplicates or recolors. No full-product percentage is reported because the sampling universe is not fixed.
+Remaining: systematic community/style sampling; additional text styles and long text inside containers, connector binding and routing, container move/resize and undo (one separate sticky’s growth and undo tested); actual exported-file round trips; collaboration/voting/presentation flows; visual inspection of X media. Prioritize common behaviors and novel structure, not niche duplicates or recolors. No full-product percentage is reported because the sampling universe is not fixed.
