@@ -84,5 +84,12 @@
     "browser_evidence": "assets/v43-storymap-evidence.json",
     "native_drawio_editing": "storymap: draw.io browser edit/save/reopen passed; edited node and 58-cell/3-edge XML structure preserved",
     "user_visual_acceptance": "not received"
+  },
+  "v44_evidence": {
+    "boardmix_export_trial": "assets/boardmix-export-trial-evidence.json",
+    "boardmix_editor_reload": "passed: 5 elements and 72 board words preserved",
+    "export_ui_success": ["SVG all area", "PDF 16:9 all area", "Markdown 3 sticky notes"],
+    "json_boundary": "mind-map-only entry rejected the freeform board",
+    "byte_level_download_validation": "not available through the browser automation download surface"
   }
 }

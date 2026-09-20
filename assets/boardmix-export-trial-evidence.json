@@ -1,0 +1,78 @@
+{
+  "version": "v44",
+  "date": "2026-09-20",
+  "purpose": "Authenticated Boardmix export and reload trial using an independently created simulated board",
+  "privacy_boundary": "The private Boardmix URL and account details are intentionally omitted from the public repository",
+  "board": {
+    "title": "Diagram Studio Export Trial",
+    "objects": 5,
+    "content_objects": 3,
+    "connectors": 2,
+    "text_count_reported_by_boardmix": 72,
+    "content": [
+      "用户入口｜报名后开始学习\n长文本测试：导出时需要保留对象、层级、连线和来源。",
+      "报名结果\n确认页展示时间、下一步入口和异常恢复。",
+      "第一课\n从确认页进入课程；按钮名称保持可读。"
+    ]
+  },
+  "actions": [
+    "Created a new blank personal Boardmix board for this trial",
+    "Renamed it to Diagram Studio Export Trial",
+    "Created three long-text sticky notes and two arrow connectors",
+    "Opened the image export dialog, selected SVG, all-area export, no watermark, and observed 导出成功",
+    "Opened the PDF export dialog, selected 16:9, no margin, all-area export, no watermark, and observed 导出成功",
+    "Opened the Markdown export dialog; all three notes were listed and Export (3) observed, then observed 导出成功",
+    "Opened the JSON export dialog; it reported no exportable mind-map content and kept export disabled",
+    "Invoked Boardmix local backup export",
+    "Reloaded the editor and observed all three notes and both arrows; the details panel reported 5 elements and 72 board words"
+  ],
+  "results": {
+    "svg": {
+      "status": "ui_success_observed",
+      "format": "SVG",
+      "range": "all area",
+      "watermark": "none",
+      "byte_level_file_check": "not available through the browser automation download surface"
+    },
+    "pdf": {
+      "status": "ui_success_observed",
+      "page_style": "16:9",
+      "margin": "none",
+      "range": "all area",
+      "watermark": "none",
+      "byte_level_file_check": "not available through the browser automation download surface"
+    },
+    "markdown": {
+      "status": "ui_success_observed",
+      "selected_items": 3,
+      "content_types": "sticky notes",
+      "byte_level_file_check": "not available through the browser automation download surface"
+    },
+    "json": {
+      "status": "unsupported_for_freeform_board",
+      "observed_message": "暂无可导出内容，快去创建吧~",
+      "boundary": "Boardmix JSON entry is a mind-map export, not a generic freeform-board export"
+    },
+    "boardmix_local_backup": {
+      "status": "invoked",
+      "byte_level_file_check": "not available through the browser automation download surface"
+    },
+    "reload": {
+      "status": "passed",
+      "objects_preserved": 5,
+      "connectors_preserved": 2,
+      "reported_word_count_preserved": 72
+    }
+  },
+  "adopt": [
+    "Expose export format, range, watermark and page settings before export",
+    "Treat successful export toast and byte-level file inspection as separate evidence levels",
+    "Keep freeform-board export capability distinct from mind-map JSON capability",
+    "Use a self-created simulated board for export experiments and reload checks"
+  ],
+  "defer": [
+    "Byte-level validation and import/reopen of the downloaded SVG/PDF/Markdown/backup files",
+    "Full-board pagination and pin-range completeness",
+    "Claims about formats not exercised in this trial"
+  ]
+}
