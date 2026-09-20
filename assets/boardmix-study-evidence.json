@@ -1,6 +1,6 @@
 {
   "date": "2026-09-20",
-  "scope": "Public Boardmix method research, chooser UX and three independent simulated examples",
+  "scope": "Public research plus authenticated inspection of four templates; chooser UX and original simulated examples",
   "sources": [
     "https://boardmix.cn/app/home",
     "https://boardmix.cn/help/zh/video?menu=board&tab=guide",
@@ -8,7 +8,7 @@
     "https://boardmix.cn/journey-map/",
     "https://boardmix.cn/article/product-design-guide/"
   ],
-  "product_access": "exploration categories observed; login overlay; no editing session tested",
+  "product_access": "User signed in; opened four separate template boards in the actual editor",
   "new_chooser_forms": [
     "affinity",
     "journey",
@@ -21,7 +21,10 @@
     "Chinese-English switch retains entered content and selected story map",
     "selected control retains keyboard focus after rebuilding",
     "workshop cards use two-column desktop layout",
-    "example reading toggle expands diagram inside scroll container without widening page"
+    "example reading toggle expands diagram inside scroll container without widening page",
+    "persistent navigation at viewport top; retail current-section marker",
+    "retail readable-size state retained across marketing and back",
+    "three labeled keyboard-focusable scroll regions; no page horizontal overflow"
   ],
   "actual_browser_viewport": [
     1280,
@@ -34,7 +37,7 @@
   },
   "manual_visual_review": "Representative visible portions of all three outputs and chooser in browser; not exhaustive full-canvas inspection",
   "not_verified": [
-    "Boardmix editor, collaboration, votes, export, AI or internal algorithms",
+    "Boardmix collaboration, real votes, export, AI, version recovery or internal algorithms",
     "Automated browser text-boundary checks for this study",
     "Native editor round-trip for the new examples",
     "Mobile layout",
@@ -42,10 +45,25 @@
   ],
   "artifacts": {
     "demos/workshop-study/education-affinity.svg": "caa1a09094469fae76c12ab7bed9ddfe9026ad0dddfe2f12b99989ed5880b0fe",
-    "demos/workshop-study/index.html": "3f1537a464c631bd80f93b562c1d56df61dd8833cbbbd2204514828137378eb3",
+    "demos/workshop-study/index.html": "812354f60f2c41ef1943ffb3a95647a45951783351e668c50ac4af537146d7d1",
     "demos/workshop-study/marketing-retrospective.drawio": "8baf4ba6f9dda45b766f1ab08baf2a8d3266cfa5e73a085964e53f7d5424689a",
     "demos/workshop-study/marketing-retrospective.svg": "eb596bd5c2d1dd7cfba49b94b6695e8f41a4934e4f84b8d0a0374b3d53c3a13b",
     "demos/workshop-study/retail-journey.drawio": "c09b83dbe2a8d29aadb55998cfb086f5e400744143c912f6efb623b9f1a8cc70",
     "demos/workshop-study/retail-journey.svg": "8c8a2a67d2f28633ef23cb978440720ef6a0ffb35b8227ef833b6ab01235396c"
+  },
+  "member_inspection": {
+    "templates": [
+      "Guided brainstorming (member-free)",
+      "Design moodboard",
+      "Sailboat retrospective (member-free)",
+      "User story map"
+    ],
+    "observed_interactions": [
+      "template preview and use",
+      "zoom menu",
+      "fit all",
+      "pin list and selection"
+    ],
+    "limits": "Visual composition inspection, not exhaustive text inspection, editing round-trip or full library coverage"
   }
 }

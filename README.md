@@ -59,7 +59,7 @@ python3 scripts/expression_lab.py --out /tmp/diagram-expression-lab
 
 ## 多元白板方法与 UI/UX
 
-吸收 Boardmix 公开方法后，选图向导新增“洞察与共创”：亲和图、旅程、复盘行动板、用户故事地图。按目的解释选择，并显示实际支持范围与示例；切换保留输入和键盘焦点。新增教育、零售、营销三个原创模拟案例。故事地图当前是需新建验收布局的方法配方，未实现实时协作或投票服务。见 [方法与来源](references/boardmix-study.md) 和 [实际示例](demos/workshop-study/index.html)。
+结合 Boardmix 公开研究及登录后四种模板的实看，选图向导新增“洞察与共创”：亲和图、旅程、复盘行动板、用户故事地图。按目的解释选择，并显示实际支持范围与示例；切换保留输入和键盘焦点。新增教育、零售、营销三个原创模拟案例。故事地图当前是需新建验收布局的方法配方，未实现实时协作或投票服务。见 [方法与来源](references/boardmix-study.md) 和 [实际示例](demos/workshop-study/index.html)。
 
 ## 五类精修与验收
 

@@ -59,7 +59,7 @@ The first four commands generate architecture and workflow examples in English a
 
 ## Diverse whiteboard methods and UX
 
-Public Boardmix research informs a new Insights & workshops route: affinity, journey, retrospective and user story mapping. The chooser explains purpose, required content and actual support, links to examples, and preserves input and keyboard focus. Three original simulated studies cover education, retail and marketing. Story mapping is a method recipe requiring a newly checked layout; live collaboration and voting services are not implemented. See [methods and sources](references/boardmix-study.en.md) and [examples](demos/workshop-study/index.html).
+Public research and authenticated inspection of four Boardmix templates inform a new Insights & workshops route: affinity, journey, retrospective and user story mapping. The chooser explains purpose, required content and actual support, links to examples, and preserves input and keyboard focus. Three original simulated studies cover education, retail and marketing. Story mapping is a method recipe requiring a newly checked layout; live collaboration and voting services are not implemented. See [methods and sources](references/boardmix-study.en.md) and [examples](demos/workshop-study/index.html).
 
 ## Five refined forms and their checks
 

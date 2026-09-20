@@ -1,6 +1,23 @@
 # Boardmix study: diverse expressions and whiteboard UX
 
-Use for research synthesis, workshops, journey maps, retrospectives, user story maps, moodboards and purpose-based diagram selection. Public research dated 2026-09-20; [sources and comparison](boardmix-study.md). The application showed a login overlay. Its exploration categories were observed, but live editing, voting, AI generation, export and collaboration were not tested. No commercial templates or proprietary algorithms were copied.
+Use for research synthesis, workshops, journey maps, retrospectives, user story maps, moodboards and purpose-based diagram selection. Public research dated 2026-09-20; [sources and comparison](boardmix-study.md). The initial public phase stopped at a login overlay. After the user signed in, four template boards were opened in the editor and visually inspected. Voting, AI generation, export, collaboration and version recovery were not tested. No commercial templates or proprietary algorithms were copied.
+
+## Authenticated template inspection
+
+On 2026-09-20, four separate template boards were opened using the application UI. Guided brainstorming and sailboat retrospective were labeled member-free at their entry points. Moodboard and user story map were also inspected. Private board URLs, account details and template assets are not distributed.
+
+| Observed template | Visible composition | Independently adopted rule |
+|---|---|---|
+| Guided brainstorming | Numbered stages, participant groups, synthesis area, example beside blank workspace | Separate divergence, organization and convergence; explain inputs and outputs; participant colors do not imply priority |
+| Design moodboard | Image/color/keyword clusters connected by associative curves, instructions and blank skeleton | Organize licensed or supplied references by proposition, label what each contributes and what connections mean |
+| Sailboat retrospective | Sun, wind and lighthouse above water; obstacles separated into internal, external and organizational levels | Pair metaphors with plain labels for goals, drivers, barriers and risks; offer plain grouping when imagery impedes reading |
+| User story map | Horizontal card sequences, vertical layers and separators, example beside blank structure | Clearly label both dimensions and preserve column alignment; absence is not zero, and release assignments require real input |
+
+Zoom controls, fit-all and the pin list were inspected. Fit-all made text small; the observed pin entries were unnamed. Our rule therefore requires named persistent navigation plus readable detail. Reading and presentation modes were visible as entries but their complete behavior was not tested.
+
+Choose staged workspaces for facilitated sessions, thematic clusters for visual directions, labeled metaphors for retrospectives and two-dimensional structures for experience/delivery planning. Include a small original example and corresponding input guidance, clearly separated from real data. Every zone needs a task title, input and expected output. Check starting point, reading order, category meaning, exceptions and static/small-screen readability; report any unchecked scope.
+
+The existing example reader now applies persistent named navigation, current-section state, return-to-overview and keyboard-focusable diagram scroll regions. This does not add four dedicated renderers or reproduce commercial templates. Keep each diagram's reading state when navigating between sections.
 
 ## Reuse and extend
 
