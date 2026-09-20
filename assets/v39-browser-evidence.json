@@ -1,0 +1,200 @@
+{
+  "date": "2026-09-20",
+  "method": "Codex in-app browser; actual SVG getBBox and getScreenCTM; readable-size mode",
+  "checks": [
+    {
+      "case": "workflow",
+      "file": "workflow.svg",
+      "viewport": [
+        1600,
+        900
+      ],
+      "texts": 20,
+      "status": "passed",
+      "issues": [],
+      "minimum_displayed_content_font_px": 12,
+      "svg_sha256": "a296722857c71edcdbc9fc244a3a94dc78fb3d734a12ae74f3fa4a81b7e0dbd5"
+    },
+    {
+      "case": "workflow",
+      "file": "workflow-p01.svg",
+      "viewport": [
+        1600,
+        900
+      ],
+      "texts": 22,
+      "status": "passed",
+      "issues": [],
+      "minimum_displayed_content_font_px": 12,
+      "svg_sha256": "2efd08da868ae395178c70d0de99df02f69ee8dd2451a8a09aacf4dbfcd1aecb"
+    },
+    {
+      "case": "workflow",
+      "file": "workflow-p02.svg",
+      "viewport": [
+        1600,
+        900
+      ],
+      "texts": 22,
+      "status": "passed",
+      "issues": [],
+      "minimum_displayed_content_font_px": 12,
+      "svg_sha256": "df765778107f08089c3c101b56c88c0086d8cf0a246417416751535d77c335ba"
+    },
+    {
+      "case": "workflow",
+      "file": "workflow-p03.svg",
+      "viewport": [
+        1600,
+        900
+      ],
+      "texts": 16,
+      "status": "passed",
+      "issues": [],
+      "minimum_displayed_content_font_px": 12,
+      "svg_sha256": "0b05591f0fbbc136c689fea1bde81a956c9c4ae016e2067d3e05c44270df120d"
+    },
+    {
+      "case": "workflow",
+      "file": "workflow-p04.svg",
+      "viewport": [
+        1600,
+        900
+      ],
+      "texts": 16,
+      "status": "passed",
+      "issues": [],
+      "minimum_displayed_content_font_px": 12,
+      "svg_sha256": "e7f10743d07f7cc3d16590ab9953439a71b84fd8d4424a99ba7c94127f0a27f8"
+    },
+    {
+      "case": "workflow",
+      "file": "workflow-p05.svg",
+      "viewport": [
+        1600,
+        900
+      ],
+      "texts": 13,
+      "status": "passed",
+      "issues": [],
+      "minimum_displayed_content_font_px": 12,
+      "svg_sha256": "fbf8c8d68dcef110a650d8daa563dc3351edad93970949ea0fd9853039fd0f02"
+    },
+    {
+      "case": "product-feedback",
+      "file": "product-feedback.svg",
+      "viewport": [
+        1280,
+        720
+      ],
+      "texts": 42,
+      "status": "passed",
+      "issues": [],
+      "minimum_displayed_content_font_px": 12,
+      "svg_sha256": "ca2045ff55c9e9c1b8670f4974bc5e1463e0355bd1208b750337238134e266bf"
+    },
+    {
+      "case": "product-feedback",
+      "file": "product-feedback-p01.svg",
+      "viewport": [
+        1280,
+        720
+      ],
+      "texts": 20,
+      "status": "passed",
+      "issues": [],
+      "minimum_displayed_content_font_px": 12,
+      "svg_sha256": "9fea025350d6eadfd812d4df462dc1c51b653c3099e47783970c2eb6bb981f0a"
+    },
+    {
+      "case": "retail-workflow",
+      "file": "retail-workflow.svg",
+      "viewport": [
+        1280,
+        720
+      ],
+      "texts": 92,
+      "status": "passed",
+      "issues": [],
+      "minimum_displayed_content_font_px": 12,
+      "svg_sha256": "e31746c3bb69beed2bf56cb7d466b1d1018935f2848883812ef915f6a7d62a79"
+    },
+    {
+      "case": "retail-workflow",
+      "file": "retail-workflow-p07.svg",
+      "viewport": [
+        1280,
+        720
+      ],
+      "texts": 28,
+      "status": "passed",
+      "issues": [],
+      "minimum_displayed_content_font_px": 12,
+      "svg_sha256": "ff073319eff51a47bf76702d6168663c07d4089bf44b3aa34ccb63b3b6262cb0"
+    },
+    {
+      "case": "software-architecture",
+      "file": "software-architecture.svg",
+      "viewport": [
+        1280,
+        720
+      ],
+      "texts": 89,
+      "status": "passed",
+      "issues": [],
+      "minimum_displayed_content_font_px": 12,
+      "svg_sha256": "6022d2918fba6ce0a99d40cb4b81e39042a0a1eed56c5888d5e51a91f783d358"
+    },
+    {
+      "case": "software-architecture",
+      "file": "software-architecture-p11.svg",
+      "viewport": [
+        1280,
+        720
+      ],
+      "texts": 28,
+      "status": "passed",
+      "issues": [],
+      "minimum_displayed_content_font_px": 12,
+      "svg_sha256": "a4dc44d229677bf5fd52f2bf237e83475c8f6b320fc2f99a158e09ab24a79d6c"
+    },
+    {
+      "case": "education-tree",
+      "file": "education-tree.svg",
+      "viewport": [
+        1280,
+        720
+      ],
+      "texts": 60,
+      "status": "passed",
+      "issues": [],
+      "minimum_displayed_content_font_px": 12,
+      "svg_sha256": "b95bdf207def317d41e335e5d610327693b78e8564874d848733d8628eadb892"
+    },
+    {
+      "case": "education-tree",
+      "file": "education-tree-p08.svg",
+      "viewport": [
+        1280,
+        720
+      ],
+      "texts": 26,
+      "status": "passed",
+      "issues": [],
+      "minimum_displayed_content_font_px": 12,
+      "svg_sha256": "e691c0137d10774e1f66be3ba89206f916edc7ea82b72f5659f63177fe58eaac"
+    }
+  ],
+  "manual_visual_review": [
+    "workflow overview, branches and return line",
+    "workflow small-window overview warning",
+    "education-tree P08 object details"
+  ],
+  "interaction_checks": [
+    "English/Chinese controls",
+    "page switching",
+    "overview at 1280x720 reports 8.62px and requests review",
+    "readable-size mode reports 12px"
+  ],
+  "limits": "No native-editor verification, no user aesthetic acceptance, and no claim of reviewing every detail page."
+}

@@ -2,13 +2,16 @@
 window.diagramQuality = function (doc) {
   const svg=doc.querySelector('svg');
   if(!svg) return {status:'not-loaded', issues:[]};
-  const issues=[], checked=[];
+  const issues=[], checked=[], sizes=[];
   for(const group of doc.querySelectorAll('g[data-box]')) {
     const [x,y,w,h]=group.getAttribute('data-box').split(',').map(Number);
     const texts=[...group.querySelectorAll('text')];
     const previous=[];
     for(const text of texts) {
       const b=text.getBBox(), value=text.textContent;
+      const matrix=text.getScreenCTM();
+      if(value.trim() && matrix && group.dataset.kind!=='text')
+        sizes.push(parseFloat(doc.defaultView.getComputedStyle(text).fontSize)*Math.hypot(matrix.a,matrix.b));
       for(const p of previous) {
         if(Math.min(b.x+b.width,p.x+p.width)-Math.max(b.x,p.x)>1 && Math.min(b.y+b.height,p.y+p.height)-Math.max(b.y,p.y)>1)
           issues.push({kind:'rendered-text-overlap',id:group.id||'edge-label',text:value});
@@ -24,5 +27,8 @@ window.diagramQuality = function (doc) {
       }
     }
   }
-  return {status:issues.length?'issues-found':'passed',texts:checked.length,issues,scope:'actual SVG text bounds, within-group text overlaps and diamond containment; not aesthetic or native-editor approval'};
+  const minimum=sizes.length?Math.min(...sizes):null;
+  return {status:issues.length?'issues-found':'passed',texts:checked.length,issues,
+    readability:{minimum_content_font_px:minimum===null?null:Math.round(minimum*100)/100,review_threshold_px:12,status:minimum===null?'not-measured':minimum<11.95?'review-required':'within-target'},
+    scope:'actual SVG text bounds, within-group text overlaps, diamond containment and displayed content font size; not aesthetic or native-editor approval'};
 };

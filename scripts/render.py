@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Original, offline diagram renderer. Python standard library only."""
-import argparse, copy, datetime as dt, html, json, math, re, sys, unicodedata
+import argparse, copy, datetime as dt, hashlib, html, json, math, os, re, sys, tempfile, unicodedata
 from pathlib import Path
 import xml.etree.ElementTree as ET
 from editorial_style import vector_themes
@@ -518,7 +518,7 @@ def audit(s):
         result.update(font_measurement=METRICS.mode,rendered_visual_check='not-run',manual_visual_review='not-run',adaptive_layout=s.meta['adaptive_layout'])
     return result
 
-def render_file(source,out,theme='light'):
+def _render_files(source,out,theme='light'):
     source=Path(source);d=json.loads(source.read_text(encoding='utf-8'));need(theme in THEMES,'unknown theme');s=build(d,theme);qa=audit(s)
     out=Path(out);out.mkdir(parents=True,exist_ok=True);stem=source.stem
     (out/(stem+'.qa.json')).write_text(json.dumps(qa,ensure_ascii=False,indent=2),encoding='utf-8')
@@ -531,6 +531,44 @@ def render_file(source,out,theme='light'):
         from adaptive_delivery import deliver
         result['reading_view']=deliver(s,d,out,stem)
     return result
+
+def render_file(source,out,theme='light'):
+    """Validate a complete staged delivery before touching the last good files.
+
+    Promotion uses individual file replacements, not a filesystem transaction;
+    an OS failure during promotion can still interrupt a multi-file update.
+    """
+    source=Path(source);out=Path(out);raw=source.read_bytes();stem=source.stem
+    out.parent.mkdir(parents=True,exist_ok=True)
+    with tempfile.TemporaryDirectory(prefix='.diagram-stage-',dir=out.parent) as temp:
+        root=Path(temp);frozen=root/source.name;frozen.write_bytes(raw)
+        stage=root/'artifacts'
+        result=_render_files(frozen,stage,theme)
+        qa=result['qa'];adaptive=qa.get('adaptive_layout',{})
+        findings=[]
+        if adaptive.get('crossings',0):findings.append({'kind':'connector-crossings','count':adaptive['crossings']})
+        if adaptive.get('readability',{}).get('status')=='review-required':
+            findings.append({'kind':'small-overview-text',**adaptive['readability']})
+        files=sorted(stage.iterdir())
+        receipt={'schema_version':1,'input_sha256':hashlib.sha256(raw).hexdigest(),'theme':theme,
+                 'checks':{'geometry':{'status':'passed','warnings':qa['warnings']},
+                           'composition':{'status':('review-required' if findings else 'within-target') if adaptive else 'not-run','findings':findings},
+                           'browser_text_bounds':{'status':'not-run'},'manual_visual_review':{'status':'not-run'},
+                           'native_editor':{'status':'not-run'}},
+                 'files':{p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in files},
+                 'delivery_scope':'Generation and QA finish before replacement. Individual files are replaced; promotion is not a multi-file atomic transaction.'}
+        receipt_path=stage/(stem+'.delivery.json')
+        receipt_path.write_text(json.dumps(receipt,ensure_ascii=False,indent=2),encoding='utf-8')
+        out.mkdir(parents=True,exist_ok=True)
+        # Reader entrypoint and receipt are promoted after their dependencies.
+        for p in sorted(files,key=lambda p:p.suffix=='.html')+[receipt_path]:
+            os.replace(p,out/p.name)
+        result['svg']=str(out/(stem+'.svg'));result['drawio']=str(out/(stem+'.drawio'))
+        result['receipt']=str(out/receipt_path.name)
+        if 'reading_view' in result:
+            result['reading_view']['html']=str(out/(stem+'.html'))
+            result['reading_view']['index']=str(out/(stem+'-reading.json'))
+        return result
 
 def main():
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('source');p.add_argument('--out',required=True);p.add_argument('--theme',choices=THEMES,default='light');args=p.parse_args()

@@ -57,6 +57,10 @@ python3 scripts/expression_lab.py --out /tmp/diagram-expression-lab
 
 前四条分别生成中英架构图、流程图。`render.py` 的普通输出包含 SVG、draw.io、原始 brief、场景和检查记录；自适应模式还会生成阅读 HTML 与多页源。最后一条生成四组、八种表达的离线对照页；演示数据均为模拟数据。更多输入字段见 [生成格式](references/rendering.md)。部分专业图表需要 Matplotlib，自适应字宽度量可选 Pillow；缺少依赖时按对应后端文档安装。
 
+## 流程与交付改进
+
+普通自适应流程现在会分别处理前进分支与回流，保留所有连线标签。阅读页支持中英界面与“总览 / 清晰阅读”，并显示实际字号；字太小会提示复核。`render.py` 先在临时目录完成整套图和详页检查，再替换成品；生成失败会保留上一版，成功附 `delivery.json` 输入与输出校验记录。具体范围与限制见[自适应布局](references/adaptive-layout.md)。这些改进吸收了 [Archify](https://github.com/tt-a1i/archify) 的公开设计思路，代码独立实现。
+
 ## 交付与边界
 
 Skill 会选择图形表达并保留可修改的源文件；脚本不会自行理解自然语言，需求理解和最终视觉判断由运行它的助手完成。生成后要实际查看文字、箭头、分支、单位和数据；自动边界检查通过不等于读者一定看懂。
