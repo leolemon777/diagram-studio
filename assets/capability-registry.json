@@ -1,0 +1,331 @@
+{
+  "schema_version": "1.0",
+  "version": "v45",
+  "updated": "2026-09-20",
+  "purpose": "Single source for chooser labels, backend capability, delivery formats and acceptance evidence.",
+  "status_vocabulary": {
+    "manual_visual_review": "A named output was opened and visually reviewed; this does not imply native-editor or domain approval.",
+    "rendered_visual_check": "The backend rendered and its geometric/text checks passed; human review may still be pending.",
+    "generated_with_semantic_validation": "The input passed the backend's structural, relationship or arithmetic checks before rendering.",
+    "example_available": "A model input exists, but the backend or quality claim is not complete.",
+    "planned": "The chooser entry is useful as a named form, but no directly verified renderer is registered yet."
+  },
+  "groups": [
+    {
+      "id": "relations",
+      "label": {"zh": "结构与关系", "en": "Structure & relations"},
+      "sub": {"zh": "谁属于谁、谁连接谁", "en": "Hierarchy, layers, connections"},
+      "types": [
+        {
+          "id": "tree",
+          "label": {"zh": "组织树 / 分解结构", "en": "Tree / work breakdown"},
+          "why": {"zh": "单一父子层级，适合组织、课程体系、任务拆解", "en": "One parent per item: organizations, curricula, work breakdowns"},
+          "minimum_input": {"zh": "节点、父子关系、层级", "en": "Nodes, parent links, levels"},
+          "input_model": {"kind": "brief", "type": "tree", "required": ["root"]},
+          "backend": {"kind": "shared-renderer", "module": "scripts/render.py", "entry": "tree"},
+          "formats": ["svg", "drawio", "scene.json", "qa.json", "html"],
+          "layout_limits": {"zh": "最多六层；高分支或长文拆成局部详图。", "en": "Up to six levels; split high-branching or long-text trees into detail views."},
+          "languages": ["zh", "en"],
+          "examples": ["assets/examples/03-organization.json", "assets/examples/04-mindmap.json"],
+          "evidence": {"level": "manual_visual_review", "reference": "assets/verification-status.json", "detail": {"zh": "代表性结构图已生成并查看；完整类型集合仍需逐项复核。", "en": "Representative structural outputs were generated and viewed; the full type set still needs item-by-item review."}},
+          "scope": {"zh": "自适应树布局与稳定 ID；不自动推断组织事实。", "en": "Adaptive tree layout with stable IDs; organizational facts are never inferred."}
+        },
+        {
+          "id": "architecture",
+          "label": {"zh": "分层架构图", "en": "Layered architecture"},
+          "why": {"zh": "看系统有哪些层和模块，以及明确的调用关系", "en": "Show layers, components, and explicit calls between them"},
+          "minimum_input": {"zh": "层、模块、连接方向", "en": "Layers, components, directed links"},
+          "input_model": {"kind": "brief", "type": "architecture", "required": ["layers"]},
+          "backend": {"kind": "shared-renderer", "module": "scripts/render.py", "entry": "architecture"},
+          "formats": ["svg", "drawio", "scene.json", "qa.json", "html"],
+          "layout_limits": {"zh": "每层最多六个模块；横切能力单列侧轨，密集架构拆总览与详图。", "en": "Up to six modules per layer; put cross-cutting concerns on a side rail and split dense architecture views."},
+          "languages": ["zh", "en"],
+          "examples": ["assets/examples/01-system-architecture.json", "assets/examples/13-c4-context.json"],
+          "evidence": {"level": "manual_visual_review", "reference": "assets/verification-status.json", "detail": {"zh": "分层架构列入 v40 精修代表范围。", "en": "Layered architecture is in the v40 refined representative scope."}},
+          "scope": {"zh": "区分包含、调用和横切支撑；不把层级线自动解释成调用。", "en": "Separates containment, calls and cross-cutting support; layer placement never invents a call."}
+        },
+        {
+          "id": "network",
+          "label": {"zh": "关系网络图", "en": "Relationship network"},
+          "why": {"zh": "多对多连接，适合人物、应用、依赖或知识关系", "en": "Many-to-many links between people, apps, dependencies, or concepts"},
+          "minimum_input": {"zh": "对象、关系类型、方向", "en": "Objects, link types, direction"},
+          "input_model": {"kind": "brief", "type": "graph", "required": ["nodes", "edges"]},
+          "backend": {"kind": "shared-renderer", "module": "scripts/render.py", "entry": "graph"},
+          "formats": ["svg", "drawio", "scene.json", "qa.json", "html"],
+          "layout_limits": {"zh": "关系密度高时按群组拆图；边标签必须短且有语义。", "en": "Split dense relationships by group; edge labels must be short and semantic."},
+          "languages": ["zh", "en"],
+          "examples": ["assets/examples/12-data-model.json", "assets/examples/15-network-topology.json"],
+          "evidence": {"level": "generated_with_semantic_validation", "reference": "assets/verification-status.json", "detail": {"zh": "关系端点与几何检查可运行；完整网络风格仍需人工复核。", "en": "Endpoint and geometry checks run; the full network style set still needs manual review."}},
+          "scope": {"zh": "保留显式方向和关系类型；不从邻近位置推断关系。", "en": "Preserves explicit direction and relationship type; proximity never implies a link."}
+        }
+      ]
+    },
+    {
+      "id": "process",
+      "label": {"zh": "过程与协作", "en": "Process & collaboration"},
+      "sub": {"zh": "步骤、判断、责任与交互", "en": "Steps, decisions, ownership"},
+      "types": [
+        {
+          "id": "flow",
+          "label": {"zh": "流程图", "en": "Flowchart"},
+          "why": {"zh": "有顺序、判断、异常回流的过程", "en": "Ordered steps with decisions and exception loops"},
+          "minimum_input": {"zh": "步骤、分支条件、回流终点", "en": "Steps, branch labels, loop targets"},
+          "input_model": {"kind": "brief", "type": "graph", "required": ["nodes", "edges"]},
+          "backend": {"kind": "shared-renderer", "module": "scripts/render.py", "entry": "graph"},
+          "formats": ["svg", "drawio", "scene.json", "qa.json", "html"],
+          "layout_limits": {"zh": "分支和回流必须有文字条件；复杂流程用总览加局部关系图。", "en": "Label branch and return conditions; use overview plus local relationship pages for complex flows."},
+          "languages": ["zh", "en"],
+          "examples": ["assets/examples/02-workflow.json", "assets/examples/59-process-flow.json"],
+          "evidence": {"level": "manual_visual_review", "reference": "assets/verification-status.json", "detail": {"zh": "流程节点改字、保存、刷新已验证；v40 含流程精修。", "en": "Workflow text edit, save and reload were verified; workflow is in the v40 refined scope."}},
+          "scope": {"zh": "保留前进与返回方向；不为排版改变真实回路。", "en": "Preserves forward and return direction; real loops are never changed for layout."}
+        },
+        {
+          "id": "swimlane",
+          "label": {"zh": "泳道流程图", "en": "Swimlane workflow"},
+          "why": {"zh": "重点是每一步由谁执行，以及交接点", "en": "Show who performs each step and where handoffs occur"},
+          "minimum_input": {"zh": "角色、步骤、交接、分支", "en": "Roles, steps, handoffs, branches"},
+          "input_model": {"kind": "brief", "type": "graph", "required": ["groups", "nodes", "edges"]},
+          "backend": {"kind": "shared-renderer", "module": "scripts/render.py", "entry": "graph"},
+          "formats": ["svg", "drawio", "scene.json", "qa.json", "html"],
+          "layout_limits": {"zh": "泳道边界需承担责任语义；高密度交接拆局部。", "en": "Lane boundaries carry ownership semantics; split dense handoffs into detail views."},
+          "languages": ["zh", "en"],
+          "examples": ["assets/examples/02-workflow.json"],
+          "evidence": {"level": "generated_with_semantic_validation", "reference": "assets/verification-status.json", "detail": {"zh": "泳道结构可由 graph 后端表达；服务蓝图专用内容仍需单独验收。", "en": "Lane structure is expressible through the graph backend; dedicated blueprint semantics need separate acceptance."}},
+          "scope": {"zh": "交接、前台/后台和支撑关系必须显式；不把普通流程换色称为服务蓝图。", "en": "Handoffs and front/backstage support must be explicit; a recolored flow is not a service blueprint."}
+        },
+        {
+          "id": "sequence",
+          "label": {"zh": "时序图", "en": "Sequence diagram"},
+          "why": {"zh": "重点是参与者之间消息的先后顺序", "en": "Show the order of messages between participants"},
+          "minimum_input": {"zh": "参与者、消息、调用顺序", "en": "Participants, messages, order"},
+          "input_model": {"kind": "brief", "type": "sequence", "required": ["actors", "messages"]},
+          "backend": {"kind": "shared-renderer", "module": "scripts/render.py", "entry": "sequence"},
+          "formats": ["svg", "drawio", "scene.json", "qa.json", "html"],
+          "layout_limits": {"zh": "参与者 2–8 个；复杂循环和并发需拆局部交互。", "en": "Two to eight participants; split complex loops and concurrency into local interaction views."},
+          "languages": ["zh", "en"],
+          "examples": ["assets/examples/05-sequence.json"],
+          "evidence": {"level": "generated_with_semantic_validation", "reference": "assets/verification-status.json", "detail": {"zh": "消息方向和参与者端点由后端校验；alt/loop 框仍未覆盖。", "en": "Message direction and actor endpoints are checked; alt/loop frames are not covered."}},
+          "scope": {"zh": "返回消息保留虚线与方向；不把静态架构当动态交互。", "en": "Return messages retain their dashed direction; static architecture is not treated as interaction."}
+        }
+      ]
+    },
+    {
+      "id": "time",
+      "label": {"zh": "时间与计划", "en": "Time & planning"},
+      "sub": {"zh": "发生时间、持续时间、任务依赖", "en": "When, how long, what depends on what"},
+      "types": [
+        {
+          "id": "timeline",
+          "label": {"zh": "时间线", "en": "Timeline"},
+          "why": {"zh": "展示事件发生在什么时间，重点是先后位置", "en": "Place events on real dates in chronological order"},
+          "minimum_input": {"zh": "事件、真实日期", "en": "Events and actual dates"},
+          "input_model": {"kind": "brief", "type": "timeline", "required": ["items"]},
+          "backend": {"kind": "shared-renderer-extra", "module": "scripts/render.py", "entry": "timeline"},
+          "formats": ["svg", "drawio", "scene.json", "qa.json", "html"],
+          "layout_limits": {"zh": "日期必须递增且唯一；日期比例不能被装饰性间距替代。", "en": "Dates must be unique and increasing; decorative spacing cannot replace date scale."},
+          "languages": ["zh", "en"],
+          "examples": ["assets/examples/29-timeline.json"],
+          "evidence": {"level": "generated_with_semantic_validation", "reference": "assets/verification-status.json", "detail": {"zh": "时间线布局和日期约束已在共享额外布局中实现，尚未完成独立浏览器人工验收。", "en": "Timeline layout and date constraints exist in the shared extra layouts; independent browser review is pending."}},
+          "scope": {"zh": "表达真实日期顺序；不把方向性路线图宣称为日历排期。", "en": "Expresses real date order; a directional roadmap is not called a calendar schedule."}
+        },
+        {
+          "id": "gantt",
+          "label": {"zh": "甘特图", "en": "Gantt chart"},
+          "why": {"zh": "展示任务跨度、阶段和进度", "en": "Show task durations, phases, and progress"},
+          "minimum_input": {"zh": "任务、开始/结束日期、进度", "en": "Tasks, start/end dates, progress"},
+          "input_model": {"kind": "brief", "type": "gantt", "required": ["tasks"]},
+          "backend": {"kind": "shared-renderer", "module": "scripts/render.py", "entry": "gantt"},
+          "formats": ["svg", "drawio", "scene.json", "qa.json", "html"],
+          "layout_limits": {"zh": "自然日比例、依赖端点和进度分开表达；关键路径不自动计算。", "en": "Natural-day scale, dependency endpoints and progress are separate; critical path is not calculated."},
+          "languages": ["zh", "en"],
+          "examples": ["assets/examples/06-gantt.json", "assets/examples/61-gantt-delivery.json", "assets/examples/62-gantt-print.json"],
+          "evidence": {"level": "manual_visual_review", "reference": "assets/verification-status.json", "detail": {"zh": "三个甘特变体和依赖对象已有代表性检查；原生编辑仍需扩展。", "en": "Three Gantt variants and dependency objects have representative checks; native editing coverage remains limited."}},
+          "scope": {"zh": "适合已知日期的执行计划；路线方向和关键路径需另行声明。", "en": "For dated execution plans; directional roadmaps and critical paths require separate declarations."}
+        },
+        {
+          "id": "dependency",
+          "label": {"zh": "任务依赖图", "en": "Dependency graph"},
+          "why": {"zh": "先后约束比日期更重要", "en": "Task precedence matters more than calendar dates"},
+          "minimum_input": {"zh": "任务、前置关系；计算需工期", "en": "Tasks, predecessor links; durations for calculations"},
+          "input_model": {"kind": "brief", "type": "graph", "required": ["nodes", "edges"]},
+          "backend": {"kind": "shared-renderer", "module": "scripts/render.py", "entry": "graph"},
+          "formats": ["svg", "drawio", "scene.json", "qa.json", "html"],
+          "layout_limits": {"zh": "依赖边必须有前置与后置 ID；有工期计算需求时改用 PERT/CPM 后端。", "en": "Dependency edges need predecessor and successor IDs; use the PERT/CPM backend when duration calculation is required."},
+          "languages": ["zh", "en"],
+          "examples": ["assets/examples/31-dependency-network.json"],
+          "evidence": {"level": "generated_with_semantic_validation", "reference": "references/pert.md", "detail": {"zh": "关系图可表达依赖；PERT 计算另有零时滞 FS 后端。", "en": "The graph form expresses dependencies; PERT has a separate zero-lag FS calculation backend."}},
+          "scope": {"zh": "只表达已声明的先后关系；不从图形邻近推断关键路径。", "en": "Expresses declared precedence only; proximity never implies a critical path."}
+        }
+      ]
+    },
+    {
+      "id": "change",
+      "label": {"zh": "比较与变化", "en": "Comparison & change"},
+      "sub": {"zh": "大小排序、趋势、前后差异", "en": "Rank, trends, before/after"},
+      "types": [
+        {
+          "id": "bar",
+          "label": {"zh": "条形图", "en": "Bar chart"},
+          "why": {"zh": "比较类别大小，尤其适合较长标签", "en": "Compare category magnitudes, especially with long labels"},
+          "minimum_input": {"zh": "类别、数值、单位", "en": "Categories, values, units"},
+          "input_model": {"kind": "brief", "type": "chart", "mode": "bar", "required": ["data"]},
+          "backend": {"kind": "shared-renderer", "module": "scripts/render.py", "entry": "chart:bar"},
+          "formats": ["svg", "drawio", "scene.json", "qa.json", "html"],
+          "layout_limits": {"zh": "保留单位和零基准；负值与正值不能混成无零轴排序。", "en": "Retain units and a meaningful baseline; signed values must not become a zero-free ranking."},
+          "languages": ["zh", "en"],
+          "examples": ["assets/examples/08-bar-chart.json"],
+          "evidence": {"level": "generated_with_semantic_validation", "reference": "references/charts.md", "detail": {"zh": "共享图表后端已校验数值和单位；代表性浏览器复核仍按具体案例进行。", "en": "The shared chart backend checks values and units; browser review is case-specific."}},
+          "scope": {"zh": "适合类别比较；不把条形图的长度当成统计显著性。", "en": "For category comparison; bar length is not statistical significance."}
+        },
+        {
+          "id": "line",
+          "label": {"zh": "趋势图", "en": "Line chart"},
+          "why": {"zh": "连续时间里的变化方向与波动", "en": "Show direction and variation across ordered time"},
+          "minimum_input": {"zh": "时间、数值、单位", "en": "Time points, values, units"},
+          "input_model": {"kind": "brief", "type": "chart", "mode": "line", "required": ["data"]},
+          "backend": {"kind": "shared-renderer", "module": "scripts/render.py", "entry": "chart:line"},
+          "formats": ["svg", "drawio", "scene.json", "qa.json", "html"],
+          "layout_limits": {"zh": "真实日期按间隔定位；缺测保留断点，不能顺手补成零。", "en": "Use actual date spacing; preserve missing values as breaks rather than turning them into zero."},
+          "languages": ["zh", "en"],
+          "examples": ["assets/examples/09-line-chart.json"],
+          "evidence": {"level": "manual_visual_review", "reference": "assets/verification-status.json", "detail": {"zh": "趋势列入 v40 精修，并检查真实日期间隔和缺测。", "en": "Trend is in the v40 refined scope with checks for actual date spacing and missing data."}},
+          "scope": {"zh": "表达时间顺序和波动；不把平滑线说成预测。", "en": "Expresses time order and variation; a smoothing line is not a forecast."}
+        },
+        {
+          "id": "dumbbell",
+          "label": {"zh": "前后对照图", "en": "Before/after dumbbell"},
+          "why": {"zh": "同一对象的两次测量，突出差值", "en": "Compare two measurements for each entity and show change"},
+          "minimum_input": {"zh": "对象、前值、后值、单位", "en": "Entities, before/after values, units"},
+          "input_model": {"kind": "data-art", "recipe": "dumbbell", "required": ["rows", "before", "after", "unit"]},
+          "backend": {"kind": "specialized-data", "module": "scripts/data_art.py", "entry": "dumbbell"},
+          "formats": ["svg", "drawio", "png", "pdf", "html", "input.json", "scene.json", "analysis.json", "qa.json", "csv"],
+          "layout_limits": {"zh": "最多七个对象；保留绝对差值和方向，超过密度拆分。", "en": "Up to seven entities; retain absolute change and direction, and split higher density."},
+          "languages": ["zh", "en"],
+          "examples": ["assets/data-art-examples/dumbbell.json"],
+          "evidence": {"level": "rendered_visual_check", "reference": "references/data-art.md", "detail": {"zh": "前后哑铃配方已计算并导出；具体数据仍需按案例复核。", "en": "The dumbbell recipe computes and exports; each data case still needs review."}},
+          "scope": {"zh": "同一对象的前后变化；不用于独立样本比较。", "en": "For paired before/after entities; not for independent-group comparison."}
+        }
+      ]
+    },
+    {
+      "id": "pattern",
+      "label": {"zh": "组成与分布", "en": "Composition & distribution"},
+      "sub": {"zh": "占比、频数、变量关系", "en": "Share, frequency, correlation"},
+      "types": [
+        {
+          "id": "donut",
+          "label": {"zh": "环形占比图", "en": "Donut chart"},
+          "why": {"zh": "少量类别组成同一个整体", "en": "A few categories sum to one whole"},
+          "minimum_input": {"zh": "各部分数值、总量口径", "en": "Part values and definition of total"},
+          "input_model": {"kind": "brief", "type": "chart", "mode": "donut", "required": ["data"]},
+          "backend": {"kind": "shared-renderer", "module": "scripts/render.py", "entry": "chart:donut"},
+          "formats": ["svg", "drawio", "scene.json", "qa.json", "html"],
+          "layout_limits": {"zh": "最多五个类别且总量为正；类别过多改用条形图。", "en": "Up to five positive categories; use bars when there are more categories."},
+          "languages": ["zh", "en"],
+          "examples": ["assets/examples/10-donut-chart.json"],
+          "evidence": {"level": "generated_with_semantic_validation", "reference": "references/charts.md", "detail": {"zh": "总量和类别约束由图表后端校验。", "en": "Total and category constraints are checked by the chart backend."}},
+          "scope": {"zh": "只在部分构成同一整体时使用；不把角度差当精确读数。", "en": "Use only when parts share one whole; do not make angle differences carry exact readings."}
+        },
+        {
+          "id": "histogram",
+          "label": {"zh": "直方图", "en": "Histogram"},
+          "why": {"zh": "看连续数值的频数分布，而非类别大小", "en": "Show frequencies of continuous measurements, not category size"},
+          "minimum_input": {"zh": "逐条数值、单位、分箱规则", "en": "Observations, unit, binning rule"},
+          "input_model": {"kind": "plot", "mode": "histogram", "required": ["data"]},
+          "backend": {"kind": "shared-renderer-extra", "module": "scripts/render.py", "entry": "plot:histogram"},
+          "formats": ["svg", "drawio", "scene.json", "qa.json", "html"],
+          "layout_limits": {"zh": "分箱规则需可追溯；连续观测不足时改用点图或表格。", "en": "Binning must be traceable; use points or a table when continuous observations are sparse."},
+          "languages": ["zh", "en"],
+          "examples": ["assets/examples/50-histogram.json", "assets/data-art-examples/distribution.json"],
+          "evidence": {"level": "generated_with_semantic_validation", "reference": "references/charts.md", "detail": {"zh": "共享绘图后端校验分箱和观测范围；不替代领域统计审查。", "en": "The shared plot backend checks bins and observation bounds; it does not replace domain statistical review."}},
+          "scope": {"zh": "表达分布形状；不从一张图自动命名正态或因果。", "en": "Expresses distribution shape; it does not automatically establish normality or causality."}
+        },
+        {
+          "id": "scatter",
+          "label": {"zh": "散点图", "en": "Scatter plot"},
+          "why": {"zh": "看两个数值变量之间的关系与离群点", "en": "Inspect two quantitative variables and outliers"},
+          "minimum_input": {"zh": "成对观测、X/Y单位", "en": "Paired observations, X/Y units"},
+          "input_model": {"kind": "plot", "mode": "scatter", "required": ["x", "y", "units"]},
+          "backend": {"kind": "shared-renderer-extra", "module": "scripts/render.py", "entry": "plot:scatter"},
+          "formats": ["svg", "drawio", "scene.json", "qa.json", "html"],
+          "layout_limits": {"zh": "保留观测配对和单位；相关不自动解释为因果。", "en": "Retain paired observations and units; correlation is not automatically causal."},
+          "languages": ["zh", "en"],
+          "examples": ["assets/examples/46-scatter.json", "assets/data-art-examples/scatter.json"],
+          "evidence": {"level": "generated_with_semantic_validation", "reference": "references/charts.md", "detail": {"zh": "共享绘图后端校验成对数值和范围；数据来源与模型解释需另审。", "en": "The shared plot backend checks paired values and ranges; data provenance and model interpretation need separate review."}},
+          "scope": {"zh": "表达成对数值的关系和离群点；不自动画回归结论。", "en": "Expresses paired values and outliers; it does not invent a regression conclusion."}
+        }
+      ]
+    },
+    {
+      "id": "workshop",
+      "label": {"zh": "洞察与共创", "en": "Insights & workshops"},
+      "sub": {"zh": "归纳、体验、复盘与交付切片", "en": "Synthesis, experience, review, release slices"},
+      "types": [
+        {
+          "id": "affinity",
+          "label": {"zh": "亲和图", "en": "Affinity map"},
+          "why": {"zh": "把原始观察归组，保留少数意见", "en": "Group observations while keeping minority feedback visible"},
+          "minimum_input": {"zh": "观察原文、来源、主题归属；不得把条数当发生率", "en": "Original observations, sources and themes; counts are not prevalence"},
+          "input_model": {"kind": "model", "mode": "affinity-map", "required": ["observations", "themes"]},
+          "backend": {"kind": "specialized-relations", "module": "scripts/organization_relations.py", "entry": "affinity-map"},
+          "formats": ["svg", "png", "input.json", "calculation.json", "qa.json"],
+          "layout_limits": {"zh": "每条观察必须唯一归组；内容多时拆主题或详页。", "en": "Every observation has one assignment; split themes or detail pages when dense."},
+          "languages": ["zh", "en"],
+          "examples": ["assets/workshop-examples/education-affinity.json"],
+          "evidence": {"level": "manual_visual_review", "reference": "assets/boardmix-study-evidence.json", "detail": {"zh": "分组完整性和唯一性已检查，SVG/JSON 示例已查看；不输出 draw.io。", "en": "Grouping completeness and uniqueness were checked and SVG/JSON examples viewed; draw.io is not exported."}},
+          "scope": {"zh": "保留来源、少数意见和待确认项；不生成投票或频率事实。", "en": "Retains sources, minority feedback and open items; it does not invent votes or prevalence."}
+        },
+        {
+          "id": "journey",
+          "label": {"zh": "用户旅程图", "en": "Journey map"},
+          "why": {"zh": "按用户阶段追踪体验，区分证据与改进假说", "en": "Follow user stages and separate evidence from hypotheses"},
+          "minimum_input": {"zh": "用户、目标、阶段、触点、证据、机会；缺少情绪数据不编分数", "en": "Persona, goal, stages, touchpoints, evidence, opportunities; no invented emotion scores"},
+          "input_model": {"kind": "brief", "type": "table", "required": ["columns", "rows"]},
+          "backend": {"kind": "shared-renderer-extra", "module": "scripts/render.py", "entry": "table"},
+          "formats": ["svg", "drawio", "scene.json", "qa.json", "html"],
+          "layout_limits": {"zh": "按阶段和体验维度排表；长文需要增加行高或拆阶段。", "en": "Align stages and experience dimensions; increase row height or split stages for long text."},
+          "languages": ["zh", "en"],
+          "examples": ["assets/workshop-examples/retail-journey.json", "assets/examples/38-customer-journey.json"],
+          "evidence": {"level": "manual_visual_review", "reference": "assets/boardmix-study-evidence.json", "detail": {"zh": "零售旅程示例已查看；观察→机会→行动的来源链仍须由输入提供。", "en": "The retail journey example was viewed; the observation-to-opportunity-to-action chain must still come from input."}},
+          "scope": {"zh": "不把情绪图标自动当连续量表；机会要回链到观察。", "en": "Emotion icons are not automatically a continuous scale; opportunities trace back to observations."}
+        },
+        {
+          "id": "retro",
+          "label": {"zh": "复盘行动板", "en": "Retrospective action board"},
+          "why": {"zh": "把讨论转成行动，也保留未解决分歧", "en": "Turn discussion into follow-up while preserving unresolved questions"},
+          "minimum_input": {"zh": "观察、停止/开始/继续、拟议动作、负责人、复核日期与验收方式", "en": "Observations, stop/start/continue, proposed actions, owners, review dates and checks"},
+          "input_model": {"kind": "brief", "type": "table", "required": ["columns", "rows"]},
+          "backend": {"kind": "shared-renderer-extra", "module": "scripts/render.py", "entry": "table"},
+          "formats": ["svg", "drawio", "scene.json", "qa.json", "html"],
+          "layout_limits": {"zh": "行动字段不能遮住观察和分歧；多项行动分拆为局部板。", "en": "Actions must not obscure observations or disagreement; split boards with many actions."},
+          "languages": ["zh", "en"],
+          "examples": ["assets/workshop-examples/marketing-retrospective.json"],
+          "evidence": {"level": "manual_visual_review", "reference": "assets/boardmix-study-evidence.json", "detail": {"zh": "营销复盘表已生成并查看；无实时会议、投票或协作功能。", "en": "The marketing retrospective table was generated and viewed; live meeting, voting and collaboration are not implemented."}},
+          "scope": {"zh": "区分观察、推断、行动和验收；未确认意见保持开放。", "en": "Separates observations, inferences, actions and checks; unconfirmed opinions remain open."}
+        },
+        {
+          "id": "storymap",
+          "label": {"zh": "用户故事地图", "en": "User story map"},
+          "why": {"zh": "用户活动横向展开，用交付切片界定每次可用范围", "en": "Arrange user activities horizontally and define usable release slices"},
+          "minimum_input": {"zh": "用户与目标、活动顺序、故事 ID、交付切片及其目标；切片不是日期比例", "en": "Persona and goal, ordered activities, story IDs, release slices and outcomes; slices are not a time scale"},
+          "input_model": {"kind": "brief", "type": "storymap", "required": ["persona", "goal", "activities", "releases", "stories"]},
+          "backend": {"kind": "dedicated-renderer", "module": "scripts/render.py", "entry": "storymap"},
+          "formats": ["svg", "drawio", "scene.json", "brief.json", "qa.json", "html"],
+          "layout_limits": {"zh": "每条故事唯一归属活动和切片；长文纵向扩展，多活动横向扩展。", "en": "Each story belongs to one activity and slice; long text grows downward and more activities widen the map."},
+          "languages": ["zh", "en"],
+          "examples": ["assets/storymap-examples/education-storymap.json", "assets/storymap-examples/education-storymap-en.json"],
+          "evidence": {"level": "manual_visual_review", "reference": "assets/v43-storymap-evidence.json", "detail": {"zh": "40 项回归、浏览器文字检查和 draw.io 编辑保存重开通过。", "en": "Forty regressions, browser text checks and draw.io edit/save/reopen passed."}},
+          "scope": {"zh": "表达活动与交付范围，不计算日期、依赖或投票。", "en": "Expresses activities and release scope; it does not calculate dates, dependencies or votes."}
+        }
+      ]
+    }
+  ],
+  "aliases": {
+    "workflow": "flow",
+    "swimlane-workflow": "swimlane",
+    "user-journey": "journey",
+    "service-blueprint": "swimlane",
+    "roadmap": "timeline",
+    "story-map": "storymap"
+  }
+}
