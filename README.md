@@ -19,7 +19,7 @@
 
 ## 怎么用
 
-如果不知道该选哪种图，克隆仓库后在浏览器打开本地的[中英双语选图向导](demos/chooser/index.html)：按“想让读者看懂什么 → 图型 → 风格”选择，填入自己的内容后复制生成的 `$diagram-studio` 指令。向导覆盖 15 种常见形式，提供选型提示；它本身不渲染任意输入，完整成图仍由 Codex 使用 Skill 完成。风格缩略图是方向示意，实际支持范围见[风格家族](references/style-families.md)。
+如果不知道该选哪种图，克隆仓库后在浏览器打开本地的[中英双语选图向导](demos/chooser/index.html)：按“想让读者看懂什么 → 图型 → 风格”选择，填入自己的内容后复制生成的 `$diagram-studio` 指令。向导覆盖 19 种常见形式，提供选型提示；它本身不渲染任意输入，完整成图仍由 Codex 使用 Skill 完成。风格缩略图是方向示意，实际支持范围见[风格家族](references/style-families.md)。
 
 ### 1. 安装给 Codex
 
@@ -56,6 +56,10 @@ python3 scripts/expression_lab.py --out /tmp/diagram-expression-lab
 ```
 
 前四条分别生成中英架构图、流程图。`render.py` 的普通输出包含 SVG、draw.io、原始 brief、场景和检查记录；自适应模式还会生成阅读 HTML 与多页源。最后一条生成四组、八种表达的离线对照页；演示数据均为模拟数据。更多输入字段见 [生成格式](references/rendering.md)。部分专业图表需要 Matplotlib，自适应字宽度量可选 Pillow；缺少依赖时按对应后端文档安装。
+
+## 多元白板方法与 UI/UX
+
+吸收 Boardmix 公开方法后，选图向导新增“洞察与共创”：亲和图、旅程、复盘行动板、用户故事地图。按目的解释选择，并显示实际支持范围与示例；切换保留输入和键盘焦点。新增教育、零售、营销三个原创模拟案例。故事地图当前是需新建验收布局的方法配方，未实现实时协作或投票服务。见 [方法与来源](references/boardmix-study.md) 和 [实际示例](demos/workshop-study/index.html)。
 
 ## 五类精修与验收
 

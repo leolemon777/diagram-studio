@@ -1,0 +1,73 @@
+{
+  "id": "education-affinity",
+  "mode": "affinity-map",
+  "title": "课程报名反馈 · 先保留原话，再归纳主题",
+  "subtitle": "六条模拟观察；归组是分析判断，不能当作发生率或根因",
+  "data_status": "simulated",
+  "observations": [
+    {
+      "id": "O1",
+      "text": "看不出课程适合什么基础",
+      "source": "模拟访谈 E01"
+    },
+    {
+      "id": "O2",
+      "text": "课程介绍没有练习样例",
+      "source": "模拟访谈 E02"
+    },
+    {
+      "id": "O3",
+      "text": "付款后不知道下一步做什么",
+      "source": "模拟访谈 E03"
+    },
+    {
+      "id": "O4",
+      "text": "报名邮件里找不到上课入口",
+      "source": "模拟访谈 E04"
+    },
+    {
+      "id": "O5",
+      "text": "用屏幕阅读器无法识别按钮",
+      "source": "模拟访谈 E05"
+    },
+    {
+      "id": "O6",
+      "text": "希望有晚间答疑时段",
+      "source": "模拟访谈 E06"
+    }
+  ],
+  "themes": [
+    {
+      "id": "T1",
+      "label": "选课信息",
+      "observation_ids": [
+        "O1",
+        "O2"
+      ]
+    },
+    {
+      "id": "T2",
+      "label": "报名后引导",
+      "observation_ids": [
+        "O3",
+        "O4"
+      ]
+    },
+    {
+      "id": "T3",
+      "label": "参与条件",
+      "observation_ids": [
+        "O5",
+        "O6"
+      ]
+    }
+  ],
+  "minority_observation_ids": [
+    "O5"
+  ],
+  "assumptions": [
+    "全部内容与来源编号为原创模拟",
+    "每条观察只归入一个主题；少数意见标记不是复制观察",
+    "未收集投票，不推算优先级"
+  ]
+}

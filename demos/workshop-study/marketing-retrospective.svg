@@ -1,0 +1,214 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1040" viewBox="0 0 1800 1040" role="img" aria-labelledby="diagram-title diagram-desc">
+<title id="diagram-title">营销活动复盘 · 从观察到可验证行动</title>
+<desc id="diagram-desc">讨论观点、决定与执行分开；下面责任人、时间与指标均为模拟安排</desc>
+<rect width="100%" height="100%" fill="#F1EFEB"/>
+<defs>
+<marker id="arrow-accent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#AC6046"/></marker>
+<marker id="arrow-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#67685E"/></marker>
+<marker id="arrow-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#8C7964"/></marker>
+<marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#554C46"/></marker>
+<marker id="arrow-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#6D6A63"/></marker>
+<marker id="arrow-line" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#D8D3C8"/></marker>
+<marker id="arrow-ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#30302D"/></marker>
+</defs>
+<g font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, Arial, sans-serif">
+<g id="_v1" data-kind="rect" data-content-text="false" data-box="64,204,225,58">
+<rect x="64" y="204" width="225" height="58" rx="10" fill="#ECECE5" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="_v2" data-kind="text" data-content-text="false" data-box="80,216,193,34">
+
+<text x="80" y="239.175" text-anchor="start" font-size="19" font-weight="400" fill="#30302D">处理方向</text>
+</g>
+<g id="_v3" data-kind="rect" data-content-text="false" data-box="289,204,361.75,58">
+<rect x="289" y="204" width="361.75" height="58" rx="10" fill="#ECECE5" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="_v4" data-kind="text" data-content-text="false" data-box="305,216,329.75,34">
+
+<text x="305" y="239.175" text-anchor="start" font-size="19" font-weight="400" fill="#30302D">观察与编号</text>
+</g>
+<g id="_v5" data-kind="rect" data-content-text="false" data-box="650.75,204,361.75,58">
+<rect x="650.75" y="204" width="361.75" height="58" rx="10" fill="#ECECE5" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="_v6" data-kind="text" data-content-text="false" data-box="666.75,216,329.75,34">
+
+<text x="666.75" y="239.175" text-anchor="start" font-size="19" font-weight="400" fill="#30302D">拟议行动</text>
+</g>
+<g id="_v7" data-kind="rect" data-content-text="false" data-box="1012.5,204,361.75,58">
+<rect x="1012.5" y="204" width="361.75" height="58" rx="10" fill="#ECECE5" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="_v8" data-kind="text" data-content-text="false" data-box="1028.5,216,329.75,34">
+
+<text x="1028.5" y="239.175" text-anchor="start" font-size="19" font-weight="400" fill="#30302D">负责人 / 复核</text>
+</g>
+<g id="_v9" data-kind="rect" data-content-text="false" data-box="1374.25,204,361.75,58">
+<rect x="1374.25" y="204" width="361.75" height="58" rx="10" fill="#ECECE5" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="_v10" data-kind="text" data-content-text="false" data-box="1390.25,216,329.75,34">
+
+<text x="1390.25" y="239.175" text-anchor="start" font-size="19" font-weight="400" fill="#30302D">验收方式</text>
+</g>
+<g id="_v11" data-kind="rect" data-content-text="false" data-box="64,262,225,140">
+<rect x="64" y="262" width="225" height="140" rx="10" fill="#ECECE5" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="_v12" data-kind="text" data-content-text="false" data-box="80,274,193,116">
+
+<text x="80" y="338.175" text-anchor="start" font-size="19" font-weight="400" fill="#AC6046">停止 / STOP</text>
+</g>
+<g id="_v13" data-kind="rect" data-content-text="false" data-box="289,262,361.75,140">
+<rect x="289" y="262" width="361.75" height="140" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="_v14" data-kind="text" data-content-text="false" data-box="305,274,329.75,116">
+
+<text x="305" y="337.525" text-anchor="start" font-size="17" font-weight="400" fill="#30302D">M1：重复制作同用途素材</text>
+</g>
+<g id="_v15" data-kind="rect" data-content-text="false" data-box="650.75,262,361.75,140">
+<rect x="650.75" y="262" width="361.75" height="140" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="_v16" data-kind="text" data-content-text="false" data-box="666.75,274,329.75,116">
+
+<text x="666.75" y="337.525" text-anchor="start" font-size="17" font-weight="400" fill="#30302D">A1：先检查共用素材清单</text>
+</g>
+<g id="_v17" data-kind="rect" data-content-text="false" data-box="1012.5,262,361.75,140">
+<rect x="1012.5" y="262" width="361.75" height="140" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="_v18" data-kind="text" data-content-text="false" data-box="1028.5,274,329.75,116">
+
+<text x="1028.5" y="326.05" text-anchor="start" font-size="17" font-weight="400" fill="#30302D">内容负责人</text>
+<text x="1028.5" y="349.0" text-anchor="start" font-size="17" font-weight="400" fill="#30302D">2026-10-01</text>
+</g>
+<g id="_v19" data-kind="rect" data-content-text="false" data-box="1374.25,262,361.75,140">
+<rect x="1374.25" y="262" width="361.75" height="140" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="_v20" data-kind="text" data-content-text="false" data-box="1390.25,274,329.75,116">
+
+<text x="1390.25" y="337.525" text-anchor="start" font-size="17" font-weight="400" fill="#30302D">抽查新需求是否先检索</text>
+</g>
+<g id="_v21" data-kind="rect" data-content-text="false" data-box="64,402,225,140">
+<rect x="64" y="402" width="225" height="140" rx="10" fill="#ECECE5" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="_v22" data-kind="text" data-content-text="false" data-box="80,414,193,116">
+
+<text x="80" y="478.175" text-anchor="start" font-size="19" font-weight="400" fill="#AC6046">开始 / START</text>
+</g>
+<g id="_v23" data-kind="rect" data-content-text="false" data-box="289,402,361.75,140">
+<rect x="289" y="402" width="361.75" height="140" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="_v24" data-kind="text" data-content-text="false" data-box="305,414,329.75,116">
+
+<text x="305" y="477.525" text-anchor="start" font-size="17" font-weight="400" fill="#30302D">M2：活动页缺少答疑入口</text>
+</g>
+<g id="_v25" data-kind="rect" data-content-text="false" data-box="650.75,402,361.75,140">
+<rect x="650.75" y="402" width="361.75" height="140" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="_v26" data-kind="text" data-content-text="false" data-box="666.75,414,329.75,116">
+
+<text x="666.75" y="466.05" text-anchor="start" font-size="17" font-weight="400" fill="#30302D">A2：试加答疑入口</text>
+<text x="666.75" y="489.0" text-anchor="start" font-size="17" font-weight="400" fill="#30302D">待小流量验证</text>
+</g>
+<g id="_v27" data-kind="rect" data-content-text="false" data-box="1012.5,402,361.75,140">
+<rect x="1012.5" y="402" width="361.75" height="140" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="_v28" data-kind="text" data-content-text="false" data-box="1028.5,414,329.75,116">
+
+<text x="1028.5" y="466.05" text-anchor="start" font-size="17" font-weight="400" fill="#30302D">运营负责人</text>
+<text x="1028.5" y="489.0" text-anchor="start" font-size="17" font-weight="400" fill="#30302D">2026-10-03</text>
+</g>
+<g id="_v29" data-kind="rect" data-content-text="false" data-box="1374.25,402,361.75,140">
+<rect x="1374.25" y="402" width="361.75" height="140" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="_v30" data-kind="text" data-content-text="false" data-box="1390.25,414,329.75,116">
+
+<text x="1390.25" y="477.525" text-anchor="start" font-size="17" font-weight="400" fill="#30302D">记录问题触达与解决情况</text>
+</g>
+<g id="_v31" data-kind="rect" data-content-text="false" data-box="64,542,225,140">
+<rect x="64" y="542" width="225" height="140" rx="10" fill="#ECECE5" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="_v32" data-kind="text" data-content-text="false" data-box="80,554,193,116">
+
+<text x="80" y="618.175" text-anchor="start" font-size="19" font-weight="400" fill="#AC6046">继续 / CONTINUE</text>
+</g>
+<g id="_v33" data-kind="rect" data-content-text="false" data-box="289,542,361.75,140">
+<rect x="289" y="542" width="361.75" height="140" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="_v34" data-kind="text" data-content-text="false" data-box="305,554,329.75,116">
+
+<text x="305" y="617.525" text-anchor="start" font-size="17" font-weight="400" fill="#30302D">M3：每日交接能发现遗漏</text>
+</g>
+<g id="_v35" data-kind="rect" data-content-text="false" data-box="650.75,542,361.75,140">
+<rect x="650.75" y="542" width="361.75" height="140" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="_v36" data-kind="text" data-content-text="false" data-box="666.75,554,329.75,116">
+
+<text x="666.75" y="617.525" text-anchor="start" font-size="17" font-weight="400" fill="#30302D">A3：保留交接与问题清单</text>
+</g>
+<g id="_v37" data-kind="rect" data-content-text="false" data-box="1012.5,542,361.75,140">
+<rect x="1012.5" y="542" width="361.75" height="140" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="_v38" data-kind="text" data-content-text="false" data-box="1028.5,554,329.75,116">
+
+<text x="1028.5" y="606.05" text-anchor="start" font-size="17" font-weight="400" fill="#30302D">项目负责人</text>
+<text x="1028.5" y="629.0" text-anchor="start" font-size="17" font-weight="400" fill="#30302D">2026-10-05</text>
+</g>
+<g id="_v39" data-kind="rect" data-content-text="false" data-box="1374.25,542,361.75,140">
+<rect x="1374.25" y="542" width="361.75" height="140" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="_v40" data-kind="text" data-content-text="false" data-box="1390.25,554,329.75,116">
+
+<text x="1390.25" y="617.525" text-anchor="start" font-size="17" font-weight="400" fill="#30302D">复查遗漏项是否关闭</text>
+</g>
+<g id="_v41" data-kind="rect" data-content-text="false" data-box="64,682,225,140">
+<rect x="64" y="682" width="225" height="140" rx="10" fill="#ECECE5" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="_v42" data-kind="text" data-content-text="false" data-box="80,694,193,116">
+
+<text x="80" y="758.175" text-anchor="start" font-size="19" font-weight="400" fill="#AC6046">保留分歧 / OPEN</text>
+</g>
+<g id="_v43" data-kind="rect" data-content-text="false" data-box="289,682,361.75,140">
+<rect x="289" y="682" width="361.75" height="140" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="_v44" data-kind="text" data-content-text="false" data-box="305,694,329.75,116">
+
+<text x="305" y="757.525" text-anchor="start" font-size="17" font-weight="400" fill="#30302D">M4：不同渠道应否共用文案</text>
+</g>
+<g id="_v45" data-kind="rect" data-content-text="false" data-box="650.75,682,361.75,140">
+<rect x="650.75" y="682" width="361.75" height="140" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="_v46" data-kind="text" data-content-text="false" data-box="666.75,694,329.75,116">
+
+<text x="666.75" y="757.525" text-anchor="start" font-size="17" font-weight="400" fill="#30302D">暂不决策；先补用户差异证据</text>
+</g>
+<g id="_v47" data-kind="rect" data-content-text="false" data-box="1012.5,682,361.75,140">
+<rect x="1012.5" y="682" width="361.75" height="140" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="_v48" data-kind="text" data-content-text="false" data-box="1028.5,694,329.75,116">
+
+<text x="1028.5" y="746.05" text-anchor="start" font-size="17" font-weight="400" fill="#30302D">研究负责人</text>
+<text x="1028.5" y="769.0" text-anchor="start" font-size="17" font-weight="400" fill="#30302D">2026-10-06</text>
+</g>
+<g id="_v49" data-kind="rect" data-content-text="false" data-box="1374.25,682,361.75,140">
+<rect x="1374.25" y="682" width="361.75" height="140" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="_v50" data-kind="text" data-content-text="false" data-box="1390.25,694,329.75,116">
+
+<text x="1390.25" y="757.525" text-anchor="start" font-size="17" font-weight="400" fill="#30302D">提交证据后再讨论</text>
+</g>
+<g id="_v51" data-kind="text" data-content-text="false" data-box="64,34,1672,22">
+
+<text x="64" y="49.55" text-anchor="start" font-size="14" font-weight="400" fill="#AC6046">WORKSHOP STUDY / RETROSPECTIVE</text>
+</g>
+<g id="_v52" data-kind="text" data-content-text="false" data-box="64,69,1672,56">
+
+<text x="64" y="108.7" text-anchor="start" font-size="36" font-weight="400" fill="#30302D">营销活动复盘 · 从观察到可验证行动</text>
+</g>
+<g id="_v53" data-kind="text" data-content-text="false" data-box="64,130,1672,38">
+
+<text x="64" y="154.525" text-anchor="start" font-size="17" font-weight="400" fill="#6D6A63">讨论观点、决定与执行分开；下面责任人、时间与指标均为模拟安排</text>
+</g>
+<g id="_v54" data-kind="rect" data-content-text="false" data-box="64,977,1672,1">
+<rect x="64" y="977" width="1672" height="1" rx="0" fill="#D8D3C8" stroke="none" stroke-width="1.5"/>
+</g>
+<g id="_v55" data-kind="text" data-content-text="false" data-box="64,990,1672,36">
+
+<text x="64" y="1012.55" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">模拟输入 · 保留来源编号与待验证状态 · 独立创作，不是 Boardmix 模板复制</text>
+</g>
+</g></svg>

@@ -19,7 +19,7 @@ You can also compare **different visual expressions of the same source data**, c
 
 ## How to use it
 
-If you are unsure which form to use, clone the repository and open the local [bilingual diagram chooser](demos/chooser/index.html) in a browser. Select the reader's question, a diagram form, and a visual direction; then enter your content and copy the resulting `$diagram-studio` prompt. It covers 15 common forms and explains the choice. The chooser itself does not render arbitrary input; Codex uses the skill to make the final diagram. Style thumbnails are directional sketches; see the [validated style scope](references/style-families.md).
+If you are unsure which form to use, clone the repository and open the local [bilingual diagram chooser](demos/chooser/index.html) in a browser. Select the reader's question, a diagram form, and a visual direction; then enter your content and copy the resulting `$diagram-studio` prompt. It covers 19 common forms and explains the choice. The chooser itself does not render arbitrary input; Codex uses the skill to make the final diagram. Style thumbnails are directional sketches; see the [validated style scope](references/style-families.md).
 
 ### 1. Install it for Codex
 
@@ -56,6 +56,10 @@ python3 scripts/expression_lab.py --out /tmp/diagram-expression-lab
 ```
 
 The first four commands generate architecture and workflow examples in English and Chinese. Ordinary `render.py` output includes SVG, editable draw.io, the source brief, a scene file, and a QA record. Adaptive output also includes a reading HTML page and multipage source. The last command creates an offline comparison page for four simulated studies and eight expressions. See the [input and output reference](references/rendering.md). Some specialist charts require Matplotlib; Pillow is optional for more accurate font measurement in adaptive layouts.
+
+## Diverse whiteboard methods and UX
+
+Public Boardmix research informs a new Insights & workshops route: affinity, journey, retrospective and user story mapping. The chooser explains purpose, required content and actual support, links to examples, and preserves input and keyboard focus. Three original simulated studies cover education, retail and marketing. Story mapping is a method recipe requiring a newly checked layout; live collaboration and voting services are not implemented. See [methods and sources](references/boardmix-study.en.md) and [examples](demos/workshop-study/index.html).
 
 ## Five refined forms and their checks
 
