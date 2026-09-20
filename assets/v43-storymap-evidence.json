@@ -101,7 +101,34 @@
     "content input retains focus while prompt updates",
     "final storymap format explicitly includes SVG, draw.io and JSON"
   ],
-  "native_drawio": "XML object structure and IDs checked; native editor edit/save/reopen not run",
+  "native_drawio": "passed: draw.io web editor opened the public .drawio source, edited one node, saved to browser storage, reopened from recent files, and preserved the edited node plus the story-map structure",
+  "native_drawio_roundtrip": {
+    "editor": "draw.io web app (app.diagrams.net, offline mode)",
+    "source": "demos/storymap/education-storymap.drawio via the public raw GitHub URL",
+    "save_target": "browser storage (storymap-roundtrip-browser-v43.drawio)",
+    "edit": "完成报名 → 完成报名（已验证）",
+    "reopen": "File > Open recent files > current window",
+    "reopened_title": "storymap-roundtrip-browser-v43.drawio - draw.io app",
+    "reopened_text_checks": [
+      "完成报名（已验证）",
+      "01 / discover",
+      "03 / learn",
+      "R1",
+      "R2",
+      "S01",
+      "S06",
+      "— 未安排"
+    ],
+    "roundtrip_xml_checks": {
+      "root": "mxfile",
+      "cell_count": 58,
+      "edge_count": 3,
+      "edge_ids": ["_edge_0", "_edge_1", "_edge_2"],
+      "edited_text_present": true,
+      "download_sha256": "ebbf3519170326002c0828e28565e169fe4c0b87727adcc35e268d9802c80427"
+    },
+    "negative_check": "万兴图示拒绝直接打开 .drawio；draw.io 是该交付格式的验证编辑器"
+  },
   "user_visual_acceptance": "not received",
   "research_followup": "Synthetic Boardmix sticky long-text growth/undo and one public user work inspected; see boardmix-deep-study-evidence.json"
 }

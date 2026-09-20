@@ -37,4 +37,4 @@ Open `http://127.0.0.1:8772/`. The bilingual gallery compares five originals, fi
 
 Check content first, then actual browser geometry and visual hierarchy, then a meaningful content change, and finally editing in the target application. The negative browser fixture in the v40 evidence deliberately overlaps two labels to confirm that cross-group checking detects collisions. Successful geometry is not automatic aesthetic approval.
 
-已测范围见 [verification-status.md](verification-status.md) 与 [v40 evidence](../assets/v40-browser-evidence.json)。当前原生编辑实测仅覆盖流程图的节点文字修改、浏览器保存与重新打开；未验证全部图型、拖动路由和全部编辑器。移动端 390px 尺寸尝试未生效，不能把桌面结果记为移动端通过。
+已测范围见 [verification-status.md](verification-status.md)、[v40 evidence](../assets/v40-browser-evidence.json) 与 [v43 story-map evidence](../assets/v43-storymap-evidence.json)。原生编辑实测已覆盖流程图节点文字修改，以及故事地图在 draw.io 中的文字修改、浏览器保存、最近文件重开和结构保留；仍未验证全部图型、拖动路由和全部编辑器。移动端 390px 尺寸尝试未生效，不能把桌面结果记为移动端通过。

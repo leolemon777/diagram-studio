@@ -383,7 +383,10 @@ def _draw_publication(ax,data):
         ax.add_patch(Rectangle((x,y),bw,bh,fc=c,alpha=.10,ec=c,lw=.9,zorder=1))
         mark_container(ax.text(x+.012*w,y+bh-.014*h,_wrap(row['label'],24),fontsize=max(5.6,min(9,6.2+bh*3)),color=INK,weight='medium',va='top'),ax,(x,y,bw,bh),f"block:{row['id']}:label")
         if row.get('content'):
-            mark_container(ax.text(x+.012*w,y+bh*.40,_wrap(row['content'],28),fontsize=max(4.8,min(7,5.1+bh*2)),color=MUTED,va='top'),ax,(x,y,bw,bh),f"block:{row['id']}:content")
+            # Keep the content baseline slightly higher inside short blocks.  A
+            # font fallback can add about one pixel of descent, which otherwise
+            # makes a one-line contact block fail the rendered-boundary check.
+            mark_container(ax.text(x+.012*w,y+bh*.43,_wrap(row['content'],28),fontsize=max(4.8,min(7,5.1+bh*2)),color=MUTED,va='top'),ax,(x,y,bw,bh),f"block:{row['id']}:content")
     ax.text(ox,oy-.025,f"{sheet['width']} × {sheet['height']} {sheet['unit']} · 阅读顺序与内容角色已校验",fontsize=6.5,color=MUTED,va='top')
 
 
