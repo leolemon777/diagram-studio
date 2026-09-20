@@ -69,7 +69,7 @@ python3 scripts/expression_lab.py --out /tmp/diagram-expression-lab
 
 ## 流程与交付改进
 
-普通自适应流程现在会分别处理前进分支与回流，保留所有连线标签。阅读页支持中英界面与“总览 / 清晰阅读”，并显示实际字号；字太小会提示复核。`render.py` 先在临时目录完成整套图和详页检查，再替换成品；生成失败会保留上一版，成功附 `delivery.json` 输入与输出校验记录。具体范围与限制见[自适应布局](references/adaptive-layout.md)。这些改进吸收了 [Archify](https://github.com/tt-a1i/archify) 的公开设计思路，代码独立实现。
+普通自适应流程现在会分别处理前进分支与回流，保留所有连线标签。阅读页支持中英界面与“总览 / 清晰阅读”，并显示实际字号；字太小会提示复核。`render.py` 先在临时目录完成整套图和详页检查，再替换成品；生成失败会保留上一版，成功附 `delivery.json` 输入与输出校验记录。公共协议还可检查稳定 ID、关系端点、显示文本和独立版本快照，见[交付协议](references/delivery-contract.md)。具体范围与限制见[自适应布局](references/adaptive-layout.md)。这些改进吸收了 [Archify](https://github.com/tt-a1i/archify) 的公开设计思路，代码独立实现。
 
 ## 交付与边界
 

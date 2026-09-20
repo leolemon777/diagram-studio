@@ -1,5 +1,8 @@
 {
   "schema_version": 1,
+  "protocol_version": "diagram-studio/delivery-1",
+  "version_id": "v-0b83fc2a696d",
+  "source_name": "education-storymap",
   "input_sha256": "0b83fc2a696d0eb238f49116a0c29fb5b04906b7c39b6afec2f4898ff6cb80ca",
   "theme": "light",
   "checks": {
@@ -10,6 +13,16 @@
     "composition": {
       "status": "not-run",
       "findings": []
+    },
+    "content_integrity": {
+      "status": "passed",
+      "source_ids": 6,
+      "source_relations": 0,
+      "source_texts": 18,
+      "missing_ids": [],
+      "missing_relations": [],
+      "missing_text": [],
+      "scope": "stable source IDs, explicit relation endpoints and source display text; not domain correctness"
     },
     "browser_text_bounds": {
       "status": "not-run"
@@ -29,9 +42,9 @@
     "education-storymap.brief.json": "8b6bcadcc83a81b8b34a5439cdda5dde4bd4790e4ef441e6b2e3e5745d8c2569",
     "education-storymap.drawio": "952d0c03d42d63d579c68def24fcb7a57fb4236cf4854be8d98082324512568c",
     "education-storymap.html": "3f1e35978756a1c68bbc34aec9ffc1a39011a42a2b3472b96330b9497857f648",
-    "education-storymap.qa.json": "f2013dae791fbc5866e9ef12ba8cd7e55cbd84b7cafa5aa48905b17f29957a11",
+    "education-storymap.qa.json": "caaa3fec0a945d7b7672113cc0218e7b8976b9b3a9e6137f08aa9cf659ac47f6",
     "education-storymap.scene.json": "93914b9882f07c551e146c721a6f74eb097fba97f70ed84304b889f0332098b7",
     "education-storymap.svg": "5f6c6d856b93c5aeca1ef28ae1618d7e80d79c7f0043754eaf6438374d16b9dd"
   },
-  "delivery_scope": "Generation and QA finish before replacement. Individual files are replaced; promotion is not a multi-file atomic transaction."
+  "delivery_scope": "Generation, semantic content checks and QA finish before replacement. Individual files are replaced; promotion is not a multi-file atomic transaction."
 }

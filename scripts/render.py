@@ -4,6 +4,7 @@ import argparse, copy, datetime as dt, hashlib, html, json, math, os, re, sys, t
 from pathlib import Path
 import xml.etree.ElementTree as ET
 from editorial_style import vector_themes
+from delivery_contract import content_integrity, make_receipt, snapshot, verify_receipt
 
 THEMES = {
  'light':dict(bg='#F1EFEB',panel='#FEFDF9',ink='#30302D',muted='#6D6A63',line='#D8D3C8',accent='#AC6046',teal='#67685E',amber='#8C7964',red='#554C46',tint='#F0E4DA',tint2='#ECECE5'),
@@ -541,10 +542,13 @@ def audit(s):
 def _render_files(source,out,theme='light'):
     source=Path(source);d=json.loads(source.read_text(encoding='utf-8'));need(theme in THEMES,'unknown theme');s=build(d,theme);qa=audit(s)
     out=Path(out);out.mkdir(parents=True,exist_ok=True);stem=source.stem
-    (out/(stem+'.qa.json')).write_text(json.dumps(qa,ensure_ascii=False,indent=2),encoding='utf-8')
     need(not qa['errors'],'layout audit failed: '+'; '.join(qa['errors']))
     (out/(stem+'.svg')).write_text(svg(s),encoding='utf-8');(out/(stem+'.drawio')).write_text(drawio(s),encoding='utf-8')
-    (out/(stem+'.scene.json')).write_text(json.dumps(dict(width=s.w,height=s.h,theme=theme,palette=s.palette,nodes=s.nodes,edges=s.edges,meta=s.meta,assumptions=d.get('assumptions',[])),ensure_ascii=False,indent=2),encoding='utf-8')
+    scene_payload=dict(width=s.w,height=s.h,theme=theme,palette=s.palette,nodes=s.nodes,edges=s.edges,meta=s.meta,assumptions=d.get('assumptions',[]))
+    (out/(stem+'.scene.json')).write_text(json.dumps(scene_payload,ensure_ascii=False,indent=2),encoding='utf-8')
+    qa['content_integrity']=content_integrity(d,scene_payload)
+    need(qa['content_integrity']['status']!='failed','source content integrity failed: '+json.dumps(qa['content_integrity'],ensure_ascii=False))
+    (out/(stem+'.qa.json')).write_text(json.dumps(qa,ensure_ascii=False,indent=2),encoding='utf-8')
     (out/(stem+'.brief.json')).write_text(json.dumps(d,ensure_ascii=False,indent=2),encoding='utf-8')
     result=dict(svg=str(out/(stem+'.svg')),drawio=str(out/(stem+'.drawio')),qa=qa)
     if s.meta.get('adaptive_layout') or s.meta.get('refined_layout'):
@@ -552,7 +556,7 @@ def _render_files(source,out,theme='light'):
         result['reading_view']=deliver(s,d,out,stem)
     return result
 
-def render_file(source,out,theme='light'):
+def render_file(source,out,theme='light',version_root=None):
     """Validate a complete staged delivery before touching the last good files.
 
     Promotion uses individual file replacements, not a filesystem transaction;
@@ -570,13 +574,13 @@ def render_file(source,out,theme='light'):
         if adaptive.get('readability',{}).get('status')=='review-required':
             findings.append({'kind':'small-overview-text',**adaptive['readability']})
         files=sorted(stage.iterdir())
-        receipt={'schema_version':1,'input_sha256':hashlib.sha256(raw).hexdigest(),'theme':theme,
-                 'checks':{'geometry':{'status':'passed','warnings':qa['warnings']},
-                           'composition':{'status':('review-required' if findings else 'within-target') if adaptive else 'not-run','findings':findings},
-                           'browser_text_bounds':{'status':'not-run'},'manual_visual_review':{'status':'not-run'},
-                           'native_editor':{'status':'not-run'}},
-                 'files':{p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in files},
-                 'delivery_scope':'Generation and QA finish before replacement. Individual files are replaced; promotion is not a multi-file atomic transaction.'}
+        receipt=make_receipt(raw,stage,source_name=stem,theme=theme,
+                 checks={'geometry':{'status':'passed','warnings':qa['warnings']},
+                         'composition':{'status':('review-required' if findings else 'within-target') if adaptive else 'not-run','findings':findings},
+                         'content_integrity':qa.get('content_integrity',{'status':'not-run'}),
+                         'browser_text_bounds':{'status':'not-run'},'manual_visual_review':{'status':'not-run'},
+                         'native_editor':{'status':'not-run'}},
+                 delivery_scope='Generation, semantic content checks and QA finish before replacement. Individual files are replaced; promotion is not a multi-file atomic transaction.')
         receipt_path=stage/(stem+'.delivery.json')
         receipt_path.write_text(json.dumps(receipt,ensure_ascii=False,indent=2),encoding='utf-8')
         out.mkdir(parents=True,exist_ok=True)
@@ -585,13 +589,20 @@ def render_file(source,out,theme='light'):
             os.replace(p,out/p.name)
         result['svg']=str(out/(stem+'.svg'));result['drawio']=str(out/(stem+'.drawio'))
         result['receipt']=str(out/receipt_path.name)
+        verify_receipt(result['receipt'])
         if 'reading_view' in result:
             result['reading_view']['html']=str(out/(stem+'.html'))
             result['reading_view']['index']=str(out/(stem+'-reading.json'))
+        if version_root:
+            version_dir=snapshot(out,result['receipt'],version_root)
+            receipt['version_dir']=str(version_dir)
+            receipt_path=out/receipt_path.name
+            receipt_path.write_text(json.dumps(receipt,ensure_ascii=False,indent=2),encoding='utf-8')
+            snapshot(out,receipt_path,version_root)
         return result
 
 def main():
-    p=argparse.ArgumentParser(description=__doc__);p.add_argument('source');p.add_argument('--out',required=True);p.add_argument('--theme',choices=THEMES,default='light');args=p.parse_args()
-    try:print(json.dumps(render_file(args.source,args.out,args.theme),ensure_ascii=False))
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('source');p.add_argument('--out',required=True);p.add_argument('--theme',choices=THEMES,default='light');p.add_argument('--version-root',help='copy the completed delivery into <version-root>/<version-id>');args=p.parse_args()
+    try:print(json.dumps(render_file(args.source,args.out,args.theme,args.version_root),ensure_ascii=False))
     except (KeyError,ValueError,TypeError) as e:print('ERROR: '+str(e),file=sys.stderr);sys.exit(2)
 if __name__=='__main__':main()

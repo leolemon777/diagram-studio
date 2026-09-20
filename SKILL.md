@@ -82,7 +82,7 @@ English users can read the [English usage guide](README.en.md); the same input m
    ```bash
    python3 <skill-dir>/scripts/render.py brief.json --out <output-dir> --theme light
    ```
-   生成 `.svg`、`.drawio`、`.scene.json` 和 `.qa.json`。自适应模式还生成离线阅读 HTML、阅读详页、关系索引和多页 draw.io。原始 brief 也随交付保存。该脚本是排版与导出器，自然语言理解与视觉判断由当前助手完成；没有隐藏的远程 AI 请求。
+   生成 `.svg`、`.drawio`、`.scene.json` 和 `.qa.json`。自适应模式还生成离线阅读 HTML、阅读详页、关系索引和多页 draw.io。原始 brief 也随交付保存，并按 [公共交付协议](references/delivery-contract.md) 生成哈希、内容保留检查和交付记录；需要独立版本目录时使用 `--version-root`。该脚本是排版与导出器，自然语言理解与视觉判断由当前助手完成；没有隐藏的远程 AI 请求。
    生成器未覆盖的标准符号/版式可直接编写 SVG 与原生可编辑源；不要把普通矩形重命名成“完整 BPMN / UML / 电气图”。详见格式参考的能力边界。
    BPMN 协作子集使用 `scripts/bpmn_source.py` 导出真实 `.bpmn`；28种统计/科研模式（含三线表、消融表）用 `scripts/scientific_plot.py` 计算并绘制。输入、依赖和适用范围见 [专业后端](references/advanced-backends.md)。卡片推荐的其他工具不等于本机已安装或已运行，先确认再使用。
 7. 按 [检查规则](references/quality.md) 检查语义和视觉；打开真正的输出查看整图和文字细节。检查失败就修正源模型后重新生成。QA 的 `rendered_visual_check` 只表示已运行的渲染边界检查，`manual_visual_review` 只有实际查看后才能写为完成。验证是否可编辑时实际打开源文件；XML 可解析不等于编辑器验证通过。

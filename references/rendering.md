@@ -4,7 +4,7 @@
 
 `light` 为暖灰科研默认；`dark` 为深色阅读变体；`mono` 为黑白论文变体。风格由用户指定，参考 style.md。
 
-基础生成使用 Python 3.9+ 标准库，无 API 密钥、无远程请求、无付费生成调用。v38 自适应布局可选 Pillow 获取真实字体度量，缺少时记录为保守估算，见 [自适应布局](adaptive-layout.md)。读 brief，建立对象坐标和关系，再导出 SVG / drawio / scene JSON / brief 副本 / QA JSON；自适应模式还导出阅读 HTML 与多页源。输出目录已存在时会覆盖同名生成文件，修改用户图时使用新目录或新名称。
+基础生成使用 Python 3.9+ 标准库，无 API 密钥、无远程请求、无付费生成调用。v38 自适应布局可选 Pillow 获取真实字体度量，缺少时记录为保守估算，见 [自适应布局](adaptive-layout.md)。读 brief，建立对象坐标和关系，再导出 SVG / drawio / scene JSON / brief 副本 / QA JSON；自适应模式还导出阅读 HTML 与多页源。每次成功生成附带公共 [交付协议](delivery-contract.md) 记录，检查输入身份、关系和显示文本的保留；需要独立版本目录时传 `--version-root`。输出目录已存在时会覆盖同名生成文件，修改用户图时使用新目录或新名称。
 
 ## 用户定义配色
 
