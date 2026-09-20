@@ -1,9 +1,18 @@
 {
-  "version": "v38",
+  "version": "v40",
   "v38_evidence": {
-    "adaptive_types": ["graph", "tree", "architecture"],
+    "adaptive_types": [
+      "graph",
+      "tree",
+      "architecture"
+    ],
     "simulated_stress_cases": 4,
-    "source_node_counts": [21,18,27,5],
+    "source_node_counts": [
+      21,
+      18,
+      27,
+      5
+    ],
     "browser_evidence": "assets/v38-browser-evidence.json",
     "manual_visual_review": "four representative cases and selected reading pages; not every page",
     "native_drawio_editing": "not run",
@@ -42,10 +51,30 @@
     },
     "gantt_variants": {
       "shared_task_count": 8,
-      "variants": ["executive", "delivery", "print"],
+      "variants": [
+        "executive",
+        "delivery",
+        "print"
+      ],
       "rendered_visual_check": "not run; generic geometry and text estimates only",
       "manual_visual_review": "v37 original SVG layouts reviewed; native editor not run",
       "critical_path": "not calculated"
     }
+  },
+  "v40_evidence": {
+    "refined_forms": [
+      "workflow",
+      "architecture",
+      "gantt-delivery",
+      "comparison",
+      "trend"
+    ],
+    "generated_variants": 11,
+    "regression_tests": 34,
+    "browser_pages": 12,
+    "browser_evidence": "assets/v40-browser-evidence.json",
+    "native_drawio_editing": "workflow node text edit, save, reload only",
+    "mobile": "not verified: viewport override ineffective",
+    "user_visual_acceptance": "not received"
   }
 }

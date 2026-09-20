@@ -1,0 +1,161 @@
+{
+  "version": 40,
+  "date": "2026-09-20",
+  "method": "Actual Chromium DOM SVG bounds from browser_quality.js; UI actions through Codex browser tooling.",
+  "viewport": [
+    1280,
+    720
+  ],
+  "mode": "readable",
+  "records": [
+    {
+      "file": "workflow/base/source.svg",
+      "sha256": "47122224fcd70179b2551d0e34fe60d0ab0eb70c0b5c7ab1be64c427bd08f4fe",
+      "status": "passed",
+      "texts": 18,
+      "issues": [],
+      "minimum_content_font_px": 12
+    },
+    {
+      "file": "workflow/changed/source.svg",
+      "sha256": "086e9adbf2610d0e166751315a0a77e41c033424e6bc8470fe0599ff9d58f9da",
+      "status": "passed",
+      "texts": 24,
+      "issues": [],
+      "minimum_content_font_px": 12
+    },
+    {
+      "file": "architecture/base/source.svg",
+      "sha256": "3588d3b07df3cfae408cfb7c05c1393e511aa7e61b9e0675ba3a0348c256d1d5",
+      "status": "passed",
+      "texts": 28,
+      "issues": [],
+      "minimum_content_font_px": 12.49
+    },
+    {
+      "file": "architecture/changed/source.svg",
+      "sha256": "7fab251556e985496c2a97a198ee587ca3776b05873b4f756421be78ba994d5d",
+      "status": "passed",
+      "texts": 33,
+      "issues": [],
+      "minimum_content_font_px": 12.5
+    },
+    {
+      "file": "gantt/base/source.svg",
+      "sha256": "a854fcca70f161ebd70e4e180cfe15990ec62fa8cffa79fde2bfa6acafa43234",
+      "status": "passed",
+      "texts": 39,
+      "issues": [],
+      "minimum_content_font_px": 12
+    },
+    {
+      "file": "gantt/changed/source.svg",
+      "sha256": "648dd80e3e475a02703a162e35e9e0e48172ef680ac3bd0dc22e5cc8e7ec4229",
+      "status": "passed",
+      "texts": 44,
+      "issues": [],
+      "minimum_content_font_px": 12
+    },
+    {
+      "file": "comparison/base/source.svg",
+      "sha256": "87c0fd6dcaff2e21fb1c6e50d98b2c618ab2359967b5704597049adfd5ca9d1b",
+      "status": "passed",
+      "texts": 18,
+      "issues": [],
+      "minimum_content_font_px": 12
+    },
+    {
+      "file": "comparison/changed/source.svg",
+      "sha256": "faf70d99533a8e5bbad6fc67a0d965d5849ab57e2c5cc39bec93d7255741a202",
+      "status": "passed",
+      "texts": 21,
+      "issues": [],
+      "minimum_content_font_px": 12
+    },
+    {
+      "file": "comparison/dot/source.svg",
+      "sha256": "d0576b6a41948bb64a3c2db442c8eedad2375b02e3ac19603e5abbf8b532035b",
+      "status": "passed",
+      "texts": 18,
+      "issues": [],
+      "minimum_content_font_px": 12
+    },
+    {
+      "file": "trend/base/source.svg",
+      "sha256": "2635cc41898d7f28552bb85248dae364fa0bca71db8c3507a2487214521fb61f",
+      "status": "passed",
+      "texts": 30,
+      "issues": [],
+      "minimum_content_font_px": 12
+    },
+    {
+      "file": "trend/changed/source.svg",
+      "sha256": "501bf3416807c13c0dc25e7176de7adeff7d34fda65078eee215e5863bb00acd",
+      "status": "passed",
+      "texts": 33,
+      "issues": [],
+      "minimum_content_font_px": 12
+    },
+    {
+      "file": "architecture/changed/source-p01.svg",
+      "sha256": "97e51544fdad9e1d9831c09a16676695425e01e60b406d35135b361fe7e1524c",
+      "status": "passed",
+      "texts": 28,
+      "issues": [],
+      "minimum_content_font_px": 12
+    }
+  ],
+  "negative_control": {
+    "fixture": "Two independent groups, text at (40,70) and (50,70), font size 24, both inside 500x160 containers; root data-quality=refined.",
+    "status": "issues-found",
+    "issue": "cross-group-text-overlap",
+    "texts": 2
+  },
+  "manual_review": {
+    "scope": "Workflow base, architecture base and changed, Gantt changed, comparison dot, trend changed, architecture changed object-detail page; representative screenshots and scroll views, not every pixel of every output.",
+    "changes_from_review": [
+      "Decision label wrapping",
+      "Architecture band width and columns",
+      "Comparison excess canvas space",
+      "Gantt dependency detours"
+    ],
+    "user_aesthetic_acceptance": "not-received"
+  },
+  "native_editor": {
+    "application": "app.diagrams.net web editor",
+    "source": "workflow/base/source.drawio",
+    "sha256": "ddb19fd79194e11e12bf83225e029970a0b578dbb4b7b0cfa3429cb0d870e36b",
+    "import_method": "Exact generated mxGraphModel pasted through Edit Diagram UI",
+    "action": "Changed receive label from 接收请求 to 接收请求·复核; saved as diagram-studio-v40-edit-check.drawio in browser storage; reloaded.",
+    "result": "Modified text visible after reload; Edit Diagram source retained 11 vertices and all 7 source/target relations.",
+    "not_checked": [
+      "Node dragging/rerouting",
+      "Other diagram forms",
+      "Other editors",
+      "Direct filesystem-open workflow"
+    ]
+  },
+  "responsive": {
+    "requested_viewport": [
+      390,
+      844
+    ],
+    "actual_viewport": [
+      1280,
+      720
+    ],
+    "status": "not-verified",
+    "reason": "Viewport override did not change the actual browser window; not counted as mobile evidence."
+  },
+  "regression": {
+    "command": "python -m unittest discover -s tests",
+    "tests": 34,
+    "status": "passed"
+  },
+  "limits": [
+    "Automated text checks are not aesthetic approval",
+    "No exhaustive detail-page review",
+    "No engineering/domain approval",
+    "Generation records retain not-run until external review; this evidence is tied to these hashes only"
+  ]
+}

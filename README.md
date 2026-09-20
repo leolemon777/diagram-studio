@@ -57,6 +57,12 @@ python3 scripts/expression_lab.py --out /tmp/diagram-expression-lab
 
 前四条分别生成中英架构图、流程图。`render.py` 的普通输出包含 SVG、draw.io、原始 brief、场景和检查记录；自适应模式还会生成阅读 HTML 与多页源。最后一条生成四组、八种表达的离线对照页；演示数据均为模拟数据。更多输入字段见 [生成格式](references/rendering.md)。部分专业图表需要 Matplotlib，自适应字宽度量可选 Pillow；缺少依赖时按对应后端文档安装。
 
+## 五类精修与验收
+
+普通流程、分层架构、执行甘特、单系列对比和趋势新增精修模式：按长文字扩展、区分主线和回流、保留正负值与缺测，提供不同表达。运行 `python3 scripts/refinement_suite.py --out /tmp/diagram-refinement`，再用本地 HTTP 服务打开该目录，可查看中英切换的 11 份原版、修改与对照样例。输入方式与范围见 [五类精修规则](references/refinement.md)。
+
+本轮 34 项回归通过，11 份总览通过桌面浏览器实际文字检查；流程样例已在 draw.io 修改节点文字、保存并重开。检查不代表所有图型、移动屏幕或审美已获验收，详见 [验证记录](references/verification-status.md)。
+
 ## 流程与交付改进
 
 普通自适应流程现在会分别处理前进分支与回流，保留所有连线标签。阅读页支持中英界面与“总览 / 清晰阅读”，并显示实际字号；字太小会提示复核。`render.py` 先在临时目录完成整套图和详页检查，再替换成品；生成失败会保留上一版，成功附 `delivery.json` 输入与输出校验记录。具体范围与限制见[自适应布局](references/adaptive-layout.md)。这些改进吸收了 [Archify](https://github.com/tt-a1i/archify) 的公开设计思路，代码独立实现。

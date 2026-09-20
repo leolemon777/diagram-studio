@@ -158,7 +158,11 @@ def dimensions(n, width):
         widest=max((METRICS.width(t,22) for t in tokens),default=0)
         if widest<=180:width=max(width,math.ceil((widest+8)*2/8)*8)
     inset = width * .5 if kind == 'diamond' else width * .25 if kind == 'ellipse' else 40
-    lines = [(t, 22, True, 'ink') for t in METRICS.wrap(n['label'], width - inset, 22)]
+    wrapped=METRICS.wrap(n['label'], width-inset,22)
+    decision=re.fullmatch(r'(是否|能否|有无)([\u3400-\u9fff？?]{2,6})',n['label'])
+    if kind=='diamond' and len(wrapped)>1 and decision and METRICS.width(decision[2],22)<=width-inset:
+        wrapped=[decision[1],decision[2]]
+    lines = [(t, 22, True, 'ink') for t in wrapped]
     if n.get('detail'):
         lines.extend((t, 17, False, 'muted') for t in METRICS.wrap(n['detail'], width - inset, 17))
     text_h = sum(x[1] * 1.35 for x in lines)
@@ -311,15 +315,16 @@ def route(a, b, obstacles, orientation, serial=0):
     return simplify(path), sa, sb
 
 
-def edge_labels(edges, nodes, label_width=220):
+def edge_labels(edges, nodes, label_width=220, font_size=15):
     occupied = [rect(n, 8) for n in nodes]
     issues = []
     for i,e in enumerate(edges):
         if not e.get('label'):
             continue
-        lines = METRICS.wrap(e['label'], label_width, 15)
-        width = max(METRICS.width(t,15) for t in lines)+20
-        height = len(lines)*21+12
+        lines = METRICS.wrap(e['label'], label_width, font_size)
+        width = max(METRICS.width(t,font_size) for t in lines)+20
+        line_height=math.ceil(font_size*1.4)
+        height = len(lines)*line_height+12
         segments = sorted(zip(e['points'],e['points'][1:]), key=lambda ab:-(abs(ab[1][0]-ab[0][0])+abs(ab[1][1]-ab[0][1])))
         choices = []
         for a,b in segments:
@@ -341,6 +346,7 @@ def edge_labels(edges, nodes, label_width=220):
             issues.append(f'edge label overlaps a connector: {i}')
         e['_label_box'] = list(box)
         e['_label_lines'] = lines
+        e['_label_font'] = font_size
         occupied.append(box)
     return issues
 
@@ -360,7 +366,10 @@ def crossing_count(edges):
     return count
 
 
-def candidate(source_nodes, source_edges, bands, orientation, width, spacing):
+def candidate(source_nodes, source_edges, bands, orientation, width, spacing, refined=False):
+    if bands and refined:
+        columns=min(4,max(len(b['ids']) for b in bands))
+        width=max(width,(1140-(columns-1)*40)/columns)
     nodes = []
     for n in source_nodes:
         w,h,lines = dimensions(n,width)
@@ -378,7 +387,22 @@ def candidate(source_nodes, source_edges, bands, orientation, width, spacing):
             layer.sort(key=score)
     panels=[]
     cursor=230.0
-    if bands:
+    if bands and refined:
+        # Responsibility labels form a left rail, freeing vertical space and
+        # allowing genuine calls to pass between modules instead of wide headers.
+        inner_gap=40;rail=220;cols=max(1,min(4,int((1140+inner_gap)/(width+inner_gap)+.0001)))
+        for band in bands:
+            label_lines=METRICS.wrap(band['label'],rail-32,20)
+            description=METRICS.wrap(band.get('description',''),rail-32,16) if band.get('description') else []
+            top=cursor;y=top+24
+            for start in range(0,len(band['ids']),cols):
+                row=band['ids'][start:start+cols];row_height=max(by_id[v]['h'] for v in row)
+                for j,v in enumerate(row):by_id[v].update(x=96+rail+j*(width+inner_gap),y=y)
+                y+=row_height+36
+            height=max(y-top-12,48+len(label_lines)*27+len(description)*22)
+            panels.append({'x':76,'y':top,'w':max(1400,max(by_id[v]['x']+by_id[v]['w'] for v in band['ids'])-76+20),'h':height,'label':band['label'],'description':band.get('description',''),'label_lines':label_lines,'description_lines':description,'rail_width':rail-32})
+            cursor=top+height+(spacing if source_edges or band.get('flow') else 24)
+    elif bands:
         # Semantic layers remain bands; large layers reflow into a grid.
         inner_gap=140 if source_edges else 36
         cols=max(1,min(4,int(1360/(width+inner_gap))))
@@ -445,7 +469,7 @@ def candidate(source_nodes, source_edges, bands, orientation, width, spacing):
                 by_id[v].update(x=x,y=y);y+=by_id[v]['h']+sibling_gap
             x+=max(by_id[v]['w'] for v in layer)+spacing
     edges=[]
-    header_obstacles=[{'id':f'_band_header_{i}','x':p['x']+20,'y':p['y']+12,'w':p['w']-40,'h':len(p['label_lines'])*27+len(p['description_lines'])*22+16} for i,p in enumerate(panels)]
+    header_obstacles=[{'id':f'_band_header_{i}','x':p['x']+20,'y':p['y']+12,'w':p.get('rail_width',p['w']-40),'h':len(p['label_lines'])*27+len(p['description_lines'])*22+16} for i,p in enumerate(panels)]
     for i,e in enumerate(source_edges):
         a,b=by_id[e['from']],by_id[e['to']]
         if orientation=='outline' and len(layers[1] if len(layers)>1 else [])<=4:
@@ -459,7 +483,7 @@ def candidate(source_nodes, source_edges, bands, orientation, width, spacing):
         else:
             path,sa,sb=route(a,b,nodes+header_obstacles,orientation,i)
         edges.append({**e,'source':e['from'],'target':e['to'],'points':path,'source_port':sa,'target_port':sb})
-    issues=edge_labels(edges,nodes+header_obstacles,max(48,spacing-36) if orientation=='right' and not bands else 220)
+    issues=edge_labels(edges,nodes+header_obstacles,max(48,spacing-36) if orientation=='right' and not bands else 220,18 if refined else 15)
     all_rects=[rect(n) for n in nodes]+[rect(p) for p in panels]+[e['_label_box'] for e in edges if '_label_box' in e]
     max_x=max([r[2] for r in all_rects]+[p[0] for e in edges for p in e['points']])+76
     max_y=max([r[3] for r in all_rects]+[p[1] for e in edges for p in e['points']])+100
@@ -472,6 +496,12 @@ def candidate(source_nodes, source_edges, bands, orientation, width, spacing):
 
 def build_adaptive(s,d):
     nodes,edges,bands=normalize(d)
+    refined=d.get('layout',{}).get('profile')=='refined'
+    primary=d.get('layout',{}).get('primary_path',[])
+    if primary:
+        ids={n['id'] for n in nodes};relations={(e['from'],e['to']) for e in edges}
+        if any(v not in ids for v in primary) or any(pair not in relations for pair in zip(primary,primary[1:])):
+            raise ValueError('primary_path must follow existing directed relations')
     preference=d.get('layout',{}).get('direction',d.get('direction','auto'))
     if preference not in ('auto','right','down'):
         raise ValueError('layout direction must be auto/right/down')
@@ -480,9 +510,9 @@ def build_adaptive(s,d):
     attempts=[];best=None
     for spacing in (76,100,168):
         for direction in directions:
-            for width in (220,280,360):
+            for width in ((190,240,300) if refined else (220,280,360)):
                 try:
-                    c=candidate(nodes,edges,bands,direction,width,spacing)
+                    c=candidate(nodes,edges,bands,direction,width,spacing,refined)
                     attempts.append({k:c[k] for k in ('score','crossings','orientation','node_width','spacing','issues')})
                     if best is None or c['score']<best['score']:
                         best=c
@@ -493,16 +523,18 @@ def build_adaptive(s,d):
         raise ValueError('adaptive layout needs smaller semantic groups: '+str(attempts[-1]))
     s.w=max(s.w,math.ceil(best['width']/8)*8)
     s.h=max(s.h,math.ceil(best['height']/8)*8)
+    if refined and 'height' not in d:s.h=max(640,math.ceil(best['height']/8)*8)
     for p in best['panels']:
-        s.add(p['x'],p['y'],p['w'],p['h'],kind='panel',check=False)
+        s.add(p['x'],p['y'],p['w'],p['h'],kind='panel',check=False,radius=0 if refined else 10,stroke_width=.7 if refined else 1.5)
         h=len(p['label_lines'])*27
-        s.text(p['x']+24,p['y']+16,p['w']-48,h,'\n'.join(p['label_lines']),20,'accent',font_family=METRICS.family)
+        s.text(p['x']+24,p['y']+16,p.get('rail_width',p['w']-48),h,'\n'.join(p['label_lines']),20,'accent',font_family=METRICS.family)
         if p['description']:
-            s.text(p['x']+24,p['y']+20+h,p['w']-48,len(p['description_lines'])*22,'\n'.join(p['description_lines']),16,'muted',font_family=METRICS.family)
+            s.text(p['x']+24,p['y']+20+h,p.get('rail_width',p['w']-48),len(p['description_lines'])*22,'\n'.join(p['description_lines']),16,'muted',font_family=METRICS.family)
     for n in best['nodes']:
-        s.add(n['x'],n['y'],n['w'],n['h'],n['label'],n.get('detail',''),id=n['id'],kind=n.get('kind','rect'),tone=n.get('tone','accent'),check=True,_lines=n['_lines'],font_family=METRICS.family,text_margin=20)
+        s.add(n['x'],n['y'],n['w'],n['h'],n['label'],n.get('detail',''),id=n['id'],kind=n.get('kind','rect'),tone=n.get('tone','accent' if not primary or n['id'] in primary else 'muted'),check=True,_lines=n['_lines'],font_family=METRICS.family,text_margin=20,stroke_width=1.1 if refined else 1.5)
     for e in best['edges']:
-        s.edge(e['source'],e['target'],e.get('label',''),points=e['points'],source_port=e['source_port'],target_port=e['target_port'],tone=e.get('tone','muted'),dashed=e.get('dashed',False),arrow=e.get('arrow',True),_label_box=e.get('_label_box'),_label_lines=e.get('_label_lines'))
+        main=(e['source'],e['target']) in set(zip(primary,primary[1:]))
+        s.edge(e['source'],e['target'],e.get('label',''),points=e['points'],source_port=e['source_port'],target_port=e['target_port'],tone=e.get('tone','accent' if main else 'muted'),width=2.5 if main else 1.5 if refined else 2,dashed=e.get('dashed',refined and e.get('role') in ('return','feedback')),arrow=e.get('arrow',True),_label_box=e.get('_label_box'),_label_lines=e.get('_label_lines'),_label_font=e.get('_label_font',15))
     if bands:
         s.meta['layer_nodes']=[b['ids'] for b in bands if not b.get('crosscut')]
         s.meta['architecture_bands']=[{k:b.get(k) for k in ('label','description','ids','flow','flow_direction','crosscut')} for b in bands]
@@ -514,7 +546,7 @@ def build_adaptive(s,d):
                 lines=METRICS.wrap(caption,p['w']-48,16)
                 s.text(p['x']+24,p['y']+p['h']+12,p['w']-48,len(lines)*22,'\n'.join(lines),16,'muted',font_family=METRICS.family)
     s.meta['adaptive_layout']={
-        'version':39,'strategy':best['orientation'],'node_width':best['node_width'],
+        'version':40 if refined else 39,'strategy':best['orientation'],'node_width':best['node_width'],
         'candidates':attempts,'selected_score':best['score'],'crossings':best['crossings'],
         'font_measurement':METRICS.mode,'font_family':METRICS.family,
         'source_node_ids':[n['id'] for n in nodes],
@@ -539,7 +571,7 @@ def finish_adaptive(s):
     footer=METRICS.wrap(s.spec.get('footer','模拟内容 · 用于展示排版能力'),s.w-128,14)
     bottom=max([n['y']+n['h'] for n in s.nodes]+[p[1] for e in s.edges for p in e['points']]+[e['_label_box'][3] for e in s.edges if e.get('_label_box')])
     spare=s.h-len(footer)*20-76-bottom
-    if spare>120 and not s.meta['adaptive_layout'].get('page_kind'):
+    if spare>120 and not s.meta['adaptive_layout'].get('page_kind') and s.spec.get('layout',{}).get('profile')!='refined':
         delta=round(spare*.45)
         for n in s.nodes:n['y']+=delta
         for e in s.edges:
@@ -551,7 +583,7 @@ def finish_adaptive(s):
     if 'source_node_ids' in meta:
         semantic_ids=set(meta['source_node_ids'])
         sizes=[line[1] for n in s.nodes if n['id'] in semantic_ids for line in n['_lines']]
-        if any(e.get('label') for e in s.edges):sizes.append(15)
+        sizes.extend(e.get('_label_font',15) for e in s.edges if e.get('label'))
         scale=min(1552/s.w,720/s.h,1)
         minimum=min(sizes)
         meta['overview_scale_at_1600']=round(scale,3)

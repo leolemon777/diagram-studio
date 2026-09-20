@@ -1,0 +1,368 @@
+{
+  "workflow": {
+    "layout": {
+      "profile": "refined",
+      "primary_path": [
+        "receive",
+        "triage",
+        "self_help",
+        "confirm",
+        "close"
+      ]
+    },
+    "assumptions": [
+      "原创模拟内容，用于排版验收，不是实际业务数据。"
+    ],
+    "type": "graph",
+    "title": "客户问题，走向一个明确的结果",
+    "subtitle": "先分流，再确认；未解决的请求返回人工处理。",
+    "eyebrow": "01 / SERVICE WORKFLOW",
+    "footer": "模拟客服流程 · 箭头表示处理方向，虚线表示返回 · 不表示处理时长或业务流量",
+    "nodes": [
+      {
+        "id": "receive",
+        "label": "接收请求",
+        "kind": "pill"
+      },
+      {
+        "id": "triage",
+        "label": "识别问题"
+      },
+      {
+        "id": "self_help",
+        "label": "提供自助答案"
+      },
+      {
+        "id": "agent",
+        "label": "人工跟进处理"
+      },
+      {
+        "id": "confirm",
+        "label": "是否解决？",
+        "kind": "diamond"
+      },
+      {
+        "id": "close",
+        "label": "完成归档",
+        "kind": "pill"
+      }
+    ],
+    "edges": [
+      {
+        "from": "receive",
+        "to": "triage",
+        "label": "登记"
+      },
+      {
+        "from": "triage",
+        "to": "self_help",
+        "label": "常见问题"
+      },
+      {
+        "from": "triage",
+        "to": "agent",
+        "label": "复杂问题"
+      },
+      {
+        "from": "self_help",
+        "to": "confirm",
+        "label": "核对答案"
+      },
+      {
+        "from": "agent",
+        "to": "confirm",
+        "label": "提交方案"
+      },
+      {
+        "from": "confirm",
+        "to": "close",
+        "label": "已解决"
+      },
+      {
+        "from": "confirm",
+        "to": "agent",
+        "label": "未解决",
+        "role": "return"
+      }
+    ]
+  },
+  "architecture": {
+    "layout": {
+      "profile": "refined"
+    },
+    "assumptions": [
+      "原创模拟内容，用于排版验收，不是实际业务数据。"
+    ],
+    "type": "architecture",
+    "title": "一笔订单背后的协作关系",
+    "subtitle": "按职责阅读系统；连线只表示此模型明确给出的调用。",
+    "eyebrow": "02 / PRODUCT ARCHITECTURE",
+    "footer": "模拟系统 · 分层不代表调用，未画出的关系不作推断 · 每个模块保留稳定 ID",
+    "layers": [
+      {
+        "label": "用户触点",
+        "description": "使用与服务入口",
+        "items": [
+          {
+            "id": "web",
+            "label": "商城 Web",
+            "detail": "浏览与提交订单"
+          },
+          {
+            "id": "support",
+            "label": "客服工作台",
+            "detail": "检索与处理请求"
+          }
+        ]
+      },
+      {
+        "label": "业务服务",
+        "description": "状态与规则",
+        "items": [
+          {
+            "id": "order",
+            "label": "订单服务",
+            "detail": "订单状态与履约"
+          },
+          {
+            "id": "stock",
+            "label": "库存服务",
+            "detail": "可售数量与预留"
+          },
+          {
+            "id": "notify",
+            "label": "通知服务",
+            "detail": "进度与结果提醒"
+          }
+        ]
+      },
+      {
+        "label": "数据记录",
+        "description": "独立的存储职责",
+        "items": [
+          {
+            "id": "orders",
+            "label": "订单记录",
+            "detail": "订单与支付状态"
+          },
+          {
+            "id": "stocks",
+            "label": "库存记录",
+            "detail": "数量与变更历史"
+          }
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "from": "web",
+        "to": "order",
+        "label": "下单"
+      },
+      {
+        "from": "support",
+        "to": "order",
+        "label": "查询"
+      },
+      {
+        "from": "order",
+        "to": "orders",
+        "label": "读写"
+      },
+      {
+        "from": "stock",
+        "to": "stocks",
+        "label": "读写"
+      }
+    ]
+  },
+  "gantt": {
+    "type": "gantt",
+    "gantt_variant": "delivery",
+    "title": "从课程定位，到正式开课",
+    "subtitle": "把责任、时间与依赖放在同一张执行图中，长任务名也保留完整。",
+    "eyebrow": "03 / EDUCATION DELIVERY",
+    "footer": "模拟排期 · 状态截至 2026/09/18 · 自然日且包含结束日 · 未计算关键路径",
+    "assumptions": [
+      "原创模拟内容，用于排版验收，不是实际业务数据。"
+    ],
+    "tasks": [
+      {
+        "id": "scope",
+        "phase": "01 · 定位",
+        "label": "需求调研与课程定位",
+        "owner": "产品负责人",
+        "start": "2026-09-14",
+        "end": "2026-09-16",
+        "progress": 100
+      },
+      {
+        "id": "outline",
+        "phase": "02 · 内容与转化",
+        "label": "课程大纲与脚本",
+        "owner": "教研团队",
+        "start": "2026-09-17",
+        "end": "2026-09-22",
+        "progress": 35,
+        "depends": [
+          "scope"
+        ]
+      },
+      {
+        "id": "landing",
+        "phase": "02 · 内容与转化",
+        "label": "招生页面与报名流程",
+        "owner": "设计 / 运营",
+        "start": "2026-09-17",
+        "end": "2026-09-24",
+        "progress": 25,
+        "depends": [
+          "scope"
+        ]
+      },
+      {
+        "id": "record",
+        "phase": "03 · 制作与验证",
+        "label": "课程录制与剪辑",
+        "owner": "讲师 / 视频制作",
+        "start": "2026-09-23",
+        "end": "2026-10-01",
+        "progress": 0,
+        "depends": [
+          "outline"
+        ]
+      },
+      {
+        "id": "promote",
+        "phase": "03 · 制作与验证",
+        "label": "推广预热与学员招募",
+        "owner": "市场团队",
+        "start": "2026-09-25",
+        "end": "2026-10-06",
+        "progress": 0,
+        "depends": [
+          "landing"
+        ]
+      },
+      {
+        "id": "qa",
+        "phase": "03 · 制作与验证",
+        "label": "课程上传与体验测试",
+        "owner": "教研 / 测试",
+        "start": "2026-10-02",
+        "end": "2026-10-05",
+        "progress": 0,
+        "depends": [
+          "record"
+        ]
+      },
+      {
+        "id": "rehearsal",
+        "phase": "04 · 上线",
+        "label": "开课彩排与上线检查",
+        "owner": "项目负责人",
+        "start": "2026-10-07",
+        "end": "2026-10-08",
+        "progress": 0,
+        "depends": [
+          "qa",
+          "promote"
+        ]
+      },
+      {
+        "id": "launch",
+        "phase": "04 · 上线",
+        "label": "正式开课",
+        "owner": "全体项目组",
+        "start": "2026-10-09",
+        "end": "2026-10-09",
+        "progress": 0,
+        "milestone": true,
+        "depends": [
+          "rehearsal"
+        ]
+      }
+    ],
+    "layout": {
+      "profile": "refined"
+    }
+  },
+  "comparison": {
+    "layout": {
+      "profile": "refined"
+    },
+    "assumptions": [
+      "原创模拟内容，用于排版验收，不是实际业务数据。"
+    ],
+    "type": "chart",
+    "mode": "bar",
+    "title": "增长从哪里来，也在哪里回落",
+    "subtitle": "四个渠道有效线索的月度净变化；按输入顺序展示，所有条带共用零点。",
+    "eyebrow": "04 / MARKETING REVIEW",
+    "footer": "模拟数据 · 2026 年 9 月相对 8 月 · 有效线索使用同一去重与判定口径",
+    "unit": "人",
+    "data": [
+      {
+        "label": "内容搜索与知识文章",
+        "value": 128
+      },
+      {
+        "label": "客户推荐",
+        "value": 76
+      },
+      {
+        "label": "付费投放",
+        "value": -34
+      },
+      {
+        "label": "行业活动",
+        "value": 0
+      }
+    ]
+  },
+  "trend": {
+    "layout": {
+      "profile": "refined"
+    },
+    "assumptions": [
+      "原创模拟内容，用于排版验收，不是实际业务数据。"
+    ],
+    "type": "chart",
+    "mode": "line",
+    "title": "把变化放回真实的时间里",
+    "subtitle": "门店访问量按采样日期定位；缺测保留为空，不补零，也不跨越缺测连线。",
+    "eyebrow": "05 / RETAIL OBSERVATIONS",
+    "footer": "模拟采样 · 单位为人次，同一门店、同一统计口径 · 图形不用于推断缺测期间的变化",
+    "unit": "人次",
+    "data": [
+      {
+        "date": "2026-09-01",
+        "value": 820
+      },
+      {
+        "date": "2026-09-03",
+        "value": 970
+      },
+      {
+        "date": "2026-09-08",
+        "value": 910
+      },
+      {
+        "date": "2026-09-12",
+        "value": null
+      },
+      {
+        "date": "2026-09-18",
+        "value": 1140
+      },
+      {
+        "date": "2026-09-24",
+        "value": 1080
+      },
+      {
+        "date": "2026-09-30",
+        "value": 1320
+      }
+    ]
+  }
+}

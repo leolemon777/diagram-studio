@@ -81,6 +81,9 @@ class Scene:
         if self.meta.get('adaptive_layout'):
             from adaptive_layout import finish_adaptive
             return finish_adaptive(self)
+        if self.meta.get('refined_layout'):
+            from refined_layout import finish
+            return finish(self)
         content_bottom=max([n['y']+n['h'] for n in self.nodes]+[180])
         self.h=max(self.h,content_bottom+100)
         self.text(64,34,self.w-128,22,self.spec.get('eyebrow','DIAGRAM STUDIO  /  专业图示'),14,'accent')
@@ -331,7 +334,13 @@ def build(d,theme):
     need(isinstance(d.get('title'),str) and d['title'].strip(),'title is required')
     s=Scene(d,theme);need(finite(s.w) and finite(s.h) and s.w>=800 and s.h>=500,'invalid page size')
     from adaptive_layout import selected, build_adaptive
-    if selected(d):build_adaptive(s,d)
+    refined=d.get('layout',{}).get('profile')=='refined'
+    if selected(d):
+        build_adaptive(s,d)
+        if refined:s.meta['refined_layout']={'version':40,'profile':'refined','manual_visual_review':'not-run'}
+    elif refined:
+        from refined_layout import build as refined_build
+        refined_build(s,d)
     else:BUILDERS[d['type']](s,d)
     return s.finish()
 BUILDERS={'architecture':architecture,'graph':graph,'tree':tree,'sequence':sequence,'gantt':gantt,'matrix':matrix,'chart':chart,'fishbone':fishbone}
@@ -370,7 +379,7 @@ def svg(s):
         rx=n.get('radius',0 if n.get('stroke')=='none' else (h/2 if kind=='pill' else 10))
         return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{rx}" {attrs}/>'
     def node(n):
-        x,y,w,h=[n[k] for k in ('x','y','w','h')];family=f' font-family="{html.escape(n["font_family"],quote=True)}"' if n.get('font_family') else '';out.append(f'<g id="{html.escape(n["id"],quote=True)}" data-kind="{n["kind"]}" data-box="{x},{y},{w},{h}"{family}>');out.append(shape(n))
+        x,y,w,h=[n[k] for k in ('x','y','w','h')];family=f' font-family="{html.escape(n["font_family"],quote=True)}"' if n.get('font_family') else '';out.append(f'<g id="{html.escape(n["id"],quote=True)}" data-kind="{n["kind"]}" data-content-text="{str(n.get("content_text",False)).lower()}" data-box="{x},{y},{w},{h}"{family}>');out.append(shape(n))
         lines=label_lines(n);total=sum(z[1]*1.35 for z in lines);align=n.get('align','center');istext=n['kind']=='text';ispanel=n['kind']=='panel'
         if ispanel:align='left';cx=x+24;cursor=y+9
         else:
@@ -397,7 +406,8 @@ def svg(s):
             from adaptive_layout import METRICS
             out.append(f'<g data-edge-label="true" data-box="{x},{y},{x1-x},{y1-y}" font-family="{html.escape(METRICS.family,quote=True)}"><rect x="{x}" y="{y}" width="{x1-x}" height="{y1-y}" rx="4" fill="{t["bg"]}"/>')
             for j,line in enumerate(e['_label_lines']):
-                out.append(f'<text x="{(x+x1)/2}" y="{y+20+j*21}" font-size="15" text-anchor="middle" fill="{color(t,e.get("tone","muted"))}">{html.escape(line)}</text>')
+                size=e.get('_label_font',15)
+                out.append(f'<text x="{(x+x1)/2}" y="{y+size+5+j*math.ceil(size*1.4)}" font-size="{size}" text-anchor="middle" fill="{color(t,e.get("tone","muted"))}">{html.escape(line)}</text>')
             out.append('</g>');continue
         pts=e['points'];pos=e.get('label_at');align=e.get('label_align','center')
         if not pos:
@@ -405,7 +415,10 @@ def svg(s):
         x,y=pos;lw=measure(e['label'],15)+16;rx=x-8 if align=='left' else x-lw/2
         out.append(f'<rect x="{rx}" y="{y-17}" width="{lw}" height="25" rx="4" fill="{t["bg"]}"/>')
         out.append(f'<text x="{x}" y="{y}" font-size="15" text-anchor="{"start" if align=="left" else "middle"}" fill="{color(t,e.get("tone","muted"))}">{html.escape(e["label"])}</text>')
-    out+=['</g></svg>'];return '\n'.join(out)
+    out+=['</g></svg>']
+    result='\n'.join(out)
+    if s.meta.get('refined_layout'):result=result.replace('<svg ','<svg data-quality="refined" ',1)
+    return result
 
 def drawio(s):
     t=s.palette;mxfile=ET.Element('mxfile',host='diagram-studio',version='1.0');diagram=ET.SubElement(mxfile,'diagram',id='diagram',name=s.spec['title'])
@@ -450,6 +463,7 @@ def drawio(s):
         edge_style='orthogonalEdgeStyle' if orthogonal and (e.get('source') or e.get('target')) else 'none'
         style=f'edgeStyle={edge_style};rounded=0;html=1;strokeColor={color(t,tone)};strokeWidth={e.get("width",2)};fontColor={color(t,tone)};fontSize=15;labelBackgroundColor={t["bg"]};endArrow={"block" if e.get("arrow",True) else "none"};'
         if e.get('dashed'):style+='dashed=1;'
+        if e.get('_label_font'):style=style.replace('fontSize=15;',f'fontSize={e["_label_font"]};')
         for key,prefix in [('source_port','exit'),('target_port','entry')]:
             selected=e.get(key)
             endpoint=e.get('source' if prefix=='exit' else 'target')
@@ -501,7 +515,7 @@ def audit(s):
                 cross=(abs(a[0]-b[0])<.1 and x0<a[0]<x1 and max(min(a[1],b[1]),y0)<min(max(a[1],b[1]),y1)) or (abs(a[1]-b[1])<.1 and y0<a[1]<y1 and max(min(a[0],b[0]),x0)<min(max(a[0],b[0]),x1))
                 if cross:warnings.append(f'edge {i} may cross node {n["id"]}');break
     result=dict(errors=sorted(set(errors)),warnings=sorted(set(warnings)),nodes=len(nodes),edges=len(s.edges),scope='geometry, text estimate, axis-aligned edge/node crossings; not semantic or visual acceptance')
-    if s.meta.get('adaptive_layout'):
+    if s.meta.get('adaptive_layout') or s.meta.get('refined_layout'):
         from adaptive_layout import METRICS,rect,intersects,segment_hits
         for n in nodes:
             for line,size,_,_ in label_lines(n):
@@ -515,7 +529,9 @@ def audit(s):
             if any(intersects(box,rect(n)) for n in check):result['errors'].append(f'edge label overlaps node: {i}')
             if any(intersects(box,b) for b in boxes):result['errors'].append(f'edge labels overlap: {i}')
             boxes.append(box)
-        result.update(font_measurement=METRICS.mode,rendered_visual_check='not-run',manual_visual_review='not-run',adaptive_layout=s.meta['adaptive_layout'])
+        result.update(font_measurement=METRICS.mode,rendered_visual_check='not-run',manual_visual_review='not-run')
+        if s.meta.get('adaptive_layout'):result['adaptive_layout']=s.meta['adaptive_layout']
+        if s.meta.get('refined_layout'):result['refined_layout']=s.meta['refined_layout']
     return result
 
 def _render_files(source,out,theme='light'):
@@ -527,7 +543,7 @@ def _render_files(source,out,theme='light'):
     (out/(stem+'.scene.json')).write_text(json.dumps(dict(width=s.w,height=s.h,theme=theme,palette=s.palette,nodes=s.nodes,edges=s.edges,meta=s.meta,assumptions=d.get('assumptions',[])),ensure_ascii=False,indent=2),encoding='utf-8')
     (out/(stem+'.brief.json')).write_text(json.dumps(d,ensure_ascii=False,indent=2),encoding='utf-8')
     result=dict(svg=str(out/(stem+'.svg')),drawio=str(out/(stem+'.drawio')),qa=qa)
-    if s.meta.get('adaptive_layout'):
+    if s.meta.get('adaptive_layout') or s.meta.get('refined_layout'):
         from adaptive_delivery import deliver
         result['reading_view']=deliver(s,d,out,stem)
     return result

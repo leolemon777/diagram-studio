@@ -57,6 +57,12 @@ python3 scripts/expression_lab.py --out /tmp/diagram-expression-lab
 
 The first four commands generate architecture and workflow examples in English and Chinese. Ordinary `render.py` output includes SVG, editable draw.io, the source brief, a scene file, and a QA record. Adaptive output also includes a reading HTML page and multipage source. The last command creates an offline comparison page for four simulated studies and eight expressions. See the [input and output reference](references/rendering.md). Some specialist charts require Matplotlib; Pillow is optional for more accurate font measurement in adaptive layouts.
 
+## Five refined forms and their checks
+
+A refined profile now covers ordinary workflows, layered architecture, delivery Gantt, single-series comparison and trend charts. It expands long content, separates primary and return paths, preserves signed values and missing observations, and offers a dot comparison alternative. Run `python3 scripts/refinement_suite.py --out /tmp/diagram-refinement`, serve that directory over local HTTP, and open the bilingual gallery of 11 original, changed and alternative outputs. See [inputs and scope](references/refinement.md).
+
+This round passed 34 regression tests and actual desktop-browser text checks on 11 overviews. One workflow was edited, saved and reopened in draw.io. This is not approval of all diagram types, mobile layouts or aesthetics; see the [verification record](references/verification-status.md).
+
 ## Workflow and delivery improvements
 
 Ordinary adaptive workflows now rank forward branches separately from feedback loops while preserving every relation label. The bilingual reader offers Overview and Readable size, reports displayed text size, and flags small text. `render.py` completes generation and detail-page checks in a staging directory before replacing outputs. Generation failures preserve the previous files; successful runs include a `delivery.json` record of input and output hashes. Promotion replaces individual files, not an atomic multi-file transaction. See [adaptive layout guidance](references/adaptive-layout.md) for scope. These changes independently implement ideas studied in [Archify](https://github.com/tt-a1i/archify).

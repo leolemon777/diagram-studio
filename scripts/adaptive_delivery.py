@@ -17,8 +17,8 @@ def language(data):
 
 def minimum_font(scene):
     from render import label_lines
-    sizes=[line[1] for n in scene.nodes if n.get('check') for line in label_lines(n)]
-    if any(e.get('label') for e in scene.edges):sizes.append(15)
+    sizes=[line[1] for n in scene.nodes if n.get('check') or n.get('content_text') for line in label_lines(n)]
+    sizes.extend(e.get('_label_font',15) for e in scene.edges if e.get('label'))
     return min(sizes or [14])
 
 
@@ -136,7 +136,8 @@ def detail_scenes(scene, data):
 def deliver(scene,data,out,stem):
     from render import svg,drawio,audit
     out=Path(out)
-    pages,index=detail_scenes(scene,data)
+    if scene.meta.get('adaptive_layout'):pages,index=detail_scenes(scene,data)
+    else:pages,index=[],{'pages':[],'scope':'single refined chart; complete values are in the SVG and source brief'}
     combined=ET.fromstring(drawio(scene))
     overview='Overview' if language(data)=='en' else '结构总览'
     combined.find('diagram').set('name',overview)
