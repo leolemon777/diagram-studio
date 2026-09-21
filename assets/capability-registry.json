@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "version": "v57",
+  "version": "v58",
   "updated": "2026-09-20",
   "purpose": "Single source for chooser labels, backend capability, delivery formats and acceptance evidence.",
   "status_vocabulary": {
@@ -152,8 +152,8 @@
           "formats": ["svg", "drawio", "scene.json", "qa.json", "html"],
           "layout_limits": {"zh": "依赖边必须有前置与后置 ID；有工期计算需求时改用 PERT/CPM 后端。", "en": "Dependency edges need predecessor and successor IDs; use the PERT/CPM backend when duration calculation is required."},
           "languages": ["zh", "en"],
-          "examples": ["assets/examples/31-dependency-network.json"],
-          "evidence": {"level": "generated_with_semantic_validation", "reference": "references/pert.md", "detail": {"zh": "关系图可表达依赖；PERT 计算另有零时滞 FS 后端。", "en": "The graph form expresses dependencies; PERT has a separate zero-lag FS calculation backend."}},
+          "examples": ["assets/examples/dependency-cn.json", "assets/examples/dependency-en.json"],
+          "evidence": {"level": "manual_visual_review", "reference": "assets/v58-dependency-evidence.json", "detail": {"zh": "中英依赖图通过有向无环拓扑、并行汇合、零连接交叉、可读字号和浏览器复核。", "en": "Chinese and English dependency graphs pass acyclic topology, parallel merge, zero connector crossings, readable projected text and browser review."}},
           "scope": {"zh": "只表达已声明的先后关系；不从图形邻近推断关键路径。", "en": "Expresses declared precedence only; proximity never implies a critical path."}
         }
       ]

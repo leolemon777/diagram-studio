@@ -1,0 +1,86 @@
+{
+  "type": "graph",
+  "layout": {
+    "profile": "refined",
+    "direction": "auto"
+  },
+  "title": "Release dependencies · parallel and merge",
+  "subtitle": "Arrows show precedence; parallel branches merge before verification, with no duration or critical path calculation",
+  "eyebrow": "58 / DEPENDENCY GRAPH",
+  "nodes": [
+    {
+      "id": "scope",
+      "label": "Scope",
+      "detail": "Goal · boundary",
+      "tone": "accent"
+    },
+    {
+      "id": "content",
+      "label": "Content",
+      "detail": "Assets · copy",
+      "tone": "teal"
+    },
+    {
+      "id": "design",
+      "label": "Design",
+      "detail": "Structure · interaction",
+      "tone": "teal"
+    },
+    {
+      "id": "build",
+      "label": "Build",
+      "detail": "Components · config",
+      "tone": "accent"
+    },
+    {
+      "id": "verify",
+      "label": "Verify",
+      "detail": "Scenarios · regression",
+      "tone": "amber"
+    },
+    {
+      "id": "release",
+      "label": "Pilot release",
+      "detail": "Notes · observation",
+      "tone": "red"
+    }
+  ],
+  "edges": [
+    {
+      "from": "scope",
+      "to": "content",
+      "tone": "accent"
+    },
+    {
+      "from": "scope",
+      "to": "design",
+      "tone": "accent"
+    },
+    {
+      "from": "content",
+      "to": "build",
+      "tone": "teal"
+    },
+    {
+      "from": "design",
+      "to": "build",
+      "tone": "teal"
+    },
+    {
+      "from": "build",
+      "to": "verify",
+      "tone": "amber"
+    },
+    {
+      "from": "verify",
+      "to": "release",
+      "tone": "red"
+    }
+  ],
+  "footer": "Cross-industry illustration · arrows show declared precedence only; no durations or critical path are calculated",
+  "family": "Planning & collaboration",
+  "diagram_name": "Dependency graph",
+  "assumptions": [
+    "Tasks, dependencies and branches are illustrative; they do not promise a real schedule or delivery date."
+  ]
+}

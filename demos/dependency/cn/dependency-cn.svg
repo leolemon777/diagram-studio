@@ -1,0 +1,70 @@
+<svg data-quality="refined" xmlns="http://www.w3.org/2000/svg" width="1600" height="640" viewBox="0 0 1600 640" role="img" aria-labelledby="diagram-title diagram-desc">
+<title id="diagram-title">发布依赖 · 并行与汇合</title>
+<desc id="diagram-desc">箭头表示前置关系；并行分支在验证前汇合，不计算工期或关键路径</desc>
+<rect width="100%" height="100%" fill="#F1EFEB"/>
+<defs>
+<marker id="arrow-accent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#AC6046"/></marker>
+<marker id="arrow-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#67685E"/></marker>
+<marker id="arrow-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#8C7964"/></marker>
+<marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#554C46"/></marker>
+<marker id="arrow-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#6D6A63"/></marker>
+<marker id="arrow-line" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#D8D3C8"/></marker>
+<marker id="arrow-ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#30302D"/></marker>
+</defs>
+<g font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, Arial, sans-serif">
+<path d="M286.0,366.0 L308.0,366.0 L308.0,278.0 L362.0,278.0" fill="none" stroke="#AC6046" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#arrow-accent)"/>
+<path d="M286.0,366.0 L314.0,366.0 L314.0,454.0 L362.0,454.0" fill="none" stroke="#AC6046" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#arrow-accent)"/>
+<path d="M552.0,278.0 L586.0,278.0 L586.0,366.0 L628.0,366.0" fill="none" stroke="#67685E" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#arrow-teal)"/>
+<path d="M552.0,454.0 L592.0,454.0 L592.0,366.0 L628.0,366.0" fill="none" stroke="#67685E" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#arrow-teal)"/>
+<path d="M818.0,366.0 L894.0,366.0" fill="none" stroke="#8C7964" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#arrow-amber)"/>
+<path d="M1084.0,366.0 L1160.0,366.0" fill="none" stroke="#554C46" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#arrow-red)"/>
+<g id="scope" data-kind="rect" data-content-text="false" data-box="96.0,318.0,190,96" font-family="Heiti TC">
+<rect x="96.0" y="318.0" width="190" height="96" rx="10" fill="#FEFDF9" stroke="#AC6046" stroke-width="1.1"/>
+<text x="191.0" y="361.675" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">范围确认</text>
+<text x="191.0" y="386.375" text-anchor="middle" font-size="17" font-weight="400" fill="#6D6A63">目标 · 边界</text>
+</g>
+<g id="content" data-kind="rect" data-content-text="false" data-box="362.0,230.0,190,96" font-family="Heiti TC">
+<rect x="362.0" y="230.0" width="190" height="96" rx="10" fill="#FEFDF9" stroke="#67685E" stroke-width="1.1"/>
+<text x="457.0" y="273.675" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">内容准备</text>
+<text x="457.0" y="298.375" text-anchor="middle" font-size="17" font-weight="400" fill="#6D6A63">素材 · 文案</text>
+</g>
+<g id="design" data-kind="rect" data-content-text="false" data-box="362.0,406.0,190,96" font-family="Heiti TC">
+<rect x="362.0" y="406.0" width="190" height="96" rx="10" fill="#FEFDF9" stroke="#67685E" stroke-width="1.1"/>
+<text x="457.0" y="449.675" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">界面设计</text>
+<text x="457.0" y="474.375" text-anchor="middle" font-size="17" font-weight="400" fill="#6D6A63">结构 · 交互</text>
+</g>
+<g id="build" data-kind="rect" data-content-text="false" data-box="628.0,318.0,190,96" font-family="Heiti TC">
+<rect x="628.0" y="318.0" width="190" height="96" rx="10" fill="#FEFDF9" stroke="#AC6046" stroke-width="1.1"/>
+<text x="723.0" y="361.675" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">版本实现</text>
+<text x="723.0" y="386.375" text-anchor="middle" font-size="17" font-weight="400" fill="#6D6A63">组件 · 配置</text>
+</g>
+<g id="verify" data-kind="rect" data-content-text="false" data-box="894.0,318.0,190,96" font-family="Heiti TC">
+<rect x="894.0" y="318.0" width="190" height="96" rx="10" fill="#FEFDF9" stroke="#8C7964" stroke-width="1.1"/>
+<text x="989.0" y="361.675" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">集成验证</text>
+<text x="989.0" y="386.375" text-anchor="middle" font-size="17" font-weight="400" fill="#6D6A63">场景 · 回归</text>
+</g>
+<g id="release" data-kind="rect" data-content-text="false" data-box="1160.0,318.0,190,96" font-family="Heiti TC">
+<rect x="1160.0" y="318.0" width="190" height="96" rx="10" fill="#FEFDF9" stroke="#554C46" stroke-width="1.1"/>
+<text x="1255.0" y="361.675" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">试点发布</text>
+<text x="1255.0" y="386.375" text-anchor="middle" font-size="17" font-weight="400" fill="#6D6A63">说明 · 观察</text>
+</g>
+<g id="_v7" data-kind="text" data-content-text="false" data-box="64,34,1472,22" font-family="Heiti TC">
+
+<text x="64" y="49.55" text-anchor="start" font-size="14" font-weight="400" fill="#AC6046">58 / DEPENDENCY GRAPH</text>
+</g>
+<g id="_v8" data-kind="text" data-content-text="false" data-box="64,74,1472,49" font-family="Heiti TC">
+
+<text x="64" y="110.2" text-anchor="start" font-size="36" font-weight="600" fill="#30302D">发布依赖 · 并行与汇合</text>
+</g>
+<g id="_v9" data-kind="text" data-content-text="false" data-box="64,131,1472,24" font-family="Heiti TC">
+
+<text x="64" y="148.525" text-anchor="start" font-size="17" font-weight="400" fill="#6D6A63">箭头表示前置关系；并行分支在验证前汇合，不计算工期或关键路径</text>
+</g>
+<g id="_v10" data-kind="rect" data-content-text="false" data-box="64,580,1472,1">
+<rect x="64" y="580" width="1472" height="1" rx="0" fill="#D8D3C8" stroke="none" stroke-width="1.5"/>
+</g>
+<g id="_v11" data-kind="text" data-content-text="false" data-box="64,596,1472,20" font-family="Heiti TC">
+
+<text x="64" y="610.55" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">跨行业演示 · 箭头只表达已声明的前置关系；未提供工期，不计算关键路径</text>
+</g>
+</g></svg>

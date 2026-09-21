@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>任务依赖图 / Dependency graph</title>
+<style>
+body{margin:0;background:#f1efeb;color:#30302d;font:16px/1.7 system-ui,sans-serif}main{max-width:1280px;margin:auto;padding:40px 5vw}
+h1{font-size:38px;font-weight:500;margin:0 0 8px}h2{font-size:23px;font-weight:500;margin:0 0 8px}p{max-width:940px;color:#6d6a63}section{padding:30px 0;border-top:1px solid #d8d3c8;margin-top:32px}
+a{color:#985238;text-underline-offset:5px;margin-right:20px}small{color:#6d6a63}nav{display:flex;flex-wrap:wrap;gap:8px;position:sticky;top:0;z-index:2;background:#f1efeb;padding:14px 0;border-bottom:1px solid #d8d3c8}
+nav a{padding:5px 9px;margin:0;border-radius:4px}nav a[aria-current=location]{background:#30302d;color:#fff}.viewport{overflow:auto;border:1px solid #d8d3c8;margin:18px 0;background:#faf9f6}.viewport:focus-visible{outline:3px solid #985238;outline-offset:3px}
+object{display:block;width:100%;height:560px}button{font:inherit;background:transparent;color:#30302d;border:1px solid #b8b3a8;padding:8px 14px;cursor:pointer}button:focus-visible,a:focus-visible{outline:3px solid #985238;outline-offset:3px}section{scroll-margin-top:120px}
+@media print{nav,button{display:none}.viewport{overflow:visible}object{max-width:100%}}
+</style>
+<main id="overview" tabindex="-1">
+<small>DIAGRAM STUDIO / HIGH-FREQUENCY DEPENDENCY GRAPH</small>
+<h1>把并行工作和汇合前置关系画清楚，不把它误读成日期计划。</h1>
+<p>任务依赖图回答“完成什么之后才能开始什么”。箭头保留声明的先后约束；它不自动计算工期、关键路径或交付日期，日期计划应另用甘特或 PERT/CPM。</p>
+<nav aria-label="案例导航 / Study navigation"><a href="#overview">总览 / Overview</a><a href="#cn">中文 / Chinese</a><a href="#en">English</a><a href="../../references/pert.md">输入边界 / Input scope</a></nav>
+<section id="cn"><h2>01 · 发布依赖 / Release dependencies</h2><p>范围确认后，内容和设计并行推进，在版本实现处汇合，再进入验证和试点；未提供工期，所以不标关键路径。</p><button type="button" class="read" aria-pressed="false">清晰尺寸 / Readable size</button><div class="viewport" tabindex="0" role="region"><object type="image/svg+xml" data="cn/dependency-cn.svg" aria-label="发布依赖图 / Chinese dependency graph"></object></div><a href="../../assets/examples/dependency-cn.json">模型 JSON / 中文</a><a href="cn/dependency-cn.svg">SVG</a><a href="cn/dependency-cn.drawio">draw.io</a><a href="cn/dependency-cn.scene.json">scene JSON</a></section>
+<section id="en"><h2>02 · Release dependencies</h2><p>After scope, content and design run in parallel and merge at build before verification and pilot release. No durations are supplied, so no critical path is claimed.</p><button type="button" class="read" aria-pressed="false">Readable size / 清晰尺寸</button><div class="viewport" tabindex="0" role="region"><object type="image/svg+xml" data="en/dependency-en.svg" aria-label="Release dependency graph / English"></object></div><a href="../../assets/examples/dependency-en.json">English JSON</a><a href="en/dependency-en.svg">SVG</a><a href="en/dependency-en.drawio">draw.io</a><a href="en/dependency-en.scene.json">scene JSON</a></section>
+<p>交付范围：中英文 SVG、draw.io、scene、QA 与 delivery receipt。没有把依赖箭头替换成日期比例、资源约束或关键路径计算。</p>
+</main>
+<script>
+for(const section of document.querySelectorAll('section')){const button=section.querySelector('button'),obj=section.querySelector('object'),viewport=section.querySelector('.viewport');viewport.setAttribute('aria-label',obj.getAttribute('aria-label')+' · 可滚动 / Scrollable');let reading=false;function size(){const svg=obj.contentDocument?.querySelector('svg');if(!svg)return;const v=svg.viewBox.baseVal;const width=reading?Math.max(1600,viewport.clientWidth):viewport.clientWidth;obj.style.width=width+'px';obj.style.height=width*v.height/v.width+'px'}obj.addEventListener('load',size);button.onclick=()=>{reading=!reading;button.setAttribute('aria-pressed',String(reading));button.textContent=reading?'适合宽度 / Fit width':'清晰尺寸 / Readable size';size()};window.addEventListener('resize',size);size()}
+const links=[...document.querySelectorAll('nav a[href^="#"]')];function currentSection(){let id='overview';for(const section of document.querySelectorAll('section'))if(section.getBoundingClientRect().top<=150)id=section.id;for(const link of links)link.toggleAttribute('aria-current',link.hash==='#'+id)}window.addEventListener('scroll',currentSection,{passive:true});window.addEventListener('hashchange',currentSection);currentSection();
+</script>
+</html>

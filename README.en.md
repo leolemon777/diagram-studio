@@ -17,7 +17,7 @@ Diagram Studio is a local Codex skill for turning a natural-language brief into 
 
 You can also compare **different visual expressions of the same source data**, changing the reading order and composition while preserving values, units, relationships, and direction. The [four-study, eight-expression demo](demos/expression-lab/index.html) is reproducible. Catalog entries are search terms and rules, not a promise of a separate renderer for every named type. See the [verification record](references/verification-status.md) for tested scope.
 
-The bilingual [relationship network demo](demos/network/index.html) shows a cross-industry service ecosystem with explicit directions, a return link, and three readable detail pages for splitting dense networks. The [interaction sequence demo](demos/sequence/index.html) keeps message order and dashed return directions visible.
+The bilingual [relationship network demo](demos/network/index.html) shows a cross-industry service ecosystem with explicit directions, a return link, and three readable detail pages for splitting dense networks. The [interaction sequence demo](demos/sequence/index.html) keeps message order and dashed return directions visible; the [dependency demo](demos/dependency/index.html) shows parallel work and merge constraints without inventing a schedule.
 
 ## How to use it
 

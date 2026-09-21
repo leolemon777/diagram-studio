@@ -1,0 +1,239 @@
+{
+  "errors": [],
+  "warnings": [],
+  "nodes": 11,
+  "edges": 6,
+  "scope": "geometry, text estimate, axis-aligned edge/node crossings; not semantic or visual acceptance",
+  "font_measurement": "font-glyph-metrics",
+  "rendered_visual_check": "not-run",
+  "manual_visual_review": "not-run",
+  "adaptive_layout": {
+    "version": 40,
+    "strategy": "right",
+    "node_width": 190,
+    "candidates": [
+      {
+        "score": 58.58,
+        "crossings": 0,
+        "orientation": "right",
+        "node_width": 190,
+        "spacing": 76,
+        "issues": []
+      },
+      {
+        "score": 60.09,
+        "crossings": 0,
+        "orientation": "right",
+        "node_width": 240,
+        "spacing": 76,
+        "issues": []
+      },
+      {
+        "score": 65.54,
+        "crossings": 0,
+        "orientation": "right",
+        "node_width": 300,
+        "spacing": 76,
+        "issues": []
+      },
+      {
+        "score": 95.01,
+        "crossings": 0,
+        "orientation": "down",
+        "node_width": 190,
+        "spacing": 76,
+        "issues": []
+      },
+      {
+        "score": 96.13,
+        "crossings": 0,
+        "orientation": "down",
+        "node_width": 240,
+        "spacing": 76,
+        "issues": []
+      },
+      {
+        "score": 97.47,
+        "crossings": 0,
+        "orientation": "down",
+        "node_width": 300,
+        "spacing": 76,
+        "issues": []
+      },
+      {
+        "score": 59.47,
+        "crossings": 0,
+        "orientation": "right",
+        "node_width": 190,
+        "spacing": 100,
+        "issues": []
+      },
+      {
+        "score": 61.02,
+        "crossings": 0,
+        "orientation": "right",
+        "node_width": 240,
+        "spacing": 100,
+        "issues": []
+      },
+      {
+        "score": 75.63,
+        "crossings": 0,
+        "orientation": "right",
+        "node_width": 300,
+        "spacing": 100,
+        "issues": []
+      },
+      {
+        "score": 108.4,
+        "crossings": 0,
+        "orientation": "down",
+        "node_width": 190,
+        "spacing": 100,
+        "issues": []
+      },
+      {
+        "score": 109.61,
+        "crossings": 0,
+        "orientation": "down",
+        "node_width": 240,
+        "spacing": 100,
+        "issues": []
+      },
+      {
+        "score": 111.06,
+        "crossings": 0,
+        "orientation": "down",
+        "node_width": 300,
+        "spacing": 100,
+        "issues": []
+      },
+      {
+        "score": 62.38,
+        "crossings": 0,
+        "orientation": "right",
+        "node_width": 190,
+        "spacing": 168,
+        "issues": []
+      },
+      {
+        "score": 74.28,
+        "crossings": 0,
+        "orientation": "right",
+        "node_width": 240,
+        "spacing": 168,
+        "issues": []
+      },
+      {
+        "score": 100.64,
+        "crossings": 0,
+        "orientation": "right",
+        "node_width": 300,
+        "spacing": 168,
+        "issues": []
+      },
+      {
+        "score": 137.32,
+        "crossings": 0,
+        "orientation": "down",
+        "node_width": 190,
+        "spacing": 168,
+        "issues": []
+      },
+      {
+        "score": 138.8,
+        "crossings": 0,
+        "orientation": "down",
+        "node_width": 240,
+        "spacing": 168,
+        "issues": []
+      },
+      {
+        "score": 140.58,
+        "crossings": 0,
+        "orientation": "down",
+        "node_width": 300,
+        "spacing": 168,
+        "issues": []
+      }
+    ],
+    "selected_score": 58.58,
+    "crossings": 0,
+    "font_measurement": "font-glyph-metrics",
+    "font_family": "Heiti TC",
+    "source_node_ids": [
+      "scope",
+      "content",
+      "design",
+      "build",
+      "verify",
+      "release"
+    ],
+    "source_edges": [
+      {
+        "from": "scope",
+        "to": "content",
+        "tone": "accent"
+      },
+      {
+        "from": "scope",
+        "to": "design",
+        "tone": "accent"
+      },
+      {
+        "from": "content",
+        "to": "build",
+        "tone": "teal"
+      },
+      {
+        "from": "design",
+        "to": "build",
+        "tone": "teal"
+      },
+      {
+        "from": "build",
+        "to": "verify",
+        "tone": "amber"
+      },
+      {
+        "from": "verify",
+        "to": "release",
+        "tone": "red"
+      }
+    ],
+    "overview_scale_at_1600": 0.97,
+    "detail_pages_recommended": false,
+    "rendered_visual_check": "not-run",
+    "manual_visual_review": "not-run",
+    "readability": {
+      "reference_viewport": [
+        1600,
+        900
+      ],
+      "available_canvas": [
+        1552,
+        720
+      ],
+      "minimum_content_font_px": 17,
+      "projected_minimum_font_px": 16.49,
+      "review_threshold_px": 12,
+      "status": "within-target",
+      "scope": "projected content text size at reference viewport; not visual acceptance"
+    }
+  },
+  "refined_layout": {
+    "version": 40,
+    "profile": "refined",
+    "manual_visual_review": "not-run"
+  },
+  "content_integrity": {
+    "status": "passed",
+    "source_ids": 6,
+    "source_relations": 6,
+    "source_texts": 12,
+    "missing_ids": [],
+    "missing_relations": [],
+    "missing_text": [],
+    "scope": "stable source IDs, explicit relation endpoints and source display text; not domain correctness"
+  }
+}

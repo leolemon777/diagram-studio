@@ -1,0 +1,20 @@
+{
+  "version": "v58",
+  "capability": "dependency",
+  "status": "manual_visual_review",
+  "source_examples": [
+    "assets/examples/dependency-cn.json",
+    "assets/examples/dependency-en.json"
+  ],
+  "checks": {
+    "bilingual_topology": "same six stable task ids and six acyclic precedence links",
+    "geometry": "adaptive refined layout reports zero node/label errors and zero connector crossings",
+    "readability": "Chinese and English overview projected minimum content text is above the 12px review threshold",
+    "browser": "overview demo, direct Chinese/English SVG and chooser entry were opened and visually reviewed"
+  },
+  "limitations": [
+    "No durations, calendars, resources or critical path are calculated in this graph form.",
+    "Native draw.io edit, save and reopen behavior is not included in this batch.",
+    "The release dependency network is illustrative and does not promise a real schedule."
+  ]
+}

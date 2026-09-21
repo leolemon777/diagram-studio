@@ -38,7 +38,7 @@ const fallbackGroups=[
  {id:'time',title:['时间与计划','Time & planning'],sub:['发生时间、持续时间、任务依赖','When, how long, what depends on what'],types:[
   {id:'timeline',name:['时间线','Timeline'],why:['展示事件发生在什么时间，重点是先后位置','Place events on real dates in chronological order'],need:['事件、真实日期','Events and actual dates']},
   {id:'gantt',name:['甘特图','Gantt chart'],why:['展示任务跨度、阶段和进度','Show task durations, phases, and progress'],need:['任务、开始/结束日期、进度','Tasks, start/end dates, progress']},
-  {id:'dependency',name:['任务依赖图','Dependency graph'],why:['先后约束比日期更重要','Task precedence matters more than calendar dates'],need:['任务、前置关系；计算需工期','Tasks, predecessor links; durations for calculations']}]},
+  {id:'dependency',name:['任务依赖图','Dependency graph'],why:['先后约束比日期更重要','Task precedence matters more than calendar dates'],need:['任务、前置关系；计算需工期','Tasks, predecessor links; durations for calculations'],example:'../dependency/index.html',scope:['只表达已声明的先后关系；不从图形邻近推断关键路径。','Expresses declared precedence only; proximity never implies a critical path.']}]},
  {id:'change',title:['比较与变化','Comparison & change'],sub:['大小排序、趋势、前后差异','Rank, trends, before/after'],types:[
   {id:'bar',name:['条形图','Bar chart'],why:['比较类别大小，尤其适合较长标签','Compare category magnitudes, especially with long labels'],need:['类别、数值、单位','Categories, values, units']},
   {id:'line',name:['趋势图','Line chart'],why:['连续时间里的变化方向与波动','Show direction and variation across ordered time'],need:['时间、数值、单位','Time points, values, units']},

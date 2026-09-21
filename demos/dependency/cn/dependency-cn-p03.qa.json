@@ -1,0 +1,13 @@
+{
+  "errors": [],
+  "warnings": [],
+  "nodes": 7,
+  "edges": 0,
+  "scope": "geometry, text estimate, axis-aligned edge/node crossings; not semantic or visual acceptance",
+  "font_measurement": "font-glyph-metrics",
+  "rendered_visual_check": "not-run",
+  "manual_visual_review": "not-run",
+  "adaptive_layout": {
+    "page_kind": "完整关系索引"
+  }
+}

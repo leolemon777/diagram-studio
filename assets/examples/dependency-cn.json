@@ -1,0 +1,27 @@
+{
+  "type": "graph",
+  "layout": {"profile": "refined", "direction": "auto"},
+  "title": "发布依赖 · 并行与汇合",
+  "subtitle": "箭头表示前置关系；并行分支在验证前汇合，不计算工期或关键路径",
+  "eyebrow": "58 / DEPENDENCY GRAPH",
+  "nodes": [
+    {"id": "scope", "label": "范围确认", "detail": "目标 · 边界", "tone": "accent"},
+    {"id": "content", "label": "内容准备", "detail": "素材 · 文案", "tone": "teal"},
+    {"id": "design", "label": "界面设计", "detail": "结构 · 交互", "tone": "teal"},
+    {"id": "build", "label": "版本实现", "detail": "组件 · 配置", "tone": "accent"},
+    {"id": "verify", "label": "集成验证", "detail": "场景 · 回归", "tone": "amber"},
+    {"id": "release", "label": "试点发布", "detail": "说明 · 观察", "tone": "red"}
+  ],
+  "edges": [
+    {"from": "scope", "to": "content", "tone": "accent"},
+    {"from": "scope", "to": "design", "tone": "accent"},
+    {"from": "content", "to": "build", "tone": "teal"},
+    {"from": "design", "to": "build", "tone": "teal"},
+    {"from": "build", "to": "verify", "tone": "amber"},
+    {"from": "verify", "to": "release", "tone": "red"}
+  ],
+  "footer": "跨行业演示 · 箭头只表达已声明的前置关系；未提供工期，不计算关键路径",
+  "family": "计划与协作",
+  "diagram_name": "任务依赖图",
+  "assumptions": ["任务、依赖和分支为跨行业演示输入；不代表实际项目排期或交付承诺。"]
+}

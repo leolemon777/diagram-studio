@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "protocol_version": "diagram-studio/delivery-1",
+  "version_id": "v-6745560a1f7c",
+  "source_name": "dependency-en",
+  "input_sha256": "6745560a1f7c1461b365bc2157cbe837aa79543110cafdfba2d43b758be6faec",
+  "theme": "light",
+  "checks": {
+    "geometry": {
+      "status": "passed",
+      "warnings": []
+    },
+    "composition": {
+      "status": "within-target",
+      "findings": []
+    },
+    "content_integrity": {
+      "status": "passed",
+      "source_ids": 6,
+      "source_relations": 6,
+      "source_texts": 12,
+      "missing_ids": [],
+      "missing_relations": [],
+      "missing_text": [],
+      "scope": "stable source IDs, explicit relation endpoints and source display text; not domain correctness"
+    },
+    "browser_text_bounds": {
+      "status": "not-run"
+    },
+    "manual_visual_review": {
+      "status": "not-run"
+    },
+    "native_editor": {
+      "status": "not-run"
+    }
+  },
+  "files": {
+    "adaptive_reader.js": "9bc0a1eb6bfcf6bc88f5546bab128557ab8cc5daaee9887bcfa3e4d23b426fcf",
+    "browser_quality.js": "e02da63376abe62d68f626d97701d2aacf761f59e6312a420643eab270339e1b",
+    "dependency-en-p01.qa.json": "5851378fb6f643f653e432386ac29e950d0803cd62fce3dad6ffcf3bd34c7f59",
+    "dependency-en-p01.svg": "741e23d1cfcc4c37681238aa6a3ddae26da4c05ea2f3dad91739e5fb8b38e671",
+    "dependency-en-p02.qa.json": "90124933005a00aea1538e231e595048bfe88060a83ad7d5faa3bab126ea83aa",
+    "dependency-en-p02.svg": "2fc34dbb8f4d4186422b3aba24e865a170e6f98f4b052c70b65f41b39dfb409b",
+    "dependency-en-p03.qa.json": "61231b34bd912a85f8ebcfd93400c1a4f0bdec2af1573d3b7559ab33c9e8c54a",
+    "dependency-en-p03.svg": "b81e6aef74aba132800d5f945aa23fb61a99cb5716502dc99d797445f6402fb8",
+    "dependency-en-reading.drawio": "c258dbdaf693dc11418b8d65bddc8ea6d9b12b53fdbc93f0c7c35e6f95c42bea",
+    "dependency-en-reading.json": "00ed3a35f5a006a2bd966392cac08c7631b78f92d7b73fb2fdeb38d33ee25a97",
+    "dependency-en.brief.json": "65da26b486193776e5730fe81964bef48a7a732e0418c0024f67fcab1a35cb04",
+    "dependency-en.drawio": "cc8f5528c803170d1cffec98319417696db9125c9902ef9121c169fe314ba623",
+    "dependency-en.html": "3f8c6798afc03ced7e5e80816f00d3d296b8c06c45f8ab216df000cddf987785",
+    "dependency-en.qa.json": "809f7529c14200849a779e7f0e32263029e23800061fcac03fa1edf6cbc18f4d",
+    "dependency-en.scene.json": "bd7755be57554c156f81cb0021aa124161f0f7e6f9b42a8020583ccc899917d3",
+    "dependency-en.svg": "64ba2d0cb227b2a663a30d178692d383dd5ea4b11690ca287a8215100857e3ce"
+  },
+  "delivery_scope": "Generation, semantic content checks and QA finish before replacement. Individual files are replaced; promotion is not a multi-file atomic transaction."
+}

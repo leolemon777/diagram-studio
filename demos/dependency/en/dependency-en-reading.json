@@ -1,0 +1,104 @@
+{
+  "nodes": {
+    "scope": [
+      1
+    ],
+    "content": [
+      1
+    ],
+    "design": [
+      1
+    ],
+    "build": [
+      1
+    ],
+    "verify": [
+      1
+    ],
+    "release": [
+      1
+    ]
+  },
+  "edges": [
+    {
+      "index": 0,
+      "from": "scope",
+      "to": "content",
+      "label": "",
+      "pages": [
+        2
+      ]
+    },
+    {
+      "index": 1,
+      "from": "scope",
+      "to": "design",
+      "label": "",
+      "pages": [
+        2
+      ]
+    },
+    {
+      "index": 2,
+      "from": "content",
+      "to": "build",
+      "label": "",
+      "pages": [
+        2
+      ]
+    },
+    {
+      "index": 3,
+      "from": "design",
+      "to": "build",
+      "label": "",
+      "pages": [
+        2
+      ]
+    },
+    {
+      "index": 4,
+      "from": "build",
+      "to": "verify",
+      "label": "",
+      "pages": [
+        3
+      ]
+    },
+    {
+      "index": 5,
+      "from": "verify",
+      "to": "release",
+      "label": "",
+      "pages": [
+        3
+      ]
+    }
+  ],
+  "local_views": [],
+  "source_node_count": 6,
+  "source_edge_count": 6,
+  "pages": [
+    {
+      "file": "dependency-en-p01.svg",
+      "title": "P01 Object details",
+      "width": 1600,
+      "height": 900,
+      "minimum_font": 14
+    },
+    {
+      "file": "dependency-en-p02.svg",
+      "title": "P02 Relationship index",
+      "width": 1600,
+      "height": 900,
+      "minimum_font": 14
+    },
+    {
+      "file": "dependency-en-p03.svg",
+      "title": "P03 Relationship index",
+      "width": 1600,
+      "height": 900,
+      "minimum_font": 14
+    }
+  ]
+}

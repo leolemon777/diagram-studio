@@ -1,0 +1,694 @@
+{
+  "width": 1600,
+  "height": 640,
+  "theme": "light",
+  "palette": {
+    "bg": "#F1EFEB",
+    "panel": "#FEFDF9",
+    "ink": "#30302D",
+    "muted": "#6D6A63",
+    "line": "#D8D3C8",
+    "accent": "#AC6046",
+    "teal": "#67685E",
+    "amber": "#8C7964",
+    "red": "#554C46",
+    "tint": "#F0E4DA",
+    "tint2": "#ECECE5"
+  },
+  "nodes": [
+    {
+      "id": "scope",
+      "x": 96.0,
+      "y": 318.0,
+      "w": 190,
+      "h": 96,
+      "label": "范围确认",
+      "detail": "目标 · 边界",
+      "kind": "rect",
+      "tone": "accent",
+      "check": true,
+      "_lines": [
+        [
+          "范围确认",
+          22,
+          true,
+          "ink"
+        ],
+        [
+          "目标 · 边界",
+          17,
+          false,
+          "muted"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "text_margin": 20,
+      "stroke_width": 1.1
+    },
+    {
+      "id": "content",
+      "x": 362.0,
+      "y": 230.0,
+      "w": 190,
+      "h": 96,
+      "label": "内容准备",
+      "detail": "素材 · 文案",
+      "kind": "rect",
+      "tone": "teal",
+      "check": true,
+      "_lines": [
+        [
+          "内容准备",
+          22,
+          true,
+          "ink"
+        ],
+        [
+          "素材 · 文案",
+          17,
+          false,
+          "muted"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "text_margin": 20,
+      "stroke_width": 1.1
+    },
+    {
+      "id": "design",
+      "x": 362.0,
+      "y": 406.0,
+      "w": 190,
+      "h": 96,
+      "label": "界面设计",
+      "detail": "结构 · 交互",
+      "kind": "rect",
+      "tone": "teal",
+      "check": true,
+      "_lines": [
+        [
+          "界面设计",
+          22,
+          true,
+          "ink"
+        ],
+        [
+          "结构 · 交互",
+          17,
+          false,
+          "muted"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "text_margin": 20,
+      "stroke_width": 1.1
+    },
+    {
+      "id": "build",
+      "x": 628.0,
+      "y": 318.0,
+      "w": 190,
+      "h": 96,
+      "label": "版本实现",
+      "detail": "组件 · 配置",
+      "kind": "rect",
+      "tone": "accent",
+      "check": true,
+      "_lines": [
+        [
+          "版本实现",
+          22,
+          true,
+          "ink"
+        ],
+        [
+          "组件 · 配置",
+          17,
+          false,
+          "muted"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "text_margin": 20,
+      "stroke_width": 1.1
+    },
+    {
+      "id": "verify",
+      "x": 894.0,
+      "y": 318.0,
+      "w": 190,
+      "h": 96,
+      "label": "集成验证",
+      "detail": "场景 · 回归",
+      "kind": "rect",
+      "tone": "amber",
+      "check": true,
+      "_lines": [
+        [
+          "集成验证",
+          22,
+          true,
+          "ink"
+        ],
+        [
+          "场景 · 回归",
+          17,
+          false,
+          "muted"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "text_margin": 20,
+      "stroke_width": 1.1
+    },
+    {
+      "id": "release",
+      "x": 1160.0,
+      "y": 318.0,
+      "w": 190,
+      "h": 96,
+      "label": "试点发布",
+      "detail": "说明 · 观察",
+      "kind": "rect",
+      "tone": "red",
+      "check": true,
+      "_lines": [
+        [
+          "试点发布",
+          22,
+          true,
+          "ink"
+        ],
+        [
+          "说明 · 观察",
+          17,
+          false,
+          "muted"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "text_margin": 20,
+      "stroke_width": 1.1
+    },
+    {
+      "id": "_v7",
+      "x": 64,
+      "y": 34,
+      "w": 1472,
+      "h": 22,
+      "label": "58 / DEPENDENCY GRAPH",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 14,
+      "align": "left",
+      "check": false,
+      "font_family": "Heiti TC"
+    },
+    {
+      "id": "_v8",
+      "x": 64,
+      "y": 74,
+      "w": 1472,
+      "h": 49,
+      "label": "发布依赖 · 并行与汇合",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 36,
+      "align": "left",
+      "check": false,
+      "font_family": "Heiti TC",
+      "_lines": [
+        [
+          "发布依赖 · 并行与汇合",
+          36,
+          true,
+          "ink"
+        ]
+      ]
+    },
+    {
+      "id": "_v9",
+      "x": 64,
+      "y": 131,
+      "w": 1472,
+      "h": 24,
+      "label": "箭头表示前置关系；并行分支在验证前汇合，不计算工期或关键路径",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "left",
+      "check": false,
+      "font_family": "Heiti TC",
+      "_lines": [
+        [
+          "箭头表示前置关系；并行分支在验证前汇合，不计算工期或关键路径",
+          17,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "_v10",
+      "x": 64,
+      "y": 580,
+      "w": 1472,
+      "h": 1,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "line",
+      "stroke": "none",
+      "check": false
+    },
+    {
+      "id": "_v11",
+      "x": 64,
+      "y": 596,
+      "w": 1472,
+      "h": 20,
+      "label": "跨行业演示 · 箭头只表达已声明的前置关系；未提供工期，不计算关键路径",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false,
+      "font_family": "Heiti TC",
+      "_lines": [
+        [
+          "跨行业演示 · 箭头只表达已声明的前置关系；未提供工期，不计算关键路径",
+          14,
+          false,
+          "muted"
+        ]
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "scope",
+      "target": "content",
+      "label": "",
+      "points": [
+        [
+          286.0,
+          366.0
+        ],
+        [
+          308.0,
+          366.0
+        ],
+        [
+          308.0,
+          278.0
+        ],
+        [
+          362.0,
+          278.0
+        ]
+      ],
+      "source_port": "right",
+      "target_port": "left",
+      "tone": "accent",
+      "width": 1.5,
+      "dashed": false,
+      "arrow": true,
+      "_label_box": null,
+      "_label_lines": null,
+      "_label_font": 15
+    },
+    {
+      "source": "scope",
+      "target": "design",
+      "label": "",
+      "points": [
+        [
+          286.0,
+          366.0
+        ],
+        [
+          314.0,
+          366.0
+        ],
+        [
+          314.0,
+          454.0
+        ],
+        [
+          362.0,
+          454.0
+        ]
+      ],
+      "source_port": "right",
+      "target_port": "left",
+      "tone": "accent",
+      "width": 1.5,
+      "dashed": false,
+      "arrow": true,
+      "_label_box": null,
+      "_label_lines": null,
+      "_label_font": 15
+    },
+    {
+      "source": "content",
+      "target": "build",
+      "label": "",
+      "points": [
+        [
+          552.0,
+          278.0
+        ],
+        [
+          586.0,
+          278.0
+        ],
+        [
+          586.0,
+          366.0
+        ],
+        [
+          628.0,
+          366.0
+        ]
+      ],
+      "source_port": "right",
+      "target_port": "left",
+      "tone": "teal",
+      "width": 1.5,
+      "dashed": false,
+      "arrow": true,
+      "_label_box": null,
+      "_label_lines": null,
+      "_label_font": 15
+    },
+    {
+      "source": "design",
+      "target": "build",
+      "label": "",
+      "points": [
+        [
+          552.0,
+          454.0
+        ],
+        [
+          592.0,
+          454.0
+        ],
+        [
+          592.0,
+          366.0
+        ],
+        [
+          628.0,
+          366.0
+        ]
+      ],
+      "source_port": "right",
+      "target_port": "left",
+      "tone": "teal",
+      "width": 1.5,
+      "dashed": false,
+      "arrow": true,
+      "_label_box": null,
+      "_label_lines": null,
+      "_label_font": 15
+    },
+    {
+      "source": "build",
+      "target": "verify",
+      "label": "",
+      "points": [
+        [
+          818.0,
+          366.0
+        ],
+        [
+          894.0,
+          366.0
+        ]
+      ],
+      "source_port": "right",
+      "target_port": "left",
+      "tone": "amber",
+      "width": 1.5,
+      "dashed": false,
+      "arrow": true,
+      "_label_box": null,
+      "_label_lines": null,
+      "_label_font": 15
+    },
+    {
+      "source": "verify",
+      "target": "release",
+      "label": "",
+      "points": [
+        [
+          1084.0,
+          366.0
+        ],
+        [
+          1160.0,
+          366.0
+        ]
+      ],
+      "source_port": "right",
+      "target_port": "left",
+      "tone": "red",
+      "width": 1.5,
+      "dashed": false,
+      "arrow": true,
+      "_label_box": null,
+      "_label_lines": null,
+      "_label_font": 15
+    }
+  ],
+  "meta": {
+    "adaptive_layout": {
+      "version": 40,
+      "strategy": "right",
+      "node_width": 190,
+      "candidates": [
+        {
+          "score": 58.58,
+          "crossings": 0,
+          "orientation": "right",
+          "node_width": 190,
+          "spacing": 76,
+          "issues": []
+        },
+        {
+          "score": 60.09,
+          "crossings": 0,
+          "orientation": "right",
+          "node_width": 240,
+          "spacing": 76,
+          "issues": []
+        },
+        {
+          "score": 65.54,
+          "crossings": 0,
+          "orientation": "right",
+          "node_width": 300,
+          "spacing": 76,
+          "issues": []
+        },
+        {
+          "score": 95.01,
+          "crossings": 0,
+          "orientation": "down",
+          "node_width": 190,
+          "spacing": 76,
+          "issues": []
+        },
+        {
+          "score": 96.13,
+          "crossings": 0,
+          "orientation": "down",
+          "node_width": 240,
+          "spacing": 76,
+          "issues": []
+        },
+        {
+          "score": 97.47,
+          "crossings": 0,
+          "orientation": "down",
+          "node_width": 300,
+          "spacing": 76,
+          "issues": []
+        },
+        {
+          "score": 59.47,
+          "crossings": 0,
+          "orientation": "right",
+          "node_width": 190,
+          "spacing": 100,
+          "issues": []
+        },
+        {
+          "score": 61.02,
+          "crossings": 0,
+          "orientation": "right",
+          "node_width": 240,
+          "spacing": 100,
+          "issues": []
+        },
+        {
+          "score": 75.63,
+          "crossings": 0,
+          "orientation": "right",
+          "node_width": 300,
+          "spacing": 100,
+          "issues": []
+        },
+        {
+          "score": 108.4,
+          "crossings": 0,
+          "orientation": "down",
+          "node_width": 190,
+          "spacing": 100,
+          "issues": []
+        },
+        {
+          "score": 109.61,
+          "crossings": 0,
+          "orientation": "down",
+          "node_width": 240,
+          "spacing": 100,
+          "issues": []
+        },
+        {
+          "score": 111.06,
+          "crossings": 0,
+          "orientation": "down",
+          "node_width": 300,
+          "spacing": 100,
+          "issues": []
+        },
+        {
+          "score": 62.38,
+          "crossings": 0,
+          "orientation": "right",
+          "node_width": 190,
+          "spacing": 168,
+          "issues": []
+        },
+        {
+          "score": 74.28,
+          "crossings": 0,
+          "orientation": "right",
+          "node_width": 240,
+          "spacing": 168,
+          "issues": []
+        },
+        {
+          "score": 100.64,
+          "crossings": 0,
+          "orientation": "right",
+          "node_width": 300,
+          "spacing": 168,
+          "issues": []
+        },
+        {
+          "score": 137.32,
+          "crossings": 0,
+          "orientation": "down",
+          "node_width": 190,
+          "spacing": 168,
+          "issues": []
+        },
+        {
+          "score": 138.8,
+          "crossings": 0,
+          "orientation": "down",
+          "node_width": 240,
+          "spacing": 168,
+          "issues": []
+        },
+        {
+          "score": 140.58,
+          "crossings": 0,
+          "orientation": "down",
+          "node_width": 300,
+          "spacing": 168,
+          "issues": []
+        }
+      ],
+      "selected_score": 58.58,
+      "crossings": 0,
+      "font_measurement": "font-glyph-metrics",
+      "font_family": "Heiti TC",
+      "source_node_ids": [
+        "scope",
+        "content",
+        "design",
+        "build",
+        "verify",
+        "release"
+      ],
+      "source_edges": [
+        {
+          "from": "scope",
+          "to": "content",
+          "tone": "accent"
+        },
+        {
+          "from": "scope",
+          "to": "design",
+          "tone": "accent"
+        },
+        {
+          "from": "content",
+          "to": "build",
+          "tone": "teal"
+        },
+        {
+          "from": "design",
+          "to": "build",
+          "tone": "teal"
+        },
+        {
+          "from": "build",
+          "to": "verify",
+          "tone": "amber"
+        },
+        {
+          "from": "verify",
+          "to": "release",
+          "tone": "red"
+        }
+      ],
+      "overview_scale_at_1600": 0.97,
+      "detail_pages_recommended": false,
+      "rendered_visual_check": "not-run",
+      "manual_visual_review": "not-run",
+      "readability": {
+        "reference_viewport": [
+          1600,
+          900
+        ],
+        "available_canvas": [
+          1552,
+          720
+        ],
+        "minimum_content_font_px": 17,
+        "projected_minimum_font_px": 16.49,
+        "review_threshold_px": 12,
+        "status": "within-target",
+        "scope": "projected content text size at reference viewport; not visual acceptance"
+      }
+    },
+    "refined_layout": {
+      "version": 40,
+      "profile": "refined",
+      "manual_visual_review": "not-run"
+    }
+  },
+  "assumptions": [
+    "任务、依赖和分支为跨行业演示输入；不代表实际项目排期或交付承诺。"
+  ]
+}

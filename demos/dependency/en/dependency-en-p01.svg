@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="diagram-title diagram-desc">
+<title id="diagram-title">Object details</title>
+<desc id="diagram-desc">Release dependencies · parallel and merge</desc>
+<rect width="100%" height="100%" fill="#F1EFEB"/>
+<defs>
+<marker id="arrow-accent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#AC6046"/></marker>
+<marker id="arrow-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#67685E"/></marker>
+<marker id="arrow-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#8C7964"/></marker>
+<marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#554C46"/></marker>
+<marker id="arrow-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#6D6A63"/></marker>
+<marker id="arrow-line" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#D8D3C8"/></marker>
+<marker id="arrow-ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#30302D"/></marker>
+</defs>
+<g font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, Arial, sans-serif">
+<g id="scope-part-0" data-kind="rect" data-content-text="false" data-box="64,230,684,116.9" font-family="Heiti TC">
+<rect x="64" y="230" width="684" height="116.9" rx="10" fill="#FEFDF9" stroke="#AC6046" stroke-width="1.5"/>
+<text x="406.0" y="266.0" text-anchor="middle" font-size="14" font-weight="400" fill="#AC6046">scope</text>
+<text x="406.0" y="292.9" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">Scope</text>
+<text x="406.0" y="318.59999999999997" text-anchor="middle" font-size="18" font-weight="400" fill="#6D6A63">Goal · boundary</text>
+</g>
+<g id="content-part-0" data-kind="rect" data-content-text="false" data-box="64,370.9,684,116.9" font-family="Heiti TC">
+<rect x="64" y="370.9" width="684" height="116.9" rx="10" fill="#FEFDF9" stroke="#AC6046" stroke-width="1.5"/>
+<text x="406.0" y="406.9" text-anchor="middle" font-size="14" font-weight="400" fill="#AC6046">content</text>
+<text x="406.0" y="433.79999999999995" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">Content</text>
+<text x="406.0" y="459.49999999999994" text-anchor="middle" font-size="18" font-weight="400" fill="#6D6A63">Assets · copy</text>
+</g>
+<g id="design-part-0" data-kind="rect" data-content-text="false" data-box="64,511.79999999999995,684,116.9" font-family="Heiti TC">
+<rect x="64" y="511.79999999999995" width="684" height="116.9" rx="10" fill="#FEFDF9" stroke="#AC6046" stroke-width="1.5"/>
+<text x="406.0" y="547.8" text-anchor="middle" font-size="14" font-weight="400" fill="#AC6046">design</text>
+<text x="406.0" y="574.6999999999999" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">Design</text>
+<text x="406.0" y="600.4" text-anchor="middle" font-size="18" font-weight="400" fill="#6D6A63">Structure · interaction</text>
+</g>
+<g id="build-part-0" data-kind="rect" data-content-text="false" data-box="64,652.6999999999999,684,116.9" font-family="Heiti TC">
+<rect x="64" y="652.6999999999999" width="684" height="116.9" rx="10" fill="#FEFDF9" stroke="#AC6046" stroke-width="1.5"/>
+<text x="406.0" y="688.6999999999999" text-anchor="middle" font-size="14" font-weight="400" fill="#AC6046">build</text>
+<text x="406.0" y="715.5999999999999" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">Build</text>
+<text x="406.0" y="741.3" text-anchor="middle" font-size="18" font-weight="400" fill="#6D6A63">Components · config</text>
+</g>
+<g id="verify-part-0" data-kind="rect" data-content-text="false" data-box="852,230,684,116.9" font-family="Heiti TC">
+<rect x="852" y="230" width="684" height="116.9" rx="10" fill="#FEFDF9" stroke="#AC6046" stroke-width="1.5"/>
+<text x="1194.0" y="266.0" text-anchor="middle" font-size="14" font-weight="400" fill="#AC6046">verify</text>
+<text x="1194.0" y="292.9" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">Verify</text>
+<text x="1194.0" y="318.59999999999997" text-anchor="middle" font-size="18" font-weight="400" fill="#6D6A63">Scenarios · regression</text>
+</g>
+<g id="release-part-0" data-kind="rect" data-content-text="false" data-box="852,370.9,684,116.9" font-family="Heiti TC">
+<rect x="852" y="370.9" width="684" height="116.9" rx="10" fill="#FEFDF9" stroke="#AC6046" stroke-width="1.5"/>
+<text x="1194.0" y="406.9" text-anchor="middle" font-size="14" font-weight="400" fill="#AC6046">release</text>
+<text x="1194.0" y="433.79999999999995" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">Pilot release</text>
+<text x="1194.0" y="459.49999999999994" text-anchor="middle" font-size="18" font-weight="400" fill="#6D6A63">Notes · observation</text>
+</g>
+<g id="_v7" data-kind="text" data-content-text="false" data-box="64,34,1472,22" font-family="Heiti TC">
+
+<text x="64" y="49.55" text-anchor="start" font-size="14" font-weight="400" fill="#AC6046">DIAGRAM STUDIO / READING DETAILS / P01</text>
+</g>
+<g id="_v8" data-kind="text" data-content-text="false" data-box="64,74,1472,49" font-family="Heiti TC">
+
+<text x="64" y="110.2" text-anchor="start" font-size="36" font-weight="600" fill="#30302D">Object details</text>
+</g>
+<g id="_v9" data-kind="text" data-content-text="false" data-box="64,131,1472,24" font-family="Heiti TC">
+
+<text x="64" y="148.525" text-anchor="start" font-size="17" font-weight="400" fill="#6D6A63">Release dependencies · parallel and merge</text>
+</g>
+<g id="_v10" data-kind="rect" data-content-text="false" data-box="64,840,1472,1">
+<rect x="64" y="840" width="1472" height="1" rx="0" fill="#D8D3C8" stroke="none" stroke-width="1.5"/>
+</g>
+<g id="_v11" data-kind="text" data-content-text="false" data-box="64,856,1472,20" font-family="Heiti TC">
+
+<text x="64" y="870.55" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">Complete source content · IDs link the overview and relationship index</text>
+</g>
+</g></svg>
