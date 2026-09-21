@@ -17,7 +17,7 @@
     "viewport_evidence": "assets/v72-viewport-evidence.json; 23 demo pages × 4 viewports; document overflow 0/92",
     "responsive_repair": "experience-maps grid/card/frame min-width fix verified at 390×844 and 768×1024",
     "jev": "not present in available skills, plugins, or repository files; integration awaits an explicit path or name",
-    "native_editor": "representative v72 pass recorded in assets/v72-native-editor-roundtrip-evidence.json: flow-cn, lean-canvas-cn and user-path-storyboard-cn were edited, saved in diagrams.net browser storage, and reopened; local 万兴图示 rejection remains recorded separately; all-type coverage is not claimed",
+    "native_editor": "representative v72 pass recorded in assets/v72-native-editor-roundtrip-evidence.json: flow-cn, lean-canvas-cn, user-path-storyboard-cn, gantt-delivery-cn, line-chart-cn and experience-map-cn were edited, saved in diagrams.net browser storage, and reopened; local 万兴图示 rejection remains recorded separately; all-type coverage is not claimed",
     "remaining_count_policy": "the 206 unverified catalog rows are not a reliable work-remaining count"
   },
   "v71_evidence": {

@@ -4,7 +4,7 @@
   "editor": "diagrams.net web editor",
   "editor_url": "https://app.diagrams.net",
   "storage": "browser storage",
-  "scope": "Three representative bilingual-capable draw.io outputs were opened from the public repository, edited in the native diagrams.net editor, saved to browser storage, reopened, and checked through the editor accessibility tree.",
+  "scope": "Six representative bilingual-capable draw.io outputs were opened from the public repository, edited in the native diagrams.net editor, saved to browser storage, reopened, and checked through the editor accessibility tree.",
   "cases": [
     {
       "id": "flow-cn",
@@ -32,17 +32,44 @@
       "edit": "Changed the actor label [step-open] 照护者 to [step-open] 照护者 · T07.",
       "reopen_check": "The T07 marker remained after reopening; preconditions, visible states, main-path steps, branch labels, exception labels and recovery text remained visible.",
       "reload_verified": true
+    },
+    {
+      "id": "gantt-delivery-cn",
+      "source": "demos/gantt/cn/delivery/gantt-cn-delivery.drawio",
+      "source_url": "https://raw.githubusercontent.com/leolemon777/diagram-studio/main/demos/gantt/cn/delivery/gantt-cn-delivery.drawio",
+      "saved_name": "diagram-studio-t07-gantt-browser.drawio",
+      "edit": "Changed the task label 确认活动范围 to 确认活动范围 · T07.",
+      "reopen_check": "The T07 marker remained after reopening; task names, owners, date ranges, progress percentages and the milestone remained visible.",
+      "reload_verified": true
+    },
+    {
+      "id": "line-chart-cn",
+      "source": "demos/data-story/line/09-line-chart-cn.drawio",
+      "source_url": "https://raw.githubusercontent.com/leolemon777/diagram-studio/main/demos/data-story/line/09-line-chart-cn.drawio",
+      "saved_name": "diagram-studio-t07-line-browser.drawio",
+      "edit": "Changed the visible mark 第 1 周 to 第 1 周 · T07.",
+      "reopen_check": "The T07 marker remained after reopening; the axis labels, six weekly marks, values and trend footnote remained visible.",
+      "reload_verified": true
+    },
+    {
+      "id": "experience-map-cn",
+      "source": "demos/experience-maps/education-journey.drawio",
+      "source_url": "https://raw.githubusercontent.com/leolemon777/diagram-studio/main/demos/experience-maps/education-journey.drawio",
+      "saved_name": "diagram-studio-t07-experience-browser.drawio",
+      "edit": "Changed the stage label 01 / discover to 01 / discover · T07.",
+      "reopen_check": "The T07 marker remained after reopening; stages, behaviors, touchpoints, evidence, opportunities, actions and emotion rows remained visible.",
+      "reload_verified": true
     }
   ],
   "checks": {
-    "edit_save_reopen": "passed for all three representative cases",
-    "relationship_or_structure_visibility": "passed for the flow conditions, all nine Lean Canvas blocks, and user-path branches/exceptions",
+    "edit_save_reopen": "passed for all six representative cases",
+    "relationship_or_structure_visibility": "passed for flow conditions, all nine Lean Canvas blocks, user-path branches/exceptions, Gantt task/date/progress rows, line-chart marks, and experience-map rows",
     "repository_source_modified": false,
     "local_editor_compatibility": "separate EdrawMax attempt failed to open a temporary flow copy; see assets/v72-editor-attempt.json"
   },
   "limits": [
     "Browser storage is the saved artifact for this evidence; no local exported round-trip file was added to the repository.",
-    "This is representative coverage for three files, not native-editor approval of every registered capability or every language variant.",
-    "The editor verified text edits and preserved visible structure; data-driven chart edits that require JSON regeneration remain documented as regeneration workflows."
+    "This is representative coverage for six files, not native-editor approval of every registered capability or every language variant.",
+    "The editor verified text edits and preserved visible structure; data-driven chart value changes that require JSON regeneration remain documented as regeneration workflows."
   ]
 }

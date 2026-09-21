@@ -33,11 +33,11 @@
     "native_editor_roundtrip": "assets/v72-native-editor-roundtrip-evidence.json",
     "source_installed_parity": "passed: recursive diff excluding .git is empty",
     "jev": "pending: no matching Skill, plugin or repository file is available",
-    "native_editor": "representative pass: flow-cn, lean-canvas-cn and user-path-storyboard-cn edited, saved to diagrams.net browser storage and reopened; all-type coverage is not claimed; local 万兴图示 separately rejected a temporary flow .drawio copy"
+    "native_editor": "representative pass: flow-cn, lean-canvas-cn, user-path-storyboard-cn, gantt-delivery-cn, line-chart-cn and experience-map-cn edited, saved to diagrams.net browser storage and reopened; all-type coverage is not claimed; local 万兴图示 separately rejected a temporary flow .drawio copy"
   },
   "boundaries": [
     "Generated semantic and geometry checks do not certify a real service, product-market fit, domain workflow, user research, or user approval.",
-    "Native-editor edit/save/reopen is proven for three representative files through diagrams.net browser storage; this does not cover every registered type or every language variant.",
+    "Native-editor edit/save/reopen is proven for six representative files through diagrams.net browser storage; this does not cover every registered type or every language variant.",
     "The layout grows beyond a fixed 16:9 canvas when long content or many steps require it."
   ]
 }
