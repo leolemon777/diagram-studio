@@ -1,0 +1,62 @@
+{
+  "version": "v74-chooser-continuity",
+  "tested_at": "2026-09-21",
+  "url": "http://127.0.0.1:8773/demos/chooser/index.html?v=74-chooser",
+  "method": "Real browser interaction through the local installed Skill page; state was checked from the rendered accessibility/DOM state after each interaction.",
+  "cases": [
+    {
+      "id": "bilingual-state-retention",
+      "actions": [
+        "entered a Chinese workflow brief and audience",
+        "selected process intent, flowchart, Cut style, presentation canvas and SVG + editable draw.io + JSON",
+        "switched to English and back to Chinese"
+      ],
+      "checks": {
+        "content_preserved": true,
+        "audience_preserved": true,
+        "intent_preserved": true,
+        "type_preserved": true,
+        "style_preserved": true,
+        "canvas_preserved": true,
+        "delivery_preserved": true,
+        "localized_title_changed": true,
+        "prompt_rebuilt_in_target_language": true
+      },
+      "result": "passed"
+    },
+    {
+      "id": "category-memory-and-format-boundary",
+      "actions": [
+        "selected heatmap in Composition & distribution",
+        "selected swimlane in Process & collaboration",
+        "returned to Composition & distribution",
+        "selected heatmap again and inspected its output options and support note"
+      ],
+      "checks": {
+        "heatmap_recalled": true,
+        "swimlane_selection_did_not_clear_brief": true,
+        "heatmap_output_values": ["both", "svg"],
+        "support_note_lists_registered_formats": true,
+        "no_unregistered_output_option_exposed": true
+      },
+      "result": "passed"
+    },
+    {
+      "id": "keyboard-and-copy-feedback",
+      "actions": [
+        "tabbed from content to audience, canvas and delivery controls",
+        "activated copy prompt"
+      ],
+      "checks": {
+        "focus_sequence": ["audience", "size", "output"],
+        "copy_feedback": "已复制",
+        "prompt_contains_selected_form_and_real_content": true
+      },
+      "result": "passed"
+    }
+  ],
+  "scope": {
+    "passed": "State continuity, category memory, keyboard order, prompt rebuild and registered format filtering for representative flow, swimlane and heatmap paths.",
+    "not_claimed": "This is not a full visual sign-off for all 30 capabilities, not a 390×844 pixel-boundary audit, and not byte-level clipboard verification."
+  }
+}
