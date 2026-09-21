@@ -17,11 +17,15 @@
 
 它还支持针对**同一份数据**比较不同表达方式，改变阅读顺序与构图，同时保留数值、关系、单位和方向。[四个行业场景的八种表达](demos/expression-lab/index.html)是可重绘的实验示例。目录中的类型名称是检索入口，不代表每个类型都有独立渲染器；详细状态见 [验证记录](references/verification-status.md)。
 
+首次试用可以直接走[双语六行业试用包](references/trial-guide.md)，按场景做一次内容修改，再检查 SVG、HTML、draw.io 和 JSON 的边界。
+
+不同后端的交付格式范围见[交付格式矩阵](references/delivery-matrix.md)；PNG/PDF 等专门格式不会被普通后端默认承诺。
+
 关系网络的双语跨行业案例见[网络演示](demos/network/index.html)：对象、方向、返回关系和三页详读均保留，适合先看结构再按群组拆图。分层职责与横向关注点见[架构演示](demos/architecture/index.html)；普通步骤、判断和异常回流见[预约流程演示](demos/flow/index.html)；同一份排期的汇报、执行和打印版见[甘特图演示](demos/gantt/index.html)；同一社区服务场景的 SWOT 双语矩阵见[SWOT 演示](demos/swot/index.html)；消息先后可看[交互时序演示](demos/sequence/index.html)，返回消息以虚线和方向保留；并行工作与汇合约束见[任务依赖演示](demos/dependency/index.html)；角色交接与异常回流见[责任泳道演示](demos/swimlane/index.html)。
 
 ## 怎么用
 
-如果不知道该选哪种图，克隆仓库后在浏览器打开本地的[中英双语选图向导](demos/chooser/index.html)：按“想让读者看懂什么 → 图型 → 风格”选择，填入自己的内容后复制生成的 `$diagram-studio` 指令。向导覆盖 20 种常见形式，提供选型提示；它本身不渲染任意输入，完整成图仍由 Codex 使用 Skill 完成。向导的后端、格式和证据状态来自[能力登记](references/capability-registry.md)，不会只根据旧页面文案宣称支持。风格缩略图是方向示意，实际支持范围见[风格家族](references/style-families.md)。
+如果不知道该选哪种图，克隆仓库后在浏览器打开本地的[中英双语选图向导](demos/chooser/index.html)：按“想让读者看懂什么 → 图型 → 风格”选择，填入自己的内容后复制生成的 `$diagram-studio` 指令。向导按能力登记提供 28 项已登记能力的选型提示；它本身不渲染任意输入，完整成图仍由 Codex 使用 Skill 完成。向导的后端、格式和证据状态来自[能力登记](references/capability-registry.md)，不会只根据旧页面文案宣称支持。风格卡会复用当前选中图型的真实缩略结构，同时仍是方向示意；实际支持范围见[风格家族](references/style-families.md)。
 
 ### 1. 安装给 Codex
 
@@ -57,7 +61,7 @@ python3 scripts/render.py assets/examples-en/workflow.json --out /tmp/diagram-wo
 python3 scripts/expression_lab.py --out /tmp/diagram-expression-lab
 ```
 
-前四条分别生成中英架构图、流程图。`render.py` 的普通输出包含 SVG、draw.io、原始 brief、场景和检查记录；自适应模式还会生成阅读 HTML 与多页源。最后一条生成四组、八种表达的离线对照页；演示数据均为模拟数据。更多输入字段见 [生成格式](references/rendering.md)。部分专业图表需要 Matplotlib，自适应字宽度量可选 Pillow；缺少依赖时按对应后端文档安装。
+前四条分别生成中英架构图、流程图。`render.py` 的普通输出包含 SVG、draw.io、原始 brief、场景和检查记录；自适应模式还会生成阅读 HTML 与多页源。最后一条生成四组、八种表达的离线对照页；演示数据均为模拟数据。更多输入字段见 [生成格式](references/rendering.md)。部分专业图表需要 Matplotlib，自适应字宽度量可选 Pillow；缺少依赖时按对应后端文档安装。若要在隔离环境运行跨行业、数据艺术或科学后端，可执行 `python3 -m pip install matplotlib pillow`；没有这些可选依赖时，普通 SVG/draw.io 生成仍可运行。
 
 ## 多元白板方法与 UI/UX
 
@@ -67,7 +71,7 @@ python3 scripts/expression_lab.py --out /tmp/diagram-expression-lab
 
 普通流程、分层架构、执行甘特、单系列对比和趋势新增精修模式：按长文字扩展、区分主线和回流、保留正负值与缺测，提供不同表达。运行 `python3 scripts/refinement_suite.py --out /tmp/diagram-refinement`，再用本地 HTTP 服务打开该目录，可查看中英切换的 11 份原版、修改与对照样例。输入方式与范围见 [五类精修规则](references/refinement.md)。
 
-本轮 34 项回归通过，11 份总览通过桌面浏览器实际文字检查；流程样例已在 draw.io 修改节点文字、保存并重开。检查不代表所有图型、移动屏幕或审美已获验收，详见 [验证记录](references/verification-status.md)。
+截至 v71，源仓库与安装目录均有 120 项回归通过（此前基线为 119 项，新增 1 项双语语义回归）。11 份总览曾通过桌面浏览器实际文字检查，流程和故事地图样例曾在 draw.io 修改、保存并重开。检查不代表所有图型、移动屏幕或审美已获验收，详见 [验证记录](references/verification-status.md)。
 
 ## 流程与交付改进
 

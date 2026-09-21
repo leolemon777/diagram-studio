@@ -1,5 +1,16 @@
 {
-  "version": "v43",
+  "version": "v71",
+  "v71_evidence": {
+    "registry": "v71; 8 groups; 28 registered capabilities",
+    "source_regression_tests_before_this_patch": 119,
+    "new_regression": "bilingual network service concepts",
+    "expected_source_regression_tests_after_this_patch": 120,
+    "network_semantic_alignment": "Chinese identity/booking/feedback matches English Identity/booking/feedback",
+    "release_evidence": "assets/v71-release-evidence.json",
+    "installed_sync": "pending source test and output verification",
+    "jev": "not present in available skills, plugins, or repository files; integration awaits an explicit path or name",
+    "remaining_count_policy": "the 206 unverified catalog rows are not a reliable work-remaining count"
+  },
   "v38_evidence": {
     "adaptive_types": [
       "graph",

@@ -7,7 +7,7 @@
   "nodes": [
     {"id": "customer", "label": "Customer", "detail": "Need · outcome", "kind": "ellipse", "tone": "accent"},
     {"id": "channel", "label": "Service entry", "detail": "App · store · phone", "tone": "teal"},
-    {"id": "platform", "label": "Service platform", "detail": "Identity · orders · cases", "tone": "accent"},
+    {"id": "platform", "label": "Service platform", "detail": "Identity · booking · feedback", "tone": "accent"},
     {"id": "agent", "label": "Service team", "detail": "Handle · escalate · respond", "tone": "amber"},
     {"id": "partner", "label": "Delivery partner", "detail": "Fulfill · execute · status", "tone": "amber"},
     {"id": "analytics", "label": "Insights", "detail": "Feedback · metrics · improve", "tone": "red"}

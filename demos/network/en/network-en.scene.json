@@ -89,11 +89,11 @@
     {
       "id": "platform",
       "x": 812.0,
-      "y": 382.0,
+      "y": 370.0,
       "w": 190,
-      "h": 152,
+      "h": 176,
       "label": "Service platform",
-      "detail": "Identity · orders · cases",
+      "detail": "Identity · booking · feedback",
       "kind": "rect",
       "tone": "accent",
       "check": true,
@@ -111,13 +111,19 @@
           "ink"
         ],
         [
-          "Identity · orders",
+          "Identity ·",
           17,
           false,
           "muted"
         ],
         [
-          "· cases",
+          "booking ·",
+          17,
+          false,
+          "muted"
+        ],
+        [
+          "feedback",
           17,
           false,
           "muted"
@@ -442,10 +448,10 @@
       "dashed": false,
       "arrow": true,
       "_label_box": [
-        896.72,
-        329.8,
-        1028.0,
-        367.8
+        1010.5600000000001,
+        256.0,
+        1141.8400000000001,
+        294.0
       ],
       "_label_lines": [
         "Routes case"
@@ -498,25 +504,49 @@
       "label": "Returns status",
       "points": [
         [
-          1528.0,
-          458.0
+          1623.0,
+          534.0
         ],
         [
-          1002.0,
-          458.0
+          1623.0,
+          556.0
+        ],
+        [
+          1394.0,
+          556.0
+        ],
+        [
+          1394.0,
+          508.0
+        ],
+        [
+          1036.0,
+          508.0
+        ],
+        [
+          1036.0,
+          568.0
+        ],
+        [
+          907.0,
+          568.0
+        ],
+        [
+          907.0,
+          546.0
         ]
       ],
-      "source_port": "left",
-      "target_port": "right",
+      "source_port": "bottom",
+      "target_port": "bottom",
       "tone": "amber",
       "width": 1.5,
       "dashed": true,
       "arrow": true,
       "_label_box": [
-        1194.16,
-        412.0,
-        1335.8400000000001,
-        450.0
+        1144.16,
+        462.0,
+        1285.8400000000001,
+        500.0
       ],
       "_label_lines": [
         "Returns status"
@@ -552,10 +582,10 @@
       "dashed": false,
       "arrow": true,
       "_label_box": [
-        1038.0,
-        504.0,
-        1131.84,
-        568.0
+        1053.08,
+        542.0,
+        1146.9199999999998,
+        606.0
       ],
       "_label_lines": [
         "Records",
@@ -571,7 +601,7 @@
       "node_width": 190,
       "candidates": [
         {
-          "score": 60059.95,
+          "score": 50060.44,
           "crossings": 0,
           "orientation": "right",
           "node_width": 190,
@@ -581,7 +611,6 @@
             "edge label has no free space: 1",
             "edge label has no free space: 2",
             "edge label has no free space: 3",
-            "edge label has no free space: 4",
             "edge label has no free space: 5"
           ]
         },
@@ -601,7 +630,7 @@
           ]
         },
         {
-          "score": 60066.49,
+          "score": 50066.88,
           "crossings": 0,
           "orientation": "right",
           "node_width": 300,
@@ -611,12 +640,11 @@
             "edge label has no free space: 1",
             "edge label has no free space: 2",
             "edge label has no free space: 3",
-            "edge label has no free space: 4",
             "edge label has no free space: 5"
           ]
         },
         {
-          "score": 20127.56,
+          "score": 20130.06,
           "crossings": 0,
           "orientation": "down",
           "node_width": 190,
@@ -638,7 +666,7 @@
           ]
         },
         {
-          "score": 20104.93,
+          "score": 20108.26,
           "crossings": 0,
           "orientation": "down",
           "node_width": 300,
@@ -649,15 +677,14 @@
           ]
         },
         {
-          "score": 30061.32,
+          "score": 20061.32,
           "crossings": 0,
           "orientation": "right",
           "node_width": 190,
           "spacing": 100,
           "issues": [
             "edge label has no free space: 2",
-            "edge label has no free space: 3",
-            "edge label has no free space: 4"
+            "edge label has no free space: 3"
           ]
         },
         {
@@ -673,19 +700,18 @@
           ]
         },
         {
-          "score": 30077.41,
+          "score": 20077.41,
           "crossings": 0,
           "orientation": "right",
           "node_width": 300,
           "spacing": 100,
           "issues": [
             "edge label has no free space: 2",
-            "edge label has no free space: 3",
-            "edge label has no free space: 4"
+            "edge label has no free space: 3"
           ]
         },
         {
-          "score": 137.11,
+          "score": 139.32,
           "crossings": 0,
           "orientation": "down",
           "node_width": 190,
@@ -701,7 +727,7 @@
           "issues": []
         },
         {
-          "score": 117.56,
+          "score": 120.44,
           "crossings": 0,
           "orientation": "down",
           "node_width": 300,
@@ -733,7 +759,7 @@
           "issues": []
         },
         {
-          "score": 158.83,
+          "score": 160.45,
           "crossings": 0,
           "orientation": "down",
           "node_width": 190,
@@ -749,7 +775,7 @@
           "issues": []
         },
         {
-          "score": 145.3,
+          "score": 147.32,
           "crossings": 0,
           "orientation": "down",
           "node_width": 300,

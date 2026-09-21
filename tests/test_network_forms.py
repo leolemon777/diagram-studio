@@ -44,6 +44,16 @@ class NetworkFormTests(unittest.TestCase):
         self.assertIn('预约', serialized)
         self.assertIn('反馈', serialized)
 
+    def test_bilingual_platform_detail_keeps_the_same_service_concepts(self):
+        cn_platform = next(node for node in self.cn['nodes'] if node['id'] == 'platform')
+        en_platform = next(node for node in self.en['nodes'] if node['id'] == 'platform')
+        self.assertIn('预约', cn_platform['detail'])
+        self.assertIn('反馈', cn_platform['detail'])
+        self.assertIn('booking', en_platform['detail'])
+        self.assertIn('feedback', en_platform['detail'])
+        self.assertNotIn('orders', en_platform['detail'])
+        self.assertNotIn('cases', en_platform['detail'])
+
     def test_invalid_endpoint_fails_before_render(self):
         bad = copy.deepcopy(self.en)
         bad['edges'][0]['to'] = 'missing'

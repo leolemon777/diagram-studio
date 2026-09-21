@@ -1,0 +1,56 @@
+{
+  "version": "v71b",
+  "checked_at": "2026-09-21",
+  "scope": "bilingual network semantic alignment and source/installed delivery parity",
+  "inputs": [
+    {
+      "language": "zh",
+      "path": "assets/examples/network-cn.json",
+      "sha256": "44bf3710c8a2387e1219d3137e484c26e8ee773cd00e43881cea7391a1989011"
+    },
+    {
+      "language": "en",
+      "path": "assets/examples/network-en.json",
+      "sha256": "38e873d7ef2503df0799a08b439aec9b078308b375581516912b80c0fb1b742d"
+    }
+  ],
+  "outputs": [
+    {
+      "language": "zh",
+      "svg": "demos/network/cn/network-cn.svg",
+      "svg_sha256": "829783a6e99422d110262422f1b534a3746c6fd8a1055a0a6ad1ed221e758061",
+      "dimensions": "1800×744",
+      "drawio": "demos/network/cn/network-cn.drawio",
+      "drawio_sha256": "ff0d62da9b12d3b0e4648944e2f3a826a0a3144a25a636be77733e0bfa55c8b0"
+    },
+    {
+      "language": "en",
+      "svg": "demos/network/en/network-en.svg",
+      "svg_sha256": "9b4b6f90dc512b039f1221e99d6c1245d2515aa753d61d0a8b6e45e8df2c1ca0",
+      "dimensions": "1800×792",
+      "drawio": "demos/network/en/network-en.drawio",
+      "drawio_sha256": "8c7c43e325840c3af9619bb9cb3d5ad7cf4c3e601df4d046c77a8c0ca97f7626"
+    }
+  ],
+  "checks": {
+    "source_regression_tests": 120,
+    "installed_regression_tests": 120,
+    "capability_registry": "v71 / 8 groups / 28 capabilities",
+    "network_semantics": "passed: identity, booking/预约 and feedback/反馈 are aligned",
+    "qa": "passed: zero errors and zero warnings for both generated network inputs",
+    "browser": "passed: local bilingual network overview and direct English SVG opened at 1280px desktop browser surface",
+    "source_installed_parity": "passed: recursive diff excluding .git is empty",
+    "clean_environment": {
+      "base_python": "/usr/bin/python3",
+      "base_render": "passed: assets/examples/02-workflow.json produced SVG, draw.io, QA and delivery receipt without plotting packages",
+      "optional_plotting": "passed with bundled runtime: acceptance_suite produced 8 scenarios and three Gantt variants",
+      "missing_optional_package": "expected boundary: system Python without matplotlib cannot run cross-industry specialist checks; README now gives the install command"
+    },
+    "jev": "pending: no matching Skill, plugin or repository file is available"
+  },
+  "boundaries": [
+    "This evidence covers these named files and checks only; it does not certify every registered diagram type.",
+    "A browser opening confirms the artifact is viewable; it does not replace a user or domain review.",
+    "The six style families remain partially rendered and are not implied to support every type/style combination."
+  ]
+}

@@ -28,7 +28,7 @@
 <rect x="64" y="511.79999999999995" width="684" height="116.9" rx="10" fill="#FEFDF9" stroke="#AC6046" stroke-width="1.5"/>
 <text x="406.0" y="547.8" text-anchor="middle" font-size="14" font-weight="400" fill="#AC6046">platform</text>
 <text x="406.0" y="574.6999999999999" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">Service platform</text>
-<text x="406.0" y="600.4" text-anchor="middle" font-size="18" font-weight="400" fill="#6D6A63">Identity · orders · cases</text>
+<text x="406.0" y="600.4" text-anchor="middle" font-size="18" font-weight="400" fill="#6D6A63">Identity · booking · feedback</text>
 </g>
 <g id="agent-part-0" data-kind="rect" data-content-text="false" data-box="64,652.6999999999999,684,116.9" font-family="Heiti TC">
 <rect x="64" y="652.6999999999999" width="684" height="116.9" rx="10" fill="#FEFDF9" stroke="#AC6046" stroke-width="1.5"/>

@@ -17,11 +17,15 @@ Diagram Studio is a local Codex skill for turning a natural-language brief into 
 
 You can also compare **different visual expressions of the same source data**, changing the reading order and composition while preserving values, units, relationships, and direction. The [four-study, eight-expression demo](demos/expression-lab/index.html) is reproducible. Catalog entries are search terms and rules, not a promise of a separate renderer for every named type. See the [verification record](references/verification-status.md) for tested scope.
 
+For a first trial, use the [bilingual six-industry trial pack](references/trial-guide.en.md), make one scenario revision, and inspect the SVG, HTML, draw.io, and JSON boundaries.
+
+See the [delivery format matrix](references/delivery-matrix.en.md) for backend-specific formats; specialist PNG/PDF outputs are not promised by ordinary renderers.
+
 The bilingual [relationship network demo](demos/network/index.html) shows a cross-industry service ecosystem with explicit directions, a return link, and three readable detail pages for splitting dense networks. The [layered architecture demo](demos/architecture/index.html) separates four responsibility bands from cross-cutting concerns without inventing calls; the [booking flow demo](demos/flow/index.html) keeps ordered steps, decision branches and an update loop visible; the [Gantt gallery](demos/gantt/index.html) shows one bilingual task truth in executive, delivery and print views; the [SWOT demo](demos/swot/index.html) keeps one community service scenario aligned across Chinese and English matrices; the [interaction sequence demo](demos/sequence/index.html) keeps message order and dashed return directions visible; the [dependency demo](demos/dependency/index.html) shows parallel work and merge constraints without inventing a schedule; the [ownership swimlane demo](demos/swimlane/index.html) makes requester, coordination, delivery and revision handoffs explicit.
 
 ## How to use it
 
-If you are unsure which form to use, clone the repository and open the local [bilingual diagram chooser](demos/chooser/index.html) in a browser. Select the reader's question, a diagram form, and a visual direction; then enter your content and copy the resulting `$diagram-studio` prompt. It covers 20 common forms and explains the choice. Backend, format and evidence claims come from the [capability registry](references/capability-registry.en.md), rather than an old page label. The chooser itself does not render arbitrary input; Codex uses the skill to make the final diagram. Style thumbnails are directional sketches; see the [validated style scope](references/style-families.md).
+If you are unsure which form to use, clone the repository and open the local [bilingual diagram chooser](demos/chooser/index.html) in a browser. Select the reader's question, a diagram form, and a visual direction; then enter your content and copy the resulting `$diagram-studio` prompt. The chooser explains the 28 capabilities currently registered in the registry. Backend, format and evidence claims come from the [capability registry](references/capability-registry.en.md), rather than an old page label. The chooser itself does not render arbitrary input; Codex uses the skill to make the final diagram. Style cards reuse the selected form's real miniature while remaining directional sketches; see the [validated style scope](references/style-families.md).
 
 ### 1. Install it for Codex
 
@@ -57,7 +61,7 @@ python3 scripts/render.py assets/examples/02-workflow.json --out /tmp/diagram-wo
 python3 scripts/expression_lab.py --out /tmp/diagram-expression-lab
 ```
 
-The first four commands generate architecture and workflow examples in English and Chinese. Ordinary `render.py` output includes SVG, editable draw.io, the source brief, a scene file, and a QA record. Adaptive output also includes a reading HTML page and multipage source. The last command creates an offline comparison page for four simulated studies and eight expressions. See the [input and output reference](references/rendering.md). Some specialist charts require Matplotlib; Pillow is optional for more accurate font measurement in adaptive layouts.
+The first four commands generate architecture and workflow examples in English and Chinese. Ordinary `render.py` output includes SVG, editable draw.io, the source brief, a scene file, and a QA record. Adaptive output also includes a reading HTML page and multipage source. The last command creates an offline comparison page for four simulated studies and eight expressions. See the [input and output reference](references/rendering.md). Some specialist charts require Matplotlib; Pillow is optional for more accurate font measurement in adaptive layouts. To run cross-industry, data-art, or scientific backends in an isolated environment, install `matplotlib` and `pillow` with `python3 -m pip install matplotlib pillow`; ordinary SVG/draw.io generation still works without these optional packages.
 
 ## Diverse whiteboard methods and UX
 
@@ -67,7 +71,7 @@ Public research and authenticated inspection of four Boardmix templates inform a
 
 A refined profile now covers ordinary workflows, layered architecture, delivery Gantt, single-series comparison and trend charts. It expands long content, separates primary and return paths, preserves signed values and missing observations, and offers a dot comparison alternative. Run `python3 scripts/refinement_suite.py --out /tmp/diagram-refinement`, serve that directory over local HTTP, and open the bilingual gallery of 11 original, changed and alternative outputs. See [inputs and scope](references/refinement.md).
 
-This round passed 34 regression tests and actual desktop-browser text checks on 11 overviews. One workflow was edited, saved and reopened in draw.io. This is not approval of all diagram types, mobile layouts or aesthetics; see the [verification record](references/verification-status.md).
+As of v71, both the source repository and the installed copy pass 120 regression tests (the prior baseline was 119, with one bilingual semantic regression added). Eleven overviews have passed actual desktop-browser text checks, and workflow/story-map samples have been edited, saved and reopened in draw.io. This is not approval of all diagram types, mobile layouts or aesthetics; see the [verification record](references/verification-status.md).
 
 ## Workflow and delivery improvements
 

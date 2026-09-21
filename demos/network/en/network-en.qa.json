@@ -13,7 +13,7 @@
     "node_width": 190,
     "candidates": [
       {
-        "score": 60059.95,
+        "score": 50060.44,
         "crossings": 0,
         "orientation": "right",
         "node_width": 190,
@@ -23,7 +23,6 @@
           "edge label has no free space: 1",
           "edge label has no free space: 2",
           "edge label has no free space: 3",
-          "edge label has no free space: 4",
           "edge label has no free space: 5"
         ]
       },
@@ -43,7 +42,7 @@
         ]
       },
       {
-        "score": 60066.49,
+        "score": 50066.88,
         "crossings": 0,
         "orientation": "right",
         "node_width": 300,
@@ -53,12 +52,11 @@
           "edge label has no free space: 1",
           "edge label has no free space: 2",
           "edge label has no free space: 3",
-          "edge label has no free space: 4",
           "edge label has no free space: 5"
         ]
       },
       {
-        "score": 20127.56,
+        "score": 20130.06,
         "crossings": 0,
         "orientation": "down",
         "node_width": 190,
@@ -80,7 +78,7 @@
         ]
       },
       {
-        "score": 20104.93,
+        "score": 20108.26,
         "crossings": 0,
         "orientation": "down",
         "node_width": 300,
@@ -91,15 +89,14 @@
         ]
       },
       {
-        "score": 30061.32,
+        "score": 20061.32,
         "crossings": 0,
         "orientation": "right",
         "node_width": 190,
         "spacing": 100,
         "issues": [
           "edge label has no free space: 2",
-          "edge label has no free space: 3",
-          "edge label has no free space: 4"
+          "edge label has no free space: 3"
         ]
       },
       {
@@ -115,19 +112,18 @@
         ]
       },
       {
-        "score": 30077.41,
+        "score": 20077.41,
         "crossings": 0,
         "orientation": "right",
         "node_width": 300,
         "spacing": 100,
         "issues": [
           "edge label has no free space: 2",
-          "edge label has no free space: 3",
-          "edge label has no free space: 4"
+          "edge label has no free space: 3"
         ]
       },
       {
-        "score": 137.11,
+        "score": 139.32,
         "crossings": 0,
         "orientation": "down",
         "node_width": 190,
@@ -143,7 +139,7 @@
         "issues": []
       },
       {
-        "score": 117.56,
+        "score": 120.44,
         "crossings": 0,
         "orientation": "down",
         "node_width": 300,
@@ -175,7 +171,7 @@
         "issues": []
       },
       {
-        "score": 158.83,
+        "score": 160.45,
         "crossings": 0,
         "orientation": "down",
         "node_width": 190,
@@ -191,7 +187,7 @@
         "issues": []
       },
       {
-        "score": 145.3,
+        "score": 147.32,
         "crossings": 0,
         "orientation": "down",
         "node_width": 300,
