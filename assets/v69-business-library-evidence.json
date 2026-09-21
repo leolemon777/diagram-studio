@@ -1,0 +1,37 @@
+{
+  "version": "v69",
+  "date": "2026-09-21",
+  "scope": "Common business, UX and data examples aligned with cross-industry service and content scenarios",
+  "automated": {
+    "tests": "Twelve examples pass banned-term, graph/matrix semantics, shared-dimension and render-quality regressions; the full suite passes 117 tests",
+    "registry": "capability_registry.py --check passes",
+    "diff": "git diff --check passes",
+    "content": "Concept map, radial topic map, decision tree, business model canvas, PEST, RACI, journey, service blueprint, comparison, stacked bar, heatmap and pie examples retain their original structures while removing maintenance-specific fixture terms"
+  },
+  "browser_checks": [
+    "The existing bilingual architecture, swimlane, Gantt, data-story, route/mind-map and chooser pages remain available after the content sweep",
+    "Representative registered chart and strategy pages still show cross-industry service, learning and community scenarios"
+  ],
+  "not_verified": [
+    "Native editor save/reopen for these unregistered library examples",
+    "Mobile viewport and domain-specific evidence for illustrative business and UX models",
+    "English numbered aliases for this batch, which previously had no paired source files"
+  ],
+  "artifacts": {
+    "models": [
+      "assets/examples/22-concept-map.json",
+      "assets/examples/23-hub-spoke.json",
+      "assets/examples/32-decision-tree.json",
+      "assets/examples/33-business-model-canvas.json",
+      "assets/examples/34-pest.json",
+      "assets/examples/37-raci.json",
+      "assets/examples/38-customer-journey.json",
+      "assets/examples/39-service-blueprint.json",
+      "assets/examples/41-comparison.json",
+      "assets/examples/45-stacked-bar.json",
+      "assets/examples/48-heatmap.json",
+      "assets/examples/53-pie.json"
+    ],
+    "tests": ["tests/test_business_library_examples.py"]
+  }
+}

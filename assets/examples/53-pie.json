@@ -12,19 +12,19 @@
   "mode": "pie",
   "data": [
     {
-      "label": "计划维护",
+      "label": "线上预约",
       "value": 48
     },
     {
-      "label": "现场巡检",
+      "label": "线下咨询",
       "value": 32
     },
     {
-      "label": "故障处理",
+      "label": "内容浏览",
       "value": 14
     },
     {
-      "label": "技术改善",
+      "label": "活动参与",
       "value": 6
     }
   ]

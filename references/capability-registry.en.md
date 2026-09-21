@@ -1,6 +1,6 @@
 # Capability registry and delivery scope
 
-The machine-readable source is [`assets/capability-registry.json`](../assets/capability-registry.json) (v68). The chooser reads structure, backend, formats and evidence from this file. Run `python3 scripts/capability_registry.py --check` to validate every backend, example and evidence reference. The compact table below is a human index; the JSON carries the complete fields.
+The machine-readable source is [`assets/capability-registry.json`](../assets/capability-registry.json) (v69). The chooser reads structure, backend, formats and evidence from this file. Run `python3 scripts/capability_registry.py --check` to validate every backend, example and evidence reference. The compact table below is a human index; the JSON carries the complete fields.
 
 | ID | Form | Backend | Formats | Evidence |
 |---|---|---|---|---|
