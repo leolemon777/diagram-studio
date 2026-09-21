@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "protocol_version": "diagram-studio/delivery-1",
+  "version_id": "v-c1bfe3b4062d",
+  "source_name": "25-funnel-en",
+  "input_sha256": "c1bfe3b4062dba7cd8ded3ea9a60c7db438835939add03e870035f0a858ef15d",
+  "theme": "light",
+  "checks": {
+    "geometry": {
+      "status": "passed",
+      "warnings": []
+    },
+    "composition": {
+      "status": "not-run",
+      "findings": []
+    },
+    "content_integrity": {
+      "status": "passed",
+      "source_ids": 0,
+      "source_relations": 0,
+      "source_texts": 10,
+      "missing_ids": [],
+      "missing_relations": [],
+      "missing_text": [],
+      "scope": "stable source IDs, explicit relation endpoints and source display text; not domain correctness"
+    },
+    "browser_text_bounds": {
+      "status": "not-run"
+    },
+    "manual_visual_review": {
+      "status": "not-run"
+    },
+    "native_editor": {
+      "status": "not-run"
+    }
+  },
+  "files": {
+    "25-funnel-en.brief.json": "6118d184f42add8568991507cd8a65b53367659cc168c03630a873580092425d",
+    "25-funnel-en.drawio": "cfc25bfe8b0fced35be04beaa2434e7d83f45b24a655950c3d43902eb80c888b",
+    "25-funnel-en.qa.json": "951411b98777d3d8ef0f40c1f9bc8208870d935955aaaae3734571b89593a5df",
+    "25-funnel-en.scene.json": "366166dcdf6ead0b11be737ea0cb5f8096a9853a7bf08a1eb89bf4beff272e7a",
+    "25-funnel-en.svg": "7b7b5340083669c75e93f3a165a80378be1c8c6b80f9ac7eaec09507813d1f01"
+  },
+  "delivery_scope": "Generation, semantic content checks and QA finish before replacement. Individual files are replaced; promotion is not a multi-file atomic transaction."
+}

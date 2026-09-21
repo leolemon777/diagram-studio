@@ -1,6 +1,6 @@
 # 能力登记与交付范围
 
-机器可读源：`assets/capability-registry.json`（v51）。运行 `python3 scripts/capability_registry.py --check` 校验引用。
+机器可读源：`assets/capability-registry.json`（v52）。运行 `python3 scripts/capability_registry.py --check` 校验引用。
 
 选图向导从同一份登记读取结构、后端、格式和验收状态；本表只列当前可追查的高频入口，不把入口数量当作完成率。
 
@@ -26,6 +26,8 @@
 | `quadrant` | 四象限优先级图 | `scripts/render.py#quadrant` | svg, drawio, scene.json, qa.json, html | `manual_visual_review` |
 | `swot` | SWOT 分析 | `scripts/render.py#matrix` | svg, drawio, scene.json, qa.json, html | `manual_visual_review` |
 | `kanban` | 泳道看板 | `scripts/kanban_render.py#render` | svg, drawio, input.json, model.json, qa.json | `manual_visual_review` |
+| `funnel` | 漏斗图 | `scripts/layouts.py#tapered:funnel` | svg, drawio, scene.json, qa.json, html | `manual_visual_review` |
+| `business-model-canvas` | 商业模式画布 | `scripts/layouts.py#bmc` | svg, drawio, scene.json, qa.json, html | `manual_visual_review` |
 | `affinity` | 亲和图 | `scripts/organization_relations.py#affinity-map` | svg, png, input.json, calculation.json, qa.json | `manual_visual_review` |
 | `journey` | 用户旅程图 | `scripts/render.py#journey` | svg, drawio, scene.json, qa.json, html | `manual_visual_review` |
 | `service-blueprint` | 服务蓝图 | `scripts/render.py#service-blueprint` | svg, drawio, scene.json, qa.json, html | `manual_visual_review` |

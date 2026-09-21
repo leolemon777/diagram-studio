@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="diagram-title diagram-desc">
+<title id="diagram-title">Community care booking · business model canvas</title>
+<desc id="diagram-desc">Keep the nine blocks in place; entries are hypotheses, not generated pricing or conclusions</desc>
+<rect width="100%" height="100%" fill="#F1EFEB"/>
+<defs>
+<marker id="arrow-accent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#AC6046"/></marker>
+<marker id="arrow-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#67685E"/></marker>
+<marker id="arrow-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#8C7964"/></marker>
+<marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#554C46"/></marker>
+<marker id="arrow-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#6D6A63"/></marker>
+<marker id="arrow-line" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#D8D3C8"/></marker>
+<marker id="arrow-ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#30302D"/></marker>
+</defs>
+<g font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, Arial, sans-serif">
+<g id="_v1" data-kind="panel" data-content-text="false" data-box="64.0,204,283.2,430">
+<rect x="64.0" y="204" width="283.2" height="430" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="_v4" data-kind="panel" data-content-text="false" data-box="361.2,204,283.2,208">
+<rect x="361.2" y="204" width="283.2" height="208" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="_v7" data-kind="panel" data-content-text="false" data-box="361.2,426,283.2,208">
+<rect x="361.2" y="426" width="283.2" height="208" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="_v10" data-kind="panel" data-content-text="false" data-box="658.4,204,283.2,430">
+<rect x="658.4" y="204" width="283.2" height="430" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="_v13" data-kind="panel" data-content-text="false" data-box="955.5999999999999,204,283.2,208">
+<rect x="955.5999999999999" y="204" width="283.2" height="208" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="_v16" data-kind="panel" data-content-text="false" data-box="955.5999999999999,426,283.2,208">
+<rect x="955.5999999999999" y="426" width="283.2" height="208" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="_v19" data-kind="panel" data-content-text="false" data-box="1252.8,204,283.2,430">
+<rect x="1252.8" y="204" width="283.2" height="430" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="_v22" data-kind="panel" data-content-text="false" data-box="64,648,729.0,135">
+<rect x="64" y="648" width="729.0" height="135" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="_v25" data-kind="panel" data-content-text="false" data-box="807.0,648,729.0,135">
+<rect x="807.0" y="648" width="729.0" height="135" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="_v2" data-kind="text" data-content-text="false" data-box="86.0,222,239.2,42">
+
+<text x="86.0" y="249.825" text-anchor="start" font-size="21" font-weight="400" fill="#AC6046">Key Partnerships</text>
+</g>
+<g id="_v3" data-kind="text" data-content-text="false" data-box="86.0,272,239.2,344">
+
+<text x="86.0" y="437.7" text-anchor="start" font-size="18" font-weight="400" fill="#30302D">Community clinics</text>
+<text x="86.0" y="462.0" text-anchor="start" font-size="18" font-weight="400" fill="#30302D">Local service centres</text>
+</g>
+<g id="_v5" data-kind="text" data-content-text="false" data-box="383.2,222,239.2,42">
+
+<text x="383.2" y="249.825" text-anchor="start" font-size="21" font-weight="400" fill="#AC6046">Key Activities</text>
+</g>
+<g id="_v6" data-kind="text" data-content-text="false" data-box="383.2,272,239.2,122">
+
+<text x="383.2" y="326.7" text-anchor="start" font-size="18" font-weight="400" fill="#30302D">Triage requests</text>
+<text x="383.2" y="351.0" text-anchor="start" font-size="18" font-weight="400" fill="#30302D">Coordinate appointments</text>
+</g>
+<g id="_v8" data-kind="text" data-content-text="false" data-box="383.2,444,239.2,42">
+
+<text x="383.2" y="471.825" text-anchor="start" font-size="21" font-weight="400" fill="#AC6046">Key Resources</text>
+</g>
+<g id="_v9" data-kind="text" data-content-text="false" data-box="383.2,494,239.2,122">
+
+<text x="383.2" y="548.7" text-anchor="start" font-size="18" font-weight="400" fill="#30302D">Service directory</text>
+<text x="383.2" y="573.0" text-anchor="start" font-size="18" font-weight="400" fill="#30302D">Consent records</text>
+</g>
+<g id="_v11" data-kind="text" data-content-text="false" data-box="680.4,222,239.2,42">
+
+<text x="680.4" y="249.825" text-anchor="start" font-size="21" font-weight="400" fill="#AC6046">Value Propositions</text>
+</g>
+<g id="_v12" data-kind="text" data-content-text="false" data-box="680.4,272,239.2,344">
+
+<text x="680.4" y="437.7" text-anchor="start" font-size="18" font-weight="400" fill="#30302D">A clear next step</text>
+<text x="680.4" y="462.0" text-anchor="start" font-size="18" font-weight="400" fill="#30302D">Fewer repeated calls</text>
+</g>
+<g id="_v14" data-kind="text" data-content-text="false" data-box="977.5999999999999,222,239.2,60.7">
+
+<text x="977.5999999999999" y="245.0" text-anchor="start" font-size="21" font-weight="400" fill="#AC6046">Customer</text>
+<text x="977.5999999999999" y="273.35" text-anchor="start" font-size="21" font-weight="400" fill="#AC6046">Relationships</text>
+</g>
+<g id="_v15" data-kind="text" data-content-text="false" data-box="977.5999999999999,290.7,239.2,103.30000000000001">
+
+<text x="977.5999999999999" y="336.05" text-anchor="start" font-size="18" font-weight="400" fill="#30302D">Guided self-service</text>
+<text x="977.5999999999999" y="360.35" text-anchor="start" font-size="18" font-weight="400" fill="#30302D">Human fallback</text>
+</g>
+<g id="_v17" data-kind="text" data-content-text="false" data-box="977.5999999999999,444,239.2,42">
+
+<text x="977.5999999999999" y="471.825" text-anchor="start" font-size="21" font-weight="400" fill="#AC6046">Channels</text>
+</g>
+<g id="_v18" data-kind="text" data-content-text="false" data-box="977.5999999999999,494,239.2,122">
+
+<text x="977.5999999999999" y="548.7" text-anchor="start" font-size="18" font-weight="400" fill="#30302D">Mobile web</text>
+<text x="977.5999999999999" y="573.0" text-anchor="start" font-size="18" font-weight="400" fill="#30302D">Community desk</text>
+</g>
+<g id="_v20" data-kind="text" data-content-text="false" data-box="1274.8,222,239.2,42">
+
+<text x="1274.8" y="249.825" text-anchor="start" font-size="21" font-weight="400" fill="#AC6046">Customer Segments</text>
+</g>
+<g id="_v21" data-kind="text" data-content-text="false" data-box="1274.8,272,239.2,344">
+
+<text x="1274.8" y="437.7" text-anchor="start" font-size="18" font-weight="400" fill="#30302D">Older adults</text>
+<text x="1274.8" y="462.0" text-anchor="start" font-size="18" font-weight="400" fill="#30302D">Caregivers</text>
+</g>
+<g id="_v23" data-kind="text" data-content-text="false" data-box="86,666,685.0,42">
+
+<text x="86" y="693.825" text-anchor="start" font-size="21" font-weight="400" fill="#AC6046">Cost Structure</text>
+</g>
+<g id="_v24" data-kind="text" data-content-text="false" data-box="86,716,685.0,49">
+
+<text x="86" y="734.2" text-anchor="start" font-size="18" font-weight="400" fill="#30302D">Service operations</text>
+<text x="86" y="758.5" text-anchor="start" font-size="18" font-weight="400" fill="#30302D">Accessibility support</text>
+</g>
+<g id="_v26" data-kind="text" data-content-text="false" data-box="829.0,666,685.0,42">
+
+<text x="829.0" y="693.825" text-anchor="start" font-size="21" font-weight="400" fill="#AC6046">Revenue Streams</text>
+</g>
+<g id="_v27" data-kind="text" data-content-text="false" data-box="829.0,716,685.0,49">
+
+<text x="829.0" y="734.2" text-anchor="start" font-size="18" font-weight="400" fill="#30302D">Funding model to validate</text>
+<text x="829.0" y="758.5" text-anchor="start" font-size="18" font-weight="400" fill="#30302D">No price inferred</text>
+</g>
+<g id="_v28" data-kind="text" data-content-text="false" data-box="64,34,1472,22">
+
+<text x="64" y="49.55" text-anchor="start" font-size="14" font-weight="400" fill="#AC6046">33 / HIGH-FREQUENCY FORMS</text>
+</g>
+<g id="_v29" data-kind="text" data-content-text="false" data-box="64,69,1472,56">
+
+<text x="64" y="108.7" text-anchor="start" font-size="36" font-weight="400" fill="#30302D">Community care booking · business model canvas</text>
+</g>
+<g id="_v30" data-kind="text" data-content-text="false" data-box="64,130,1472,38">
+
+<text x="64" y="154.525" text-anchor="start" font-size="17" font-weight="400" fill="#6D6A63">Keep the nine blocks in place; entries are hypotheses, not generated pricing or conclusions</text>
+</g>
+<g id="_v31" data-kind="rect" data-content-text="false" data-box="64,837,1472,1">
+<rect x="64" y="837" width="1472" height="1" rx="0" fill="#D8D3C8" stroke="none" stroke-width="1.5"/>
+</g>
+<g id="_v32" data-kind="text" data-content-text="false" data-box="64,850,1472,36">
+
+<text x="64" y="872.55" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">Cross-industry simulated input · partners, costs and revenue still need interviews and financial evidence</text>
+</g>
+</g></svg>

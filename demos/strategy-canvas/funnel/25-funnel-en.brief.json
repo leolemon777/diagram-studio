@@ -1,0 +1,33 @@
+{
+  "type": "tapered",
+  "mode": "funnel",
+  "title": "Community care booking · completion funnel",
+  "diagram_name": "Funnel structure",
+  "family": "Strategy & delivery",
+  "subtitle": "Width encodes people at each stage; counts can only stay flat or decrease",
+  "eyebrow": "25 / HIGH-FREQUENCY FORMS",
+  "unit": " people",
+  "ratio_label": "of first stage",
+  "footer": "Cross-industry simulated input · values support reading only, not a real service conversion rate",
+  "assumptions": [
+    "Original cross-industry teaching content; it is not a medical-service fact, KPI, or forecast"
+  ],
+  "items": [
+    {
+      "label": "See the service entry point",
+      "value": 1000
+    },
+    {
+      "label": "Submit a request",
+      "value": 620
+    },
+    {
+      "label": "Complete eligibility check",
+      "value": 380
+    },
+    {
+      "label": "Book an appointment",
+      "value": 210
+    }
+  ]
+}

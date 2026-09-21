@@ -104,6 +104,22 @@ def expected_content(data):
             for key in ("date", "label", "detail"):
                 if _text(item.get(key)):
                     texts.add(_text(item[key]))
+    elif kind == "tapered":
+        for key in ("eyebrow", "title", "subtitle", "footer", "ratio_label", "unit"):
+            if _text(data.get(key)):
+                texts.add(_text(data[key]))
+        for item in data.get("items", []):
+            for key in ("label", "detail"):
+                if _text(item.get(key)):
+                    texts.add(_text(item[key]))
+    elif kind == "bmc":
+        for key in ("eyebrow", "title", "subtitle", "footer"):
+            if _text(data.get(key)):
+                texts.add(_text(data[key]))
+        for item in data.get("items", []):
+            for key in ("label", "detail"):
+                if _text(item.get(key)):
+                    texts.add(_text(item[key]))
     elif kind == "storymap":
         for story in data.get("stories", []):
             if story.get("id"):

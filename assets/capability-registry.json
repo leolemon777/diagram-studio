@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "version": "v51",
+  "version": "v52",
   "updated": "2026-09-20",
   "purpose": "Single source for chooser labels, backend capability, delivery formats and acceptance evidence.",
   "status_vocabulary": {
@@ -337,6 +337,34 @@
           "examples": ["assets/kanban-models/cross-industry-kanban.json", "assets/kanban-models/cross-industry-kanban-en.json"],
           "evidence": {"level": "manual_visual_review", "reference": "assets/v49-strategy-execution-evidence.json", "detail": {"zh": "中英跨行业看板通过列/泳道 WIP、阻塞、双语界面标签、SVG 与 draw.io 生成和浏览器查看。", "en": "Chinese and English cross-industry boards pass column/lane WIP, blocker, bilingual UI-label, SVG/draw.io generation and browser review."}},
           "scope": {"zh": "表达声明的当前工作流，不是实时工单系统、自动排程、人员绩效排名或历史流量分析。", "en": "Expresses the declared current workflow; it is not a live ticket system, scheduler, performance ranking or historical flow analysis."}
+        },
+        {
+          "id": "funnel",
+          "label": {"zh": "漏斗图", "en": "Funnel chart"},
+          "why": {"zh": "展示一个过程从入口到完成如何逐阶段收窄，适合转化、筛选和服务完成路径", "en": "Show how one process narrows from entry to completion: conversion, screening and service completion"},
+          "minimum_input": {"zh": "按顺序排列的阶段、每阶段人数或数量、单位与口径", "en": "Ordered stages, a count for each stage, unit and measurement scope"},
+          "input_model": {"kind": "brief", "type": "tapered", "required": ["mode", "items"]},
+          "backend": {"kind": "shared-renderer-extra", "module": "scripts/layouts.py", "entry": "tapered:funnel"},
+          "formats": ["svg", "drawio", "scene.json", "qa.json", "html"],
+          "layout_limits": {"zh": "阶段数量 2–6；人数必须为正且不递增；漏斗宽度表达数量比例，不表达统计显著性或因果。", "en": "Use 2–6 stages; counts must be positive and nonincreasing; width encodes proportion, not significance or causality."},
+          "languages": ["zh", "en"],
+          "examples": ["assets/examples/25-funnel-cn.json", "assets/examples/25-funnel-en.json"],
+          "evidence": {"level": "manual_visual_review", "reference": "assets/v52-strategy-forms-evidence.json", "detail": {"zh": "中英跨行业漏斗通过正数/不递增约束、阶段文字保留、按内容测量与浏览器查看。", "en": "Chinese and English cross-industry funnels pass positive/nonincreasing constraints, stage-text retention, measured layout and browser review."}},
+          "scope": {"zh": "表达声明的阶段数量和口径，不自动解释流失原因、转化率显著性或业务结论。", "en": "Expresses declared stage counts and scope; it does not infer drop-off causes, significance or business conclusions."}
+        },
+        {
+          "id": "business-model-canvas",
+          "label": {"zh": "商业模式画布", "en": "Business model canvas"},
+          "why": {"zh": "把伙伴、活动、资源、价值、客户、渠道、成本和收入放在同一张可讨论的假说画布上", "en": "Place partners, activities, resources, value, customers, channels, costs and revenue on one hypothesis canvas"},
+          "minimum_input": {"zh": "九个固定要素、每格条目、假说或证据状态", "en": "The nine fixed blocks, entries in each block, and hypothesis or evidence status"},
+          "input_model": {"kind": "brief", "type": "bmc", "required": ["items"]},
+          "backend": {"kind": "shared-renderer-extra", "module": "scripts/layouts.py", "entry": "bmc"},
+          "formats": ["svg", "drawio", "scene.json", "qa.json", "html"],
+          "layout_limits": {"zh": "固定九格；每格保持短条目，长内容拆成验证页；不把画布当作商业事实或财务模型。", "en": "Keep the nine blocks; split long entries into a validation page; the canvas is not a business fact or financial model."},
+          "languages": ["zh", "en"],
+          "examples": ["assets/examples/33-business-model-canvas-cn.json", "assets/examples/33-business-model-canvas-en.json"],
+          "evidence": {"level": "manual_visual_review", "reference": "assets/v52-strategy-forms-evidence.json", "detail": {"zh": "中英跨行业画布通过九格位置、条目/详情保留、英文长文换行与浏览器查看。", "en": "Chinese and English cross-industry canvases pass nine-block placement, entry/detail retention, English wrapping and browser review."}},
+          "scope": {"zh": "整理待验证的商业假说，不计算市场规模、定价、收入预测或战略优先级。", "en": "Organises business hypotheses to validate; it does not calculate market size, pricing, revenue forecasts or strategic priority."}
         }
       ]
     },

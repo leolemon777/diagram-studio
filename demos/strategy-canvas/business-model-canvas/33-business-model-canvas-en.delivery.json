@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "protocol_version": "diagram-studio/delivery-1",
+  "version_id": "v-020f9bb314a6",
+  "source_name": "33-business-model-canvas-en",
+  "input_sha256": "020f9bb314a624a01752df25aa3e30d58c9c82df70cb023f6df0504f6818ea16",
+  "theme": "light",
+  "checks": {
+    "geometry": {
+      "status": "passed",
+      "warnings": []
+    },
+    "composition": {
+      "status": "not-run",
+      "findings": []
+    },
+    "content_integrity": {
+      "status": "passed",
+      "source_ids": 0,
+      "source_relations": 0,
+      "source_texts": 22,
+      "missing_ids": [],
+      "missing_relations": [],
+      "missing_text": [],
+      "scope": "stable source IDs, explicit relation endpoints and source display text; not domain correctness"
+    },
+    "browser_text_bounds": {
+      "status": "not-run"
+    },
+    "manual_visual_review": {
+      "status": "not-run"
+    },
+    "native_editor": {
+      "status": "not-run"
+    }
+  },
+  "files": {
+    "33-business-model-canvas-en.brief.json": "fd7f159043fd955464d826c4d49363303a8d1f1efa751bc6b9e1c35fa34a21ec",
+    "33-business-model-canvas-en.drawio": "e7f5be74925e2c79adc6859ff2f9a255258435c9a953df4062712ffd72e56eaa",
+    "33-business-model-canvas-en.qa.json": "78a5dd249c0bfa1b53871488fc795a1197bd1339e10ae74bc175f0011758f31f",
+    "33-business-model-canvas-en.scene.json": "2e37c60c9c0452b81a57494d9a51bbd0dac58a9b9877932dedb608e2934282cb",
+    "33-business-model-canvas-en.svg": "fa0272c681b00bd3e15179bc9fec2756f7886097e9a0f008274dccba3173bc32"
+  },
+  "delivery_scope": "Generation, semantic content checks and QA finish before replacement. Individual files are replaced; promotion is not a multi-file atomic transaction."
+}

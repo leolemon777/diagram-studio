@@ -22,6 +22,8 @@ The machine-readable source is [`assets/capability-registry.json`](../assets/cap
 | `quadrant` | Quadrant priority matrix | `scripts/render.py#quadrant` | SVG, draw.io, scene/QA, HTML | `manual_visual_review` |
 | `swot` | SWOT analysis | `scripts/render.py#matrix` | SVG, draw.io, scene/QA, HTML | `manual_visual_review` |
 | `kanban` | Swimlane Kanban | `scripts/kanban_render.py#render` | SVG, draw.io, input/model/QA | `manual_visual_review` |
+| `funnel` | Funnel chart | `scripts/layouts.py#tapered:funnel` | SVG, draw.io, scene/QA, HTML | `manual_visual_review` |
+| `business-model-canvas` | Business model canvas | `scripts/layouts.py#bmc` | SVG, draw.io, scene/QA, HTML | `manual_visual_review` |
 | `affinity` | Affinity map | `scripts/organization_relations.py#affinity-map` | SVG, PNG, input/calculation/QA JSON | `manual_visual_review` |
 | `journey` | Journey map | `scripts/render.py#journey` | SVG, draw.io, scene/QA, HTML | `manual_visual_review` |
 | `service-blueprint` | Service blueprint | `scripts/render.py#service-blueprint` | SVG, draw.io, scene/QA, HTML | `manual_visual_review` |

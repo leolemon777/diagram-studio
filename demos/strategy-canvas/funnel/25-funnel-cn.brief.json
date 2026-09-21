@@ -1,0 +1,33 @@
+{
+  "type": "tapered",
+  "mode": "funnel",
+  "title": "社区健康预约 · 服务完成漏斗",
+  "diagram_name": "漏斗结构",
+  "family": "战略与执行",
+  "subtitle": "每层宽度按人数比例编码；阶段人数只能保持或递减",
+  "eyebrow": "25 / HIGH-FREQUENCY FORMS",
+  "unit": "人",
+  "ratio_label": "首阶段占比",
+  "footer": "跨行业模拟输入 · 数值用于演示阅读，不代表真实服务转化率",
+  "assumptions": [
+    "原创跨行业演示内容，不代表医疗服务事实、绩效或预测"
+  ],
+  "items": [
+    {
+      "label": "看到服务入口",
+      "value": 1000
+    },
+    {
+      "label": "提交需求",
+      "value": 620
+    },
+    {
+      "label": "完成资格确认",
+      "value": 380
+    },
+    {
+      "label": "完成预约",
+      "value": 210
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "version": "v52",
+  "date": "2026-09-20",
+  "scope": "Bilingual cross-industry funnel and business-model canvas forms",
+  "automated": {
+    "tests": "Three regressions cover bilingual funnel and canvas inputs, content retention, nonincreasing positive counts, and long English detail wrapping",
+    "registry": "capability_registry.py --check passes",
+    "diff": "git diff --check passes",
+    "funnel": "Four ordered stages retain counts, unit, first-stage ratio wording and positive/nonincreasing validation",
+    "business_model_canvas": "Nine fixed blocks retain bilingual labels and details; measured boxes pass geometry and text audit"
+  },
+  "browser_checks": [
+    "Chinese and English strategy-canvas demo opened with funnel and business-model canvas sections; object viewports are scrollable and expose JSON/SVG/draw.io links",
+    "English funnel and canvas SVGs opened directly; ratio wording, stage labels, nine block labels and long details remain readable",
+    "Chooser registry loads funnel and business-model canvas cards with previews, backends, scopes and bilingual input requirements"
+  ],
+  "not_verified": [
+    "Native editor save/reopen for these draw.io files",
+    "Mobile viewport and dense canvas content beyond declared limits",
+    "Actual service conversion evidence, market size, pricing, revenue forecast, domain review or user aesthetic approval"
+  ],
+  "artifacts": {
+    "funnel": ["assets/examples/25-funnel-cn.json", "assets/examples/25-funnel-en.json"],
+    "business_model_canvas": ["assets/examples/33-business-model-canvas-cn.json", "assets/examples/33-business-model-canvas-en.json"],
+    "demo": "demos/strategy-canvas/index.html"
+  }
+}

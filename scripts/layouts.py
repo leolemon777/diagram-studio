@@ -36,20 +36,39 @@ def cycle(s,d):
  s.meta['cycle_edges']=[[ids[i],ids[(i+1)%len(a)]] for i in range(len(a))]
 
 def tapered(s,d):
- a=items(d,lo=2,hi=6);mode=d.get('mode','pyramid');need(mode in ('pyramid','funnel'),'unknown tapered mode');h=520/len(a);cx=650;y0=220
+ a=items(d,lo=2,hi=6);mode=d.get('mode','pyramid');need(mode in ('pyramid','funnel'),'unknown tapered mode');cx=650;y0=220
+ # Measure mixed CJK/Latin copy before deciding the vertical rhythm.  This
+ # keeps an English stage from being squeezed into the Chinese one-line box.
+ from render import wrap_words
+ label_w=420;label_size=24;detail_size=17
+ ratio_label=d.get('ratio_label','首阶段占比');unit=d.get('unit','')
+ vals=None
  if mode=='funnel':
-  vals=[x['value'] for x in a];need(all(finite(x) and x>0 for x in vals),'funnel values must be positive');need(all(x>=y for x,y in zip(vals,vals[1:])),'funnel stages must be nonincreasing');widths=[680*v/vals[0] for v in vals];s.meta['width_values']=vals
+  vals=[x.get('value') for x in a];need(all(finite(x) and x>0 for x in vals),'funnel values must be positive');need(all(x>=y for x,y in zip(vals,vals[1:])),'funnel stages must be nonincreasing')
+ measured=[]
+ for v in a:
+  label_lines=wrap_words(v['label'],label_w,label_size)
+  if mode=='funnel':
+   detail=f'{v["value"]:g}{unit}  ·  {ratio_label} {v["value"]/vals[0]:.0%}'
+  else:
+   detail=v.get('detail','')
+  detail_lines=wrap_words(detail,label_w,detail_size) if detail else []
+  measured.append((label_lines,detail,detail_lines))
+ stage_h=max(120,520/len(a),max((len(labels)*label_size*1.35+len(details)*detail_size*1.35+30 for labels,_,details in measured),default=120))
+ if mode=='funnel':
+  widths=[680*v/vals[0] for v in vals];s.meta['width_values']=vals
  else:widths=[720*(i+1)/len(a) for i in range(len(a))]
  for i,v in enumerate(a):
-  y=y0+i*h;w=widths[i];bottom=widths[i+1] if mode=='funnel' and i+1<len(a) else w if mode=='funnel' else w+600/len(a)
+  y=y0+i*stage_h;w=widths[i];bottom=widths[i+1] if mode=='funnel' and i+1<len(a) else w if mode=='funnel' else w+600/len(a)
   if mode=='pyramid':top=w-720/len(a);bottom=w
   else:top=w
-  poly(s,[(cx-top/2,y),(cx+top/2,y),(cx+bottom/2,y+h-10),(cx-bottom/2,y+h-10)],fill='tint' if i%2==0 else 'tint2',stroke='line')
-  s.text(1030,y+10,420,36,v['label'],24,'accent' if i==0 else 'ink')
-  detail=v.get('detail','')
-  if mode=='funnel':detail=f'{v["value"]:g}  ·  首阶段占比 {v["value"]/vals[0]:.0%}'
-  s.text(1030,y+48,420,50,detail,17,'muted');s.edge(points=[(cx+max(top,bottom)/2+12,y+h/2),(1005,y+h/2)],arrow=False,tone='line')
- s.meta['semantic']=mode
+  poly(s,[(cx-top/2,y),(cx+top/2,y),(cx+bottom/2,y+stage_h-10),(cx-bottom/2,y+stage_h-10)],fill='tint' if i%2==0 else 'tint2',stroke='line')
+  labels,detail,detail_lines=measured[i]
+  label_h=max(36,len(labels)*label_size*1.35+4);detail_y=y+14+label_h;detail_h=max(28,len(detail_lines)*detail_size*1.35+4)
+  s.text(1030,y+10,420,label_h,v['label'],label_size,'accent' if i==0 else 'ink',word_wrap=True)
+  s.text(1030,detail_y,420,detail_h,detail,detail_size,'muted',word_wrap=True)
+  s.edge(points=[(cx+max(top,bottom)/2+12,y+stage_h/2),(1005,y+stage_h/2)],arrow=False,tone='line')
+ s.meta['semantic']=mode;s.meta['ratio_label']=ratio_label if mode=='funnel' else None;s.h=max(s.h,y0+len(a)*stage_h+100)
 
 def venn(s,d):
  a=items(d,lo=2,hi=2);s.add(310,245,550,440,kind='ellipse',fill='none',stroke='accent',stroke_width=2,check=False);s.add(720,245,550,440,kind='ellipse',fill='none',stroke='teal',stroke_width=2,check=False)
@@ -90,11 +109,24 @@ def table(s,d):
  s.h=max(s.h,y0+58+len(rows)*rh+100)
 
 def bmc(s,d):
- a=items(d,lo=9,hi=9);gap=14;w=(s.w-128-4*gap)/5;x=[64+i*(w+gap) for i in range(5)];y=204;h=208
+ a=items(d,lo=9,hi=9);gap=14;w=(s.w-128-4*gap)/5;x=[64+i*(w+gap) for i in range(5)];y=204
+ from render import wrap_words
+ inner_w=w-44;label_size=21;detail_size=18
+ cell_heights=[]
+ for v in a:
+  label_lines=wrap_words(v['label'],inner_w,label_size)
+  detail_lines=wrap_words(v.get('detail',''),inner_w,detail_size) if v.get('detail','') else []
+  required=18+max(42,len(label_lines)*label_size*1.35+4)+8+max(44,len(detail_lines)*detail_size*1.35+4)+18
+  cell_heights.append(required)
+ h=max(208,max(cell_heights,default=208))
  slots=[(x[0],y,w,h*2+gap),(x[1],y,w,h),(x[1],y+h+gap,w,h),(x[2],y,w,h*2+gap),(x[3],y,w,h),(x[3],y+h+gap,w,h),(x[4],y,w,h*2+gap),(64,y+2*(h+gap),(s.w-128-gap)/2,135),(64+(s.w-128+gap)/2,y+2*(h+gap),(s.w-128-gap)/2,135)]
  for v,(xx,yy,ww,hh) in zip(a,slots):
-  s.add(xx,yy,ww,hh,kind='panel',check=False);s.text(xx+22,yy+18,ww-44,42,v['label'],21,'accent');s.text(xx+22,yy+70,ww-44,min(hh-82,max(58,(v.get('detail','').count('\n')+1)*28)),v.get('detail',''),18,'ink')
- s.h=max(s.h,900)
+  label_lines=wrap_words(v['label'],ww-44,label_size);label_h=max(42,len(label_lines)*label_size*1.35+4)
+  detail_y=yy+18+label_h+8;detail_h=max(44,hh-(detail_y-yy)-18)
+  s.add(xx,yy,ww,hh,kind='panel',check=False)
+  s.text(xx+22,yy+18,ww-44,label_h,v['label'],label_size,'accent',word_wrap=True)
+  s.text(xx+22,detail_y,ww-44,detail_h,v.get('detail',''),detail_size,'ink',word_wrap=True)
+ s.h=max(s.h,900);s.meta['semantic']='business-model-canvas';s.meta['cell_height']=h
 
 def quadrant(s,d):
  a=items(d,lo=1,hi=12);x0,y0,pw,ph=250,230,1060,500

@@ -1,0 +1,429 @@
+{
+  "width": 1600,
+  "height": 900,
+  "theme": "light",
+  "palette": {
+    "bg": "#F1EFEB",
+    "panel": "#FEFDF9",
+    "ink": "#30302D",
+    "muted": "#6D6A63",
+    "line": "#D8D3C8",
+    "accent": "#AC6046",
+    "teal": "#67685E",
+    "amber": "#8C7964",
+    "red": "#554C46",
+    "tint": "#F0E4DA",
+    "tint2": "#ECECE5"
+  },
+  "nodes": [
+    {
+      "id": "_v1",
+      "x": 310.0,
+      "y": 220.0,
+      "w": 680.0,
+      "h": 120.0,
+      "label": "",
+      "detail": "",
+      "kind": "polygon",
+      "tone": "accent",
+      "points": [
+        [
+          310.0,
+          220.0
+        ],
+        [
+          990.0,
+          220.0
+        ],
+        [
+          860.8,
+          340.0
+        ],
+        [
+          439.2,
+          340.0
+        ]
+      ],
+      "fill": "tint",
+      "stroke": "line",
+      "check": false
+    },
+    {
+      "id": "_v2",
+      "x": 1030,
+      "y": 230.0,
+      "w": 420,
+      "h": 36.400000000000006,
+      "label": "看到服务入口",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 24,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v3",
+      "x": 1030,
+      "y": 270.4,
+      "w": 420,
+      "h": 28,
+      "label": "1000人  ·  首阶段占比 100%",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v4",
+      "x": 439.2,
+      "y": 350.0,
+      "w": 421.59999999999997,
+      "h": 120.0,
+      "label": "",
+      "detail": "",
+      "kind": "polygon",
+      "tone": "accent",
+      "points": [
+        [
+          439.2,
+          350.0
+        ],
+        [
+          860.8,
+          350.0
+        ],
+        [
+          779.2,
+          470.0
+        ],
+        [
+          520.8,
+          470.0
+        ]
+      ],
+      "fill": "tint2",
+      "stroke": "line",
+      "check": false
+    },
+    {
+      "id": "_v5",
+      "x": 1030,
+      "y": 360.0,
+      "w": 420,
+      "h": 36.400000000000006,
+      "label": "提交需求",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 24,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v6",
+      "x": 1030,
+      "y": 400.4,
+      "w": 420,
+      "h": 28,
+      "label": "620人  ·  首阶段占比 62%",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v7",
+      "x": 520.8,
+      "y": 480.0,
+      "w": 258.4000000000001,
+      "h": 120.0,
+      "label": "",
+      "detail": "",
+      "kind": "polygon",
+      "tone": "accent",
+      "points": [
+        [
+          520.8,
+          480.0
+        ],
+        [
+          779.2,
+          480.0
+        ],
+        [
+          721.4,
+          600.0
+        ],
+        [
+          578.6,
+          600.0
+        ]
+      ],
+      "fill": "tint",
+      "stroke": "line",
+      "check": false
+    },
+    {
+      "id": "_v8",
+      "x": 1030,
+      "y": 490.0,
+      "w": 420,
+      "h": 36.400000000000006,
+      "label": "完成资格确认",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 24,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v9",
+      "x": 1030,
+      "y": 530.4,
+      "w": 420,
+      "h": 28,
+      "label": "380人  ·  首阶段占比 38%",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v10",
+      "x": 578.6,
+      "y": 610.0,
+      "w": 142.79999999999995,
+      "h": 120.0,
+      "label": "",
+      "detail": "",
+      "kind": "polygon",
+      "tone": "accent",
+      "points": [
+        [
+          578.6,
+          610.0
+        ],
+        [
+          721.4,
+          610.0
+        ],
+        [
+          721.4,
+          730.0
+        ],
+        [
+          578.6,
+          730.0
+        ]
+      ],
+      "fill": "tint2",
+      "stroke": "line",
+      "check": false
+    },
+    {
+      "id": "_v11",
+      "x": 1030,
+      "y": 620.0,
+      "w": 420,
+      "h": 36.400000000000006,
+      "label": "完成预约",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 24,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v12",
+      "x": 1030,
+      "y": 660.4,
+      "w": 420,
+      "h": 28,
+      "label": "210人  ·  首阶段占比 21%",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v13",
+      "x": 64,
+      "y": 34,
+      "w": 1472,
+      "h": 22,
+      "label": "25 / HIGH-FREQUENCY FORMS",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v14",
+      "x": 64,
+      "y": 69,
+      "w": 1472,
+      "h": 56,
+      "label": "社区健康预约 · 服务完成漏斗",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 36,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v15",
+      "x": 64,
+      "y": 130,
+      "w": 1472,
+      "h": 38,
+      "label": "每层宽度按人数比例编码；阶段人数只能保持或递减",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v16",
+      "x": 64,
+      "y": 837,
+      "w": 1472,
+      "h": 1,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "line",
+      "stroke": "none",
+      "check": false
+    },
+    {
+      "id": "_v17",
+      "x": 64,
+      "y": 850,
+      "w": 1472,
+      "h": 36,
+      "label": "跨行业模拟输入 · 数值用于演示阅读，不代表真实服务转化率",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    }
+  ],
+  "edges": [
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          1002.0,
+          285.0
+        ],
+        [
+          1005,
+          285.0
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "arrow": false,
+      "tone": "line"
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          872.8,
+          415.0
+        ],
+        [
+          1005,
+          415.0
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "arrow": false,
+      "tone": "line"
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          791.2,
+          545.0
+        ],
+        [
+          1005,
+          545.0
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "arrow": false,
+      "tone": "line"
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          733.4,
+          675.0
+        ],
+        [
+          1005,
+          675.0
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "arrow": false,
+      "tone": "line"
+    }
+  ],
+  "meta": {
+    "width_values": [
+      1000,
+      620,
+      380,
+      210
+    ],
+    "semantic": "funnel",
+    "ratio_label": "首阶段占比"
+  },
+  "assumptions": [
+    "原创跨行业演示内容，不代表医疗服务事实、绩效或预测"
+  ]
+}

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>战略与执行 / Strategy & delivery</title>
+<style>
+body{margin:0;background:#f1efeb;color:#30302d;font:16px/1.7 system-ui,sans-serif}
+main{max-width:1280px;margin:auto;padding:40px 5vw}
+h1{font-size:38px;font-weight:500;margin:0 0 8px}h2{font-size:23px;font-weight:500;margin:0 0 8px}
+p{max-width:980px;color:#6d6a63}section{padding:30px 0;border-top:1px solid #d8d3c8;margin-top:32px;scroll-margin-top:120px}
+a{color:#985238;text-underline-offset:5px;margin-right:20px}small{color:#6d6a63}
+nav{display:flex;flex-wrap:wrap;gap:8px;position:sticky;top:0;z-index:2;background:#f1efeb;padding:14px 0;border-bottom:1px solid #d8d3c8}
+nav a{padding:5px 9px;margin:0;border-radius:4px}nav a[aria-current=location]{background:#30302d;color:#fff}
+.viewport{overflow:auto;border:1px solid #d8d3c8;margin:18px 0;background:#faf9f6}
+object{display:block;width:100%;height:720px}button{font:inherit;background:transparent;color:#30302d;border:1px solid #b8b3a8;padding:8px 14px;cursor:pointer}
+button:focus-visible,a:focus-visible{outline:3px solid #985238;outline-offset:3px}.viewport:focus-visible{outline:3px solid #985238;outline-offset:3px}
+@media print{nav,button{display:none}.viewport{overflow:visible}object{max-width:100%}}
+</style>
+<main id="overview" tabindex="-1">
+<small>DIAGRAM STUDIO / HIGH-FREQUENCY STRATEGY & DELIVERY</small>
+<h1>把阶段数量和商业假说放在可讨论的结构里。</h1>
+<p>漏斗图回答“过程在哪些阶段收窄”，商业模式画布回答“一个服务由哪些假说构成”。两类都保留输入口径和模拟边界。A funnel shows where one process narrows; a business-model canvas organises hypotheses across nine blocks.</p>
+<nav aria-label="案例导航 / Study navigation"><a href="#overview">总览 / Overview</a><a href="#funnel">漏斗 / Funnel</a><a href="#canvas">商业画布 / Business canvas</a><a href="../../references/strategy-canvas.md">边界 / Scope</a></nav>
+<section id="funnel"><h2>01 · 漏斗图 / Funnel chart</h2><p>阶段宽度按人数比例编码，旁边保留绝对值和首阶段占比；不从下降自动推断原因。Stage width encodes count, with absolute values and first-stage ratios kept beside it.</p><button type="button" class="read" aria-pressed="false">清晰尺寸 / Readable size</button><div class="viewport" tabindex="0" role="region"><object type="image/svg+xml" data="funnel/25-funnel-cn.svg" aria-label="漏斗图 / Funnel chart"></object></div><a href="../../assets/examples/25-funnel-cn.json">模型 JSON / 中文</a><a href="../../assets/examples/25-funnel-en.json">English JSON</a><a href="funnel/25-funnel-cn.svg">SVG</a><a href="funnel/25-funnel-cn.drawio">draw.io</a><a href="funnel/25-funnel-en.svg">English SVG</a><a href="funnel/25-funnel-en.drawio">English draw.io</a></section>
+<section id="canvas"><h2>02 · 商业模式画布 / Business model canvas</h2><p>九格固定位置让伙伴、活动、资源、价值、客户、渠道、成本和收入可同时讨论；条目仍是待验证假说。The nine blocks stay in place so the business hypotheses can be discussed together.</p><button type="button" class="read" aria-pressed="false">清晰尺寸 / Readable size</button><div class="viewport" tabindex="0" role="region"><object type="image/svg+xml" data="business-model-canvas/33-business-model-canvas-cn.svg" aria-label="商业模式画布 / Business model canvas"></object></div><a href="../../assets/examples/33-business-model-canvas-cn.json">模型 JSON / 中文</a><a href="../../assets/examples/33-business-model-canvas-en.json">English JSON</a><a href="business-model-canvas/33-business-model-canvas-cn.svg">SVG</a><a href="business-model-canvas/33-business-model-canvas-cn.drawio">draw.io</a><a href="business-model-canvas/33-business-model-canvas-en.svg">English SVG</a><a href="business-model-canvas/33-business-model-canvas-en.drawio">English draw.io</a></section>
+<p>范围说明：两类交付 SVG、draw.io、scene/QA、brief 和 delivery receipt。没有自动解释流失原因、市场规模、定价、收入预测或战略优先级。</p>
+</main>
+<script>
+for(const section of document.querySelectorAll('section')){const button=section.querySelector('button'),obj=section.querySelector('object');section.querySelector('.viewport').setAttribute('aria-label',obj.getAttribute('aria-label')+' · 可滚动 / Scrollable');let reading=false;function size(){const svg=obj.contentDocument?.querySelector('svg');if(!svg)return;const v=svg.viewBox.baseVal;const width=reading?Math.max(1600,obj.parentElement.clientWidth):obj.parentElement.clientWidth;obj.style.width=width+'px';obj.style.height=width*v.height/v.width+'px'}obj.addEventListener('load',size);button.onclick=()=>{reading=!reading;button.setAttribute('aria-pressed',String(reading));button.textContent=reading?'适合宽度 / Fit width':'清晰尺寸 / Readable size';size()};window.addEventListener('resize',size);size()}
+const links=[...document.querySelectorAll('nav a[href^="#"]')];function currentSection(){let id='overview';for(const section of document.querySelectorAll('section')){if(section.getBoundingClientRect().top<=150)id=section.id}for(const link of links){if(link.hash==='#'+id)link.setAttribute('aria-current','location');else link.removeAttribute('aria-current')}}window.addEventListener('scroll',currentSection,{passive:true});window.addEventListener('hashchange',currentSection);currentSection();
+</script>
+</html>

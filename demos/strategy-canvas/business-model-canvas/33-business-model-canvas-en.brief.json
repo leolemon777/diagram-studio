@@ -1,0 +1,50 @@
+{
+  "type": "bmc",
+  "title": "Community care booking · business model canvas",
+  "diagram_name": "Business model canvas",
+  "family": "Strategy & delivery",
+  "subtitle": "Keep the nine blocks in place; entries are hypotheses, not generated pricing or conclusions",
+  "eyebrow": "33 / HIGH-FREQUENCY FORMS",
+  "footer": "Cross-industry simulated input · partners, costs and revenue still need interviews and financial evidence",
+  "assumptions": [
+    "Original cross-industry teaching content; it is not an organisational, market-size, or revenue claim"
+  ],
+  "items": [
+    {
+      "label": "Key Partnerships",
+      "detail": "Community clinics\nLocal service centres"
+    },
+    {
+      "label": "Key Activities",
+      "detail": "Triage requests\nCoordinate appointments"
+    },
+    {
+      "label": "Key Resources",
+      "detail": "Service directory\nConsent records"
+    },
+    {
+      "label": "Value Propositions",
+      "detail": "A clear next step\nFewer repeated calls"
+    },
+    {
+      "label": "Customer Relationships",
+      "detail": "Guided self-service\nHuman fallback"
+    },
+    {
+      "label": "Channels",
+      "detail": "Mobile web\nCommunity desk"
+    },
+    {
+      "label": "Customer Segments",
+      "detail": "Older adults\nCaregivers"
+    },
+    {
+      "label": "Cost Structure",
+      "detail": "Service operations\nAccessibility support"
+    },
+    {
+      "label": "Revenue Streams",
+      "detail": "Funding model to validate\nNo price inferred"
+    }
+  ]
+}
