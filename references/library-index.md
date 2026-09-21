@@ -52,11 +52,11 @@
 
 | 范例 | 输入与可复用语义 |
 |---|---|
-| [07 SWOT 分析](../assets/examples/07-swot.json) | 四类因素对应不同含义；条目均为待验证的假说 |
+| [07 SWOT 分析](../assets/examples/07-swot.json) | 社区服务平台四类因素；每条都是待验证假说，需要证据与负责人 |
 | [33 商业模式画布](../assets/examples/33-business-model-canvas.json) | 保留九格的含义与位置；条目为待验证假说 |
 | [34 PEST 分析](../assets/examples/34-pest.json) | 四个维度均需来源与时间范围；本图只提供研究问题 |
 | [35 五力分析](../assets/examples/35-five-forces.json) | 中心为现有竞争，四周呈现外部力量；关系强弱需要证据 |
-| [36 四象限](../assets/examples/36-quadrant.json) | 坐标为演示评分，真实优先级需要公开评分依据 |
+| [36 四象限](../assets/examples/36-quadrant.json) | 服务改进的影响与实施难度；坐标为演示评分，依据需要公开 |
 | [38 用户旅程](../assets/examples/38-customer-journey.json) | 按使用者的经历组织阶段，区分行为与改进假说 |
 | [39 服务蓝图](../assets/examples/39-service-blueprint.json) | 阶段为列，用户、前台、后台和支撑为行；表中边界需按组织调整 |
 | [40 风险矩阵](../assets/examples/40-risk-matrix.json) | 示例等级 = 可能性等级 × 影响等级；序数评分不是概率 |
@@ -88,7 +88,7 @@
 
 | 范例 | 输入与可复用语义 |
 |---|---|
-| [11 鱼骨原因分析](../assets/examples/11-fishbone.json) | 鱼骨用于组织待验证原因；连线不等于因果证据 |
+| [11 鱼骨原因分析](../assets/examples/11-fishbone.json) | 服务请求反复未完成的六类原因假说；连线不等于因果证据 |
 | [20 科研技术路线](../assets/examples/20-research-route.json) | 研究问题、并行方法和验证环节分别呈现；全部为拟研究方案 |
 | [43 验证 V 模型](../assets/examples/43-v-model.json) | 左右对应的是同层验证关系；底部实现连接设计与验证 |
 

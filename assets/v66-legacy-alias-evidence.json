@@ -1,0 +1,27 @@
+{
+  "version": "v66",
+  "date": "2026-09-21",
+  "scope": "Legacy catalog and demo aliases for updated bilingual high-frequency forms",
+  "automated": {
+    "tests": "Strategy/execution regression passes; legacy SWOT inputs retain four cells and the current cross-industry service context",
+    "registry": "capability_registry.py --check passes",
+    "diff": "git diff --check passes",
+    "aliases": "Catalog entries and legacy strategy/execution outputs point to the current bilingual SWOT, fishbone and quadrant semantics"
+  },
+  "browser_checks": [
+    "Legacy strategy/execution demo opened; the SWOT section shows the community service platform in Chinese",
+    "Legacy strategy/execution English SWOT output retains the same four cells and item semantics",
+    "Catalog and library-index links resolve to the updated examples"
+  ],
+  "not_verified": [
+    "Native editor save/reopen for legacy alias files",
+    "Mobile viewport and other unregistered legacy examples",
+    "Domain evidence or operational decisions implied by any illustrative entry"
+  ],
+  "artifacts": {
+    "models": ["assets/examples/07-swot.json", "assets/examples/07-swot-en.json"],
+    "outputs": ["demos/strategy-execution/swot/07-swot.svg", "demos/strategy-execution/swot/07-swot-en.svg"],
+    "indexes": ["assets/catalog.json", "references/library-index.md"],
+    "demo": "demos/strategy-execution/index.html"
+  }
+}

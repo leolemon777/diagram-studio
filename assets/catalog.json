@@ -58,7 +58,7 @@
   },
   {
     "id": "07-swot",
-    "title": "设备数据平台 · 试点分析",
+    "title": "社区服务平台 · SWOT 扫描",
     "name": "SWOT 分析",
     "family": "商业与管理",
     "type": "matrix",
@@ -94,7 +94,7 @@
   },
   {
     "id": "11-fishbone",
-    "title": "重复停机 · 原因假说整理",
+    "title": "服务请求反复未完成 · 原因假说整理",
     "name": "鱼骨原因分析",
     "family": "科研与分析",
     "type": "fishbone",
@@ -365,7 +365,7 @@
   },
   {
     "id": "36-quadrant",
-    "title": "四象限 · 影响与实施难度",
+    "title": "服务改进 · 影响与实施难度",
     "name": "四象限",
     "family": "商业与管理",
     "type": "quadrant",

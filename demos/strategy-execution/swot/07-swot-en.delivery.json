@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "protocol_version": "diagram-studio/delivery-1",
-  "version_id": "v-79ddcecbc91c",
+  "version_id": "v-c0ba405b7551",
   "source_name": "07-swot-en",
-  "input_sha256": "79ddcecbc91c90582b850bd0a28350ce45c5e47360b4564eec8ba623f023e142",
+  "input_sha256": "c0ba405b7551903f9e73d3e33f5877bfb6760e49e1f4602bdaae0ee0bf1d5001",
   "theme": "light",
   "checks": {
     "geometry": {
@@ -35,11 +35,11 @@
     }
   },
   "files": {
-    "07-swot-en.brief.json": "900b30ec9efb7f26764e32cee223ee4d5b2b0f957188c7863c93906f1652e7d8",
-    "07-swot-en.drawio": "12bd5142a388872b86c8755fa10d52c258b4fe032addcb5648c4af803319e619",
+    "07-swot-en.brief.json": "ab21e3b67a4bedb8ddcc4b5961bcdef58b92411f4c55015db3eb8e9ceae438a2",
+    "07-swot-en.drawio": "e949566b493342d771fc168f989afed60ac9236858b512416e7d0c6c1d3182a8",
     "07-swot-en.qa.json": "5d36b1fe6ce8d9af080ac3928ce9b6bf62350bf678096cdf373bd6d2d2a90c83",
-    "07-swot-en.scene.json": "725e8b00550b304723bbbcd1f0378d912ced603215e54472f2cf1904f3a12cca",
-    "07-swot-en.svg": "8478ca7bb4397dc695cfac629b9c733ce5bdfb182c04a84d3da7bdc19900b7b1"
+    "07-swot-en.scene.json": "e94a4e9b2b4651da4bd8e5710ae83fd79fbfebb84c8c9b8a39176e41abca902e",
+    "07-swot-en.svg": "59fe0b414c24b101fc11f751876532e3e1b96f4190ad2bde9a1a9e00f541ca63"
   },
   "delivery_scope": "Generation, semantic content checks and QA finish before replacement. Individual files are replaced; promotion is not a multi-file atomic transaction."
 }

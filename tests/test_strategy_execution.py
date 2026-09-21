@@ -15,9 +15,9 @@ import render
 
 class StrategyExecutionTests(unittest.TestCase):
     def test_bilingual_swot_retains_cells_and_passes_geometry(self):
-        for name in ("07-swot.json", "07-swot-en.json"):
+        examples = [json.loads((ROOT / "assets/examples" / name).read_text()) for name in ("07-swot.json", "07-swot-en.json")]
+        for name, data in zip(("07-swot.json", "07-swot-en.json"), examples):
             source = ROOT / "assets/examples" / name
-            data = json.loads(source.read_text())
             scene = render.build(data, "light")
             self.assertEqual(render.audit(scene)["errors"], [], name)
             payload = {"nodes": scene.nodes, "edges": scene.edges}
@@ -30,6 +30,8 @@ class StrategyExecutionTests(unittest.TestCase):
             rendered_text = "\n".join(node["label"] for node in scene.nodes)
             for value in source_text.split("\n"):
                 self.assertIn(value, rendered_text, name)
+        self.assertIn("服务", examples[0]["title"])
+        self.assertIn("service", examples[1]["title"].lower())
 
     def test_bilingual_kanban_localizes_ui_and_preserves_limits(self):
         cases = (
@@ -52,6 +54,17 @@ class StrategyExecutionTests(unittest.TestCase):
                 result = kanban_render.render(source, Path(tmp))
                 self.assertEqual(result["errors"], [], name)
                 self.assertTrue((Path(tmp) / f"{source.stem}.qa.json").is_file(), name)
+
+    def test_legacy_catalog_entries_match_current_form_titles(self):
+        catalog = json.loads((ROOT / "assets/catalog.json").read_text())
+        by_id = {row["id"]: row for row in catalog}
+        expected = {
+            "07-swot": "社区服务平台 · SWOT 扫描",
+            "11-fishbone": "服务请求反复未完成 · 原因假说整理",
+            "36-quadrant": "服务改进 · 影响与实施难度",
+        }
+        for identifier, title in expected.items():
+            self.assertEqual(by_id[identifier]["title"], title, identifier)
 
     def test_v49_demo_svgs_are_well_formed_xml(self):
         files = sorted((ROOT / "demos/strategy-execution").rglob("*.svg"))
