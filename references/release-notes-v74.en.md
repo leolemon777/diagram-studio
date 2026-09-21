@@ -30,4 +30,4 @@ The source repository and installed copy each pass 130 regression tests; quick v
 
 ## Limits
 
-Simulated cases are not industry facts and specialist domains still need review. Popular narrow-screen evidence is not generalized to arbitrary high-density inputs. The local EdrawMax/万兴图示 session still rejects a temporary `.drawio` copy, so only the representative diagrams.net round trips are recorded as passed. No real JEV Skill name, path or callable entry is available, so JEV is not claimed as integrated or passed.
+Simulated cases are not industry facts and specialist domains still need review. Popular narrow-screen evidence is not generalized to arbitrary high-density inputs. The chooser continuity evidence covers its declared state-retention, category-memory, keyboard-order and format-boundary paths; it is not a 390px full-keyboard path or byte-level clipboard acceptance. The local EdrawMax/万兴图示 session still rejects a temporary `.drawio` copy, so only the representative diagrams.net round trips are recorded as passed. No real JEV Skill name, path or callable entry is available, so JEV is not claimed as integrated or passed.
