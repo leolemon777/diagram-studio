@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "version": "v62",
+  "version": "v63",
   "updated": "2026-09-20",
   "purpose": "Single source for chooser labels, backend capability, delivery formats and acceptance evidence.",
   "status_vocabulary": {
@@ -334,8 +334,8 @@
           "formats": ["svg", "drawio", "scene.json", "qa.json", "html"],
           "layout_limits": {"zh": "四类各最多 5 条；每条写成可讨论的事实、假说或问题，内容密集时拆成策略与证据两页。", "en": "Up to five items per factor; state facts, hypotheses or questions explicitly and split dense evidence into a second page."},
           "languages": ["zh", "en"],
-          "examples": ["assets/examples/07-swot.json", "assets/examples/07-swot-en.json"],
-          "evidence": {"level": "manual_visual_review", "reference": "assets/v49-strategy-execution-evidence.json", "detail": {"zh": "中英 SWOT 示例通过内容保留、四格几何检查和浏览器查看；条目仍需领域证据。", "en": "Chinese and English SWOT examples pass content retention, four-cell geometry checks and browser review; items still need domain evidence."}},
+          "examples": ["assets/examples/swot-cn.json", "assets/examples/swot-en.json"],
+          "evidence": {"level": "manual_visual_review", "reference": "assets/v63-swot-evidence.json", "detail": {"zh": "同一社区服务场景的中英四格矩阵通过内容保留、几何检查和浏览器查看；条目仍需领域证据。", "en": "Chinese and English four-cell matrices share one community service scenario and pass content, geometry and browser review; items still need domain evidence."}},
           "scope": {"zh": "用于组织战略讨论，不自动计算优势权重、概率或决策结论。", "en": "Organises strategy discussion; it does not calculate weights, probabilities or a decision conclusion."}
         },
         {

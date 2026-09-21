@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "protocol_version": "diagram-studio/delivery-1",
+  "version_id": "v-28ef5086df41",
+  "source_name": "swot-cn",
+  "input_sha256": "28ef5086df41af181d1e301e954a728557c580aa980bfde28270fe21e24f684b",
+  "theme": "light",
+  "checks": {
+    "geometry": {
+      "status": "passed",
+      "warnings": []
+    },
+    "composition": {
+      "status": "not-run",
+      "findings": []
+    },
+    "content_integrity": {
+      "status": "passed",
+      "source_ids": 0,
+      "source_relations": 0,
+      "source_texts": 20,
+      "missing_ids": [],
+      "missing_relations": [],
+      "missing_text": [],
+      "scope": "stable source IDs, explicit relation endpoints and source display text; not domain correctness"
+    },
+    "browser_text_bounds": {
+      "status": "not-run"
+    },
+    "manual_visual_review": {
+      "status": "not-run"
+    },
+    "native_editor": {
+      "status": "not-run"
+    }
+  },
+  "files": {
+    "swot-cn.brief.json": "9752a13e800e439d1499752de9fdf7ed65cda234f9d4d8a409ea992bafdcaaa6",
+    "swot-cn.drawio": "fb1e507c77e3a40f94ac912ecac9bf3dfd23d6b2e40658e982f333863dd59a6e",
+    "swot-cn.qa.json": "5d36b1fe6ce8d9af080ac3928ce9b6bf62350bf678096cdf373bd6d2d2a90c83",
+    "swot-cn.scene.json": "5fe0162f59ae932d123732b1486d4be2f1320bf0783b960640d81723d3c7b5a8",
+    "swot-cn.svg": "4615a38c2e1bea47bf9a86d48cb18ad613aa0d46b56acf041673b25d0b8b79db"
+  },
+  "delivery_scope": "Generation, semantic content checks and QA finish before replacement. Individual files are replaced; promotion is not a multi-file atomic transaction."
+}

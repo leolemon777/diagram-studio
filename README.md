@@ -17,7 +17,7 @@
 
 它还支持针对**同一份数据**比较不同表达方式，改变阅读顺序与构图，同时保留数值、关系、单位和方向。[四个行业场景的八种表达](demos/expression-lab/index.html)是可重绘的实验示例。目录中的类型名称是检索入口，不代表每个类型都有独立渲染器；详细状态见 [验证记录](references/verification-status.md)。
 
-关系网络的双语跨行业案例见[网络演示](demos/network/index.html)：对象、方向、返回关系和三页详读均保留，适合先看结构再按群组拆图。分层职责与横向关注点见[架构演示](demos/architecture/index.html)；普通步骤、判断和异常回流见[预约流程演示](demos/flow/index.html)；同一份排期的汇报、执行和打印版见[甘特图演示](demos/gantt/index.html)；消息先后可看[交互时序演示](demos/sequence/index.html)，返回消息以虚线和方向保留；并行工作与汇合约束见[任务依赖演示](demos/dependency/index.html)；角色交接与异常回流见[责任泳道演示](demos/swimlane/index.html)。
+关系网络的双语跨行业案例见[网络演示](demos/network/index.html)：对象、方向、返回关系和三页详读均保留，适合先看结构再按群组拆图。分层职责与横向关注点见[架构演示](demos/architecture/index.html)；普通步骤、判断和异常回流见[预约流程演示](demos/flow/index.html)；同一份排期的汇报、执行和打印版见[甘特图演示](demos/gantt/index.html)；同一社区服务场景的 SWOT 双语矩阵见[SWOT 演示](demos/swot/index.html)；消息先后可看[交互时序演示](demos/sequence/index.html)，返回消息以虚线和方向保留；并行工作与汇合约束见[任务依赖演示](demos/dependency/index.html)；角色交接与异常回流见[责任泳道演示](demos/swimlane/index.html)。
 
 ## 怎么用
 

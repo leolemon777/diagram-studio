@@ -1,0 +1,54 @@
+{
+  "type": "matrix",
+  "language": "en",
+  "title": "Community service platform · SWOT scan",
+  "subtitle": "Keep four lenses separate; each item is a hypothesis that needs evidence and an owner",
+  "eyebrow": "07 / STRATEGY CANVAS / COMMUNITY SERVICE",
+  "columns": 2,
+  "cell_height": 235,
+  "cells": [
+    {
+      "label": "S  Strengths",
+      "tone": "accent",
+      "items": [
+        "Existing resident feedback channels",
+        "Small pilots can move in stages",
+        "Service teams know real contexts"
+      ]
+    },
+    {
+      "label": "W  Weaknesses",
+      "tone": "amber",
+      "items": [
+        "Goals and definitions are not aligned yet",
+        "Content quality needs a review path",
+        "Coordination time is limited at peaks"
+      ]
+    },
+    {
+      "label": "O  Opportunities",
+      "tone": "teal",
+      "items": [
+        "Community partners can extend local reach",
+        "Open resources can widen service options",
+        "Lightweight feedback can guide the next round"
+      ]
+    },
+    {
+      "label": "T  Threats",
+      "tone": "red",
+      "items": [
+        "Partner schedules may change",
+        "Accessibility needs can be missed without review",
+        "External platforms may change integration rules"
+      ]
+    }
+  ],
+  "footer": "Original strategy canvas · statements are hypotheses, not organisational facts",
+  "assumptions": [
+    "This is a cross-industry illustrative input, not an organisational assessment",
+    "Each item needs a source, owner and review date before a decision"
+  ],
+  "family": "Strategy and management",
+  "diagram_name": "SWOT analysis"
+}

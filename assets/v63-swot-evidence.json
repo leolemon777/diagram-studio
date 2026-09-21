@@ -1,0 +1,20 @@
+{
+  "version": "v63",
+  "capability": "swot",
+  "status": "manual_visual_review",
+  "source_examples": [
+    "assets/examples/swot-cn.json",
+    "assets/examples/swot-en.json"
+  ],
+  "checks": {
+    "bilingual_truth": "same four lenses, three items per cell and one community service platform scenario in Chinese and English",
+    "geometry": "matrix audit reports zero errors and zero connector warnings in both languages",
+    "content": "internal strengths/weaknesses and external opportunities/threats remain separate; every item stays visible",
+    "browser": "overview page and direct Chinese/English SVGs were opened and visually reviewed at readable and scrollable sizes"
+  },
+  "limitations": [
+    "SWOT entries are illustrative hypotheses; the renderer does not assign weights, evidence quality or strategic conclusions.",
+    "Native draw.io edit, save and reopen behavior is not included in this batch.",
+    "Real organisational decisions require sources, owners, review dates and domain context."
+  ]
+}
