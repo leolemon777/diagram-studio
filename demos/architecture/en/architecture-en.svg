@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1672" viewBox="0 0 1600 1672" role="img" aria-labelledby="diagram-title diagram-desc">
+<title id="diagram-title">Community service platform · layered architecture</title>
+<desc id="diagram-desc">From user entry points to service capabilities and data; cross-cutting concerns span every layer</desc>
+<rect width="100%" height="100%" fill="#F1EFEB"/>
+<defs>
+<marker id="arrow-accent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#AC6046"/></marker>
+<marker id="arrow-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#67685E"/></marker>
+<marker id="arrow-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#8C7964"/></marker>
+<marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#554C46"/></marker>
+<marker id="arrow-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#6D6A63"/></marker>
+<marker id="arrow-line" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#D8D3C8"/></marker>
+<marker id="arrow-ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#30302D"/></marker>
+</defs>
+<g font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, Arial, sans-serif">
+<g id="_v1" data-kind="panel" data-content-text="false" data-box="76,230.0,1360,185.0">
+<rect x="76" y="230.0" width="1360" height="185.0" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="_v4" data-kind="panel" data-content-text="false" data-box="76,523.0,1360,185.0">
+<rect x="76" y="523.0" width="1360" height="185.0" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="_v7" data-kind="panel" data-content-text="false" data-box="76,816.0,1360,185.0">
+<rect x="76" y="816.0" width="1360" height="185.0" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="_v10" data-kind="panel" data-content-text="false" data-box="76,1109.0,1360,185.0">
+<rect x="76" y="1109.0" width="1360" height="185.0" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="_v13" data-kind="panel" data-content-text="false" data-box="76,1402.0,1360,163.0">
+<rect x="76" y="1402.0" width="1360" height="163.0" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="_v2" data-kind="text" data-content-text="false" data-box="100,246.0,1312,27" font-family="Heiti TC">
+
+<text x="100" y="266.0" text-anchor="start" font-size="20" font-weight="400" fill="#AC6046">User experience</text>
+</g>
+<g id="_v3" data-kind="text" data-content-text="false" data-box="100,277.0,1312,22" font-family="Heiti TC">
+
+<text x="100" y="293.2" text-anchor="start" font-size="16" font-weight="400" fill="#6D6A63">For residents and staff</text>
+</g>
+<g id="_v5" data-kind="text" data-content-text="false" data-box="100,539.0,1312,27" font-family="Heiti TC">
+
+<text x="100" y="559.0" text-anchor="start" font-size="20" font-weight="400" fill="#AC6046">Domain services</text>
+</g>
+<g id="_v6" data-kind="text" data-content-text="false" data-box="100,570.0,1312,22" font-family="Heiti TC">
+
+<text x="100" y="586.2" text-anchor="start" font-size="16" font-weight="400" fill="#6D6A63">Reusable capabilities</text>
+</g>
+<g id="_v8" data-kind="text" data-content-text="false" data-box="100,832.0,1312,27" font-family="Heiti TC">
+
+<text x="100" y="852.0" text-anchor="start" font-size="20" font-weight="400" fill="#AC6046">Data capabilities</text>
+</g>
+<g id="_v9" data-kind="text" data-content-text="false" data-box="100,863.0,1312,22" font-family="Heiti TC">
+
+<text x="100" y="879.2" text-anchor="start" font-size="16" font-weight="400" fill="#6D6A63">Shared definitions and traceability</text>
+</g>
+<g id="_v11" data-kind="text" data-content-text="false" data-box="100,1125.0,1312,27" font-family="Heiti TC">
+
+<text x="100" y="1145.0" text-anchor="start" font-size="20" font-weight="400" fill="#AC6046">External connections</text>
+</g>
+<g id="_v12" data-kind="text" data-content-text="false" data-box="100,1156.0,1312,22" font-family="Heiti TC">
+
+<text x="100" y="1172.2" text-anchor="start" font-size="16" font-weight="400" fill="#6D6A63">Connect existing tools</text>
+</g>
+<g id="_v14" data-kind="text" data-content-text="false" data-box="100,1418.0,1312,27" font-family="Heiti TC">
+
+<text x="100" y="1438.0" text-anchor="start" font-size="20" font-weight="400" fill="#AC6046">横向支撑</text>
+</g>
+<g id="service-entry" data-kind="rect" data-content-text="false" data-box="104,315.0,360,96" font-family="Heiti TC">
+<rect x="104" y="315.0" width="360" height="96" rx="10" fill="#FEFDF9" stroke="#AC6046" stroke-width="1.5"/>
+<text x="284.0" y="358.675" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">Service entry</text>
+<text x="284.0" y="383.375" text-anchor="middle" font-size="17" font-weight="400" fill="#6D6A63">Book · check · feedback</text>
+</g>
+<g id="work-desk" data-kind="rect" data-content-text="false" data-box="500,315.0,360,96" font-family="Heiti TC">
+<rect x="500" y="315.0" width="360" height="96" rx="10" fill="#FEFDF9" stroke="#AC6046" stroke-width="1.5"/>
+<text x="680.0" y="358.675" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">Work desk</text>
+<text x="680.0" y="383.375" text-anchor="middle" font-size="17" font-weight="400" fill="#6D6A63">Assign · resolve · review</text>
+</g>
+<g id="operations-view" data-kind="rect" data-content-text="false" data-box="896,315.0,360,96" font-family="Heiti TC">
+<rect x="896" y="315.0" width="360" height="96" rx="10" fill="#FEFDF9" stroke="#AC6046" stroke-width="1.5"/>
+<text x="1076.0" y="358.675" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">Operations view</text>
+<text x="1076.0" y="383.375" text-anchor="middle" font-size="17" font-weight="400" fill="#6D6A63">Reach · quality · trends</text>
+</g>
+<g id="booking-service" data-kind="rect" data-content-text="false" data-box="104,608.0,360,96" font-family="Heiti TC">
+<rect x="104" y="608.0" width="360" height="96" rx="10" fill="#FEFDF9" stroke="#67685E" stroke-width="1.5"/>
+<text x="284.0" y="651.675" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">Booking service</text>
+<text x="284.0" y="676.375" text-anchor="middle" font-size="17" font-weight="400" fill="#6D6A63">Time · capacity · status</text>
+</g>
+<g id="notification-hub" data-kind="rect" data-content-text="false" data-box="500,608.0,360,96" font-family="Heiti TC">
+<rect x="500" y="608.0" width="360" height="96" rx="10" fill="#FEFDF9" stroke="#67685E" stroke-width="1.5"/>
+<text x="680.0" y="651.675" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">Notification hub</text>
+<text x="680.0" y="676.375" text-anchor="middle" font-size="17" font-weight="400" fill="#6D6A63">Reminder · result · follow-up</text>
+</g>
+<g id="content-service" data-kind="rect" data-content-text="false" data-box="896,608.0,360,96" font-family="Heiti TC">
+<rect x="896" y="608.0" width="360" height="96" rx="10" fill="#FEFDF9" stroke="#67685E" stroke-width="1.5"/>
+<text x="1076.0" y="651.675" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">Content service</text>
+<text x="1076.0" y="676.375" text-anchor="middle" font-size="17" font-weight="400" fill="#6D6A63">Guides · resources · versions</text>
+</g>
+<g id="business-records" data-kind="rect" data-content-text="false" data-box="104,901.0,360,96" font-family="Heiti TC">
+<rect x="104" y="901.0" width="360" height="96" rx="10" fill="#FEFDF9" stroke="#AC6046" stroke-width="1.5"/>
+<text x="284.0" y="944.675" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">Business records</text>
+<text x="284.0" y="969.375" text-anchor="middle" font-size="17" font-weight="400" fill="#6D6A63">Service and participation</text>
+</g>
+<g id="event-stream" data-kind="rect" data-content-text="false" data-box="500,901.0,360,96" font-family="Heiti TC">
+<rect x="500" y="901.0" width="360" height="96" rx="10" fill="#FEFDF9" stroke="#AC6046" stroke-width="1.5"/>
+<text x="680.0" y="944.675" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">Event stream</text>
+<text x="680.0" y="969.375" text-anchor="middle" font-size="17" font-weight="400" fill="#6D6A63">Actions and notifications</text>
+</g>
+<g id="analytics-data" data-kind="rect" data-content-text="false" data-box="896,901.0,360,96" font-family="Heiti TC">
+<rect x="896" y="901.0" width="360" height="96" rx="10" fill="#FEFDF9" stroke="#AC6046" stroke-width="1.5"/>
+<text x="1076.0" y="944.675" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">Analytics data</text>
+<text x="1076.0" y="969.375" text-anchor="middle" font-size="17" font-weight="400" fill="#6D6A63">Metrics and segments</text>
+</g>
+<g id="identity-provider" data-kind="rect" data-content-text="false" data-box="104,1194.0,360,96" font-family="Heiti TC">
+<rect x="104" y="1194.0" width="360" height="96" rx="10" fill="#FEFDF9" stroke="#67685E" stroke-width="1.5"/>
+<text x="284.0" y="1237.675" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">Identity provider</text>
+<text x="284.0" y="1262.375" text-anchor="middle" font-size="17" font-weight="400" fill="#6D6A63">Sign-in · roles</text>
+</g>
+<g id="payment-signup" data-kind="rect" data-content-text="false" data-box="500,1194.0,360,96" font-family="Heiti TC">
+<rect x="500" y="1194.0" width="360" height="96" rx="10" fill="#FEFDF9" stroke="#67685E" stroke-width="1.5"/>
+<text x="680.0" y="1237.675" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">Payment / sign-up</text>
+<text x="680.0" y="1262.375" text-anchor="middle" font-size="17" font-weight="400" fill="#6D6A63">Orders · eligibility</text>
+</g>
+<g id="message-channels" data-kind="rect" data-content-text="false" data-box="896,1194.0,360,96" font-family="Heiti TC">
+<rect x="896" y="1194.0" width="360" height="96" rx="10" fill="#FEFDF9" stroke="#67685E" stroke-width="1.5"/>
+<text x="1076.0" y="1237.675" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">Message channels</text>
+<text x="1076.0" y="1262.375" text-anchor="middle" font-size="17" font-weight="400" fill="#6D6A63">SMS · email</text>
+</g>
+<g id="crosscut-0" data-kind="rect" data-content-text="false" data-box="104,1465.0,360,96" font-family="Heiti TC">
+<rect x="104" y="1465.0" width="360" height="96" rx="10" fill="#FEFDF9" stroke="#AC6046" stroke-width="1.5"/>
+<text x="284.0" y="1508.675" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">Identity &amp; privacy</text>
+<text x="284.0" y="1533.375" text-anchor="middle" font-size="17" font-weight="400" fill="#6D6A63">Access · minimisation</text>
+</g>
+<g id="crosscut-1" data-kind="rect" data-content-text="false" data-box="500,1465.0,360,96" font-family="Heiti TC">
+<rect x="500" y="1465.0" width="360" height="96" rx="10" fill="#FEFDF9" stroke="#AC6046" stroke-width="1.5"/>
+<text x="680.0" y="1508.675" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">Observability</text>
+<text x="680.0" y="1533.375" text-anchor="middle" font-size="17" font-weight="400" fill="#6D6A63">Logs · metrics</text>
+</g>
+<g id="crosscut-2" data-kind="rect" data-content-text="false" data-box="896,1465.0,360,96" font-family="Heiti TC">
+<rect x="896" y="1465.0" width="360" height="96" rx="10" fill="#FEFDF9" stroke="#AC6046" stroke-width="1.5"/>
+<text x="1076.0" y="1508.675" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">Governance &amp; audit</text>
+<text x="1076.0" y="1533.375" text-anchor="middle" font-size="17" font-weight="400" fill="#6D6A63">Definitions · traceability</text>
+</g>
+<g id="_v30" data-kind="text" data-content-text="false" data-box="64,34,1472,22" font-family="Heiti TC">
+
+<text x="64" y="49.55" text-anchor="start" font-size="14" font-weight="400" fill="#AC6046">SYSTEM ARCHITECTURE / COMMUNITY SERVICE</text>
+</g>
+<g id="_v31" data-kind="text" data-content-text="false" data-box="64,74,1472,49" font-family="Heiti TC">
+
+<text x="64" y="110.2" text-anchor="start" font-size="36" font-weight="600" fill="#30302D">Community service platform · layered architecture</text>
+</g>
+<g id="_v32" data-kind="text" data-content-text="false" data-box="64,131,1472,24" font-family="Heiti TC">
+
+<text x="64" y="148.525" text-anchor="start" font-size="17" font-weight="400" fill="#6D6A63">From user entry points to service capabilities and data; cross-cutting concerns span every layer</text>
+</g>
+<g id="_v33" data-kind="rect" data-content-text="false" data-box="64,1612,1472,1">
+<rect x="64" y="1612" width="1472" height="1" rx="0" fill="#D8D3C8" stroke="none" stroke-width="1.5"/>
+</g>
+<g id="_v34" data-kind="text" data-content-text="false" data-box="64,1628,1472,20" font-family="Heiti TC">
+
+<text x="64" y="1642.55" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">Concept architecture example · bands show responsibility, not layer-by-layer calls · confirm boundaries with the organisation</text>
+</g>
+</g></svg>

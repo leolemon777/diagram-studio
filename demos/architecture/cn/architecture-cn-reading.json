@@ -1,0 +1,155 @@
+{
+  "nodes": {
+    "service-entry": [
+      6
+    ],
+    "work-desk": [
+      6
+    ],
+    "operations-view": [
+      6
+    ],
+    "booking-service": [
+      6
+    ],
+    "notification-hub": [
+      6
+    ],
+    "content-service": [
+      6
+    ],
+    "business-records": [
+      6
+    ],
+    "event-stream": [
+      6
+    ],
+    "analytics-data": [
+      7
+    ],
+    "identity-provider": [
+      7
+    ],
+    "payment-signup": [
+      7
+    ],
+    "message-channels": [
+      7
+    ],
+    "crosscut-0": [
+      7
+    ],
+    "crosscut-1": [
+      7
+    ],
+    "crosscut-2": [
+      7
+    ]
+  },
+  "edges": [],
+  "local_views": [
+    {
+      "page": 1,
+      "nodes": [
+        "service-entry",
+        "work-desk",
+        "operations-view"
+      ],
+      "context_nodes": [],
+      "cross_page_relations": []
+    },
+    {
+      "page": 2,
+      "nodes": [
+        "booking-service",
+        "notification-hub",
+        "content-service"
+      ],
+      "context_nodes": [],
+      "cross_page_relations": []
+    },
+    {
+      "page": 3,
+      "nodes": [
+        "business-records",
+        "event-stream",
+        "analytics-data"
+      ],
+      "context_nodes": [],
+      "cross_page_relations": []
+    },
+    {
+      "page": 4,
+      "nodes": [
+        "identity-provider",
+        "payment-signup",
+        "message-channels"
+      ],
+      "context_nodes": [],
+      "cross_page_relations": []
+    },
+    {
+      "page": 5,
+      "nodes": [
+        "crosscut-0",
+        "crosscut-1",
+        "crosscut-2"
+      ],
+      "context_nodes": [],
+      "cross_page_relations": []
+    }
+  ],
+  "source_node_count": 15,
+  "source_edge_count": 0,
+  "pages": [
+    {
+      "file": "architecture-cn-p01.svg",
+      "title": "P01 局部关系 · 1/5",
+      "width": 1600,
+      "height": 900,
+      "minimum_font": 22
+    },
+    {
+      "file": "architecture-cn-p02.svg",
+      "title": "P02 局部关系 · 2/5",
+      "width": 1600,
+      "height": 900,
+      "minimum_font": 22
+    },
+    {
+      "file": "architecture-cn-p03.svg",
+      "title": "P03 局部关系 · 3/5",
+      "width": 1600,
+      "height": 900,
+      "minimum_font": 22
+    },
+    {
+      "file": "architecture-cn-p04.svg",
+      "title": "P04 局部关系 · 4/5",
+      "width": 1600,
+      "height": 900,
+      "minimum_font": 22
+    },
+    {
+      "file": "architecture-cn-p05.svg",
+      "title": "P05 局部关系 · 5/5",
+      "width": 1600,
+      "height": 900,
+      "minimum_font": 22
+    },
+    {
+      "file": "architecture-cn-p06.svg",
+      "title": "P06 对象详解",
+      "width": 1600,
+      "height": 900,
+      "minimum_font": 14
+    },
+    {
+      "file": "architecture-cn-p07.svg",
+      "title": "P07 对象详解",
+      "width": 1600,
+      "height": 900,
+      "minimum_font": 14
+    }
+  ]
+}

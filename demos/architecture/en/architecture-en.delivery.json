@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "protocol_version": "diagram-studio/delivery-1",
+  "version_id": "v-78026db1d1b5",
+  "source_name": "architecture-en",
+  "input_sha256": "78026db1d1b5ac348a0a1dd83ee9bdb6abb1c6dbf9c4522d8f1d9a966fc74daf",
+  "theme": "light",
+  "checks": {
+    "geometry": {
+      "status": "passed",
+      "warnings": []
+    },
+    "composition": {
+      "status": "review-required",
+      "findings": [
+        {
+          "kind": "small-overview-text",
+          "reference_viewport": [
+            1600,
+            900
+          ],
+          "available_canvas": [
+            1552,
+            720
+          ],
+          "minimum_content_font_px": 17,
+          "projected_minimum_font_px": 7.32,
+          "review_threshold_px": 12,
+          "status": "review-required",
+          "scope": "projected content text size at reference viewport; not visual acceptance"
+        }
+      ]
+    },
+    "content_integrity": {
+      "status": "passed",
+      "source_ids": 12,
+      "source_relations": 0,
+      "source_texts": 24,
+      "missing_ids": [],
+      "missing_relations": [],
+      "missing_text": [],
+      "scope": "stable source IDs, explicit relation endpoints and source display text; not domain correctness"
+    },
+    "browser_text_bounds": {
+      "status": "not-run"
+    },
+    "manual_visual_review": {
+      "status": "not-run"
+    },
+    "native_editor": {
+      "status": "not-run"
+    }
+  },
+  "files": {
+    "adaptive_reader.js": "9bc0a1eb6bfcf6bc88f5546bab128557ab8cc5daaee9887bcfa3e4d23b426fcf",
+    "architecture-en-p01.qa.json": "1f7af03a11a391e6b2dcad5c8facc96d4135b2037789293a46da127a689db225",
+    "architecture-en-p01.svg": "d5679b067ee26e29496aeee771273daa57b8d2fa9dbfe280d75690b683c6eef0",
+    "architecture-en-p02.qa.json": "b8b1bbec3b269799f0b21c081bf5a16e8dcbc7343d3e5ae51fce4a9c723b3f24",
+    "architecture-en-p02.svg": "3a248edded4d1ae3880322ef1d21e3b529c57f12ba681db5593ce93370b144ac",
+    "architecture-en-p03.qa.json": "119abc4efa35867d7437f5465719e95134c367cdb21e7e934f3d19720166ee3e",
+    "architecture-en-p03.svg": "ecbe88a44d2dd05468f5f03ba783e83c54b8812bd55323dcfeeabe731f976080",
+    "architecture-en-p04.qa.json": "4331dd1bb062d2ef8357258446773e91ebf1d550f1bfbb1c721698fd587059d2",
+    "architecture-en-p04.svg": "01ad93f5dd9c4825ab6b1ef283e841dc60742144471562a11848e512b718ba4c",
+    "architecture-en-p05.qa.json": "eece307b3482b173847d47fa184bfee7e38f27d6e41443165a94d6cd65f38d5c",
+    "architecture-en-p05.svg": "b038cfcc6ed88a1cd923b3610d2a1f682fc2afa4de77366232253d526db7288d",
+    "architecture-en-p06.qa.json": "9c15681bdf7c055c6abc8c77770224d8af3198502df6382f932eb6925c6bdaab",
+    "architecture-en-p06.svg": "b52b88396de82fc7daa9fb1054c50a016cec1beaf247c28eb352adfc90f33817",
+    "architecture-en-p07.qa.json": "74314773f0d218c33c385102a152654327898e8070ccbdbf3edb5c488b3348dd",
+    "architecture-en-p07.svg": "2433bf92c25858aec7053b9fa93ff6762eb04d7123751168ca12958450b64f6f",
+    "architecture-en-reading.drawio": "92ed14db829a7469f25dae21ccfbfd449aaacc3b7fee677a178d6580b0385eb9",
+    "architecture-en-reading.json": "abdc5fe0e235e808480ed96c0f05b219a2e88a9046feb40c6d2561b7d9a4c2ed",
+    "architecture-en.brief.json": "f04ff2833f317a29617d2b24dabb5741b5aba857453071880025dd9be483e19e",
+    "architecture-en.drawio": "64eef0172d81110635c6b6fb5fa247626dc8e97cae0c44d7762e0f1099b0e0b4",
+    "architecture-en.html": "55fbdc41eae30fd0b4f5b71ef2ae8e9f543af8e5d8811f4b054e279ade815547",
+    "architecture-en.qa.json": "2fe7a146a3f724aad4cb5007806751f3253be8d86dc56690c747442fc55492b0",
+    "architecture-en.scene.json": "eea89e0506d74e9dca74463d1e4e6e036a660490be11997a0fadd5de7b6a0699",
+    "architecture-en.svg": "1ba8e8184923d19665d46dc64a2aa9cea333b824a0724526ac7d4417439d3fc4",
+    "browser_quality.js": "e02da63376abe62d68f626d97701d2aacf761f59e6312a420643eab270339e1b"
+  },
+  "delivery_scope": "Generation, semantic content checks and QA finish before replacement. Individual files are replaced; promotion is not a multi-file atomic transaction."
+}

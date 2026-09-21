@@ -1,0 +1,117 @@
+{
+  "type": "architecture",
+  "title": "社区服务平台 · 分层架构",
+  "subtitle": "从用户入口到服务能力与数据底座；横向能力贯穿每层",
+  "eyebrow": "SYSTEM ARCHITECTURE / 社区服务",
+  "layers": [
+    {
+      "label": "用户体验",
+      "description": "面向居民、工作人员",
+      "tone": "accent",
+      "items": [
+        {
+          "id": "service-entry",
+          "label": "服务入口",
+          "detail": "预约 · 查询 · 反馈"
+        },
+        {
+          "id": "work-desk",
+          "label": "工作台",
+          "detail": "分派 · 处理 · 复盘"
+        },
+        {
+          "id": "operations-view",
+          "label": "运营视图",
+          "detail": "触达 · 质量 · 趋势"
+        }
+      ]
+    },
+    {
+      "label": "领域服务",
+      "description": "组织可复用能力",
+      "tone": "teal",
+      "items": [
+        {
+          "id": "booking-service",
+          "label": "预约服务",
+          "detail": "时间 · 名额 · 状态"
+        },
+        {
+          "id": "notification-hub",
+          "label": "通知中心",
+          "detail": "提醒 · 结果 · 回访"
+        },
+        {
+          "id": "content-service",
+          "label": "内容服务",
+          "detail": "指南 · 资源 · 版本"
+        }
+      ]
+    },
+    {
+      "label": "数据能力",
+      "description": "统一口径与留痕",
+      "tone": "accent",
+      "items": [
+        {
+          "id": "business-records",
+          "label": "业务记录",
+          "detail": "服务与参与"
+        },
+        {
+          "id": "event-stream",
+          "label": "事件流",
+          "detail": "行为与通知"
+        },
+        {
+          "id": "analytics-data",
+          "label": "分析数据",
+          "detail": "指标与分群"
+        }
+      ]
+    },
+    {
+      "label": "外部连接",
+      "description": "连接已有工具",
+      "tone": "teal",
+      "items": [
+        {
+          "id": "identity-provider",
+          "label": "身份平台",
+          "detail": "登录 · 角色"
+        },
+        {
+          "id": "payment-signup",
+          "label": "支付 / 报名",
+          "detail": "订单 · 资格"
+        },
+        {
+          "id": "message-channels",
+          "label": "消息渠道",
+          "detail": "短信 · 邮件"
+        }
+      ]
+    }
+  ],
+  "crosscut": [
+    {
+      "label": "身份与隐私",
+      "detail": "授权 · 最小化"
+    },
+    {
+      "label": "可观测性",
+      "detail": "日志 · 指标"
+    },
+    {
+      "label": "治理与审计",
+      "detail": "口径 · 留痕"
+    }
+  ],
+  "footer": "概念架构示例 · 横层表达职责构成，不表示逐层调用 · 实际边界需按组织确认",
+  "assumptions": [
+    "这是原创跨行业示例，不是用户现有平台的部署图",
+    "横向能力表示贯穿关注点，不绘制未经确认的调用关系"
+  ],
+  "family": "系统与软件",
+  "diagram_name": "分层系统架构"
+}

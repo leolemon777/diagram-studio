@@ -1,0 +1,969 @@
+{
+  "width": 1600,
+  "height": 1672,
+  "theme": "light",
+  "palette": {
+    "bg": "#F1EFEB",
+    "panel": "#FEFDF9",
+    "ink": "#30302D",
+    "muted": "#6D6A63",
+    "line": "#D8D3C8",
+    "accent": "#AC6046",
+    "teal": "#67685E",
+    "amber": "#8C7964",
+    "red": "#554C46",
+    "tint": "#F0E4DA",
+    "tint2": "#ECECE5"
+  },
+  "nodes": [
+    {
+      "id": "_v1",
+      "x": 76,
+      "y": 230.0,
+      "w": 1360,
+      "h": 185.0,
+      "label": "",
+      "detail": "",
+      "kind": "panel",
+      "tone": "accent",
+      "check": false,
+      "radius": 10,
+      "stroke_width": 1.5
+    },
+    {
+      "id": "_v2",
+      "x": 100,
+      "y": 246.0,
+      "w": 1312,
+      "h": 27,
+      "label": "User experience",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 20,
+      "align": "left",
+      "check": false,
+      "font_family": "Heiti TC"
+    },
+    {
+      "id": "_v3",
+      "x": 100,
+      "y": 277.0,
+      "w": 1312,
+      "h": 22,
+      "label": "For residents and staff",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 16,
+      "align": "left",
+      "check": false,
+      "font_family": "Heiti TC"
+    },
+    {
+      "id": "_v4",
+      "x": 76,
+      "y": 523.0,
+      "w": 1360,
+      "h": 185.0,
+      "label": "",
+      "detail": "",
+      "kind": "panel",
+      "tone": "accent",
+      "check": false,
+      "radius": 10,
+      "stroke_width": 1.5
+    },
+    {
+      "id": "_v5",
+      "x": 100,
+      "y": 539.0,
+      "w": 1312,
+      "h": 27,
+      "label": "Domain services",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 20,
+      "align": "left",
+      "check": false,
+      "font_family": "Heiti TC"
+    },
+    {
+      "id": "_v6",
+      "x": 100,
+      "y": 570.0,
+      "w": 1312,
+      "h": 22,
+      "label": "Reusable capabilities",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 16,
+      "align": "left",
+      "check": false,
+      "font_family": "Heiti TC"
+    },
+    {
+      "id": "_v7",
+      "x": 76,
+      "y": 816.0,
+      "w": 1360,
+      "h": 185.0,
+      "label": "",
+      "detail": "",
+      "kind": "panel",
+      "tone": "accent",
+      "check": false,
+      "radius": 10,
+      "stroke_width": 1.5
+    },
+    {
+      "id": "_v8",
+      "x": 100,
+      "y": 832.0,
+      "w": 1312,
+      "h": 27,
+      "label": "Data capabilities",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 20,
+      "align": "left",
+      "check": false,
+      "font_family": "Heiti TC"
+    },
+    {
+      "id": "_v9",
+      "x": 100,
+      "y": 863.0,
+      "w": 1312,
+      "h": 22,
+      "label": "Shared definitions and traceability",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 16,
+      "align": "left",
+      "check": false,
+      "font_family": "Heiti TC"
+    },
+    {
+      "id": "_v10",
+      "x": 76,
+      "y": 1109.0,
+      "w": 1360,
+      "h": 185.0,
+      "label": "",
+      "detail": "",
+      "kind": "panel",
+      "tone": "accent",
+      "check": false,
+      "radius": 10,
+      "stroke_width": 1.5
+    },
+    {
+      "id": "_v11",
+      "x": 100,
+      "y": 1125.0,
+      "w": 1312,
+      "h": 27,
+      "label": "External connections",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 20,
+      "align": "left",
+      "check": false,
+      "font_family": "Heiti TC"
+    },
+    {
+      "id": "_v12",
+      "x": 100,
+      "y": 1156.0,
+      "w": 1312,
+      "h": 22,
+      "label": "Connect existing tools",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 16,
+      "align": "left",
+      "check": false,
+      "font_family": "Heiti TC"
+    },
+    {
+      "id": "_v13",
+      "x": 76,
+      "y": 1402.0,
+      "w": 1360,
+      "h": 163.0,
+      "label": "",
+      "detail": "",
+      "kind": "panel",
+      "tone": "accent",
+      "check": false,
+      "radius": 10,
+      "stroke_width": 1.5
+    },
+    {
+      "id": "_v14",
+      "x": 100,
+      "y": 1418.0,
+      "w": 1312,
+      "h": 27,
+      "label": "横向支撑",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 20,
+      "align": "left",
+      "check": false,
+      "font_family": "Heiti TC"
+    },
+    {
+      "id": "service-entry",
+      "x": 104,
+      "y": 315.0,
+      "w": 360,
+      "h": 96,
+      "label": "Service entry",
+      "detail": "Book · check · feedback",
+      "kind": "rect",
+      "tone": "accent",
+      "check": true,
+      "_lines": [
+        [
+          "Service entry",
+          22,
+          true,
+          "ink"
+        ],
+        [
+          "Book · check · feedback",
+          17,
+          false,
+          "muted"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "text_margin": 20,
+      "stroke_width": 1.5
+    },
+    {
+      "id": "work-desk",
+      "x": 500,
+      "y": 315.0,
+      "w": 360,
+      "h": 96,
+      "label": "Work desk",
+      "detail": "Assign · resolve · review",
+      "kind": "rect",
+      "tone": "accent",
+      "check": true,
+      "_lines": [
+        [
+          "Work desk",
+          22,
+          true,
+          "ink"
+        ],
+        [
+          "Assign · resolve · review",
+          17,
+          false,
+          "muted"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "text_margin": 20,
+      "stroke_width": 1.5
+    },
+    {
+      "id": "operations-view",
+      "x": 896,
+      "y": 315.0,
+      "w": 360,
+      "h": 96,
+      "label": "Operations view",
+      "detail": "Reach · quality · trends",
+      "kind": "rect",
+      "tone": "accent",
+      "check": true,
+      "_lines": [
+        [
+          "Operations view",
+          22,
+          true,
+          "ink"
+        ],
+        [
+          "Reach · quality · trends",
+          17,
+          false,
+          "muted"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "text_margin": 20,
+      "stroke_width": 1.5
+    },
+    {
+      "id": "booking-service",
+      "x": 104,
+      "y": 608.0,
+      "w": 360,
+      "h": 96,
+      "label": "Booking service",
+      "detail": "Time · capacity · status",
+      "kind": "rect",
+      "tone": "teal",
+      "check": true,
+      "_lines": [
+        [
+          "Booking service",
+          22,
+          true,
+          "ink"
+        ],
+        [
+          "Time · capacity · status",
+          17,
+          false,
+          "muted"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "text_margin": 20,
+      "stroke_width": 1.5
+    },
+    {
+      "id": "notification-hub",
+      "x": 500,
+      "y": 608.0,
+      "w": 360,
+      "h": 96,
+      "label": "Notification hub",
+      "detail": "Reminder · result · follow-up",
+      "kind": "rect",
+      "tone": "teal",
+      "check": true,
+      "_lines": [
+        [
+          "Notification hub",
+          22,
+          true,
+          "ink"
+        ],
+        [
+          "Reminder · result · follow-up",
+          17,
+          false,
+          "muted"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "text_margin": 20,
+      "stroke_width": 1.5
+    },
+    {
+      "id": "content-service",
+      "x": 896,
+      "y": 608.0,
+      "w": 360,
+      "h": 96,
+      "label": "Content service",
+      "detail": "Guides · resources · versions",
+      "kind": "rect",
+      "tone": "teal",
+      "check": true,
+      "_lines": [
+        [
+          "Content service",
+          22,
+          true,
+          "ink"
+        ],
+        [
+          "Guides · resources · versions",
+          17,
+          false,
+          "muted"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "text_margin": 20,
+      "stroke_width": 1.5
+    },
+    {
+      "id": "business-records",
+      "x": 104,
+      "y": 901.0,
+      "w": 360,
+      "h": 96,
+      "label": "Business records",
+      "detail": "Service and participation",
+      "kind": "rect",
+      "tone": "accent",
+      "check": true,
+      "_lines": [
+        [
+          "Business records",
+          22,
+          true,
+          "ink"
+        ],
+        [
+          "Service and participation",
+          17,
+          false,
+          "muted"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "text_margin": 20,
+      "stroke_width": 1.5
+    },
+    {
+      "id": "event-stream",
+      "x": 500,
+      "y": 901.0,
+      "w": 360,
+      "h": 96,
+      "label": "Event stream",
+      "detail": "Actions and notifications",
+      "kind": "rect",
+      "tone": "accent",
+      "check": true,
+      "_lines": [
+        [
+          "Event stream",
+          22,
+          true,
+          "ink"
+        ],
+        [
+          "Actions and notifications",
+          17,
+          false,
+          "muted"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "text_margin": 20,
+      "stroke_width": 1.5
+    },
+    {
+      "id": "analytics-data",
+      "x": 896,
+      "y": 901.0,
+      "w": 360,
+      "h": 96,
+      "label": "Analytics data",
+      "detail": "Metrics and segments",
+      "kind": "rect",
+      "tone": "accent",
+      "check": true,
+      "_lines": [
+        [
+          "Analytics data",
+          22,
+          true,
+          "ink"
+        ],
+        [
+          "Metrics and segments",
+          17,
+          false,
+          "muted"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "text_margin": 20,
+      "stroke_width": 1.5
+    },
+    {
+      "id": "identity-provider",
+      "x": 104,
+      "y": 1194.0,
+      "w": 360,
+      "h": 96,
+      "label": "Identity provider",
+      "detail": "Sign-in · roles",
+      "kind": "rect",
+      "tone": "teal",
+      "check": true,
+      "_lines": [
+        [
+          "Identity provider",
+          22,
+          true,
+          "ink"
+        ],
+        [
+          "Sign-in · roles",
+          17,
+          false,
+          "muted"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "text_margin": 20,
+      "stroke_width": 1.5
+    },
+    {
+      "id": "payment-signup",
+      "x": 500,
+      "y": 1194.0,
+      "w": 360,
+      "h": 96,
+      "label": "Payment / sign-up",
+      "detail": "Orders · eligibility",
+      "kind": "rect",
+      "tone": "teal",
+      "check": true,
+      "_lines": [
+        [
+          "Payment / sign-up",
+          22,
+          true,
+          "ink"
+        ],
+        [
+          "Orders · eligibility",
+          17,
+          false,
+          "muted"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "text_margin": 20,
+      "stroke_width": 1.5
+    },
+    {
+      "id": "message-channels",
+      "x": 896,
+      "y": 1194.0,
+      "w": 360,
+      "h": 96,
+      "label": "Message channels",
+      "detail": "SMS · email",
+      "kind": "rect",
+      "tone": "teal",
+      "check": true,
+      "_lines": [
+        [
+          "Message channels",
+          22,
+          true,
+          "ink"
+        ],
+        [
+          "SMS · email",
+          17,
+          false,
+          "muted"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "text_margin": 20,
+      "stroke_width": 1.5
+    },
+    {
+      "id": "crosscut-0",
+      "x": 104,
+      "y": 1465.0,
+      "w": 360,
+      "h": 96,
+      "label": "Identity & privacy",
+      "detail": "Access · minimisation",
+      "kind": "rect",
+      "tone": "accent",
+      "check": true,
+      "_lines": [
+        [
+          "Identity & privacy",
+          22,
+          true,
+          "ink"
+        ],
+        [
+          "Access · minimisation",
+          17,
+          false,
+          "muted"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "text_margin": 20,
+      "stroke_width": 1.5
+    },
+    {
+      "id": "crosscut-1",
+      "x": 500,
+      "y": 1465.0,
+      "w": 360,
+      "h": 96,
+      "label": "Observability",
+      "detail": "Logs · metrics",
+      "kind": "rect",
+      "tone": "accent",
+      "check": true,
+      "_lines": [
+        [
+          "Observability",
+          22,
+          true,
+          "ink"
+        ],
+        [
+          "Logs · metrics",
+          17,
+          false,
+          "muted"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "text_margin": 20,
+      "stroke_width": 1.5
+    },
+    {
+      "id": "crosscut-2",
+      "x": 896,
+      "y": 1465.0,
+      "w": 360,
+      "h": 96,
+      "label": "Governance & audit",
+      "detail": "Definitions · traceability",
+      "kind": "rect",
+      "tone": "accent",
+      "check": true,
+      "_lines": [
+        [
+          "Governance & audit",
+          22,
+          true,
+          "ink"
+        ],
+        [
+          "Definitions · traceability",
+          17,
+          false,
+          "muted"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "text_margin": 20,
+      "stroke_width": 1.5
+    },
+    {
+      "id": "_v30",
+      "x": 64,
+      "y": 34,
+      "w": 1472,
+      "h": 22,
+      "label": "SYSTEM ARCHITECTURE / COMMUNITY SERVICE",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 14,
+      "align": "left",
+      "check": false,
+      "font_family": "Heiti TC"
+    },
+    {
+      "id": "_v31",
+      "x": 64,
+      "y": 74,
+      "w": 1472,
+      "h": 49,
+      "label": "Community service platform · layered architecture",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 36,
+      "align": "left",
+      "check": false,
+      "font_family": "Heiti TC",
+      "_lines": [
+        [
+          "Community service platform · layered architecture",
+          36,
+          true,
+          "ink"
+        ]
+      ]
+    },
+    {
+      "id": "_v32",
+      "x": 64,
+      "y": 131,
+      "w": 1472,
+      "h": 24,
+      "label": "From user entry points to service capabilities and data; cross-cutting concerns span every layer",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "left",
+      "check": false,
+      "font_family": "Heiti TC",
+      "_lines": [
+        [
+          "From user entry points to service capabilities and data; cross-cutting concerns span every layer",
+          17,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "_v33",
+      "x": 64,
+      "y": 1612,
+      "w": 1472,
+      "h": 1,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "line",
+      "stroke": "none",
+      "check": false
+    },
+    {
+      "id": "_v34",
+      "x": 64,
+      "y": 1628,
+      "w": 1472,
+      "h": 20,
+      "label": "Concept architecture example · bands show responsibility, not layer-by-layer calls · confirm boundaries with the organisation",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false,
+      "font_family": "Heiti TC",
+      "_lines": [
+        [
+          "Concept architecture example · bands show responsibility, not layer-by-layer calls · confirm boundaries with the organisation",
+          14,
+          false,
+          "muted"
+        ]
+      ]
+    }
+  ],
+  "edges": [],
+  "meta": {
+    "layer_nodes": [
+      [
+        "service-entry",
+        "work-desk",
+        "operations-view"
+      ],
+      [
+        "booking-service",
+        "notification-hub",
+        "content-service"
+      ],
+      [
+        "business-records",
+        "event-stream",
+        "analytics-data"
+      ],
+      [
+        "identity-provider",
+        "payment-signup",
+        "message-channels"
+      ]
+    ],
+    "architecture_bands": [
+      {
+        "label": "User experience",
+        "description": "For residents and staff",
+        "ids": [
+          "service-entry",
+          "work-desk",
+          "operations-view"
+        ],
+        "flow": null,
+        "flow_direction": null,
+        "crosscut": null
+      },
+      {
+        "label": "Domain services",
+        "description": "Reusable capabilities",
+        "ids": [
+          "booking-service",
+          "notification-hub",
+          "content-service"
+        ],
+        "flow": null,
+        "flow_direction": null,
+        "crosscut": null
+      },
+      {
+        "label": "Data capabilities",
+        "description": "Shared definitions and traceability",
+        "ids": [
+          "business-records",
+          "event-stream",
+          "analytics-data"
+        ],
+        "flow": null,
+        "flow_direction": null,
+        "crosscut": null
+      },
+      {
+        "label": "External connections",
+        "description": "Connect existing tools",
+        "ids": [
+          "identity-provider",
+          "payment-signup",
+          "message-channels"
+        ],
+        "flow": null,
+        "flow_direction": null,
+        "crosscut": null
+      },
+      {
+        "label": "横向支撑",
+        "description": null,
+        "ids": [
+          "crosscut-0",
+          "crosscut-1",
+          "crosscut-2"
+        ],
+        "flow": null,
+        "flow_direction": null,
+        "crosscut": true
+      }
+    ],
+    "adaptive_layout": {
+      "version": 39,
+      "strategy": "down",
+      "node_width": 360,
+      "candidates": [
+        {
+          "score": 178.96,
+          "crossings": 0,
+          "orientation": "down",
+          "node_width": 220,
+          "spacing": 76,
+          "issues": []
+        },
+        {
+          "score": 168.97,
+          "crossings": 0,
+          "orientation": "down",
+          "node_width": 280,
+          "spacing": 76,
+          "issues": []
+        },
+        {
+          "score": 167.07,
+          "crossings": 0,
+          "orientation": "down",
+          "node_width": 360,
+          "spacing": 76,
+          "issues": []
+        },
+        {
+          "score": 185.34,
+          "crossings": 0,
+          "orientation": "down",
+          "node_width": 220,
+          "spacing": 100,
+          "issues": []
+        },
+        {
+          "score": 176.15,
+          "crossings": 0,
+          "orientation": "down",
+          "node_width": 280,
+          "spacing": 100,
+          "issues": []
+        },
+        {
+          "score": 174.41,
+          "crossings": 0,
+          "orientation": "down",
+          "node_width": 360,
+          "spacing": 100,
+          "issues": []
+        },
+        {
+          "score": 201.08,
+          "crossings": 0,
+          "orientation": "down",
+          "node_width": 220,
+          "spacing": 168,
+          "issues": []
+        },
+        {
+          "score": 193.6,
+          "crossings": 0,
+          "orientation": "down",
+          "node_width": 280,
+          "spacing": 168,
+          "issues": []
+        },
+        {
+          "score": 192.2,
+          "crossings": 0,
+          "orientation": "down",
+          "node_width": 360,
+          "spacing": 168,
+          "issues": []
+        }
+      ],
+      "selected_score": 167.07,
+      "crossings": 0,
+      "font_measurement": "font-glyph-metrics",
+      "font_family": "Heiti TC",
+      "source_node_ids": [
+        "service-entry",
+        "work-desk",
+        "operations-view",
+        "booking-service",
+        "notification-hub",
+        "content-service",
+        "business-records",
+        "event-stream",
+        "analytics-data",
+        "identity-provider",
+        "payment-signup",
+        "message-channels",
+        "crosscut-0",
+        "crosscut-1",
+        "crosscut-2"
+      ],
+      "source_edges": [],
+      "overview_scale_at_1600": 0.431,
+      "detail_pages_recommended": true,
+      "rendered_visual_check": "not-run",
+      "manual_visual_review": "not-run",
+      "readability": {
+        "reference_viewport": [
+          1600,
+          900
+        ],
+        "available_canvas": [
+          1552,
+          720
+        ],
+        "minimum_content_font_px": 17,
+        "projected_minimum_font_px": 7.32,
+        "review_threshold_px": 12,
+        "status": "review-required",
+        "scope": "projected content text size at reference viewport; not visual acceptance"
+      }
+    }
+  },
+  "assumptions": [
+    "This is an original cross-industry example, not an existing platform deployment",
+    "Cross-cutting concerns span layers; unconfirmed calls are not invented"
+  ]
+}

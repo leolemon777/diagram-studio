@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "version": "v61",
+  "version": "v62",
   "updated": "2026-09-20",
   "purpose": "Single source for chooser labels, backend capability, delivery formats and acceptance evidence.",
   "status_vocabulary": {
@@ -40,8 +40,8 @@
           "formats": ["svg", "drawio", "scene.json", "qa.json", "html"],
           "layout_limits": {"zh": "每层最多六个模块；横切能力单列侧轨，密集架构拆总览与详图。", "en": "Up to six modules per layer; put cross-cutting concerns on a side rail and split dense architecture views."},
           "languages": ["zh", "en"],
-          "examples": ["assets/examples/01-system-architecture.json", "assets/examples/13-c4-context.json"],
-          "evidence": {"level": "manual_visual_review", "reference": "assets/verification-status.json", "detail": {"zh": "分层架构列入 v40 精修代表范围。", "en": "Layered architecture is in the v40 refined representative scope."}},
+          "examples": ["assets/examples/architecture-cn.json", "assets/examples/architecture-en.json"],
+          "evidence": {"level": "manual_visual_review", "reference": "assets/v62-architecture-evidence.json", "detail": {"zh": "中英跨行业四层架构和三项横向关注点已完成自适应排版、阅读页与浏览器复核。", "en": "Bilingual cross-industry four-layer architecture with three cross-cutting concerns has adaptive layout, reading pages and browser review."}},
           "scope": {"zh": "区分包含、调用和横切支撑；不把层级线自动解释成调用。", "en": "Separates containment, calls and cross-cutting support; layer placement never invents a call."}
         },
         {

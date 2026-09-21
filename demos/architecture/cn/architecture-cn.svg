@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1672" viewBox="0 0 1600 1672" role="img" aria-labelledby="diagram-title diagram-desc">
+<title id="diagram-title">社区服务平台 · 分层架构</title>
+<desc id="diagram-desc">从用户入口到服务能力与数据底座；横向能力贯穿每层</desc>
+<rect width="100%" height="100%" fill="#F1EFEB"/>
+<defs>
+<marker id="arrow-accent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#AC6046"/></marker>
+<marker id="arrow-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#67685E"/></marker>
+<marker id="arrow-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#8C7964"/></marker>
+<marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#554C46"/></marker>
+<marker id="arrow-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#6D6A63"/></marker>
+<marker id="arrow-line" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#D8D3C8"/></marker>
+<marker id="arrow-ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#30302D"/></marker>
+</defs>
+<g font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, Arial, sans-serif">
+<g id="_v1" data-kind="panel" data-content-text="false" data-box="76,230.0,1360,185.0">
+<rect x="76" y="230.0" width="1360" height="185.0" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="_v4" data-kind="panel" data-content-text="false" data-box="76,523.0,1360,185.0">
+<rect x="76" y="523.0" width="1360" height="185.0" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="_v7" data-kind="panel" data-content-text="false" data-box="76,816.0,1360,185.0">
+<rect x="76" y="816.0" width="1360" height="185.0" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="_v10" data-kind="panel" data-content-text="false" data-box="76,1109.0,1360,185.0">
+<rect x="76" y="1109.0" width="1360" height="185.0" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="_v13" data-kind="panel" data-content-text="false" data-box="76,1402.0,1360,163.0">
+<rect x="76" y="1402.0" width="1360" height="163.0" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="_v2" data-kind="text" data-content-text="false" data-box="100,246.0,1312,27" font-family="Heiti TC">
+
+<text x="100" y="266.0" text-anchor="start" font-size="20" font-weight="400" fill="#AC6046">用户体验</text>
+</g>
+<g id="_v3" data-kind="text" data-content-text="false" data-box="100,277.0,1312,22" font-family="Heiti TC">
+
+<text x="100" y="293.2" text-anchor="start" font-size="16" font-weight="400" fill="#6D6A63">面向居民、工作人员</text>
+</g>
+<g id="_v5" data-kind="text" data-content-text="false" data-box="100,539.0,1312,27" font-family="Heiti TC">
+
+<text x="100" y="559.0" text-anchor="start" font-size="20" font-weight="400" fill="#AC6046">领域服务</text>
+</g>
+<g id="_v6" data-kind="text" data-content-text="false" data-box="100,570.0,1312,22" font-family="Heiti TC">
+
+<text x="100" y="586.2" text-anchor="start" font-size="16" font-weight="400" fill="#6D6A63">组织可复用能力</text>
+</g>
+<g id="_v8" data-kind="text" data-content-text="false" data-box="100,832.0,1312,27" font-family="Heiti TC">
+
+<text x="100" y="852.0" text-anchor="start" font-size="20" font-weight="400" fill="#AC6046">数据能力</text>
+</g>
+<g id="_v9" data-kind="text" data-content-text="false" data-box="100,863.0,1312,22" font-family="Heiti TC">
+
+<text x="100" y="879.2" text-anchor="start" font-size="16" font-weight="400" fill="#6D6A63">统一口径与留痕</text>
+</g>
+<g id="_v11" data-kind="text" data-content-text="false" data-box="100,1125.0,1312,27" font-family="Heiti TC">
+
+<text x="100" y="1145.0" text-anchor="start" font-size="20" font-weight="400" fill="#AC6046">外部连接</text>
+</g>
+<g id="_v12" data-kind="text" data-content-text="false" data-box="100,1156.0,1312,22" font-family="Heiti TC">
+
+<text x="100" y="1172.2" text-anchor="start" font-size="16" font-weight="400" fill="#6D6A63">连接已有工具</text>
+</g>
+<g id="_v14" data-kind="text" data-content-text="false" data-box="100,1418.0,1312,27" font-family="Heiti TC">
+
+<text x="100" y="1438.0" text-anchor="start" font-size="20" font-weight="400" fill="#AC6046">横向支撑</text>
+</g>
+<g id="service-entry" data-kind="rect" data-content-text="false" data-box="104,315.0,220,96" font-family="Heiti TC">
+<rect x="104" y="315.0" width="220" height="96" rx="10" fill="#FEFDF9" stroke="#AC6046" stroke-width="1.5"/>
+<text x="214.0" y="358.675" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">服务入口</text>
+<text x="214.0" y="383.375" text-anchor="middle" font-size="17" font-weight="400" fill="#6D6A63">预约 · 查询 · 反馈</text>
+</g>
+<g id="work-desk" data-kind="rect" data-content-text="false" data-box="360,315.0,220,96" font-family="Heiti TC">
+<rect x="360" y="315.0" width="220" height="96" rx="10" fill="#FEFDF9" stroke="#AC6046" stroke-width="1.5"/>
+<text x="470.0" y="358.675" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">工作台</text>
+<text x="470.0" y="383.375" text-anchor="middle" font-size="17" font-weight="400" fill="#6D6A63">分派 · 处理 · 复盘</text>
+</g>
+<g id="operations-view" data-kind="rect" data-content-text="false" data-box="616,315.0,220,96" font-family="Heiti TC">
+<rect x="616" y="315.0" width="220" height="96" rx="10" fill="#FEFDF9" stroke="#AC6046" stroke-width="1.5"/>
+<text x="726.0" y="358.675" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">运营视图</text>
+<text x="726.0" y="383.375" text-anchor="middle" font-size="17" font-weight="400" fill="#6D6A63">触达 · 质量 · 趋势</text>
+</g>
+<g id="booking-service" data-kind="rect" data-content-text="false" data-box="104,608.0,220,96" font-family="Heiti TC">
+<rect x="104" y="608.0" width="220" height="96" rx="10" fill="#FEFDF9" stroke="#67685E" stroke-width="1.5"/>
+<text x="214.0" y="651.675" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">预约服务</text>
+<text x="214.0" y="676.375" text-anchor="middle" font-size="17" font-weight="400" fill="#6D6A63">时间 · 名额 · 状态</text>
+</g>
+<g id="notification-hub" data-kind="rect" data-content-text="false" data-box="360,608.0,220,96" font-family="Heiti TC">
+<rect x="360" y="608.0" width="220" height="96" rx="10" fill="#FEFDF9" stroke="#67685E" stroke-width="1.5"/>
+<text x="470.0" y="651.675" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">通知中心</text>
+<text x="470.0" y="676.375" text-anchor="middle" font-size="17" font-weight="400" fill="#6D6A63">提醒 · 结果 · 回访</text>
+</g>
+<g id="content-service" data-kind="rect" data-content-text="false" data-box="616,608.0,220,96" font-family="Heiti TC">
+<rect x="616" y="608.0" width="220" height="96" rx="10" fill="#FEFDF9" stroke="#67685E" stroke-width="1.5"/>
+<text x="726.0" y="651.675" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">内容服务</text>
+<text x="726.0" y="676.375" text-anchor="middle" font-size="17" font-weight="400" fill="#6D6A63">指南 · 资源 · 版本</text>
+</g>
+<g id="business-records" data-kind="rect" data-content-text="false" data-box="104,901.0,220,96" font-family="Heiti TC">
+<rect x="104" y="901.0" width="220" height="96" rx="10" fill="#FEFDF9" stroke="#AC6046" stroke-width="1.5"/>
+<text x="214.0" y="944.675" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">业务记录</text>
+<text x="214.0" y="969.375" text-anchor="middle" font-size="17" font-weight="400" fill="#6D6A63">服务与参与</text>
+</g>
+<g id="event-stream" data-kind="rect" data-content-text="false" data-box="360,901.0,220,96" font-family="Heiti TC">
+<rect x="360" y="901.0" width="220" height="96" rx="10" fill="#FEFDF9" stroke="#AC6046" stroke-width="1.5"/>
+<text x="470.0" y="944.675" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">事件流</text>
+<text x="470.0" y="969.375" text-anchor="middle" font-size="17" font-weight="400" fill="#6D6A63">行为与通知</text>
+</g>
+<g id="analytics-data" data-kind="rect" data-content-text="false" data-box="616,901.0,220,96" font-family="Heiti TC">
+<rect x="616" y="901.0" width="220" height="96" rx="10" fill="#FEFDF9" stroke="#AC6046" stroke-width="1.5"/>
+<text x="726.0" y="944.675" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">分析数据</text>
+<text x="726.0" y="969.375" text-anchor="middle" font-size="17" font-weight="400" fill="#6D6A63">指标与分群</text>
+</g>
+<g id="identity-provider" data-kind="rect" data-content-text="false" data-box="104,1194.0,220,96" font-family="Heiti TC">
+<rect x="104" y="1194.0" width="220" height="96" rx="10" fill="#FEFDF9" stroke="#67685E" stroke-width="1.5"/>
+<text x="214.0" y="1237.675" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">身份平台</text>
+<text x="214.0" y="1262.375" text-anchor="middle" font-size="17" font-weight="400" fill="#6D6A63">登录 · 角色</text>
+</g>
+<g id="payment-signup" data-kind="rect" data-content-text="false" data-box="360,1194.0,220,96" font-family="Heiti TC">
+<rect x="360" y="1194.0" width="220" height="96" rx="10" fill="#FEFDF9" stroke="#67685E" stroke-width="1.5"/>
+<text x="470.0" y="1237.675" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">支付 / 报名</text>
+<text x="470.0" y="1262.375" text-anchor="middle" font-size="17" font-weight="400" fill="#6D6A63">订单 · 资格</text>
+</g>
+<g id="message-channels" data-kind="rect" data-content-text="false" data-box="616,1194.0,220,96" font-family="Heiti TC">
+<rect x="616" y="1194.0" width="220" height="96" rx="10" fill="#FEFDF9" stroke="#67685E" stroke-width="1.5"/>
+<text x="726.0" y="1237.675" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">消息渠道</text>
+<text x="726.0" y="1262.375" text-anchor="middle" font-size="17" font-weight="400" fill="#6D6A63">短信 · 邮件</text>
+</g>
+<g id="crosscut-0" data-kind="rect" data-content-text="false" data-box="104,1465.0,220,96" font-family="Heiti TC">
+<rect x="104" y="1465.0" width="220" height="96" rx="10" fill="#FEFDF9" stroke="#AC6046" stroke-width="1.5"/>
+<text x="214.0" y="1508.675" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">身份与隐私</text>
+<text x="214.0" y="1533.375" text-anchor="middle" font-size="17" font-weight="400" fill="#6D6A63">授权 · 最小化</text>
+</g>
+<g id="crosscut-1" data-kind="rect" data-content-text="false" data-box="360,1465.0,220,96" font-family="Heiti TC">
+<rect x="360" y="1465.0" width="220" height="96" rx="10" fill="#FEFDF9" stroke="#AC6046" stroke-width="1.5"/>
+<text x="470.0" y="1508.675" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">可观测性</text>
+<text x="470.0" y="1533.375" text-anchor="middle" font-size="17" font-weight="400" fill="#6D6A63">日志 · 指标</text>
+</g>
+<g id="crosscut-2" data-kind="rect" data-content-text="false" data-box="616,1465.0,220,96" font-family="Heiti TC">
+<rect x="616" y="1465.0" width="220" height="96" rx="10" fill="#FEFDF9" stroke="#AC6046" stroke-width="1.5"/>
+<text x="726.0" y="1508.675" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">治理与审计</text>
+<text x="726.0" y="1533.375" text-anchor="middle" font-size="17" font-weight="400" fill="#6D6A63">口径 · 留痕</text>
+</g>
+<g id="_v30" data-kind="text" data-content-text="false" data-box="64,34,1472,22" font-family="Heiti TC">
+
+<text x="64" y="49.55" text-anchor="start" font-size="14" font-weight="400" fill="#AC6046">SYSTEM ARCHITECTURE / 社区服务</text>
+</g>
+<g id="_v31" data-kind="text" data-content-text="false" data-box="64,74,1472,49" font-family="Heiti TC">
+
+<text x="64" y="110.2" text-anchor="start" font-size="36" font-weight="600" fill="#30302D">社区服务平台 · 分层架构</text>
+</g>
+<g id="_v32" data-kind="text" data-content-text="false" data-box="64,131,1472,24" font-family="Heiti TC">
+
+<text x="64" y="148.525" text-anchor="start" font-size="17" font-weight="400" fill="#6D6A63">从用户入口到服务能力与数据底座；横向能力贯穿每层</text>
+</g>
+<g id="_v33" data-kind="rect" data-content-text="false" data-box="64,1612,1472,1">
+<rect x="64" y="1612" width="1472" height="1" rx="0" fill="#D8D3C8" stroke="none" stroke-width="1.5"/>
+</g>
+<g id="_v34" data-kind="text" data-content-text="false" data-box="64,1628,1472,20" font-family="Heiti TC">
+
+<text x="64" y="1642.55" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">概念架构示例 · 横层表达职责构成，不表示逐层调用 · 实际边界需按组织确认</text>
+</g>
+</g></svg>

@@ -1,0 +1,20 @@
+{
+  "version": "v62",
+  "capability": "architecture",
+  "status": "manual_visual_review",
+  "source_examples": [
+    "assets/examples/architecture-cn.json",
+    "assets/examples/architecture-en.json"
+  ],
+  "checks": {
+    "bilingual_truth": "same four responsibility layers, twelve stable module ids and three cross-cutting concern slots",
+    "geometry": "adaptive architecture audit reports zero errors and zero connector warnings in both languages",
+    "content": "user experience, domain services, data capabilities, external connections and cross-cutting concerns remain explicit",
+    "browser": "overview page, direct Chinese/English SVGs and generated reading pages were opened and visually reviewed; long English labels remain intact"
+  },
+  "limitations": [
+    "This is a conceptual layered architecture, not a deployment, network topology or vendor compliance diagram.",
+    "Cross-cutting bands show responsibility concerns; they do not assert unconfirmed calls between layers.",
+    "Native draw.io edit, save and reopen behavior is not included in this batch; real boundaries and security policy require domain review."
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "type": "architecture",
+  "title": "Community service platform · layered architecture",
+  "subtitle": "From user entry points to service capabilities and data; cross-cutting concerns span every layer",
+  "eyebrow": "SYSTEM ARCHITECTURE / COMMUNITY SERVICE",
+  "layers": [
+    {
+      "label": "User experience",
+      "description": "For residents and staff",
+      "tone": "accent",
+      "items": [
+        {
+          "id": "service-entry",
+          "label": "Service entry",
+          "detail": "Book · check · feedback"
+        },
+        {
+          "id": "work-desk",
+          "label": "Work desk",
+          "detail": "Assign · resolve · review"
+        },
+        {
+          "id": "operations-view",
+          "label": "Operations view",
+          "detail": "Reach · quality · trends"
+        }
+      ]
+    },
+    {
+      "label": "Domain services",
+      "description": "Reusable capabilities",
+      "tone": "teal",
+      "items": [
+        {
+          "id": "booking-service",
+          "label": "Booking service",
+          "detail": "Time · capacity · status"
+        },
+        {
+          "id": "notification-hub",
+          "label": "Notification hub",
+          "detail": "Reminder · result · follow-up"
+        },
+        {
+          "id": "content-service",
+          "label": "Content service",
+          "detail": "Guides · resources · versions"
+        }
+      ]
+    },
+    {
+      "label": "Data capabilities",
+      "description": "Shared definitions and traceability",
+      "tone": "accent",
+      "items": [
+        {
+          "id": "business-records",
+          "label": "Business records",
+          "detail": "Service and participation"
+        },
+        {
+          "id": "event-stream",
+          "label": "Event stream",
+          "detail": "Actions and notifications"
+        },
+        {
+          "id": "analytics-data",
+          "label": "Analytics data",
+          "detail": "Metrics and segments"
+        }
+      ]
+    },
+    {
+      "label": "External connections",
+      "description": "Connect existing tools",
+      "tone": "teal",
+      "items": [
+        {
+          "id": "identity-provider",
+          "label": "Identity provider",
+          "detail": "Sign-in · roles"
+        },
+        {
+          "id": "payment-signup",
+          "label": "Payment / sign-up",
+          "detail": "Orders · eligibility"
+        },
+        {
+          "id": "message-channels",
+          "label": "Message channels",
+          "detail": "SMS · email"
+        }
+      ]
+    }
+  ],
+  "crosscut": [
+    {
+      "label": "Identity & privacy",
+      "detail": "Access · minimisation"
+    },
+    {
+      "label": "Observability",
+      "detail": "Logs · metrics"
+    },
+    {
+      "label": "Governance & audit",
+      "detail": "Definitions · traceability"
+    }
+  ],
+  "footer": "Concept architecture example · bands show responsibility, not layer-by-layer calls · confirm boundaries with the organisation",
+  "assumptions": [
+    "This is an original cross-industry example, not an existing platform deployment",
+    "Cross-cutting concerns span layers; unconfirmed calls are not invented"
+  ],
+  "family": "Systems and software",
+  "diagram_name": "Layered system architecture"
+}

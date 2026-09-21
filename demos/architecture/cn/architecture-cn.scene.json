@@ -1,0 +1,969 @@
+{
+  "width": 1600,
+  "height": 1672,
+  "theme": "light",
+  "palette": {
+    "bg": "#F1EFEB",
+    "panel": "#FEFDF9",
+    "ink": "#30302D",
+    "muted": "#6D6A63",
+    "line": "#D8D3C8",
+    "accent": "#AC6046",
+    "teal": "#67685E",
+    "amber": "#8C7964",
+    "red": "#554C46",
+    "tint": "#F0E4DA",
+    "tint2": "#ECECE5"
+  },
+  "nodes": [
+    {
+      "id": "_v1",
+      "x": 76,
+      "y": 230.0,
+      "w": 1360,
+      "h": 185.0,
+      "label": "",
+      "detail": "",
+      "kind": "panel",
+      "tone": "accent",
+      "check": false,
+      "radius": 10,
+      "stroke_width": 1.5
+    },
+    {
+      "id": "_v2",
+      "x": 100,
+      "y": 246.0,
+      "w": 1312,
+      "h": 27,
+      "label": "用户体验",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 20,
+      "align": "left",
+      "check": false,
+      "font_family": "Heiti TC"
+    },
+    {
+      "id": "_v3",
+      "x": 100,
+      "y": 277.0,
+      "w": 1312,
+      "h": 22,
+      "label": "面向居民、工作人员",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 16,
+      "align": "left",
+      "check": false,
+      "font_family": "Heiti TC"
+    },
+    {
+      "id": "_v4",
+      "x": 76,
+      "y": 523.0,
+      "w": 1360,
+      "h": 185.0,
+      "label": "",
+      "detail": "",
+      "kind": "panel",
+      "tone": "accent",
+      "check": false,
+      "radius": 10,
+      "stroke_width": 1.5
+    },
+    {
+      "id": "_v5",
+      "x": 100,
+      "y": 539.0,
+      "w": 1312,
+      "h": 27,
+      "label": "领域服务",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 20,
+      "align": "left",
+      "check": false,
+      "font_family": "Heiti TC"
+    },
+    {
+      "id": "_v6",
+      "x": 100,
+      "y": 570.0,
+      "w": 1312,
+      "h": 22,
+      "label": "组织可复用能力",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 16,
+      "align": "left",
+      "check": false,
+      "font_family": "Heiti TC"
+    },
+    {
+      "id": "_v7",
+      "x": 76,
+      "y": 816.0,
+      "w": 1360,
+      "h": 185.0,
+      "label": "",
+      "detail": "",
+      "kind": "panel",
+      "tone": "accent",
+      "check": false,
+      "radius": 10,
+      "stroke_width": 1.5
+    },
+    {
+      "id": "_v8",
+      "x": 100,
+      "y": 832.0,
+      "w": 1312,
+      "h": 27,
+      "label": "数据能力",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 20,
+      "align": "left",
+      "check": false,
+      "font_family": "Heiti TC"
+    },
+    {
+      "id": "_v9",
+      "x": 100,
+      "y": 863.0,
+      "w": 1312,
+      "h": 22,
+      "label": "统一口径与留痕",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 16,
+      "align": "left",
+      "check": false,
+      "font_family": "Heiti TC"
+    },
+    {
+      "id": "_v10",
+      "x": 76,
+      "y": 1109.0,
+      "w": 1360,
+      "h": 185.0,
+      "label": "",
+      "detail": "",
+      "kind": "panel",
+      "tone": "accent",
+      "check": false,
+      "radius": 10,
+      "stroke_width": 1.5
+    },
+    {
+      "id": "_v11",
+      "x": 100,
+      "y": 1125.0,
+      "w": 1312,
+      "h": 27,
+      "label": "外部连接",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 20,
+      "align": "left",
+      "check": false,
+      "font_family": "Heiti TC"
+    },
+    {
+      "id": "_v12",
+      "x": 100,
+      "y": 1156.0,
+      "w": 1312,
+      "h": 22,
+      "label": "连接已有工具",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 16,
+      "align": "left",
+      "check": false,
+      "font_family": "Heiti TC"
+    },
+    {
+      "id": "_v13",
+      "x": 76,
+      "y": 1402.0,
+      "w": 1360,
+      "h": 163.0,
+      "label": "",
+      "detail": "",
+      "kind": "panel",
+      "tone": "accent",
+      "check": false,
+      "radius": 10,
+      "stroke_width": 1.5
+    },
+    {
+      "id": "_v14",
+      "x": 100,
+      "y": 1418.0,
+      "w": 1312,
+      "h": 27,
+      "label": "横向支撑",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 20,
+      "align": "left",
+      "check": false,
+      "font_family": "Heiti TC"
+    },
+    {
+      "id": "service-entry",
+      "x": 104,
+      "y": 315.0,
+      "w": 220,
+      "h": 96,
+      "label": "服务入口",
+      "detail": "预约 · 查询 · 反馈",
+      "kind": "rect",
+      "tone": "accent",
+      "check": true,
+      "_lines": [
+        [
+          "服务入口",
+          22,
+          true,
+          "ink"
+        ],
+        [
+          "预约 · 查询 · 反馈",
+          17,
+          false,
+          "muted"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "text_margin": 20,
+      "stroke_width": 1.5
+    },
+    {
+      "id": "work-desk",
+      "x": 360,
+      "y": 315.0,
+      "w": 220,
+      "h": 96,
+      "label": "工作台",
+      "detail": "分派 · 处理 · 复盘",
+      "kind": "rect",
+      "tone": "accent",
+      "check": true,
+      "_lines": [
+        [
+          "工作台",
+          22,
+          true,
+          "ink"
+        ],
+        [
+          "分派 · 处理 · 复盘",
+          17,
+          false,
+          "muted"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "text_margin": 20,
+      "stroke_width": 1.5
+    },
+    {
+      "id": "operations-view",
+      "x": 616,
+      "y": 315.0,
+      "w": 220,
+      "h": 96,
+      "label": "运营视图",
+      "detail": "触达 · 质量 · 趋势",
+      "kind": "rect",
+      "tone": "accent",
+      "check": true,
+      "_lines": [
+        [
+          "运营视图",
+          22,
+          true,
+          "ink"
+        ],
+        [
+          "触达 · 质量 · 趋势",
+          17,
+          false,
+          "muted"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "text_margin": 20,
+      "stroke_width": 1.5
+    },
+    {
+      "id": "booking-service",
+      "x": 104,
+      "y": 608.0,
+      "w": 220,
+      "h": 96,
+      "label": "预约服务",
+      "detail": "时间 · 名额 · 状态",
+      "kind": "rect",
+      "tone": "teal",
+      "check": true,
+      "_lines": [
+        [
+          "预约服务",
+          22,
+          true,
+          "ink"
+        ],
+        [
+          "时间 · 名额 · 状态",
+          17,
+          false,
+          "muted"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "text_margin": 20,
+      "stroke_width": 1.5
+    },
+    {
+      "id": "notification-hub",
+      "x": 360,
+      "y": 608.0,
+      "w": 220,
+      "h": 96,
+      "label": "通知中心",
+      "detail": "提醒 · 结果 · 回访",
+      "kind": "rect",
+      "tone": "teal",
+      "check": true,
+      "_lines": [
+        [
+          "通知中心",
+          22,
+          true,
+          "ink"
+        ],
+        [
+          "提醒 · 结果 · 回访",
+          17,
+          false,
+          "muted"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "text_margin": 20,
+      "stroke_width": 1.5
+    },
+    {
+      "id": "content-service",
+      "x": 616,
+      "y": 608.0,
+      "w": 220,
+      "h": 96,
+      "label": "内容服务",
+      "detail": "指南 · 资源 · 版本",
+      "kind": "rect",
+      "tone": "teal",
+      "check": true,
+      "_lines": [
+        [
+          "内容服务",
+          22,
+          true,
+          "ink"
+        ],
+        [
+          "指南 · 资源 · 版本",
+          17,
+          false,
+          "muted"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "text_margin": 20,
+      "stroke_width": 1.5
+    },
+    {
+      "id": "business-records",
+      "x": 104,
+      "y": 901.0,
+      "w": 220,
+      "h": 96,
+      "label": "业务记录",
+      "detail": "服务与参与",
+      "kind": "rect",
+      "tone": "accent",
+      "check": true,
+      "_lines": [
+        [
+          "业务记录",
+          22,
+          true,
+          "ink"
+        ],
+        [
+          "服务与参与",
+          17,
+          false,
+          "muted"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "text_margin": 20,
+      "stroke_width": 1.5
+    },
+    {
+      "id": "event-stream",
+      "x": 360,
+      "y": 901.0,
+      "w": 220,
+      "h": 96,
+      "label": "事件流",
+      "detail": "行为与通知",
+      "kind": "rect",
+      "tone": "accent",
+      "check": true,
+      "_lines": [
+        [
+          "事件流",
+          22,
+          true,
+          "ink"
+        ],
+        [
+          "行为与通知",
+          17,
+          false,
+          "muted"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "text_margin": 20,
+      "stroke_width": 1.5
+    },
+    {
+      "id": "analytics-data",
+      "x": 616,
+      "y": 901.0,
+      "w": 220,
+      "h": 96,
+      "label": "分析数据",
+      "detail": "指标与分群",
+      "kind": "rect",
+      "tone": "accent",
+      "check": true,
+      "_lines": [
+        [
+          "分析数据",
+          22,
+          true,
+          "ink"
+        ],
+        [
+          "指标与分群",
+          17,
+          false,
+          "muted"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "text_margin": 20,
+      "stroke_width": 1.5
+    },
+    {
+      "id": "identity-provider",
+      "x": 104,
+      "y": 1194.0,
+      "w": 220,
+      "h": 96,
+      "label": "身份平台",
+      "detail": "登录 · 角色",
+      "kind": "rect",
+      "tone": "teal",
+      "check": true,
+      "_lines": [
+        [
+          "身份平台",
+          22,
+          true,
+          "ink"
+        ],
+        [
+          "登录 · 角色",
+          17,
+          false,
+          "muted"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "text_margin": 20,
+      "stroke_width": 1.5
+    },
+    {
+      "id": "payment-signup",
+      "x": 360,
+      "y": 1194.0,
+      "w": 220,
+      "h": 96,
+      "label": "支付 / 报名",
+      "detail": "订单 · 资格",
+      "kind": "rect",
+      "tone": "teal",
+      "check": true,
+      "_lines": [
+        [
+          "支付 / 报名",
+          22,
+          true,
+          "ink"
+        ],
+        [
+          "订单 · 资格",
+          17,
+          false,
+          "muted"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "text_margin": 20,
+      "stroke_width": 1.5
+    },
+    {
+      "id": "message-channels",
+      "x": 616,
+      "y": 1194.0,
+      "w": 220,
+      "h": 96,
+      "label": "消息渠道",
+      "detail": "短信 · 邮件",
+      "kind": "rect",
+      "tone": "teal",
+      "check": true,
+      "_lines": [
+        [
+          "消息渠道",
+          22,
+          true,
+          "ink"
+        ],
+        [
+          "短信 · 邮件",
+          17,
+          false,
+          "muted"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "text_margin": 20,
+      "stroke_width": 1.5
+    },
+    {
+      "id": "crosscut-0",
+      "x": 104,
+      "y": 1465.0,
+      "w": 220,
+      "h": 96,
+      "label": "身份与隐私",
+      "detail": "授权 · 最小化",
+      "kind": "rect",
+      "tone": "accent",
+      "check": true,
+      "_lines": [
+        [
+          "身份与隐私",
+          22,
+          true,
+          "ink"
+        ],
+        [
+          "授权 · 最小化",
+          17,
+          false,
+          "muted"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "text_margin": 20,
+      "stroke_width": 1.5
+    },
+    {
+      "id": "crosscut-1",
+      "x": 360,
+      "y": 1465.0,
+      "w": 220,
+      "h": 96,
+      "label": "可观测性",
+      "detail": "日志 · 指标",
+      "kind": "rect",
+      "tone": "accent",
+      "check": true,
+      "_lines": [
+        [
+          "可观测性",
+          22,
+          true,
+          "ink"
+        ],
+        [
+          "日志 · 指标",
+          17,
+          false,
+          "muted"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "text_margin": 20,
+      "stroke_width": 1.5
+    },
+    {
+      "id": "crosscut-2",
+      "x": 616,
+      "y": 1465.0,
+      "w": 220,
+      "h": 96,
+      "label": "治理与审计",
+      "detail": "口径 · 留痕",
+      "kind": "rect",
+      "tone": "accent",
+      "check": true,
+      "_lines": [
+        [
+          "治理与审计",
+          22,
+          true,
+          "ink"
+        ],
+        [
+          "口径 · 留痕",
+          17,
+          false,
+          "muted"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "text_margin": 20,
+      "stroke_width": 1.5
+    },
+    {
+      "id": "_v30",
+      "x": 64,
+      "y": 34,
+      "w": 1472,
+      "h": 22,
+      "label": "SYSTEM ARCHITECTURE / 社区服务",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 14,
+      "align": "left",
+      "check": false,
+      "font_family": "Heiti TC"
+    },
+    {
+      "id": "_v31",
+      "x": 64,
+      "y": 74,
+      "w": 1472,
+      "h": 49,
+      "label": "社区服务平台 · 分层架构",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 36,
+      "align": "left",
+      "check": false,
+      "font_family": "Heiti TC",
+      "_lines": [
+        [
+          "社区服务平台 · 分层架构",
+          36,
+          true,
+          "ink"
+        ]
+      ]
+    },
+    {
+      "id": "_v32",
+      "x": 64,
+      "y": 131,
+      "w": 1472,
+      "h": 24,
+      "label": "从用户入口到服务能力与数据底座；横向能力贯穿每层",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "left",
+      "check": false,
+      "font_family": "Heiti TC",
+      "_lines": [
+        [
+          "从用户入口到服务能力与数据底座；横向能力贯穿每层",
+          17,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "_v33",
+      "x": 64,
+      "y": 1612,
+      "w": 1472,
+      "h": 1,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "line",
+      "stroke": "none",
+      "check": false
+    },
+    {
+      "id": "_v34",
+      "x": 64,
+      "y": 1628,
+      "w": 1472,
+      "h": 20,
+      "label": "概念架构示例 · 横层表达职责构成，不表示逐层调用 · 实际边界需按组织确认",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false,
+      "font_family": "Heiti TC",
+      "_lines": [
+        [
+          "概念架构示例 · 横层表达职责构成，不表示逐层调用 · 实际边界需按组织确认",
+          14,
+          false,
+          "muted"
+        ]
+      ]
+    }
+  ],
+  "edges": [],
+  "meta": {
+    "layer_nodes": [
+      [
+        "service-entry",
+        "work-desk",
+        "operations-view"
+      ],
+      [
+        "booking-service",
+        "notification-hub",
+        "content-service"
+      ],
+      [
+        "business-records",
+        "event-stream",
+        "analytics-data"
+      ],
+      [
+        "identity-provider",
+        "payment-signup",
+        "message-channels"
+      ]
+    ],
+    "architecture_bands": [
+      {
+        "label": "用户体验",
+        "description": "面向居民、工作人员",
+        "ids": [
+          "service-entry",
+          "work-desk",
+          "operations-view"
+        ],
+        "flow": null,
+        "flow_direction": null,
+        "crosscut": null
+      },
+      {
+        "label": "领域服务",
+        "description": "组织可复用能力",
+        "ids": [
+          "booking-service",
+          "notification-hub",
+          "content-service"
+        ],
+        "flow": null,
+        "flow_direction": null,
+        "crosscut": null
+      },
+      {
+        "label": "数据能力",
+        "description": "统一口径与留痕",
+        "ids": [
+          "business-records",
+          "event-stream",
+          "analytics-data"
+        ],
+        "flow": null,
+        "flow_direction": null,
+        "crosscut": null
+      },
+      {
+        "label": "外部连接",
+        "description": "连接已有工具",
+        "ids": [
+          "identity-provider",
+          "payment-signup",
+          "message-channels"
+        ],
+        "flow": null,
+        "flow_direction": null,
+        "crosscut": null
+      },
+      {
+        "label": "横向支撑",
+        "description": null,
+        "ids": [
+          "crosscut-0",
+          "crosscut-1",
+          "crosscut-2"
+        ],
+        "flow": null,
+        "flow_direction": null,
+        "crosscut": true
+      }
+    ],
+    "adaptive_layout": {
+      "version": 39,
+      "strategy": "down",
+      "node_width": 220,
+      "candidates": [
+        {
+          "score": 167.07,
+          "crossings": 0,
+          "orientation": "down",
+          "node_width": 220,
+          "spacing": 76,
+          "issues": []
+        },
+        {
+          "score": 167.07,
+          "crossings": 0,
+          "orientation": "down",
+          "node_width": 280,
+          "spacing": 76,
+          "issues": []
+        },
+        {
+          "score": 167.07,
+          "crossings": 0,
+          "orientation": "down",
+          "node_width": 360,
+          "spacing": 76,
+          "issues": []
+        },
+        {
+          "score": 174.41,
+          "crossings": 0,
+          "orientation": "down",
+          "node_width": 220,
+          "spacing": 100,
+          "issues": []
+        },
+        {
+          "score": 174.41,
+          "crossings": 0,
+          "orientation": "down",
+          "node_width": 280,
+          "spacing": 100,
+          "issues": []
+        },
+        {
+          "score": 174.41,
+          "crossings": 0,
+          "orientation": "down",
+          "node_width": 360,
+          "spacing": 100,
+          "issues": []
+        },
+        {
+          "score": 192.2,
+          "crossings": 0,
+          "orientation": "down",
+          "node_width": 220,
+          "spacing": 168,
+          "issues": []
+        },
+        {
+          "score": 192.2,
+          "crossings": 0,
+          "orientation": "down",
+          "node_width": 280,
+          "spacing": 168,
+          "issues": []
+        },
+        {
+          "score": 192.2,
+          "crossings": 0,
+          "orientation": "down",
+          "node_width": 360,
+          "spacing": 168,
+          "issues": []
+        }
+      ],
+      "selected_score": 167.07,
+      "crossings": 0,
+      "font_measurement": "font-glyph-metrics",
+      "font_family": "Heiti TC",
+      "source_node_ids": [
+        "service-entry",
+        "work-desk",
+        "operations-view",
+        "booking-service",
+        "notification-hub",
+        "content-service",
+        "business-records",
+        "event-stream",
+        "analytics-data",
+        "identity-provider",
+        "payment-signup",
+        "message-channels",
+        "crosscut-0",
+        "crosscut-1",
+        "crosscut-2"
+      ],
+      "source_edges": [],
+      "overview_scale_at_1600": 0.431,
+      "detail_pages_recommended": true,
+      "rendered_visual_check": "not-run",
+      "manual_visual_review": "not-run",
+      "readability": {
+        "reference_viewport": [
+          1600,
+          900
+        ],
+        "available_canvas": [
+          1552,
+          720
+        ],
+        "minimum_content_font_px": 17,
+        "projected_minimum_font_px": 7.32,
+        "review_threshold_px": 12,
+        "status": "review-required",
+        "scope": "projected content text size at reference viewport; not visual acceptance"
+      }
+    }
+  },
+  "assumptions": [
+    "这是原创跨行业示例，不是用户现有平台的部署图",
+    "横向能力表示贯穿关注点，不绘制未经确认的调用关系"
+  ]
+}
