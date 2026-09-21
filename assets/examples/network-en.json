@@ -1,0 +1,27 @@
+{
+  "type": "graph",
+  "layout": {"profile": "refined", "direction": "auto"},
+  "title": "Customer service ecosystem · network",
+  "subtitle": "Declared links between service objects; color marks role, not importance",
+  "eyebrow": "56 / RELATION NETWORK",
+  "nodes": [
+    {"id": "customer", "label": "Customer", "detail": "Need · outcome", "kind": "ellipse", "tone": "accent"},
+    {"id": "channel", "label": "Service entry", "detail": "App · store · phone", "tone": "teal"},
+    {"id": "platform", "label": "Service platform", "detail": "Identity · orders · cases", "tone": "accent"},
+    {"id": "agent", "label": "Service team", "detail": "Handle · escalate · respond", "tone": "amber"},
+    {"id": "partner", "label": "Delivery partner", "detail": "Fulfill · execute · status", "tone": "amber"},
+    {"id": "analytics", "label": "Insights", "detail": "Feedback · metrics · improve", "tone": "red"}
+  ],
+  "edges": [
+    {"from": "customer", "to": "channel", "label": "Raises need", "tone": "accent"},
+    {"from": "channel", "to": "platform", "label": "Submits request", "tone": "accent"},
+    {"from": "platform", "to": "agent", "label": "Routes case", "tone": "accent"},
+    {"from": "agent", "to": "partner", "label": "Requests fulfillment", "tone": "amber"},
+    {"from": "partner", "to": "platform", "label": "Returns status", "tone": "amber", "role": "return", "dashed": true},
+    {"from": "platform", "to": "analytics", "label": "Records event", "tone": "teal"}
+  ],
+  "footer": "Illustrative example · link types come from the input; no real organization or system is implied",
+  "family": "Cross-industry service",
+  "diagram_name": "Relationship network",
+  "assumptions": ["Nodes, links and labels are cross-industry illustrative inputs; they do not describe real customers, organizations or systems."]
+}

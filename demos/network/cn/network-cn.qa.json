@@ -1,0 +1,277 @@
+{
+  "errors": [],
+  "warnings": [],
+  "nodes": 11,
+  "edges": 6,
+  "scope": "geometry, text estimate, axis-aligned edge/node crossings; not semantic or visual acceptance",
+  "font_measurement": "font-glyph-metrics",
+  "rendered_visual_check": "not-run",
+  "manual_visual_review": "not-run",
+  "adaptive_layout": {
+    "version": 40,
+    "strategy": "right",
+    "node_width": 190,
+    "candidates": [
+      {
+        "score": 40059.27,
+        "crossings": 0,
+        "orientation": "right",
+        "node_width": 190,
+        "spacing": 76,
+        "issues": [
+          "edge label has no free space: 2",
+          "edge label has no free space: 3",
+          "edge label has no free space: 4",
+          "edge label has no free space: 5"
+        ]
+      },
+      {
+        "score": 40060.09,
+        "crossings": 0,
+        "orientation": "right",
+        "node_width": 240,
+        "spacing": 76,
+        "issues": [
+          "edge label has no free space: 2",
+          "edge label has no free space: 3",
+          "edge label has no free space: 4",
+          "edge label has no free space: 5"
+        ]
+      },
+      {
+        "score": 40065.54,
+        "crossings": 0,
+        "orientation": "right",
+        "node_width": 300,
+        "spacing": 76,
+        "issues": [
+          "edge label has no free space: 2",
+          "edge label has no free space: 3",
+          "edge label has no free space: 4",
+          "edge label has no free space: 5"
+        ]
+      },
+      {
+        "score": 20115.75,
+        "crossings": 0,
+        "orientation": "down",
+        "node_width": 190,
+        "spacing": 76,
+        "issues": [
+          "edge label overlaps a connector: 2",
+          "edge label overlaps a connector: 5"
+        ]
+      },
+      {
+        "score": 20100.09,
+        "crossings": 0,
+        "orientation": "down",
+        "node_width": 240,
+        "spacing": 76,
+        "issues": [
+          "edge label overlaps a connector: 2",
+          "edge label overlaps a connector: 5"
+        ]
+      },
+      {
+        "score": 20101.46,
+        "crossings": 0,
+        "orientation": "down",
+        "node_width": 300,
+        "spacing": 76,
+        "issues": [
+          "edge label overlaps a connector: 2",
+          "edge label overlaps a connector: 5"
+        ]
+      },
+      {
+        "score": 10060.38,
+        "crossings": 0,
+        "orientation": "right",
+        "node_width": 190,
+        "spacing": 100,
+        "issues": [
+          "edge label has no free space: 4"
+        ]
+      },
+      {
+        "score": 10061.45,
+        "crossings": 0,
+        "orientation": "right",
+        "node_width": 240,
+        "spacing": 100,
+        "issues": [
+          "edge label has no free space: 4"
+        ]
+      },
+      {
+        "score": 10076.13,
+        "crossings": 0,
+        "orientation": "right",
+        "node_width": 300,
+        "spacing": 100,
+        "issues": [
+          "edge label has no free space: 4"
+        ]
+      },
+      {
+        "score": 126.37,
+        "crossings": 0,
+        "orientation": "down",
+        "node_width": 190,
+        "spacing": 100,
+        "issues": []
+      },
+      {
+        "score": 113.09,
+        "crossings": 0,
+        "orientation": "down",
+        "node_width": 240,
+        "spacing": 100,
+        "issues": []
+      },
+      {
+        "score": 114.57,
+        "crossings": 0,
+        "orientation": "down",
+        "node_width": 300,
+        "spacing": 100,
+        "issues": []
+      },
+      {
+        "score": 63.24,
+        "crossings": 0,
+        "orientation": "right",
+        "node_width": 190,
+        "spacing": 168,
+        "issues": []
+      },
+      {
+        "score": 74.28,
+        "crossings": 0,
+        "orientation": "right",
+        "node_width": 240,
+        "spacing": 168,
+        "issues": []
+      },
+      {
+        "score": 100.64,
+        "crossings": 0,
+        "orientation": "right",
+        "node_width": 300,
+        "spacing": 168,
+        "issues": []
+      },
+      {
+        "score": 150.07,
+        "crossings": 0,
+        "orientation": "down",
+        "node_width": 190,
+        "spacing": 168,
+        "issues": []
+      },
+      {
+        "score": 141.41,
+        "crossings": 0,
+        "orientation": "down",
+        "node_width": 240,
+        "spacing": 168,
+        "issues": []
+      },
+      {
+        "score": 143.22,
+        "crossings": 0,
+        "orientation": "down",
+        "node_width": 300,
+        "spacing": 168,
+        "issues": []
+      }
+    ],
+    "selected_score": 63.24,
+    "crossings": 0,
+    "font_measurement": "font-glyph-metrics",
+    "font_family": "Heiti TC",
+    "source_node_ids": [
+      "customer",
+      "channel",
+      "platform",
+      "agent",
+      "partner",
+      "analytics"
+    ],
+    "source_edges": [
+      {
+        "from": "customer",
+        "to": "channel",
+        "label": "发起需求",
+        "tone": "accent"
+      },
+      {
+        "from": "channel",
+        "to": "platform",
+        "label": "提交请求",
+        "tone": "accent"
+      },
+      {
+        "from": "platform",
+        "to": "agent",
+        "label": "分派处理",
+        "tone": "accent"
+      },
+      {
+        "from": "agent",
+        "to": "partner",
+        "label": "请求履约",
+        "tone": "amber"
+      },
+      {
+        "from": "partner",
+        "to": "platform",
+        "label": "回传状态",
+        "tone": "amber",
+        "role": "return",
+        "dashed": true
+      },
+      {
+        "from": "platform",
+        "to": "analytics",
+        "label": "沉淀事件",
+        "tone": "teal"
+      }
+    ],
+    "overview_scale_at_1600": 0.862,
+    "detail_pages_recommended": false,
+    "rendered_visual_check": "not-run",
+    "manual_visual_review": "not-run",
+    "readability": {
+      "reference_viewport": [
+        1600,
+        900
+      ],
+      "available_canvas": [
+        1552,
+        720
+      ],
+      "minimum_content_font_px": 17,
+      "projected_minimum_font_px": 14.66,
+      "review_threshold_px": 12,
+      "status": "within-target",
+      "scope": "projected content text size at reference viewport; not visual acceptance"
+    }
+  },
+  "refined_layout": {
+    "version": 40,
+    "profile": "refined",
+    "manual_visual_review": "not-run"
+  },
+  "content_integrity": {
+    "status": "passed",
+    "source_ids": 6,
+    "source_relations": 6,
+    "source_texts": 12,
+    "missing_ids": [],
+    "missing_relations": [],
+    "missing_text": [],
+    "scope": "stable source IDs, explicit relation endpoints and source display text; not domain correctness"
+  }
+}

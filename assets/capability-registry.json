@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "version": "v55",
+  "version": "v56",
   "updated": "2026-09-20",
   "purpose": "Single source for chooser labels, backend capability, delivery formats and acceptance evidence.",
   "status_vocabulary": {
@@ -54,8 +54,8 @@
           "formats": ["svg", "drawio", "scene.json", "qa.json", "html"],
           "layout_limits": {"zh": "关系密度高时按群组拆图；边标签必须短且有语义。", "en": "Split dense relationships by group; edge labels must be short and semantic."},
           "languages": ["zh", "en"],
-          "examples": ["assets/examples/12-data-model.json", "assets/examples/15-network-topology.json"],
-          "evidence": {"level": "generated_with_semantic_validation", "reference": "assets/verification-status.json", "detail": {"zh": "关系端点与几何检查可运行；完整网络风格仍需人工复核。", "en": "Endpoint and geometry checks run; the full network style set still needs manual review."}},
+          "examples": ["assets/examples/network-cn.json", "assets/examples/network-en.json"],
+          "evidence": {"level": "manual_visual_review", "reference": "assets/v56-network-evidence.json", "detail": {"zh": "中英关系网络通过稳定节点与关系、零连接交叉、标签空间、可读字号和浏览器复核。", "en": "Chinese and English relationship networks pass stable nodes and links, zero connector crossings, label space, readable projected text and browser review."}},
           "scope": {"zh": "保留显式方向和关系类型；不从邻近位置推断关系。", "en": "Preserves explicit direction and relationship type; proximity never implies a link."}
         }
       ]

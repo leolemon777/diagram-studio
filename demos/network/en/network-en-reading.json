@@ -1,0 +1,104 @@
+{
+  "nodes": {
+    "customer": [
+      1
+    ],
+    "channel": [
+      1
+    ],
+    "platform": [
+      1
+    ],
+    "agent": [
+      1
+    ],
+    "partner": [
+      1
+    ],
+    "analytics": [
+      1
+    ]
+  },
+  "edges": [
+    {
+      "index": 0,
+      "from": "customer",
+      "to": "channel",
+      "label": "Raises need",
+      "pages": [
+        2
+      ]
+    },
+    {
+      "index": 1,
+      "from": "channel",
+      "to": "platform",
+      "label": "Submits request",
+      "pages": [
+        2
+      ]
+    },
+    {
+      "index": 2,
+      "from": "platform",
+      "to": "agent",
+      "label": "Routes case",
+      "pages": [
+        2
+      ]
+    },
+    {
+      "index": 3,
+      "from": "agent",
+      "to": "partner",
+      "label": "Requests fulfillment",
+      "pages": [
+        2
+      ]
+    },
+    {
+      "index": 4,
+      "from": "partner",
+      "to": "platform",
+      "label": "Returns status",
+      "pages": [
+        3
+      ]
+    },
+    {
+      "index": 5,
+      "from": "platform",
+      "to": "analytics",
+      "label": "Records event",
+      "pages": [
+        3
+      ]
+    }
+  ],
+  "local_views": [],
+  "source_node_count": 6,
+  "source_edge_count": 6,
+  "pages": [
+    {
+      "file": "network-en-p01.svg",
+      "title": "P01 Object details",
+      "width": 1600,
+      "height": 900,
+      "minimum_font": 14
+    },
+    {
+      "file": "network-en-p02.svg",
+      "title": "P02 Relationship index",
+      "width": 1600,
+      "height": 900,
+      "minimum_font": 14
+    },
+    {
+      "file": "network-en-p03.svg",
+      "title": "P03 Relationship index",
+      "width": 1600,
+      "height": 900,
+      "minimum_font": 14
+    }
+  ]
+}

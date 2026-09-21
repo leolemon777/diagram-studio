@@ -1,0 +1,21 @@
+{
+  "version": "v56",
+  "capability": "network",
+  "status": "manual_visual_review",
+  "source_examples": [
+    "assets/examples/network-cn.json",
+    "assets/examples/network-en.json"
+  ],
+  "checks": {
+    "bilingual_topology": "same six stable node ids and six directed links",
+    "geometry": "adaptive refined layout reports zero node/edge label errors and zero connector crossings",
+    "readability": "Chinese and English overview projected minimum content font is above the 12px review threshold",
+    "content_integrity": "stable ids, explicit endpoints and source display text reconciled",
+    "browser": "overview demo, direct Chinese/English SVG and chooser entry opened and visually reviewed"
+  },
+  "limitations": [
+    "The service ecosystem is illustrative; it does not validate a real organization, system integration or causal claim.",
+    "Native draw.io edit, save and reopen behavior is not included in this batch.",
+    "Dense networks still need group-specific overview and detail pages."
+  ]
+}

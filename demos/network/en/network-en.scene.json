@@ -1,0 +1,841 @@
+{
+  "width": 1800,
+  "height": 792,
+  "theme": "light",
+  "palette": {
+    "bg": "#F1EFEB",
+    "panel": "#FEFDF9",
+    "ink": "#30302D",
+    "muted": "#6D6A63",
+    "line": "#D8D3C8",
+    "accent": "#AC6046",
+    "teal": "#67685E",
+    "amber": "#8C7964",
+    "red": "#554C46",
+    "tint": "#F0E4DA",
+    "tint2": "#ECECE5"
+  },
+  "nodes": [
+    {
+      "id": "customer",
+      "x": 96.0,
+      "y": 382.0,
+      "w": 190,
+      "h": 152,
+      "label": "Customer",
+      "detail": "Need · outcome",
+      "kind": "ellipse",
+      "tone": "accent",
+      "check": true,
+      "_lines": [
+        [
+          "Customer",
+          22,
+          true,
+          "ink"
+        ],
+        [
+          "Need ·",
+          17,
+          false,
+          "muted"
+        ],
+        [
+          "outcome",
+          17,
+          false,
+          "muted"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "text_margin": 20,
+      "stroke_width": 1.1
+    },
+    {
+      "id": "channel",
+      "x": 454.0,
+      "y": 398.0,
+      "w": 190,
+      "h": 120,
+      "label": "Service entry",
+      "detail": "App · store · phone",
+      "kind": "rect",
+      "tone": "teal",
+      "check": true,
+      "_lines": [
+        [
+          "Service entry",
+          22,
+          true,
+          "ink"
+        ],
+        [
+          "App · store ·",
+          17,
+          false,
+          "muted"
+        ],
+        [
+          "phone",
+          17,
+          false,
+          "muted"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "text_margin": 20,
+      "stroke_width": 1.1
+    },
+    {
+      "id": "platform",
+      "x": 812.0,
+      "y": 382.0,
+      "w": 190,
+      "h": 152,
+      "label": "Service platform",
+      "detail": "Identity · orders · cases",
+      "kind": "rect",
+      "tone": "accent",
+      "check": true,
+      "_lines": [
+        [
+          "Service",
+          22,
+          true,
+          "ink"
+        ],
+        [
+          "platform",
+          22,
+          true,
+          "ink"
+        ],
+        [
+          "Identity · orders",
+          17,
+          false,
+          "muted"
+        ],
+        [
+          "· cases",
+          17,
+          false,
+          "muted"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "text_margin": 20,
+      "stroke_width": 1.1
+    },
+    {
+      "id": "agent",
+      "x": 1170.0,
+      "y": 230.0,
+      "w": 190,
+      "h": 144,
+      "label": "Service team",
+      "detail": "Handle · escalate · respond",
+      "kind": "rect",
+      "tone": "amber",
+      "check": true,
+      "_lines": [
+        [
+          "Service team",
+          22,
+          true,
+          "ink"
+        ],
+        [
+          "Handle ·",
+          17,
+          false,
+          "muted"
+        ],
+        [
+          "escalate ·",
+          17,
+          false,
+          "muted"
+        ],
+        [
+          "respond",
+          17,
+          false,
+          "muted"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "text_margin": 20,
+      "stroke_width": 1.1
+    },
+    {
+      "id": "partner",
+      "x": 1528.0,
+      "y": 382.0,
+      "w": 190,
+      "h": 152,
+      "label": "Delivery partner",
+      "detail": "Fulfill · execute · status",
+      "kind": "rect",
+      "tone": "amber",
+      "check": true,
+      "_lines": [
+        [
+          "Delivery",
+          22,
+          true,
+          "ink"
+        ],
+        [
+          "partner",
+          22,
+          true,
+          "ink"
+        ],
+        [
+          "Fulfill · execute",
+          17,
+          false,
+          "muted"
+        ],
+        [
+          "· status",
+          17,
+          false,
+          "muted"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "text_margin": 20,
+      "stroke_width": 1.1
+    },
+    {
+      "id": "analytics",
+      "x": 1170.0,
+      "y": 542.0,
+      "w": 190,
+      "h": 144,
+      "label": "Insights",
+      "detail": "Feedback · metrics · improve",
+      "kind": "rect",
+      "tone": "red",
+      "check": true,
+      "_lines": [
+        [
+          "Insights",
+          22,
+          true,
+          "ink"
+        ],
+        [
+          "Feedback ·",
+          17,
+          false,
+          "muted"
+        ],
+        [
+          "metrics ·",
+          17,
+          false,
+          "muted"
+        ],
+        [
+          "improve",
+          17,
+          false,
+          "muted"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "text_margin": 20,
+      "stroke_width": 1.1
+    },
+    {
+      "id": "_v7",
+      "x": 64,
+      "y": 34,
+      "w": 1672,
+      "h": 22,
+      "label": "56 / RELATION NETWORK",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 14,
+      "align": "left",
+      "check": false,
+      "font_family": "Heiti TC"
+    },
+    {
+      "id": "_v8",
+      "x": 64,
+      "y": 74,
+      "w": 1672,
+      "h": 49,
+      "label": "Customer service ecosystem · network",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 36,
+      "align": "left",
+      "check": false,
+      "font_family": "Heiti TC",
+      "_lines": [
+        [
+          "Customer service ecosystem · network",
+          36,
+          true,
+          "ink"
+        ]
+      ]
+    },
+    {
+      "id": "_v9",
+      "x": 64,
+      "y": 131,
+      "w": 1672,
+      "h": 24,
+      "label": "Declared links between service objects; color marks role, not importance",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "left",
+      "check": false,
+      "font_family": "Heiti TC",
+      "_lines": [
+        [
+          "Declared links between service objects; color marks role, not importance",
+          17,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "_v10",
+      "x": 64,
+      "y": 732,
+      "w": 1672,
+      "h": 1,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "line",
+      "stroke": "none",
+      "check": false
+    },
+    {
+      "id": "_v11",
+      "x": 64,
+      "y": 748,
+      "w": 1672,
+      "h": 20,
+      "label": "Illustrative example · link types come from the input; no real organization or system is implied",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false,
+      "font_family": "Heiti TC",
+      "_lines": [
+        [
+          "Illustrative example · link types come from the input; no real organization or system is implied",
+          14,
+          false,
+          "muted"
+        ]
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "customer",
+      "target": "channel",
+      "label": "Raises need",
+      "points": [
+        [
+          286.0,
+          458.0
+        ],
+        [
+          454.0,
+          458.0
+        ]
+      ],
+      "source_port": "right",
+      "target_port": "left",
+      "tone": "accent",
+      "width": 1.5,
+      "dashed": false,
+      "arrow": true,
+      "_label_box": [
+        305.4,
+        412.0,
+        434.59999999999997,
+        450.0
+      ],
+      "_label_lines": [
+        "Raises need"
+      ],
+      "_label_font": 18
+    },
+    {
+      "source": "channel",
+      "target": "platform",
+      "label": "Submits request",
+      "points": [
+        [
+          644.0,
+          458.0
+        ],
+        [
+          812.0,
+          458.0
+        ]
+      ],
+      "source_port": "right",
+      "target_port": "left",
+      "tone": "accent",
+      "width": 1.5,
+      "dashed": false,
+      "arrow": true,
+      "_label_box": [
+        683.68,
+        386.0,
+        772.3199999999999,
+        450.0
+      ],
+      "_label_lines": [
+        "Submits",
+        "request"
+      ],
+      "_label_font": 18
+    },
+    {
+      "source": "platform",
+      "target": "agent",
+      "label": "Routes case",
+      "points": [
+        [
+          1002.0,
+          458.0
+        ],
+        [
+          1036.0,
+          458.0
+        ],
+        [
+          1036.0,
+          302.0
+        ],
+        [
+          1170.0,
+          302.0
+        ]
+      ],
+      "source_port": "right",
+      "target_port": "left",
+      "tone": "accent",
+      "width": 1.5,
+      "dashed": false,
+      "arrow": true,
+      "_label_box": [
+        896.72,
+        329.8,
+        1028.0,
+        367.8
+      ],
+      "_label_lines": [
+        "Routes case"
+      ],
+      "_label_font": 18
+    },
+    {
+      "source": "agent",
+      "target": "partner",
+      "label": "Requests fulfillment",
+      "points": [
+        [
+          1360.0,
+          302.0
+        ],
+        [
+          1400.0,
+          302.0
+        ],
+        [
+          1400.0,
+          458.0
+        ],
+        [
+          1528.0,
+          458.0
+        ]
+      ],
+      "source_port": "right",
+      "target_port": "left",
+      "tone": "amber",
+      "width": 1.5,
+      "dashed": false,
+      "arrow": true,
+      "_label_box": [
+        1408.0,
+        348.0,
+        1516.4,
+        412.0
+      ],
+      "_label_lines": [
+        "Requests",
+        "fulfillment"
+      ],
+      "_label_font": 18
+    },
+    {
+      "source": "partner",
+      "target": "platform",
+      "label": "Returns status",
+      "points": [
+        [
+          1528.0,
+          458.0
+        ],
+        [
+          1002.0,
+          458.0
+        ]
+      ],
+      "source_port": "left",
+      "target_port": "right",
+      "tone": "amber",
+      "width": 1.5,
+      "dashed": true,
+      "arrow": true,
+      "_label_box": [
+        1194.16,
+        412.0,
+        1335.8400000000001,
+        450.0
+      ],
+      "_label_lines": [
+        "Returns status"
+      ],
+      "_label_font": 18
+    },
+    {
+      "source": "platform",
+      "target": "analytics",
+      "label": "Records event",
+      "points": [
+        [
+          1002.0,
+          458.0
+        ],
+        [
+          1030.0,
+          458.0
+        ],
+        [
+          1030.0,
+          614.0
+        ],
+        [
+          1170.0,
+          614.0
+        ]
+      ],
+      "source_port": "right",
+      "target_port": "left",
+      "tone": "teal",
+      "width": 1.5,
+      "dashed": false,
+      "arrow": true,
+      "_label_box": [
+        1038.0,
+        504.0,
+        1131.84,
+        568.0
+      ],
+      "_label_lines": [
+        "Records",
+        "event"
+      ],
+      "_label_font": 18
+    }
+  ],
+  "meta": {
+    "adaptive_layout": {
+      "version": 40,
+      "strategy": "right",
+      "node_width": 190,
+      "candidates": [
+        {
+          "score": 60059.95,
+          "crossings": 0,
+          "orientation": "right",
+          "node_width": 190,
+          "spacing": 76,
+          "issues": [
+            "edge label has no free space: 0",
+            "edge label has no free space: 1",
+            "edge label has no free space: 2",
+            "edge label has no free space: 3",
+            "edge label has no free space: 4",
+            "edge label has no free space: 5"
+          ]
+        },
+        {
+          "score": 60060.89,
+          "crossings": 0,
+          "orientation": "right",
+          "node_width": 240,
+          "spacing": 76,
+          "issues": [
+            "edge label has no free space: 0",
+            "edge label has no free space: 1",
+            "edge label has no free space: 2",
+            "edge label has no free space: 3",
+            "edge label has no free space: 4",
+            "edge label has no free space: 5"
+          ]
+        },
+        {
+          "score": 60066.49,
+          "crossings": 0,
+          "orientation": "right",
+          "node_width": 300,
+          "spacing": 76,
+          "issues": [
+            "edge label has no free space: 0",
+            "edge label has no free space: 1",
+            "edge label has no free space: 2",
+            "edge label has no free space: 3",
+            "edge label has no free space: 4",
+            "edge label has no free space: 5"
+          ]
+        },
+        {
+          "score": 20127.56,
+          "crossings": 0,
+          "orientation": "down",
+          "node_width": 190,
+          "spacing": 76,
+          "issues": [
+            "edge label overlaps a connector: 2",
+            "edge label overlaps a connector: 5"
+          ]
+        },
+        {
+          "score": 20110.02,
+          "crossings": 0,
+          "orientation": "down",
+          "node_width": 240,
+          "spacing": 76,
+          "issues": [
+            "edge label overlaps a connector: 2",
+            "edge label overlaps a connector: 5"
+          ]
+        },
+        {
+          "score": 20104.93,
+          "crossings": 0,
+          "orientation": "down",
+          "node_width": 300,
+          "spacing": 76,
+          "issues": [
+            "edge label overlaps a connector: 2",
+            "edge label overlaps a connector: 5"
+          ]
+        },
+        {
+          "score": 30061.32,
+          "crossings": 0,
+          "orientation": "right",
+          "node_width": 190,
+          "spacing": 100,
+          "issues": [
+            "edge label has no free space: 2",
+            "edge label has no free space: 3",
+            "edge label has no free space: 4"
+          ]
+        },
+        {
+          "score": 30062.55,
+          "crossings": 0,
+          "orientation": "right",
+          "node_width": 240,
+          "spacing": 100,
+          "issues": [
+            "edge label has no free space: 2",
+            "edge label has no free space: 3",
+            "edge label has no free space: 4"
+          ]
+        },
+        {
+          "score": 30077.41,
+          "crossings": 0,
+          "orientation": "right",
+          "node_width": 300,
+          "spacing": 100,
+          "issues": [
+            "edge label has no free space: 2",
+            "edge label has no free space: 3",
+            "edge label has no free space: 4"
+          ]
+        },
+        {
+          "score": 137.11,
+          "crossings": 0,
+          "orientation": "down",
+          "node_width": 190,
+          "spacing": 100,
+          "issues": []
+        },
+        {
+          "score": 121.66,
+          "crossings": 0,
+          "orientation": "down",
+          "node_width": 240,
+          "spacing": 100,
+          "issues": []
+        },
+        {
+          "score": 117.56,
+          "crossings": 0,
+          "orientation": "down",
+          "node_width": 300,
+          "spacing": 100,
+          "issues": []
+        },
+        {
+          "score": 64.1,
+          "crossings": 0,
+          "orientation": "right",
+          "node_width": 190,
+          "spacing": 168,
+          "issues": []
+        },
+        {
+          "score": 75.26,
+          "crossings": 0,
+          "orientation": "right",
+          "node_width": 240,
+          "spacing": 168,
+          "issues": []
+        },
+        {
+          "score": 101.77,
+          "crossings": 0,
+          "orientation": "right",
+          "node_width": 300,
+          "spacing": 168,
+          "issues": []
+        },
+        {
+          "score": 158.83,
+          "crossings": 0,
+          "orientation": "down",
+          "node_width": 190,
+          "spacing": 168,
+          "issues": []
+        },
+        {
+          "score": 147.39,
+          "crossings": 0,
+          "orientation": "down",
+          "node_width": 240,
+          "spacing": 168,
+          "issues": []
+        },
+        {
+          "score": 145.3,
+          "crossings": 0,
+          "orientation": "down",
+          "node_width": 300,
+          "spacing": 168,
+          "issues": []
+        }
+      ],
+      "selected_score": 64.1,
+      "crossings": 0,
+      "font_measurement": "font-glyph-metrics",
+      "font_family": "Heiti TC",
+      "source_node_ids": [
+        "customer",
+        "channel",
+        "platform",
+        "agent",
+        "partner",
+        "analytics"
+      ],
+      "source_edges": [
+        {
+          "from": "customer",
+          "to": "channel",
+          "label": "Raises need",
+          "tone": "accent"
+        },
+        {
+          "from": "channel",
+          "to": "platform",
+          "label": "Submits request",
+          "tone": "accent"
+        },
+        {
+          "from": "platform",
+          "to": "agent",
+          "label": "Routes case",
+          "tone": "accent"
+        },
+        {
+          "from": "agent",
+          "to": "partner",
+          "label": "Requests fulfillment",
+          "tone": "amber"
+        },
+        {
+          "from": "partner",
+          "to": "platform",
+          "label": "Returns status",
+          "tone": "amber",
+          "role": "return",
+          "dashed": true
+        },
+        {
+          "from": "platform",
+          "to": "analytics",
+          "label": "Records event",
+          "tone": "teal"
+        }
+      ],
+      "overview_scale_at_1600": 0.862,
+      "detail_pages_recommended": false,
+      "rendered_visual_check": "not-run",
+      "manual_visual_review": "not-run",
+      "readability": {
+        "reference_viewport": [
+          1600,
+          900
+        ],
+        "available_canvas": [
+          1552,
+          720
+        ],
+        "minimum_content_font_px": 17,
+        "projected_minimum_font_px": 14.66,
+        "review_threshold_px": 12,
+        "status": "within-target",
+        "scope": "projected content text size at reference viewport; not visual acceptance"
+      }
+    },
+    "refined_layout": {
+      "version": 40,
+      "profile": "refined",
+      "manual_visual_review": "not-run"
+    }
+  },
+  "assumptions": [
+    "Nodes, links and labels are cross-industry illustrative inputs; they do not describe real customers, organizations or systems."
+  ]
+}

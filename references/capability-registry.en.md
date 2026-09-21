@@ -1,12 +1,12 @@
 # Capability registry and delivery scope
 
-The machine-readable source is [`assets/capability-registry.json`](../assets/capability-registry.json) (v55). The chooser reads structure, backend, formats and evidence from this file. Run `python3 scripts/capability_registry.py --check` to validate every backend, example and evidence reference. The compact table below is a human index; the JSON carries the complete fields.
+The machine-readable source is [`assets/capability-registry.json`](../assets/capability-registry.json) (v56). The chooser reads structure, backend, formats and evidence from this file. Run `python3 scripts/capability_registry.py --check` to validate every backend, example and evidence reference. The compact table below is a human index; the JSON carries the complete fields.
 
 | ID | Form | Backend | Formats | Evidence |
 |---|---|---|---|---|
 | `tree` | Tree / work breakdown | `scripts/render.py#tree` | SVG, draw.io, scene/QA, HTML | `manual_visual_review` |
 | `architecture` | Layered architecture | `scripts/render.py#architecture` | SVG, draw.io, scene/QA, HTML | `manual_visual_review` |
-| `network` | Relationship network | `scripts/render.py#graph` | SVG, draw.io, scene/QA, HTML | `generated_with_semantic_validation` |
+| `network` | Relationship network | `scripts/render.py#graph` | SVG, draw.io, scene/QA, HTML | `manual_visual_review` |
 | `flow` | Flowchart | `scripts/render.py#graph` | SVG, draw.io, scene/QA, HTML | `manual_visual_review` |
 | `swimlane` | Swimlane workflow | `scripts/render.py#graph` | SVG, draw.io, scene/QA, HTML | `generated_with_semantic_validation` |
 | `sequence` | Sequence diagram | `scripts/render.py#sequence` | SVG, draw.io, scene/QA, HTML | `generated_with_semantic_validation` |

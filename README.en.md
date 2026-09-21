@@ -17,6 +17,8 @@ Diagram Studio is a local Codex skill for turning a natural-language brief into 
 
 You can also compare **different visual expressions of the same source data**, changing the reading order and composition while preserving values, units, relationships, and direction. The [four-study, eight-expression demo](demos/expression-lab/index.html) is reproducible. Catalog entries are search terms and rules, not a promise of a separate renderer for every named type. See the [verification record](references/verification-status.md) for tested scope.
 
+The bilingual [relationship network demo](demos/network/index.html) shows a cross-industry service ecosystem with explicit directions, a return link, and three readable detail pages for splitting dense networks.
+
 ## How to use it
 
 If you are unsure which form to use, clone the repository and open the local [bilingual diagram chooser](demos/chooser/index.html) in a browser. Select the reader's question, a diagram form, and a visual direction; then enter your content and copy the resulting `$diagram-studio` prompt. It covers 20 common forms and explains the choice. Backend, format and evidence claims come from the [capability registry](references/capability-registry.en.md), rather than an old page label. The chooser itself does not render arbitrary input; Codex uses the skill to make the final diagram. Style thumbnails are directional sketches; see the [validated style scope](references/style-families.md).

@@ -1,0 +1,104 @@
+{
+  "nodes": {
+    "customer": [
+      1
+    ],
+    "channel": [
+      1
+    ],
+    "platform": [
+      1
+    ],
+    "agent": [
+      1
+    ],
+    "partner": [
+      1
+    ],
+    "analytics": [
+      1
+    ]
+  },
+  "edges": [
+    {
+      "index": 0,
+      "from": "customer",
+      "to": "channel",
+      "label": "发起需求",
+      "pages": [
+        2
+      ]
+    },
+    {
+      "index": 1,
+      "from": "channel",
+      "to": "platform",
+      "label": "提交请求",
+      "pages": [
+        2
+      ]
+    },
+    {
+      "index": 2,
+      "from": "platform",
+      "to": "agent",
+      "label": "分派处理",
+      "pages": [
+        2
+      ]
+    },
+    {
+      "index": 3,
+      "from": "agent",
+      "to": "partner",
+      "label": "请求履约",
+      "pages": [
+        2
+      ]
+    },
+    {
+      "index": 4,
+      "from": "partner",
+      "to": "platform",
+      "label": "回传状态",
+      "pages": [
+        3
+      ]
+    },
+    {
+      "index": 5,
+      "from": "platform",
+      "to": "analytics",
+      "label": "沉淀事件",
+      "pages": [
+        3
+      ]
+    }
+  ],
+  "local_views": [],
+  "source_node_count": 6,
+  "source_edge_count": 6,
+  "pages": [
+    {
+      "file": "network-cn-p01.svg",
+      "title": "P01 对象详解",
+      "width": 1600,
+      "height": 900,
+      "minimum_font": 14
+    },
+    {
+      "file": "network-cn-p02.svg",
+      "title": "P02 完整关系索引",
+      "width": 1600,
+      "height": 900,
+      "minimum_font": 14
+    },
+    {
+      "file": "network-cn-p03.svg",
+      "title": "P03 完整关系索引",
+      "width": 1600,
+      "height": 900,
+      "minimum_font": 14
+    }
+  ]
+}

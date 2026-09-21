@@ -30,7 +30,7 @@ const fallbackGroups=[
  {id:'relations',title:['结构与关系','Structure & relations'],sub:['谁属于谁、谁连接谁','Hierarchy, layers, connections'],types:[
   {id:'tree',name:['组织树 / 分解结构','Tree / work breakdown'],why:['单一父子层级，适合组织、课程体系、任务拆解','One parent per item: organizations, curricula, work breakdowns'],need:['节点、父子关系、层级','Nodes, parent links, levels']},
   {id:'architecture',name:['分层架构图','Layered architecture'],why:['看系统有哪些层和模块，以及明确的调用关系','Show layers, components, and explicit calls between them'],need:['层、模块、连接方向','Layers, components, directed links']},
-  {id:'network',name:['关系网络图','Relationship network'],why:['多对多连接，适合人物、应用、依赖或知识关系','Many-to-many links between people, apps, dependencies, or concepts'],need:['对象、关系类型、方向','Objects, link types, direction']}]},
+  {id:'network',name:['关系网络图','Relationship network'],why:['多对多连接，适合人物、应用、依赖或知识关系','Many-to-many links between people, apps, dependencies, or concepts'],need:['对象、关系类型、方向','Objects, link types, direction'],example:'../network/index.html',scope:['保留显式方向和关系类型；不从邻近位置推断关系。','Preserves explicit direction and relationship type; proximity never implies a link.']}]},
  {id:'process',title:['过程与协作','Process & collaboration'],sub:['步骤、判断、责任与交互','Steps, decisions, ownership'],types:[
   {id:'flow',name:['流程图','Flowchart'],why:['有顺序、判断、异常回流的过程','Ordered steps with decisions and exception loops'],need:['步骤、分支条件、回流终点','Steps, branch labels, loop targets']},
   {id:'swimlane',name:['泳道流程图','Swimlane workflow'],why:['重点是每一步由谁执行，以及交接点','Show who performs each step and where handoffs occur'],need:['角色、步骤、交接、分支','Roles, steps, handoffs, branches']},

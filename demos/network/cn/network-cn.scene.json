@@ -1,0 +1,802 @@
+{
+  "width": 1800,
+  "height": 744,
+  "theme": "light",
+  "palette": {
+    "bg": "#F1EFEB",
+    "panel": "#FEFDF9",
+    "ink": "#30302D",
+    "muted": "#6D6A63",
+    "line": "#D8D3C8",
+    "accent": "#AC6046",
+    "teal": "#67685E",
+    "amber": "#8C7964",
+    "red": "#554C46",
+    "tint": "#F0E4DA",
+    "tint2": "#ECECE5"
+  },
+  "nodes": [
+    {
+      "id": "customer",
+      "x": 96.0,
+      "y": 358.0,
+      "w": 190,
+      "h": 152,
+      "label": "客户",
+      "detail": "提出需求 · 接收结果",
+      "kind": "ellipse",
+      "tone": "accent",
+      "check": true,
+      "_lines": [
+        [
+          "客户",
+          22,
+          true,
+          "ink"
+        ],
+        [
+          "提出需求 · ",
+          17,
+          false,
+          "muted"
+        ],
+        [
+          "接收结果",
+          17,
+          false,
+          "muted"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "text_margin": 20,
+      "stroke_width": 1.1
+    },
+    {
+      "id": "channel",
+      "x": 454.0,
+      "y": 374.0,
+      "w": 190,
+      "h": 120,
+      "label": "服务入口",
+      "detail": "App · 门店 · 电话",
+      "kind": "rect",
+      "tone": "teal",
+      "check": true,
+      "_lines": [
+        [
+          "服务入口",
+          22,
+          true,
+          "ink"
+        ],
+        [
+          "App · 门店 · ",
+          17,
+          false,
+          "muted"
+        ],
+        [
+          "电话",
+          17,
+          false,
+          "muted"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "text_margin": 20,
+      "stroke_width": 1.1
+    },
+    {
+      "id": "platform",
+      "x": 812.0,
+      "y": 374.0,
+      "w": 190,
+      "h": 120,
+      "label": "服务平台",
+      "detail": "身份 · 订单 · 工单",
+      "kind": "rect",
+      "tone": "accent",
+      "check": true,
+      "_lines": [
+        [
+          "服务平台",
+          22,
+          true,
+          "ink"
+        ],
+        [
+          "身份 · 订单 · ",
+          17,
+          false,
+          "muted"
+        ],
+        [
+          "工单",
+          17,
+          false,
+          "muted"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "text_margin": 20,
+      "stroke_width": 1.1
+    },
+    {
+      "id": "agent",
+      "x": 1170.0,
+      "y": 230.0,
+      "w": 190,
+      "h": 120,
+      "label": "服务团队",
+      "detail": "处理 · 升级 · 回应",
+      "kind": "rect",
+      "tone": "amber",
+      "check": true,
+      "_lines": [
+        [
+          "服务团队",
+          22,
+          true,
+          "ink"
+        ],
+        [
+          "处理 · 升级 · ",
+          17,
+          false,
+          "muted"
+        ],
+        [
+          "回应",
+          17,
+          false,
+          "muted"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "text_margin": 20,
+      "stroke_width": 1.1
+    },
+    {
+      "id": "partner",
+      "x": 1528.0,
+      "y": 374.0,
+      "w": 190,
+      "h": 120,
+      "label": "合作伙伴",
+      "detail": "交付 · 履约 · 状态",
+      "kind": "rect",
+      "tone": "amber",
+      "check": true,
+      "_lines": [
+        [
+          "合作伙伴",
+          22,
+          true,
+          "ink"
+        ],
+        [
+          "交付 · 履约 · ",
+          17,
+          false,
+          "muted"
+        ],
+        [
+          "状态",
+          17,
+          false,
+          "muted"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "text_margin": 20,
+      "stroke_width": 1.1
+    },
+    {
+      "id": "analytics",
+      "x": 1170.0,
+      "y": 518.0,
+      "w": 190,
+      "h": 120,
+      "label": "分析与洞察",
+      "detail": "反馈 · 指标 · 改进",
+      "kind": "rect",
+      "tone": "red",
+      "check": true,
+      "_lines": [
+        [
+          "分析与洞察",
+          22,
+          true,
+          "ink"
+        ],
+        [
+          "反馈 · 指标 · ",
+          17,
+          false,
+          "muted"
+        ],
+        [
+          "改进",
+          17,
+          false,
+          "muted"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "text_margin": 20,
+      "stroke_width": 1.1
+    },
+    {
+      "id": "_v7",
+      "x": 64,
+      "y": 34,
+      "w": 1672,
+      "h": 22,
+      "label": "56 / RELATION NETWORK",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 14,
+      "align": "left",
+      "check": false,
+      "font_family": "Heiti TC"
+    },
+    {
+      "id": "_v8",
+      "x": 64,
+      "y": 74,
+      "w": 1672,
+      "h": 49,
+      "label": "客户服务生态 · 关系网络",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 36,
+      "align": "left",
+      "check": false,
+      "font_family": "Heiti TC",
+      "_lines": [
+        [
+          "客户服务生态 · 关系网络",
+          36,
+          true,
+          "ink"
+        ]
+      ]
+    },
+    {
+      "id": "_v9",
+      "x": 64,
+      "y": 131,
+      "w": 1672,
+      "h": 24,
+      "label": "节点是对象，箭头是已声明关系；颜色区分角色，不表示重要性",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "left",
+      "check": false,
+      "font_family": "Heiti TC",
+      "_lines": [
+        [
+          "节点是对象，箭头是已声明关系；颜色区分角色，不表示重要性",
+          17,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "_v10",
+      "x": 64,
+      "y": 684,
+      "w": 1672,
+      "h": 1,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "line",
+      "stroke": "none",
+      "check": false
+    },
+    {
+      "id": "_v11",
+      "x": 64,
+      "y": 700,
+      "w": 1672,
+      "h": 20,
+      "label": "模拟示例 · 关系类型来自输入，不代表真实组织或系统连接",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false,
+      "font_family": "Heiti TC",
+      "_lines": [
+        [
+          "模拟示例 · 关系类型来自输入，不代表真实组织或系统连接",
+          14,
+          false,
+          "muted"
+        ]
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "customer",
+      "target": "channel",
+      "label": "发起需求",
+      "points": [
+        [
+          286.0,
+          434.0
+        ],
+        [
+          454.0,
+          434.0
+        ]
+      ],
+      "source_port": "right",
+      "target_port": "left",
+      "tone": "accent",
+      "width": 1.5,
+      "dashed": false,
+      "arrow": true,
+      "_label_box": [
+        322.56,
+        388.0,
+        417.44,
+        426.0
+      ],
+      "_label_lines": [
+        "发起需求"
+      ],
+      "_label_font": 18
+    },
+    {
+      "source": "channel",
+      "target": "platform",
+      "label": "提交请求",
+      "points": [
+        [
+          644.0,
+          434.0
+        ],
+        [
+          812.0,
+          434.0
+        ]
+      ],
+      "source_port": "right",
+      "target_port": "left",
+      "tone": "accent",
+      "width": 1.5,
+      "dashed": false,
+      "arrow": true,
+      "_label_box": [
+        680.56,
+        388.0,
+        775.4399999999999,
+        426.0
+      ],
+      "_label_lines": [
+        "提交请求"
+      ],
+      "_label_font": 18
+    },
+    {
+      "source": "platform",
+      "target": "agent",
+      "label": "分派处理",
+      "points": [
+        [
+          1002.0,
+          434.0
+        ],
+        [
+          1036.0,
+          434.0
+        ],
+        [
+          1036.0,
+          290.0
+        ],
+        [
+          1170.0,
+          290.0
+        ]
+      ],
+      "source_port": "right",
+      "target_port": "left",
+      "tone": "accent",
+      "width": 1.5,
+      "dashed": false,
+      "arrow": true,
+      "_label_box": [
+        1044.0,
+        343.0,
+        1138.88,
+        381.0
+      ],
+      "_label_lines": [
+        "分派处理"
+      ],
+      "_label_font": 18
+    },
+    {
+      "source": "agent",
+      "target": "partner",
+      "label": "请求履约",
+      "points": [
+        [
+          1360.0,
+          290.0
+        ],
+        [
+          1400.0,
+          290.0
+        ],
+        [
+          1400.0,
+          434.0
+        ],
+        [
+          1528.0,
+          434.0
+        ]
+      ],
+      "source_port": "right",
+      "target_port": "left",
+      "tone": "amber",
+      "width": 1.5,
+      "dashed": false,
+      "arrow": true,
+      "_label_box": [
+        1408.0,
+        343.0,
+        1502.88,
+        381.0
+      ],
+      "_label_lines": [
+        "请求履约"
+      ],
+      "_label_font": 18
+    },
+    {
+      "source": "partner",
+      "target": "platform",
+      "label": "回传状态",
+      "points": [
+        [
+          1528.0,
+          434.0
+        ],
+        [
+          1002.0,
+          434.0
+        ]
+      ],
+      "source_port": "left",
+      "target_port": "right",
+      "tone": "amber",
+      "width": 1.5,
+      "dashed": true,
+      "arrow": true,
+      "_label_box": [
+        1217.56,
+        388.0,
+        1312.44,
+        426.0
+      ],
+      "_label_lines": [
+        "回传状态"
+      ],
+      "_label_font": 18
+    },
+    {
+      "source": "platform",
+      "target": "analytics",
+      "label": "沉淀事件",
+      "points": [
+        [
+          1002.0,
+          434.0
+        ],
+        [
+          1030.0,
+          434.0
+        ],
+        [
+          1030.0,
+          578.0
+        ],
+        [
+          1170.0,
+          578.0
+        ]
+      ],
+      "source_port": "right",
+      "target_port": "left",
+      "tone": "teal",
+      "width": 1.5,
+      "dashed": false,
+      "arrow": true,
+      "_label_box": [
+        1038.0,
+        487.0,
+        1132.88,
+        525.0
+      ],
+      "_label_lines": [
+        "沉淀事件"
+      ],
+      "_label_font": 18
+    }
+  ],
+  "meta": {
+    "adaptive_layout": {
+      "version": 40,
+      "strategy": "right",
+      "node_width": 190,
+      "candidates": [
+        {
+          "score": 40059.27,
+          "crossings": 0,
+          "orientation": "right",
+          "node_width": 190,
+          "spacing": 76,
+          "issues": [
+            "edge label has no free space: 2",
+            "edge label has no free space: 3",
+            "edge label has no free space: 4",
+            "edge label has no free space: 5"
+          ]
+        },
+        {
+          "score": 40060.09,
+          "crossings": 0,
+          "orientation": "right",
+          "node_width": 240,
+          "spacing": 76,
+          "issues": [
+            "edge label has no free space: 2",
+            "edge label has no free space: 3",
+            "edge label has no free space: 4",
+            "edge label has no free space: 5"
+          ]
+        },
+        {
+          "score": 40065.54,
+          "crossings": 0,
+          "orientation": "right",
+          "node_width": 300,
+          "spacing": 76,
+          "issues": [
+            "edge label has no free space: 2",
+            "edge label has no free space: 3",
+            "edge label has no free space: 4",
+            "edge label has no free space: 5"
+          ]
+        },
+        {
+          "score": 20115.75,
+          "crossings": 0,
+          "orientation": "down",
+          "node_width": 190,
+          "spacing": 76,
+          "issues": [
+            "edge label overlaps a connector: 2",
+            "edge label overlaps a connector: 5"
+          ]
+        },
+        {
+          "score": 20100.09,
+          "crossings": 0,
+          "orientation": "down",
+          "node_width": 240,
+          "spacing": 76,
+          "issues": [
+            "edge label overlaps a connector: 2",
+            "edge label overlaps a connector: 5"
+          ]
+        },
+        {
+          "score": 20101.46,
+          "crossings": 0,
+          "orientation": "down",
+          "node_width": 300,
+          "spacing": 76,
+          "issues": [
+            "edge label overlaps a connector: 2",
+            "edge label overlaps a connector: 5"
+          ]
+        },
+        {
+          "score": 10060.38,
+          "crossings": 0,
+          "orientation": "right",
+          "node_width": 190,
+          "spacing": 100,
+          "issues": [
+            "edge label has no free space: 4"
+          ]
+        },
+        {
+          "score": 10061.45,
+          "crossings": 0,
+          "orientation": "right",
+          "node_width": 240,
+          "spacing": 100,
+          "issues": [
+            "edge label has no free space: 4"
+          ]
+        },
+        {
+          "score": 10076.13,
+          "crossings": 0,
+          "orientation": "right",
+          "node_width": 300,
+          "spacing": 100,
+          "issues": [
+            "edge label has no free space: 4"
+          ]
+        },
+        {
+          "score": 126.37,
+          "crossings": 0,
+          "orientation": "down",
+          "node_width": 190,
+          "spacing": 100,
+          "issues": []
+        },
+        {
+          "score": 113.09,
+          "crossings": 0,
+          "orientation": "down",
+          "node_width": 240,
+          "spacing": 100,
+          "issues": []
+        },
+        {
+          "score": 114.57,
+          "crossings": 0,
+          "orientation": "down",
+          "node_width": 300,
+          "spacing": 100,
+          "issues": []
+        },
+        {
+          "score": 63.24,
+          "crossings": 0,
+          "orientation": "right",
+          "node_width": 190,
+          "spacing": 168,
+          "issues": []
+        },
+        {
+          "score": 74.28,
+          "crossings": 0,
+          "orientation": "right",
+          "node_width": 240,
+          "spacing": 168,
+          "issues": []
+        },
+        {
+          "score": 100.64,
+          "crossings": 0,
+          "orientation": "right",
+          "node_width": 300,
+          "spacing": 168,
+          "issues": []
+        },
+        {
+          "score": 150.07,
+          "crossings": 0,
+          "orientation": "down",
+          "node_width": 190,
+          "spacing": 168,
+          "issues": []
+        },
+        {
+          "score": 141.41,
+          "crossings": 0,
+          "orientation": "down",
+          "node_width": 240,
+          "spacing": 168,
+          "issues": []
+        },
+        {
+          "score": 143.22,
+          "crossings": 0,
+          "orientation": "down",
+          "node_width": 300,
+          "spacing": 168,
+          "issues": []
+        }
+      ],
+      "selected_score": 63.24,
+      "crossings": 0,
+      "font_measurement": "font-glyph-metrics",
+      "font_family": "Heiti TC",
+      "source_node_ids": [
+        "customer",
+        "channel",
+        "platform",
+        "agent",
+        "partner",
+        "analytics"
+      ],
+      "source_edges": [
+        {
+          "from": "customer",
+          "to": "channel",
+          "label": "发起需求",
+          "tone": "accent"
+        },
+        {
+          "from": "channel",
+          "to": "platform",
+          "label": "提交请求",
+          "tone": "accent"
+        },
+        {
+          "from": "platform",
+          "to": "agent",
+          "label": "分派处理",
+          "tone": "accent"
+        },
+        {
+          "from": "agent",
+          "to": "partner",
+          "label": "请求履约",
+          "tone": "amber"
+        },
+        {
+          "from": "partner",
+          "to": "platform",
+          "label": "回传状态",
+          "tone": "amber",
+          "role": "return",
+          "dashed": true
+        },
+        {
+          "from": "platform",
+          "to": "analytics",
+          "label": "沉淀事件",
+          "tone": "teal"
+        }
+      ],
+      "overview_scale_at_1600": 0.862,
+      "detail_pages_recommended": false,
+      "rendered_visual_check": "not-run",
+      "manual_visual_review": "not-run",
+      "readability": {
+        "reference_viewport": [
+          1600,
+          900
+        ],
+        "available_canvas": [
+          1552,
+          720
+        ],
+        "minimum_content_font_px": 17,
+        "projected_minimum_font_px": 14.66,
+        "review_threshold_px": 12,
+        "status": "within-target",
+        "scope": "projected content text size at reference viewport; not visual acceptance"
+      }
+    },
+    "refined_layout": {
+      "version": 40,
+      "profile": "refined",
+      "manual_visual_review": "not-run"
+    }
+  },
+  "assumptions": [
+    "节点、关系和标签为跨行业演示输入；不代表真实客户、组织或系统。"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "protocol_version": "diagram-studio/delivery-1",
+  "version_id": "v-bf80a750674c",
+  "source_name": "network-en",
+  "input_sha256": "bf80a750674c21880b436f27ac32207afc41f10a50a61cc707e07a06113108fc",
+  "theme": "light",
+  "checks": {
+    "geometry": {
+      "status": "passed",
+      "warnings": []
+    },
+    "composition": {
+      "status": "within-target",
+      "findings": []
+    },
+    "content_integrity": {
+      "status": "passed",
+      "source_ids": 6,
+      "source_relations": 6,
+      "source_texts": 12,
+      "missing_ids": [],
+      "missing_relations": [],
+      "missing_text": [],
+      "scope": "stable source IDs, explicit relation endpoints and source display text; not domain correctness"
+    },
+    "browser_text_bounds": {
+      "status": "not-run"
+    },
+    "manual_visual_review": {
+      "status": "not-run"
+    },
+    "native_editor": {
+      "status": "not-run"
+    }
+  },
+  "files": {
+    "adaptive_reader.js": "9bc0a1eb6bfcf6bc88f5546bab128557ab8cc5daaee9887bcfa3e4d23b426fcf",
+    "browser_quality.js": "e02da63376abe62d68f626d97701d2aacf761f59e6312a420643eab270339e1b",
+    "network-en-p01.qa.json": "5851378fb6f643f653e432386ac29e950d0803cd62fce3dad6ffcf3bd34c7f59",
+    "network-en-p01.svg": "ef79e26682a5d8fddb9374dc745b6780a73c71ca9c155dcc9b0157b121e6cd71",
+    "network-en-p02.qa.json": "90124933005a00aea1538e231e595048bfe88060a83ad7d5faa3bab126ea83aa",
+    "network-en-p02.svg": "3c95e22441c7fc7e3e55cad38ecf540ad5efc0649b8ff61746135e1ceca721a4",
+    "network-en-p03.qa.json": "61231b34bd912a85f8ebcfd93400c1a4f0bdec2af1573d3b7559ab33c9e8c54a",
+    "network-en-p03.svg": "e020fb8b2196489e4608cfb5b05abd38f654893fc6dc4d28fb23ff9109e81455",
+    "network-en-reading.drawio": "a5acb64e8d9a751c103198a5434c8a9ff9c908e16c6748411bd6c8da46041600",
+    "network-en-reading.json": "6736d20a894f0b8e756293316215931451221973e9f0cce70e6aaa158fb54d7b",
+    "network-en.brief.json": "84a9ead6629c81b5be5ecad1809854fa8eca50d3653500951d04f6560b9c24e5",
+    "network-en.drawio": "e2e8d70b5a3b342b1315819746eb58e7e47dec80745bb620bd0daa846bae0e2e",
+    "network-en.html": "335cafbf77b46c3046c5acc662e1684db15e32be6b5f8be931bb72ed8d8f5613",
+    "network-en.qa.json": "05afd780d5667dedbfe9064eb69a374cdbe3a06f9646315a5eeaec82a73b95a3",
+    "network-en.scene.json": "959fd75bd557371273a6fbcdaadd02b48a977dedf4e8e8839ab1b92623691644",
+    "network-en.svg": "cf79828a0668ec34a9ee38af95ee10bf56cda91160500e97b7c1003d3489ce36"
+  },
+  "delivery_scope": "Generation, semantic content checks and QA finish before replacement. Individual files are replaced; promotion is not a multi-file atomic transaction."
+}

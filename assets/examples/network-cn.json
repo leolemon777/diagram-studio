@@ -1,0 +1,27 @@
+{
+  "type": "graph",
+  "layout": {"profile": "refined", "direction": "auto"},
+  "title": "客户服务生态 · 关系网络",
+  "subtitle": "节点是对象，箭头是已声明关系；颜色区分角色，不表示重要性",
+  "eyebrow": "56 / RELATION NETWORK",
+  "nodes": [
+    {"id": "customer", "label": "客户", "detail": "提出需求 · 接收结果", "kind": "ellipse", "tone": "accent"},
+    {"id": "channel", "label": "服务入口", "detail": "App · 门店 · 电话", "tone": "teal"},
+    {"id": "platform", "label": "服务平台", "detail": "身份 · 订单 · 工单", "tone": "accent"},
+    {"id": "agent", "label": "服务团队", "detail": "处理 · 升级 · 回应", "tone": "amber"},
+    {"id": "partner", "label": "合作伙伴", "detail": "交付 · 履约 · 状态", "tone": "amber"},
+    {"id": "analytics", "label": "分析与洞察", "detail": "反馈 · 指标 · 改进", "tone": "red"}
+  ],
+  "edges": [
+    {"from": "customer", "to": "channel", "label": "发起需求", "tone": "accent"},
+    {"from": "channel", "to": "platform", "label": "提交请求", "tone": "accent"},
+    {"from": "platform", "to": "agent", "label": "分派处理", "tone": "accent"},
+    {"from": "agent", "to": "partner", "label": "请求履约", "tone": "amber"},
+    {"from": "partner", "to": "platform", "label": "回传状态", "tone": "amber", "role": "return", "dashed": true},
+    {"from": "platform", "to": "analytics", "label": "沉淀事件", "tone": "teal"}
+  ],
+  "footer": "模拟示例 · 关系类型来自输入，不代表真实组织或系统连接",
+  "family": "跨行业服务",
+  "diagram_name": "关系网络图",
+  "assumptions": ["节点、关系和标签为跨行业演示输入；不代表真实客户、组织或系统。"]
+}
