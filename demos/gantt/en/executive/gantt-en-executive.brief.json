@@ -1,0 +1,98 @@
+{
+  "type": "gantt",
+  "language": "en",
+  "gantt_variant": "executive",
+  "title": "Community service event · launch plan",
+  "subtitle": "Track phases, owners and calendar dates for a cross-team event; dark bars show progress",
+  "eyebrow": "PROJECT PLAN / COMMUNITY SERVICE",
+  "footer": "Simulated plan · inclusive calendar days · critical path not calculated",
+  "assumptions": [
+    "Tasks, dates and progress are illustrative inputs"
+  ],
+  "tasks": [
+    {
+      "id": "scope",
+      "phase": "01 · Frame",
+      "label": "Confirm event scope",
+      "owner": "Programme lead",
+      "start": "2026-10-01",
+      "end": "2026-10-03",
+      "progress": 100
+    },
+    {
+      "id": "content",
+      "phase": "02 · Prepare",
+      "label": "Prepare event content",
+      "owner": "Content team",
+      "start": "2026-10-04",
+      "end": "2026-10-07",
+      "progress": 60,
+      "depends": [
+        "scope"
+      ]
+    },
+    {
+      "id": "partners",
+      "phase": "02 · Prepare",
+      "label": "Confirm local partners",
+      "owner": "Partnerships",
+      "start": "2026-10-04",
+      "end": "2026-10-06",
+      "progress": 100,
+      "depends": [
+        "scope"
+      ]
+    },
+    {
+      "id": "outreach",
+      "phase": "03 · Invite",
+      "label": "Open registration",
+      "owner": "Community team",
+      "start": "2026-10-08",
+      "end": "2026-10-12",
+      "progress": 25,
+      "depends": [
+        "content",
+        "partners"
+      ]
+    },
+    {
+      "id": "logistics",
+      "phase": "03 · Invite",
+      "label": "Set up event logistics",
+      "owner": "Operations",
+      "start": "2026-10-08",
+      "end": "2026-10-13",
+      "progress": 40,
+      "depends": [
+        "partners"
+      ]
+    },
+    {
+      "id": "rehearsal",
+      "phase": "04 · Deliver",
+      "label": "Run a short rehearsal",
+      "owner": "Event team",
+      "start": "2026-10-14",
+      "end": "2026-10-15",
+      "progress": 0,
+      "depends": [
+        "outreach",
+        "logistics"
+      ]
+    },
+    {
+      "id": "event",
+      "phase": "04 · Deliver",
+      "label": "Host the event",
+      "owner": "All teams",
+      "start": "2026-10-16",
+      "end": "2026-10-16",
+      "progress": 0,
+      "milestone": true,
+      "depends": [
+        "rehearsal"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "protocol_version": "diagram-studio/delivery-1",
+  "version_id": "v-ff8f199612bc",
+  "source_name": "gantt-en-executive",
+  "input_sha256": "ff8f199612bc93bbd87d0206bbd1442bf9b062fa8e833184e93b272febda0db3",
+  "theme": "light",
+  "checks": {
+    "geometry": {
+      "status": "passed",
+      "warnings": []
+    },
+    "composition": {
+      "status": "not-run",
+      "findings": []
+    },
+    "content_integrity": {
+      "status": "passed",
+      "source_ids": 7,
+      "source_relations": 8,
+      "source_texts": 7,
+      "missing_ids": [],
+      "missing_relations": [],
+      "missing_text": [],
+      "scope": "stable source IDs, explicit relation endpoints and source display text; not domain correctness"
+    },
+    "browser_text_bounds": {
+      "status": "not-run"
+    },
+    "manual_visual_review": {
+      "status": "not-run"
+    },
+    "native_editor": {
+      "status": "not-run"
+    }
+  },
+  "files": {
+    "gantt-en-executive.brief.json": "ff8f199612bc93bbd87d0206bbd1442bf9b062fa8e833184e93b272febda0db3",
+    "gantt-en-executive.drawio": "64c6f6af35c0fc6b1148cef66f64f1639d15878f4b55fe4863bbabd2b1c70919",
+    "gantt-en-executive.qa.json": "ba218c8c773d78351c7746c30c755df2a07b4cf8bedee28d700ecdb94f0f7da0",
+    "gantt-en-executive.scene.json": "89ee8ab88d9a3b9fe45dc638500fba48d01081b706d8705afed8af00b29adecb",
+    "gantt-en-executive.svg": "54742e1af5435b9e590765d34157282f8c8893e704947ea9532fe964d9ee6130"
+  },
+  "delivery_scope": "Generation, semantic content checks and QA finish before replacement. Individual files are replaced; promotion is not a multi-file atomic transaction."
+}

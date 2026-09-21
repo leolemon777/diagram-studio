@@ -1,0 +1,1338 @@
+{
+  "width": 1600,
+  "height": 900,
+  "theme": "light",
+  "palette": {
+    "bg": "#F1EFEB",
+    "panel": "#FEFDF9",
+    "ink": "#30302D",
+    "muted": "#6D6A63",
+    "line": "#D8D3C8",
+    "accent": "#AC6046",
+    "teal": "#67685E",
+    "amber": "#8C7964",
+    "red": "#554C46",
+    "tint": "#F0E4DA",
+    "tint2": "#ECECE5"
+  },
+  "nodes": [
+    {
+      "id": "_v1",
+      "x": 72,
+      "y": 208,
+      "w": 270,
+      "h": 32,
+      "label": "任务",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 17,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v2",
+      "x": 350,
+      "y": 208,
+      "w": 150,
+      "h": 32,
+      "label": "责任人",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 16,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v3",
+      "x": 510,
+      "y": 208,
+      "w": 154,
+      "h": 32,
+      "label": "起止日期",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 16,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v4",
+      "x": 700,
+      "y": 208,
+      "w": 828,
+      "h": 32,
+      "label": "2026-10-01 — 2026-10-16 · 自然日",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 16,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v5",
+      "x": 700.0,
+      "y": 258,
+      "w": 112,
+      "h": 22,
+      "label": "10/01",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v6",
+      "x": 855.25,
+      "y": 258,
+      "w": 112,
+      "h": 22,
+      "label": "10/04",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v7",
+      "x": 958.75,
+      "y": 258,
+      "w": 112,
+      "h": 22,
+      "label": "10/06",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v8",
+      "x": 1114.0,
+      "y": 258,
+      "w": 112,
+      "h": 22,
+      "label": "10/09",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v9",
+      "x": 1269.25,
+      "y": 258,
+      "w": 112,
+      "h": 22,
+      "label": "10/12",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v10",
+      "x": 1372.75,
+      "y": 258,
+      "w": 112,
+      "h": 22,
+      "label": "10/14",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v11",
+      "x": 72,
+      "y": 312,
+      "w": 260,
+      "h": 28,
+      "label": "确认活动范围",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 17,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v12",
+      "x": 350,
+      "y": 312,
+      "w": 142,
+      "h": 28,
+      "label": "项目负责人",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v13",
+      "x": 510,
+      "y": 312,
+      "w": 154,
+      "h": 28,
+      "label": "10/01 — 10/03",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "scope",
+      "x": 700.0,
+      "y": 326.0,
+      "w": 155.25,
+      "h": 16,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "tint",
+      "stroke": "ink",
+      "check": false
+    },
+    {
+      "id": "_v15",
+      "x": 700.0,
+      "y": 326.0,
+      "w": 155.25,
+      "h": 16,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "ink",
+      "stroke": "none",
+      "check": false,
+      "parent_task": "scope"
+    },
+    {
+      "id": "_v16",
+      "x": 510,
+      "y": 338,
+      "w": 154,
+      "h": 20,
+      "label": "进度 100%",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 12,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v17",
+      "x": 72,
+      "y": 376,
+      "w": 260,
+      "h": 28,
+      "label": "准备活动内容",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 17,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v18",
+      "x": 350,
+      "y": 376,
+      "w": 142,
+      "h": 28,
+      "label": "内容团队",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v19",
+      "x": 510,
+      "y": 376,
+      "w": 154,
+      "h": 28,
+      "label": "10/04 — 10/07",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "content",
+      "x": 855.25,
+      "y": 390.0,
+      "w": 207.0,
+      "h": 16,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "tint",
+      "stroke": "ink",
+      "check": false
+    },
+    {
+      "id": "_v21",
+      "x": 855.25,
+      "y": 390.0,
+      "w": 124.2,
+      "h": 16,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "ink",
+      "stroke": "none",
+      "check": false,
+      "parent_task": "content"
+    },
+    {
+      "id": "_v22",
+      "x": 510,
+      "y": 402,
+      "w": 154,
+      "h": 20,
+      "label": "进度 60%",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 12,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v23",
+      "x": 72,
+      "y": 440,
+      "w": 260,
+      "h": 28,
+      "label": "确认合作伙伴",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 17,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v24",
+      "x": 350,
+      "y": 440,
+      "w": 142,
+      "h": 28,
+      "label": "合作团队",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v25",
+      "x": 510,
+      "y": 440,
+      "w": 154,
+      "h": 28,
+      "label": "10/04 — 10/06",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "partners",
+      "x": 855.25,
+      "y": 454.0,
+      "w": 155.25,
+      "h": 16,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "tint",
+      "stroke": "ink",
+      "check": false
+    },
+    {
+      "id": "_v27",
+      "x": 855.25,
+      "y": 454.0,
+      "w": 155.25,
+      "h": 16,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "ink",
+      "stroke": "none",
+      "check": false,
+      "parent_task": "partners"
+    },
+    {
+      "id": "_v28",
+      "x": 510,
+      "y": 466,
+      "w": 154,
+      "h": 20,
+      "label": "进度 100%",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 12,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v29",
+      "x": 72,
+      "y": 504,
+      "w": 260,
+      "h": 28,
+      "label": "开放报名",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 17,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v30",
+      "x": 350,
+      "y": 504,
+      "w": 142,
+      "h": 28,
+      "label": "社区团队",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v31",
+      "x": 510,
+      "y": 504,
+      "w": 154,
+      "h": 28,
+      "label": "10/08 — 10/12",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "outreach",
+      "x": 1062.25,
+      "y": 518.0,
+      "w": 258.75,
+      "h": 16,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "tint",
+      "stroke": "ink",
+      "check": false
+    },
+    {
+      "id": "_v33",
+      "x": 1062.25,
+      "y": 518.0,
+      "w": 64.6875,
+      "h": 16,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "ink",
+      "stroke": "none",
+      "check": false,
+      "parent_task": "outreach"
+    },
+    {
+      "id": "_v34",
+      "x": 510,
+      "y": 530,
+      "w": 154,
+      "h": 20,
+      "label": "进度 25%",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 12,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v35",
+      "x": 72,
+      "y": 568,
+      "w": 260,
+      "h": 28,
+      "label": "安排现场物料",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 17,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v36",
+      "x": 350,
+      "y": 568,
+      "w": 142,
+      "h": 28,
+      "label": "运营团队",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v37",
+      "x": 510,
+      "y": 568,
+      "w": 154,
+      "h": 28,
+      "label": "10/08 — 10/13",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "logistics",
+      "x": 1062.25,
+      "y": 582.0,
+      "w": 310.5,
+      "h": 16,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "tint",
+      "stroke": "ink",
+      "check": false
+    },
+    {
+      "id": "_v39",
+      "x": 1062.25,
+      "y": 582.0,
+      "w": 124.2,
+      "h": 16,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "ink",
+      "stroke": "none",
+      "check": false,
+      "parent_task": "logistics"
+    },
+    {
+      "id": "_v40",
+      "x": 510,
+      "y": 594,
+      "w": 154,
+      "h": 20,
+      "label": "进度 40%",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 12,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v41",
+      "x": 72,
+      "y": 632,
+      "w": 260,
+      "h": 28,
+      "label": "开展短彩排",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 17,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v42",
+      "x": 350,
+      "y": 632,
+      "w": 142,
+      "h": 28,
+      "label": "活动团队",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v43",
+      "x": 510,
+      "y": 632,
+      "w": 154,
+      "h": 28,
+      "label": "10/14 — 10/15",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "rehearsal",
+      "x": 1372.75,
+      "y": 646.0,
+      "w": 103.5,
+      "h": 16,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "tint",
+      "stroke": "ink",
+      "check": false
+    },
+    {
+      "id": "_v45",
+      "x": 510,
+      "y": 658,
+      "w": 154,
+      "h": 20,
+      "label": "进度 0%",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 12,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v46",
+      "x": 72,
+      "y": 696,
+      "w": 260,
+      "h": 28,
+      "label": "举办活动",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 17,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v47",
+      "x": 350,
+      "y": 696,
+      "w": 142,
+      "h": 28,
+      "label": "全体团队",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v48",
+      "x": 510,
+      "y": 696,
+      "w": 154,
+      "h": 28,
+      "label": "10/16 — 10/16",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "event",
+      "x": 1464.25,
+      "y": 710.0,
+      "w": 24,
+      "h": 16,
+      "label": "",
+      "detail": "",
+      "kind": "diamond",
+      "tone": "accent",
+      "fill": "tint",
+      "stroke": "ink",
+      "check": false
+    },
+    {
+      "id": "_v50",
+      "x": 510,
+      "y": 722,
+      "w": 154,
+      "h": 20,
+      "label": "里程碑",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 12,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v51",
+      "x": 64,
+      "y": 34,
+      "w": 1472,
+      "h": 22,
+      "label": "PROJECT PLAN / 社区服务",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v52",
+      "x": 64,
+      "y": 69,
+      "w": 1472,
+      "h": 56,
+      "label": "社区服务活动 · 上线计划",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 36,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v53",
+      "x": 64,
+      "y": 130,
+      "w": 1472,
+      "h": 38,
+      "label": "按阶段、责任人和实际日期跟踪一场跨团队活动；深色条表示完成进度",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v54",
+      "x": 64,
+      "y": 837,
+      "w": 1472,
+      "h": 1,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "line",
+      "stroke": "none",
+      "check": false
+    },
+    {
+      "id": "_v55",
+      "x": 64,
+      "y": 850,
+      "w": 1472,
+      "h": 36,
+      "label": "模拟排期 · 自然日且包含结束日 · 未计算关键路径",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    }
+  ],
+  "edges": [
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          72,
+          255
+        ],
+        [
+          1528,
+          255
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "tone": "ink",
+      "arrow": false,
+      "width": 1.2
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          700.0,
+          292
+        ],
+        [
+          700.0,
+          760
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "tone": "line",
+      "arrow": false
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          855.25,
+          292
+        ],
+        [
+          855.25,
+          760
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "tone": "line",
+      "arrow": false
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          958.75,
+          292
+        ],
+        [
+          958.75,
+          760
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "tone": "line",
+      "arrow": false
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          1114.0,
+          292
+        ],
+        [
+          1114.0,
+          760
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "tone": "line",
+      "arrow": false
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          1269.25,
+          292
+        ],
+        [
+          1269.25,
+          760
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "tone": "line",
+      "arrow": false
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          1372.75,
+          292
+        ],
+        [
+          1372.75,
+          760
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "tone": "line",
+      "arrow": false
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          1528.0,
+          292
+        ],
+        [
+          1528.0,
+          760
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "tone": "line",
+      "arrow": false
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          72,
+          365
+        ],
+        [
+          1528,
+          365
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "tone": "line",
+      "arrow": false,
+      "width": 0.8
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          72,
+          429
+        ],
+        [
+          1528,
+          429
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "tone": "line",
+      "arrow": false,
+      "width": 0.8
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          72,
+          493
+        ],
+        [
+          1528,
+          493
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "tone": "line",
+      "arrow": false,
+      "width": 0.8
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          72,
+          557
+        ],
+        [
+          1528,
+          557
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "tone": "line",
+      "arrow": false,
+      "width": 0.8
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          72,
+          621
+        ],
+        [
+          1528,
+          621
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "tone": "line",
+      "arrow": false,
+      "width": 0.8
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          72,
+          685
+        ],
+        [
+          1528,
+          685
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "tone": "line",
+      "arrow": false,
+      "width": 0.8
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          72,
+          749
+        ],
+        [
+          1528,
+          749
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "tone": "line",
+      "arrow": false,
+      "width": 0.8
+    },
+    {
+      "source": "scope",
+      "target": "content",
+      "label": "",
+      "points": [
+        [
+          855.25,
+          334
+        ],
+        [
+          867.25,
+          334
+        ],
+        [
+          867.25,
+          398
+        ],
+        [
+          855.25,
+          398
+        ]
+      ],
+      "source_port": "right",
+      "target_port": "left",
+      "tone": "muted",
+      "width": 1.3
+    },
+    {
+      "source": "scope",
+      "target": "partners",
+      "label": "",
+      "points": [
+        [
+          855.25,
+          334
+        ],
+        [
+          867.25,
+          334
+        ],
+        [
+          867.25,
+          462
+        ],
+        [
+          855.25,
+          462
+        ]
+      ],
+      "source_port": "right",
+      "target_port": "left",
+      "tone": "muted",
+      "width": 1.3
+    },
+    {
+      "source": "content",
+      "target": "outreach",
+      "label": "",
+      "points": [
+        [
+          1062.25,
+          398
+        ],
+        [
+          1074.25,
+          398
+        ],
+        [
+          1074.25,
+          526
+        ],
+        [
+          1062.25,
+          526
+        ]
+      ],
+      "source_port": "right",
+      "target_port": "left",
+      "tone": "muted",
+      "width": 1.3
+    },
+    {
+      "source": "partners",
+      "target": "outreach",
+      "label": "",
+      "points": [
+        [
+          1010.5,
+          462
+        ],
+        [
+          1022.5,
+          462
+        ],
+        [
+          1022.5,
+          526
+        ],
+        [
+          1062.25,
+          526
+        ]
+      ],
+      "source_port": "right",
+      "target_port": "left",
+      "tone": "muted",
+      "width": 1.3
+    },
+    {
+      "source": "partners",
+      "target": "logistics",
+      "label": "",
+      "points": [
+        [
+          1010.5,
+          462
+        ],
+        [
+          1022.5,
+          462
+        ],
+        [
+          1022.5,
+          590
+        ],
+        [
+          1062.25,
+          590
+        ]
+      ],
+      "source_port": "right",
+      "target_port": "left",
+      "tone": "muted",
+      "width": 1.3
+    },
+    {
+      "source": "outreach",
+      "target": "rehearsal",
+      "label": "",
+      "points": [
+        [
+          1321.0,
+          526
+        ],
+        [
+          1333.0,
+          526
+        ],
+        [
+          1333.0,
+          654
+        ],
+        [
+          1372.75,
+          654
+        ]
+      ],
+      "source_port": "right",
+      "target_port": "left",
+      "tone": "muted",
+      "width": 1.3
+    },
+    {
+      "source": "logistics",
+      "target": "rehearsal",
+      "label": "",
+      "points": [
+        [
+          1372.75,
+          590
+        ],
+        [
+          1384.75,
+          590
+        ],
+        [
+          1384.75,
+          654
+        ],
+        [
+          1372.75,
+          654
+        ]
+      ],
+      "source_port": "right",
+      "target_port": "left",
+      "tone": "muted",
+      "width": 1.3
+    },
+    {
+      "source": "rehearsal",
+      "target": "event",
+      "label": "",
+      "points": [
+        [
+          1476.25,
+          654
+        ],
+        [
+          1488.25,
+          654
+        ],
+        [
+          1488.25,
+          718
+        ],
+        [
+          1464.25,
+          718
+        ]
+      ],
+      "source_port": "right",
+      "target_port": "left",
+      "tone": "muted",
+      "width": 1.3
+    }
+  ],
+  "meta": {
+    "gantt_variant": "print",
+    "gantt_language": "zh",
+    "calendar": "natural-days-inclusive",
+    "start": "2026-10-01",
+    "end": "2026-10-16",
+    "critical_path": "not-calculated"
+  },
+  "assumptions": [
+    "任务、日期和进度为演示数据"
+  ]
+}

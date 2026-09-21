@@ -1,0 +1,245 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="diagram-title diagram-desc">
+<title id="diagram-title">社区服务活动 · 上线计划</title>
+<desc id="diagram-desc">按阶段、责任人和实际日期跟踪一场跨团队活动；深色条表示完成进度</desc>
+<rect width="100%" height="100%" fill="#F1EFEB"/>
+<defs>
+<marker id="arrow-accent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#AC6046"/></marker>
+<marker id="arrow-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#67685E"/></marker>
+<marker id="arrow-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#8C7964"/></marker>
+<marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#554C46"/></marker>
+<marker id="arrow-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#6D6A63"/></marker>
+<marker id="arrow-line" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#D8D3C8"/></marker>
+<marker id="arrow-ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#30302D"/></marker>
+</defs>
+<g font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, Arial, sans-serif">
+<path d="M72,255 L1528,255" fill="none" stroke="#30302D" stroke-width="1.2" stroke-linejoin="round"/>
+<path d="M700.0,292 L700.0,760" fill="none" stroke="#D8D3C8" stroke-width="2" stroke-linejoin="round"/>
+<path d="M855.25,292 L855.25,760" fill="none" stroke="#D8D3C8" stroke-width="2" stroke-linejoin="round"/>
+<path d="M958.75,292 L958.75,760" fill="none" stroke="#D8D3C8" stroke-width="2" stroke-linejoin="round"/>
+<path d="M1114.0,292 L1114.0,760" fill="none" stroke="#D8D3C8" stroke-width="2" stroke-linejoin="round"/>
+<path d="M1269.25,292 L1269.25,760" fill="none" stroke="#D8D3C8" stroke-width="2" stroke-linejoin="round"/>
+<path d="M1372.75,292 L1372.75,760" fill="none" stroke="#D8D3C8" stroke-width="2" stroke-linejoin="round"/>
+<path d="M1528.0,292 L1528.0,760" fill="none" stroke="#D8D3C8" stroke-width="2" stroke-linejoin="round"/>
+<path d="M72,365 L1528,365" fill="none" stroke="#D8D3C8" stroke-width="0.8" stroke-linejoin="round"/>
+<path d="M72,429 L1528,429" fill="none" stroke="#D8D3C8" stroke-width="0.8" stroke-linejoin="round"/>
+<path d="M72,493 L1528,493" fill="none" stroke="#D8D3C8" stroke-width="0.8" stroke-linejoin="round"/>
+<path d="M72,557 L1528,557" fill="none" stroke="#D8D3C8" stroke-width="0.8" stroke-linejoin="round"/>
+<path d="M72,621 L1528,621" fill="none" stroke="#D8D3C8" stroke-width="0.8" stroke-linejoin="round"/>
+<path d="M72,685 L1528,685" fill="none" stroke="#D8D3C8" stroke-width="0.8" stroke-linejoin="round"/>
+<path d="M72,749 L1528,749" fill="none" stroke="#D8D3C8" stroke-width="0.8" stroke-linejoin="round"/>
+<path d="M855.25,334 L867.25,334 L867.25,398 L855.25,398" fill="none" stroke="#6D6A63" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#arrow-muted)"/>
+<path d="M855.25,334 L867.25,334 L867.25,462 L855.25,462" fill="none" stroke="#6D6A63" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#arrow-muted)"/>
+<path d="M1062.25,398 L1074.25,398 L1074.25,526 L1062.25,526" fill="none" stroke="#6D6A63" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#arrow-muted)"/>
+<path d="M1010.5,462 L1022.5,462 L1022.5,526 L1062.25,526" fill="none" stroke="#6D6A63" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#arrow-muted)"/>
+<path d="M1010.5,462 L1022.5,462 L1022.5,590 L1062.25,590" fill="none" stroke="#6D6A63" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#arrow-muted)"/>
+<path d="M1321.0,526 L1333.0,526 L1333.0,654 L1372.75,654" fill="none" stroke="#6D6A63" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#arrow-muted)"/>
+<path d="M1372.75,590 L1384.75,590 L1384.75,654 L1372.75,654" fill="none" stroke="#6D6A63" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#arrow-muted)"/>
+<path d="M1476.25,654 L1488.25,654 L1488.25,718 L1464.25,718" fill="none" stroke="#6D6A63" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#arrow-muted)"/>
+<g id="_v1" data-kind="text" data-content-text="false" data-box="72,208,270,32">
+
+<text x="72" y="229.525" text-anchor="start" font-size="17" font-weight="400" fill="#30302D">任务</text>
+</g>
+<g id="_v2" data-kind="text" data-content-text="false" data-box="350,208,150,32">
+
+<text x="350" y="229.2" text-anchor="start" font-size="16" font-weight="400" fill="#6D6A63">责任人</text>
+</g>
+<g id="_v3" data-kind="text" data-content-text="false" data-box="510,208,154,32">
+
+<text x="510" y="229.2" text-anchor="start" font-size="16" font-weight="400" fill="#6D6A63">起止日期</text>
+</g>
+<g id="_v4" data-kind="text" data-content-text="false" data-box="700,208,828,32">
+
+<text x="700" y="229.2" text-anchor="start" font-size="16" font-weight="400" fill="#6D6A63">2026-10-01 — 2026-10-16 · 自然日</text>
+</g>
+<g id="_v5" data-kind="text" data-content-text="false" data-box="700.0,258,112,22">
+
+<text x="700.0" y="273.55" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">10/01</text>
+</g>
+<g id="_v6" data-kind="text" data-content-text="false" data-box="855.25,258,112,22">
+
+<text x="855.25" y="273.55" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">10/04</text>
+</g>
+<g id="_v7" data-kind="text" data-content-text="false" data-box="958.75,258,112,22">
+
+<text x="958.75" y="273.55" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">10/06</text>
+</g>
+<g id="_v8" data-kind="text" data-content-text="false" data-box="1114.0,258,112,22">
+
+<text x="1114.0" y="273.55" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">10/09</text>
+</g>
+<g id="_v9" data-kind="text" data-content-text="false" data-box="1269.25,258,112,22">
+
+<text x="1269.25" y="273.55" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">10/12</text>
+</g>
+<g id="_v10" data-kind="text" data-content-text="false" data-box="1372.75,258,112,22">
+
+<text x="1372.75" y="273.55" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">10/14</text>
+</g>
+<g id="_v11" data-kind="text" data-content-text="false" data-box="72,312,260,28">
+
+<text x="72" y="331.525" text-anchor="start" font-size="17" font-weight="400" fill="#30302D">确认活动范围</text>
+</g>
+<g id="_v12" data-kind="text" data-content-text="false" data-box="350,312,142,28">
+
+<text x="350" y="330.55" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">项目负责人</text>
+</g>
+<g id="_v13" data-kind="text" data-content-text="false" data-box="510,312,154,28">
+
+<text x="510" y="330.55" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">10/01 — 10/03</text>
+</g>
+<g id="scope" data-kind="rect" data-content-text="false" data-box="700.0,326.0,155.25,16">
+<rect x="700.0" y="326.0" width="155.25" height="16" rx="10" fill="#F0E4DA" stroke="#30302D" stroke-width="1.5"/>
+</g>
+<g id="_v15" data-kind="rect" data-content-text="false" data-box="700.0,326.0,155.25,16">
+<rect x="700.0" y="326.0" width="155.25" height="16" rx="0" fill="#30302D" stroke="none" stroke-width="1.5"/>
+</g>
+<g id="_v16" data-kind="text" data-content-text="false" data-box="510,338,154,20">
+
+<text x="510" y="351.9" text-anchor="start" font-size="12" font-weight="400" fill="#6D6A63">进度 100%</text>
+</g>
+<g id="_v17" data-kind="text" data-content-text="false" data-box="72,376,260,28">
+
+<text x="72" y="395.525" text-anchor="start" font-size="17" font-weight="400" fill="#30302D">准备活动内容</text>
+</g>
+<g id="_v18" data-kind="text" data-content-text="false" data-box="350,376,142,28">
+
+<text x="350" y="394.55" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">内容团队</text>
+</g>
+<g id="_v19" data-kind="text" data-content-text="false" data-box="510,376,154,28">
+
+<text x="510" y="394.55" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">10/04 — 10/07</text>
+</g>
+<g id="content" data-kind="rect" data-content-text="false" data-box="855.25,390.0,207.0,16">
+<rect x="855.25" y="390.0" width="207.0" height="16" rx="10" fill="#F0E4DA" stroke="#30302D" stroke-width="1.5"/>
+</g>
+<g id="_v21" data-kind="rect" data-content-text="false" data-box="855.25,390.0,124.2,16">
+<rect x="855.25" y="390.0" width="124.2" height="16" rx="0" fill="#30302D" stroke="none" stroke-width="1.5"/>
+</g>
+<g id="_v22" data-kind="text" data-content-text="false" data-box="510,402,154,20">
+
+<text x="510" y="415.9" text-anchor="start" font-size="12" font-weight="400" fill="#6D6A63">进度 60%</text>
+</g>
+<g id="_v23" data-kind="text" data-content-text="false" data-box="72,440,260,28">
+
+<text x="72" y="459.525" text-anchor="start" font-size="17" font-weight="400" fill="#30302D">确认合作伙伴</text>
+</g>
+<g id="_v24" data-kind="text" data-content-text="false" data-box="350,440,142,28">
+
+<text x="350" y="458.55" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">合作团队</text>
+</g>
+<g id="_v25" data-kind="text" data-content-text="false" data-box="510,440,154,28">
+
+<text x="510" y="458.55" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">10/04 — 10/06</text>
+</g>
+<g id="partners" data-kind="rect" data-content-text="false" data-box="855.25,454.0,155.25,16">
+<rect x="855.25" y="454.0" width="155.25" height="16" rx="10" fill="#F0E4DA" stroke="#30302D" stroke-width="1.5"/>
+</g>
+<g id="_v27" data-kind="rect" data-content-text="false" data-box="855.25,454.0,155.25,16">
+<rect x="855.25" y="454.0" width="155.25" height="16" rx="0" fill="#30302D" stroke="none" stroke-width="1.5"/>
+</g>
+<g id="_v28" data-kind="text" data-content-text="false" data-box="510,466,154,20">
+
+<text x="510" y="479.9" text-anchor="start" font-size="12" font-weight="400" fill="#6D6A63">进度 100%</text>
+</g>
+<g id="_v29" data-kind="text" data-content-text="false" data-box="72,504,260,28">
+
+<text x="72" y="523.525" text-anchor="start" font-size="17" font-weight="400" fill="#30302D">开放报名</text>
+</g>
+<g id="_v30" data-kind="text" data-content-text="false" data-box="350,504,142,28">
+
+<text x="350" y="522.55" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">社区团队</text>
+</g>
+<g id="_v31" data-kind="text" data-content-text="false" data-box="510,504,154,28">
+
+<text x="510" y="522.55" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">10/08 — 10/12</text>
+</g>
+<g id="outreach" data-kind="rect" data-content-text="false" data-box="1062.25,518.0,258.75,16">
+<rect x="1062.25" y="518.0" width="258.75" height="16" rx="10" fill="#F0E4DA" stroke="#30302D" stroke-width="1.5"/>
+</g>
+<g id="_v33" data-kind="rect" data-content-text="false" data-box="1062.25,518.0,64.6875,16">
+<rect x="1062.25" y="518.0" width="64.6875" height="16" rx="0" fill="#30302D" stroke="none" stroke-width="1.5"/>
+</g>
+<g id="_v34" data-kind="text" data-content-text="false" data-box="510,530,154,20">
+
+<text x="510" y="543.9" text-anchor="start" font-size="12" font-weight="400" fill="#6D6A63">进度 25%</text>
+</g>
+<g id="_v35" data-kind="text" data-content-text="false" data-box="72,568,260,28">
+
+<text x="72" y="587.525" text-anchor="start" font-size="17" font-weight="400" fill="#30302D">安排现场物料</text>
+</g>
+<g id="_v36" data-kind="text" data-content-text="false" data-box="350,568,142,28">
+
+<text x="350" y="586.55" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">运营团队</text>
+</g>
+<g id="_v37" data-kind="text" data-content-text="false" data-box="510,568,154,28">
+
+<text x="510" y="586.55" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">10/08 — 10/13</text>
+</g>
+<g id="logistics" data-kind="rect" data-content-text="false" data-box="1062.25,582.0,310.5,16">
+<rect x="1062.25" y="582.0" width="310.5" height="16" rx="10" fill="#F0E4DA" stroke="#30302D" stroke-width="1.5"/>
+</g>
+<g id="_v39" data-kind="rect" data-content-text="false" data-box="1062.25,582.0,124.2,16">
+<rect x="1062.25" y="582.0" width="124.2" height="16" rx="0" fill="#30302D" stroke="none" stroke-width="1.5"/>
+</g>
+<g id="_v40" data-kind="text" data-content-text="false" data-box="510,594,154,20">
+
+<text x="510" y="607.9" text-anchor="start" font-size="12" font-weight="400" fill="#6D6A63">进度 40%</text>
+</g>
+<g id="_v41" data-kind="text" data-content-text="false" data-box="72,632,260,28">
+
+<text x="72" y="651.525" text-anchor="start" font-size="17" font-weight="400" fill="#30302D">开展短彩排</text>
+</g>
+<g id="_v42" data-kind="text" data-content-text="false" data-box="350,632,142,28">
+
+<text x="350" y="650.55" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">活动团队</text>
+</g>
+<g id="_v43" data-kind="text" data-content-text="false" data-box="510,632,154,28">
+
+<text x="510" y="650.55" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">10/14 — 10/15</text>
+</g>
+<g id="rehearsal" data-kind="rect" data-content-text="false" data-box="1372.75,646.0,103.5,16">
+<rect x="1372.75" y="646.0" width="103.5" height="16" rx="10" fill="#F0E4DA" stroke="#30302D" stroke-width="1.5"/>
+</g>
+<g id="_v45" data-kind="text" data-content-text="false" data-box="510,658,154,20">
+
+<text x="510" y="671.9" text-anchor="start" font-size="12" font-weight="400" fill="#6D6A63">进度 0%</text>
+</g>
+<g id="_v46" data-kind="text" data-content-text="false" data-box="72,696,260,28">
+
+<text x="72" y="715.525" text-anchor="start" font-size="17" font-weight="400" fill="#30302D">举办活动</text>
+</g>
+<g id="_v47" data-kind="text" data-content-text="false" data-box="350,696,142,28">
+
+<text x="350" y="714.55" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">全体团队</text>
+</g>
+<g id="_v48" data-kind="text" data-content-text="false" data-box="510,696,154,28">
+
+<text x="510" y="714.55" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">10/16 — 10/16</text>
+</g>
+<g id="event" data-kind="diamond" data-content-text="false" data-box="1464.25,710.0,24,16">
+<polygon points="1476.25,710.0 1488.25,718.0 1476.25,726.0 1464.25,718.0" fill="#F0E4DA" stroke="#30302D" stroke-width="1.5"/>
+</g>
+<g id="_v50" data-kind="text" data-content-text="false" data-box="510,722,154,20">
+
+<text x="510" y="735.9" text-anchor="start" font-size="12" font-weight="400" fill="#6D6A63">里程碑</text>
+</g>
+<g id="_v51" data-kind="text" data-content-text="false" data-box="64,34,1472,22">
+
+<text x="64" y="49.55" text-anchor="start" font-size="14" font-weight="400" fill="#AC6046">PROJECT PLAN / 社区服务</text>
+</g>
+<g id="_v52" data-kind="text" data-content-text="false" data-box="64,69,1472,56">
+
+<text x="64" y="108.7" text-anchor="start" font-size="36" font-weight="400" fill="#30302D">社区服务活动 · 上线计划</text>
+</g>
+<g id="_v53" data-kind="text" data-content-text="false" data-box="64,130,1472,38">
+
+<text x="64" y="154.525" text-anchor="start" font-size="17" font-weight="400" fill="#6D6A63">按阶段、责任人和实际日期跟踪一场跨团队活动；深色条表示完成进度</text>
+</g>
+<g id="_v54" data-kind="rect" data-content-text="false" data-box="64,837,1472,1">
+<rect x="64" y="837" width="1472" height="1" rx="0" fill="#D8D3C8" stroke="none" stroke-width="1.5"/>
+</g>
+<g id="_v55" data-kind="text" data-content-text="false" data-box="64,850,1472,36">
+
+<text x="64" y="872.55" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">模拟排期 · 自然日且包含结束日 · 未计算关键路径</text>
+</g>
+</g></svg>

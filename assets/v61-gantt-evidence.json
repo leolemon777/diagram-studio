@@ -1,0 +1,21 @@
+{
+  "version": "v61",
+  "capability": "gantt",
+  "status": "manual_visual_review",
+  "source_examples": [
+    "assets/examples/gantt-cn.json",
+    "assets/examples/gantt-en.json"
+  ],
+  "checks": {
+    "bilingual_truth": "same seven stable task ids, dates, progress values, milestones and finish-to-start dependencies",
+    "variants": "executive, delivery and print outputs are generated from each language truth without changing task semantics",
+    "geometry": "six gallery outputs report zero errors and zero connector warnings",
+    "content": "phase, owner, date range, progress, dependency lines and the same-day milestone remain visible in every applicable view",
+    "browser": "overview gallery and direct SVGs were opened and visually reviewed for Chinese and English labels, bars, dates and milestone alignment"
+  },
+  "limitations": [
+    "The calendar is inclusive natural days; workday calendars, resource balancing and critical-path calculation are not implemented.",
+    "Native draw.io edit, save and reopen behavior is not included in this batch.",
+    "The community event plan is illustrative; real staffing, capacity, policy and delivery commitments require domain review."
+  ]
+}

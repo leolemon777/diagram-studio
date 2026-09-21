@@ -1,0 +1,98 @@
+{
+  "type": "gantt",
+  "language": "zh",
+  "gantt_variant": "delivery",
+  "title": "社区服务活动 · 上线计划",
+  "subtitle": "按阶段、责任人和实际日期跟踪一场跨团队活动；深色条表示完成进度",
+  "eyebrow": "PROJECT PLAN / 社区服务",
+  "footer": "模拟排期 · 自然日且包含结束日 · 未计算关键路径",
+  "assumptions": [
+    "任务、日期和进度为演示数据"
+  ],
+  "tasks": [
+    {
+      "id": "scope",
+      "phase": "01 · 定义",
+      "label": "确认活动范围",
+      "owner": "项目负责人",
+      "start": "2026-10-01",
+      "end": "2026-10-03",
+      "progress": 100
+    },
+    {
+      "id": "content",
+      "phase": "02 · 准备",
+      "label": "准备活动内容",
+      "owner": "内容团队",
+      "start": "2026-10-04",
+      "end": "2026-10-07",
+      "progress": 60,
+      "depends": [
+        "scope"
+      ]
+    },
+    {
+      "id": "partners",
+      "phase": "02 · 准备",
+      "label": "确认合作伙伴",
+      "owner": "合作团队",
+      "start": "2026-10-04",
+      "end": "2026-10-06",
+      "progress": 100,
+      "depends": [
+        "scope"
+      ]
+    },
+    {
+      "id": "outreach",
+      "phase": "03 · 邀请",
+      "label": "开放报名",
+      "owner": "社区团队",
+      "start": "2026-10-08",
+      "end": "2026-10-12",
+      "progress": 25,
+      "depends": [
+        "content",
+        "partners"
+      ]
+    },
+    {
+      "id": "logistics",
+      "phase": "03 · 邀请",
+      "label": "安排现场物料",
+      "owner": "运营团队",
+      "start": "2026-10-08",
+      "end": "2026-10-13",
+      "progress": 40,
+      "depends": [
+        "partners"
+      ]
+    },
+    {
+      "id": "rehearsal",
+      "phase": "04 · 交付",
+      "label": "开展短彩排",
+      "owner": "活动团队",
+      "start": "2026-10-14",
+      "end": "2026-10-15",
+      "progress": 0,
+      "depends": [
+        "outreach",
+        "logistics"
+      ]
+    },
+    {
+      "id": "event",
+      "phase": "04 · 交付",
+      "label": "举办活动",
+      "owner": "全体团队",
+      "start": "2026-10-16",
+      "end": "2026-10-16",
+      "progress": 0,
+      "milestone": true,
+      "depends": [
+        "rehearsal"
+      ]
+    }
+  ]
+}

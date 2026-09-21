@@ -225,6 +225,43 @@ def gantt_parse(d):
         ids[task['id']]=len(parsed);parsed.append((task,a,b))
     return parsed,ids,min(x[1] for x in parsed),max(x[2] for x in parsed)
 
+def gantt_copy(d,start,end):
+    """Return language-aware labels for the three Gantt reading modes.
+
+    Existing briefs default to the original Chinese copy.  New briefs may set
+    ``language: "en"`` or override individual labels with ``labels`` while
+    keeping the task truth identical across localized variants.
+    """
+    language=d.get('language','zh')
+    need(language in {'zh','en'},'gantt language must be zh or en')
+    if language=='en':
+        labels={
+            'delivery_header':'Task / owner',
+            'progress_header':'Progress',
+            'calendar':'{start} — {end} · calendar days (inclusive)',
+            'executive_header':'Phase / key item',
+            'print_task':'Task',
+            'print_owner':'Owner',
+            'print_dates':'Dates',
+            'milestone':'Milestone',
+            'progress_prefix':'Progress ',
+        }
+    else:
+        labels={
+            'delivery_header':'任务 / 责任人',
+            'progress_header':'进度',
+            'calendar':'{start} — {end} · 自然日',
+            'executive_header':'阶段 / 关键事项',
+            'print_task':'任务',
+            'print_owner':'责任人',
+            'print_dates':'起止日期',
+            'milestone':'里程碑',
+            'progress_prefix':'进度 ',
+        }
+    labels.update(d.get('labels',{}))
+    labels['calendar']=labels['calendar'].format(start=start.isoformat(),end=end.isoformat())
+    return labels
+
 def gantt_grid(s,start,days,x0,usable,y0,y1,ticks=7):
     for j in range(ticks):
         day=round(j*days/(ticks-1));x=x0+day*usable/days
@@ -249,51 +286,52 @@ def gantt_bar(s,task,a,b,period_start,x0,unit,y,bars,bar_height=24,tone='accent'
         s.add(x,y-bar_height/2,w*progress/100,bar_height,kind='rect',fill=tone,stroke='none',check=False,parent_task=task['id'])
     bars[task['id']]=(x,y,w)
 
-def gantt_delivery(s,parsed,ids,start,end):
-    days=(end-start).days+1;x0=500;usable=s.w-x0-100;unit=usable/days;rowh=76;y0=282
-    s.text(82,208,300,40,'任务 / 责任人',18,'muted');s.text(402,208,74,40,'进度',16,'muted',align='right');s.text(x0,208,usable,40,f'{start.isoformat()} — {end.isoformat()} · 自然日',18,'muted')
+def gantt_delivery(s,parsed,ids,start,end,labels):
+    days=(end-start).days+1;x0=500;usable=s.w-x0-100;unit=usable/days;rowh=76;y0=312
+    s.text(82,208,300,40,labels['delivery_header'],18,'muted');s.text(402,208,74,40,labels['progress_header'],16,'muted',align='right');s.text(x0,208,usable,40,labels['calendar'],18,'muted')
     gantt_grid(s,start,days,x0,usable,y0-20,y0+len(parsed)*rowh)
     bars={}
     for i,(task,a,b) in enumerate(parsed):
-        y=y0+i*rowh;s.text(82,y,300,30,task['label'],20);s.text(82,y+32,300,22,task.get('owner','')+'  ·  '+a.strftime('%m/%d')+' — '+b.strftime('%m/%d'),14,'muted')
+        y=y0+i*rowh;s.text(82,y,300,30,task['label'],20,word_wrap=True);s.text(82,y+32,300,22,task.get('owner','')+'  ·  '+a.strftime('%m/%d')+' — '+b.strftime('%m/%d'),14,'muted',word_wrap=True)
         gantt_bar(s,task,a,b,start,x0,unit,y+21,bars)
-        s.text(392,y+7,84,30,'里程碑' if task.get('milestone') else f"{task.get('progress',0)}%",14,'muted',align='right')
+        s.text(392,y+7,84,30,labels['milestone'] if task.get('milestone') else f"{task.get('progress',0)}%",14,'muted',align='right',word_wrap=True)
     gantt_dependencies(s,parsed,ids,bars);s.h=max(s.h,y0+len(parsed)*rowh+100)
 
-def gantt_executive(s,parsed,ids,start,end):
+def gantt_executive(s,parsed,ids,start,end,labels):
     need(all(task.get('phase') for task,_,_ in parsed),'executive gantt requires a phase for every task')
-    days=(end-start).days+1;x0=450;usable=s.w-x0-100;unit=usable/days;y=265;bars={};last_phase=None
-    s.text(82,208,300,40,'阶段 / 关键事项',18,'muted');s.text(x0,208,usable,40,f'{start.isoformat()} — {end.isoformat()} · 自然日',18,'muted')
+    days=(end-start).days+1;x0=450;usable=s.w-x0-100;unit=usable/days;y=295;bars={};last_phase=None
+    s.text(82,208,300,40,labels['executive_header'],18,'muted');s.text(x0,208,usable,40,labels['calendar'],18,'muted')
     for i,(task,a,b) in enumerate(parsed):
         if task['phase']!=last_phase:
             if last_phase is not None:y+=18
             s.add(72,y,340,34,kind='panel',fill='tint2',stroke='none',check=False)
             s.text(92,y+6,292,24,task['phase'],15,'accent');y+=44;last_phase=task['phase']
-        row_y=y;s.text(96,row_y,296,26,task['label'],18);gantt_bar(s,task,a,b,start,x0,unit,row_y+13,bars,bar_height=18)
+        row_y=y;s.text(96,row_y,296,26,task['label'],18,word_wrap=True);gantt_bar(s,task,a,b,start,x0,unit,row_y+13,bars,bar_height=18)
         if task.get('milestone'):s.text(392,row_y,42,24,'◆',14,'accent',align='right')
         y+=50
-    gantt_grid(s,start,days,x0,usable,245,y-8)
+    gantt_grid(s,start,days,x0,usable,275,y-8)
     gantt_dependencies(s,parsed,ids,bars);s.h=max(s.h,y+90)
 
-def gantt_print(s,parsed,ids,start,end):
-    days=(end-start).days+1;x0=700;usable=s.w-x0-72;unit=usable/days;rowh=64;y0=282;bars={}
-    s.text(72,208,270,32,'任务',17,'ink');s.text(350,208,150,32,'责任人',16,'muted');s.text(510,208,154,32,'起止日期',16,'muted');s.text(x0,208,usable,32,f'{start.isoformat()} — {end.isoformat()} · 自然日',16,'muted')
+def gantt_print(s,parsed,ids,start,end,labels):
+    days=(end-start).days+1;x0=700;usable=s.w-x0-72;unit=usable/days;rowh=64;y0=312;bars={}
+    s.text(72,208,270,32,labels['print_task'],17,'ink');s.text(350,208,150,32,labels['print_owner'],16,'muted');s.text(510,208,154,32,labels['print_dates'],16,'muted');s.text(x0,208,usable,32,labels['calendar'],16,'muted')
     s.edge(points=[(72,255),(s.w-72,255)],tone='ink',arrow=False,width=1.2)
     gantt_grid(s,start,days,x0,usable,y0-20,y0+len(parsed)*rowh)
     for i,(task,a,b) in enumerate(parsed):
         y=y0+i*rowh;s.edge(points=[(72,y+53),(s.w-72,y+53)],tone='line',arrow=False,width=.8)
-        s.text(72,y,260,28,task['label'],17);s.text(350,y,142,28,task.get('owner',''),14,'muted');s.text(510,y,154,28,a.strftime('%m/%d')+' — '+b.strftime('%m/%d'),14,'muted')
+        s.text(72,y,260,28,task['label'],17,word_wrap=True);s.text(350,y,142,28,task.get('owner',''),14,'muted',word_wrap=True);s.text(510,y,154,28,a.strftime('%m/%d')+' — '+b.strftime('%m/%d'),14,'muted')
         gantt_bar(s,task,a,b,start,x0,unit,y+22,bars,bar_height=16,tone='ink')
-        s.text(510,y+26,154,20,'里程碑' if task.get('milestone') else f"进度 {task.get('progress',0)}%",12,'muted')
+        s.text(510,y+26,154,20,labels['milestone'] if task.get('milestone') else f"{labels['progress_prefix']}{task.get('progress',0)}%",12,'muted',word_wrap=True)
     gantt_dependencies(s,parsed,ids,bars);s.h=max(s.h,y0+len(parsed)*rowh+100)
 
 def gantt(s,d):
     parsed,ids,start,end=gantt_parse(d);variant=d.get('gantt_variant','delivery')
     need(variant in {'executive','delivery','print'},'gantt_variant must be executive, delivery, or print')
-    if variant=='executive':gantt_executive(s,parsed,ids,start,end)
-    elif variant=='print':gantt_print(s,parsed,ids,start,end)
-    else:gantt_delivery(s,parsed,ids,start,end)
-    s.meta.update({'gantt_variant':variant,'calendar':'natural-days-inclusive','start':start.isoformat(),'end':end.isoformat(),'critical_path':'not-calculated'})
+    labels=gantt_copy(d,start,end)
+    if variant=='executive':gantt_executive(s,parsed,ids,start,end,labels)
+    elif variant=='print':gantt_print(s,parsed,ids,start,end,labels)
+    else:gantt_delivery(s,parsed,ids,start,end,labels)
+    s.meta.update({'gantt_variant':variant,'gantt_language':d.get('language','zh'),'calendar':'natural-days-inclusive','start':start.isoformat(),'end':end.isoformat(),'critical_path':'not-calculated'})
 
 def matrix(s,d):
     cells=d['cells'];cols=d.get('columns',2);need(1<=cols<=4,'matrix columns: 1–4');need(cells,'empty matrix')

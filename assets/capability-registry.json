@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "version": "v60",
+  "version": "v61",
   "updated": "2026-09-20",
   "purpose": "Single source for chooser labels, backend capability, delivery formats and acceptance evidence.",
   "status_vocabulary": {
@@ -138,8 +138,8 @@
           "formats": ["svg", "drawio", "scene.json", "qa.json", "html"],
           "layout_limits": {"zh": "自然日比例、依赖端点和进度分开表达；关键路径不自动计算。", "en": "Natural-day scale, dependency endpoints and progress are separate; critical path is not calculated."},
           "languages": ["zh", "en"],
-          "examples": ["assets/examples/06-gantt.json", "assets/examples/61-gantt-delivery.json", "assets/examples/62-gantt-print.json"],
-          "evidence": {"level": "manual_visual_review", "reference": "assets/verification-status.json", "detail": {"zh": "三个甘特变体和依赖对象已有代表性检查；原生编辑仍需扩展。", "en": "Three Gantt variants and dependency objects have representative checks; native editing coverage remains limited."}},
+          "examples": ["assets/examples/gantt-cn.json", "assets/examples/gantt-en.json"],
+          "evidence": {"level": "manual_visual_review", "reference": "assets/v61-gantt-evidence.json", "detail": {"zh": "中英同一份跨行业任务真值生成汇报、执行、打印三版；日期、进度、依赖和里程碑已做浏览器复核。", "en": "Executive, delivery and print views are generated from shared Chinese/English cross-industry task truth; dates, progress, dependencies and milestone were browser-reviewed."}},
           "scope": {"zh": "适合已知日期的执行计划；路线方向和关键路径需另行声明。", "en": "For dated execution plans; directional roadmaps and critical paths require separate declarations."}
         },
         {

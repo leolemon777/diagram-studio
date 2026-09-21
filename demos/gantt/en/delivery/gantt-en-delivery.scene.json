@@ -1,0 +1,1066 @@
+{
+  "width": 1600,
+  "height": 944,
+  "theme": "light",
+  "palette": {
+    "bg": "#F1EFEB",
+    "panel": "#FEFDF9",
+    "ink": "#30302D",
+    "muted": "#6D6A63",
+    "line": "#D8D3C8",
+    "accent": "#AC6046",
+    "teal": "#67685E",
+    "amber": "#8C7964",
+    "red": "#554C46",
+    "tint": "#F0E4DA",
+    "tint2": "#ECECE5"
+  },
+  "nodes": [
+    {
+      "id": "_v1",
+      "x": 82,
+      "y": 208,
+      "w": 300,
+      "h": 40,
+      "label": "Task / owner",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 18,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v2",
+      "x": 402,
+      "y": 208,
+      "w": 74,
+      "h": 40,
+      "label": "Progress",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 16,
+      "align": "right",
+      "check": false
+    },
+    {
+      "id": "_v3",
+      "x": 500,
+      "y": 208,
+      "w": 1000,
+      "h": 40,
+      "label": "2026-10-01 — 2026-10-16 · calendar days (inclusive)",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 18,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v4",
+      "x": 500.0,
+      "y": 258,
+      "w": 112,
+      "h": 22,
+      "label": "10/01",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v5",
+      "x": 687.5,
+      "y": 258,
+      "w": 112,
+      "h": 22,
+      "label": "10/04",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v6",
+      "x": 812.5,
+      "y": 258,
+      "w": 112,
+      "h": 22,
+      "label": "10/06",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v7",
+      "x": 1000.0,
+      "y": 258,
+      "w": 112,
+      "h": 22,
+      "label": "10/09",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v8",
+      "x": 1187.5,
+      "y": 258,
+      "w": 112,
+      "h": 22,
+      "label": "10/12",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v9",
+      "x": 1312.5,
+      "y": 258,
+      "w": 112,
+      "h": 22,
+      "label": "10/14",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v10",
+      "x": 82,
+      "y": 312,
+      "w": 300,
+      "h": 30,
+      "label": "Confirm event scope",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 20,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v11",
+      "x": 82,
+      "y": 344,
+      "w": 300,
+      "h": 22,
+      "label": "Programme lead  ·  10/01 — 10/03",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "scope",
+      "x": 500.0,
+      "y": 321.0,
+      "w": 187.5,
+      "h": 24,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "tint",
+      "stroke": "accent",
+      "check": false
+    },
+    {
+      "id": "_v13",
+      "x": 500.0,
+      "y": 321.0,
+      "w": 187.5,
+      "h": 24,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "accent",
+      "stroke": "none",
+      "check": false,
+      "parent_task": "scope"
+    },
+    {
+      "id": "_v14",
+      "x": 392,
+      "y": 319,
+      "w": 84,
+      "h": 30,
+      "label": "100%",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "right",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v15",
+      "x": 82,
+      "y": 388,
+      "w": 300,
+      "h": 30,
+      "label": "Prepare event content",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 20,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v16",
+      "x": 82,
+      "y": 420,
+      "w": 300,
+      "h": 22,
+      "label": "Content team  ·  10/04 — 10/07",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "content",
+      "x": 687.5,
+      "y": 397.0,
+      "w": 250.0,
+      "h": 24,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "tint",
+      "stroke": "accent",
+      "check": false
+    },
+    {
+      "id": "_v18",
+      "x": 687.5,
+      "y": 397.0,
+      "w": 150.0,
+      "h": 24,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "accent",
+      "stroke": "none",
+      "check": false,
+      "parent_task": "content"
+    },
+    {
+      "id": "_v19",
+      "x": 392,
+      "y": 395,
+      "w": 84,
+      "h": 30,
+      "label": "60%",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "right",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v20",
+      "x": 82,
+      "y": 464,
+      "w": 300,
+      "h": 30,
+      "label": "Confirm local partners",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 20,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v21",
+      "x": 82,
+      "y": 496,
+      "w": 300,
+      "h": 22,
+      "label": "Partnerships  ·  10/04 — 10/06",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "partners",
+      "x": 687.5,
+      "y": 473.0,
+      "w": 187.5,
+      "h": 24,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "tint",
+      "stroke": "accent",
+      "check": false
+    },
+    {
+      "id": "_v23",
+      "x": 687.5,
+      "y": 473.0,
+      "w": 187.5,
+      "h": 24,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "accent",
+      "stroke": "none",
+      "check": false,
+      "parent_task": "partners"
+    },
+    {
+      "id": "_v24",
+      "x": 392,
+      "y": 471,
+      "w": 84,
+      "h": 30,
+      "label": "100%",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "right",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v25",
+      "x": 82,
+      "y": 540,
+      "w": 300,
+      "h": 30,
+      "label": "Open registration",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 20,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v26",
+      "x": 82,
+      "y": 572,
+      "w": 300,
+      "h": 22,
+      "label": "Community team  ·  10/08 — 10/12",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "outreach",
+      "x": 937.5,
+      "y": 549.0,
+      "w": 312.5,
+      "h": 24,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "tint",
+      "stroke": "accent",
+      "check": false
+    },
+    {
+      "id": "_v28",
+      "x": 937.5,
+      "y": 549.0,
+      "w": 78.125,
+      "h": 24,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "accent",
+      "stroke": "none",
+      "check": false,
+      "parent_task": "outreach"
+    },
+    {
+      "id": "_v29",
+      "x": 392,
+      "y": 547,
+      "w": 84,
+      "h": 30,
+      "label": "25%",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "right",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v30",
+      "x": 82,
+      "y": 616,
+      "w": 300,
+      "h": 30,
+      "label": "Set up event logistics",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 20,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v31",
+      "x": 82,
+      "y": 648,
+      "w": 300,
+      "h": 22,
+      "label": "Operations  ·  10/08 — 10/13",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "logistics",
+      "x": 937.5,
+      "y": 625.0,
+      "w": 375.0,
+      "h": 24,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "tint",
+      "stroke": "accent",
+      "check": false
+    },
+    {
+      "id": "_v33",
+      "x": 937.5,
+      "y": 625.0,
+      "w": 150.0,
+      "h": 24,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "accent",
+      "stroke": "none",
+      "check": false,
+      "parent_task": "logistics"
+    },
+    {
+      "id": "_v34",
+      "x": 392,
+      "y": 623,
+      "w": 84,
+      "h": 30,
+      "label": "40%",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "right",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v35",
+      "x": 82,
+      "y": 692,
+      "w": 300,
+      "h": 30,
+      "label": "Run a short rehearsal",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 20,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v36",
+      "x": 82,
+      "y": 724,
+      "w": 300,
+      "h": 22,
+      "label": "Event team  ·  10/14 — 10/15",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "rehearsal",
+      "x": 1312.5,
+      "y": 701.0,
+      "w": 125.0,
+      "h": 24,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "tint",
+      "stroke": "accent",
+      "check": false
+    },
+    {
+      "id": "_v38",
+      "x": 392,
+      "y": 699,
+      "w": 84,
+      "h": 30,
+      "label": "0%",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "right",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v39",
+      "x": 82,
+      "y": 768,
+      "w": 300,
+      "h": 30,
+      "label": "Host the event",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 20,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v40",
+      "x": 82,
+      "y": 800,
+      "w": 300,
+      "h": 22,
+      "label": "All teams  ·  10/16 — 10/16",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "event",
+      "x": 1425.5,
+      "y": 777.0,
+      "w": 24,
+      "h": 24,
+      "label": "",
+      "detail": "",
+      "kind": "diamond",
+      "tone": "accent",
+      "fill": "tint",
+      "stroke": "accent",
+      "check": false
+    },
+    {
+      "id": "_v42",
+      "x": 392,
+      "y": 775,
+      "w": 84,
+      "h": 30,
+      "label": "Milestone",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "right",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v43",
+      "x": 64,
+      "y": 34,
+      "w": 1472,
+      "h": 22,
+      "label": "PROJECT PLAN / COMMUNITY SERVICE",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v44",
+      "x": 64,
+      "y": 69,
+      "w": 1472,
+      "h": 56,
+      "label": "Community service event · launch plan",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 36,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v45",
+      "x": 64,
+      "y": 130,
+      "w": 1472,
+      "h": 38,
+      "label": "Track phases, owners and calendar dates for a cross-team event; dark bars show progress",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v46",
+      "x": 64,
+      "y": 881,
+      "w": 1472,
+      "h": 1,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "line",
+      "stroke": "none",
+      "check": false
+    },
+    {
+      "id": "_v47",
+      "x": 64,
+      "y": 894,
+      "w": 1472,
+      "h": 36,
+      "label": "Simulated plan · inclusive calendar days · critical path not calculated",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    }
+  ],
+  "edges": [
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          500.0,
+          292
+        ],
+        [
+          500.0,
+          844
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "tone": "line",
+      "arrow": false
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          687.5,
+          292
+        ],
+        [
+          687.5,
+          844
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "tone": "line",
+      "arrow": false
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          812.5,
+          292
+        ],
+        [
+          812.5,
+          844
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "tone": "line",
+      "arrow": false
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          1000.0,
+          292
+        ],
+        [
+          1000.0,
+          844
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "tone": "line",
+      "arrow": false
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          1187.5,
+          292
+        ],
+        [
+          1187.5,
+          844
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "tone": "line",
+      "arrow": false
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          1312.5,
+          292
+        ],
+        [
+          1312.5,
+          844
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "tone": "line",
+      "arrow": false
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          1500.0,
+          292
+        ],
+        [
+          1500.0,
+          844
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "tone": "line",
+      "arrow": false
+    },
+    {
+      "source": "scope",
+      "target": "content",
+      "label": "",
+      "points": [
+        [
+          687.5,
+          333
+        ],
+        [
+          699.5,
+          333
+        ],
+        [
+          699.5,
+          409
+        ],
+        [
+          687.5,
+          409
+        ]
+      ],
+      "source_port": "right",
+      "target_port": "left",
+      "tone": "muted",
+      "width": 1.3
+    },
+    {
+      "source": "scope",
+      "target": "partners",
+      "label": "",
+      "points": [
+        [
+          687.5,
+          333
+        ],
+        [
+          699.5,
+          333
+        ],
+        [
+          699.5,
+          485
+        ],
+        [
+          687.5,
+          485
+        ]
+      ],
+      "source_port": "right",
+      "target_port": "left",
+      "tone": "muted",
+      "width": 1.3
+    },
+    {
+      "source": "content",
+      "target": "outreach",
+      "label": "",
+      "points": [
+        [
+          937.5,
+          409
+        ],
+        [
+          949.5,
+          409
+        ],
+        [
+          949.5,
+          561
+        ],
+        [
+          937.5,
+          561
+        ]
+      ],
+      "source_port": "right",
+      "target_port": "left",
+      "tone": "muted",
+      "width": 1.3
+    },
+    {
+      "source": "partners",
+      "target": "outreach",
+      "label": "",
+      "points": [
+        [
+          875.0,
+          485
+        ],
+        [
+          887.0,
+          485
+        ],
+        [
+          887.0,
+          561
+        ],
+        [
+          937.5,
+          561
+        ]
+      ],
+      "source_port": "right",
+      "target_port": "left",
+      "tone": "muted",
+      "width": 1.3
+    },
+    {
+      "source": "partners",
+      "target": "logistics",
+      "label": "",
+      "points": [
+        [
+          875.0,
+          485
+        ],
+        [
+          887.0,
+          485
+        ],
+        [
+          887.0,
+          637
+        ],
+        [
+          937.5,
+          637
+        ]
+      ],
+      "source_port": "right",
+      "target_port": "left",
+      "tone": "muted",
+      "width": 1.3
+    },
+    {
+      "source": "outreach",
+      "target": "rehearsal",
+      "label": "",
+      "points": [
+        [
+          1250.0,
+          561
+        ],
+        [
+          1262.0,
+          561
+        ],
+        [
+          1262.0,
+          713
+        ],
+        [
+          1312.5,
+          713
+        ]
+      ],
+      "source_port": "right",
+      "target_port": "left",
+      "tone": "muted",
+      "width": 1.3
+    },
+    {
+      "source": "logistics",
+      "target": "rehearsal",
+      "label": "",
+      "points": [
+        [
+          1312.5,
+          637
+        ],
+        [
+          1324.5,
+          637
+        ],
+        [
+          1324.5,
+          713
+        ],
+        [
+          1312.5,
+          713
+        ]
+      ],
+      "source_port": "right",
+      "target_port": "left",
+      "tone": "muted",
+      "width": 1.3
+    },
+    {
+      "source": "rehearsal",
+      "target": "event",
+      "label": "",
+      "points": [
+        [
+          1437.5,
+          713
+        ],
+        [
+          1449.5,
+          713
+        ],
+        [
+          1449.5,
+          789
+        ],
+        [
+          1425.5,
+          789
+        ]
+      ],
+      "source_port": "right",
+      "target_port": "left",
+      "tone": "muted",
+      "width": 1.3
+    }
+  ],
+  "meta": {
+    "gantt_variant": "delivery",
+    "gantt_language": "en",
+    "calendar": "natural-days-inclusive",
+    "start": "2026-10-01",
+    "end": "2026-10-16",
+    "critical_path": "not-calculated"
+  },
+  "assumptions": [
+    "Tasks, dates and progress are illustrative inputs"
+  ]
+}
