@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "protocol_version": "diagram-studio/delivery-1",
+  "version_id": "v-af5236699ea2",
+  "source_name": "marketing-retrospective",
+  "input_sha256": "af5236699ea23e32010b41751a2b364db33065dff1da1798a0524799f4c17c7b",
+  "theme": "light",
+  "checks": {
+    "geometry": {
+      "status": "passed",
+      "warnings": []
+    },
+    "composition": {
+      "status": "not-run",
+      "findings": []
+    },
+    "content_integrity": {
+      "status": "passed",
+      "source_ids": 0,
+      "source_relations": 0,
+      "source_texts": 25,
+      "missing_ids": [],
+      "missing_relations": [],
+      "missing_text": [],
+      "scope": "stable source IDs, explicit relation endpoints and source display text; not domain correctness"
+    },
+    "browser_text_bounds": {
+      "status": "not-run"
+    },
+    "manual_visual_review": {
+      "status": "not-run"
+    },
+    "native_editor": {
+      "status": "not-run"
+    }
+  },
+  "files": {
+    "marketing-retrospective.brief.json": "6f1123df750787b79cde76b8186a61f982856f105c00981fb6524b4fe235bf3d",
+    "marketing-retrospective.drawio": "f43dfedbe602858a06f9f7110e46ed1478b8a2bd68080f6b5d05e8ab44cee20e",
+    "marketing-retrospective.qa.json": "e6dce6f55c978ac4aa14ee0d4a2412075c429ff0b6bc305e641f381ced54d64c",
+    "marketing-retrospective.scene.json": "ee4e8756f4a7f39c255615afb7f0fac3fdb09d20e47be00f438ff9dd5a3d2b25",
+    "marketing-retrospective.svg": "eb596bd5c2d1dd7cfba49b94b6695e8f41a4934e4f84b8d0a0374b3d53c3a13b"
+  },
+  "delivery_scope": "Generation, semantic content checks and QA finish before replacement. Individual files are replaced; promotion is not a multi-file atomic transaction."
+}

@@ -27,6 +27,39 @@ def wrap(s,width,size):
         lines.append(line)
     return lines
 
+def wrap_words(s,width,size):
+    """Wrap mixed CJK/Latin copy without splitting ordinary Latin words."""
+    lines=[]
+    for para in str(s).split('\n'):
+        units=[];i=0
+        while i<len(para):
+            c=para[i]
+            if c.isspace():
+                j=i+1
+                while j<len(para) and para[j].isspace():j+=1
+                units.append(('space',para[i:j]));i=j;continue
+            if unicodedata.east_asian_width(c) in 'WF':
+                units.append(('word',c));i+=1;continue
+            j=i+1
+            while j<len(para) and not para[j].isspace() and unicodedata.east_asian_width(para[j]) not in 'WF':j+=1
+            units.append(('word',para[i:j]));i=j
+        line='';pending_space=False
+        for kind,unit in units:
+            if kind=='space':pending_space=bool(line);continue
+            candidate=line+(' ' if pending_space and line else '')+unit
+            if line and measure(candidate,size)>width:
+                lines.append(line.rstrip());line='';pending_space=False;candidate=unit
+            if measure(candidate,size)<=width:
+                line=candidate;pending_space=False;continue
+            # A single token can be wider than its cell; split only then.
+            for char in unit:
+                if line and measure(line+char,size)>width:
+                    lines.append(line.rstrip());line=''
+                line+=char
+            pending_space=False
+        lines.append(line.rstrip())
+    return lines
+
 def color(t,value): return t.get(value,value)
 def finite(v): return isinstance(v,(int,float)) and not isinstance(v,bool) and math.isfinite(v)
 
@@ -358,12 +391,13 @@ BUILDERS.update(EXPERIENCE_BUILDERS)
 def label_lines(n):
     if '_lines' in n:return n['_lines']
     if not n['label'] and not n['detail']:return []
+    wrapper=wrap_words if n.get('word_wrap') else wrap
     if n['kind']=='text':
-        fs=n.get('fs',18);return [(line,fs,n.get('bold',False),n['tone']) for line in wrap(n['label'],n['w'],fs)]
+        fs=n.get('fs',18);return [(line,fs,n.get('bold',False),n['tone']) for line in wrapper(n['label'],n['w'],fs)]
     if n['kind']=='panel':return [(n['label'],20,True,'muted')] if n['label'] else []
     fs=n.get('fs',22);width=n['w']-(80 if n['kind']=='diamond' else 30)
-    lines=[(line,fs,True,'ink') for line in wrap(n['label'],width,fs)]
-    if n['detail']:lines +=[(line,16,False,'muted') for line in wrap(n['detail'],width,16)]
+    lines=[(line,fs,True,'ink') for line in wrapper(n['label'],width,fs)]
+    if n['detail']:lines +=[(line,16,False,'muted') for line in wrapper(n['detail'],width,16)]
     return lines
 
 def svg(s):

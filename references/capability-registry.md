@@ -1,26 +1,30 @@
 # 能力登记与交付范围
 
-机器可读源是 [`assets/capability-registry.json`](../assets/capability-registry.json)。选图向导从同一份登记读取结构、后端、格式和验收状态；运行 `python3 scripts/capability_registry.py --check` 会检查所有后端、示例和证据引用。下面的表由 `--markdown` 生成，不能替代 JSON 的完整字段。
+机器可读源：`assets/capability-registry.json`（v47）。运行 `python3 scripts/capability_registry.py --check` 校验引用。
+
+选图向导从同一份登记读取结构、后端、格式和验收状态；本表只列当前可追查的高频入口，不把入口数量当作完成率。
 
 | ID | 图型 | 后端 | 格式 | 证据级别 |
 |---|---|---|---|---|
-| `tree` | 组织树 / 分解结构 | `scripts/render.py#tree` | SVG, draw.io, scene/QA, HTML | `manual_visual_review` |
-| `architecture` | 分层架构图 | `scripts/render.py#architecture` | SVG, draw.io, scene/QA, HTML | `manual_visual_review` |
-| `network` | 关系网络图 | `scripts/render.py#graph` | SVG, draw.io, scene/QA, HTML | `generated_with_semantic_validation` |
-| `flow` | 流程图 | `scripts/render.py#graph` | SVG, draw.io, scene/QA, HTML | `manual_visual_review` |
-| `swimlane` | 泳道流程图 | `scripts/render.py#graph` | SVG, draw.io, scene/QA, HTML | `generated_with_semantic_validation` |
-| `sequence` | 时序图 | `scripts/render.py#sequence` | SVG, draw.io, scene/QA, HTML | `generated_with_semantic_validation` |
-| `timeline` | 时间线 | `scripts/render.py#timeline` | SVG, draw.io, scene/QA, HTML | `generated_with_semantic_validation` |
-| `gantt` | 甘特图 | `scripts/render.py#gantt` | SVG, draw.io, scene/QA, HTML | `manual_visual_review` |
-| `dependency` | 任务依赖图 | `scripts/render.py#graph` | SVG, draw.io, scene/QA, HTML | `generated_with_semantic_validation` |
-| `bar` / `line` | 条形图 / 趋势图 | `scripts/render.py#chart` | SVG, draw.io, scene/QA, HTML | `generated_with_semantic_validation` / `manual_visual_review` |
-| `dumbbell` | 前后对照图 | `scripts/data_art.py#dumbbell` | SVG, draw.io, PNG, PDF, HTML, source/analysis/QA, CSV | `rendered_visual_check` |
-| `donut` | 环形占比图 | `scripts/render.py#chart:donut` | SVG, draw.io, scene/QA, HTML | `generated_with_semantic_validation` |
-| `histogram` / `scatter` | 直方图 / 散点图 | `scripts/render.py#plot` | SVG, draw.io, scene/QA, HTML | `generated_with_semantic_validation` |
-| `affinity` | 亲和图 | `scripts/organization_relations.py#affinity-map` | SVG, PNG, input/calculation/QA JSON | `manual_visual_review` |
-| `journey` | 用户旅程图 | `scripts/render.py#journey` | SVG, draw.io, scene/QA, HTML | `manual_visual_review` |
-| `service-blueprint` | 服务蓝图 | `scripts/render.py#service-blueprint` | SVG, draw.io, scene/QA, HTML | `manual_visual_review` |
-| `retro` | 复盘行动板 | `scripts/render.py#table` | SVG, draw.io, scene/QA, HTML | `manual_visual_review` |
-| `storymap` | 用户故事地图 | `scripts/render.py#storymap` | SVG, draw.io, scene/brief/QA, HTML | `manual_visual_review` |
+| `tree` | 组织树 / 分解结构 | `scripts/render.py#tree` | svg, drawio, scene.json, qa.json, html | `manual_visual_review` |
+| `architecture` | 分层架构图 | `scripts/render.py#architecture` | svg, drawio, scene.json, qa.json, html | `manual_visual_review` |
+| `network` | 关系网络图 | `scripts/render.py#graph` | svg, drawio, scene.json, qa.json, html | `generated_with_semantic_validation` |
+| `flow` | 流程图 | `scripts/render.py#graph` | svg, drawio, scene.json, qa.json, html | `manual_visual_review` |
+| `swimlane` | 泳道流程图 | `scripts/render.py#graph` | svg, drawio, scene.json, qa.json, html | `generated_with_semantic_validation` |
+| `sequence` | 时序图 | `scripts/render.py#sequence` | svg, drawio, scene.json, qa.json, html | `generated_with_semantic_validation` |
+| `timeline` | 时间线 | `scripts/render.py#timeline` | svg, drawio, scene.json, qa.json, html | `generated_with_semantic_validation` |
+| `gantt` | 甘特图 | `scripts/render.py#gantt` | svg, drawio, scene.json, qa.json, html | `manual_visual_review` |
+| `dependency` | 任务依赖图 | `scripts/render.py#graph` | svg, drawio, scene.json, qa.json, html | `generated_with_semantic_validation` |
+| `bar` | 条形图 | `scripts/render.py#chart:bar` | svg, drawio, scene.json, qa.json, html | `generated_with_semantic_validation` |
+| `line` | 趋势图 | `scripts/render.py#chart:line` | svg, drawio, scene.json, qa.json, html | `manual_visual_review` |
+| `dumbbell` | 前后对照图 | `scripts/data_art.py#dumbbell` | svg, drawio, png, pdf, html, input.json, scene.json, analysis.json, qa.json, csv | `rendered_visual_check` |
+| `donut` | 环形占比图 | `scripts/render.py#chart:donut` | svg, drawio, scene.json, qa.json, html | `generated_with_semantic_validation` |
+| `histogram` | 直方图 | `scripts/render.py#plot:histogram` | svg, drawio, scene.json, qa.json, html | `generated_with_semantic_validation` |
+| `scatter` | 散点图 | `scripts/render.py#plot:scatter` | svg, drawio, scene.json, qa.json, html | `generated_with_semantic_validation` |
+| `affinity` | 亲和图 | `scripts/organization_relations.py#affinity-map` | svg, png, input.json, calculation.json, qa.json | `manual_visual_review` |
+| `journey` | 用户旅程图 | `scripts/render.py#journey` | svg, drawio, scene.json, qa.json, html | `manual_visual_review` |
+| `service-blueprint` | 服务蓝图 | `scripts/render.py#service-blueprint` | svg, drawio, scene.json, qa.json, html | `manual_visual_review` |
+| `retro` | 复盘行动板 | `scripts/render.py#table` | svg, drawio, scene.json, qa.json, html | `manual_visual_review` |
+| `storymap` | 用户故事地图 | `scripts/render.py#storymap` | svg, drawio, scene.json, brief.json, qa.json, html | `manual_visual_review` |
 
-证据级别只说明已执行的检查；人工查看不等于领域或用户批准。登记格式是交付协议，生成后仍要按项目实际检查。入口数量不代表完成率。
+证据级别只说明已执行的检查：`manual_visual_review` 仍不等于领域或用户批准；`planned` 入口不能直接宣称已实现。格式列表是该后端登记的交付协议，生成后仍需按项目实际检查。

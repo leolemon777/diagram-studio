@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="921.6pt" height="547.2pt" viewBox="0 0 921.6 547.2" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 547.2
+L 921.6 547.2
+L 921.6 0
+L 0 0
+z
+" style="fill: #f1efeb"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 46.08 318.68928
+L 312.60672 318.68928
+L 312.60672 139.42656
+L 46.08 139.42656
+z
+" clip-path="url(#p75b1b0fdaa)" style="fill: #faf9f6; stroke: #d8d3c8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 46.08 144.548352
+L 312.60672 144.548352
+L 312.60672 139.42656
+L 46.08 139.42656
+z
+" clip-path="url(#p75b1b0fdaa)" style="fill: #58705a"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 327.53664 318.68928
+L 594.06336 318.68928
+L 594.06336 139.42656
+L 327.53664 139.42656
+z
+" clip-path="url(#p75b1b0fdaa)" style="fill: #faf9f6; stroke: #d8d3c8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 327.53664 144.548352
+L 594.06336 144.548352
+L 594.06336 139.42656
+L 327.53664 139.42656
+z
+" clip-path="url(#p75b1b0fdaa)" style="fill: #657487"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 608.99328 318.68928
+L 875.52 318.68928
+L 875.52 139.42656
+L 608.99328 139.42656
+z
+" clip-path="url(#p75b1b0fdaa)" style="fill: #faf9f6; stroke: #d8d3c8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 608.99328 144.548352
+L 875.52 144.548352
+L 875.52 139.42656
+L 608.99328 139.42656
+z
+" clip-path="url(#p75b1b0fdaa)" style="fill: #c1965b"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 500; font-size: 10px; font-family: 'Heiti TC'; text-anchor: start; fill: #30302d" x="58.5216" y="162.96512" transform="rotate(-0 58.5216 162.96512)">Course information · 2 items</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 8.4px; font-family: 'Heiti TC'; fill: #6d6a63" transform="translate(58.5216 182.000208)">• It is unclear what</text>
+    <text style="font-size: 8.4px; font-family: 'Heiti TC'; fill: #6d6a63" transform="translate(58.5216 193.201739)">prior knowledge</text>
+    <text style="font-size: 8.4px; font-family: 'Heiti TC'; fill: #6d6a63" transform="translate(58.5216 204.961739)">the course expects</text>
+    <text style="font-size: 8.4px; font-family: 'Heiti TC'; fill: #6d6a63" transform="translate(58.5216 217.280208)">  Source: Simulated interview E01</text>
+    <text style="font-size: 8.4px; font-family: 'Heiti TC'; fill: #6d6a63" transform="translate(58.5216 228.481739)">• The course page</text>
+    <text style="font-size: 8.4px; font-family: 'Heiti TC'; fill: #6d6a63" transform="translate(58.5216 240.241739)">has no practice</text>
+    <text style="font-size: 8.4px; font-family: 'Heiti TC'; fill: #6d6a63" transform="translate(58.5216 252.001739)">example</text>
+    <text style="font-size: 8.4px; font-family: 'Heiti TC'; fill: #6d6a63" transform="translate(58.5216 264.320208)">  Source: Simulated interview E02</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 500; font-size: 10px; font-family: 'Heiti TC'; text-anchor: start; fill: #30302d" x="339.97824" y="162.96512" transform="rotate(-0 339.97824 162.96512)">After-enrolment guidance · 2 items</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 8.4px; font-family: 'Heiti TC'; fill: #6d6a63" transform="translate(339.97824 181.487677)">• After payment, the</text>
+    <text style="font-size: 8.4px; font-family: 'Heiti TC'; fill: #6d6a63" transform="translate(339.97824 193.201739)">next step is</text>
+    <text style="font-size: 8.4px; font-family: 'Heiti TC'; fill: #6d6a63" transform="translate(339.97824 205.696739)">unclear</text>
+    <text style="font-size: 8.4px; font-family: 'Heiti TC'; fill: #6d6a63" transform="translate(339.97824 217.280208)">  Source: Simulated interview E03</text>
+    <text style="font-size: 8.4px; font-family: 'Heiti TC'; fill: #6d6a63" transform="translate(339.97824 229.040208)">• The class link is</text>
+    <text style="font-size: 8.4px; font-family: 'Heiti TC'; fill: #6d6a63" transform="translate(339.97824 240.800208)">hard to find in</text>
+    <text style="font-size: 8.4px; font-family: 'Heiti TC'; fill: #6d6a63" transform="translate(339.97824 252.560208)">the email</text>
+    <text style="font-size: 8.4px; font-family: 'Heiti TC'; fill: #6d6a63" transform="translate(339.97824 264.320208)">  Source: Simulated interview E04</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 500; font-size: 10px; font-family: 'Heiti TC'; text-anchor: start; fill: #30302d" x="621.43488" y="162.96512" transform="rotate(-0 621.43488 162.96512)">Participation conditions · 2 items</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 8.4px; font-family: 'Heiti TC'; fill: #6d6a63" transform="translate(621.43488 181.697677)">◆ A screen reader</text>
+    <text style="font-size: 8.4px; font-family: 'Heiti TC'; fill: #6d6a63" transform="translate(621.43488 193.201739)">cannot identify</text>
+    <text style="font-size: 8.4px; font-family: 'Heiti TC'; fill: #6d6a63" transform="translate(621.43488 205.520208)">the buttons</text>
+    <text style="font-size: 8.4px; font-family: 'Heiti TC'; fill: #6d6a63" transform="translate(621.43488 217.280208)">  Source: Simulated interview E05</text>
+    <text style="font-size: 8.4px; font-family: 'Heiti TC'; fill: #6d6a63" transform="translate(621.43488 228.527677)">• An evening Q&amp;A</text>
+    <text style="font-size: 8.4px; font-family: 'Heiti TC'; fill: #6d6a63" transform="translate(621.43488 240.241739)">slot would help</text>
+    <text style="font-size: 8.4px; font-family: 'Heiti TC'; fill: #6d6a63" transform="translate(621.43488 252.572677)">  Source: Simulated interview E06</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 8.8px; font-family: 'Heiti TC'; text-anchor: start; fill: #6d6a63" x="46.08" y="459.53856" transform="rotate(-0 46.08 459.53856)">◆ Minority feedback remains visible · Themes follow the original grouping</text>
+   </g>
+  </g>
+  <g id="text_8">
+   <text style="font-weight: 500; font-size: 22px; font-family: 'Heiti TC'; text-anchor: start; fill: #30302d" x="46.08" y="43.544" transform="rotate(-0 46.08 43.544)">Course enrolment feedback · keep the words, then group themes</text>
+  </g>
+  <g id="text_9">
+   <text style="font-size: 10.2px; font-family: 'Heiti TC'; text-anchor: start; fill: #6d6a63" x="46.08" y="56.9256" transform="rotate(-0 46.08 56.9256)">Six simulated observations; grouping is an analysis judgment, not a rate or root cause</text>
+  </g>
+  <g id="text_10">
+   <text style="font-size: 8.2px; font-family: 'Heiti TC'; text-anchor: end; fill: #6d6a63" x="875.52" y="34.412" transform="rotate(-0 875.52 34.412)">AFFINITY  MAP</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p75b1b0fdaa">
+   <rect x="46.08" y="71.136" width="829.44" height="426.816"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -79,7 +79,7 @@ def table(s,d):
  columns=items(d,'columns',2,8);rows=items(d,'rows',1,12);first=d.get('first_width',225);cw=(s.w-128-first)/(len(columns)-1);widths=[first]+[cw]*(len(columns)-1);rh=d.get('row_height',110);y0=204
  def cell(x,y,w,h,value,head=False,tone='ink'):
   s.add(x,y,w,h,kind='rect',fill='tint2' if head else 'panel',stroke='line',check=False)
-  s.text(x+16,y+12,w-32,h-24,str(value),19 if head else 17,tone,align='left')
+  s.text(x+16,y+12,w-32,h-24,str(value),19 if head else 17,tone,align='left',word_wrap=True)
  x=64
  for i,label in enumerate(columns):cell(x,y0,widths[i],58,label,True);x+=widths[i]
  for j,row in enumerate(rows):

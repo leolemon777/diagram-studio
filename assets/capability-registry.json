@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "version": "v46",
+  "version": "v47",
   "updated": "2026-09-20",
   "purpose": "Single source for chooser labels, backend capability, delivery formats and acceptance evidence.",
   "status_vocabulary": {
@@ -271,8 +271,8 @@
           "formats": ["svg", "png", "input.json", "calculation.json", "qa.json"],
           "layout_limits": {"zh": "每条观察必须唯一归组；内容多时拆主题或详页。", "en": "Every observation has one assignment; split themes or detail pages when dense."},
           "languages": ["zh", "en"],
-          "examples": ["assets/workshop-examples/education-affinity.json"],
-          "evidence": {"level": "manual_visual_review", "reference": "assets/boardmix-study-evidence.json", "detail": {"zh": "分组完整性和唯一性已检查，SVG/JSON 示例已查看；不输出 draw.io。", "en": "Grouping completeness and uniqueness were checked and SVG/JSON examples viewed; draw.io is not exported."}},
+          "examples": ["assets/workshop-examples/education-affinity.json", "assets/workshop-examples/education-affinity-en.json"],
+          "evidence": {"level": "manual_visual_review", "reference": "assets/v47-workshop-evidence.json", "detail": {"zh": "中英案例均检查分组完整性、唯一归属、来源保留和 SVG 阅读；不输出 draw.io。", "en": "Chinese and English cases pass grouping completeness, single assignment, source retention and SVG reading checks; draw.io is not exported."}},
           "scope": {"zh": "保留来源、少数意见和待确认项；不生成投票或频率事实。", "en": "Retains sources, minority feedback and open items; it does not invent votes or prevalence."}
         },
         {
@@ -313,8 +313,8 @@
           "formats": ["svg", "drawio", "scene.json", "qa.json", "html"],
           "layout_limits": {"zh": "行动字段不能遮住观察和分歧；多项行动分拆为局部板。", "en": "Actions must not obscure observations or disagreement; split boards with many actions."},
           "languages": ["zh", "en"],
-          "examples": ["assets/workshop-examples/marketing-retrospective.json"],
-          "evidence": {"level": "manual_visual_review", "reference": "assets/boardmix-study-evidence.json", "detail": {"zh": "营销复盘表已生成并查看；无实时会议、投票或协作功能。", "en": "The marketing retrospective table was generated and viewed; live meeting, voting and collaboration are not implemented."}},
+          "examples": ["assets/workshop-examples/marketing-retrospective.json", "assets/workshop-examples/marketing-retrospective-en.json"],
+          "evidence": {"level": "manual_visual_review", "reference": "assets/v47-workshop-evidence.json", "detail": {"zh": "中英营销复盘表已生成并查看，英文拉丁词按空格换行；无实时会议、投票或协作功能。", "en": "Chinese and English retrospective tables were generated and viewed; English Latin words wrap at spaces; live meeting, voting and collaboration are not implemented."}},
           "scope": {"zh": "区分观察、推断、行动和验收；未确认意见保持开放。", "en": "Separates observations, inferences, actions and checks; unconfirmed opinions remain open."}
         },
         {

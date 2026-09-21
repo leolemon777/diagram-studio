@@ -1,0 +1,34 @@
+{
+  "version": "v47",
+  "date": "2026-09-20",
+  "scope": "Bilingual affinity map and retrospective action board refinement",
+  "automated": {
+    "tests": "Bundled Python unittest suite passes; workshop tests cover retention, single assignment, source text and Latin word boundaries",
+    "registry": "capability_registry.py --check passes",
+    "diff": "git diff --check passes",
+    "affinity": "Six observations are retained exactly once in both languages; duplicate assignment is rejected",
+    "retrospective": "All source table text is retained; render geometry audit and delivery content integrity pass in both languages"
+  },
+  "browser_checks": [
+    "English affinity SVG opened directly at /demos/workshop-study/education-affinity-en.svg; title, three themes, six observations, sources and minority marker readable",
+    "Chinese affinity SVG opened directly at /demos/workshop-study/education-affinity.svg; title, three themes, six observations, sources and minority marker readable",
+    "English retrospective SVG opened directly at /demos/workshop-study/marketing-retrospective-en.svg; headers, STOP/START/CONTINUE/OPEN rows and action fields visible; Latin words wrap at spaces",
+    "Chinese retrospective remains available with editable draw.io and model links in the workshop study page"
+  ],
+  "not_verified": [
+    "Native editor save/reopen for the new English examples",
+    "Mobile viewport and long dense workshop boards",
+    "Domain correctness, real votes or user aesthetic approval"
+  ],
+  "artifacts": {
+    "page": "demos/workshop-study/index.html",
+    "affinity_models": [
+      "assets/workshop-examples/education-affinity.json",
+      "assets/workshop-examples/education-affinity-en.json"
+    ],
+    "retrospective_models": [
+      "assets/workshop-examples/marketing-retrospective.json",
+      "assets/workshop-examples/marketing-retrospective-en.json"
+    ]
+  }
+}

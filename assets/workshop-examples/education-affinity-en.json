@@ -1,0 +1,27 @@
+{
+  "id": "education-affinity-en",
+  "mode": "affinity-map",
+  "language": "en",
+  "title": "Course enrolment feedback · keep the words, then group themes",
+  "subtitle": "Six simulated observations; grouping is an analysis judgment, not a rate or root cause",
+  "data_status": "simulated",
+  "observations": [
+    {"id": "O1", "text": "It is unclear what prior knowledge the course expects", "source": "Simulated interview E01"},
+    {"id": "O2", "text": "The course page has no practice example", "source": "Simulated interview E02"},
+    {"id": "O3", "text": "After payment, the next step is unclear", "source": "Simulated interview E03"},
+    {"id": "O4", "text": "The class link is hard to find in the email", "source": "Simulated interview E04"},
+    {"id": "O5", "text": "A screen reader cannot identify the buttons", "source": "Simulated interview E05"},
+    {"id": "O6", "text": "An evening Q&A slot would help", "source": "Simulated interview E06"}
+  ],
+  "themes": [
+    {"id": "T1", "label": "Course information", "observation_ids": ["O1", "O2"]},
+    {"id": "T2", "label": "After-enrolment guidance", "observation_ids": ["O3", "O4"]},
+    {"id": "T3", "label": "Participation conditions", "observation_ids": ["O5", "O6"]}
+  ],
+  "minority_observation_ids": ["O5"],
+  "assumptions": [
+    "All content and source codes are original simulated data",
+    "Each observation belongs to one theme; minority marking does not duplicate it",
+    "No votes were collected and no priority is inferred"
+  ]
+}

@@ -9,7 +9,7 @@
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
-      <dc:title>Matplotlib v3.9.4, https://matplotlib.org/</dc:title>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
      </cc:Agent>
     </dc:creator>
    </cc:Work>
@@ -20,101 +20,101 @@
  </defs>
  <g id="figure_1">
   <g id="patch_1">
-   <path d="M 0 547.2 
-L 921.6 547.2 
-L 921.6 0 
-L 0 0 
+   <path d="M 0 547.2
+L 921.6 547.2
+L 921.6 0
+L 0 0
 z
 " style="fill: #f1efeb"/>
   </g>
   <g id="axes_1">
    <g id="patch_2">
-    <path d="M 46.08 459.53856 
-L 312.60672 459.53856 
-L 312.60672 109.54944 
-L 46.08 109.54944 
+    <path d="M 46.08 318.68928
+L 312.60672 318.68928
+L 312.60672 139.42656
+L 46.08 139.42656
 z
 " clip-path="url(#p75b1b0fdaa)" style="fill: #faf9f6; stroke: #d8d3c8; stroke-linejoin: miter"/>
    </g>
    <g id="patch_3">
-    <path d="M 46.08 114.671232 
-L 312.60672 114.671232 
-L 312.60672 109.54944 
-L 46.08 109.54944 
+    <path d="M 46.08 144.548352
+L 312.60672 144.548352
+L 312.60672 139.42656
+L 46.08 139.42656
 z
 " clip-path="url(#p75b1b0fdaa)" style="fill: #58705a"/>
    </g>
    <g id="patch_4">
-    <path d="M 327.53664 459.53856 
-L 594.06336 459.53856 
-L 594.06336 109.54944 
-L 327.53664 109.54944 
+    <path d="M 327.53664 318.68928
+L 594.06336 318.68928
+L 594.06336 139.42656
+L 327.53664 139.42656
 z
 " clip-path="url(#p75b1b0fdaa)" style="fill: #faf9f6; stroke: #d8d3c8; stroke-linejoin: miter"/>
    </g>
    <g id="patch_5">
-    <path d="M 327.53664 114.671232 
-L 594.06336 114.671232 
-L 594.06336 109.54944 
-L 327.53664 109.54944 
+    <path d="M 327.53664 144.548352
+L 594.06336 144.548352
+L 594.06336 139.42656
+L 327.53664 139.42656
 z
 " clip-path="url(#p75b1b0fdaa)" style="fill: #657487"/>
    </g>
    <g id="patch_6">
-    <path d="M 608.99328 459.53856 
-L 875.52 459.53856 
-L 875.52 109.54944 
-L 608.99328 109.54944 
+    <path d="M 608.99328 318.68928
+L 875.52 318.68928
+L 875.52 139.42656
+L 608.99328 139.42656
 z
 " clip-path="url(#p75b1b0fdaa)" style="fill: #faf9f6; stroke: #d8d3c8; stroke-linejoin: miter"/>
    </g>
    <g id="patch_7">
-    <path d="M 608.99328 114.671232 
-L 875.52 114.671232 
-L 875.52 109.54944 
-L 608.99328 109.54944 
+    <path d="M 608.99328 144.548352
+L 875.52 144.548352
+L 875.52 139.42656
+L 608.99328 139.42656
 z
 " clip-path="url(#p75b1b0fdaa)" style="fill: #c1965b"/>
    </g>
    <g id="text_1">
-    <text style="fill: #30302d; font: 500 10px 'Heiti TC'; text-anchor: start" x="58.5216" y="132.588" transform="rotate(-0 58.5216 132.588)">选课信息 · 2条</text>
+    <text style="font-weight: 500; font-size: 10px; font-family: 'Heiti TC'; text-anchor: start; fill: #30302d" x="58.5216" y="162.96512" transform="rotate(-0 58.5216 162.96512)">选课信息 · 2 条</text>
    </g>
    <g id="text_2">
-    <text style="fill: #6d6a63; font: 7.3px 'Heiti TC'" transform="translate(58.5216 148.754088)">• 看不出课程适合什么基础</text>
-    <text style="fill: #6d6a63; font: 7.3px 'Heiti TC'" transform="translate(58.5216 158.00296)">  来源：模拟访谈 E01</text>
-    <text style="fill: #6d6a63; font: 7.3px 'Heiti TC'" transform="translate(58.5216 167.251832)">• 课程介绍没有练习样例</text>
-    <text style="fill: #6d6a63; font: 7.3px 'Heiti TC'" transform="translate(58.5216 176.500704)">  来源：模拟访谈 E02</text>
+    <text style="font-size: 8.4px; font-family: 'Heiti TC'; fill: #6d6a63" transform="translate(58.5216 181.550677)">• 看不出课程适合什么基础</text>
+    <text style="font-size: 8.4px; font-family: 'Heiti TC'; fill: #6d6a63" transform="translate(58.5216 193.319208)">  来源：模拟访谈 E01</text>
+    <text style="font-size: 8.4px; font-family: 'Heiti TC'; fill: #6d6a63" transform="translate(58.5216 205.062145)">• 课程介绍没有练习样例</text>
+    <text style="font-size: 8.4px; font-family: 'Heiti TC'; fill: #6d6a63" transform="translate(58.5216 216.839208)">  来源：模拟访谈 E02</text>
    </g>
    <g id="text_3">
-    <text style="fill: #30302d; font: 500 10px 'Heiti TC'; text-anchor: start" x="339.97824" y="132.588" transform="rotate(-0 339.97824 132.588)">报名后引导 · 2条</text>
+    <text style="font-weight: 500; font-size: 10px; font-family: 'Heiti TC'; text-anchor: start; fill: #30302d" x="339.97824" y="162.96512" transform="rotate(-0 339.97824 162.96512)">报名后引导 · 2 条</text>
    </g>
    <g id="text_4">
-    <text style="fill: #6d6a63; font: 7.3px 'Heiti TC'" transform="translate(339.97824 148.754088)">• 付款后不知道下一步做什么</text>
-    <text style="fill: #6d6a63; font: 7.3px 'Heiti TC'" transform="translate(339.97824 158.00296)">  来源：模拟访谈 E03</text>
-    <text style="fill: #6d6a63; font: 7.3px 'Heiti TC'" transform="translate(339.97824 167.251832)">• 报名邮件里找不到上课入口</text>
-    <text style="fill: #6d6a63; font: 7.3px 'Heiti TC'" transform="translate(339.97824 176.500704)">  来源：模拟访谈 E04</text>
+    <text style="font-size: 8.4px; font-family: 'Heiti TC'; fill: #6d6a63" transform="translate(339.97824 181.542802)">• 付款后不知道下一步做什么</text>
+    <text style="font-size: 8.4px; font-family: 'Heiti TC'; fill: #6d6a63" transform="translate(339.97824 193.319208)">  来源：模拟访谈 E03</text>
+    <text style="font-size: 8.4px; font-family: 'Heiti TC'; fill: #6d6a63" transform="translate(339.97824 205.03327)">• 报名邮件里找不到上课入口</text>
+    <text style="font-size: 8.4px; font-family: 'Heiti TC'; fill: #6d6a63" transform="translate(339.97824 216.839208)">  来源：模拟访谈 E04</text>
    </g>
    <g id="text_5">
-    <text style="fill: #30302d; font: 500 10px 'Heiti TC'; text-anchor: start" x="621.43488" y="132.588" transform="rotate(-0 621.43488 132.588)">参与条件 · 2条</text>
+    <text style="font-weight: 500; font-size: 10px; font-family: 'Heiti TC'; text-anchor: start; fill: #30302d" x="621.43488" y="162.96512" transform="rotate(-0 621.43488 162.96512)">参与条件 · 2 条</text>
    </g>
    <g id="text_6">
-    <text style="fill: #6d6a63; font: 7.3px 'Heiti TC'" transform="translate(621.43488 148.754088)">◆ 用屏幕阅读器无法识别按钮</text>
-    <text style="fill: #6d6a63; font: 7.3px 'Heiti TC'" transform="translate(621.43488 158.00296)">  来源：模拟访谈 E05</text>
-    <text style="fill: #6d6a63; font: 7.3px 'Heiti TC'" transform="translate(621.43488 167.251832)">• 希望有晚间答疑时段</text>
-    <text style="fill: #6d6a63; font: 7.3px 'Heiti TC'" transform="translate(621.43488 176.500704)">  来源：模拟访谈 E06</text>
+    <text style="font-size: 8.4px; font-family: 'Heiti TC'; fill: #6d6a63" transform="translate(621.43488 181.554614)">◆ 用屏幕阅读器无法识别按钮</text>
+    <text style="font-size: 8.4px; font-family: 'Heiti TC'; fill: #6d6a63" transform="translate(621.43488 193.319208)">  来源：模拟访谈 E05</text>
+    <text style="font-size: 8.4px; font-family: 'Heiti TC'; fill: #6d6a63" transform="translate(621.43488 205.066739)">• 希望有晚间答疑时段</text>
+    <text style="font-size: 8.4px; font-family: 'Heiti TC'; fill: #6d6a63" transform="translate(621.43488 216.839208)">  来源：模拟访谈 E06</text>
    </g>
    <g id="text_7">
-    <text style="fill: #6d6a63; font: 8.8px 'Heiti TC'; text-anchor: start" x="46.08" y="487.2816" transform="rotate(-0 46.08 487.2816)">◆ 少数意见仍保留 · 主题名称建立在原始观察分组之后</text>
+    <text style="font-size: 8.8px; font-family: 'Heiti TC'; text-anchor: start; fill: #6d6a63" x="46.08" y="459.53856" transform="rotate(-0 46.08 459.53856)">◆ 少数意见仍保留 · 主题名称建立在原始观察分组之后</text>
    </g>
   </g>
   <g id="text_8">
-   <text style="fill: #30302d; font: 500 22px 'Heiti TC'; text-anchor: start" x="46.08" y="42.444" transform="rotate(-0 46.08 42.444)">课程报名反馈 · 先保留原话，再归纳主题</text>
+   <text style="font-weight: 500; font-size: 22px; font-family: 'Heiti TC'; text-anchor: start; fill: #30302d" x="46.08" y="43.544" transform="rotate(-0 46.08 43.544)">课程报名反馈 · 先保留原话，再归纳主题</text>
   </g>
   <g id="text_9">
-   <text style="fill: #6d6a63; font: 10.2px 'Heiti TC'; text-anchor: start" x="46.08" y="56.4156" transform="rotate(-0 46.08 56.4156)">六条模拟观察；归组是分析判断，不能当作发生率或根因</text>
+   <text style="font-size: 10.2px; font-family: 'Heiti TC'; text-anchor: start; fill: #6d6a63" x="46.08" y="56.9256" transform="rotate(-0 46.08 56.9256)">六条模拟观察；归组是分析判断，不能当作发生率或根因</text>
   </g>
   <g id="text_10">
-   <text style="fill: #6d6a63; font: 8.2px 'Heiti TC'; text-anchor: end" x="875.52" y="34.002" transform="rotate(-0 875.52 34.002)">AFFINITY  MAP</text>
+   <text style="font-size: 8.2px; font-family: 'Heiti TC'; text-anchor: end; fill: #6d6a63" x="875.52" y="34.412" transform="rotate(-0 875.52 34.412)">AFFINITY  MAP</text>
   </g>
  </g>
  <defs>

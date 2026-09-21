@@ -1,0 +1,19 @@
+{
+  "type": "table",
+  "language": "en",
+  "width": 1800,
+  "height": 1040,
+  "row_height": 140,
+  "assumptions": ["Original simulated data; not a real survey, vote, or approved commitment"],
+  "footer": "Simulated input · source codes and open checks retained · independently authored",
+  "title": "Marketing campaign retrospective · from observation to testable action",
+  "subtitle": "Separate opinions, decisions, and execution; owners, dates, and checks are simulated",
+  "eyebrow": "WORKSHOP STUDY / RETROSPECTIVE",
+  "columns": ["Direction", "Observation and code", "Proposed action", "Owner / review", "Acceptance check"],
+  "rows": [
+    ["STOP", "M1: Repeatedly produce the same kind of asset", "A1: Check the shared asset index first", "Content lead\n2026-10-01", "Sample whether new requests search first"],
+    ["START", "M2: Campaign page lacks a Q&A entry point", "A2: Add a Q&A entry\nValidate with a small cohort", "Operations lead\n2026-10-03", "Track reach and resolution"],
+    ["CONTINUE", "M3: Daily handoff finds omissions", "A3: Keep the handoff and issue list", "Project lead\n2026-10-05", "Review whether omissions close"],
+    ["OPEN", "M4: Should channels share copy?", "Do not decide yet; collect audience evidence", "Research lead\n2026-10-06", "Revisit after evidence review"]
+  ]
+}

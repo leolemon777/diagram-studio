@@ -365,13 +365,27 @@ def _render_team(data,meta):
 
 def _render_affinity(data,meta):
     fig,ax=_figure(data); obs={r['id']:r for r in data['observations']}; themes=data['themes']; gap=.018; width=(1-gap*(len(themes)-1))/len(themes)
+    en=str(data.get('language','zh')).lower().startswith('en')
+    source_label='Source: ' if en else '来源：'
+    count_label='items' if en else '条'
+    # Keep the workshop wall compact when there are only a few observations,
+    # while allowing dense groups to grow instead of shrinking body text.
+    line_counts=[]; render_groups=[]
     for i,theme in enumerate(themes):
-        x=i*(width+gap); color=COLORS[i%len(COLORS)]; lines=[]
+        color=COLORS[i%len(COLORS)]; lines=[]
         for oid in theme['observation_ids']:
             marker='◆ ' if oid in data.get('minority_observation_ids',[]) else '• '
-            lines.append(marker+_wrap(obs[oid]['text'],18)+f"\n  来源：{obs[oid]['source']}")
-        _card(ax,x,.09,width,.82,f"{theme['label']} · {len(lines)}条",lines,color,text_size=7.3)
-    ax.text(0,.025,'◆ 少数意见仍保留 · 主题名称建立在原始观察分组之后',fontsize=8.8,color=MUTED)
+            lines.append(marker+_wrap(obs[oid]['text'],18)+f"\n  {source_label}{obs[oid]['source']}")
+            line_counts.append(1 + len(_wrap(obs[oid]['text'],18).splitlines()))
+        render_groups.append(lines)
+    card_h=min(.70,max(.42,.20+max(line_counts or [1])*.045))
+    # Hold the card tops near the same reading line while keeping a footer gap;
+    # sparse groups therefore do not sink into an oversized empty canvas.
+    card_y=max(.20,.84-card_h)
+    for i,(theme,lines) in enumerate(zip(themes,render_groups)):
+        x=i*(width+gap); color=COLORS[i%len(COLORS)]
+        _card(ax,x,card_y,width,card_h,f"{theme['label']} · {len(theme['observation_ids'])} {count_label}",lines,color,text_size=8.4)
+    ax.text(0,.09,'◆ Minority feedback remains visible · Themes follow the original grouping' if en else '◆ 少数意见仍保留 · 主题名称建立在原始观察分组之后',fontsize=8.8,color=MUTED)
     return fig
 
 
