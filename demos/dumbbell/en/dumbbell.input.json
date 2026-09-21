@@ -1,0 +1,49 @@
+{
+  "recipe": "dumbbell",
+  "language": "en",
+  "title": "How much did the same service change?",
+  "subtitle": "Compare high-frequency service steps across industries while keeping direction and absolute change visible.",
+  "unit": "minutes / case",
+  "rows": [
+    {
+      "id": "support",
+      "label": "Customer support / standard queue",
+      "before": 42,
+      "after": 31
+    },
+    {
+      "id": "enrolment",
+      "label": "Course enrolment / evening cohort",
+      "before": 36,
+      "after": 28
+    },
+    {
+      "id": "clinic",
+      "label": "Clinic appointments / follow-up",
+      "before": 29,
+      "after": 24
+    },
+    {
+      "id": "pickup",
+      "label": "Store pickup / stock exception",
+      "before": 51,
+      "after": 39
+    },
+    {
+      "id": "leads",
+      "label": "Marketing leads / qualification",
+      "before": 24,
+      "after": 27
+    },
+    {
+      "id": "delivery",
+      "label": "Team delivery / cycle tracking",
+      "before": 48,
+      "after": 35
+    }
+  ],
+  "period": "Q1 2026 → Q2 2026 / same observation window",
+  "synthetic": true,
+  "source": "Apat synthetic cross-industry example for visual inspection; not a field measurement.",
+  "form": "dumbbell"
+}

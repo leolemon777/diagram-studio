@@ -42,7 +42,7 @@ const fallbackGroups=[
  {id:'change',title:['比较与变化','Comparison & change'],sub:['大小排序、趋势、前后差异','Rank, trends, before/after'],types:[
   {id:'bar',name:['条形图','Bar chart'],why:['比较类别大小，尤其适合较长标签','Compare category magnitudes, especially with long labels'],need:['类别、数值、单位','Categories, values, units']},
   {id:'line',name:['趋势图','Line chart'],why:['连续时间里的变化方向与波动','Show direction and variation across ordered time'],need:['时间、数值、单位','Time points, values, units']},
-  {id:'dumbbell',name:['前后对照图','Before/after dumbbell'],why:['同一对象的两次测量，突出差值','Compare two measurements for each entity and show change'],need:['对象、前值、后值、单位','Entities, before/after values, units']}]},
+  {id:'dumbbell',name:['前后对照图','Before/after dumbbell'],why:['同一对象的两次测量，突出差值','Compare two measurements for each entity and show change'],need:['对象、前值、后值、单位','Entities, before/after values, units'],example:'../dumbbell/index.html',scope:['同一对象的前后变化；不用于独立样本比较','For paired before/after entities; not for independent-group comparison']}]},
  {id:'pattern',title:['组成与分布','Composition & distribution'],sub:['占比、频数、变量关系','Share, frequency, correlation'],types:[
   {id:'donut',name:['环形占比图','Donut chart'],why:['少量类别组成同一个整体','A few categories sum to one whole'],need:['各部分数值、总量口径','Part values and definition of total']},
   {id:'histogram',name:['直方图','Histogram'],why:['看连续数值的频数分布，而非类别大小','Show frequencies of continuous measurements'],need:['逐条数值、单位、分箱规则','Observations, unit, binning rule']},

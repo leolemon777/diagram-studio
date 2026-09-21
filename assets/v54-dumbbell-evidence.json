@@ -1,0 +1,25 @@
+{
+  "version": "v54",
+  "date": "2026-09-20",
+  "scope": "Bilingual cross-industry before/after dumbbell form",
+  "automated": {
+    "tests": "Three regressions cover paired values, non-negative validation, localised UI copy and long English labels",
+    "registry": "capability_registry.py --check passes",
+    "diff": "git diff --check passes",
+    "dumbbell": "Six paired service-time observations keep the same unit, absolute positions, direction and computed deltas"
+  },
+  "browser_checks": [
+    "Chinese and English dumbbell sections opened in a scrollable demo with JSON, SVG, draw.io, HTML, CSV, PNG and PDF links",
+    "Chinese and English SVGs opened directly; paired endpoints, long labels, localised reading notes and source markers remain readable",
+    "Chooser registry exposes the before/after form with paired minimum input, backend, formats and non-causal scope"
+  ],
+  "not_verified": [
+    "Native editor save/reopen for the new draw.io files",
+    "Mobile viewport and dense labels beyond the declared seven-entity limit",
+    "Statistical significance, causal attribution, source provenance or user aesthetic approval"
+  ],
+  "artifacts": {
+    "dumbbell": ["assets/data-art-examples/dumbbell-cn.json", "assets/data-art-examples/dumbbell-en.json"],
+    "demo": "demos/dumbbell/index.html"
+  }
+}

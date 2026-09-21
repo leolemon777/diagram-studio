@@ -1,0 +1,44 @@
+{
+  "recipe": "dumbbell",
+  "row_count": 6,
+  "unit": "minutes / case",
+  "synthetic": true,
+  "changes": {
+    "support": {
+      "before": 42,
+      "after": 31,
+      "delta": -11,
+      "percent": -26.190476190476186
+    },
+    "enrolment": {
+      "before": 36,
+      "after": 28,
+      "delta": -8,
+      "percent": -22.22222222222222
+    },
+    "clinic": {
+      "before": 29,
+      "after": 24,
+      "delta": -5,
+      "percent": -17.24137931034483
+    },
+    "pickup": {
+      "before": 51,
+      "after": 39,
+      "delta": -12,
+      "percent": -23.529411764705888
+    },
+    "leads": {
+      "before": 24,
+      "after": 27,
+      "delta": 3,
+      "percent": 12.5
+    },
+    "delivery": {
+      "before": 48,
+      "after": 35,
+      "delta": -13,
+      "percent": -27.083333333333336
+    }
+  }
+}

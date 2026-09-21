@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="plate-title" data-recipe="dumbbell" data-mode="detail"><title id="plate-title">同一服务，前后变化有多大？ · 暖灰纸感</title>
+<rect width="1600" height="1000" fill="#F1EFEB" />
+<defs>
+<marker id="arrow-accent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 1 L9 5 L0 9" fill="none" stroke="#94634C" stroke-width="1.0" /></marker>
+<marker id="arrow-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 1 L9 5 L0 9" fill="none" stroke="#706B62" stroke-width="1.0" /></marker>
+<marker id="arrow-ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 1 L9 5 L0 9" fill="none" stroke="#34322D" stroke-width="1.0" /></marker>
+<marker id="arrow-relation_ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 1 L9 5 L0 9" fill="none" stroke="#94634C" stroke-width="1.0" /></marker>
+<marker id="arrow-secondary_ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 1 L9 5 L0 9" fill="none" stroke="#706B62" stroke-width="1.0" /></marker>
+</defs>
+<polyline id="visual-3" points="80,82 1520,82" fill="none" stroke="#34322D" stroke-width="1.0" stroke-linecap="butt" stroke-linejoin="miter" />
+<polyline id="visual-8" points="1195,316 1195,809" fill="none" stroke="#CDC7BC" stroke-width="0.8" stroke-linecap="butt" stroke-linejoin="miter" />
+<polyline id="visual-9" points="360.0,340 360.0,745" fill="none" stroke="#CDC7BC" stroke-width="0.7" stroke-linecap="butt" stroke-linejoin="miter" />
+<polyline id="visual-11" points="541.75,340 541.75,745" fill="none" stroke="#CDC7BC" stroke-width="0.7" stroke-linecap="butt" stroke-linejoin="miter" />
+<polyline id="visual-13" points="723.5,340 723.5,745" fill="none" stroke="#CDC7BC" stroke-width="0.7" stroke-linecap="butt" stroke-linejoin="miter" />
+<polyline id="visual-15" points="905.25,340 905.25,745" fill="none" stroke="#CDC7BC" stroke-width="0.7" stroke-linecap="butt" stroke-linejoin="miter" />
+<polyline id="visual-17" points="1087.0,340 1087.0,745" fill="none" stroke="#CDC7BC" stroke-width="0.7" stroke-linecap="butt" stroke-linejoin="miter" />
+<polyline id="visual-21" points="759.85,373.75 559.925,373.75" fill="none" stroke="#94634C" stroke-width="1.3" stroke-linecap="butt" stroke-linejoin="miter" data-record="support" data-tip="42 → 31 分钟 / 件"><title>42 → 31 分钟 / 件</title></polyline>
+<polyline id="visual-27" points="650.8,441.25 505.4,441.25" fill="none" stroke="#94634C" stroke-width="1.3" stroke-linecap="butt" stroke-linejoin="miter" data-record="enrolment" data-tip="36 → 28 分钟 / 件"><title>36 → 28 分钟 / 件</title></polyline>
+<polyline id="visual-33" points="523.575,508.75 432.7,508.75" fill="none" stroke="#94634C" stroke-width="1.3" stroke-linecap="butt" stroke-linejoin="miter" data-record="clinic" data-tip="29 → 24 分钟 / 件"><title>29 → 24 分钟 / 件</title></polyline>
+<polyline id="visual-39" points="923.4250000000001,576.25 705.325,576.25" fill="none" stroke="#94634C" stroke-width="1.3" stroke-linecap="butt" stroke-linejoin="miter" data-record="pickup" data-tip="51 → 39 分钟 / 件"><title>51 → 39 分钟 / 件</title></polyline>
+<polyline id="visual-45" points="432.7,643.75 487.225,643.75" fill="none" stroke="#94634C" stroke-width="1.3" stroke-linecap="butt" stroke-linejoin="miter" data-record="leads" data-tip="24 → 27 分钟 / 件"><title>24 → 27 分钟 / 件</title></polyline>
+<polyline id="visual-51" points="868.9,711.25 632.625,711.25" fill="none" stroke="#94634C" stroke-width="1.3" stroke-linecap="butt" stroke-linejoin="miter" data-record="delivery" data-tip="48 → 35 分钟 / 件"><title>48 → 35 分钟 / 件</title></polyline>
+<polyline id="visual-58" points="1244,449 1518,449" fill="none" stroke="#CDC7BC" stroke-width="0.8" stroke-linecap="butt" stroke-linejoin="miter" />
+<polyline id="visual-63" points="80,851 1520,851" fill="none" stroke="#34322D" stroke-width="0.8" stroke-linecap="butt" stroke-linejoin="miter" />
+<g id="visual-1" data-box="80,39,1150,19.32" font-family="Menlo, Consolas, PingFang SC, monospace" font-size="14" font-weight="400" fill="#706B62" text-anchor="start">
+<text x="80" y="53.0">APAT    /    DATA STUDIES    /    PAIRED CHANGE</text>
+</g>
+<g id="visual-2" data-box="1340,39,180,19.32" font-family="Menlo, Consolas, PingFang SC, monospace" font-size="14" font-weight="400" fill="#706B62" text-anchor="end">
+<text x="1520" y="53.0">06 / 12</text>
+</g>
+<g id="visual-4" data-box="78,105,1440,67.61999999999999" font-family="Songti SC, Noto Serif CJK SC, serif" font-size="49" font-weight="400" fill="#34322D" text-anchor="start">
+<text x="78" y="154.0">同一服务，前后变化有多大？</text>
+</g>
+<g id="visual-5" data-box="81,183,1425,28.979999999999997" font-family="PingFang SC, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#706B62" text-anchor="start">
+<text x="81" y="204.0">比较跨行业高频服务环节的处理时长；保留方向与绝对差值。</text>
+</g>
+<g id="visual-6" data-box="81,247,900,22.08" font-family="PingFang SC, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" fill="#94634C" text-anchor="start">
+<text x="81" y="263.0">2026 年第一季度 → 第二季度 / 同口径观察窗口  /  前后哑铃</text>
+</g>
+<g id="visual-7" data-box="1160,247,360,22.08" font-family="PingFang SC, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" fill="#94634C" text-anchor="end">
+<text x="1520" y="263.0">细读 · 逐项看数据</text>
+</g>
+<g id="visual-10" data-box="310.0,765,100,22.08" font-family="Helvetica Neue, PingFang SC, sans-serif" font-size="16" font-weight="500" fill="#706B62" text-anchor="middle">
+<text x="360.0" y="781.0">20</text>
+</g>
+<g id="visual-12" data-box="491.75,765,100,22.08" font-family="Helvetica Neue, PingFang SC, sans-serif" font-size="16" font-weight="500" fill="#706B62" text-anchor="middle">
+<text x="541.75" y="781.0">30</text>
+</g>
+<g id="visual-14" data-box="673.5,765,100,22.08" font-family="Helvetica Neue, PingFang SC, sans-serif" font-size="16" font-weight="500" fill="#706B62" text-anchor="middle">
+<text x="723.5" y="781.0">40</text>
+</g>
+<g id="visual-16" data-box="855.25,765,100,22.08" font-family="Helvetica Neue, PingFang SC, sans-serif" font-size="16" font-weight="500" fill="#706B62" text-anchor="middle">
+<text x="905.25" y="781.0">50</text>
+</g>
+<g id="visual-18" data-box="1037.0,765,100,22.08" font-family="Helvetica Neue, PingFang SC, sans-serif" font-size="16" font-weight="500" fill="#706B62" text-anchor="middle">
+<text x="1087.0" y="781.0">60</text>
+</g>
+<g id="visual-19" data-box="360,805,727,23.459999999999997" font-family="PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17" font-weight="400" fill="#706B62" text-anchor="end">
+<text x="1087" y="822.0">分钟 / 件</text>
+</g>
+<g id="visual-20" data-box="78,359.95,248,27.599999999999998" font-family="PingFang SC, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" fill="#34322D" text-anchor="start">
+<text x="78" y="379.95">客户支持 / 标准队列</text>
+</g>
+<ellipse id="visual-22" data-box="753.85,367.75,12,12" cx="759.85" cy="373.75" rx="6.0" ry="6.0" fill="#F1EFEB" stroke="#34322D" stroke-width="1.4" />
+<ellipse id="visual-23" data-box="552.925,366.75,14,14" cx="559.925" cy="373.75" rx="7.0" ry="7.0" fill="#94634C" stroke="#94634C" stroke-width="1.4" />
+<g id="visual-24" data-box="714.85,337.75,90,23.459999999999997" font-family="Helvetica Neue, PingFang SC, sans-serif" font-size="17" font-weight="500" fill="#706B62" text-anchor="middle">
+<text x="759.85" y="354.75">42</text>
+</g>
+<g id="visual-25" data-box="514.925,389.75,90,24.839999999999996" font-family="Helvetica Neue, PingFang SC, sans-serif" font-size="18" font-weight="500" fill="#94634C" text-anchor="middle">
+<text x="559.925" y="407.75">31</text>
+</g>
+<g id="visual-26" data-box="78,427.45,248,27.599999999999998" font-family="PingFang SC, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" fill="#34322D" text-anchor="start">
+<text x="78" y="447.45">课程报名 / 晚间班</text>
+</g>
+<ellipse id="visual-28" data-box="644.8,435.25,12,12" cx="650.8" cy="441.25" rx="6.0" ry="6.0" fill="#F1EFEB" stroke="#34322D" stroke-width="1.4" />
+<ellipse id="visual-29" data-box="498.4,434.25,14,14" cx="505.4" cy="441.25" rx="7.0" ry="7.0" fill="#94634C" stroke="#94634C" stroke-width="1.4" />
+<g id="visual-30" data-box="605.8,405.25,90,23.459999999999997" font-family="Helvetica Neue, PingFang SC, sans-serif" font-size="17" font-weight="500" fill="#706B62" text-anchor="middle">
+<text x="650.8" y="422.25">36</text>
+</g>
+<g id="visual-31" data-box="460.4,457.25,90,24.839999999999996" font-family="Helvetica Neue, PingFang SC, sans-serif" font-size="18" font-weight="500" fill="#94634C" text-anchor="middle">
+<text x="505.4" y="475.25">28</text>
+</g>
+<g id="visual-32" data-box="78,494.95,248,27.599999999999998" font-family="PingFang SC, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" fill="#34322D" text-anchor="start">
+<text x="78" y="514.95">门诊预约 / 复诊</text>
+</g>
+<ellipse id="visual-34" data-box="517.575,502.75,12,12" cx="523.575" cy="508.75" rx="6.0" ry="6.0" fill="#F1EFEB" stroke="#34322D" stroke-width="1.4" />
+<ellipse id="visual-35" data-box="425.7,501.75,14,14" cx="432.7" cy="508.75" rx="7.0" ry="7.0" fill="#94634C" stroke="#94634C" stroke-width="1.4" />
+<g id="visual-36" data-box="478.57500000000005,472.75,90,23.459999999999997" font-family="Helvetica Neue, PingFang SC, sans-serif" font-size="17" font-weight="500" fill="#706B62" text-anchor="middle">
+<text x="523.575" y="489.75">29</text>
+</g>
+<g id="visual-37" data-box="387.7,524.75,90,24.839999999999996" font-family="Helvetica Neue, PingFang SC, sans-serif" font-size="18" font-weight="500" fill="#94634C" text-anchor="middle">
+<text x="432.7" y="542.75">24</text>
+</g>
+<g id="visual-38" data-box="78,562.45,248,27.599999999999998" font-family="PingFang SC, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" fill="#34322D" text-anchor="start">
+<text x="78" y="582.45">门店自提 / 缺货处理</text>
+</g>
+<ellipse id="visual-40" data-box="917.4250000000001,570.25,12,12" cx="923.4250000000001" cy="576.25" rx="6.0" ry="6.0" fill="#F1EFEB" stroke="#34322D" stroke-width="1.4" />
+<ellipse id="visual-41" data-box="698.325,569.25,14,14" cx="705.325" cy="576.25" rx="7.0" ry="7.0" fill="#94634C" stroke="#94634C" stroke-width="1.4" />
+<g id="visual-42" data-box="878.4250000000001,540.25,90,23.459999999999997" font-family="Helvetica Neue, PingFang SC, sans-serif" font-size="17" font-weight="500" fill="#706B62" text-anchor="middle">
+<text x="923.4250000000001" y="557.25">51</text>
+</g>
+<g id="visual-43" data-box="660.325,592.25,90,24.839999999999996" font-family="Helvetica Neue, PingFang SC, sans-serif" font-size="18" font-weight="500" fill="#94634C" text-anchor="middle">
+<text x="705.325" y="610.25">39</text>
+</g>
+<g id="visual-44" data-box="78,629.95,248,27.599999999999998" font-family="PingFang SC, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" fill="#34322D" text-anchor="start">
+<text x="78" y="649.95">营销线索 / 资格确认</text>
+</g>
+<ellipse id="visual-46" data-box="426.7,637.75,12,12" cx="432.7" cy="643.75" rx="6.0" ry="6.0" fill="#F1EFEB" stroke="#34322D" stroke-width="1.4" />
+<ellipse id="visual-47" data-box="480.225,636.75,14,14" cx="487.225" cy="643.75" rx="7.0" ry="7.0" fill="#94634C" stroke="#94634C" stroke-width="1.4" />
+<g id="visual-48" data-box="387.7,607.75,90,23.459999999999997" font-family="Helvetica Neue, PingFang SC, sans-serif" font-size="17" font-weight="500" fill="#706B62" text-anchor="middle">
+<text x="432.7" y="624.75">24</text>
+</g>
+<g id="visual-49" data-box="442.225,659.75,90,24.839999999999996" font-family="Helvetica Neue, PingFang SC, sans-serif" font-size="18" font-weight="500" fill="#94634C" text-anchor="middle">
+<text x="487.225" y="677.75">27</text>
+</g>
+<g id="visual-50" data-box="78,697.45,248,27.599999999999998" font-family="PingFang SC, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" fill="#34322D" text-anchor="start">
+<text x="78" y="717.45">团队交付 / 周期记录</text>
+</g>
+<ellipse id="visual-52" data-box="862.9,705.25,12,12" cx="868.9" cy="711.25" rx="6.0" ry="6.0" fill="#F1EFEB" stroke="#34322D" stroke-width="1.4" />
+<ellipse id="visual-53" data-box="625.625,704.25,14,14" cx="632.625" cy="711.25" rx="7.0" ry="7.0" fill="#94634C" stroke="#94634C" stroke-width="1.4" />
+<g id="visual-54" data-box="823.9,675.25,90,23.459999999999997" font-family="Helvetica Neue, PingFang SC, sans-serif" font-size="17" font-weight="500" fill="#706B62" text-anchor="middle">
+<text x="868.9" y="692.25">48</text>
+</g>
+<g id="visual-55" data-box="587.625,727.25,90,24.839999999999996" font-family="Helvetica Neue, PingFang SC, sans-serif" font-size="18" font-weight="500" fill="#94634C" text-anchor="middle">
+<text x="632.625" y="745.25">35</text>
+</g>
+<g id="visual-56" data-box="1240,316,276,82.8" font-family="Helvetica Neue, PingFang SC, sans-serif" font-size="60" font-weight="400" fill="#94634C" text-anchor="start">
+<text x="1240" y="376.0">5/6</text>
+</g>
+<g id="visual-57" data-box="1244,399,269,24.839999999999996" font-family="PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" fill="#706B62" text-anchor="start">
+<text x="1244" y="417.0">示例单耗下降的工位</text>
+</g>
+<g id="visual-59" data-box="1244,474,265,19.32" font-family="Menlo, Consolas, PingFang SC, monospace" font-size="14" font-weight="400" fill="#94634C" text-anchor="start">
+<text x="1244" y="488.0">01  观察</text>
+</g>
+<g id="visual-60" data-box="1244,507,269,82.8" font-family="PingFang SC, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" fill="#34322D" text-anchor="start">
+<text x="1244" y="527.0">同一工位前后成对比较。线段</text>
+<text x="1244" y="554.6">长度表示变化量，位置保留实</text>
+<text x="1244" y="582.2">际数值。</text>
+</g>
+<g id="visual-61" data-box="1244,643,265,19.32" font-family="Menlo, Consolas, PingFang SC, monospace" font-size="14" font-weight="400" fill="#94634C" text-anchor="start">
+<text x="1244" y="657.0">02  边界</text>
+</g>
+<g id="visual-62" data-box="1244,676,269,49.67999999999999" font-family="PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" fill="#706B62" text-anchor="start">
+<text x="1244" y="694.0">前后差异不是因果证明；需核对</text>
+<text x="1244" y="718.84">产品组合与统计窗口。</text>
+</g>
+<g id="visual-64" data-box="80,873,130,22.08" font-family="PingFang SC, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" fill="#94634C" text-anchor="start">
+<text x="80" y="889.0">读图约定</text>
+</g>
+<g id="visual-65" data-box="220,871,1295,24.839999999999996" font-family="PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" fill="#34322D" text-anchor="start">
+<text x="220" y="889.0">空心点 = 改善前；实心点 = 改善后。横轴保留原始单位，连线只连接同一工位。</text>
+</g>
+<g id="visual-66" data-box="80,950,1370,19.32" font-family="PingFang SC, Noto Sans CJK SC, sans-serif" font-size="14" font-weight="400" fill="#706B62" text-anchor="start">
+<text x="80" y="964.0">模拟数据 · Apat 自拟跨行业示例，仅用于呈现图形效果；不代表现场测量。</text>
+</g>
+<g id="visual-67" data-box="1420,950,100,19.32" font-family="PingFang SC, Noto Sans CJK SC, sans-serif" font-size="14" font-weight="400" fill="#706B62" text-anchor="end">
+<text x="1520" y="964.0">APAT</text>
+</g>
+<desc>空心点 = 改善前；实心点 = 改善后。横轴保留原始单位，连线只连接同一工位。 同一工位前后成对比较。线段长度表示变化量，位置保留实际数值。 前后差异不是因果证明；需核对产品组合与统计窗口。</desc></svg>

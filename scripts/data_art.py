@@ -7,7 +7,7 @@ SVG/draw.io/JSON/CSV use the standard library; PNG/PDF use Matplotlib/fontTools.
 import argparse, copy, csv, datetime as dt, html, io, json, math, re, statistics
 from pathlib import Path
 import xml.etree.ElementTree as ET
-from style_family import Plate, ROOT, width
+from style_family import Plate, ROOT, width, wrap
 
 PALETTES={x['id']:x for x in json.loads((ROOT/'assets/editorial-palettes.json').read_text())}
 RECIPES={
@@ -17,6 +17,21 @@ RECIPES={
  'scatter':('垂线散点','PAIRED OBSERVATIONS'), 'matrix':('面积点阵','SHIFT MATRIX'),
  'distribution':('样本与箱线','SAMPLE DISTRIBUTION'), 'waterfall':('增减分解','CHANGE ACCOUNT'),
  'multiples':('指数小多图','COMMON BASELINE'), 'parallel':('多维剖面','OPERATING PROFILES')}
+
+DATA_ART_UI={
+ 'zh':{
+  'recipe_label':{'dumbbell':'前后哑铃'},
+  'mode_detail':'细读 · 逐项看数据','mode_clear':'快读 · 先看整体',
+  'reading_guide':'读图约定','observation':'01  观察','boundary':'02  边界',
+  'synthetic':'模拟数据','source':'来源数据',
+ },
+ 'en':{
+  'recipe_label':{'dumbbell':'Before / after dumbbell'},
+  'mode_detail':'Detail · read each value','mode_clear':'Clear · compare at a glance',
+  'reading_guide':'Reading guide','observation':'01  Observation','boundary':'02  Boundary',
+  'synthetic':'Synthetic data','source':'Source data',
+ },
+}
 
 def number(v, nonnegative=False):
  if isinstance(v,bool) or not isinstance(v,(int,float)) or not math.isfinite(v):raise ValueError('expected a finite number')
@@ -39,6 +54,7 @@ def box_stats(values):
 def validate(d):
  recipe=d.get('recipe');rows=d.get('rows')
  if recipe not in RECIPES:raise ValueError('unknown recipe')
+ if d.get('language','zh') not in DATA_ART_UI:raise ValueError('language must be zh or en')
  for k in ('title','subtitle','source','period','unit'):
   if not isinstance(d.get(k),str) or not d[k].strip():raise ValueError('missing '+k)
  if not isinstance(d.get('synthetic'),bool):raise ValueError('synthetic must be explicit')
@@ -146,10 +162,13 @@ class DataPlate(Plate):
  def __init__(self,data,mode='detail',theme='warm'):
   if mode not in ('detail','clear'):raise ValueError('unknown reading mode')
   if theme not in PALETTES:raise ValueError('unknown theme')
-  self.data=validate(copy.deepcopy(data));self.data['form']=data['recipe'];self.metrics=analyse(data)
+  self.data=validate(copy.deepcopy(data));self.data['form']=data['recipe'];self.language=self.data.get('language','zh');self.metrics=analyse(data)
   self.mode=mode;self.name=theme;self.f=copy.deepcopy(PALETTES[theme]);self.f.update(relation_ink=self.f['accent'],secondary_ink=self.f['muted'])
+  if self.language=='en':self.f['name']=self.f.get('en',self.f['name'])
   self.items=[];self.ids=set();self.w=1600;self.h=1000;self.tags={};self.detail=mode=='detail';self.box=(150,330,980,440)
   self.rows=self.data['rows'];self.recipe=data['recipe'];self.encoding='';self.reading='';self.caveat='';self.kpi='';self.kpi_label=''
+ def ui(self,key):return DATA_ART_UI[self.language].get(key,key)
+ def recipe_label(self):return DATA_ART_UI[self.language]['recipe_label'].get(self.recipe,RECIPES[self.recipe][0])
  def text(self,x,y,w,text,fs=20,tone='ink',font=None,weight=400,align='left',id=None):
   # Keep numbers and Latin words intact; never start a line with closing punctuation.
   lines=[]
@@ -187,21 +206,25 @@ class DataPlate(Plate):
   self.seg(80,82,1520,82,'ink',1.0)
   self.text(78,105,1440,d['title'],49,'ink','serif',400)
   self.label(81,183,1425,d['subtitle'],21)
-  self.label(81,247,900,d['period']+'  /  '+RECIPES[self.recipe][0],16,'accent')
-  self.label(1160,247,360,('细读 · 逐项看数据' if self.detail else '快读 · 先看整体'),16,'accent','right')
+  self.label(81,247,900,d['period']+'  /  '+self.recipe_label(),16,'accent')
+  self.label(1160,247,360,(self.ui('mode_detail') if self.detail else self.ui('mode_clear')),16,'accent','right')
   self.seg(1195,316,1195,809,'line',.8)
  def side(self):
   self.text(1240,316,276,str(self.kpi),60,'accent','grotesk',400)
   self.label(1244,399,269,self.kpi_label,18)
   self.seg(1244,449,1518,449,'line',.8)
-  self.text(1244,474,265,'01  观察',14,'accent','mono')
-  self.label(1244,507,269,self.reading,20,'ink')
-  self.text(1244,643,265,'02  边界',14,'accent','mono')
-  self.label(1244,676,269,self.caveat,18)
+  self.text(1244,474,265,self.ui('observation'),14,'accent','mono')
+  reading_fs=18 if self.language=='en' else 20
+  caveat_fs=16 if self.language=='en' else 18
+  reading_height=len(wrap(self.reading,269,reading_fs))*reading_fs*1.38
+  boundary_y=max(643,507+reading_height+22)
+  self.label(1244,507,269,self.reading,reading_fs,'ink')
+  self.text(1244,boundary_y,265,self.ui('boundary'),14,'accent','mono')
+  self.label(1244,boundary_y+33,269,self.caveat,caveat_fs)
   self.seg(80,851,1520,851,'ink',.8)
-  self.label(80,873,130, '读图约定',16,'accent')
+  self.label(80,873,130, self.ui('reading_guide'),16,'accent')
   self.label(220,871,1295,self.encoding,18,'ink')
-  flag='模拟数据' if self.data['synthetic'] else '来源数据'
+  flag=self.ui('synthetic') if self.data['synthetic'] else self.ui('source')
   self.label(80,950,1370,flag+' · '+self.data['source'],14)
   self.label(1420,950,100,'APAT',14,'muted','right')
  def build(self):
@@ -274,12 +297,20 @@ class DataPlate(Plate):
    yy=368+j*115;self.dot(805,yy+13,7,tones[j%3],j%3==2);self.label(831,yy-2,295,r['label'],20,'ink');self.num(831,yy+35,130,r['value'],32,tones[j%3]);self.label(974,yy+46,150,fmt(self.metrics['shares'][r['id']])+'%',18)
   self.kpi=str(total);self.kpi_label='样本总量 / '+self.data['unit'];self.reading='所有样本只计入一个类别，数量与原始记录合计一致。';self.caveat='离散点只用于整数计数；不能把百分比点阵冒充逐人观测。';self.encoding=('每个点 = 1 '+self.data['unit']+'，按类别连续排布；颜色和空心形状同时区分类别。' if self.detail else '每段宽度 = 分项数 / 样本总数；保持同一分母。')
  def dumbbell(self):
-  x,y,w,h=290,340,797,405;vals=[r[k] for r in self.rows for k in ('before','after')];lo,hi=scale(vals);X=self.horizontal_axis(lo,hi,x,y,w,h,self.data['unit'])
+  # Leave enough room for cross-industry labels while keeping the axis and
+  # the right-side reading column visually separate. Long labels wrap at word
+  # boundaries and are vertically centred on their row.
+  x,y,w,h=360,340,727,405;label_w=248;vals=[r[k] for r in self.rows for k in ('before','after')];lo,hi=scale(vals);X=self.horizontal_axis(lo,hi,x,y,w,h,self.data['unit'])
   for i,r in enumerate(self.rows):
-   yy=y+(i+.5)*h/len(self.rows);a,b=r['before'],r['after'];self.label(90,yy-13,180,r['label'],20,'ink')
+   yy=y+(i+.5)*h/len(self.rows);a,b=r['before'],r['after'];lines=len(wrap(r['label'],label_w,20))*20*1.38
+   self.label(78,yy-lines/2,label_w,r['label'],20,'ink')
    self.mark(self.seg(X(a),yy,X(b),yy,'accent',1.3 if self.detail else 6),r,fmt(a)+' → '+fmt(b)+' '+self.data['unit']);self.dot(X(a),yy,6,'ink',True);self.dot(X(b),yy,7,'accent')
    self.num(X(a)-45,yy-36,90,a,17,'muted','center');self.num(X(b)-45,yy+16,90,b,18,'accent','center')
-  reductions=sum(r['after']<r['before'] for r in self.rows);self.kpi=f'{reductions}/{len(self.rows)}';self.kpi_label='示例单耗下降的工位';self.reading='同一工位前后成对比较。线段长度表示变化量，位置保留实际数值。';self.caveat='前后差异不是因果证明；需核对产品组合与统计窗口。';self.encoding='空心点 = 改善前；实心点 = 改善后。横轴保留原始单位，连线只连接同一工位。'
+  reductions=sum(r['after']<r['before'] for r in self.rows);self.kpi=f'{reductions}/{len(self.rows)}'
+  if self.language=='en':
+   self.kpi_label='Entities with a lower after value';self.reading='Each entity is paired before and after. Segment length shows absolute change while position keeps the original values.';self.caveat='A before/after difference is not causal proof; check the mix of cases and the observation window.';self.encoding='Hollow point = before; filled point = after. The axis keeps the original unit, and each segment connects one entity.'
+  else:
+   self.kpi_label='示例单耗下降的工位';self.reading='同一工位前后成对比较。线段长度表示变化量，位置保留实际数值。';self.caveat='前后差异不是因果证明；需核对产品组合与统计窗口。';self.encoding='空心点 = 改善前；实心点 = 改善后。横轴保留原始单位，连线只连接同一工位。'
  def scatter(self):
   x,y,w,h=self.box;lo,hi=scale([r['y'] for r in self.rows]);xl,xh=scale([r['x'] for r in self.rows]);Y=self.axis(lo,hi,unit=self.data['y_label']+' / '+self.data['y_unit']);X=lambda v:x+w*(v-xl)/(xh-xl)
   for v in ticks(xl,xh):self.num(X(v)-50,y+h+22,100,v,16,'muted','center')

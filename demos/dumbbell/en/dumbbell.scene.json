@@ -1,0 +1,1149 @@
+{
+  "family": "warm",
+  "palette": {
+    "id": "warm",
+    "name": "Warm Paper",
+    "en": "Warm Paper",
+    "bg": "#F1EFEB",
+    "ink": "#34322D",
+    "muted": "#706B62",
+    "line": "#CDC7BC",
+    "accent": "#94634C",
+    "tint": "#E8E1D6",
+    "outer": "#E4E2DD",
+    "relation_ink": "#94634C",
+    "secondary_ink": "#706B62"
+  },
+  "width": 1600,
+  "height": 1000,
+  "canvas": null,
+  "items": [
+    {
+      "kind": "text",
+      "id": "visual-1",
+      "x": 80,
+      "y": 39,
+      "w": 1150,
+      "h": 19.32,
+      "lines": [
+        "APAT    /    DATA STUDIES    /    PAIRED CHANGE"
+      ],
+      "text": "APAT    /    DATA STUDIES    /    PAIRED CHANGE",
+      "fs": 14,
+      "tone": "muted",
+      "font": "mono",
+      "weight": 400,
+      "align": "left"
+    },
+    {
+      "kind": "text",
+      "id": "visual-2",
+      "x": 1340,
+      "y": 39,
+      "w": 180,
+      "h": 19.32,
+      "lines": [
+        "06 / 12"
+      ],
+      "text": "06 / 12",
+      "fs": 14,
+      "tone": "muted",
+      "font": "mono",
+      "weight": 400,
+      "align": "right"
+    },
+    {
+      "kind": "line",
+      "id": "visual-3",
+      "points": [
+        [
+          80,
+          82
+        ],
+        [
+          1520,
+          82
+        ]
+      ],
+      "tone": "ink",
+      "lw": 1.0,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "text",
+      "id": "visual-4",
+      "x": 78,
+      "y": 105,
+      "w": 1440,
+      "h": 67.61999999999999,
+      "lines": [
+        "How much did the same service change?"
+      ],
+      "text": "How much did the same service change?",
+      "fs": 49,
+      "tone": "ink",
+      "font": "serif",
+      "weight": 400,
+      "align": "left"
+    },
+    {
+      "kind": "text",
+      "id": "visual-5",
+      "x": 81,
+      "y": 183,
+      "w": 1425,
+      "h": 28.979999999999997,
+      "lines": [
+        "Compare high-frequency service steps across industries while keeping direction and absolute change visible."
+      ],
+      "text": "Compare high-frequency service steps across industries while keeping direction and absolute change visible.",
+      "fs": 21,
+      "tone": "muted",
+      "font": "sans",
+      "weight": 400,
+      "align": "left"
+    },
+    {
+      "kind": "text",
+      "id": "visual-6",
+      "x": 81,
+      "y": 247,
+      "w": 900,
+      "h": 22.08,
+      "lines": [
+        "Q1 2026 → Q2 2026 / same observation window  /  Before / after dumbbell"
+      ],
+      "text": "Q1 2026 → Q2 2026 / same observation window  /  Before / after dumbbell",
+      "fs": 16,
+      "tone": "accent",
+      "font": "sans",
+      "weight": 400,
+      "align": "left"
+    },
+    {
+      "kind": "text",
+      "id": "visual-7",
+      "x": 1160,
+      "y": 247,
+      "w": 360,
+      "h": 22.08,
+      "lines": [
+        "Detail · read each value"
+      ],
+      "text": "Detail · read each value",
+      "fs": 16,
+      "tone": "accent",
+      "font": "sans",
+      "weight": 400,
+      "align": "right"
+    },
+    {
+      "kind": "line",
+      "id": "visual-8",
+      "points": [
+        [
+          1195,
+          316
+        ],
+        [
+          1195,
+          809
+        ]
+      ],
+      "tone": "line",
+      "lw": 0.8,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-9",
+      "points": [
+        [
+          360.0,
+          340
+        ],
+        [
+          360.0,
+          745
+        ]
+      ],
+      "tone": "line",
+      "lw": 0.7,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "text",
+      "id": "visual-10",
+      "x": 310.0,
+      "y": 765,
+      "w": 100,
+      "h": 22.08,
+      "lines": [
+        "20"
+      ],
+      "text": "20",
+      "fs": 16,
+      "tone": "muted",
+      "font": "grotesk",
+      "weight": 500,
+      "align": "center"
+    },
+    {
+      "kind": "line",
+      "id": "visual-11",
+      "points": [
+        [
+          541.75,
+          340
+        ],
+        [
+          541.75,
+          745
+        ]
+      ],
+      "tone": "line",
+      "lw": 0.7,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "text",
+      "id": "visual-12",
+      "x": 491.75,
+      "y": 765,
+      "w": 100,
+      "h": 22.08,
+      "lines": [
+        "30"
+      ],
+      "text": "30",
+      "fs": 16,
+      "tone": "muted",
+      "font": "grotesk",
+      "weight": 500,
+      "align": "center"
+    },
+    {
+      "kind": "line",
+      "id": "visual-13",
+      "points": [
+        [
+          723.5,
+          340
+        ],
+        [
+          723.5,
+          745
+        ]
+      ],
+      "tone": "line",
+      "lw": 0.7,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "text",
+      "id": "visual-14",
+      "x": 673.5,
+      "y": 765,
+      "w": 100,
+      "h": 22.08,
+      "lines": [
+        "40"
+      ],
+      "text": "40",
+      "fs": 16,
+      "tone": "muted",
+      "font": "grotesk",
+      "weight": 500,
+      "align": "center"
+    },
+    {
+      "kind": "line",
+      "id": "visual-15",
+      "points": [
+        [
+          905.25,
+          340
+        ],
+        [
+          905.25,
+          745
+        ]
+      ],
+      "tone": "line",
+      "lw": 0.7,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "text",
+      "id": "visual-16",
+      "x": 855.25,
+      "y": 765,
+      "w": 100,
+      "h": 22.08,
+      "lines": [
+        "50"
+      ],
+      "text": "50",
+      "fs": 16,
+      "tone": "muted",
+      "font": "grotesk",
+      "weight": 500,
+      "align": "center"
+    },
+    {
+      "kind": "line",
+      "id": "visual-17",
+      "points": [
+        [
+          1087.0,
+          340
+        ],
+        [
+          1087.0,
+          745
+        ]
+      ],
+      "tone": "line",
+      "lw": 0.7,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "text",
+      "id": "visual-18",
+      "x": 1037.0,
+      "y": 765,
+      "w": 100,
+      "h": 22.08,
+      "lines": [
+        "60"
+      ],
+      "text": "60",
+      "fs": 16,
+      "tone": "muted",
+      "font": "grotesk",
+      "weight": 500,
+      "align": "center"
+    },
+    {
+      "kind": "text",
+      "id": "visual-19",
+      "x": 360,
+      "y": 805,
+      "w": 727,
+      "h": 23.459999999999997,
+      "lines": [
+        "minutes / case"
+      ],
+      "text": "minutes / case",
+      "fs": 17,
+      "tone": "muted",
+      "font": "sans",
+      "weight": 400,
+      "align": "right"
+    },
+    {
+      "kind": "text",
+      "id": "visual-20",
+      "x": 78,
+      "y": 346.15,
+      "w": 248,
+      "h": 55.199999999999996,
+      "lines": [
+        "Customer support /",
+        "standard queue"
+      ],
+      "text": "Customer support / standard queue",
+      "fs": 20,
+      "tone": "ink",
+      "font": "sans",
+      "weight": 400,
+      "align": "left"
+    },
+    {
+      "kind": "line",
+      "id": "visual-21",
+      "points": [
+        [
+          759.85,
+          373.75
+        ],
+        [
+          559.925,
+          373.75
+        ]
+      ],
+      "tone": "accent",
+      "lw": 1.3,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "ellipse",
+      "id": "visual-22",
+      "x": 753.85,
+      "y": 367.75,
+      "w": 12,
+      "h": 12,
+      "fill": "bg",
+      "stroke": "ink",
+      "lw": 1.4
+    },
+    {
+      "kind": "ellipse",
+      "id": "visual-23",
+      "x": 552.925,
+      "y": 366.75,
+      "w": 14,
+      "h": 14,
+      "fill": "accent",
+      "stroke": "accent",
+      "lw": 1.4
+    },
+    {
+      "kind": "text",
+      "id": "visual-24",
+      "x": 714.85,
+      "y": 337.75,
+      "w": 90,
+      "h": 23.459999999999997,
+      "lines": [
+        "42"
+      ],
+      "text": "42",
+      "fs": 17,
+      "tone": "muted",
+      "font": "grotesk",
+      "weight": 500,
+      "align": "center"
+    },
+    {
+      "kind": "text",
+      "id": "visual-25",
+      "x": 514.925,
+      "y": 389.75,
+      "w": 90,
+      "h": 24.839999999999996,
+      "lines": [
+        "31"
+      ],
+      "text": "31",
+      "fs": 18,
+      "tone": "accent",
+      "font": "grotesk",
+      "weight": 500,
+      "align": "center"
+    },
+    {
+      "kind": "text",
+      "id": "visual-26",
+      "x": 78,
+      "y": 413.65,
+      "w": 248,
+      "h": 55.199999999999996,
+      "lines": [
+        "Course enrolment /",
+        "evening cohort"
+      ],
+      "text": "Course enrolment / evening cohort",
+      "fs": 20,
+      "tone": "ink",
+      "font": "sans",
+      "weight": 400,
+      "align": "left"
+    },
+    {
+      "kind": "line",
+      "id": "visual-27",
+      "points": [
+        [
+          650.8,
+          441.25
+        ],
+        [
+          505.4,
+          441.25
+        ]
+      ],
+      "tone": "accent",
+      "lw": 1.3,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "ellipse",
+      "id": "visual-28",
+      "x": 644.8,
+      "y": 435.25,
+      "w": 12,
+      "h": 12,
+      "fill": "bg",
+      "stroke": "ink",
+      "lw": 1.4
+    },
+    {
+      "kind": "ellipse",
+      "id": "visual-29",
+      "x": 498.4,
+      "y": 434.25,
+      "w": 14,
+      "h": 14,
+      "fill": "accent",
+      "stroke": "accent",
+      "lw": 1.4
+    },
+    {
+      "kind": "text",
+      "id": "visual-30",
+      "x": 605.8,
+      "y": 405.25,
+      "w": 90,
+      "h": 23.459999999999997,
+      "lines": [
+        "36"
+      ],
+      "text": "36",
+      "fs": 17,
+      "tone": "muted",
+      "font": "grotesk",
+      "weight": 500,
+      "align": "center"
+    },
+    {
+      "kind": "text",
+      "id": "visual-31",
+      "x": 460.4,
+      "y": 457.25,
+      "w": 90,
+      "h": 24.839999999999996,
+      "lines": [
+        "28"
+      ],
+      "text": "28",
+      "fs": 18,
+      "tone": "accent",
+      "font": "grotesk",
+      "weight": 500,
+      "align": "center"
+    },
+    {
+      "kind": "text",
+      "id": "visual-32",
+      "x": 78,
+      "y": 481.15,
+      "w": 248,
+      "h": 55.199999999999996,
+      "lines": [
+        "Clinic appointments /",
+        "follow-up"
+      ],
+      "text": "Clinic appointments / follow-up",
+      "fs": 20,
+      "tone": "ink",
+      "font": "sans",
+      "weight": 400,
+      "align": "left"
+    },
+    {
+      "kind": "line",
+      "id": "visual-33",
+      "points": [
+        [
+          523.575,
+          508.75
+        ],
+        [
+          432.7,
+          508.75
+        ]
+      ],
+      "tone": "accent",
+      "lw": 1.3,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "ellipse",
+      "id": "visual-34",
+      "x": 517.575,
+      "y": 502.75,
+      "w": 12,
+      "h": 12,
+      "fill": "bg",
+      "stroke": "ink",
+      "lw": 1.4
+    },
+    {
+      "kind": "ellipse",
+      "id": "visual-35",
+      "x": 425.7,
+      "y": 501.75,
+      "w": 14,
+      "h": 14,
+      "fill": "accent",
+      "stroke": "accent",
+      "lw": 1.4
+    },
+    {
+      "kind": "text",
+      "id": "visual-36",
+      "x": 478.57500000000005,
+      "y": 472.75,
+      "w": 90,
+      "h": 23.459999999999997,
+      "lines": [
+        "29"
+      ],
+      "text": "29",
+      "fs": 17,
+      "tone": "muted",
+      "font": "grotesk",
+      "weight": 500,
+      "align": "center"
+    },
+    {
+      "kind": "text",
+      "id": "visual-37",
+      "x": 387.7,
+      "y": 524.75,
+      "w": 90,
+      "h": 24.839999999999996,
+      "lines": [
+        "24"
+      ],
+      "text": "24",
+      "fs": 18,
+      "tone": "accent",
+      "font": "grotesk",
+      "weight": 500,
+      "align": "center"
+    },
+    {
+      "kind": "text",
+      "id": "visual-38",
+      "x": 78,
+      "y": 548.65,
+      "w": 248,
+      "h": 55.199999999999996,
+      "lines": [
+        "Store pickup / stock",
+        "exception"
+      ],
+      "text": "Store pickup / stock exception",
+      "fs": 20,
+      "tone": "ink",
+      "font": "sans",
+      "weight": 400,
+      "align": "left"
+    },
+    {
+      "kind": "line",
+      "id": "visual-39",
+      "points": [
+        [
+          923.4250000000001,
+          576.25
+        ],
+        [
+          705.325,
+          576.25
+        ]
+      ],
+      "tone": "accent",
+      "lw": 1.3,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "ellipse",
+      "id": "visual-40",
+      "x": 917.4250000000001,
+      "y": 570.25,
+      "w": 12,
+      "h": 12,
+      "fill": "bg",
+      "stroke": "ink",
+      "lw": 1.4
+    },
+    {
+      "kind": "ellipse",
+      "id": "visual-41",
+      "x": 698.325,
+      "y": 569.25,
+      "w": 14,
+      "h": 14,
+      "fill": "accent",
+      "stroke": "accent",
+      "lw": 1.4
+    },
+    {
+      "kind": "text",
+      "id": "visual-42",
+      "x": 878.4250000000001,
+      "y": 540.25,
+      "w": 90,
+      "h": 23.459999999999997,
+      "lines": [
+        "51"
+      ],
+      "text": "51",
+      "fs": 17,
+      "tone": "muted",
+      "font": "grotesk",
+      "weight": 500,
+      "align": "center"
+    },
+    {
+      "kind": "text",
+      "id": "visual-43",
+      "x": 660.325,
+      "y": 592.25,
+      "w": 90,
+      "h": 24.839999999999996,
+      "lines": [
+        "39"
+      ],
+      "text": "39",
+      "fs": 18,
+      "tone": "accent",
+      "font": "grotesk",
+      "weight": 500,
+      "align": "center"
+    },
+    {
+      "kind": "text",
+      "id": "visual-44",
+      "x": 78,
+      "y": 616.15,
+      "w": 248,
+      "h": 55.199999999999996,
+      "lines": [
+        "Marketing leads /",
+        "qualification"
+      ],
+      "text": "Marketing leads / qualification",
+      "fs": 20,
+      "tone": "ink",
+      "font": "sans",
+      "weight": 400,
+      "align": "left"
+    },
+    {
+      "kind": "line",
+      "id": "visual-45",
+      "points": [
+        [
+          432.7,
+          643.75
+        ],
+        [
+          487.225,
+          643.75
+        ]
+      ],
+      "tone": "accent",
+      "lw": 1.3,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "ellipse",
+      "id": "visual-46",
+      "x": 426.7,
+      "y": 637.75,
+      "w": 12,
+      "h": 12,
+      "fill": "bg",
+      "stroke": "ink",
+      "lw": 1.4
+    },
+    {
+      "kind": "ellipse",
+      "id": "visual-47",
+      "x": 480.225,
+      "y": 636.75,
+      "w": 14,
+      "h": 14,
+      "fill": "accent",
+      "stroke": "accent",
+      "lw": 1.4
+    },
+    {
+      "kind": "text",
+      "id": "visual-48",
+      "x": 387.7,
+      "y": 607.75,
+      "w": 90,
+      "h": 23.459999999999997,
+      "lines": [
+        "24"
+      ],
+      "text": "24",
+      "fs": 17,
+      "tone": "muted",
+      "font": "grotesk",
+      "weight": 500,
+      "align": "center"
+    },
+    {
+      "kind": "text",
+      "id": "visual-49",
+      "x": 442.225,
+      "y": 659.75,
+      "w": 90,
+      "h": 24.839999999999996,
+      "lines": [
+        "27"
+      ],
+      "text": "27",
+      "fs": 18,
+      "tone": "accent",
+      "font": "grotesk",
+      "weight": 500,
+      "align": "center"
+    },
+    {
+      "kind": "text",
+      "id": "visual-50",
+      "x": 78,
+      "y": 683.65,
+      "w": 248,
+      "h": 55.199999999999996,
+      "lines": [
+        "Team delivery / cycle",
+        "tracking"
+      ],
+      "text": "Team delivery / cycle tracking",
+      "fs": 20,
+      "tone": "ink",
+      "font": "sans",
+      "weight": 400,
+      "align": "left"
+    },
+    {
+      "kind": "line",
+      "id": "visual-51",
+      "points": [
+        [
+          868.9,
+          711.25
+        ],
+        [
+          632.625,
+          711.25
+        ]
+      ],
+      "tone": "accent",
+      "lw": 1.3,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "ellipse",
+      "id": "visual-52",
+      "x": 862.9,
+      "y": 705.25,
+      "w": 12,
+      "h": 12,
+      "fill": "bg",
+      "stroke": "ink",
+      "lw": 1.4
+    },
+    {
+      "kind": "ellipse",
+      "id": "visual-53",
+      "x": 625.625,
+      "y": 704.25,
+      "w": 14,
+      "h": 14,
+      "fill": "accent",
+      "stroke": "accent",
+      "lw": 1.4
+    },
+    {
+      "kind": "text",
+      "id": "visual-54",
+      "x": 823.9,
+      "y": 675.25,
+      "w": 90,
+      "h": 23.459999999999997,
+      "lines": [
+        "48"
+      ],
+      "text": "48",
+      "fs": 17,
+      "tone": "muted",
+      "font": "grotesk",
+      "weight": 500,
+      "align": "center"
+    },
+    {
+      "kind": "text",
+      "id": "visual-55",
+      "x": 587.625,
+      "y": 727.25,
+      "w": 90,
+      "h": 24.839999999999996,
+      "lines": [
+        "35"
+      ],
+      "text": "35",
+      "fs": 18,
+      "tone": "accent",
+      "font": "grotesk",
+      "weight": 500,
+      "align": "center"
+    },
+    {
+      "kind": "text",
+      "id": "visual-56",
+      "x": 1240,
+      "y": 316,
+      "w": 276,
+      "h": 82.8,
+      "lines": [
+        "5/6"
+      ],
+      "text": "5/6",
+      "fs": 60,
+      "tone": "accent",
+      "font": "grotesk",
+      "weight": 400,
+      "align": "left"
+    },
+    {
+      "kind": "text",
+      "id": "visual-57",
+      "x": 1244,
+      "y": 399,
+      "w": 269,
+      "h": 49.67999999999999,
+      "lines": [
+        "Entities with a lower",
+        "after value"
+      ],
+      "text": "Entities with a lower after value",
+      "fs": 18,
+      "tone": "muted",
+      "font": "sans",
+      "weight": 400,
+      "align": "left"
+    },
+    {
+      "kind": "line",
+      "id": "visual-58",
+      "points": [
+        [
+          1244,
+          449
+        ],
+        [
+          1518,
+          449
+        ]
+      ],
+      "tone": "line",
+      "lw": 0.8,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "text",
+      "id": "visual-59",
+      "x": 1244,
+      "y": 474,
+      "w": 265,
+      "h": 19.32,
+      "lines": [
+        "01  Observation"
+      ],
+      "text": "01  Observation",
+      "fs": 14,
+      "tone": "accent",
+      "font": "mono",
+      "weight": 400,
+      "align": "left"
+    },
+    {
+      "kind": "text",
+      "id": "visual-60",
+      "x": 1244,
+      "y": 507,
+      "w": 269,
+      "h": 149.04,
+      "lines": [
+        "Each entity is paired",
+        "before and after. Segment",
+        "length shows absolute",
+        "change while position",
+        "keeps the original values",
+        "."
+      ],
+      "text": "Each entity is paired before and after. Segment length shows absolute change while position keeps the original values.",
+      "fs": 18,
+      "tone": "ink",
+      "font": "sans",
+      "weight": 400,
+      "align": "left"
+    },
+    {
+      "kind": "text",
+      "id": "visual-61",
+      "x": 1244,
+      "y": 653.2,
+      "w": 265,
+      "h": 19.32,
+      "lines": [
+        "02  Boundary"
+      ],
+      "text": "02  Boundary",
+      "fs": 14,
+      "tone": "accent",
+      "font": "mono",
+      "weight": 400,
+      "align": "left"
+    },
+    {
+      "kind": "text",
+      "id": "visual-62",
+      "x": 1244,
+      "y": 686.2,
+      "w": 269,
+      "h": 88.32,
+      "lines": [
+        "A before/after difference is",
+        "not causal proof; check the",
+        "mix of cases and the",
+        "observation window."
+      ],
+      "text": "A before/after difference is not causal proof; check the mix of cases and the observation window.",
+      "fs": 16,
+      "tone": "muted",
+      "font": "sans",
+      "weight": 400,
+      "align": "left"
+    },
+    {
+      "kind": "line",
+      "id": "visual-63",
+      "points": [
+        [
+          80,
+          851
+        ],
+        [
+          1520,
+          851
+        ]
+      ],
+      "tone": "ink",
+      "lw": 0.8,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "text",
+      "id": "visual-64",
+      "x": 80,
+      "y": 873,
+      "w": 130,
+      "h": 22.08,
+      "lines": [
+        "Reading guide"
+      ],
+      "text": "Reading guide",
+      "fs": 16,
+      "tone": "accent",
+      "font": "sans",
+      "weight": 400,
+      "align": "left"
+    },
+    {
+      "kind": "text",
+      "id": "visual-65",
+      "x": 220,
+      "y": 871,
+      "w": 1295,
+      "h": 24.839999999999996,
+      "lines": [
+        "Hollow point = before; filled point = after. The axis keeps the original unit, and each segment connects one entity."
+      ],
+      "text": "Hollow point = before; filled point = after. The axis keeps the original unit, and each segment connects one entity.",
+      "fs": 18,
+      "tone": "ink",
+      "font": "sans",
+      "weight": 400,
+      "align": "left"
+    },
+    {
+      "kind": "text",
+      "id": "visual-66",
+      "x": 80,
+      "y": 950,
+      "w": 1370,
+      "h": 19.32,
+      "lines": [
+        "Synthetic data · Apat synthetic cross-industry example for visual inspection; not a field measurement."
+      ],
+      "text": "Synthetic data · Apat synthetic cross-industry example for visual inspection; not a field measurement.",
+      "fs": 14,
+      "tone": "muted",
+      "font": "sans",
+      "weight": 400,
+      "align": "left"
+    },
+    {
+      "kind": "text",
+      "id": "visual-67",
+      "x": 1420,
+      "y": 950,
+      "w": 100,
+      "h": 19.32,
+      "lines": [
+        "APAT"
+      ],
+      "text": "APAT",
+      "fs": 14,
+      "tone": "muted",
+      "font": "sans",
+      "weight": 400,
+      "align": "right"
+    }
+  ]
+}

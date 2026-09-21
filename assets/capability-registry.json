@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "version": "v53",
+  "version": "v54",
   "updated": "2026-09-20",
   "purpose": "Single source for chooser labels, backend capability, delivery formats and acceptance evidence.",
   "status_vocabulary": {
@@ -201,8 +201,8 @@
           "formats": ["svg", "drawio", "png", "pdf", "html", "input.json", "scene.json", "analysis.json", "qa.json", "csv"],
           "layout_limits": {"zh": "最多七个对象；保留绝对差值和方向，超过密度拆分。", "en": "Up to seven entities; retain absolute change and direction, and split higher density."},
           "languages": ["zh", "en"],
-          "examples": ["assets/data-art-examples/dumbbell.json"],
-          "evidence": {"level": "rendered_visual_check", "reference": "references/data-art.md", "detail": {"zh": "前后哑铃配方已计算并导出；具体数据仍需按案例复核。", "en": "The dumbbell recipe computes and exports; each data case still needs review."}},
+          "examples": ["assets/data-art-examples/dumbbell-cn.json", "assets/data-art-examples/dumbbell-en.json"],
+          "evidence": {"level": "manual_visual_review", "reference": "assets/v54-dumbbell-evidence.json", "detail": {"zh": "中英跨行业前后哑铃通过成对数值、单位、长英文对象名换行和浏览器查看。", "en": "Chinese and English cross-industry dumbbells pass paired values, units, long-English entity wrapping and browser review."}},
           "scope": {"zh": "同一对象的前后变化；不用于独立样本比较。", "en": "For paired before/after entities; not for independent-group comparison."}
         }
       ]

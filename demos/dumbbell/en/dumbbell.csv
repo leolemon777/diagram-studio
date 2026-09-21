@@ -1,0 +1,7 @@
+﻿id,label,before,after,unit
+support,Customer support / standard queue,42,31,minutes / case
+enrolment,Course enrolment / evening cohort,36,28,minutes / case
+clinic,Clinic appointments / follow-up,29,24,minutes / case
+pickup,Store pickup / stock exception,51,39,minutes / case
+leads,Marketing leads / qualification,24,27,minutes / case
+delivery,Team delivery / cycle tracking,48,35,minutes / case

@@ -1,0 +1,18 @@
+{
+  "recipe": "dumbbell",
+  "language": "zh",
+  "title": "同一服务，前后变化有多大？",
+  "subtitle": "比较跨行业高频服务环节的处理时长；保留方向与绝对差值。",
+  "unit": "分钟 / 件",
+  "rows": [
+    {"id": "support", "label": "客户支持 / 标准队列", "before": 42, "after": 31},
+    {"id": "enrolment", "label": "课程报名 / 晚间班", "before": 36, "after": 28},
+    {"id": "clinic", "label": "门诊预约 / 复诊", "before": 29, "after": 24},
+    {"id": "pickup", "label": "门店自提 / 缺货处理", "before": 51, "after": 39},
+    {"id": "leads", "label": "营销线索 / 资格确认", "before": 24, "after": 27},
+    {"id": "delivery", "label": "团队交付 / 周期记录", "before": 48, "after": 35}
+  ],
+  "period": "2026 年第一季度 → 第二季度 / 同口径观察窗口",
+  "synthetic": true,
+  "source": "Apat 自拟跨行业示例，仅用于呈现图形效果；不代表现场测量。"
+}
