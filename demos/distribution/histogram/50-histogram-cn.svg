@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="diagram-title diagram-desc">
+<title id="diagram-title">客服首次响应 · 分钟分布</title>
+<desc id="diagram-desc">等宽分箱；柱高表示观测频数，不表示服务质量结论</desc>
+<rect width="100%" height="100%" fill="#F1EFEB"/>
+<defs>
+<marker id="arrow-accent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#AC6046"/></marker>
+<marker id="arrow-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#67685E"/></marker>
+<marker id="arrow-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#8C7964"/></marker>
+<marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#554C46"/></marker>
+<marker id="arrow-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#6D6A63"/></marker>
+<marker id="arrow-line" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#D8D3C8"/></marker>
+<marker id="arrow-ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#30302D"/></marker>
+</defs>
+<g font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, Arial, sans-serif">
+<path d="M170,690.0 L1430,690.0" fill="none" stroke="#D8D3C8" stroke-width="2" stroke-linejoin="round"/>
+<path d="M170,578.75 L1430,578.75" fill="none" stroke="#D8D3C8" stroke-width="2" stroke-linejoin="round"/>
+<path d="M170,467.5 L1430,467.5" fill="none" stroke="#D8D3C8" stroke-width="2" stroke-linejoin="round"/>
+<path d="M170,356.25 L1430,356.25" fill="none" stroke="#D8D3C8" stroke-width="2" stroke-linejoin="round"/>
+<path d="M170,245.0 L1430,245.0" fill="none" stroke="#D8D3C8" stroke-width="2" stroke-linejoin="round"/>
+<g id="_v1" data-kind="text" data-content-text="false" data-box="64,674.0,88,32">
+
+<text x="152" y="694.875" text-anchor="end" font-size="15" font-weight="400" fill="#6D6A63">0</text>
+</g>
+<g id="_v2" data-kind="text" data-content-text="false" data-box="64,562.75,88,32">
+
+<text x="152" y="583.625" text-anchor="end" font-size="15" font-weight="400" fill="#6D6A63">2</text>
+</g>
+<g id="_v3" data-kind="text" data-content-text="false" data-box="64,451.5,88,32">
+
+<text x="152" y="472.375" text-anchor="end" font-size="15" font-weight="400" fill="#6D6A63">4</text>
+</g>
+<g id="_v4" data-kind="text" data-content-text="false" data-box="64,340.25,88,32">
+
+<text x="152" y="361.125" text-anchor="end" font-size="15" font-weight="400" fill="#6D6A63">6</text>
+</g>
+<g id="_v5" data-kind="text" data-content-text="false" data-box="64,229.0,88,32">
+
+<text x="152" y="249.875" text-anchor="end" font-size="15" font-weight="400" fill="#6D6A63">8</text>
+</g>
+<g id="_v6" data-kind="rect" data-content-text="false" data-box="170.0,467.5,210.0,222.5">
+<rect x="170.0" y="467.5" width="210.0" height="222.5" rx="0" fill="#F0E4DA" stroke="#AC6046" stroke-width="1.5"/>
+</g>
+<g id="_v7" data-kind="text" data-content-text="false" data-box="170.0,433.5,210.0,30">
+
+<text x="275.0" y="454.35" text-anchor="middle" font-size="18" font-weight="400" fill="#30302D">4</text>
+</g>
+<g id="_v8" data-kind="text" data-content-text="false" data-box="175.0,706,200,42">
+
+<text x="275.0" y="732.525" text-anchor="middle" font-size="17" font-weight="400" fill="#6D6A63">0–10</text>
+</g>
+<g id="_v9" data-kind="rect" data-content-text="false" data-box="380.0,356.25,210.0,333.75">
+<rect x="380.0" y="356.25" width="210.0" height="333.75" rx="0" fill="#F0E4DA" stroke="#AC6046" stroke-width="1.5"/>
+</g>
+<g id="_v10" data-kind="text" data-content-text="false" data-box="380.0,322.25,210.0,30">
+
+<text x="485.0" y="343.1" text-anchor="middle" font-size="18" font-weight="400" fill="#30302D">6</text>
+</g>
+<g id="_v11" data-kind="text" data-content-text="false" data-box="385.0,706,200,42">
+
+<text x="485.0" y="732.525" text-anchor="middle" font-size="17" font-weight="400" fill="#6D6A63">10–20</text>
+</g>
+<g id="_v12" data-kind="rect" data-content-text="false" data-box="590.0,300.625,210.0,389.375">
+<rect x="590.0" y="300.625" width="210.0" height="389.375" rx="0" fill="#F0E4DA" stroke="#AC6046" stroke-width="1.5"/>
+</g>
+<g id="_v13" data-kind="text" data-content-text="false" data-box="590.0,266.625,210.0,30">
+
+<text x="695.0" y="287.475" text-anchor="middle" font-size="18" font-weight="400" fill="#30302D">7</text>
+</g>
+<g id="_v14" data-kind="text" data-content-text="false" data-box="595.0,706,200,42">
+
+<text x="695.0" y="732.525" text-anchor="middle" font-size="17" font-weight="400" fill="#6D6A63">20–30</text>
+</g>
+<g id="_v15" data-kind="rect" data-content-text="false" data-box="800.0,467.5,210.0,222.5">
+<rect x="800.0" y="467.5" width="210.0" height="222.5" rx="0" fill="#F0E4DA" stroke="#AC6046" stroke-width="1.5"/>
+</g>
+<g id="_v16" data-kind="text" data-content-text="false" data-box="800.0,433.5,210.0,30">
+
+<text x="905.0" y="454.35" text-anchor="middle" font-size="18" font-weight="400" fill="#30302D">4</text>
+</g>
+<g id="_v17" data-kind="text" data-content-text="false" data-box="805.0,706,200,42">
+
+<text x="905.0" y="732.525" text-anchor="middle" font-size="17" font-weight="400" fill="#6D6A63">30–40</text>
+</g>
+<g id="_v18" data-kind="rect" data-content-text="false" data-box="1010.0,578.75,210.0,111.25">
+<rect x="1010.0" y="578.75" width="210.0" height="111.25" rx="0" fill="#F0E4DA" stroke="#AC6046" stroke-width="1.5"/>
+</g>
+<g id="_v19" data-kind="text" data-content-text="false" data-box="1010.0,544.75,210.0,30">
+
+<text x="1115.0" y="565.6" text-anchor="middle" font-size="18" font-weight="400" fill="#30302D">2</text>
+</g>
+<g id="_v20" data-kind="text" data-content-text="false" data-box="1015.0,706,200,42">
+
+<text x="1115.0" y="732.525" text-anchor="middle" font-size="17" font-weight="400" fill="#6D6A63">40–50</text>
+</g>
+<g id="_v21" data-kind="rect" data-content-text="false" data-box="1220.0,634.375,210.0,55.625">
+<rect x="1220.0" y="634.375" width="210.0" height="55.625" rx="0" fill="#F0E4DA" stroke="#AC6046" stroke-width="1.5"/>
+</g>
+<g id="_v22" data-kind="text" data-content-text="false" data-box="1220.0,600.375,210.0,30">
+
+<text x="1325.0" y="621.225" text-anchor="middle" font-size="18" font-weight="400" fill="#30302D">1</text>
+</g>
+<g id="_v23" data-kind="text" data-content-text="false" data-box="1225.0,706,200,42">
+
+<text x="1325.0" y="732.525" text-anchor="middle" font-size="17" font-weight="400" fill="#6D6A63">50–60</text>
+</g>
+<g id="_v24" data-kind="text" data-content-text="false" data-box="170,194,1260,42">
+
+<text x="170" y="220.2" text-anchor="start" font-size="16" font-weight="400" fill="#6D6A63">频数 · 左闭右开，最后一个区间含右端点 · 分钟</text>
+</g>
+<g id="_v25" data-kind="text" data-content-text="false" data-box="64,34,1472,22">
+
+<text x="64" y="49.55" text-anchor="start" font-size="14" font-weight="400" fill="#AC6046">50 / HIGH-FREQUENCY FORMS</text>
+</g>
+<g id="_v26" data-kind="text" data-content-text="false" data-box="64,69,1472,56">
+
+<text x="64" y="108.7" text-anchor="start" font-size="36" font-weight="400" fill="#30302D">客服首次响应 · 分钟分布</text>
+</g>
+<g id="_v27" data-kind="text" data-content-text="false" data-box="64,130,1472,38">
+
+<text x="64" y="154.525" text-anchor="start" font-size="17" font-weight="400" fill="#6D6A63">等宽分箱；柱高表示观测频数，不表示服务质量结论</text>
+</g>
+<g id="_v28" data-kind="rect" data-content-text="false" data-box="64,837,1472,1">
+<rect x="64" y="837" width="1472" height="1" rx="0" fill="#D8D3C8" stroke="none" stroke-width="1.5"/>
+</g>
+<g id="_v29" data-kind="text" data-content-text="false" data-box="64,850,1472,36">
+
+<text x="64" y="872.55" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">跨行业模拟输入 · 数值用于演示分布阅读，不代表真实服务水平</text>
+</g>
+</g></svg>

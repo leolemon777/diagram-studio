@@ -226,12 +226,18 @@ def plot(s,d):
   s.meta['segments']=segments
  elif mode in ('scatter','bubble'):
   a=items(d,'data',2,40);need(all(finite(v[k]) for v in a for k in ('x','y')),'invalid points');xmin,xmax=d['x_range'] if 'x_range' in d else data_range([v['x'] for v in a]);ymin,ymax=d['y_range'] if 'y_range' in d else data_range([v['y'] for v in a]);need(xmax>xmin,'invalid x range');need(all(xmin<=v['x']<=xmax and ymin<=v['y']<=ymax for v in a),'point outside specified axis');Y=axis(ymax,ymin);X=lambda v:x0+(v-xmin)/(xmax-xmin)*pw;maxsize=max(v.get('size',1) for v in a);need(maxsize>0,'bubble sizes must be positive');radii=[]
+  points=[]
   for j in range(5):xx=x0+pw*j/4;s.text(xx-70,y0+ph+14,140,32,f'{xmin+(xmax-xmin)*j/4:g}',15,'muted',align='center')
   for v in a:
    size=v.get('size',1);need(finite(size) and size>0,'bubble sizes must be positive');r=35*math.sqrt(size/maxsize) if mode=='bubble' else 7;xx,yy=X(v['x']),Y(v['y']);s.add(xx-r,yy-r,2*r,2*r,kind='ellipse',fill='tint' if mode=='bubble' else 'accent',stroke='accent',check=False);s.text(xx+12,yy-38,180,32,v.get('label',''),15);radii.append({'value':size,'radius':r})
-  s.meta['bubble_radii']=radii
+   points.append({'x':v['x'],'y':v['y'],'label':v.get('label','')})
+  s.meta['bubble_radii']=radii;s.meta['points']=points;s.meta['axis_ranges']={'x':[xmin,xmax],'y':[ymin,ymax]}
   if mode=='bubble':s.text(s.w-630,192,490,36,f'圆面积编码第三个量 · 最大 {maxsize:g}',16,'muted',align='right')
-  s.text(x0,y0+ph+62,pw,30,d.get('x_label','X'),17,'muted',align='center');s.text(64,184,350,40,d.get('y_label','Y'),17,'muted')
+  x_label=d.get('x_label','X')+(' · '+d['x_unit'] if d.get('x_unit') else '')
+  y_label=d.get('y_label','Y')+(' · '+d['y_unit'] if d.get('y_unit') else '')
+  from render import wrap_words
+  x_h=max(34,len(wrap_words(x_label,pw,17))*17*1.35+4);y_h=max(40,len(wrap_words(y_label,350,17))*17*1.35+4)
+  s.text(x0,y0+ph+62,pw,x_h,x_label,17,'muted',align='center',word_wrap=True);s.text(64,184,350,y_h,y_label,17,'muted',word_wrap=True);s.h=max(s.h,y0+ph+62+x_h+100)
  elif mode=='heatmap':
   rows=d['row_labels'];cols=d['column_labels'];values=d['values'];need(len(rows)==len(values) and all(len(r)==len(cols) for r in values),'heatmap dimensions');need(all(finite(v) for r in values for v in r),'heatmap needs finite values');low=d.get('minimum',min(v for r in values for v in r));high=d.get('maximum',max(v for r in values for v in r));need(high>low and all(low<=v<=high for r in values for v in r),'invalid heatmap range');cw=pw/len(cols);rh=ph/len(rows)
   def blend(a,b,t):return '#'+''.join(f'{round(int(a[k:k+2],16)*(1-t)+int(b[k:k+2],16)*t):02X}' for k in (1,3,5))
@@ -256,7 +262,9 @@ def plot(s,d):
   for i,n in enumerate(counts):
    if n:s.add(x0+i*cw,Y(n),cw,y0+ph-Y(n),kind='rect',fill='tint',stroke='accent',radius=0,check=False)
    s.text(x0+i*cw,Y(n)-34,cw,30,str(n),18,align='center');bottom(i,len(counts),f'{edges[i]:g}–{edges[i+1]:g}')
-  s.meta.update(bin_counts=counts,sample_count=len(values));s.text(x0,194,pw,32,'频数 · 左闭右开，最后一个区间含右端点',16,'muted')
+  s.meta.update(bin_counts=counts,sample_count=len(values),bin_edges=edges,unit=d.get('unit',''))
+  note=d.get('frequency_note','频数 · 左闭右开，最后一个区间含右端点')+(' · '+d['unit'] if d.get('unit') else '')
+  s.text(x0,194,pw,42,note,16,'muted',word_wrap=True)
  elif mode=='waterfall':
   a=items(d,'data',2,10);acc=0;bars=[]
   for v in a:

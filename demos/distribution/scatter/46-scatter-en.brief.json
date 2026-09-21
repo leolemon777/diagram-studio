@@ -1,0 +1,77 @@
+{
+  "type": "plot",
+  "mode": "scatter",
+  "title": "Study time and tasks completed · paired observations",
+  "diagram_name": "Scatter plot",
+  "family": "Data charts",
+  "subtitle": "Each point is one learner record; correlation is not automatically causal",
+  "eyebrow": "46 / HIGH-FREQUENCY FORMS",
+  "x_label": "Study time",
+  "x_unit": "hours",
+  "y_label": "Tasks completed",
+  "y_unit": "tasks",
+  "x_range": [
+    0,
+    10
+  ],
+  "y_range": [
+    0,
+    12
+  ],
+  "footer": "Cross-industry simulated input · points support paired-observation reading, not a learning-effect conclusion",
+  "assumptions": [
+    "Original cross-industry teaching content; it is not a learner, causal, or evaluation claim"
+  ],
+  "data": [
+    {
+      "x": 1.0,
+      "y": 2.3,
+      "label": "Learner 01"
+    },
+    {
+      "x": 1.8,
+      "y": 3.5,
+      "label": "Learner 02"
+    },
+    {
+      "x": 2.5,
+      "y": 2.8,
+      "label": "Learner 03"
+    },
+    {
+      "x": 3.2,
+      "y": 4.2,
+      "label": "Learner 04"
+    },
+    {
+      "x": 4.0,
+      "y": 3.1,
+      "label": "Learner 05"
+    },
+    {
+      "x": 4.8,
+      "y": 5.5,
+      "label": "Learner 06"
+    },
+    {
+      "x": 5.5,
+      "y": 4.6,
+      "label": "Learner 07"
+    },
+    {
+      "x": 6.2,
+      "y": 6.3,
+      "label": "Learner 08"
+    },
+    {
+      "x": 7.4,
+      "y": 5.7,
+      "label": "Learner 09"
+    },
+    {
+      "x": 8.6,
+      "y": 7.2,
+      "label": "Learner 10"
+    }
+  ]
+}

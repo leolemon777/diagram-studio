@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "protocol_version": "diagram-studio/delivery-1",
+  "version_id": "v-6178b46874d1",
+  "source_name": "46-scatter-cn",
+  "input_sha256": "6178b46874d109e5f09dfba4d4bef9f12a05ecb7532934ab3165285b8bbf2218",
+  "theme": "light",
+  "checks": {
+    "geometry": {
+      "status": "passed",
+      "warnings": []
+    },
+    "composition": {
+      "status": "not-run",
+      "findings": []
+    },
+    "content_integrity": {
+      "status": "passed",
+      "source_ids": 0,
+      "source_relations": 0,
+      "source_texts": 18,
+      "missing_ids": [],
+      "missing_relations": [],
+      "missing_text": [],
+      "scope": "stable source IDs, explicit relation endpoints and source display text; not domain correctness"
+    },
+    "browser_text_bounds": {
+      "status": "not-run"
+    },
+    "manual_visual_review": {
+      "status": "not-run"
+    },
+    "native_editor": {
+      "status": "not-run"
+    }
+  },
+  "files": {
+    "46-scatter-cn.brief.json": "512ab1af7740bdc7f6dd99718e0f64c79f6b041bfd30ae22c992c5e78c3d411a",
+    "46-scatter-cn.drawio": "47e6ef600689074de9ea4892417fd1fbf19c998b7e3ce2fa2b56c6756dd0950d",
+    "46-scatter-cn.qa.json": "ed4227d07e91730f0f4a3ea51931a51f0e97affb91f979403b464460d74078cf",
+    "46-scatter-cn.scene.json": "80df74b200bc1dd5f434d30cb952b205350c0a134b20820c8e5e2d004782d500",
+    "46-scatter-cn.svg": "0393885d32b9db8ea465730d329d509faa843c67c71441ffa66feb8bf36b9f55"
+  },
+  "delivery_scope": "Generation, semantic content checks and QA finish before replacement. Individual files are replaced; promotion is not a multi-file atomic transaction."
+}

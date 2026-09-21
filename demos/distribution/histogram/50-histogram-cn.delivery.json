@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "protocol_version": "diagram-studio/delivery-1",
+  "version_id": "v-790cb5b4f6ee",
+  "source_name": "50-histogram-cn",
+  "input_sha256": "790cb5b4f6eeaefff6b6cb33895502f26c0d17ec098e4aea23767b3dce9668b2",
+  "theme": "light",
+  "checks": {
+    "geometry": {
+      "status": "passed",
+      "warnings": []
+    },
+    "composition": {
+      "status": "not-run",
+      "findings": []
+    },
+    "content_integrity": {
+      "status": "passed",
+      "source_ids": 0,
+      "source_relations": 0,
+      "source_texts": 6,
+      "missing_ids": [],
+      "missing_relations": [],
+      "missing_text": [],
+      "scope": "stable source IDs, explicit relation endpoints and source display text; not domain correctness"
+    },
+    "browser_text_bounds": {
+      "status": "not-run"
+    },
+    "manual_visual_review": {
+      "status": "not-run"
+    },
+    "native_editor": {
+      "status": "not-run"
+    }
+  },
+  "files": {
+    "50-histogram-cn.brief.json": "9552c91b1642af98422467c02763e73895710935b0a250a89e4f470810af2927",
+    "50-histogram-cn.drawio": "e1fd90f010caf6d91b000c3b47096ead870ec1d54cd724ceb0ffc22cf89ae0ee",
+    "50-histogram-cn.qa.json": "7ceaff6867e99530d0a0a79bd72a4da6253b3897afaa2c48e4efc2fd6b234f7f",
+    "50-histogram-cn.scene.json": "b2035c9178cb88d3ba224671d97d2c907fd4454a51e9e4f56227b13e2c37ee09",
+    "50-histogram-cn.svg": "5393ddc83b7f644f7f8ded95e8783d9a1ea1068ca26c778036f1bad468d1d626"
+  },
+  "delivery_scope": "Generation, semantic content checks and QA finish before replacement. Individual files are replaced; promotion is not a multi-file atomic transaction."
+}

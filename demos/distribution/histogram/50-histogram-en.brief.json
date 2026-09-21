@@ -1,0 +1,50 @@
+{
+  "type": "plot",
+  "mode": "histogram",
+  "title": "Customer support first response · minute distribution",
+  "diagram_name": "Histogram",
+  "family": "Data charts",
+  "subtitle": "Equal-width bins; bar height is observed frequency, not a service-quality conclusion",
+  "eyebrow": "50 / HIGH-FREQUENCY FORMS",
+  "unit": "minutes",
+  "frequency_note": "Frequency · left-closed bins; the last bin includes the right endpoint",
+  "footer": "Cross-industry simulated input · values support distribution reading, not a real service level",
+  "assumptions": [
+    "Original cross-industry teaching content; it is not a support-team KPI or statistical conclusion"
+  ],
+  "bin_edges": [
+    0,
+    10,
+    20,
+    30,
+    40,
+    50,
+    60
+  ],
+  "values": [
+    3,
+    5,
+    7,
+    9,
+    11,
+    12,
+    14,
+    16,
+    17,
+    19,
+    21,
+    22,
+    23,
+    25,
+    27,
+    28,
+    29,
+    31,
+    34,
+    36,
+    39,
+    42,
+    48,
+    55
+  ]
+}

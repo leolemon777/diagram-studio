@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="diagram-title diagram-desc">
+<title id="diagram-title">学习时长与任务完成 · 配对观测</title>
+<desc id="diagram-desc">每一点是一位学习者的一次记录；相关不自动代表因果</desc>
+<rect width="100%" height="100%" fill="#F1EFEB"/>
+<defs>
+<marker id="arrow-accent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#AC6046"/></marker>
+<marker id="arrow-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#67685E"/></marker>
+<marker id="arrow-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#8C7964"/></marker>
+<marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#554C46"/></marker>
+<marker id="arrow-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#6D6A63"/></marker>
+<marker id="arrow-line" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#D8D3C8"/></marker>
+<marker id="arrow-ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#30302D"/></marker>
+</defs>
+<g font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, Arial, sans-serif">
+<path d="M170,690.0 L1430,690.0" fill="none" stroke="#D8D3C8" stroke-width="2" stroke-linejoin="round"/>
+<path d="M170,578.75 L1430,578.75" fill="none" stroke="#D8D3C8" stroke-width="2" stroke-linejoin="round"/>
+<path d="M170,467.5 L1430,467.5" fill="none" stroke="#D8D3C8" stroke-width="2" stroke-linejoin="round"/>
+<path d="M170,356.25 L1430,356.25" fill="none" stroke="#D8D3C8" stroke-width="2" stroke-linejoin="round"/>
+<path d="M170,245.0 L1430,245.0" fill="none" stroke="#D8D3C8" stroke-width="2" stroke-linejoin="round"/>
+<g id="_v1" data-kind="text" data-content-text="false" data-box="64,674.0,88,32">
+
+<text x="152" y="694.875" text-anchor="end" font-size="15" font-weight="400" fill="#6D6A63">0</text>
+</g>
+<g id="_v2" data-kind="text" data-content-text="false" data-box="64,562.75,88,32">
+
+<text x="152" y="583.625" text-anchor="end" font-size="15" font-weight="400" fill="#6D6A63">3</text>
+</g>
+<g id="_v3" data-kind="text" data-content-text="false" data-box="64,451.5,88,32">
+
+<text x="152" y="472.375" text-anchor="end" font-size="15" font-weight="400" fill="#6D6A63">6</text>
+</g>
+<g id="_v4" data-kind="text" data-content-text="false" data-box="64,340.25,88,32">
+
+<text x="152" y="361.125" text-anchor="end" font-size="15" font-weight="400" fill="#6D6A63">9</text>
+</g>
+<g id="_v5" data-kind="text" data-content-text="false" data-box="64,229.0,88,32">
+
+<text x="152" y="249.875" text-anchor="end" font-size="15" font-weight="400" fill="#6D6A63">12</text>
+</g>
+<g id="_v6" data-kind="text" data-content-text="false" data-box="100.0,704,140,32">
+
+<text x="170.0" y="724.875" text-anchor="middle" font-size="15" font-weight="400" fill="#6D6A63">0</text>
+</g>
+<g id="_v7" data-kind="text" data-content-text="false" data-box="415.0,704,140,32">
+
+<text x="485.0" y="724.875" text-anchor="middle" font-size="15" font-weight="400" fill="#6D6A63">2.5</text>
+</g>
+<g id="_v8" data-kind="text" data-content-text="false" data-box="730.0,704,140,32">
+
+<text x="800.0" y="724.875" text-anchor="middle" font-size="15" font-weight="400" fill="#6D6A63">5</text>
+</g>
+<g id="_v9" data-kind="text" data-content-text="false" data-box="1045.0,704,140,32">
+
+<text x="1115.0" y="724.875" text-anchor="middle" font-size="15" font-weight="400" fill="#6D6A63">7.5</text>
+</g>
+<g id="_v10" data-kind="text" data-content-text="false" data-box="1360.0,704,140,32">
+
+<text x="1430.0" y="724.875" text-anchor="middle" font-size="15" font-weight="400" fill="#6D6A63">10</text>
+</g>
+<g id="_v11" data-kind="ellipse" data-content-text="false" data-box="289.0,597.7083333333334,14,14">
+<ellipse cx="296.0" cy="604.7083333333334" rx="7.0" ry="7.0" fill="#AC6046" stroke="#AC6046" stroke-width="1.5"/>
+</g>
+<g id="_v12" data-kind="text" data-content-text="false" data-box="308.0,566.7083333333334,180,32">
+
+<text x="308.0" y="587.5833333333334" text-anchor="start" font-size="15" font-weight="400" fill="#30302D">学员 01</text>
+</g>
+<g id="_v13" data-kind="ellipse" data-content-text="false" data-box="389.79999999999995,553.2083333333333,14,14">
+<ellipse cx="396.79999999999995" cy="560.2083333333333" rx="7.0" ry="7.0" fill="#AC6046" stroke="#AC6046" stroke-width="1.5"/>
+</g>
+<g id="_v14" data-kind="text" data-content-text="false" data-box="408.79999999999995,522.2083333333333,180,32">
+
+<text x="408.79999999999995" y="543.0833333333333" text-anchor="start" font-size="15" font-weight="400" fill="#30302D">学员 02</text>
+</g>
+<g id="_v15" data-kind="ellipse" data-content-text="false" data-box="478.0,579.1666666666666,14,14">
+<ellipse cx="485.0" cy="586.1666666666666" rx="7.0" ry="7.0" fill="#AC6046" stroke="#AC6046" stroke-width="1.5"/>
+</g>
+<g id="_v16" data-kind="text" data-content-text="false" data-box="497.0,548.1666666666666,180,32">
+
+<text x="497.0" y="569.0416666666666" text-anchor="start" font-size="15" font-weight="400" fill="#30302D">学员 03</text>
+</g>
+<g id="_v17" data-kind="ellipse" data-content-text="false" data-box="566.2,527.25,14,14">
+<ellipse cx="573.2" cy="534.25" rx="7.0" ry="7.0" fill="#AC6046" stroke="#AC6046" stroke-width="1.5"/>
+</g>
+<g id="_v18" data-kind="text" data-content-text="false" data-box="585.2,496.25,180,32">
+
+<text x="585.2" y="517.125" text-anchor="start" font-size="15" font-weight="400" fill="#30302D">学员 04</text>
+</g>
+<g id="_v19" data-kind="ellipse" data-content-text="false" data-box="667.0,568.0416666666666,14,14">
+<ellipse cx="674.0" cy="575.0416666666666" rx="7.0" ry="7.0" fill="#AC6046" stroke="#AC6046" stroke-width="1.5"/>
+</g>
+<g id="_v20" data-kind="text" data-content-text="false" data-box="686.0,537.0416666666666,180,32">
+
+<text x="686.0" y="557.9166666666666" text-anchor="start" font-size="15" font-weight="400" fill="#30302D">学员 05</text>
+</g>
+<g id="_v21" data-kind="ellipse" data-content-text="false" data-box="767.8,479.0416666666667,14,14">
+<ellipse cx="774.8" cy="486.0416666666667" rx="7.0" ry="7.0" fill="#AC6046" stroke="#AC6046" stroke-width="1.5"/>
+</g>
+<g id="_v22" data-kind="text" data-content-text="false" data-box="786.8,448.0416666666667,180,32">
+
+<text x="786.8" y="468.9166666666667" text-anchor="start" font-size="15" font-weight="400" fill="#30302D">学员 06</text>
+</g>
+<g id="_v23" data-kind="ellipse" data-content-text="false" data-box="856.0,512.4166666666667,14,14">
+<ellipse cx="863.0" cy="519.4166666666667" rx="7.0" ry="7.0" fill="#AC6046" stroke="#AC6046" stroke-width="1.5"/>
+</g>
+<g id="_v24" data-kind="text" data-content-text="false" data-box="875.0,481.41666666666674,180,32">
+
+<text x="875.0" y="502.29166666666674" text-anchor="start" font-size="15" font-weight="400" fill="#30302D">学员 07</text>
+</g>
+<g id="_v25" data-kind="ellipse" data-content-text="false" data-box="944.2,449.375,14,14">
+<ellipse cx="951.2" cy="456.375" rx="7.0" ry="7.0" fill="#AC6046" stroke="#AC6046" stroke-width="1.5"/>
+</g>
+<g id="_v26" data-kind="text" data-content-text="false" data-box="963.2,418.375,180,32">
+
+<text x="963.2" y="439.25" text-anchor="start" font-size="15" font-weight="400" fill="#30302D">学员 08</text>
+</g>
+<g id="_v27" data-kind="ellipse" data-content-text="false" data-box="1095.4,471.625,14,14">
+<ellipse cx="1102.4" cy="478.625" rx="7.0" ry="7.0" fill="#AC6046" stroke="#AC6046" stroke-width="1.5"/>
+</g>
+<g id="_v28" data-kind="text" data-content-text="false" data-box="1114.4,440.625,180,32">
+
+<text x="1114.4" y="461.5" text-anchor="start" font-size="15" font-weight="400" fill="#30302D">学员 09</text>
+</g>
+<g id="_v29" data-kind="ellipse" data-content-text="false" data-box="1246.6,416.0,14,14">
+<ellipse cx="1253.6" cy="423.0" rx="7.0" ry="7.0" fill="#AC6046" stroke="#AC6046" stroke-width="1.5"/>
+</g>
+<g id="_v30" data-kind="text" data-content-text="false" data-box="1265.6,385.0,180,32">
+
+<text x="1265.6" y="405.875" text-anchor="start" font-size="15" font-weight="400" fill="#30302D">学员 10</text>
+</g>
+<g id="_v31" data-kind="text" data-content-text="false" data-box="170,752,1260,34">
+
+<text x="800.0" y="774.525" text-anchor="middle" font-size="17" font-weight="400" fill="#6D6A63">学习时长 · 小时</text>
+</g>
+<g id="_v32" data-kind="text" data-content-text="false" data-box="64,184,350,40">
+
+<text x="64" y="209.525" text-anchor="start" font-size="17" font-weight="400" fill="#6D6A63">完成任务 · 项</text>
+</g>
+<g id="_v33" data-kind="text" data-content-text="false" data-box="64,34,1472,22">
+
+<text x="64" y="49.55" text-anchor="start" font-size="14" font-weight="400" fill="#AC6046">46 / HIGH-FREQUENCY FORMS</text>
+</g>
+<g id="_v34" data-kind="text" data-content-text="false" data-box="64,69,1472,56">
+
+<text x="64" y="108.7" text-anchor="start" font-size="36" font-weight="400" fill="#30302D">学习时长与任务完成 · 配对观测</text>
+</g>
+<g id="_v35" data-kind="text" data-content-text="false" data-box="64,130,1472,38">
+
+<text x="64" y="154.525" text-anchor="start" font-size="17" font-weight="400" fill="#6D6A63">每一点是一位学习者的一次记录；相关不自动代表因果</text>
+</g>
+<g id="_v36" data-kind="rect" data-content-text="false" data-box="64,837,1472,1">
+<rect x="64" y="837" width="1472" height="1" rx="0" fill="#D8D3C8" stroke="none" stroke-width="1.5"/>
+</g>
+<g id="_v37" data-kind="text" data-content-text="false" data-box="64,850,1472,36">
+
+<text x="64" y="872.55" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">跨行业模拟输入 · 点位用于演示配对观测，不代表学习效果结论</text>
+</g>
+</g></svg>

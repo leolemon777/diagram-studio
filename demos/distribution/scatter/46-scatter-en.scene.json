@@ -1,0 +1,746 @@
+{
+  "width": 1600,
+  "height": 900,
+  "theme": "light",
+  "palette": {
+    "bg": "#F1EFEB",
+    "panel": "#FEFDF9",
+    "ink": "#30302D",
+    "muted": "#6D6A63",
+    "line": "#D8D3C8",
+    "accent": "#AC6046",
+    "teal": "#67685E",
+    "amber": "#8C7964",
+    "red": "#554C46",
+    "tint": "#F0E4DA",
+    "tint2": "#ECECE5"
+  },
+  "nodes": [
+    {
+      "id": "_v1",
+      "x": 64,
+      "y": 674.0,
+      "w": 88,
+      "h": 32,
+      "label": "0",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 15,
+      "align": "right",
+      "check": false
+    },
+    {
+      "id": "_v2",
+      "x": 64,
+      "y": 562.75,
+      "w": 88,
+      "h": 32,
+      "label": "3",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 15,
+      "align": "right",
+      "check": false
+    },
+    {
+      "id": "_v3",
+      "x": 64,
+      "y": 451.5,
+      "w": 88,
+      "h": 32,
+      "label": "6",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 15,
+      "align": "right",
+      "check": false
+    },
+    {
+      "id": "_v4",
+      "x": 64,
+      "y": 340.25,
+      "w": 88,
+      "h": 32,
+      "label": "9",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 15,
+      "align": "right",
+      "check": false
+    },
+    {
+      "id": "_v5",
+      "x": 64,
+      "y": 229.0,
+      "w": 88,
+      "h": 32,
+      "label": "12",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 15,
+      "align": "right",
+      "check": false
+    },
+    {
+      "id": "_v6",
+      "x": 100.0,
+      "y": 704,
+      "w": 140,
+      "h": 32,
+      "label": "0",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 15,
+      "align": "center",
+      "check": false
+    },
+    {
+      "id": "_v7",
+      "x": 415.0,
+      "y": 704,
+      "w": 140,
+      "h": 32,
+      "label": "2.5",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 15,
+      "align": "center",
+      "check": false
+    },
+    {
+      "id": "_v8",
+      "x": 730.0,
+      "y": 704,
+      "w": 140,
+      "h": 32,
+      "label": "5",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 15,
+      "align": "center",
+      "check": false
+    },
+    {
+      "id": "_v9",
+      "x": 1045.0,
+      "y": 704,
+      "w": 140,
+      "h": 32,
+      "label": "7.5",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 15,
+      "align": "center",
+      "check": false
+    },
+    {
+      "id": "_v10",
+      "x": 1360.0,
+      "y": 704,
+      "w": 140,
+      "h": 32,
+      "label": "10",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 15,
+      "align": "center",
+      "check": false
+    },
+    {
+      "id": "_v11",
+      "x": 289.0,
+      "y": 597.7083333333334,
+      "w": 14,
+      "h": 14,
+      "label": "",
+      "detail": "",
+      "kind": "ellipse",
+      "tone": "accent",
+      "fill": "accent",
+      "stroke": "accent",
+      "check": false
+    },
+    {
+      "id": "_v12",
+      "x": 308.0,
+      "y": 566.7083333333334,
+      "w": 180,
+      "h": 32,
+      "label": "Learner 01",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 15,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v13",
+      "x": 389.79999999999995,
+      "y": 553.2083333333333,
+      "w": 14,
+      "h": 14,
+      "label": "",
+      "detail": "",
+      "kind": "ellipse",
+      "tone": "accent",
+      "fill": "accent",
+      "stroke": "accent",
+      "check": false
+    },
+    {
+      "id": "_v14",
+      "x": 408.79999999999995,
+      "y": 522.2083333333333,
+      "w": 180,
+      "h": 32,
+      "label": "Learner 02",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 15,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v15",
+      "x": 478.0,
+      "y": 579.1666666666666,
+      "w": 14,
+      "h": 14,
+      "label": "",
+      "detail": "",
+      "kind": "ellipse",
+      "tone": "accent",
+      "fill": "accent",
+      "stroke": "accent",
+      "check": false
+    },
+    {
+      "id": "_v16",
+      "x": 497.0,
+      "y": 548.1666666666666,
+      "w": 180,
+      "h": 32,
+      "label": "Learner 03",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 15,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v17",
+      "x": 566.2,
+      "y": 527.25,
+      "w": 14,
+      "h": 14,
+      "label": "",
+      "detail": "",
+      "kind": "ellipse",
+      "tone": "accent",
+      "fill": "accent",
+      "stroke": "accent",
+      "check": false
+    },
+    {
+      "id": "_v18",
+      "x": 585.2,
+      "y": 496.25,
+      "w": 180,
+      "h": 32,
+      "label": "Learner 04",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 15,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v19",
+      "x": 667.0,
+      "y": 568.0416666666666,
+      "w": 14,
+      "h": 14,
+      "label": "",
+      "detail": "",
+      "kind": "ellipse",
+      "tone": "accent",
+      "fill": "accent",
+      "stroke": "accent",
+      "check": false
+    },
+    {
+      "id": "_v20",
+      "x": 686.0,
+      "y": 537.0416666666666,
+      "w": 180,
+      "h": 32,
+      "label": "Learner 05",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 15,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v21",
+      "x": 767.8,
+      "y": 479.0416666666667,
+      "w": 14,
+      "h": 14,
+      "label": "",
+      "detail": "",
+      "kind": "ellipse",
+      "tone": "accent",
+      "fill": "accent",
+      "stroke": "accent",
+      "check": false
+    },
+    {
+      "id": "_v22",
+      "x": 786.8,
+      "y": 448.0416666666667,
+      "w": 180,
+      "h": 32,
+      "label": "Learner 06",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 15,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v23",
+      "x": 856.0,
+      "y": 512.4166666666667,
+      "w": 14,
+      "h": 14,
+      "label": "",
+      "detail": "",
+      "kind": "ellipse",
+      "tone": "accent",
+      "fill": "accent",
+      "stroke": "accent",
+      "check": false
+    },
+    {
+      "id": "_v24",
+      "x": 875.0,
+      "y": 481.41666666666674,
+      "w": 180,
+      "h": 32,
+      "label": "Learner 07",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 15,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v25",
+      "x": 944.2,
+      "y": 449.375,
+      "w": 14,
+      "h": 14,
+      "label": "",
+      "detail": "",
+      "kind": "ellipse",
+      "tone": "accent",
+      "fill": "accent",
+      "stroke": "accent",
+      "check": false
+    },
+    {
+      "id": "_v26",
+      "x": 963.2,
+      "y": 418.375,
+      "w": 180,
+      "h": 32,
+      "label": "Learner 08",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 15,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v27",
+      "x": 1095.4,
+      "y": 471.625,
+      "w": 14,
+      "h": 14,
+      "label": "",
+      "detail": "",
+      "kind": "ellipse",
+      "tone": "accent",
+      "fill": "accent",
+      "stroke": "accent",
+      "check": false
+    },
+    {
+      "id": "_v28",
+      "x": 1114.4,
+      "y": 440.625,
+      "w": 180,
+      "h": 32,
+      "label": "Learner 09",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 15,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v29",
+      "x": 1246.6,
+      "y": 416.0,
+      "w": 14,
+      "h": 14,
+      "label": "",
+      "detail": "",
+      "kind": "ellipse",
+      "tone": "accent",
+      "fill": "accent",
+      "stroke": "accent",
+      "check": false
+    },
+    {
+      "id": "_v30",
+      "x": 1265.6,
+      "y": 385.0,
+      "w": 180,
+      "h": 32,
+      "label": "Learner 10",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 15,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v31",
+      "x": 170,
+      "y": 752,
+      "w": 1260,
+      "h": 34,
+      "label": "Study time · hours",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "center",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v32",
+      "x": 64,
+      "y": 184,
+      "w": 350,
+      "h": 40,
+      "label": "Tasks completed · tasks",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v33",
+      "x": 64,
+      "y": 34,
+      "w": 1472,
+      "h": 22,
+      "label": "46 / HIGH-FREQUENCY FORMS",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v34",
+      "x": 64,
+      "y": 69,
+      "w": 1472,
+      "h": 56,
+      "label": "Study time and tasks completed · paired observations",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 36,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v35",
+      "x": 64,
+      "y": 130,
+      "w": 1472,
+      "h": 38,
+      "label": "Each point is one learner record; correlation is not automatically causal",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v36",
+      "x": 64,
+      "y": 837,
+      "w": 1472,
+      "h": 1,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "line",
+      "stroke": "none",
+      "check": false
+    },
+    {
+      "id": "_v37",
+      "x": 64,
+      "y": 850,
+      "w": 1472,
+      "h": 36,
+      "label": "Cross-industry simulated input · points support paired-observation reading, not a learning-effect conclusion",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    }
+  ],
+  "edges": [
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          170,
+          690.0
+        ],
+        [
+          1430,
+          690.0
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "arrow": false,
+      "tone": "line"
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          170,
+          578.75
+        ],
+        [
+          1430,
+          578.75
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "arrow": false,
+      "tone": "line"
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          170,
+          467.5
+        ],
+        [
+          1430,
+          467.5
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "arrow": false,
+      "tone": "line"
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          170,
+          356.25
+        ],
+        [
+          1430,
+          356.25
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "arrow": false,
+      "tone": "line"
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          170,
+          245.0
+        ],
+        [
+          1430,
+          245.0
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "arrow": false,
+      "tone": "line"
+    }
+  ],
+  "meta": {
+    "bubble_radii": [
+      {
+        "value": 1,
+        "radius": 7
+      },
+      {
+        "value": 1,
+        "radius": 7
+      },
+      {
+        "value": 1,
+        "radius": 7
+      },
+      {
+        "value": 1,
+        "radius": 7
+      },
+      {
+        "value": 1,
+        "radius": 7
+      },
+      {
+        "value": 1,
+        "radius": 7
+      },
+      {
+        "value": 1,
+        "radius": 7
+      },
+      {
+        "value": 1,
+        "radius": 7
+      },
+      {
+        "value": 1,
+        "radius": 7
+      },
+      {
+        "value": 1,
+        "radius": 7
+      }
+    ],
+    "points": [
+      {
+        "x": 1.0,
+        "y": 2.3,
+        "label": "Learner 01"
+      },
+      {
+        "x": 1.8,
+        "y": 3.5,
+        "label": "Learner 02"
+      },
+      {
+        "x": 2.5,
+        "y": 2.8,
+        "label": "Learner 03"
+      },
+      {
+        "x": 3.2,
+        "y": 4.2,
+        "label": "Learner 04"
+      },
+      {
+        "x": 4.0,
+        "y": 3.1,
+        "label": "Learner 05"
+      },
+      {
+        "x": 4.8,
+        "y": 5.5,
+        "label": "Learner 06"
+      },
+      {
+        "x": 5.5,
+        "y": 4.6,
+        "label": "Learner 07"
+      },
+      {
+        "x": 6.2,
+        "y": 6.3,
+        "label": "Learner 08"
+      },
+      {
+        "x": 7.4,
+        "y": 5.7,
+        "label": "Learner 09"
+      },
+      {
+        "x": 8.6,
+        "y": 7.2,
+        "label": "Learner 10"
+      }
+    ],
+    "axis_ranges": {
+      "x": [
+        0,
+        10
+      ],
+      "y": [
+        0,
+        12
+      ]
+    }
+  },
+  "assumptions": [
+    "Original cross-industry teaching content; it is not a learner, causal, or evaluation claim"
+  ]
+}

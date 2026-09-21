@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "version": "v52",
+  "version": "v53",
   "updated": "2026-09-20",
   "purpose": "Single source for chooser labels, backend capability, delivery formats and acceptance evidence.",
   "status_vocabulary": {
@@ -250,8 +250,8 @@
           "formats": ["svg", "drawio", "scene.json", "qa.json", "html"],
           "layout_limits": {"zh": "分箱规则需可追溯；连续观测不足时改用点图或表格。", "en": "Binning must be traceable; use points or a table when continuous observations are sparse."},
           "languages": ["zh", "en"],
-          "examples": ["assets/examples/50-histogram.json", "assets/data-art-examples/distribution.json"],
-          "evidence": {"level": "generated_with_semantic_validation", "reference": "references/charts.md", "detail": {"zh": "共享绘图后端校验分箱和观测范围；不替代领域统计审查。", "en": "The shared plot backend checks bins and observation bounds; it does not replace domain statistical review."}},
+          "examples": ["assets/examples/50-histogram-cn.json", "assets/examples/50-histogram-en.json"],
+          "evidence": {"level": "manual_visual_review", "reference": "assets/v53-distribution-evidence.json", "detail": {"zh": "中英跨行业直方图通过等宽分箱、观测范围、频数、单位与浏览器查看。", "en": "Chinese and English cross-industry histograms pass equal-width bins, observation bounds, frequencies, units and browser review."}},
           "scope": {"zh": "表达分布形状；不从一张图自动命名正态或因果。", "en": "Expresses distribution shape; it does not automatically establish normality or causality."}
         },
         {
@@ -264,8 +264,8 @@
           "formats": ["svg", "drawio", "scene.json", "qa.json", "html"],
           "layout_limits": {"zh": "保留观测配对和单位；相关不自动解释为因果。", "en": "Retain paired observations and units; correlation is not automatically causal."},
           "languages": ["zh", "en"],
-          "examples": ["assets/examples/46-scatter.json", "assets/data-art-examples/scatter.json"],
-          "evidence": {"level": "generated_with_semantic_validation", "reference": "references/charts.md", "detail": {"zh": "共享绘图后端校验成对数值和范围；数据来源与模型解释需另审。", "en": "The shared plot backend checks paired values and ranges; data provenance and model interpretation need separate review."}},
+          "examples": ["assets/examples/46-scatter-cn.json", "assets/examples/46-scatter-en.json"],
+          "evidence": {"level": "manual_visual_review", "reference": "assets/v53-distribution-evidence.json", "detail": {"zh": "中英跨行业散点图通过配对点、固定轴范围、单位、点标签与浏览器查看。", "en": "Chinese and English cross-industry scatter plots pass paired points, fixed axis ranges, units, point labels and browser review."}},
           "scope": {"zh": "表达成对数值的关系和离群点；不自动画回归结论。", "en": "Expresses paired values and outliers; it does not invent a regression conclusion."}
         }
       ]

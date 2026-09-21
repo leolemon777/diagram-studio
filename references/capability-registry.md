@@ -1,6 +1,6 @@
 # 能力登记与交付范围
 
-机器可读源：`assets/capability-registry.json`（v52）。运行 `python3 scripts/capability_registry.py --check` 校验引用。
+机器可读源：`assets/capability-registry.json`（v53）。运行 `python3 scripts/capability_registry.py --check` 校验引用。
 
 选图向导从同一份登记读取结构、后端、格式和验收状态；本表只列当前可追查的高频入口，不把入口数量当作完成率。
 
@@ -20,8 +20,8 @@
 | `dumbbell` | 前后对照图 | `scripts/data_art.py#dumbbell` | svg, drawio, png, pdf, html, input.json, scene.json, analysis.json, qa.json, csv | `rendered_visual_check` |
 | `donut` | 环形占比图 | `scripts/render.py#chart:donut` | svg, drawio, scene.json, qa.json, html | `manual_visual_review` |
 | `heatmap` | 热力图 | `scripts/render.py#plot:heatmap` | svg, drawio, scene.json, qa.json, html | `manual_visual_review` |
-| `histogram` | 直方图 | `scripts/render.py#plot:histogram` | svg, drawio, scene.json, qa.json, html | `generated_with_semantic_validation` |
-| `scatter` | 散点图 | `scripts/render.py#plot:scatter` | svg, drawio, scene.json, qa.json, html | `generated_with_semantic_validation` |
+| `histogram` | 直方图 | `scripts/render.py#plot:histogram` | svg, drawio, scene.json, qa.json, html | `manual_visual_review` |
+| `scatter` | 散点图 | `scripts/render.py#plot:scatter` | svg, drawio, scene.json, qa.json, html | `manual_visual_review` |
 | `fishbone` | 鱼骨分析图 | `scripts/render.py#fishbone` | svg, drawio, scene.json, qa.json, html | `manual_visual_review` |
 | `quadrant` | 四象限优先级图 | `scripts/render.py#quadrant` | svg, drawio, scene.json, qa.json, html | `manual_visual_review` |
 | `swot` | SWOT 分析 | `scripts/render.py#matrix` | svg, drawio, scene.json, qa.json, html | `manual_visual_review` |

@@ -1,0 +1,27 @@
+{
+  "version": "v53",
+  "date": "2026-09-20",
+  "scope": "Bilingual cross-industry histogram and scatter plot forms",
+  "automated": {
+    "tests": "Three regressions cover bilingual histogram and scatter inputs, content retention, equal-width bins, axis bounds and measured English labels",
+    "registry": "capability_registry.py --check passes",
+    "diff": "git diff --check passes",
+    "histogram": "Twenty-four response-time observations retain six equal-width bins, frequency counts, unit and localized bin-boundary note",
+    "scatter": "Ten paired observations retain fixed X/Y ranges, units, point labels and explicit non-causal scope"
+  },
+  "browser_checks": [
+    "Chinese and English distribution demo opened with histogram and scatter sections; object viewports are scrollable and expose JSON/SVG/draw.io links",
+    "English histogram and scatter SVGs opened directly; localized frequency note, axis units, point labels and scope remain readable",
+    "Chooser registry continues to expose histogram and scatter cards with backend, input requirements and statistical boundaries"
+  ],
+  "not_verified": [
+    "Native editor save/reopen for these draw.io files",
+    "Mobile viewport and dense point-label stress beyond declared limits",
+    "Distribution fit tests, regression significance, data provenance, causal interpretation or user aesthetic approval"
+  ],
+  "artifacts": {
+    "histogram": ["assets/examples/50-histogram-cn.json", "assets/examples/50-histogram-en.json"],
+    "scatter": ["assets/examples/46-scatter-cn.json", "assets/examples/46-scatter-en.json"],
+    "demo": "demos/distribution/index.html"
+  }
+}

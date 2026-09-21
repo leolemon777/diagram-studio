@@ -1,0 +1,554 @@
+{
+  "width": 1600,
+  "height": 900,
+  "theme": "light",
+  "palette": {
+    "bg": "#F1EFEB",
+    "panel": "#FEFDF9",
+    "ink": "#30302D",
+    "muted": "#6D6A63",
+    "line": "#D8D3C8",
+    "accent": "#AC6046",
+    "teal": "#67685E",
+    "amber": "#8C7964",
+    "red": "#554C46",
+    "tint": "#F0E4DA",
+    "tint2": "#ECECE5"
+  },
+  "nodes": [
+    {
+      "id": "_v1",
+      "x": 64,
+      "y": 674.0,
+      "w": 88,
+      "h": 32,
+      "label": "0",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 15,
+      "align": "right",
+      "check": false
+    },
+    {
+      "id": "_v2",
+      "x": 64,
+      "y": 562.75,
+      "w": 88,
+      "h": 32,
+      "label": "2",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 15,
+      "align": "right",
+      "check": false
+    },
+    {
+      "id": "_v3",
+      "x": 64,
+      "y": 451.5,
+      "w": 88,
+      "h": 32,
+      "label": "4",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 15,
+      "align": "right",
+      "check": false
+    },
+    {
+      "id": "_v4",
+      "x": 64,
+      "y": 340.25,
+      "w": 88,
+      "h": 32,
+      "label": "6",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 15,
+      "align": "right",
+      "check": false
+    },
+    {
+      "id": "_v5",
+      "x": 64,
+      "y": 229.0,
+      "w": 88,
+      "h": 32,
+      "label": "8",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 15,
+      "align": "right",
+      "check": false
+    },
+    {
+      "id": "_v6",
+      "x": 170.0,
+      "y": 467.5,
+      "w": 210.0,
+      "h": 222.5,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "tint",
+      "stroke": "accent",
+      "radius": 0,
+      "check": false
+    },
+    {
+      "id": "_v7",
+      "x": 170.0,
+      "y": 433.5,
+      "w": 210.0,
+      "h": 30,
+      "label": "4",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 18,
+      "align": "center",
+      "check": false
+    },
+    {
+      "id": "_v8",
+      "x": 175.0,
+      "y": 706,
+      "w": 200,
+      "h": 42,
+      "label": "0–10",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "center",
+      "check": false
+    },
+    {
+      "id": "_v9",
+      "x": 380.0,
+      "y": 356.25,
+      "w": 210.0,
+      "h": 333.75,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "tint",
+      "stroke": "accent",
+      "radius": 0,
+      "check": false
+    },
+    {
+      "id": "_v10",
+      "x": 380.0,
+      "y": 322.25,
+      "w": 210.0,
+      "h": 30,
+      "label": "6",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 18,
+      "align": "center",
+      "check": false
+    },
+    {
+      "id": "_v11",
+      "x": 385.0,
+      "y": 706,
+      "w": 200,
+      "h": 42,
+      "label": "10–20",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "center",
+      "check": false
+    },
+    {
+      "id": "_v12",
+      "x": 590.0,
+      "y": 300.625,
+      "w": 210.0,
+      "h": 389.375,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "tint",
+      "stroke": "accent",
+      "radius": 0,
+      "check": false
+    },
+    {
+      "id": "_v13",
+      "x": 590.0,
+      "y": 266.625,
+      "w": 210.0,
+      "h": 30,
+      "label": "7",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 18,
+      "align": "center",
+      "check": false
+    },
+    {
+      "id": "_v14",
+      "x": 595.0,
+      "y": 706,
+      "w": 200,
+      "h": 42,
+      "label": "20–30",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "center",
+      "check": false
+    },
+    {
+      "id": "_v15",
+      "x": 800.0,
+      "y": 467.5,
+      "w": 210.0,
+      "h": 222.5,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "tint",
+      "stroke": "accent",
+      "radius": 0,
+      "check": false
+    },
+    {
+      "id": "_v16",
+      "x": 800.0,
+      "y": 433.5,
+      "w": 210.0,
+      "h": 30,
+      "label": "4",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 18,
+      "align": "center",
+      "check": false
+    },
+    {
+      "id": "_v17",
+      "x": 805.0,
+      "y": 706,
+      "w": 200,
+      "h": 42,
+      "label": "30–40",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "center",
+      "check": false
+    },
+    {
+      "id": "_v18",
+      "x": 1010.0,
+      "y": 578.75,
+      "w": 210.0,
+      "h": 111.25,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "tint",
+      "stroke": "accent",
+      "radius": 0,
+      "check": false
+    },
+    {
+      "id": "_v19",
+      "x": 1010.0,
+      "y": 544.75,
+      "w": 210.0,
+      "h": 30,
+      "label": "2",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 18,
+      "align": "center",
+      "check": false
+    },
+    {
+      "id": "_v20",
+      "x": 1015.0,
+      "y": 706,
+      "w": 200,
+      "h": 42,
+      "label": "40–50",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "center",
+      "check": false
+    },
+    {
+      "id": "_v21",
+      "x": 1220.0,
+      "y": 634.375,
+      "w": 210.0,
+      "h": 55.625,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "tint",
+      "stroke": "accent",
+      "radius": 0,
+      "check": false
+    },
+    {
+      "id": "_v22",
+      "x": 1220.0,
+      "y": 600.375,
+      "w": 210.0,
+      "h": 30,
+      "label": "1",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 18,
+      "align": "center",
+      "check": false
+    },
+    {
+      "id": "_v23",
+      "x": 1225.0,
+      "y": 706,
+      "w": 200,
+      "h": 42,
+      "label": "50–60",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "center",
+      "check": false
+    },
+    {
+      "id": "_v24",
+      "x": 170,
+      "y": 194,
+      "w": 1260,
+      "h": 42,
+      "label": "Frequency · left-closed bins; the last bin includes the right endpoint · minutes",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 16,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v25",
+      "x": 64,
+      "y": 34,
+      "w": 1472,
+      "h": 22,
+      "label": "50 / HIGH-FREQUENCY FORMS",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v26",
+      "x": 64,
+      "y": 69,
+      "w": 1472,
+      "h": 56,
+      "label": "Customer support first response · minute distribution",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 36,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v27",
+      "x": 64,
+      "y": 130,
+      "w": 1472,
+      "h": 38,
+      "label": "Equal-width bins; bar height is observed frequency, not a service-quality conclusion",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v28",
+      "x": 64,
+      "y": 837,
+      "w": 1472,
+      "h": 1,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "line",
+      "stroke": "none",
+      "check": false
+    },
+    {
+      "id": "_v29",
+      "x": 64,
+      "y": 850,
+      "w": 1472,
+      "h": 36,
+      "label": "Cross-industry simulated input · values support distribution reading, not a real service level",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    }
+  ],
+  "edges": [
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          170,
+          690.0
+        ],
+        [
+          1430,
+          690.0
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "arrow": false,
+      "tone": "line"
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          170,
+          578.75
+        ],
+        [
+          1430,
+          578.75
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "arrow": false,
+      "tone": "line"
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          170,
+          467.5
+        ],
+        [
+          1430,
+          467.5
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "arrow": false,
+      "tone": "line"
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          170,
+          356.25
+        ],
+        [
+          1430,
+          356.25
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "arrow": false,
+      "tone": "line"
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          170,
+          245.0
+        ],
+        [
+          1430,
+          245.0
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "arrow": false,
+      "tone": "line"
+    }
+  ],
+  "meta": {
+    "bin_counts": [
+      4,
+      6,
+      7,
+      4,
+      2,
+      1
+    ],
+    "sample_count": 24,
+    "bin_edges": [
+      0,
+      10,
+      20,
+      30,
+      40,
+      50,
+      60
+    ],
+    "unit": "minutes"
+  },
+  "assumptions": [
+    "Original cross-industry teaching content; it is not a support-team KPI or statistical conclusion"
+  ]
+}
