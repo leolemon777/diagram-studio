@@ -24,7 +24,7 @@
     {
       "id": "platform",
       "label": "服务平台",
-      "detail": "身份 · 订单 · 工单",
+      "detail": "身份 · 预约 · 反馈",
       "tone": "accent"
     },
     {

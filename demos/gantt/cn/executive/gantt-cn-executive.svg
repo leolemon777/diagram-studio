@@ -101,7 +101,7 @@
 </g>
 <g id="_v21" data-kind="text" data-content-text="false" data-box="96,663,296,26">
 
-<text x="96" y="681.85" text-anchor="start" font-size="18" font-weight="400" fill="#30302D">安排现场物料</text>
+<text x="96" y="681.85" text-anchor="start" font-size="18" font-weight="400" fill="#30302D">安排现场资源</text>
 </g>
 <g id="logistics" data-kind="rect" data-content-text="false" data-box="909.375,667.0,393.75,18">
 <rect x="909.375" y="667.0" width="393.75" height="18" rx="10" fill="#F0E4DA" stroke="#AC6046" stroke-width="1.5"/>

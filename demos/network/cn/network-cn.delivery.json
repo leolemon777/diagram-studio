@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "protocol_version": "diagram-studio/delivery-1",
-  "version_id": "v-dcdb7abdb174",
+  "version_id": "v-44bf3710c8a2",
   "source_name": "network-cn",
-  "input_sha256": "dcdb7abdb174d91dad4b2fa5483e3fc8c58842c2e070c5d2b34c80455c91bae3",
+  "input_sha256": "44bf3710c8a2387e1219d3137e484c26e8ee773cd00e43881cea7391a1989011",
   "theme": "light",
   "checks": {
     "geometry": {
@@ -38,19 +38,19 @@
     "adaptive_reader.js": "9bc0a1eb6bfcf6bc88f5546bab128557ab8cc5daaee9887bcfa3e4d23b426fcf",
     "browser_quality.js": "e02da63376abe62d68f626d97701d2aacf761f59e6312a420643eab270339e1b",
     "network-cn-p01.qa.json": "46824cdf183ee2dc2c3f77965290611415d7768911eb9f9c5d12bac6b23d7e99",
-    "network-cn-p01.svg": "7ad0cbaed220369efa53e9965d24459bae55bfafe7512a045c015dbbf380d928",
+    "network-cn-p01.svg": "85299a5193e4978985987f14ec9b4cc9a0f0630f06486808bd0937521f4f561e",
     "network-cn-p02.qa.json": "bfe355badd50f7d998d065eddc2098674312ca05ef953c788848b00ade74ff1b",
     "network-cn-p02.svg": "4dc19b2580df5a9621c1c072786c0a9e86ebb4d8ae8451f1ab7ffc6c97cc9625",
     "network-cn-p03.qa.json": "5ae970eefb48b98bd54c5e7b0d1d6ec52596c76d4398773dd04e686141dbce80",
     "network-cn-p03.svg": "1ab4e782168895df00d700bd69a3a0889fd04fd5f64d91fb3fbc6655d6a39ee1",
-    "network-cn-reading.drawio": "24ec7d8d7f8c712da601bf7429a82dc442aa87dd140c5bfdd441b25c0f1d7acc",
+    "network-cn-reading.drawio": "592bb48f74246e5f38e37ee9be38f77b060d6c0672629833bfbf7c5647a2caaa",
     "network-cn-reading.json": "cfdfe849d4656b6a60737621259b55e899b7acda26e6e1bc27092eca4bf02570",
-    "network-cn.brief.json": "3a4b17286304706597b25efd48336a992496167f6fe07491094c2e7c5d80279e",
-    "network-cn.drawio": "d69a08b7f29e5e2663c67a781cd3f4254fb59260db1392c93f52f992e72287d6",
+    "network-cn.brief.json": "50abeb369c8d14ae493f062f4707a7f494ea1657b675c09ddb3ffa7800dd5487",
+    "network-cn.drawio": "ff0d62da9b12d3b0e4648944e2f3a826a0a3144a25a636be77733e0bfa55c8b0",
     "network-cn.html": "282f4d669b98c7eb89c3bab0a79b626a52d8bba1d5e9d929ee0260b4a201c51b",
     "network-cn.qa.json": "bbbbb9f64d2bb07f1b4f9eb5dffcaf5cc8ed28dda9195570ce98d30691cd2b9a",
-    "network-cn.scene.json": "0f6cfcae59077581d87f8fadd592693c9888438e2d6611f54665ed3b15d25dc2",
-    "network-cn.svg": "b58fec896531205ee953ce010ac9569b8ecfb6a4354d5c2ced933ac119d1a130"
+    "network-cn.scene.json": "8d51305a7ff7c13950d646dcc5827c02043d4e1e25e6a6a20778ac94a7a02dcb",
+    "network-cn.svg": "829783a6e99422d110262422f1b534a3746c6fd8a1055a0a6ad1ed221e758061"
   },
   "delivery_scope": "Generation, semantic content checks and QA finish before replacement. Individual files are replaced; promotion is not a multi-file atomic transaction."
 }

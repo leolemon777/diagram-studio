@@ -1,0 +1,31 @@
+{
+  "version": "v70",
+  "date": "2026-09-21",
+  "scope": "High-frequency relationship-network example semantic cleanup",
+  "automated": {
+    "tests": "The bilingual network regression now checks stable topology, zero crossings, explicit labels and cross-industry service terms; the full suite passes 118 tests",
+    "registry": "capability_registry.py --check passes",
+    "diff": "git diff --check passes",
+    "content": "The Chinese platform detail uses identity, booking and feedback semantics instead of the maintenance-specific ticket term"
+  },
+  "browser_checks": [
+    "The regenerated Chinese relationship-network overview, reading view and direct SVG were opened after synchronization",
+    "The overview keeps six nodes, six links, readable labels and the dashed partner-status return"
+  ],
+  "not_verified": [
+    "Native draw.io edit, save and reopen for this content-only refresh",
+    "Domain-specific evidence for any real service organization or platform"
+  ],
+  "artifacts": {
+    "models": ["assets/examples/network-cn.json"],
+    "outputs": [
+      "demos/network/cn/network-cn.svg",
+      "demos/network/cn/network-cn.drawio",
+      "demos/network/cn/network-cn.scene.json",
+      "demos/network/cn/network-cn.qa.json",
+      "demos/network/cn/network-cn.html",
+      "demos/network/cn/network-cn-reading.json"
+    ],
+    "tests": ["tests/test_network_forms.py"]
+  }
+}

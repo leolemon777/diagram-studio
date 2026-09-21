@@ -7,7 +7,7 @@
   "nodes": [
     {"id": "customer", "label": "客户", "detail": "提出需求 · 接收结果", "kind": "ellipse", "tone": "accent"},
     {"id": "channel", "label": "服务入口", "detail": "App · 门店 · 电话", "tone": "teal"},
-    {"id": "platform", "label": "服务平台", "detail": "身份 · 订单 · 工单", "tone": "accent"},
+    {"id": "platform", "label": "服务平台", "detail": "身份 · 预约 · 反馈", "tone": "accent"},
     {"id": "agent", "label": "服务团队", "detail": "处理 · 升级 · 回应", "tone": "amber"},
     {"id": "partner", "label": "合作伙伴", "detail": "交付 · 履约 · 状态", "tone": "amber"},
     {"id": "analytics", "label": "分析与洞察", "detail": "反馈 · 指标 · 改进", "tone": "red"}

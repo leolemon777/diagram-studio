@@ -1,0 +1,35 @@
+{
+  "version": "v71",
+  "date": "2026-09-21",
+  "scope": "Final high-frequency cross-industry semantic audit",
+  "automated": {
+    "tests": "High-frequency aliases now reject specialist fixture terms and preserve exact bilingual topology; the full suite passes 119 tests",
+    "registry": "capability_registry.py --check passes",
+    "diff": "git diff --check passes",
+    "content": "The numbered 01–10 examples use cross-industry service, learning, community and event language; specialist space and process entries remain explicitly scoped"
+  },
+  "browser_checks": [
+    "The regenerated Chinese relationship-network reading page shows identity, booking and feedback semantics with six readable nodes and six links",
+    "The bilingual Gantt gallery continues to expose delivery, executive and print variants after the resource-label refresh"
+  ],
+  "not_verified": [
+    "Native editor save, reopen and round-trip behavior for the content-only refresh",
+    "Domain-specific correctness for the retained floorplan and process-flow specialist examples"
+  ],
+  "artifacts": {
+    "models": [
+      "assets/examples/01-system-architecture.json",
+      "assets/examples/02-workflow.json",
+      "assets/examples/03-organization.json",
+      "assets/examples/04-mindmap.json",
+      "assets/examples/05-sequence.json",
+      "assets/examples/06-gantt.json",
+      "assets/examples/08-bar-chart.json",
+      "assets/examples/09-line-chart.json",
+      "assets/examples/10-donut-chart.json",
+      "assets/examples/gantt-cn.json",
+      "assets/examples/network-cn.json"
+    ],
+    "tests": ["tests/test_legacy_alias_consistency.py", "tests/test_network_forms.py"]
+  }
+}

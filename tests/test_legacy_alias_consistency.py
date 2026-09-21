@@ -43,6 +43,13 @@ class LegacyAliasConsistencyTests(unittest.TestCase):
         self.assertIn("需求受理", labels)
         self.assertNotIn("运维", "".join(labels))
 
+    def test_high_frequency_aliases_drop_specialist_fixture_terms(self):
+        banned = ("设备", "物料", "工单", "运维", "停机", "维护")
+        for alias in list(PAIRED_ALIASES) + ["03-organization.json"]:
+            with self.subTest(alias=alias):
+                serialized = json.dumps(self.read(alias), ensure_ascii=False)
+                self.assertFalse(any(term in serialized for term in banned))
+
     def test_alias_inputs_render_without_quality_errors(self):
         names = list(PAIRED_ALIASES) + ["03-organization.json"]
         for name in names:

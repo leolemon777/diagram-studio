@@ -38,6 +38,12 @@ class NetworkFormTests(unittest.TestCase):
         self.assertGreaterEqual(sum(e.get('dashed', False) for e in scene.edges), 1)
         self.assertEqual(scene.meta['adaptive_layout']['crossings'], 0)
 
+    def test_cn_fixture_uses_cross_industry_service_semantics(self):
+        serialized = json.dumps(self.cn, ensure_ascii=False)
+        self.assertNotIn('工单', serialized)
+        self.assertIn('预约', serialized)
+        self.assertIn('反馈', serialized)
+
     def test_invalid_endpoint_fails_before_render(self):
         bad = copy.deepcopy(self.en)
         bad['edges'][0]['to'] = 'missing'

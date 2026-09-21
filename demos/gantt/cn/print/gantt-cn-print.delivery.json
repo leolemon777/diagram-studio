@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "protocol_version": "diagram-studio/delivery-1",
-  "version_id": "v-9ff056eedeb7",
+  "version_id": "v-9f1622cee54b",
   "source_name": "gantt-cn-print",
-  "input_sha256": "9ff056eedeb7ebde6222fb6e575fedeb5ec59753a8b9dd9f98abf34cb449d57b",
+  "input_sha256": "9f1622cee54b85fb487d8d86eea1517b753edacc3c8226694c7572b5d1776553",
   "theme": "light",
   "checks": {
     "geometry": {
@@ -35,11 +35,11 @@
     }
   },
   "files": {
-    "gantt-cn-print.brief.json": "9ff056eedeb7ebde6222fb6e575fedeb5ec59753a8b9dd9f98abf34cb449d57b",
-    "gantt-cn-print.drawio": "a553f53d86bad64b28a34a3a36120d5d6a4522b204160a533fabdb8d739c1d47",
+    "gantt-cn-print.brief.json": "9f1622cee54b85fb487d8d86eea1517b753edacc3c8226694c7572b5d1776553",
+    "gantt-cn-print.drawio": "e0ad2a479c4f4a7f6a1953b7f2b037b765cf71b3dcc1193afdb1138770e45621",
     "gantt-cn-print.qa.json": "42cab0d8381684154e41cdb08fb45dda3c3ea5295fb47cd4d3d6f904c2b0939b",
-    "gantt-cn-print.scene.json": "f1a74fc1e2462132746207e6482d38d8d2716eb75e913471c9818fd2fe3e3444",
-    "gantt-cn-print.svg": "9cd88ef076b3a9b5cddc5eff1d81e3ac8e0301b0951c547b4532ecf749eb8093"
+    "gantt-cn-print.scene.json": "ddfb48e254d4ac1017f8af8fe3e83acbcb26f4fb0fe2ed130a20766185b9fec4",
+    "gantt-cn-print.svg": "8d0351db99301735c5b802f157688eb881e811e8ab5778f3d7af5d59f9745986"
   },
   "delivery_scope": "Generation, semantic content checks and QA finish before replacement. Individual files are replaced; promotion is not a multi-file atomic transaction."
 }

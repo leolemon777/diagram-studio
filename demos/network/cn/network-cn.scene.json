@@ -93,7 +93,7 @@
       "w": 190,
       "h": 120,
       "label": "服务平台",
-      "detail": "身份 · 订单 · 工单",
+      "detail": "身份 · 预约 · 反馈",
       "kind": "rect",
       "tone": "accent",
       "check": true,
@@ -105,13 +105,13 @@
           "ink"
         ],
         [
-          "身份 · 订单 · ",
+          "身份 · 预约 · ",
           17,
           false,
           "muted"
         ],
         [
-          "工单",
+          "反馈",
           17,
           false,
           "muted"
