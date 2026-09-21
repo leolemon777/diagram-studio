@@ -1,55 +1,55 @@
 {
   "type": "fishbone",
-  "title": "Recurring service interruptions · cause hypotheses",
+  "title": "Service requests repeatedly incomplete · cause hypotheses",
   "subtitle": "A fishbone organizes causes to verify; its branches are not causal evidence",
   "eyebrow": "11 / CAUSE ANALYSIS",
-  "effect": "Recurring service interruptions",
-  "effect_detail": "Confirm frequency and boundary before prioritising",
+  "effect": "Service requests repeatedly incomplete",
+  "effect_detail": "Confirm frequency, contexts and the completion definition",
   "categories": [
     {
       "label": "People",
       "causes": [
         "Handover information may be incomplete",
-        "Operator training may be uneven"
+        "Training and authorisation may not match"
       ]
     },
     {
-      "label": "Equipment",
+      "label": "Process",
       "causes": [
-        "Wear state may be abnormal",
-        "Signal quality may be unstable"
+        "The handling path may be unclear",
+        "Exception returns may have no owner"
       ]
     },
     {
-      "label": "Method",
+      "label": "Tools",
       "causes": [
-        "Troubleshooting path may be unclear",
-        "Parameter changes may be inconsistent"
+        "System state may be unstable",
+        "Required data fields may be missing"
       ]
     },
     {
-      "label": "Environment",
+      "label": "Content",
       "causes": [
-        "Temperature or humidity may vary",
-        "Interference sources may be present"
+        "Instructions may be unclear",
+        "Key prompts may be inconsistent"
       ]
     },
     {
-      "label": "Materials",
+      "label": "Access",
       "causes": [
-        "Batch differences may matter",
-        "Specification may not fit the use"
+        "The entry point may be hard to find",
+        "Accessibility and language coverage may be incomplete"
       ]
     },
     {
       "label": "Measurement",
       "causes": [
-        "Instrument status may be unverified",
-        "Measurement points may use different definitions"
+        "Completion may use different definitions",
+        "Feedback may not be split by context"
       ]
     }
   ],
-  "footer": "Original cause-analysis example · every entry is a question or hypothesis, not a verified conclusion",
+  "footer": "Cross-industry service example · every entry is a question or hypothesis, not a verified conclusion",
   "family": "Research & analysis",
   "diagram_name": "Fishbone cause analysis"
 }

@@ -1,0 +1,26 @@
+{
+  "version": "v64",
+  "date": "2026-09-21",
+  "scope": "Cross-industry bilingual fishbone cause-hypothesis form",
+  "automated": {
+    "tests": "Bundled Python unittest suite passes; fishbone tests cover bilingual rendering, content retention, matched categories and a shared service context",
+    "registry": "capability_registry.py --check passes",
+    "diff": "git diff --check passes",
+    "fishbone": "Six shared categories and twelve hypothesis prompts are retained in both languages; no industrial-only effect remains"
+  },
+  "browser_checks": [
+    "Chinese fishbone SVG opened directly; service-request effect, six branches and hypothesis prompts are readable",
+    "English fishbone SVG opened directly; service-request effect, six branches and long access prompts fit without clipping",
+    "Analysis forms page opened; fishbone section keeps the cross-industry scope and links to both bilingual sources"
+  ],
+  "not_verified": [
+    "Native editor save/reopen for the regenerated fishbone files",
+    "Mobile viewport and more than six categories or three causes per category",
+    "Domain root-cause proof, probability estimates or operational ownership"
+  ],
+  "artifacts": {
+    "models": ["assets/examples/11-fishbone.json", "assets/examples/11-fishbone-en.json"],
+    "outputs": ["demos/analysis-forms/11-fishbone.svg", "demos/analysis-forms/11-fishbone-en.svg"],
+    "demo": "demos/analysis-forms/index.html"
+  }
+}

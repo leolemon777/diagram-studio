@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "version": "v63",
-  "updated": "2026-09-20",
+  "version": "v64",
+  "updated": "2026-09-21",
   "purpose": "Single source for chooser labels, backend capability, delivery formats and acceptance evidence.",
   "status_vocabulary": {
     "manual_visual_review": "A named output was opened and visually reviewed; this does not imply native-editor or domain approval.",
@@ -300,7 +300,7 @@
           "layout_limits": {"zh": "原因类别 2–6 个，每类最多 3 条；英文和长文按内容测量，过密时拆页。", "en": "Two to six categories and up to three causes each; measure long bilingual copy and split dense boards."},
           "languages": ["zh", "en"],
           "examples": ["assets/examples/11-fishbone.json", "assets/examples/11-fishbone-en.json"],
-          "evidence": {"level": "manual_visual_review", "reference": "assets/v48-analysis-forms-evidence.json", "detail": {"zh": "中英示例通过内容保留、长英文换行和几何检查；分支仍是待验证假说。", "en": "Chinese and English examples pass content retention, long-English wrapping and geometry checks; branches remain hypotheses to verify."}},
+          "evidence": {"level": "manual_visual_review", "reference": "assets/v64-fishbone-evidence.json", "detail": {"zh": "中英跨行业服务场景通过六类假说、内容保留、长英文换行和几何检查；分支仍是待验证假说。", "en": "Chinese and English cross-industry service examples pass six shared hypotheses, content retention, long-English wrapping and geometry checks; branches remain hypotheses to verify."}},
           "scope": {"zh": "用于结构化排查，不计算概率、不自动宣称根因。", "en": "Structures investigation; it does not calculate probabilities or declare a root cause."}
         },
         {

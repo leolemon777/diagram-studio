@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="diagram-title diagram-desc">
-<title id="diagram-title">Recurring service interruptions · cause hypotheses</title>
+<title id="diagram-title">Service requests repeatedly incomplete · cause hypotheses</title>
 <desc id="diagram-desc">A fishbone organizes causes to verify; its branches are not causal evidence</desc>
 <rect width="100%" height="100%" fill="#F1EFEB"/>
 <defs>
@@ -17,27 +17,28 @@
 <path d="M307.0,323.0 L343.8131313131313,323.0" fill="none" stroke="#AC6046" stroke-width="1.3" stroke-linejoin="round"/>
 <path d="M307.0,377.0 L375.17676767676767,377.0" fill="none" stroke="#AC6046" stroke-width="1.3" stroke-linejoin="round"/>
 <path d="M320.0,620 L435.0,480" fill="none" stroke="#AC6046" stroke-width="2" stroke-linejoin="round"/>
-<path d="M307.0,526.0 L397.2142857142857,526.0" fill="none" stroke="#AC6046" stroke-width="1.3" stroke-linejoin="round"/>
-<path d="M307.0,573.0 L358.60714285714283,573.0" fill="none" stroke="#AC6046" stroke-width="1.3" stroke-linejoin="round"/>
+<path d="M307.0,533.0 L391.4642857142857,533.0" fill="none" stroke="#AC6046" stroke-width="1.3" stroke-linejoin="round"/>
+<path d="M307.0,587.0 L347.10714285714283,587.0" fill="none" stroke="#AC6046" stroke-width="1.3" stroke-linejoin="round"/>
 <path d="M693.3333333333333,282 L808.3333333333333,480" fill="none" stroke="#67685E" stroke-width="2" stroke-linejoin="round"/>
-<path d="M680.3333333333333,323.0 L717.1464646464646,323.0" fill="none" stroke="#67685E" stroke-width="1.3" stroke-linejoin="round"/>
-<path d="M680.3333333333333,377.0 L748.5101010101009,377.0" fill="none" stroke="#67685E" stroke-width="1.3" stroke-linejoin="round"/>
+<path d="M680.3333333333333,316.0 L713.080808080808,316.0" fill="none" stroke="#67685E" stroke-width="1.3" stroke-linejoin="round"/>
+<path d="M680.3333333333333,363.0 L740.3787878787878,363.0" fill="none" stroke="#67685E" stroke-width="1.3" stroke-linejoin="round"/>
 <path d="M693.3333333333333,620 L808.3333333333333,480" fill="none" stroke="#67685E" stroke-width="2" stroke-linejoin="round"/>
-<path d="M680.3333333333333,533.0 L764.7976190476189,533.0" fill="none" stroke="#67685E" stroke-width="1.3" stroke-linejoin="round"/>
-<path d="M680.3333333333333,587.0 L720.4404761904761,587.0" fill="none" stroke="#67685E" stroke-width="1.3" stroke-linejoin="round"/>
+<path d="M680.3333333333333,526.0 L770.5476190476189,526.0" fill="none" stroke="#67685E" stroke-width="1.3" stroke-linejoin="round"/>
+<path d="M680.3333333333333,573.0 L731.9404761904761,573.0" fill="none" stroke="#67685E" stroke-width="1.3" stroke-linejoin="round"/>
 <path d="M1066.6666666666665,282 L1181.6666666666665,480" fill="none" stroke="#8C7964" stroke-width="2" stroke-linejoin="round"/>
-<path d="M1053.6666666666665,316.0 L1086.4141414141413,316.0" fill="none" stroke="#8C7964" stroke-width="1.3" stroke-linejoin="round"/>
-<path d="M1053.6666666666665,363.0 L1113.712121212121,363.0" fill="none" stroke="#8C7964" stroke-width="1.3" stroke-linejoin="round"/>
+<path d="M1053.6666666666665,323.0 L1090.479797979798,323.0" fill="none" stroke="#8C7964" stroke-width="1.3" stroke-linejoin="round"/>
+<path d="M1053.6666666666665,377.0 L1121.8434343434342,377.0" fill="none" stroke="#8C7964" stroke-width="1.3" stroke-linejoin="round"/>
 <path d="M1066.6666666666665,620 L1181.6666666666665,480" fill="none" stroke="#8C7964" stroke-width="2" stroke-linejoin="round"/>
 <path d="M1053.6666666666665,533.0 L1138.1309523809523,533.0" fill="none" stroke="#8C7964" stroke-width="1.3" stroke-linejoin="round"/>
 <path d="M1053.6666666666665,587.0 L1093.7738095238094,587.0" fill="none" stroke="#8C7964" stroke-width="1.3" stroke-linejoin="round"/>
-<g id="_v1" data-kind="rect" data-content-text="false" data-box="1282,405.9,240,148.20000000000002">
-<rect x="1282" y="405.9" width="240" height="148.20000000000002" rx="10" fill="#FEFDF9" stroke="#AC6046" stroke-width="1.5"/>
-<text x="1402.0" y="439.9" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">Recurring service</text>
-<text x="1402.0" y="469.59999999999997" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">interruptions</text>
-<text x="1402.0" y="493.29999999999995" text-anchor="middle" font-size="16" font-weight="400" fill="#6D6A63">Confirm frequency and</text>
-<text x="1402.0" y="514.9" text-anchor="middle" font-size="16" font-weight="400" fill="#6D6A63">boundary before</text>
-<text x="1402.0" y="536.5" text-anchor="middle" font-size="16" font-weight="400" fill="#6D6A63">prioritising</text>
+<g id="_v1" data-kind="rect" data-content-text="false" data-box="1282,391.05,240,177.9">
+<rect x="1282" y="391.05" width="240" height="177.9" rx="10" fill="#FEFDF9" stroke="#AC6046" stroke-width="1.5"/>
+<text x="1402.0" y="425.05" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">Service requests</text>
+<text x="1402.0" y="454.75" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">repeatedly</text>
+<text x="1402.0" y="484.45" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">incomplete</text>
+<text x="1402.0" y="508.15" text-anchor="middle" font-size="16" font-weight="400" fill="#6D6A63">Confirm frequency,</text>
+<text x="1402.0" y="529.75" text-anchor="middle" font-size="16" font-weight="400" fill="#6D6A63">contexts and the</text>
+<text x="1402.0" y="551.35" text-anchor="middle" font-size="16" font-weight="400" fill="#6D6A63">completion definition</text>
 </g>
 <g id="_v2" data-kind="text" data-content-text="false" data-box="100.0,236,260,36">
 
@@ -50,62 +51,62 @@
 </g>
 <g id="_v4" data-kind="text" data-content-text="false" data-box="75.0,354,250,46">
 
-<text x="75.0" y="371.75" text-anchor="start" font-size="15" font-weight="400" fill="#30302D">• Operator training may be</text>
-<text x="75.0" y="392.0" text-anchor="start" font-size="15" font-weight="400" fill="#30302D">uneven</text>
+<text x="75.0" y="371.75" text-anchor="start" font-size="15" font-weight="400" fill="#30302D">• Training and authorisation</text>
+<text x="75.0" y="392.0" text-anchor="start" font-size="15" font-weight="400" fill="#30302D">may not match</text>
 </g>
 <g id="_v5" data-kind="text" data-content-text="false" data-box="100.0,628,260,36">
 
-<text x="100.0" y="653.15" text-anchor="start" font-size="22" font-weight="400" fill="#AC6046">Equipment</text>
+<text x="100.0" y="653.15" text-anchor="start" font-size="22" font-weight="400" fill="#AC6046">Process</text>
 </g>
-<g id="_v6" data-kind="text" data-content-text="false" data-box="75.0,510,250,32">
+<g id="_v6" data-kind="text" data-content-text="false" data-box="75.0,510,250,46">
 
-<text x="75.0" y="530.875" text-anchor="start" font-size="15" font-weight="400" fill="#30302D">• Wear state may be abnormal</text>
+<text x="75.0" y="527.75" text-anchor="start" font-size="15" font-weight="400" fill="#30302D">• The handling path may be</text>
+<text x="75.0" y="548.0" text-anchor="start" font-size="15" font-weight="400" fill="#30302D">unclear</text>
 </g>
-<g id="_v7" data-kind="text" data-content-text="false" data-box="75.0,550,250,46">
+<g id="_v7" data-kind="text" data-content-text="false" data-box="75.0,564,250,46">
 
-<text x="75.0" y="567.75" text-anchor="start" font-size="15" font-weight="400" fill="#30302D">• Signal quality may be</text>
-<text x="75.0" y="588.0" text-anchor="start" font-size="15" font-weight="400" fill="#30302D">unstable</text>
+<text x="75.0" y="581.75" text-anchor="start" font-size="15" font-weight="400" fill="#30302D">• Exception returns may have no</text>
+<text x="75.0" y="602.0" text-anchor="start" font-size="15" font-weight="400" fill="#30302D">owner</text>
 </g>
 <g id="_v8" data-kind="text" data-content-text="false" data-box="473.33333333333326,236,260,36">
 
-<text x="473.33333333333326" y="261.15" text-anchor="start" font-size="22" font-weight="400" fill="#67685E">Method</text>
+<text x="473.33333333333326" y="261.15" text-anchor="start" font-size="22" font-weight="400" fill="#67685E">Tools</text>
 </g>
-<g id="_v9" data-kind="text" data-content-text="false" data-box="448.33333333333326,300,250,46">
+<g id="_v9" data-kind="text" data-content-text="false" data-box="448.33333333333326,300,250,32">
 
-<text x="448.33333333333326" y="317.75" text-anchor="start" font-size="15" font-weight="400" fill="#30302D">• Troubleshooting path may be</text>
-<text x="448.33333333333326" y="338.0" text-anchor="start" font-size="15" font-weight="400" fill="#30302D">unclear</text>
+<text x="448.33333333333326" y="320.875" text-anchor="start" font-size="15" font-weight="400" fill="#30302D">• System state may be unstable</text>
 </g>
-<g id="_v10" data-kind="text" data-content-text="false" data-box="448.33333333333326,354,250,46">
+<g id="_v10" data-kind="text" data-content-text="false" data-box="448.33333333333326,340,250,46">
 
-<text x="448.33333333333326" y="371.75" text-anchor="start" font-size="15" font-weight="400" fill="#30302D">• Parameter changes may be</text>
-<text x="448.33333333333326" y="392.0" text-anchor="start" font-size="15" font-weight="400" fill="#30302D">inconsistent</text>
+<text x="448.33333333333326" y="357.75" text-anchor="start" font-size="15" font-weight="400" fill="#30302D">• Required data fields may be</text>
+<text x="448.33333333333326" y="378.0" text-anchor="start" font-size="15" font-weight="400" fill="#30302D">missing</text>
 </g>
 <g id="_v11" data-kind="text" data-content-text="false" data-box="473.33333333333326,628,260,36">
 
-<text x="473.33333333333326" y="653.15" text-anchor="start" font-size="22" font-weight="400" fill="#67685E">Environment</text>
+<text x="473.33333333333326" y="653.15" text-anchor="start" font-size="22" font-weight="400" fill="#67685E">Content</text>
 </g>
-<g id="_v12" data-kind="text" data-content-text="false" data-box="448.33333333333326,510,250,46">
+<g id="_v12" data-kind="text" data-content-text="false" data-box="448.33333333333326,510,250,32">
 
-<text x="448.33333333333326" y="527.75" text-anchor="start" font-size="15" font-weight="400" fill="#30302D">• Temperature or humidity may</text>
-<text x="448.33333333333326" y="548.0" text-anchor="start" font-size="15" font-weight="400" fill="#30302D">vary</text>
+<text x="448.33333333333326" y="530.875" text-anchor="start" font-size="15" font-weight="400" fill="#30302D">• Instructions may be unclear</text>
 </g>
-<g id="_v13" data-kind="text" data-content-text="false" data-box="448.33333333333326,564,250,46">
+<g id="_v13" data-kind="text" data-content-text="false" data-box="448.33333333333326,550,250,46">
 
-<text x="448.33333333333326" y="581.75" text-anchor="start" font-size="15" font-weight="400" fill="#30302D">• Interference sources may be</text>
-<text x="448.33333333333326" y="602.0" text-anchor="start" font-size="15" font-weight="400" fill="#30302D">present</text>
+<text x="448.33333333333326" y="567.75" text-anchor="start" font-size="15" font-weight="400" fill="#30302D">• Key prompts may be</text>
+<text x="448.33333333333326" y="588.0" text-anchor="start" font-size="15" font-weight="400" fill="#30302D">inconsistent</text>
 </g>
 <g id="_v14" data-kind="text" data-content-text="false" data-box="846.6666666666666,236,260,36">
 
-<text x="846.6666666666666" y="261.15" text-anchor="start" font-size="22" font-weight="400" fill="#8C7964">Materials</text>
+<text x="846.6666666666666" y="261.15" text-anchor="start" font-size="22" font-weight="400" fill="#8C7964">Access</text>
 </g>
-<g id="_v15" data-kind="text" data-content-text="false" data-box="821.6666666666666,300,250,32">
+<g id="_v15" data-kind="text" data-content-text="false" data-box="821.6666666666666,300,250,46">
 
-<text x="821.6666666666666" y="320.875" text-anchor="start" font-size="15" font-weight="400" fill="#30302D">• Batch differences may matter</text>
+<text x="821.6666666666666" y="317.75" text-anchor="start" font-size="15" font-weight="400" fill="#30302D">• The entry point may be hard to</text>
+<text x="821.6666666666666" y="338.0" text-anchor="start" font-size="15" font-weight="400" fill="#30302D">find</text>
 </g>
-<g id="_v16" data-kind="text" data-content-text="false" data-box="821.6666666666666,340,250,46">
+<g id="_v16" data-kind="text" data-content-text="false" data-box="821.6666666666666,354,250,46">
 
-<text x="821.6666666666666" y="357.75" text-anchor="start" font-size="15" font-weight="400" fill="#30302D">• Specification may not fit the</text>
-<text x="821.6666666666666" y="378.0" text-anchor="start" font-size="15" font-weight="400" fill="#30302D">use</text>
+<text x="821.6666666666666" y="371.75" text-anchor="start" font-size="15" font-weight="400" fill="#30302D">• Accessibility and language</text>
+<text x="821.6666666666666" y="392.0" text-anchor="start" font-size="15" font-weight="400" fill="#30302D">coverage may be incomplete</text>
 </g>
 <g id="_v17" data-kind="text" data-content-text="false" data-box="846.6666666666666,628,260,36">
 
@@ -113,13 +114,13 @@
 </g>
 <g id="_v18" data-kind="text" data-content-text="false" data-box="821.6666666666666,510,250,46">
 
-<text x="821.6666666666666" y="527.75" text-anchor="start" font-size="15" font-weight="400" fill="#30302D">• Instrument status may be</text>
-<text x="821.6666666666666" y="548.0" text-anchor="start" font-size="15" font-weight="400" fill="#30302D">unverified</text>
+<text x="821.6666666666666" y="527.75" text-anchor="start" font-size="15" font-weight="400" fill="#30302D">• Completion may use different</text>
+<text x="821.6666666666666" y="548.0" text-anchor="start" font-size="15" font-weight="400" fill="#30302D">definitions</text>
 </g>
 <g id="_v19" data-kind="text" data-content-text="false" data-box="821.6666666666666,564,250,46">
 
-<text x="821.6666666666666" y="581.75" text-anchor="start" font-size="15" font-weight="400" fill="#30302D">• Measurement points may use</text>
-<text x="821.6666666666666" y="602.0" text-anchor="start" font-size="15" font-weight="400" fill="#30302D">different definitions</text>
+<text x="821.6666666666666" y="581.75" text-anchor="start" font-size="15" font-weight="400" fill="#30302D">• Feedback may not be split by</text>
+<text x="821.6666666666666" y="602.0" text-anchor="start" font-size="15" font-weight="400" fill="#30302D">context</text>
 </g>
 <g id="_v20" data-kind="text" data-content-text="false" data-box="64,34,1472,22">
 
@@ -127,7 +128,7 @@
 </g>
 <g id="_v21" data-kind="text" data-content-text="false" data-box="64,69,1472,56">
 
-<text x="64" y="108.7" text-anchor="start" font-size="36" font-weight="400" fill="#30302D">Recurring service interruptions · cause hypotheses</text>
+<text x="64" y="108.7" text-anchor="start" font-size="36" font-weight="400" fill="#30302D">Service requests repeatedly incomplete · cause hypotheses</text>
 </g>
 <g id="_v22" data-kind="text" data-content-text="false" data-box="64,130,1472,38">
 
@@ -138,6 +139,6 @@
 </g>
 <g id="_v24" data-kind="text" data-content-text="false" data-box="64,850,1472,36">
 
-<text x="64" y="872.55" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">Original cause-analysis example · every entry is a question or hypothesis, not a verified conclusion</text>
+<text x="64" y="872.55" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">Cross-industry service example · every entry is a question or hypothesis, not a verified conclusion</text>
 </g>
 </g></svg>

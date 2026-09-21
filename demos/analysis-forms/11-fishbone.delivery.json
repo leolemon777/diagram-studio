@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "protocol_version": "diagram-studio/delivery-1",
-  "version_id": "v-74ff8cbe13ad",
+  "version_id": "v-6e83b56e47c9",
   "source_name": "11-fishbone",
-  "input_sha256": "74ff8cbe13add58a68d8b3bf6920f9fd15d59a88eccdb388a6524dc9eadf43e1",
+  "input_sha256": "6e83b56e47c9ac7860fa0a7ade363aeac957588976e5f0c535164c89dc1d89f3",
   "theme": "light",
   "checks": {
     "geometry": {
@@ -35,11 +35,11 @@
     }
   },
   "files": {
-    "11-fishbone.brief.json": "74ff8cbe13add58a68d8b3bf6920f9fd15d59a88eccdb388a6524dc9eadf43e1",
-    "11-fishbone.drawio": "06abdb9621ff0121822bbf5991209278ead5ab13db60afa5211f981c4ce8e155",
+    "11-fishbone.brief.json": "f4d942244565e339e94a71caff54176039275a2d577f73c5a6b05b7473e98443",
+    "11-fishbone.drawio": "b80df8f44e090ddfa3ac44cbbba7b40f73f3ed416cfcf52c6669797a08e83cf2",
     "11-fishbone.qa.json": "f06147c8d7bf980c336ea47f03f04ad6c54fd700fc459454aedec1b2fbdc7422",
-    "11-fishbone.scene.json": "4fa0b00bb739cc98ce95da360a4352c9a2cef28c1dfaa40eb1b7b6eb5de09cd8",
-    "11-fishbone.svg": "9306d77c49f5656754e621de87423edd58b790a35125dd74cf58ca9b5f19ad66"
+    "11-fishbone.scene.json": "433b99db27facb4aefd468b41477630b58918325812b6fdfb02b00f5ab146fc5",
+    "11-fishbone.svg": "705ac367ce82d66b9a578968fa4f3579bd151c6b0e32c1bc9f483f0b3d8677bf"
   },
   "delivery_scope": "Generation, semantic content checks and QA finish before replacement. Individual files are replaced; promotion is not a multi-file atomic transaction."
 }

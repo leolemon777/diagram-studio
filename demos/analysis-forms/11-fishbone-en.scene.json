@@ -19,11 +19,11 @@
     {
       "id": "_v1",
       "x": 1282,
-      "y": 405.9,
+      "y": 391.05,
       "w": 240,
-      "h": 148.20000000000002,
-      "label": "Recurring service interruptions",
-      "detail": "Confirm frequency and boundary before prioritising",
+      "h": 177.9,
+      "label": "Service requests repeatedly incomplete",
+      "detail": "Confirm frequency, contexts and the completion definition",
       "kind": "rect",
       "tone": "accent",
       "check": true,
@@ -64,7 +64,7 @@
       "y": 354,
       "w": 250,
       "h": 46,
-      "label": "• Operator training may be uneven",
+      "label": "• Training and authorisation may not match",
       "detail": "",
       "kind": "text",
       "tone": "ink",
@@ -79,7 +79,7 @@
       "y": 628,
       "w": 260,
       "h": 36,
-      "label": "Equipment",
+      "label": "Process",
       "detail": "",
       "kind": "text",
       "tone": "accent",
@@ -92,8 +92,8 @@
       "x": 75.0,
       "y": 510,
       "w": 250,
-      "h": 32,
-      "label": "• Wear state may be abnormal",
+      "h": 46,
+      "label": "• The handling path may be unclear",
       "detail": "",
       "kind": "text",
       "tone": "ink",
@@ -105,10 +105,10 @@
     {
       "id": "_v7",
       "x": 75.0,
-      "y": 550,
+      "y": 564,
       "w": 250,
       "h": 46,
-      "label": "• Signal quality may be unstable",
+      "label": "• Exception returns may have no owner",
       "detail": "",
       "kind": "text",
       "tone": "ink",
@@ -123,7 +123,7 @@
       "y": 236,
       "w": 260,
       "h": 36,
-      "label": "Method",
+      "label": "Tools",
       "detail": "",
       "kind": "text",
       "tone": "teal",
@@ -136,8 +136,8 @@
       "x": 448.33333333333326,
       "y": 300,
       "w": 250,
-      "h": 46,
-      "label": "• Troubleshooting path may be unclear",
+      "h": 32,
+      "label": "• System state may be unstable",
       "detail": "",
       "kind": "text",
       "tone": "ink",
@@ -149,10 +149,10 @@
     {
       "id": "_v10",
       "x": 448.33333333333326,
-      "y": 354,
+      "y": 340,
       "w": 250,
       "h": 46,
-      "label": "• Parameter changes may be inconsistent",
+      "label": "• Required data fields may be missing",
       "detail": "",
       "kind": "text",
       "tone": "ink",
@@ -167,7 +167,7 @@
       "y": 628,
       "w": 260,
       "h": 36,
-      "label": "Environment",
+      "label": "Content",
       "detail": "",
       "kind": "text",
       "tone": "teal",
@@ -180,8 +180,8 @@
       "x": 448.33333333333326,
       "y": 510,
       "w": 250,
-      "h": 46,
-      "label": "• Temperature or humidity may vary",
+      "h": 32,
+      "label": "• Instructions may be unclear",
       "detail": "",
       "kind": "text",
       "tone": "ink",
@@ -193,10 +193,10 @@
     {
       "id": "_v13",
       "x": 448.33333333333326,
-      "y": 564,
+      "y": 550,
       "w": 250,
       "h": 46,
-      "label": "• Interference sources may be present",
+      "label": "• Key prompts may be inconsistent",
       "detail": "",
       "kind": "text",
       "tone": "ink",
@@ -211,7 +211,7 @@
       "y": 236,
       "w": 260,
       "h": 36,
-      "label": "Materials",
+      "label": "Access",
       "detail": "",
       "kind": "text",
       "tone": "amber",
@@ -224,8 +224,8 @@
       "x": 821.6666666666666,
       "y": 300,
       "w": 250,
-      "h": 32,
-      "label": "• Batch differences may matter",
+      "h": 46,
+      "label": "• The entry point may be hard to find",
       "detail": "",
       "kind": "text",
       "tone": "ink",
@@ -237,10 +237,10 @@
     {
       "id": "_v16",
       "x": 821.6666666666666,
-      "y": 340,
+      "y": 354,
       "w": 250,
       "h": 46,
-      "label": "• Specification may not fit the use",
+      "label": "• Accessibility and language coverage may be incomplete",
       "detail": "",
       "kind": "text",
       "tone": "ink",
@@ -269,7 +269,7 @@
       "y": 510,
       "w": 250,
       "h": 46,
-      "label": "• Instrument status may be unverified",
+      "label": "• Completion may use different definitions",
       "detail": "",
       "kind": "text",
       "tone": "ink",
@@ -284,7 +284,7 @@
       "y": 564,
       "w": 250,
       "h": 46,
-      "label": "• Measurement points may use different definitions",
+      "label": "• Feedback may not be split by context",
       "detail": "",
       "kind": "text",
       "tone": "ink",
@@ -313,7 +313,7 @@
       "y": 69,
       "w": 1472,
       "h": 56,
-      "label": "Recurring service interruptions · cause hypotheses",
+      "label": "Service requests repeatedly incomplete · cause hypotheses",
       "detail": "",
       "kind": "text",
       "tone": "ink",
@@ -355,7 +355,7 @@
       "y": 850,
       "w": 1472,
       "h": 36,
-      "label": "Original cause-analysis example · every entry is a question or hypothesis, not a verified conclusion",
+      "label": "Cross-industry service example · every entry is a question or hypothesis, not a verified conclusion",
       "detail": "",
       "kind": "text",
       "tone": "muted",
@@ -469,11 +469,11 @@
       "points": [
         [
           307.0,
-          526.0
+          533.0
         ],
         [
-          397.2142857142857,
-          526.0
+          391.4642857142857,
+          533.0
         ]
       ],
       "source_port": null,
@@ -489,11 +489,11 @@
       "points": [
         [
           307.0,
-          573.0
+          587.0
         ],
         [
-          358.60714285714283,
-          573.0
+          347.10714285714283,
+          587.0
         ]
       ],
       "source_port": null,
@@ -528,11 +528,11 @@
       "points": [
         [
           680.3333333333333,
-          323.0
+          316.0
         ],
         [
-          717.1464646464646,
-          323.0
+          713.080808080808,
+          316.0
         ]
       ],
       "source_port": null,
@@ -548,11 +548,11 @@
       "points": [
         [
           680.3333333333333,
-          377.0
+          363.0
         ],
         [
-          748.5101010101009,
-          377.0
+          740.3787878787878,
+          363.0
         ]
       ],
       "source_port": null,
@@ -587,11 +587,11 @@
       "points": [
         [
           680.3333333333333,
-          533.0
+          526.0
         ],
         [
-          764.7976190476189,
-          533.0
+          770.5476190476189,
+          526.0
         ]
       ],
       "source_port": null,
@@ -607,11 +607,11 @@
       "points": [
         [
           680.3333333333333,
-          587.0
+          573.0
         ],
         [
-          720.4404761904761,
-          587.0
+          731.9404761904761,
+          573.0
         ]
       ],
       "source_port": null,
@@ -646,11 +646,11 @@
       "points": [
         [
           1053.6666666666665,
-          316.0
+          323.0
         ],
         [
-          1086.4141414141413,
-          316.0
+          1090.479797979798,
+          323.0
         ]
       ],
       "source_port": null,
@@ -666,11 +666,11 @@
       "points": [
         [
           1053.6666666666665,
-          363.0
+          377.0
         ],
         [
-          1113.712121212121,
-          363.0
+          1121.8434343434342,
+          377.0
         ]
       ],
       "source_port": null,
