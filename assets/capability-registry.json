@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "version": "v58",
+  "version": "v59",
   "updated": "2026-09-20",
   "purpose": "Single source for chooser labels, backend capability, delivery formats and acceptance evidence.",
   "status_vocabulary": {
@@ -89,8 +89,8 @@
           "formats": ["svg", "drawio", "scene.json", "qa.json", "html"],
           "layout_limits": {"zh": "泳道边界需承担责任语义；高密度交接拆局部。", "en": "Lane boundaries carry ownership semantics; split dense handoffs into detail views."},
           "languages": ["zh", "en"],
-          "examples": ["assets/examples/02-workflow.json"],
-          "evidence": {"level": "generated_with_semantic_validation", "reference": "assets/verification-status.json", "detail": {"zh": "泳道结构可由 graph 后端表达；服务蓝图专用内容仍需单独验收。", "en": "Lane structure is expressible through the graph backend; dedicated blueprint semantics need separate acceptance."}},
+          "examples": ["assets/examples/swimlane-cn.json", "assets/examples/swimlane-en.json"],
+          "evidence": {"level": "manual_visual_review", "reference": "assets/v59-swimlane-evidence.json", "detail": {"zh": "中英跨行业泳道通过三条责任泳道、八条显式交接/回流、几何检查和浏览器复核。", "en": "Chinese and English cross-industry swimlanes pass three responsibility lanes, eight explicit handoff/return links, geometry checks and browser review."}},
           "scope": {"zh": "交接、前台/后台和支撑关系必须显式；不把普通流程换色称为服务蓝图。", "en": "Handoffs and front/backstage support must be explicit; a recolored flow is not a service blueprint."}
         },
         {

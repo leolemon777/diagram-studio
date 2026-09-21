@@ -1,0 +1,446 @@
+{
+  "width": 1600,
+  "height": 1060,
+  "theme": "light",
+  "palette": {
+    "bg": "#F1EFEB",
+    "panel": "#FEFDF9",
+    "ink": "#30302D",
+    "muted": "#6D6A63",
+    "line": "#D8D3C8",
+    "accent": "#AC6046",
+    "teal": "#67685E",
+    "amber": "#8C7964",
+    "red": "#554C46",
+    "tint": "#F0E4DA",
+    "tint2": "#ECECE5"
+  },
+  "nodes": [
+    {
+      "id": "lane1",
+      "x": 64,
+      "y": 204,
+      "w": 1472,
+      "h": 162,
+      "label": "01  申请人",
+      "detail": "",
+      "kind": "panel",
+      "tone": "accent",
+      "check": false
+    },
+    {
+      "id": "lane2",
+      "x": 64,
+      "y": 402,
+      "w": 1472,
+      "h": 250,
+      "label": "02  协调团队",
+      "detail": "",
+      "kind": "panel",
+      "tone": "accent",
+      "check": false
+    },
+    {
+      "id": "lane3",
+      "x": 64,
+      "y": 700,
+      "w": 1472,
+      "h": 190,
+      "label": "03  执行团队",
+      "detail": "",
+      "kind": "panel",
+      "tone": "accent",
+      "check": false
+    },
+    {
+      "id": "submit",
+      "x": 125,
+      "y": 265,
+      "w": 240,
+      "h": 68,
+      "label": "提交请求",
+      "detail": "说明目标与约束",
+      "kind": "pill",
+      "tone": "accent",
+      "check": true
+    },
+    {
+      "id": "clarify",
+      "x": 445,
+      "y": 265,
+      "w": 240,
+      "h": 68,
+      "label": "补充信息",
+      "detail": "回答关键问题",
+      "kind": "pill",
+      "tone": "accent",
+      "check": true
+    },
+    {
+      "id": "triage",
+      "x": 445,
+      "y": 460,
+      "w": 240,
+      "h": 84,
+      "label": "确认范围",
+      "detail": "明确优先级与交付物",
+      "kind": "rect",
+      "tone": "accent",
+      "check": true
+    },
+    {
+      "id": "check",
+      "x": 775,
+      "y": 433,
+      "w": 232,
+      "h": 132,
+      "label": "信息完整？",
+      "detail": "",
+      "kind": "diamond",
+      "tone": "accent",
+      "check": true
+    },
+    {
+      "id": "deliver",
+      "x": 1100,
+      "y": 460,
+      "w": 246,
+      "h": 84,
+      "label": "执行交付",
+      "detail": "提交可验收成果",
+      "kind": "rect",
+      "tone": "accent",
+      "check": true
+    },
+    {
+      "id": "review",
+      "x": 1100,
+      "y": 760,
+      "w": 246,
+      "h": 84,
+      "label": "验收反馈",
+      "detail": "",
+      "kind": "rect",
+      "tone": "teal",
+      "check": true
+    },
+    {
+      "id": "close",
+      "x": 445,
+      "y": 760,
+      "w": 240,
+      "h": 84,
+      "label": "确认完成",
+      "detail": "记录结果与后续",
+      "kind": "pill",
+      "tone": "teal",
+      "check": true
+    },
+    {
+      "id": "_v11",
+      "x": 64,
+      "y": 34,
+      "w": 1472,
+      "h": 22,
+      "label": "59 / SWIMLANE FLOW",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v12",
+      "x": 64,
+      "y": 69,
+      "w": 1472,
+      "h": 56,
+      "label": "服务请求 · 责任交接",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 36,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v13",
+      "x": 64,
+      "y": 130,
+      "w": 1472,
+      "h": 38,
+      "label": "三条责任泳道；信息不完整回到申请人，交付后由协调团队验收",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v14",
+      "x": 64,
+      "y": 997,
+      "w": 1472,
+      "h": 1,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "line",
+      "stroke": "none",
+      "check": false
+    },
+    {
+      "id": "_v15",
+      "x": 64,
+      "y": 1010,
+      "w": 1472,
+      "h": 36,
+      "label": "跨行业服务流程示例 · 普通责任泳道图 · 未声明为 BPMN 标准模型",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "submit",
+      "target": "triage",
+      "label": "",
+      "points": [
+        [
+          365,
+          299
+        ],
+        [
+          390,
+          299
+        ],
+        [
+          390,
+          390
+        ],
+        [
+          565,
+          390
+        ],
+        [
+          565,
+          460
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "tone": "accent",
+      "dashed": false,
+      "arrow": true,
+      "label_at": null
+    },
+    {
+      "source": "triage",
+      "target": "check",
+      "label": "",
+      "points": [
+        [
+          685,
+          502.0
+        ],
+        [
+          730.0,
+          502.0
+        ],
+        [
+          730.0,
+          499.0
+        ],
+        [
+          775,
+          499.0
+        ]
+      ],
+      "source_port": "right",
+      "target_port": "left",
+      "tone": "accent",
+      "dashed": false,
+      "arrow": true,
+      "label_at": null
+    },
+    {
+      "source": "check",
+      "target": "deliver",
+      "label": "是",
+      "points": [
+        [
+          1007,
+          499.0
+        ],
+        [
+          1053.5,
+          499.0
+        ],
+        [
+          1053.5,
+          502.0
+        ],
+        [
+          1100,
+          502.0
+        ]
+      ],
+      "source_port": "right",
+      "target_port": "left",
+      "tone": "accent",
+      "dashed": false,
+      "arrow": true,
+      "label_at": null
+    },
+    {
+      "source": "check",
+      "target": "clarify",
+      "label": "否",
+      "points": [
+        [
+          891,
+          433
+        ],
+        [
+          891,
+          350
+        ],
+        [
+          565,
+          350
+        ],
+        [
+          565,
+          333
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "tone": "accent",
+      "dashed": false,
+      "arrow": true,
+      "label_at": [
+        730,
+        334
+      ]
+    },
+    {
+      "source": "clarify",
+      "target": "triage",
+      "label": "补充后",
+      "points": [
+        [
+          565,
+          333
+        ],
+        [
+          565,
+          402
+        ],
+        [
+          565,
+          460
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "tone": "accent",
+      "dashed": false,
+      "arrow": true,
+      "label_at": [
+        590,
+        390
+      ]
+    },
+    {
+      "source": "deliver",
+      "target": "review",
+      "label": "提交验收",
+      "points": [
+        [
+          1223,
+          544
+        ],
+        [
+          1223,
+          760
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "tone": "accent",
+      "dashed": false,
+      "arrow": true,
+      "label_at": [
+        1260,
+        650
+      ]
+    },
+    {
+      "source": "review",
+      "target": "close",
+      "label": "通过",
+      "points": [
+        [
+          1100,
+          802.0
+        ],
+        [
+          892.5,
+          802.0
+        ],
+        [
+          685,
+          802.0
+        ]
+      ],
+      "source_port": "left",
+      "target_port": "right",
+      "tone": "accent",
+      "dashed": false,
+      "arrow": true,
+      "label_at": null
+    },
+    {
+      "source": "review",
+      "target": "deliver",
+      "label": "需调整",
+      "points": [
+        [
+          1346,
+          802
+        ],
+        [
+          1450,
+          802
+        ],
+        [
+          1450,
+          502
+        ],
+        [
+          1346,
+          502
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "tone": "amber",
+      "dashed": true,
+      "arrow": true,
+      "label_at": [
+        1450,
+        681
+      ]
+    }
+  ],
+  "meta": {},
+  "assumptions": []
+}

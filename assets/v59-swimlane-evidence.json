@@ -1,0 +1,20 @@
+{
+  "version": "v59",
+  "capability": "swimlane",
+  "status": "manual_visual_review",
+  "source_examples": [
+    "assets/examples/swimlane-cn.json",
+    "assets/examples/swimlane-en.json"
+  ],
+  "checks": {
+    "bilingual_topology": "same seven stable task ids, three responsibility lanes and eight explicit handoff/return links",
+    "geometry": "graph audit reports zero errors and zero connector warnings after the requester route was moved around the clarification node",
+    "content": "incomplete-information branch, post-delivery review, pass closure and dashed revision loop remain explicit",
+    "browser": "overview demo and direct Chinese/English SVG were opened and visually reviewed, including the right and lower scroll regions"
+  },
+  "limitations": [
+    "This is an ordinary graph-based swimlane form, not a BPMN conformance validator.",
+    "Native draw.io edit, save and reopen behavior is not included in this batch.",
+    "The service request flow is an illustrative cross-industry example; ownership and business rules still require domain review."
+  ]
+}

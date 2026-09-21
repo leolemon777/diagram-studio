@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "protocol_version": "diagram-studio/delivery-1",
+  "version_id": "v-64b879b7384a",
+  "source_name": "swimlane-en",
+  "input_sha256": "64b879b7384a96b76237bb3fc762f2a5445cd93ffdd9588d73507e66d326baac",
+  "theme": "light",
+  "checks": {
+    "geometry": {
+      "status": "passed",
+      "warnings": []
+    },
+    "composition": {
+      "status": "not-run",
+      "findings": []
+    },
+    "content_integrity": {
+      "status": "passed",
+      "source_ids": 7,
+      "source_relations": 8,
+      "source_texts": 12,
+      "missing_ids": [],
+      "missing_relations": [],
+      "missing_text": [],
+      "scope": "stable source IDs, explicit relation endpoints and source display text; not domain correctness"
+    },
+    "browser_text_bounds": {
+      "status": "not-run"
+    },
+    "manual_visual_review": {
+      "status": "not-run"
+    },
+    "native_editor": {
+      "status": "not-run"
+    }
+  },
+  "files": {
+    "swimlane-en.brief.json": "2d1e55f32bce76270ca8bdec1578419eabb67f601347ac4448d4d5b8710c6b53",
+    "swimlane-en.drawio": "76bce2e5cc65c6f8a14f33adc6867f297a55db1e90f6707ba693b6532e955312",
+    "swimlane-en.qa.json": "23e83499e423bafc18ef2bf0bb2db88d4059a787798dc4ccab9fe256c013521b",
+    "swimlane-en.scene.json": "e98bff295281d9063c8d047dba7bc4de2269ac81613bae2591e34964644d495f",
+    "swimlane-en.svg": "0d8e00c374ad4956246bb9e46ff997b3e31dec5ac2fcef9c4266cde40fb4c8bb"
+  },
+  "delivery_scope": "Generation, semantic content checks and QA finish before replacement. Individual files are replaced; promotion is not a multi-file atomic transaction.",
+  "version_dir": "demos/swimlane/en/versions/v-64b879b7384a"
+}
