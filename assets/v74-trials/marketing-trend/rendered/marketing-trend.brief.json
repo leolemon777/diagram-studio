@@ -1,10 +1,10 @@
 {
   "type": "chart",
   "mode": "line",
-  "title": "Customer support · revised response trend",
-  "subtitle": "Recorded at equal weekly intervals; raw values stay visible and unsmoothed",
-  "eyebrow": "09 / TREND",
-  "unit": " min",
+  "title": "Campaign · revised qualified-lead trend",
+  "subtitle": "Recorded at equal weekly intervals; raw qualified-lead values stay visible and unsmoothed",
+  "eyebrow": "09 / MARKETING TREND",
+  "unit": " leads",
   "data": [
     {
       "label": "Week 1",
@@ -31,7 +31,7 @@
       "value": 27
     }
   ],
-  "footer": "Style sample · simulated values · a trend does not prove causal impact",
+  "footer": "Marketing sample · simulated values · a trend does not prove causal impact",
   "family": "Data charts",
-  "diagram_name": "Line trend"
+  "diagram_name": "Qualified-lead trend"
 }

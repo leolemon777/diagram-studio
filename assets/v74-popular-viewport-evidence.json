@@ -7,22 +7,116 @@
     {"width": 390, "height": 844},
     {"width": 768, "height": 1024}
   ],
-  "method": "Loaded each local demo page in the browser, set a temporary viewport override, read document and embedded object geometry through CDP, checked embedded SVG text font sizes, and cleared the override after the run.",
+  "method": "Set the CDP viewport before each navigation, loaded each local demo page, read document and embedded object geometry, recorded the default mode and internal scroll region, then derived the actual displayed text size from the rendered object width and SVG viewBox. The CDP override was cleared after the run.",
   "pages": {
-    "flow": {"embedded_objects": 2, "minimum_embedded_font_px": 14, "internal_scroll_regions": 0, "runs": 2},
-    "architecture": {"embedded_objects": 2, "minimum_embedded_font_px": 14, "internal_scroll_regions": 0, "runs": 2},
-    "swimlane": {"embedded_objects": 2, "minimum_embedded_font_px": 14, "internal_scroll_regions": 0, "runs": 2},
-    "gantt": {"embedded_objects": 6, "minimum_embedded_font_px": 12, "internal_scroll_regions": 0, "runs": 2, "note": "The 12px floor belongs to the compact print variant; executive and delivery variants measured 14px."},
-    "network": {"embedded_objects": 2, "minimum_embedded_font_px": 14, "internal_scroll_regions": 0, "runs": 2},
-    "data-story": {"embedded_objects": 4, "minimum_embedded_font_px": 14, "internal_scroll_regions": 0, "runs": 2},
-    "storymap": {"embedded_objects": 1, "minimum_embedded_font_px": 14, "internal_scroll_regions": 1, "runs": 2, "wide_content_contained_in_scroll_region": true},
-    "user-path-storyboard": {"embedded_objects": 2, "minimum_embedded_font_px": 14, "internal_scroll_regions": 2, "runs": 2, "wide_content_contained_in_scroll_region": true},
-    "lean-canvas": {"embedded_objects": 2, "minimum_embedded_font_px": 14, "internal_scroll_regions": 2, "runs": 2, "wide_content_contained_in_scroll_region": true}
+    "flow": {
+      "embedded_objects": 2,
+      "minimum_embedded_font_px": 14,
+      "default_mode": "readable-natural",
+      "internal_scroll_regions": 2,
+      "runs": 2,
+      "viewport_runs": [
+        {"viewport": [390, 844], "minimum_displayed_font_px": 14, "document_scroll_width_equals_viewport": true, "uncontained_visible_horizontal_overflow": 0, "internal_scroll_regions": 2},
+        {"viewport": [768, 1024], "minimum_displayed_font_px": 14, "document_scroll_width_equals_viewport": true, "uncontained_visible_horizontal_overflow": 0, "internal_scroll_regions": 2}
+      ]
+    },
+    "architecture": {
+      "embedded_objects": 2,
+      "minimum_embedded_font_px": 14,
+      "default_mode": "readable-natural",
+      "internal_scroll_regions": 2,
+      "runs": 2,
+      "viewport_runs": [
+        {"viewport": [390, 844], "minimum_displayed_font_px": 14, "document_scroll_width_equals_viewport": true, "uncontained_visible_horizontal_overflow": 0, "internal_scroll_regions": 2},
+        {"viewport": [768, 1024], "minimum_displayed_font_px": 14, "document_scroll_width_equals_viewport": true, "uncontained_visible_horizontal_overflow": 0, "internal_scroll_regions": 2}
+      ]
+    },
+    "swimlane": {
+      "embedded_objects": 2,
+      "minimum_embedded_font_px": 14,
+      "default_mode": "readable-natural",
+      "internal_scroll_regions": 2,
+      "runs": 2,
+      "viewport_runs": [
+        {"viewport": [390, 844], "minimum_displayed_font_px": 14, "document_scroll_width_equals_viewport": true, "uncontained_visible_horizontal_overflow": 0, "internal_scroll_regions": 2},
+        {"viewport": [768, 1024], "minimum_displayed_font_px": 14, "document_scroll_width_equals_viewport": true, "uncontained_visible_horizontal_overflow": 0, "internal_scroll_regions": 2}
+      ]
+    },
+    "gantt": {
+      "embedded_objects": 6,
+      "minimum_embedded_font_px": 12,
+      "default_mode": "readable-natural",
+      "internal_scroll_regions": 6,
+      "runs": 2,
+      "viewport_runs": [
+        {"viewport": [390, 844], "minimum_displayed_font_px": 12, "document_scroll_width_equals_viewport": true, "uncontained_visible_horizontal_overflow": 0, "internal_scroll_regions": 6},
+        {"viewport": [768, 1024], "minimum_displayed_font_px": 12, "document_scroll_width_equals_viewport": true, "uncontained_visible_horizontal_overflow": 0, "internal_scroll_regions": 6}
+      ],
+      "note": "The 12px floor belongs to the compact print variant; executive and delivery variants measured 14px."
+    },
+    "network": {
+      "embedded_objects": 2,
+      "minimum_embedded_font_px": 14,
+      "default_mode": "readable-natural",
+      "internal_scroll_regions": 2,
+      "runs": 2,
+      "viewport_runs": [
+        {"viewport": [390, 844], "minimum_displayed_font_px": 14, "document_scroll_width_equals_viewport": true, "uncontained_visible_horizontal_overflow": 0, "internal_scroll_regions": 2},
+        {"viewport": [768, 1024], "minimum_displayed_font_px": 14, "document_scroll_width_equals_viewport": true, "uncontained_visible_horizontal_overflow": 0, "internal_scroll_regions": 2}
+      ]
+    },
+    "data-story": {
+      "embedded_objects": 4,
+      "minimum_embedded_font_px": 14,
+      "default_mode": "readable-natural",
+      "internal_scroll_regions": 4,
+      "runs": 2,
+      "viewport_runs": [
+        {"viewport": [390, 844], "minimum_displayed_font_px": 14, "document_scroll_width_equals_viewport": true, "uncontained_visible_horizontal_overflow": 0, "internal_scroll_regions": 4},
+        {"viewport": [768, 1024], "minimum_displayed_font_px": 14, "document_scroll_width_equals_viewport": true, "uncontained_visible_horizontal_overflow": 0, "internal_scroll_regions": 4}
+      ]
+    },
+    "storymap": {
+      "embedded_objects": 1,
+      "minimum_embedded_font_px": 14,
+      "default_mode": "readable-natural",
+      "internal_scroll_regions": 1,
+      "runs": 2,
+      "viewport_runs": [
+        {"viewport": [390, 844], "minimum_displayed_font_px": 14, "document_scroll_width_equals_viewport": true, "uncontained_visible_horizontal_overflow": 0, "internal_scroll_regions": 1},
+        {"viewport": [768, 1024], "minimum_displayed_font_px": 14, "document_scroll_width_equals_viewport": true, "uncontained_visible_horizontal_overflow": 0, "internal_scroll_regions": 1}
+      ],
+      "wide_content_contained_in_scroll_region": true
+    },
+    "user-path-storyboard": {
+      "embedded_objects": 2,
+      "minimum_embedded_font_px": 14,
+      "default_mode": "readable-natural",
+      "internal_scroll_regions": 2,
+      "runs": 2,
+      "viewport_runs": [
+        {"viewport": [390, 844], "minimum_displayed_font_px": 14, "document_scroll_width_equals_viewport": true, "uncontained_visible_horizontal_overflow": 0, "internal_scroll_regions": 2},
+        {"viewport": [768, 1024], "minimum_displayed_font_px": 14, "document_scroll_width_equals_viewport": true, "uncontained_visible_horizontal_overflow": 0, "internal_scroll_regions": 2}
+      ],
+      "wide_content_contained_in_scroll_region": true
+    },
+    "lean-canvas": {
+      "embedded_objects": 2,
+      "minimum_embedded_font_px": 14,
+      "default_mode": "readable-natural",
+      "internal_scroll_regions": 2,
+      "runs": 2,
+      "viewport_runs": [
+        {"viewport": [390, 844], "minimum_displayed_font_px": 14, "document_scroll_width_equals_viewport": true, "uncontained_visible_horizontal_overflow": 0, "internal_scroll_regions": 2},
+        {"viewport": [768, 1024], "minimum_displayed_font_px": 14, "document_scroll_width_equals_viewport": true, "uncontained_visible_horizontal_overflow": 0, "internal_scroll_regions": 2}
+      ],
+      "wide_content_contained_in_scroll_region": true
+    }
   },
   "checks": {
     "page_level_document_scroll_width": {"passed": 18, "failed": 0, "detail": "Each page reported document.scrollWidth equal to the active viewport width."},
     "uncontained_visible_horizontal_overflow": {"passed": 18, "failed": 0},
-    "embedded_content_width": {"detail": "Responsive forms fit the content box; dense forms keep their natural width inside an explicit internal scroll region."},
+    "embedded_content_width": {"detail": "Responsive forms keep the page width; dense forms use their natural width inside an explicit internal scroll region."},
     "embedded_content_minimum_font_px": {"target_px": 14, "gantt_compact_floor_px": 12, "status": "within_declared_scope"}
   },
   "manual_visual_checks": [

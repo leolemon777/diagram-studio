@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "protocol_version": "diagram-studio/delivery-1",
-  "version_id": "v-842cfecf28c9",
+  "version_id": "v-bf4cd7bc53fa",
   "source_name": "swimlane-cn",
-  "input_sha256": "842cfecf28c9e94111e7aaad64488bec2ba3c94acf9fdbebb104e289d4d3bb9d",
+  "input_sha256": "bf4cd7bc53fad8e6b8a0168322ba6273fdcffb6df6cfef7f97984e83aaea3353",
   "theme": "light",
   "checks": {
     "geometry": {
@@ -18,7 +18,7 @@
       "status": "passed",
       "source_ids": 7,
       "source_relations": 8,
-      "source_texts": 12,
+      "source_texts": 13,
       "missing_ids": [],
       "missing_relations": [],
       "missing_text": [],
@@ -35,12 +35,11 @@
     }
   },
   "files": {
-    "swimlane-cn.brief.json": "5b640c7071431e1d4aacd373db733d92a922a71740d9c4177e08695746786294",
-    "swimlane-cn.drawio": "32b80ee198dd8641e32ed7c20980152de5c6fbfc1c898a0b4b76c4db18ade798",
-    "swimlane-cn.qa.json": "23e83499e423bafc18ef2bf0bb2db88d4059a787798dc4ccab9fe256c013521b",
-    "swimlane-cn.scene.json": "3a8c1705cced6b018b11ec41c20d331c9be7149723849d08930a0d0c4912daf4",
-    "swimlane-cn.svg": "b0eb0ee2ce826a36a804fb212a77fb0d6a274d0c1ab1ce985a8b0ae2712cadc9"
+    "swimlane-cn.brief.json": "799018df09665cb03d15eb2fc5eb57a62ff783f6b00eb30b4880aeaf02127b89",
+    "swimlane-cn.drawio": "b77bb9154cf0c2d665830655e91e5b9c7d80e9b3a52c5f1c4b8f1abac20a4b66",
+    "swimlane-cn.qa.json": "977edd502ddfc20bd4c30cea0b1af29f5d6f84f644e5f9ff61c74cc2daec144a",
+    "swimlane-cn.scene.json": "81007c0f80b2ccdc17a236b76b0188e6e9768b3aaade6ab2c31d9720c50834f8",
+    "swimlane-cn.svg": "ad70eea84da21de16ef35333b04457f6c1a560b881839e67219bb8dc1898a47d"
   },
-  "delivery_scope": "Generation, semantic content checks and QA finish before replacement. Individual files are replaced; promotion is not a multi-file atomic transaction.",
-  "version_dir": "demos/swimlane/cn/versions/v-842cfecf28c9"
+  "delivery_scope": "Generation, semantic content checks and QA finish before replacement. Individual files are replaced; promotion is not a multi-file atomic transaction."
 }

@@ -26,12 +26,12 @@
 </g>
 <path d="M365,299 L390,299 L390,390 L565,390 L565,460" fill="none" stroke="#AC6046" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow-accent)"/>
 <path d="M685,502.0 L730.0,502.0 L730.0,499.0 L775,499.0" fill="none" stroke="#AC6046" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow-accent)"/>
-<path d="M1007,499.0 L1053.5,499.0 L1053.5,502.0 L1100,502.0" fill="none" stroke="#AC6046" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow-accent)"/>
+<path d="M891.0,565 L891.0,662.5 L1223.0,662.5 L1223.0,760" fill="none" stroke="#AC6046" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow-accent)"/>
 <path d="M891,433 L891,350 L565,350 L565,333" fill="none" stroke="#AC6046" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow-accent)"/>
 <path d="M565,333 L565,402 L565,460" fill="none" stroke="#AC6046" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow-accent)"/>
-<path d="M1223,544 L1223,760" fill="none" stroke="#AC6046" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow-accent)"/>
-<path d="M1100,802.0 L892.5,802.0 L685,802.0" fill="none" stroke="#AC6046" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow-accent)"/>
-<path d="M1346,802 L1450,802 L1450,502 L1346,502" fill="none" stroke="#8C7964" stroke-width="2" stroke-linejoin="round" stroke-dasharray="7 6" marker-end="url(#arrow-amber)"/>
+<path d="M1223,760 L1223,652 L1223,544" fill="none" stroke="#AC6046" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow-accent)"/>
+<path d="M1100,502 L1035,502 L1035,592 L685,592" fill="none" stroke="#AC6046" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow-accent)"/>
+<path d="M1346,502 L1450,502 L1450,802 L1346,802" fill="none" stroke="#8C7964" stroke-width="2" stroke-linejoin="round" stroke-dasharray="7 6" marker-end="url(#arrow-amber)"/>
 <g id="submit" data-kind="pill" data-content-text="false" data-box="125,265,240,68">
 <rect x="125" y="265" width="240" height="68" rx="34.0" fill="#FEFDF9" stroke="#AC6046" stroke-width="1.5"/>
 <text x="245.0" y="295.35" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">Request</text>
@@ -51,19 +51,21 @@
 <polygon points="891.0,433 1007,499.0 891.0,565 775,499.0" fill="#FEFDF9" stroke="#AC6046" stroke-width="1.5"/>
 <text x="891.0" y="506.15" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">Complete?</text>
 </g>
-<g id="deliver" data-kind="rect" data-content-text="false" data-box="1100,460,246,84">
-<rect x="1100" y="460" width="246" height="84" rx="10" fill="#FEFDF9" stroke="#AC6046" stroke-width="1.5"/>
-<text x="1223.0" y="498.35" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">Deliver work</text>
-<text x="1223.0" y="522.05" text-anchor="middle" font-size="16" font-weight="400" fill="#6D6A63">Share a result</text>
+<g id="deliver" data-kind="rect" data-content-text="false" data-box="1100,760,246,84">
+<rect x="1100" y="760" width="246" height="84" rx="10" fill="#FEFDF9" stroke="#AC6046" stroke-width="1.5"/>
+<text x="1223.0" y="798.35" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">Deliver work</text>
+<text x="1223.0" y="822.0500000000001" text-anchor="middle" font-size="16" font-weight="400" fill="#6D6A63">Share a result</text>
 </g>
-<g id="review" data-kind="rect" data-content-text="false" data-box="1100,760,246,84">
-<rect x="1100" y="760" width="246" height="84" rx="10" fill="#FEFDF9" stroke="#67685E" stroke-width="1.5"/>
-<text x="1223.0" y="809.15" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">Review result</text>
+<g id="review" data-kind="rect" data-content-text="false" data-box="1100,460,246,84">
+<rect x="1100" y="460" width="246" height="84" rx="10" fill="#FEFDF9" stroke="#67685E" stroke-width="1.5"/>
+<text x="1223.0" y="487.55" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">Review result</text>
+<text x="1223.0" y="511.25" text-anchor="middle" font-size="16" font-weight="400" fill="#6D6A63">Coordination team checks</text>
+<text x="1223.0" y="532.85" text-anchor="middle" font-size="16" font-weight="400" fill="#6D6A63">quality</text>
 </g>
-<g id="close" data-kind="pill" data-content-text="false" data-box="445,760,240,84">
-<rect x="445" y="760" width="240" height="84" rx="42.0" fill="#FEFDF9" stroke="#67685E" stroke-width="1.5"/>
-<text x="565.0" y="798.35" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">Confirm complete</text>
-<text x="565.0" y="822.0500000000001" text-anchor="middle" font-size="16" font-weight="400" fill="#6D6A63">Log outcome</text>
+<g id="close" data-kind="pill" data-content-text="false" data-box="445,550,240,84">
+<rect x="445" y="550" width="240" height="84" rx="42.0" fill="#FEFDF9" stroke="#67685E" stroke-width="1.5"/>
+<text x="565.0" y="588.35" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">Confirm complete</text>
+<text x="565.0" y="612.0500000000001" text-anchor="middle" font-size="16" font-weight="400" fill="#6D6A63">Log outcome</text>
 </g>
 <g id="_v11" data-kind="text" data-content-text="false" data-box="64,34,1472,22">
 
@@ -84,16 +86,16 @@
 
 <text x="64" y="1032.55" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">Cross-industry service-flow sample · ordinary swimlane diagram · not claimed as BPMN</text>
 </g>
-<rect x="1009.425" y="469.0" width="41.65" height="25" rx="4" fill="#F1EFEB"/>
-<text x="1030.25" y="486.0" font-size="15" text-anchor="middle" fill="#AC6046">Yes</text>
+<rect x="1036.175" y="632.5" width="41.65" height="25" rx="4" fill="#F1EFEB"/>
+<text x="1057.0" y="649.5" font-size="15" text-anchor="middle" fill="#AC6046">Yes</text>
 <rect x="713.45" y="317" width="33.099999999999994" height="25" rx="4" fill="#F1EFEB"/>
 <text x="730" y="334" font-size="15" text-anchor="middle" fill="#AC6046">No</text>
 <rect x="542.725" y="373" width="114.55" height="25" rx="4" fill="#F1EFEB"/>
 <text x="600" y="390" font-size="15" text-anchor="middle" fill="#AC6046">After update</text>
 <rect x="1183.375" y="633" width="153.24999999999997" height="25" rx="4" fill="#F1EFEB"/>
 <text x="1260" y="650" font-size="15" text-anchor="middle" fill="#AC6046">Submit for review</text>
-<rect x="971.15" y="772.0" width="50.199999999999996" height="25" rx="4" fill="#F1EFEB"/>
-<text x="996.25" y="789.0" font-size="15" text-anchor="middle" fill="#AC6046">Pass</text>
+<rect x="764.9" y="563" width="50.199999999999996" height="25" rx="4" fill="#F1EFEB"/>
+<text x="790" y="580" font-size="15" text-anchor="middle" fill="#AC6046">Pass</text>
 <rect x="1416.35" y="664" width="67.3" height="25" rx="4" fill="#F1EFEB"/>
 <text x="1450" y="681" font-size="15" text-anchor="middle" fill="#8C7964">Revise</text>
 </g></svg>

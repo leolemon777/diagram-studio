@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "protocol_version": "diagram-studio/delivery-1",
-  "version_id": "v-c6c57e4a2b1d",
+  "version_id": "v-2a91ea1aba4b",
   "source_name": "hr-handoff",
-  "input_sha256": "c6c57e4a2b1d19ca5d4dc4434e031f7a15e1b0157d546cf1c5c8e789d267b3a2",
+  "input_sha256": "2a91ea1aba4b298ced7682108a529bd75a467a539db4b14436ad23123bdfc83f",
   "theme": "light",
   "checks": {
     "geometry": {
@@ -18,7 +18,7 @@
       "status": "passed",
       "source_ids": 7,
       "source_relations": 8,
-      "source_texts": 12,
+      "source_texts": 13,
       "missing_ids": [],
       "missing_relations": [],
       "missing_text": [],
@@ -35,11 +35,11 @@
     }
   },
   "files": {
-    "hr-handoff.brief.json": "3fc606be2a3429d960a29d269b59bacfce81fb7c65548edb4873aa6f5d6a86e3",
-    "hr-handoff.drawio": "142ce44203be0d6717244f24cc04119fa91bccdfe60eaa665b180db565e18aa8",
-    "hr-handoff.qa.json": "23e83499e423bafc18ef2bf0bb2db88d4059a787798dc4ccab9fe256c013521b",
-    "hr-handoff.scene.json": "8f99e11a7e9042294777d6dd3023cfc14d489e12d6a0616ef6d2eb6226c523b7",
-    "hr-handoff.svg": "855a85d56ff8bfa7668cd35d8f959a58c60f30a9db38d62295893a7983a3066a"
+    "hr-handoff.brief.json": "1b89aeffc88e4bd377cae38e116d75d90940fcd0adb887da4fc300797f6a81c1",
+    "hr-handoff.drawio": "0332968bd376e539af682808aa4f27f54699e059a35653a03dad6f38435c42ab",
+    "hr-handoff.qa.json": "977edd502ddfc20bd4c30cea0b1af29f5d6f84f644e5f9ff61c74cc2daec144a",
+    "hr-handoff.scene.json": "2c2403af58cedbfb2cbe1b6c8dc92c0ddd839eeced16c98d1fcd116c2978eb01",
+    "hr-handoff.svg": "e6fe472962d9e26c9e550a78f874217296cad98c90c4a724cd18bd40019020ab"
   },
   "delivery_scope": "Generation, semantic content checks and QA finish before replacement. Individual files are replaced; promotion is not a multi-file atomic transaction."
 }

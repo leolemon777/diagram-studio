@@ -22,8 +22,8 @@
       "y": 300,
       "w": 220,
       "h": 80,
-      "label": "提交需求",
-      "detail": "目标 · 时间 · 联系方式",
+      "label": "提交订单",
+      "detail": "商品 · 数量 · 门店",
       "kind": "pill",
       "tone": "accent",
       "check": true
@@ -34,8 +34,8 @@
       "y": 300,
       "w": 220,
       "h": 80,
-      "label": "核对信息",
-      "detail": "确认范围与可用条件",
+      "label": "核对库存",
+      "detail": "确认商品与取货点",
       "kind": "rect",
       "tone": "accent",
       "check": true
@@ -46,7 +46,7 @@
       "y": 270,
       "w": 220,
       "h": 120,
-      "label": "信息完整？",
+      "label": "门店确认？",
       "detail": "",
       "kind": "diamond",
       "tone": "accent",
@@ -59,7 +59,7 @@
       "w": 220,
       "h": 80,
       "label": "门店确认失败",
-      "detail": "重新确认库存与取货点",
+      "detail": "改选门店或通知缺货",
       "kind": "pill",
       "tone": "accent",
       "check": true
@@ -70,8 +70,8 @@
       "y": 300,
       "w": 220,
       "h": 80,
-      "label": "安排服务",
-      "detail": "确认时间与负责人",
+      "label": "准备取货",
+      "detail": "锁定库存与时间",
       "kind": "rect",
       "tone": "accent",
       "check": true
@@ -82,8 +82,8 @@
       "y": 300,
       "w": 220,
       "h": 80,
-      "label": "发送确认",
-      "detail": "通知结果与下一步",
+      "label": "发送取货通知",
+      "detail": "通知门店与顾客",
       "kind": "pill",
       "tone": "teal",
       "check": true
@@ -94,7 +94,7 @@
       "y": 34,
       "w": 1472,
       "h": 22,
-      "label": "60 / FLOWCHART",
+      "label": "60 / RETAIL FULFILLMENT",
       "detail": "",
       "kind": "text",
       "tone": "accent",
@@ -108,7 +108,7 @@
       "y": 69,
       "w": 1472,
       "h": 56,
-      "label": "预约服务 · 从需求到确认",
+      "label": "门店履约 · 从下单到取货",
       "detail": "",
       "kind": "text",
       "tone": "ink",
@@ -122,7 +122,7 @@
       "y": 130,
       "w": 1472,
       "h": 38,
-      "label": "先核对信息，再安排服务；信息不完整时返回补充",
+      "label": "先核对库存，再确认门店；门店异常时改选或补充处理",
       "detail": "",
       "kind": "text",
       "tone": "muted",
@@ -150,7 +150,7 @@
       "y": 710,
       "w": 1472,
       "h": 36,
-      "label": "跨行业流程示例 · 关系和条件来自输入；不自动推断业务规则",
+      "label": "电商零售履约示例 · 关系和条件来自输入；不自动推断真实库存规则",
       "detail": "",
       "kind": "text",
       "tone": "muted",
@@ -246,7 +246,7 @@
     {
       "source": "complete",
       "target": "add",
-      "label": "否 / 门店异常",
+      "label": "否 / 门店确认失败",
       "points": [
         [
           810,
@@ -270,7 +270,7 @@
     {
       "source": "add",
       "target": "check",
-      "label": "补充后",
+      "label": "改选门店后",
       "points": [
         [
           700,

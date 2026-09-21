@@ -14,9 +14,9 @@
     {"id": "clarify", "x": 445, "y": 265, "w": 240, "h": 68, "label": "Add information", "detail": "Answer key questions", "kind": "pill"},
     {"id": "triage", "x": 445, "y": 460, "w": 240, "h": 84, "label": "Confirm scope", "detail": "Priority · output"},
     {"id": "check", "x": 775, "y": 433, "w": 232, "h": 132, "label": "Complete?", "kind": "diamond"},
-    {"id": "deliver", "x": 1100, "y": 460, "w": 246, "h": 84, "label": "Deliver work", "detail": "Share a result"},
-    {"id": "review", "x": 1100, "y": 760, "w": 246, "h": 84, "label": "Review result", "tone": "teal"},
-    {"id": "close", "x": 445, "y": 760, "w": 240, "h": 84, "label": "Confirm complete", "detail": "Log outcome", "kind": "pill", "tone": "teal"}
+    {"id": "deliver", "x": 1100, "y": 760, "w": 246, "h": 84, "label": "Deliver work", "detail": "Share a result"},
+    {"id": "review", "x": 1100, "y": 460, "w": 246, "h": 84, "label": "Review result", "detail": "Coordination team checks quality", "tone": "teal"},
+    {"id": "close", "x": 445, "y": 550, "w": 240, "h": 84, "label": "Confirm complete", "detail": "Log outcome", "kind": "pill", "tone": "teal"}
   ],
   "edges": [
     {"from": "submit", "to": "triage", "points": [[365, 299], [390, 299], [390, 390], [565, 390], [565, 460]]},
@@ -24,9 +24,9 @@
     {"from": "check", "to": "deliver", "label": "Yes"},
     {"from": "check", "to": "clarify", "label": "No", "points": [[891, 433], [891, 350], [565, 350], [565, 333]], "label_at": [730, 334]},
     {"from": "clarify", "to": "triage", "label": "After update", "points": [[565, 333], [565, 402], [565, 460]], "label_at": [600, 390]},
-    {"from": "deliver", "to": "review", "label": "Submit for review", "points": [[1223, 544], [1223, 760]], "label_at": [1260, 650]},
-    {"from": "review", "to": "close", "label": "Pass", "source_port": "left", "target_port": "right"},
-    {"from": "review", "to": "deliver", "label": "Revise", "points": [[1346, 802], [1450, 802], [1450, 502], [1346, 502]], "label_at": [1450, 681], "tone": "amber", "dashed": true}
+    {"from": "deliver", "to": "review", "label": "Submit for review", "points": [[1223, 760], [1223, 652], [1223, 544]], "label_at": [1260, 650]},
+    {"from": "review", "to": "close", "label": "Pass", "points": [[1100, 502], [1035, 502], [1035, 592], [685, 592]], "label_at": [790, 580], "source_port": "left", "target_port": "right"},
+    {"from": "review", "to": "deliver", "label": "Revise", "points": [[1346, 502], [1450, 502], [1450, 802], [1346, 802]], "label_at": [1450, 681], "tone": "amber", "dashed": true}
   ],
   "footer": "Cross-industry service-flow sample · ordinary swimlane diagram · not claimed as BPMN",
   "family": "Process & collaboration",

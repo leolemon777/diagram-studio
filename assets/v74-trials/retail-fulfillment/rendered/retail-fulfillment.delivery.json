@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "protocol_version": "diagram-studio/delivery-1",
-  "version_id": "v-6cf4a8af53df",
+  "version_id": "v-07c088b98628",
   "source_name": "retail-fulfillment",
-  "input_sha256": "6cf4a8af53dfee6009e0ceac699f356eece67e8ee70f4c159707a04edd93a184",
+  "input_sha256": "07c088b98628daf4e9b04e2666507c3aca6cdc2973c55d4767821ad11b16681d",
   "theme": "light",
   "checks": {
     "geometry": {
@@ -35,11 +35,11 @@
     }
   },
   "files": {
-    "retail-fulfillment.brief.json": "7b758f4bf51031ac37fb7ab902330d0440de7a96b6f821f0ab23e5e73aa6ff64",
-    "retail-fulfillment.drawio": "4775b9fd48b18ada3255cf242a13a99bcda99cd3b1efbaca8aa6d50d0cbea867",
+    "retail-fulfillment.brief.json": "275ea1b6359689b59af199fafdab5dd9559d96855d56218817d1447f29606725",
+    "retail-fulfillment.drawio": "167cec045b898ed5660990aa3b87d9daca38c3c405deb4602ae9a47d1be9e58b",
     "retail-fulfillment.qa.json": "29ca7ffc7dc4aa7fdca9f904a8159b78dcb3adb94ab69ff42948933627ea9c67",
-    "retail-fulfillment.scene.json": "ffe9ba89f73134552638883bebe7b0da274b13612c05ba661e7a55f37e6de341",
-    "retail-fulfillment.svg": "fffe87c1a71063d417da7d319cba8a0884e69d18d1d913d7b6b97e7c732c4f9e"
+    "retail-fulfillment.scene.json": "077b51d8357d6fc7919e21fd1f9d1b637eeb09843d597a110f330bd1b39a64ef",
+    "retail-fulfillment.svg": "d1288d97adbf9dbd7a2bab5ea3c0534f7be577f3b3ef1dd80af973eebd9b262d"
   },
   "delivery_scope": "Generation, semantic content checks and QA finish before replacement. Individual files are replaced; promotion is not a multi-file atomic transaction."
 }

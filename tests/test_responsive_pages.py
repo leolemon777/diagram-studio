@@ -7,6 +7,14 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
+POPULAR_SHELLS = (
+    "demos/flow/index.html",
+    "demos/architecture/index.html",
+    "demos/swimlane/index.html",
+    "demos/gantt/index.html",
+    "demos/network/index.html",
+    "demos/data-story/index.html",
+)
 
 
 class ResponsiveDemoTests(unittest.TestCase):
@@ -32,7 +40,20 @@ class ResponsiveDemoTests(unittest.TestCase):
         self.assertEqual(evidence["checks"]["page_level_document_scroll_width"]["failed"], 0)
         self.assertEqual(evidence["checks"]["uncontained_visible_horizontal_overflow"]["failed"], 0)
         self.assertTrue(all(item["runs"] == 2 for item in evidence["pages"].values()))
-        self.assertGreaterEqual(min(item["minimum_embedded_font_px"] for item in evidence["pages"].values()), 12)
+        self.assertTrue(all(item["default_mode"] in {"readable-natural", "fit-overview"} for item in evidence["pages"].values()))
+        for item in evidence["pages"].values():
+            self.assertEqual(len(item["viewport_runs"]), 2)
+            for run in item["viewport_runs"]:
+                self.assertTrue(run["document_scroll_width_equals_viewport"])
+                self.assertEqual(run["uncontained_visible_horizontal_overflow"], 0)
+                self.assertGreaterEqual(run["minimum_displayed_font_px"], 12)
+
+    def test_popular_shells_default_to_readable_natural_mode_on_narrow_viewports(self):
+        for relative in POPULAR_SHELLS:
+            html = (ROOT / relative).read_text(encoding="utf-8")
+            self.assertIn("let reading=window.matchMedia('(max-width:1000px)').matches", html, relative)
+            self.assertIn("button.textContent=reading?", html, relative)
+            self.assertIn("obj.style.width=width+'px'", html, relative)
 
 
 if __name__ == "__main__":

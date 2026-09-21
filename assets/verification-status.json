@@ -2,16 +2,17 @@
   "version": "v74",
   "v74_evidence": {
     "registry": "v72 registry retained: 8 groups; 30 registered capabilities",
-    "source_regression_tests_after_this_patch": 128,
+    "source_regression_tests_after_this_patch": 130,
     "new_regressions": [
       "popular embedded-content viewport contract for nine high-frequency demo pages",
-      "six-industry trial artifact integrity and mutation visibility"
+      "six-industry trial artifact integrity, receipt hashes and rendered mutation visibility",
+      "swimlane role semantics and retail/marketing trial alignment"
     ],
     "release_evidence": "assets/v74-release-evidence.json",
-    "installed_sync": "passed: source and installed copies are byte-identical excluding .git; both pass 128 tests",
+    "installed_sync": "passed: source and installed copies are byte-identical excluding .git; both pass 130 tests",
     "popular_viewport_evidence": "assets/v74-popular-viewport-evidence.json; 9 popular pages × 2 viewports; page overflow 0/18",
     "chooser_continuity_evidence": "assets/v74-chooser-continuity-evidence.json; representative bilingual state, category memory, keyboard order and format boundary passed",
-    "trial_pack_evidence": "assets/v74-trials/evidence.json; six simulated cross-industry cases each have revised JSON, SVG, draw.io, scene, QA and delivery receipt",
+    "trial_pack_evidence": "assets/v74-trials/evidence.json; six simulated cross-industry cases each have revised JSON, SVG, draw.io, scene, QA and delivery receipt; receipt hashes, scene/QA parsing and visible mutation text are tested",
     "jev": "not present in available skills, plugins, or repository files; integration awaits an explicit path or name",
     "native_editor": "representative pass remains 15 files; all-type coverage is not claimed",
     "scope": "Popular embedded content only; this does not certify every catalog row, arbitrary density, domain facts, native-editor compatibility or JEV review",

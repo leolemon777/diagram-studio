@@ -8,7 +8,9 @@ v74 closes a reviewable loop around high-frequency, cross-industry and release-c
 
 - Eight groups and 30 registered capabilities, with bilingual chooser continuity evidence.
 - Embedded-content closure for nine popular pages—flow, architecture, swimlane, Gantt, network, data story, story map, user-path storyboard and Lean Canvas—at 390×844 and 768×1024; wide drawings stay inside explicit scroll regions.
+- Six popular demo shells default to readable natural-size mode on narrow viewports; measured embedded text is 14px minimum, with the compact Gantt print variant recorded separately at 12px, and page-level overflow remains 0/18.
 - Six cross-industry trial cases—software, retail, education, marketing, HR/administration, and travel/store service—each with one meaningful revision and a traceable input, SVG preview, editable draw.io source, scene, QA record and delivery receipt.
+- The trial regression contract now verifies the input SHA-256, receipt manifest hashes, parseable scene/QA files with no errors, and the revised text in the rendered SVG; swimlane roles and retail/marketing semantics have dedicated checks.
 - Fresh-directory reproduction of the basic renderer and one valid cross-industry model; artifacts are complete, QA has no errors, and generated output contains no development-machine absolute paths, local service URLs or private-directory dependencies.
 - Fifteen representative draw.io files edited, saved and reopened in diagrams.net; this evidence is not generalized to every type or editor.
 
@@ -24,7 +26,7 @@ v74 closes a reviewable loop around high-frequency, cross-industry and release-c
 
 ## Verification
 
-The source repository and installed copy each pass 128 regression tests; quick validation, JSON parsing, link audit, diff checks and recursive parity are rerun and recorded before release. The basic renderer requires Python 3.9+; specialist cross-industry backends may require Matplotlib/Pillow.
+The source repository and installed copy each pass 130 regression tests; quick validation, JSON parsing, link audit, diff checks and recursive parity are rerun and recorded before release. The basic renderer requires Python 3.9+; specialist cross-industry backends may require Matplotlib/Pillow.
 
 ## Limits
 
