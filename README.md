@@ -25,7 +25,7 @@
 
 ## 怎么用
 
-如果不知道该选哪种图，克隆仓库后在浏览器打开本地的[中英双语选图向导](demos/chooser/index.html)：按“想让读者看懂什么 → 图型 → 风格”选择，填入自己的内容后复制生成的 `$diagram-studio` 指令。向导按能力登记提供 28 项已登记能力的选型提示；它本身不渲染任意输入，完整成图仍由 Codex 使用 Skill 完成。向导的后端、格式和证据状态来自[能力登记](references/capability-registry.md)，不会只根据旧页面文案宣称支持。风格卡会复用当前选中图型的真实缩略结构，同时仍是方向示意；实际支持范围见[风格家族](references/style-families.md)。
+如果不知道该选哪种图，克隆仓库后在浏览器打开本地的[中英双语选图向导](demos/chooser/index.html)：按“想让读者看懂什么 → 图型 → 风格”选择，填入自己的内容后复制生成的 `$diagram-studio` 指令。向导按能力登记提供 30 项已登记能力的选型提示，新增精益画布和用户路径故事板；它本身不渲染任意输入，完整成图仍由 Codex 使用 Skill 完成。向导的后端、格式和证据状态来自[能力登记](references/capability-registry.md)，不会只根据旧页面文案宣称支持。风格卡会复用当前选中图型的真实缩略结构，同时仍是方向示意；实际支持范围见[风格家族](references/style-families.md)。
 
 ### 1. 安装给 Codex
 
@@ -65,13 +65,13 @@ python3 scripts/expression_lab.py --out /tmp/diagram-expression-lab
 
 ## 多元白板方法与 UI/UX
 
-结合 Boardmix 公开研究及登录后四种模板的实看，选图向导新增“洞察与共创”：亲和图、旅程、服务蓝图、复盘行动板、用户故事地图。按目的解释选择，并显示实际支持范围与示例；切换保留输入和键盘焦点。旅程图和服务蓝图现在分别有专用中英后端，保留证据链、服务分界线和显式交接；[输入规则](references/experience-maps.md)。故事地图现有专用自适应生成器、完整中英文成图和 SVG/draw.io/JSON；[打开演示](demos/storymap/index.html)，[查看输入与边界](references/story-map.md)。选图向导按类型限制实际可用格式并记住各分类的图型选择；实时协作和投票服务未实现。后续累计实看 12 种模板，并由 Grok CLI 调研 8 条 X 候选；[证据与后续重点](references/boardmix-deep-study.md) 明确区分画布观察和仅正文线索。见 [方法与来源](references/boardmix-study.md) 和 [实际示例](demos/workshop-study/index.html)。
+结合 Boardmix 公开研究及登录后四种模板的实看，选图向导新增“洞察与共创”：亲和图、旅程、服务蓝图、复盘行动板、用户故事地图和用户路径故事板。按目的解释选择，并显示实际支持范围与示例；切换保留输入和键盘焦点。旅程图和服务蓝图现在分别有专用中英后端，保留证据链、服务分界线和显式交接；[输入规则](references/experience-maps.md)。故事地图现有专用自适应生成器，用户路径故事板补齐前置条件、状态、下一步、分支和异常；[故事板输入规则](references/user-path-storyboard.md)。战略与执行新增精益画布，和商业模式画布保持不同问题与布局；[精益画布输入规则](references/lean-canvas.md)。选图向导按类型限制实际可用格式并记住各分类的图型选择；实时协作和投票服务未实现。后续累计实看 12 种模板，并由 Grok CLI 调研 8 条 X 候选；[证据与后续重点](references/boardmix-deep-study.md) 明确区分画布观察和仅正文线索。见 [方法与来源](references/boardmix-study.md) 和 [实际示例](demos/workshop-study/index.html)。
 
 ## 五类精修与验收
 
 普通流程、分层架构、执行甘特、单系列对比和趋势新增精修模式：按长文字扩展、区分主线和回流、保留正负值与缺测，提供不同表达。运行 `python3 scripts/refinement_suite.py --out /tmp/diagram-refinement`，再用本地 HTTP 服务打开该目录，可查看中英切换的 11 份原版、修改与对照样例。输入方式与范围见 [五类精修规则](references/refinement.md)。
 
-截至 v71，源仓库与安装目录均有 120 项回归通过（此前基线为 119 项，新增 1 项双语语义回归）。11 份总览曾通过桌面浏览器实际文字检查，流程和故事地图样例曾在 draw.io 修改、保存并重开。检查不代表所有图型、移动屏幕或审美已获验收，详见 [验证记录](references/verification-status.md)。
+截至 v72，源仓库与安装目录均有 124 项回归通过（此前基线为 120 项，新增精益画布与用户路径故事板的双语语义、编辑节点和失败输入回归）。11 份总览曾通过桌面浏览器实际文字检查，流程和故事地图样例曾在 draw.io 修改、保存并重开；新增两类已完成生成与结构验收，原生编辑器往返仍按登记证据单独声明。检查不代表所有图型、移动屏幕或审美已获验收，详见 [验证记录](references/verification-status.md)。
 
 ## 流程与交付改进
 

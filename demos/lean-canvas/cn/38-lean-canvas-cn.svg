@@ -1,0 +1,208 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1042" viewBox="0 0 1600 1042" role="img" aria-labelledby="diagram-title diagram-desc">
+<title id="diagram-title">社区照护预约 · 精益画布</title>
+<desc id="diagram-desc">九个问题按精益验证顺序组织；每条内容都保留证据状态</desc>
+<rect width="100%" height="100%" fill="#F1EFEB"/>
+<defs>
+<marker id="arrow-accent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#AC6046"/></marker>
+<marker id="arrow-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#67685E"/></marker>
+<marker id="arrow-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#8C7964"/></marker>
+<marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#554C46"/></marker>
+<marker id="arrow-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#6D6A63"/></marker>
+<marker id="arrow-line" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#D8D3C8"/></marker>
+<marker id="arrow-ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#30302D"/></marker>
+</defs>
+<g font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, Arial, sans-serif">
+<g id="problem" data-kind="panel" data-content-text="false" data-box="64.0,204,283.2,509">
+<rect x="64.0" y="204" width="283.2" height="509" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="customer-segments" data-kind="panel" data-content-text="false" data-box="1252.8,204,283.2,509">
+<rect x="1252.8" y="204" width="283.2" height="509" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="unique-value-proposition" data-kind="panel" data-content-text="false" data-box="658.4,204,580.4,250">
+<rect x="658.4" y="204" width="580.4" height="250" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="solution" data-kind="panel" data-content-text="false" data-box="361.2,204,283.2,250">
+<rect x="361.2" y="204" width="283.2" height="250" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="channels" data-kind="panel" data-content-text="false" data-box="361.2,468,283.2,245">
+<rect x="361.2" y="468" width="283.2" height="245" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="revenue-streams" data-kind="panel" data-content-text="false" data-box="658.4,727,877.5999999999999,205">
+<rect x="658.4" y="727" width="877.5999999999999" height="205" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="cost-structure" data-kind="panel" data-content-text="false" data-box="64.0,727,580.4,205">
+<rect x="64.0" y="727" width="580.4" height="205" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="key-metrics" data-kind="panel" data-content-text="false" data-box="658.4,468,283.2,245">
+<rect x="658.4" y="468" width="283.2" height="245" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="unfair-advantage" data-kind="panel" data-content-text="false" data-box="955.5999999999999,468,283.2,245">
+<rect x="955.5999999999999" y="468" width="283.2" height="245" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="_v2" data-kind="text" data-content-text="false" data-box="82.0,220,247.2,32.35">
+
+<text x="82.0" y="243.0" text-anchor="start" font-size="21" font-weight="400" fill="#67685E">01 问题</text>
+</g>
+<g id="problem-1" data-kind="text" data-content-text="false" data-box="82.0,264.35,247.2,45.2">
+
+<text x="82.0" y="281.35" text-anchor="start" font-size="16" font-weight="400" fill="#30302D">[problem-1] 照护者不知道下一</text>
+<text x="82.0" y="302.95000000000005" text-anchor="start" font-size="16" font-weight="400" fill="#30302D">步该找谁</text>
+</g>
+<g id="_v4" data-kind="text" data-content-text="false" data-box="82.0,311.55,247.2,39.800000000000004">
+
+<text x="82.0" y="326.55" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">observed / 已观察 · 访谈摘录：反复</text>
+<text x="82.0" y="345.45" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">询问入口</text>
+</g>
+<g id="problem-2" data-kind="text" data-content-text="false" data-box="82.0,361.35,247.2,45.2">
+
+<text x="82.0" y="378.35" text-anchor="start" font-size="16" font-weight="400" fill="#30302D">[problem-2] 不同服务方重复收</text>
+<text x="82.0" y="399.95000000000005" text-anchor="start" font-size="16" font-weight="400" fill="#30302D">集相同信息</text>
+</g>
+<g id="_v6" data-kind="text" data-content-text="false" data-box="82.0,408.55,247.2,39.800000000000004">
+
+<text x="82.0" y="423.55" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">hypothesis / 待验证假说 · 流程观察</text>
+<text x="82.0" y="442.45" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">，待扩大样本</text>
+</g>
+<g id="_v8" data-kind="text" data-content-text="false" data-box="1270.8,220,247.2,32.35">
+
+<text x="1270.8" y="243.0" text-anchor="start" font-size="21" font-weight="400" fill="#8C7964">02 客户细分</text>
+</g>
+<g id="segment-1" data-kind="text" data-content-text="false" data-box="1270.8,264.35,247.2,45.2">
+
+<text x="1270.8" y="281.35" text-anchor="start" font-size="16" font-weight="400" fill="#30302D">[segment-1] 需要安排照护的家</text>
+<text x="1270.8" y="302.95000000000005" text-anchor="start" font-size="16" font-weight="400" fill="#30302D">属</text>
+</g>
+<g id="_v10" data-kind="text" data-content-text="false" data-box="1270.8,311.55,247.2,20.900000000000002">
+
+<text x="1270.8" y="326.55" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">observed / 已观察 · 当前服务简报</text>
+</g>
+<g id="segment-2" data-kind="text" data-content-text="false" data-box="1270.8,342.45,247.2,45.2">
+
+<text x="1270.8" y="359.45" text-anchor="start" font-size="16" font-weight="400" fill="#30302D">[segment-2] 协助转介的社区工</text>
+<text x="1270.8" y="381.05" text-anchor="start" font-size="16" font-weight="400" fill="#30302D">作人员</text>
+</g>
+<g id="_v12" data-kind="text" data-content-text="false" data-box="1270.8,389.65,247.2,39.800000000000004">
+
+<text x="1270.8" y="404.65" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">hypothesis / 待验证假说 · 利益相关</text>
+<text x="1270.8" y="423.54999999999995" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">者名单</text>
+</g>
+<g id="_v14" data-kind="text" data-content-text="false" data-box="676.4,220,544.4,32.35">
+
+<text x="676.4" y="243.0" text-anchor="start" font-size="21" font-weight="400" fill="#554C46">03 独特价值主张</text>
+</g>
+<g id="uvp-1" data-kind="text" data-content-text="false" data-box="676.4,264.35,544.4,23.6">
+
+<text x="676.4" y="281.35" text-anchor="start" font-size="16" font-weight="400" fill="#30302D">[uvp-1] 每次只给一个清晰的下一步</text>
+</g>
+<g id="_v16" data-kind="text" data-content-text="false" data-box="676.4,289.95000000000005,544.4,20.900000000000002">
+
+<text x="676.4" y="304.95000000000005" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">hypothesis / 待验证假说 · 待用任务完成率验证</text>
+</g>
+<g id="_v18" data-kind="text" data-content-text="false" data-box="379.2,220,247.2,32.35">
+
+<text x="379.2" y="243.0" text-anchor="start" font-size="21" font-weight="400" fill="#6D6A63">04 解决方案</text>
+</g>
+<g id="solution-1" data-kind="text" data-content-text="false" data-box="379.2,264.35,247.2,45.2">
+
+<text x="379.2" y="281.35" text-anchor="start" font-size="16" font-weight="400" fill="#30302D">[solution-1] 需求摘要、服务匹</text>
+<text x="379.2" y="302.95000000000005" text-anchor="start" font-size="16" font-weight="400" fill="#30302D">配、人工兜底</text>
+</g>
+<g id="_v20" data-kind="text" data-content-text="false" data-box="379.2,311.55,247.2,39.800000000000004">
+
+<text x="379.2" y="326.55" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">proposed / 拟议方案 · 用户路径故事</text>
+<text x="379.2" y="345.45" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">板 v37</text>
+</g>
+<g id="_v22" data-kind="text" data-content-text="false" data-box="379.2,484,247.2,32.35">
+
+<text x="379.2" y="507.0" text-anchor="start" font-size="21" font-weight="400" fill="#AC6046">05 渠道</text>
+</g>
+<g id="channel-1" data-kind="text" data-content-text="false" data-box="379.2,528.35,247.2,45.2">
+
+<text x="379.2" y="545.35" text-anchor="start" font-size="16" font-weight="400" fill="#30302D">[channel-1] 移动网页与社区服</text>
+<text x="379.2" y="566.95" text-anchor="start" font-size="16" font-weight="400" fill="#30302D">务台</text>
+</g>
+<g id="_v24" data-kind="text" data-content-text="false" data-box="379.2,575.5500000000001,247.2,39.800000000000004">
+
+<text x="379.2" y="590.5500000000001" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">hypothesis / 待验证假说 · 入口清单</text>
+<text x="379.2" y="609.45" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">，待验证触达</text>
+</g>
+<g id="_v26" data-kind="text" data-content-text="false" data-box="676.4,743,841.5999999999999,32.35">
+
+<text x="676.4" y="766.0" text-anchor="start" font-size="21" font-weight="400" fill="#67685E">06 收入来源</text>
+</g>
+<g id="revenue-1" data-kind="text" data-content-text="false" data-box="676.4,787.35,841.5999999999999,23.6">
+
+<text x="676.4" y="804.35" text-anchor="start" font-size="16" font-weight="400" fill="#30302D">[revenue-1] 合作资助方式待讨论</text>
+</g>
+<g id="_v28" data-kind="text" data-content-text="false" data-box="676.4,812.95,841.5999999999999,20.900000000000002">
+
+<text x="676.4" y="827.95" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">unknown / 未知 · 没有定价数据</text>
+</g>
+<g id="_v30" data-kind="text" data-content-text="false" data-box="82.0,743,544.4,32.35">
+
+<text x="82.0" y="766.0" text-anchor="start" font-size="21" font-weight="400" fill="#8C7964">07 成本结构</text>
+</g>
+<g id="cost-1" data-kind="text" data-content-text="false" data-box="82.0,787.35,544.4,23.6">
+
+<text x="82.0" y="804.35" text-anchor="start" font-size="16" font-weight="400" fill="#30302D">[cost-1] 服务运营、无障碍支持和人工转接</text>
+</g>
+<g id="_v32" data-kind="text" data-content-text="false" data-box="82.0,812.95,544.4,20.900000000000002">
+
+<text x="82.0" y="827.95" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">hypothesis / 待验证假说 · 运营假设清单</text>
+</g>
+<g id="_v34" data-kind="text" data-content-text="false" data-box="676.4,484,247.2,32.35">
+
+<text x="676.4" y="507.0" text-anchor="start" font-size="21" font-weight="400" fill="#554C46">08 关键指标</text>
+</g>
+<g id="metric-1" data-kind="text" data-content-text="false" data-box="676.4,528.35,247.2,45.2">
+
+<text x="676.4" y="545.35" text-anchor="start" font-size="16" font-weight="400" fill="#30302D">[metric-1] 首次完成率与转人工</text>
+<text x="676.4" y="566.95" text-anchor="start" font-size="16" font-weight="400" fill="#30302D">率</text>
+</g>
+<g id="_v36" data-kind="text" data-content-text="false" data-box="676.4,575.5500000000001,247.2,39.800000000000004">
+
+<text x="676.4" y="590.5500000000001" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">proposed / 拟议方案 · 需接入事件记</text>
+<text x="676.4" y="609.45" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">录</text>
+</g>
+<g id="metric-2" data-kind="text" data-content-text="false" data-box="676.4,625.35,247.2,23.6">
+
+<text x="676.4" y="642.35" text-anchor="start" font-size="16" font-weight="400" fill="#30302D">[metric-2] 重复填写次数</text>
+</g>
+<g id="_v38" data-kind="text" data-content-text="false" data-box="676.4,650.95,247.2,20.900000000000002">
+
+<text x="676.4" y="665.95" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">unknown / 未知 · 当前没有基线</text>
+</g>
+<g id="_v40" data-kind="text" data-content-text="false" data-box="973.5999999999999,484,247.2,32.35">
+
+<text x="973.5999999999999" y="507.0" text-anchor="start" font-size="21" font-weight="400" fill="#6D6A63">09 难以复制的优势</text>
+</g>
+<g id="advantage-1" data-kind="text" data-content-text="false" data-box="973.5999999999999,528.35,247.2,45.2">
+
+<text x="973.5999999999999" y="545.35" text-anchor="start" font-size="16" font-weight="400" fill="#30302D">[advantage-1] 跨服务方的本地</text>
+<text x="973.5999999999999" y="566.95" text-anchor="start" font-size="16" font-weight="400" fill="#30302D">关系与真实反馈回路</text>
+</g>
+<g id="_v42" data-kind="text" data-content-text="false" data-box="973.5999999999999,575.5500000000001,247.2,39.800000000000004">
+
+<text x="973.5999999999999" y="590.5500000000001" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">hypothesis / 待验证假说 · 需由合作</text>
+<text x="973.5999999999999" y="609.45" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">方确认</text>
+</g>
+<g id="_v43" data-kind="text" data-content-text="false" data-box="64,34,1472,22">
+
+<text x="64" y="49.55" text-anchor="start" font-size="14" font-weight="400" fill="#AC6046">38 / HIGH-FREQUENCY FORMS</text>
+</g>
+<g id="_v44" data-kind="text" data-content-text="false" data-box="64,69,1472,56">
+
+<text x="64" y="108.7" text-anchor="start" font-size="36" font-weight="400" fill="#30302D">社区照护预约 · 精益画布</text>
+</g>
+<g id="_v45" data-kind="text" data-content-text="false" data-box="64,130,1472,38">
+
+<text x="64" y="154.525" text-anchor="start" font-size="17" font-weight="400" fill="#6D6A63">九个问题按精益验证顺序组织；每条内容都保留证据状态</text>
+</g>
+<g id="_v46" data-kind="rect" data-content-text="false" data-box="64,979,1472,1">
+<rect x="64" y="979" width="1472" height="1" rx="0" fill="#D8D3C8" stroke="none" stroke-width="1.5"/>
+</g>
+<g id="_v47" data-kind="text" data-content-text="false" data-box="64,992,1472,36">
+
+<text x="64" y="1014.55" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">跨行业模拟输入 · 这是验证工作表，不是市场规模、定价或收入预测</text>
+</g>
+</g></svg>

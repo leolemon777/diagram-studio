@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "protocol_version": "diagram-studio/delivery-1",
+  "version_id": "v-f81d11f2e459",
+  "source_name": "37-user-path-storyboard-en",
+  "input_sha256": "f81d11f2e459f1b0622290388595dd86519a8ccb861c2595fc9a333d9ca26173",
+  "theme": "light",
+  "checks": {
+    "geometry": {
+      "status": "passed",
+      "warnings": []
+    },
+    "composition": {
+      "status": "not-run",
+      "findings": []
+    },
+    "content_integrity": {
+      "status": "passed",
+      "source_ids": 18,
+      "source_relations": 9,
+      "source_texts": 46,
+      "missing_ids": [],
+      "missing_relations": [],
+      "missing_text": [],
+      "scope": "stable source IDs, explicit relation endpoints and source display text; not domain correctness"
+    },
+    "browser_text_bounds": {
+      "status": "not-run"
+    },
+    "manual_visual_review": {
+      "status": "not-run"
+    },
+    "native_editor": {
+      "status": "not-run"
+    }
+  },
+  "files": {
+    "37-user-path-storyboard-en.brief.json": "101cb1416efc68b90497374af0367ae46a6511fd1a871afea649beb96e1e259d",
+    "37-user-path-storyboard-en.drawio": "4c2b8b6d4478d0051d0606002a0dcc346c1b7eb141d292547fc2673b44063a5c",
+    "37-user-path-storyboard-en.qa.json": "7b998f48d99e9f4c08ad6cfbe4d73208e2214072d1d86eb39f6ec85d65d6415d",
+    "37-user-path-storyboard-en.scene.json": "95c9c658ecde6f3b2d79df5a6a90cd19cd3d5872f0f2fc6b5d77b3f25ea005dd",
+    "37-user-path-storyboard-en.svg": "e19555324ab51c6670a6853c6e4e467e6c9392f7003cd4426152c4856786125b"
+  },
+  "delivery_scope": "Generation, semantic content checks and QA finish before replacement. Individual files are replaced; promotion is not a multi-file atomic transaction."
+}

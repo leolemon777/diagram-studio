@@ -1,0 +1,19 @@
+{
+  "version": "v72",
+  "date": "2026-09-21",
+  "scope": ["lean-canvas", "user-path-storyboard"],
+  "status": "generated_with_semantic_validation",
+  "checks": {
+    "bilingual_examples": 4,
+    "stable_ids": "passed",
+    "semantic_validation": "passed",
+    "long_copy_layout": "passed",
+    "drawio_node_presence": "passed",
+    "full_regression_baseline": 124
+  },
+  "notes": [
+    "Lean Canvas keeps nine validation questions and evidence/status on every entry; it is not the Business Model Canvas.",
+    "User-path storyboard keeps preconditions, states, main next steps, branches, exceptions, and proposal flags as editable source objects.",
+    "This evidence is renderer and source-contract evidence; it does not certify a real organisation, product-market fit, service approval, or domain workflow."
+  ]
+}

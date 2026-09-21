@@ -1,0 +1,141 @@
+{
+  "type": "lean-canvas",
+  "language": "zh",
+  "title": "社区照护预约 · 精益画布",
+  "diagram_name": "精益画布",
+  "family": "战略与执行",
+  "subtitle": "九个问题按精益验证顺序组织；每条内容都保留证据状态",
+  "eyebrow": "38 / HIGH-FREQUENCY FORMS",
+  "footer": "跨行业模拟输入 · 这是验证工作表，不是市场规模、定价或收入预测",
+  "assumptions": [
+    "原创跨行业演示内容；访谈、使用数据和财务资料仍需项目提供"
+  ],
+  "items": [
+    {
+      "id": "problem",
+      "label": "问题",
+      "entries": [
+        {
+          "id": "problem-1",
+          "text": "照护者不知道下一步该找谁",
+          "evidence": "访谈摘录：反复询问入口",
+          "status": "observed"
+        },
+        {
+          "id": "problem-2",
+          "text": "不同服务方重复收集相同信息",
+          "evidence": "流程观察，待扩大样本",
+          "status": "hypothesis"
+        }
+      ]
+    },
+    {
+      "id": "customer-segments",
+      "label": "客户细分",
+      "entries": [
+        {
+          "id": "segment-1",
+          "text": "需要安排照护的家属",
+          "evidence": "当前服务简报",
+          "status": "observed"
+        },
+        {
+          "id": "segment-2",
+          "text": "协助转介的社区工作人员",
+          "evidence": "利益相关者名单",
+          "status": "hypothesis"
+        }
+      ]
+    },
+    {
+      "id": "unique-value-proposition",
+      "label": "独特价值主张",
+      "entries": [
+        {
+          "id": "uvp-1",
+          "text": "每次只给一个清晰的下一步",
+          "evidence": "待用任务完成率验证",
+          "status": "hypothesis"
+        }
+      ]
+    },
+    {
+      "id": "solution",
+      "label": "解决方案",
+      "entries": [
+        {
+          "id": "solution-1",
+          "text": "需求摘要、服务匹配、人工兜底",
+          "evidence": "用户路径故事板 v37",
+          "status": "proposed"
+        }
+      ]
+    },
+    {
+      "id": "channels",
+      "label": "渠道",
+      "entries": [
+        {
+          "id": "channel-1",
+          "text": "移动网页与社区服务台",
+          "evidence": "入口清单，待验证触达",
+          "status": "hypothesis"
+        }
+      ]
+    },
+    {
+      "id": "revenue-streams",
+      "label": "收入来源",
+      "entries": [
+        {
+          "id": "revenue-1",
+          "text": "合作资助方式待讨论",
+          "evidence": "没有定价数据",
+          "status": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "cost-structure",
+      "label": "成本结构",
+      "entries": [
+        {
+          "id": "cost-1",
+          "text": "服务运营、无障碍支持和人工转接",
+          "evidence": "运营假设清单",
+          "status": "hypothesis"
+        }
+      ]
+    },
+    {
+      "id": "key-metrics",
+      "label": "关键指标",
+      "entries": [
+        {
+          "id": "metric-1",
+          "text": "首次完成率与转人工率",
+          "evidence": "需接入事件记录",
+          "status": "proposed"
+        },
+        {
+          "id": "metric-2",
+          "text": "重复填写次数",
+          "evidence": "当前没有基线",
+          "status": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "unfair-advantage",
+      "label": "难以复制的优势",
+      "entries": [
+        {
+          "id": "advantage-1",
+          "text": "跨服务方的本地关系与真实反馈回路",
+          "evidence": "需由合作方确认",
+          "status": "hypothesis"
+        }
+      ]
+    }
+  ]
+}

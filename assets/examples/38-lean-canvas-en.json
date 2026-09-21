@@ -1,0 +1,45 @@
+{
+  "type": "lean-canvas",
+  "language": "en",
+  "title": "Community care booking · lean canvas",
+  "diagram_name": "Lean canvas",
+  "family": "Strategy & delivery",
+  "subtitle": "Nine questions follow a validation order and keep an evidence status on every entry",
+  "eyebrow": "38 / HIGH-FREQUENCY FORMS",
+  "footer": "Cross-industry simulated input · A validation worksheet, not market size, pricing, or revenue forecasting",
+  "assumptions": [
+    "Original cross-industry teaching content; interviews, usage data, and financial evidence are still required"
+  ],
+  "items": [
+    {"id": "problem", "label": "Problem", "entries": [
+      {"id": "problem-1", "text": "Caregivers do not know who to contact next", "evidence": "Interview excerpt: repeated questions about entry", "status": "observed"},
+      {"id": "problem-2", "text": "Service partners collect the same details repeatedly", "evidence": "Process observation; sample needs expanding", "status": "hypothesis"}
+    ]},
+    {"id": "customer-segments", "label": "Customer segments", "entries": [
+      {"id": "segment-1", "text": "Family members arranging care", "evidence": "Current service brief", "status": "observed"},
+      {"id": "segment-2", "text": "Community staff making referrals", "evidence": "Stakeholder list", "status": "hypothesis"}
+    ]},
+    {"id": "unique-value-proposition", "label": "Unique value proposition", "entries": [
+      {"id": "uvp-1", "text": "Give one clear next step at a time", "evidence": "To validate with task completion", "status": "hypothesis"}
+    ]},
+    {"id": "solution", "label": "Solution", "entries": [
+      {"id": "solution-1", "text": "Request summary, service matching, and human fallback", "evidence": "User-path storyboard v37", "status": "proposed"}
+    ]},
+    {"id": "channels", "label": "Channels", "entries": [
+      {"id": "channel-1", "text": "Mobile web and community service desk", "evidence": "Entry inventory; reach is unverified", "status": "hypothesis"}
+    ]},
+    {"id": "revenue-streams", "label": "Revenue streams", "entries": [
+      {"id": "revenue-1", "text": "Partnership funding model to discuss", "evidence": "No pricing data", "status": "unknown"}
+    ]},
+    {"id": "cost-structure", "label": "Cost structure", "entries": [
+      {"id": "cost-1", "text": "Service operations, accessibility, and human transfer", "evidence": "Operations assumption list", "status": "hypothesis"}
+    ]},
+    {"id": "key-metrics", "label": "Key metrics", "entries": [
+      {"id": "metric-1", "text": "First-attempt completion and human-transfer rate", "evidence": "Event tracking is still needed", "status": "proposed"},
+      {"id": "metric-2", "text": "Repeated-entry count", "evidence": "No baseline is available", "status": "unknown"}
+    ]},
+    {"id": "unfair-advantage", "label": "Unfair advantage", "entries": [
+      {"id": "advantage-1", "text": "Local partner relationships and a real feedback loop", "evidence": "Partners must confirm", "status": "hypothesis"}
+    ]}
+  ]
+}

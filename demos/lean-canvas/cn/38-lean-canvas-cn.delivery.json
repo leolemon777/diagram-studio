@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "protocol_version": "diagram-studio/delivery-1",
+  "version_id": "v-046e675581b4",
+  "source_name": "38-lean-canvas-cn",
+  "input_sha256": "046e675581b4bb037b1f10c587ea4d09c169c6ce7b06035981dffaf58c354f13",
+  "theme": "light",
+  "checks": {
+    "geometry": {
+      "status": "passed",
+      "warnings": []
+    },
+    "composition": {
+      "status": "not-run",
+      "findings": []
+    },
+    "content_integrity": {
+      "status": "passed",
+      "source_ids": 21,
+      "source_relations": 0,
+      "source_texts": 41,
+      "missing_ids": [],
+      "missing_relations": [],
+      "missing_text": [],
+      "scope": "stable source IDs, explicit relation endpoints and source display text; not domain correctness"
+    },
+    "browser_text_bounds": {
+      "status": "not-run"
+    },
+    "manual_visual_review": {
+      "status": "not-run"
+    },
+    "native_editor": {
+      "status": "not-run"
+    }
+  },
+  "files": {
+    "38-lean-canvas-cn.brief.json": "03dec5dfc39e689e97a94aace7e7c6a213e4a008a14d06c634d65ff893adfe21",
+    "38-lean-canvas-cn.drawio": "43a1ee28e883c5ac62aead5ecd72517c7e5dd0c4ed93062ce585072109d3bf87",
+    "38-lean-canvas-cn.qa.json": "c0b69b6fdce00c30f6d89db9f7c374597fb6f4f7eba201886036edaf36cca1b3",
+    "38-lean-canvas-cn.scene.json": "cc2b65ec437040c4576777ddb452ec741814190a9a170e1351c665a5012ba97b",
+    "38-lean-canvas-cn.svg": "a7aac8f8b4143468c4dee10e88f5048f9f87bceb560a1aa5aac6a4f1aceb054d"
+  },
+  "delivery_scope": "Generation, semantic content checks and QA finish before replacement. Individual files are replaced; promotion is not a multi-file atomic transaction."
+}

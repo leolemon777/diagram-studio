@@ -1,0 +1,1140 @@
+{
+  "width": 2034,
+  "height": 995,
+  "theme": "light",
+  "palette": {
+    "bg": "#F1EFEB",
+    "panel": "#FEFDF9",
+    "ink": "#30302D",
+    "muted": "#6D6A63",
+    "line": "#D8D3C8",
+    "accent": "#AC6046",
+    "teal": "#67685E",
+    "amber": "#8C7964",
+    "red": "#554C46",
+    "tint": "#F0E4DA",
+    "tint2": "#ECECE5"
+  },
+  "nodes": [
+    {
+      "id": "_v1",
+      "x": 64,
+      "y": 188,
+      "w": 1906,
+      "h": 32,
+      "label": "用户：需要安排照护服务的照护者  ·  目标：在一次会话内找到下一步并完成预约",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 18,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v2",
+      "x": 64,
+      "y": 207,
+      "w": 260,
+      "h": 50,
+      "label": "前置条件 / Preconditions",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 16,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "pre-language",
+      "x": 64.0,
+      "y": 232,
+      "w": 946.0,
+      "h": 68,
+      "label": "[pre-language] 选择语言",
+      "detail": "已观察",
+      "kind": "panel",
+      "tone": "teal",
+      "check": false,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[pre-language] 选择语言",
+          20,
+          true,
+          "ink"
+        ],
+        [
+          "已观察",
+          15,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "pre-consent",
+      "x": 1024.0,
+      "y": 232,
+      "w": 946.0,
+      "h": 68,
+      "label": "[pre-consent] 同意记录必要信息",
+      "detail": "待确认",
+      "kind": "panel",
+      "tone": "teal",
+      "check": false,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[pre-consent] 同意记录必要信息",
+          20,
+          true,
+          "ink"
+        ],
+        [
+          "待确认",
+          15,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "state-entry",
+      "x": 64.0,
+      "y": 316,
+      "w": 371.6,
+      "h": 72,
+      "label": "[state-entry] 进入",
+      "detail": "知道要解决的问题",
+      "kind": "panel",
+      "tone": "muted",
+      "check": false,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[state-entry] 进入",
+          20,
+          true,
+          "ink"
+        ],
+        [
+          "知道要解决的问题",
+          15,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "state-triage",
+      "x": 447.6,
+      "y": 316,
+      "w": 371.6,
+      "h": 72,
+      "label": "[state-triage] 分诊",
+      "detail": "问题被分类并补齐关键资料",
+      "kind": "panel",
+      "tone": "muted",
+      "check": false,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[state-triage] 分诊",
+          20,
+          true,
+          "ink"
+        ],
+        [
+          "问题被分类并补齐关键资料",
+          15,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "state-match",
+      "x": 831.2,
+      "y": 316,
+      "w": 371.6,
+      "h": 72,
+      "label": "[state-match] 匹配",
+      "detail": "看见可选服务与限制",
+      "kind": "panel",
+      "tone": "muted",
+      "check": false,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[state-match] 匹配",
+          20,
+          true,
+          "ink"
+        ],
+        [
+          "看见可选服务与限制",
+          15,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "state-confirm",
+      "x": 1214.8000000000002,
+      "y": 316,
+      "w": 371.6,
+      "h": 72,
+      "label": "[state-confirm] 确认",
+      "detail": "预约信息被再次核对",
+      "kind": "panel",
+      "tone": "muted",
+      "check": false,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[state-confirm] 确认",
+          20,
+          true,
+          "ink"
+        ],
+        [
+          "预约信息被再次核对",
+          15,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "state-followup",
+      "x": 1598.4,
+      "y": 316,
+      "w": 371.6,
+      "h": 72,
+      "label": "[state-followup] 跟进",
+      "detail": "获得确认与后续入口",
+      "kind": "panel",
+      "tone": "muted",
+      "check": false,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[state-followup] 跟进",
+          20,
+          true,
+          "ink"
+        ],
+        [
+          "获得确认与后续入口",
+          15,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "_v10",
+      "x": 64,
+      "y": 400,
+      "w": 280,
+      "h": 52,
+      "label": "主路径 / Main path",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 16,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "step-open",
+      "x": 64,
+      "y": 430,
+      "w": 250,
+      "h": 158,
+      "label": "01 · 进入",
+      "detail": "[step-open] 照护者\n打开服务入口并说明想安排照护\n结果：进入需求分诊",
+      "kind": "panel",
+      "tone": "accent",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "01 · 进入",
+          20,
+          true,
+          "ink"
+        ],
+        [
+          "[step-open] 照护者",
+          15,
+          false,
+          "muted"
+        ],
+        [
+          "打开服务入口并说明想安排照护",
+          15,
+          false,
+          "muted"
+        ],
+        [
+          "结果：进入需求分诊",
+          15,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "step-triage",
+      "x": 340,
+      "y": 430,
+      "w": 250,
+      "h": 158,
+      "label": "02 · 分诊",
+      "detail": "[step-triage] 服务入口\n询问服务类型、地点和可用时间\n结果：形成最小需求摘要",
+      "kind": "panel",
+      "tone": "teal",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "02 · 分诊",
+          20,
+          true,
+          "ink"
+        ],
+        [
+          "[step-triage] 服务入口",
+          15,
+          false,
+          "muted"
+        ],
+        [
+          "询问服务类型、地点和可用时间",
+          15,
+          false,
+          "muted"
+        ],
+        [
+          "结果：形成最小需求摘要",
+          15,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "step-review",
+      "x": 616,
+      "y": 430,
+      "w": 250,
+      "h": 158,
+      "label": "03 · 分诊 · 拟议",
+      "detail": "[step-review] 照护者\n检查摘要并补充缺失信息\n结果：信息完整或明确需要人工帮助",
+      "kind": "panel",
+      "tone": "amber",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "03 · 分诊 · 拟议",
+          20,
+          true,
+          "ink"
+        ],
+        [
+          "[step-review] 照护者",
+          15,
+          false,
+          "muted"
+        ],
+        [
+          "检查摘要并补充缺失信息",
+          15,
+          false,
+          "muted"
+        ],
+        [
+          "结果：信息完整或明确",
+          15,
+          false,
+          "muted"
+        ],
+        [
+          "需要人工帮助",
+          15,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "step-match",
+      "x": 892,
+      "y": 430,
+      "w": 250,
+      "h": 158,
+      "label": "04 · 匹配",
+      "detail": "[step-match] 服务入口\n展示符合条件的服务选项与限制\n结果：选择一个可行选项",
+      "kind": "panel",
+      "tone": "teal",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "04 · 匹配",
+          20,
+          true,
+          "ink"
+        ],
+        [
+          "[step-match] 服务入口",
+          15,
+          false,
+          "muted"
+        ],
+        [
+          "展示符合条件的服务选项与限制",
+          15,
+          false,
+          "muted"
+        ],
+        [
+          "结果：选择一个可行选项",
+          15,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "step-confirm",
+      "x": 1168,
+      "y": 430,
+      "w": 250,
+      "h": 158,
+      "label": "05 · 确认",
+      "detail": "[step-confirm] 照护者\n确认时间、联系人和隐私提示\n结果：提交预约请求",
+      "kind": "panel",
+      "tone": "teal",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "05 · 确认",
+          20,
+          true,
+          "ink"
+        ],
+        [
+          "[step-confirm] 照护者",
+          15,
+          false,
+          "muted"
+        ],
+        [
+          "确认时间、联系人和隐私提示",
+          15,
+          false,
+          "muted"
+        ],
+        [
+          "结果：提交预约请求",
+          15,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "step-submit",
+      "x": 1444,
+      "y": 430,
+      "w": 250,
+      "h": 158,
+      "label": "06 · 确认",
+      "detail": "[step-submit] 服务入口\n提交预约并显示处理状态\n结果：等待服务方确认",
+      "kind": "panel",
+      "tone": "teal",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "06 · 确认",
+          20,
+          true,
+          "ink"
+        ],
+        [
+          "[step-submit] 服务入口",
+          15,
+          false,
+          "muted"
+        ],
+        [
+          "提交预约并显示处理状态",
+          15,
+          false,
+          "muted"
+        ],
+        [
+          "结果：等待服务方确认",
+          15,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "step-followup",
+      "x": 1720,
+      "y": 430,
+      "w": 250,
+      "h": 158,
+      "label": "07 · 跟进",
+      "detail": "[step-followup] 服务入口\n提供确认编号、变更入口和人工联系方式\n结果：照护者知道下一步",
+      "kind": "panel",
+      "tone": "teal",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "07 · 跟进",
+          20,
+          true,
+          "ink"
+        ],
+        [
+          "[step-followup] 服务入口",
+          15,
+          false,
+          "muted"
+        ],
+        [
+          "提供确认编号、变更入口和",
+          15,
+          false,
+          "muted"
+        ],
+        [
+          "人工联系方式",
+          15,
+          false,
+          "muted"
+        ],
+        [
+          "结果：照护者知道下一步",
+          15,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "_v18",
+      "x": 64,
+      "y": 665,
+      "w": 300,
+      "h": 50,
+      "label": "分支与异常 / Branches & exceptions",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 16,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "branch-complete",
+      "x": 64,
+      "y": 693,
+      "w": 310,
+      "h": 112,
+      "label": "[branch-complete] 分支 / Branch",
+      "detail": "资料已完整 · 条件：必要字段都有值",
+      "kind": "panel",
+      "tone": "amber",
+      "check": false,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[branch-complete] 分支 /",
+          20,
+          true,
+          "ink"
+        ],
+        [
+          "Branch",
+          20,
+          true,
+          "ink"
+        ],
+        [
+          "资料已完整 · 条件：必要字段都有值",
+          15,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "branch-assisted",
+      "x": 394,
+      "y": 693,
+      "w": 310,
+      "h": 130,
+      "label": "[branch-assisted] 分支 / Branch · 拟议",
+      "detail": "需要人工帮助 · 条件：照护者无法独立完成",
+      "kind": "panel",
+      "tone": "amber",
+      "check": false,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[branch-assisted] 分支 /",
+          20,
+          true,
+          "ink"
+        ],
+        [
+          "Branch · 拟议",
+          20,
+          true,
+          "ink"
+        ],
+        [
+          "需要人工帮助 · 条件：照",
+          15,
+          false,
+          "muted"
+        ],
+        [
+          "护者无法独立完成",
+          15,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "exception-no-slot",
+      "x": 724,
+      "y": 693,
+      "w": 310,
+      "h": 130,
+      "label": "[exception-no-slot] 异常 / Exception · 拟议",
+      "detail": "没有可用时段 · 条件：当前服务选项全部冲突 · 恢复：重新选择时间或转人工",
+      "kind": "panel",
+      "tone": "red",
+      "check": false,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[exception-no-slot] 异常 /",
+          20,
+          true,
+          "ink"
+        ],
+        [
+          "Exception · 拟议",
+          20,
+          true,
+          "ink"
+        ],
+        [
+          "没有可用时段 · 条件：当前服务选项全",
+          15,
+          false,
+          "muted"
+        ],
+        [
+          "部冲突 · 恢复：重新选择时间或转人工",
+          15,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "exception-submit-failed",
+      "x": 1054,
+      "y": 693,
+      "w": 310,
+      "h": 130,
+      "label": "[exception-submit-failed] 异常 / Exception",
+      "detail": "提交失败 · 条件：网络或服务端返回错误 · 恢复：保留已填内容并重试",
+      "kind": "panel",
+      "tone": "red",
+      "check": false,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[exception-submit-failed]",
+          20,
+          true,
+          "ink"
+        ],
+        [
+          "异常 / Exception",
+          20,
+          true,
+          "ink"
+        ],
+        [
+          "提交失败 · 条件：网络或服务端返回错",
+          15,
+          false,
+          "muted"
+        ],
+        [
+          "误 · 恢复：保留已填内容并重试",
+          15,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "_v23",
+      "x": 64,
+      "y": 851,
+      "w": 1906,
+      "h": 44,
+      "label": "虚线与“拟议”只表示待验证路径；状态、分支和异常均来自输入，不从相邻位置推断。",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 15,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v24",
+      "x": 64,
+      "y": 34,
+      "w": 1906,
+      "h": 22,
+      "label": "37 / HIGH-FREQUENCY FORMS",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v25",
+      "x": 64,
+      "y": 69,
+      "w": 1906,
+      "h": 56,
+      "label": "社区照护预约 · 用户路径故事板",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 36,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v26",
+      "x": 64,
+      "y": 130,
+      "w": 1906,
+      "h": 38,
+      "label": "把前置条件、可见状态、主路径、分支与异常放在同一条可审查路径上",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v27",
+      "x": 64,
+      "y": 932,
+      "w": 1906,
+      "h": 1,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "line",
+      "stroke": "none",
+      "check": false
+    },
+    {
+      "id": "_v28",
+      "x": 64,
+      "y": 945,
+      "w": 1906,
+      "h": 36,
+      "label": "跨行业模拟输入 · 分支与异常的拟议项仍需真实观察验证",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "step-open",
+      "target": "step-triage",
+      "label": "下一步",
+      "points": [
+        [
+          314,
+          509.0
+        ],
+        [
+          327.0,
+          509.0
+        ],
+        [
+          340,
+          509.0
+        ]
+      ],
+      "source_port": "right",
+      "target_port": "left",
+      "tone": "accent",
+      "width": 1.7
+    },
+    {
+      "source": "step-triage",
+      "target": "step-review",
+      "label": "下一步",
+      "points": [
+        [
+          590,
+          509.0
+        ],
+        [
+          603.0,
+          509.0
+        ],
+        [
+          616,
+          509.0
+        ]
+      ],
+      "source_port": "right",
+      "target_port": "left",
+      "tone": "accent",
+      "width": 1.7
+    },
+    {
+      "source": "step-review",
+      "target": "step-match",
+      "label": "下一步",
+      "points": [
+        [
+          866,
+          509.0
+        ],
+        [
+          879.0,
+          509.0
+        ],
+        [
+          892,
+          509.0
+        ]
+      ],
+      "source_port": "right",
+      "target_port": "left",
+      "tone": "accent",
+      "width": 1.7
+    },
+    {
+      "source": "step-match",
+      "target": "step-confirm",
+      "label": "下一步",
+      "points": [
+        [
+          1142,
+          509.0
+        ],
+        [
+          1155.0,
+          509.0
+        ],
+        [
+          1168,
+          509.0
+        ]
+      ],
+      "source_port": "right",
+      "target_port": "left",
+      "tone": "accent",
+      "width": 1.7
+    },
+    {
+      "source": "step-confirm",
+      "target": "step-submit",
+      "label": "下一步",
+      "points": [
+        [
+          1418,
+          509.0
+        ],
+        [
+          1431.0,
+          509.0
+        ],
+        [
+          1444,
+          509.0
+        ]
+      ],
+      "source_port": "right",
+      "target_port": "left",
+      "tone": "accent",
+      "width": 1.7
+    },
+    {
+      "source": "step-submit",
+      "target": "step-followup",
+      "label": "下一步",
+      "points": [
+        [
+          1694,
+          509.0
+        ],
+        [
+          1707.0,
+          509.0
+        ],
+        [
+          1720,
+          509.0
+        ]
+      ],
+      "source_port": "right",
+      "target_port": "left",
+      "tone": "accent",
+      "width": 1.7
+    },
+    {
+      "source": "step-review",
+      "target": "step-match",
+      "label": "分支 / Branch",
+      "points": [
+        [
+          741.0,
+          588
+        ],
+        [
+          741.0,
+          684
+        ],
+        [
+          219.0,
+          684
+        ],
+        [
+          219.0,
+          821
+        ],
+        [
+          1017.0,
+          821
+        ],
+        [
+          1017.0,
+          588
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "label_at": [
+        753.0,
+        665
+      ],
+      "tone": "amber",
+      "dashed": false,
+      "width": 1.4
+    },
+    {
+      "source": "step-review",
+      "target": "step-open",
+      "label": "分支 / Branch",
+      "points": [
+        [
+          741.0,
+          588
+        ],
+        [
+          741.0,
+          684
+        ],
+        [
+          549.0,
+          684
+        ],
+        [
+          549.0,
+          839
+        ],
+        [
+          189.0,
+          839
+        ],
+        [
+          189.0,
+          588
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "label_at": [
+        753.0,
+        665
+      ],
+      "tone": "amber",
+      "dashed": true,
+      "width": 1.4
+    },
+    {
+      "source": "step-match",
+      "target": "step-review",
+      "label": "异常 / Exception",
+      "points": [
+        [
+          1017.0,
+          588
+        ],
+        [
+          1017.0,
+          684
+        ],
+        [
+          879.0,
+          684
+        ],
+        [
+          879.0,
+          839
+        ],
+        [
+          741.0,
+          839
+        ],
+        [
+          741.0,
+          588
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "label_at": [
+        1029.0,
+        665
+      ],
+      "tone": "red",
+      "dashed": true,
+      "width": 1.4
+    },
+    {
+      "source": "step-submit",
+      "target": "step-confirm",
+      "label": "异常 / Exception",
+      "points": [
+        [
+          1569.0,
+          588
+        ],
+        [
+          1569.0,
+          684
+        ],
+        [
+          1209.0,
+          684
+        ],
+        [
+          1209.0,
+          839
+        ],
+        [
+          1293.0,
+          839
+        ],
+        [
+          1293.0,
+          588
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "label_at": [
+        1581.0,
+        665
+      ],
+      "tone": "red",
+      "dashed": false,
+      "width": 1.4
+    }
+  ],
+  "meta": {
+    "user_path_storyboard": {
+      "preconditions": [
+        "pre-consent",
+        "pre-language"
+      ],
+      "states": [
+        "state-confirm",
+        "state-entry",
+        "state-followup",
+        "state-match",
+        "state-triage"
+      ],
+      "steps": [
+        "step-open",
+        "step-triage",
+        "step-review",
+        "step-match",
+        "step-confirm",
+        "step-submit",
+        "step-followup"
+      ],
+      "branches": [
+        "branch-complete",
+        "branch-assisted"
+      ],
+      "exceptions": [
+        "exception-no-slot",
+        "exception-submit-failed"
+      ],
+      "stable_ids": [
+        "branch-assisted",
+        "branch-complete",
+        "exception-no-slot",
+        "exception-submit-failed",
+        "pre-consent",
+        "pre-language",
+        "state-confirm",
+        "state-entry",
+        "state-followup",
+        "state-match",
+        "state-triage",
+        "step-confirm",
+        "step-followup",
+        "step-match",
+        "step-open",
+        "step-review",
+        "step-submit",
+        "step-triage"
+      ],
+      "proposal_count": 3
+    }
+  },
+  "assumptions": [
+    "原创跨行业演示内容；不是实际医疗流程或服务承诺"
+  ]
+}

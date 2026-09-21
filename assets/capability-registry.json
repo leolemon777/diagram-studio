@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "version": "v71",
+  "version": "v72",
   "updated": "2026-09-21",
   "purpose": "Single source for chooser labels, backend capability, delivery formats and acceptance evidence.",
   "status_vocabulary": {
@@ -379,6 +379,20 @@
           "examples": ["assets/examples/33-business-model-canvas-cn.json", "assets/examples/33-business-model-canvas-en.json"],
           "evidence": {"level": "manual_visual_review", "reference": "assets/v52-strategy-forms-evidence.json", "detail": {"zh": "中英跨行业画布通过九格位置、条目/详情保留、英文长文换行与浏览器查看。", "en": "Chinese and English cross-industry canvases pass nine-block placement, entry/detail retention, English wrapping and browser review."}},
           "scope": {"zh": "整理待验证的商业假说，不计算市场规模、定价、收入预测或战略优先级。", "en": "Organises business hypotheses to validate; it does not calculate market size, pricing, revenue forecasts or strategic priority."}
+        },
+        {
+          "id": "lean-canvas",
+          "label": {"zh": "精益画布", "en": "Lean canvas"},
+          "why": {"zh": "围绕问题、客户、价值、方案和验证指标组织早期假说，适合快速试验和迭代", "en": "Organise early hypotheses around problems, customers, value, solution and validation metrics for rapid experiments"},
+          "minimum_input": {"zh": "九个精益问题、每条内容的稳定 ID、证据和状态", "en": "Nine Lean questions, stable entry IDs, evidence and status for every entry"},
+          "input_model": {"kind": "brief", "type": "lean-canvas", "required": ["items"]},
+          "backend": {"kind": "shared-renderer-extra", "module": "scripts/layouts.py", "entry": "lean-canvas"},
+          "formats": ["svg", "drawio", "scene.json", "qa.json", "html"],
+          "layout_limits": {"zh": "九个区域采用不等宽、不等高和底部横向区；长内容拆验证页，状态与证据不能省略。", "en": "Use unequal regions and a bottom strip; split long content into validation pages and never drop status or evidence."},
+          "languages": ["zh", "en"],
+          "examples": ["assets/examples/38-lean-canvas-cn.json", "assets/examples/38-lean-canvas-en.json"],
+          "evidence": {"level": "generated_with_semantic_validation", "reference": "assets/v72-high-frequency-evidence.json", "detail": {"zh": "中英精益画布通过九个固定问题、稳定条目 ID、证据/状态必填、长英文测量和 draw.io 节点检查；与商业模式画布保持不同布局和问题。", "en": "Chinese and English Lean canvases pass nine fixed questions, stable entry IDs, required evidence/status, long-English measurement and draw.io node checks; the layout and questions remain distinct from the business-model canvas."}},
+          "scope": {"zh": "整理待验证的早期产品假说；不计算市场规模、收入预测、优先级权重或自动证明产品市场匹配。", "en": "Organises early product hypotheses to validate; it does not calculate market size, revenue forecasts, priority weights or product-market fit."}
         }
       ]
     },
@@ -456,6 +470,20 @@
           "examples": ["assets/storymap-examples/education-storymap.json", "assets/storymap-examples/education-storymap-en.json"],
           "evidence": {"level": "manual_visual_review", "reference": "assets/v43-storymap-evidence.json", "detail": {"zh": "40 项回归、浏览器文字检查和 draw.io 编辑保存重开通过。", "en": "Forty regressions, browser text checks and draw.io edit/save/reopen passed."}},
           "scope": {"zh": "表达活动与交付范围，不计算日期、依赖或投票。", "en": "Expresses activities and release scope; it does not calculate dates, dependencies or votes."}
+        },
+        {
+          "id": "user-path-storyboard",
+          "label": {"zh": "用户路径故事板", "en": "User-path storyboard"},
+          "why": {"zh": "把前置条件、可见状态、主路径、分支和异常放在同一条可审查用户路径上", "en": "Keep preconditions, visible states, the main path, branches and exceptions reviewable in one user path"},
+          "minimum_input": {"zh": "前置条件、状态、连续步骤、下一步、分支、异常及拟议标记", "en": "Preconditions, states, ordered steps, next steps, branches, exceptions and proposal flags"},
+          "input_model": {"kind": "brief", "type": "user-path-storyboard", "required": ["preconditions", "states", "steps"]},
+          "backend": {"kind": "dedicated-renderer", "module": "scripts/user_path_storyboard.py", "entry": "user-path-storyboard"},
+          "formats": ["svg", "drawio", "scene.json", "brief.json", "qa.json", "html"],
+          "layout_limits": {"zh": "主路径横向展开；回流、分支和异常走独立路径轨；长内容扩卡，不把拟议路径当成事实。", "en": "The main path runs horizontally; returns, branches and exceptions use separate tracks; long copy grows cards and proposed paths stay marked."},
+          "languages": ["zh", "en"],
+          "examples": ["assets/examples/37-user-path-storyboard-cn.json", "assets/examples/37-user-path-storyboard-en.json"],
+          "evidence": {"level": "generated_with_semantic_validation", "reference": "assets/v72-high-frequency-evidence.json", "detail": {"zh": "中英故事板通过状态和步骤引用、连续编号、下一步完整性、分支/异常端点、拟议标记、长文本测量和 draw.io 节点检查。", "en": "Chinese and English storyboards pass state/step references, contiguous numbering, complete next-step coverage, branch/exception endpoints, proposal flags, long-copy measurement and draw.io node checks."}},
+          "scope": {"zh": "用于路径审查和低保真方案讨论；不等于可执行流程引擎、真实服务承诺或领域审批。", "en": "For path review and low-fidelity proposal discussion; it is not an executable workflow engine, service promise or domain approval."}
         }
       ]
     }
@@ -469,6 +497,8 @@
     "story-map": "storymap",
     "priority-matrix": "quadrant",
     "swot-analysis": "swot",
-    "kanban-swimlane": "kanban"
+    "kanban-swimlane": "kanban",
+    "lean": "lean-canvas",
+    "user-path": "user-path-storyboard"
   }
 }

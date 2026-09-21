@@ -13,6 +13,8 @@ Use this pack to start with six common industry questions. Every case uses simul
 | HR/administration: handoffs and prioritisation | Ownership swimlane → SWOT/Kanban | [swimlane demo](../demos/swimlane/index.html), [analysis forms](../demos/analysis-forms/index.html) | Add one handoff and confirm role, direction, and exception loop remain explicit |
 | Travel/store service: on-site experience and backstage fulfilment | Journey evidence → service blueprint | [experience-map demo](../demos/experience-maps/index.html), [story-map demo](../demos/storymap/index.html) | Change one touchpoint to “reschedule request”; confirm evidence, opportunity, and action remain traceable |
 
+Two additional high-frequency entries are available: [Lean Canvas](../demos/lean-canvas/index.html) keeps problems, solutions, metrics, and evidence on one validation board; [user-path storyboard](../demos/user-path-storyboard/index.html) reviews preconditions, visible states, next steps, branches, and exceptions. Both provide bilingual JSON, SVG, draw.io, and QA, and neither turns a proposal into a fact automatically.
+
 ## Minimum workflow
 
 1. Open an entry and read the question it answers and its scope note.

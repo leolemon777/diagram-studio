@@ -13,6 +13,8 @@
 | 人事与行政：责任交接和优先级 | 责任泳道 → SWOT/看板 | [泳道演示](../demos/swimlane/index.html)、[分析表单](../demos/analysis-forms/index.html) | 增加一条责任交接，确认角色、方向和异常回路完整 |
 | 文旅与门店：到店体验和后台履约 | 旅程证据链 → 服务蓝图 | [体验图演示](../demos/experience-maps/index.html)、[故事地图](../demos/storymap/index.html) | 把一个触点改为“改期请求”，确认证据、机会和行动仍能追溯 |
 
+新增两种高频试用入口：[精益画布](../demos/lean-canvas/index.html)适合把问题、方案、指标和证据放在同一张验证板上；[用户路径故事板](../demos/user-path-storyboard/index.html)适合审查前置条件、可见状态、下一步、分支和异常。两者都提供中英文 JSON、SVG、draw.io 和 QA，且不把拟议内容自动当成事实。
+
 ## 最小流程
 
 1. 打开入口，先读“它回答什么问题”和边界说明。

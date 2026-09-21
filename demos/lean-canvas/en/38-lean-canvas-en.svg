@@ -1,0 +1,217 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1085" viewBox="0 0 1600 1085" role="img" aria-labelledby="diagram-title diagram-desc">
+<title id="diagram-title">Community care booking · lean canvas</title>
+<desc id="diagram-desc">Nine questions follow a validation order and keep an evidence status on every entry</desc>
+<rect width="100%" height="100%" fill="#F1EFEB"/>
+<defs>
+<marker id="arrow-accent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#AC6046"/></marker>
+<marker id="arrow-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#67685E"/></marker>
+<marker id="arrow-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#8C7964"/></marker>
+<marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#554C46"/></marker>
+<marker id="arrow-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#6D6A63"/></marker>
+<marker id="arrow-line" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#D8D3C8"/></marker>
+<marker id="arrow-ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#30302D"/></marker>
+</defs>
+<g font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, Arial, sans-serif">
+<g id="problem" data-kind="panel" data-content-text="false" data-box="64.0,204,283.2,552">
+<rect x="64.0" y="204" width="283.2" height="552" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="customer-segments" data-kind="panel" data-content-text="false" data-box="1252.8,204,283.2,552">
+<rect x="1252.8" y="204" width="283.2" height="552" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="unique-value-proposition" data-kind="panel" data-content-text="false" data-box="658.4,204,580.4,250">
+<rect x="658.4" y="204" width="580.4" height="250" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="solution" data-kind="panel" data-content-text="false" data-box="361.2,204,283.2,250">
+<rect x="361.2" y="204" width="283.2" height="250" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="channels" data-kind="panel" data-content-text="false" data-box="361.2,468,283.2,288">
+<rect x="361.2" y="468" width="283.2" height="288" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="revenue-streams" data-kind="panel" data-content-text="false" data-box="658.4,770,877.5999999999999,205">
+<rect x="658.4" y="770" width="877.5999999999999" height="205" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="cost-structure" data-kind="panel" data-content-text="false" data-box="64.0,770,580.4,205">
+<rect x="64.0" y="770" width="580.4" height="205" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="key-metrics" data-kind="panel" data-content-text="false" data-box="658.4,468,283.2,288">
+<rect x="658.4" y="468" width="283.2" height="288" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="unfair-advantage" data-kind="panel" data-content-text="false" data-box="955.5999999999999,468,283.2,288">
+<rect x="955.5999999999999" y="468" width="283.2" height="288" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+</g>
+<g id="_v2" data-kind="text" data-content-text="false" data-box="82.0,220,247.2,32.35">
+
+<text x="82.0" y="243.0" text-anchor="start" font-size="21" font-weight="400" fill="#67685E">01 Problem</text>
+</g>
+<g id="problem-1" data-kind="text" data-content-text="false" data-box="82.0,264.35,247.2,45.2">
+
+<text x="82.0" y="281.35" text-anchor="start" font-size="16" font-weight="400" fill="#30302D">[problem-1] Caregivers do</text>
+<text x="82.0" y="302.95000000000005" text-anchor="start" font-size="16" font-weight="400" fill="#30302D">not know who to contact next</text>
+</g>
+<g id="_v4" data-kind="text" data-content-text="false" data-box="82.0,311.55,247.2,58.7">
+
+<text x="82.0" y="326.55" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">observed / 已观察 · Interview</text>
+<text x="82.0" y="345.45" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">excerpt: repeated questions</text>
+<text x="82.0" y="364.34999999999997" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">about entry</text>
+</g>
+<g id="problem-2" data-kind="text" data-content-text="false" data-box="82.0,380.25,247.2,66.80000000000001">
+
+<text x="82.0" y="397.25" text-anchor="start" font-size="16" font-weight="400" fill="#30302D">[problem-2] Service partners</text>
+<text x="82.0" y="418.85" text-anchor="start" font-size="16" font-weight="400" fill="#30302D">collect the same details</text>
+<text x="82.0" y="440.45000000000005" text-anchor="start" font-size="16" font-weight="400" fill="#30302D">repeatedly</text>
+</g>
+<g id="_v6" data-kind="text" data-content-text="false" data-box="82.0,449.05,247.2,58.7">
+
+<text x="82.0" y="464.05" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">hypothesis / 待验证假说 · Process</text>
+<text x="82.0" y="482.95" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">observation; sample needs</text>
+<text x="82.0" y="501.84999999999997" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">expanding</text>
+</g>
+<g id="_v8" data-kind="text" data-content-text="false" data-box="1270.8,220,247.2,32.35">
+
+<text x="1270.8" y="243.0" text-anchor="start" font-size="21" font-weight="400" fill="#8C7964">02 Customer segments</text>
+</g>
+<g id="segment-1" data-kind="text" data-content-text="false" data-box="1270.8,264.35,247.2,45.2">
+
+<text x="1270.8" y="281.35" text-anchor="start" font-size="16" font-weight="400" fill="#30302D">[segment-1] Family members</text>
+<text x="1270.8" y="302.95000000000005" text-anchor="start" font-size="16" font-weight="400" fill="#30302D">arranging care</text>
+</g>
+<g id="_v10" data-kind="text" data-content-text="false" data-box="1270.8,311.55,247.2,39.800000000000004">
+
+<text x="1270.8" y="326.55" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">observed / 已观察 · Current</text>
+<text x="1270.8" y="345.45" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">service brief</text>
+</g>
+<g id="segment-2" data-kind="text" data-content-text="false" data-box="1270.8,361.35,247.2,45.2">
+
+<text x="1270.8" y="378.35" text-anchor="start" font-size="16" font-weight="400" fill="#30302D">[segment-2] Community staff</text>
+<text x="1270.8" y="399.95000000000005" text-anchor="start" font-size="16" font-weight="400" fill="#30302D">making referrals</text>
+</g>
+<g id="_v12" data-kind="text" data-content-text="false" data-box="1270.8,408.55,247.2,39.800000000000004">
+
+<text x="1270.8" y="423.55" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">hypothesis / 待验证假说 ·</text>
+<text x="1270.8" y="442.45" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">Stakeholder list</text>
+</g>
+<g id="_v14" data-kind="text" data-content-text="false" data-box="676.4,220,544.4,32.35">
+
+<text x="676.4" y="243.0" text-anchor="start" font-size="21" font-weight="400" fill="#554C46">03 Unique value proposition</text>
+</g>
+<g id="uvp-1" data-kind="text" data-content-text="false" data-box="676.4,264.35,544.4,23.6">
+
+<text x="676.4" y="281.35" text-anchor="start" font-size="16" font-weight="400" fill="#30302D">[uvp-1] Give one clear next step at a time</text>
+</g>
+<g id="_v16" data-kind="text" data-content-text="false" data-box="676.4,289.95000000000005,544.4,20.900000000000002">
+
+<text x="676.4" y="304.95000000000005" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">hypothesis / 待验证假说 · To validate with task completion</text>
+</g>
+<g id="_v18" data-kind="text" data-content-text="false" data-box="379.2,220,247.2,32.35">
+
+<text x="379.2" y="243.0" text-anchor="start" font-size="21" font-weight="400" fill="#6D6A63">04 Solution</text>
+</g>
+<g id="solution-1" data-kind="text" data-content-text="false" data-box="379.2,264.35,247.2,66.80000000000001">
+
+<text x="379.2" y="281.35" text-anchor="start" font-size="16" font-weight="400" fill="#30302D">[solution-1] Request</text>
+<text x="379.2" y="302.95000000000005" text-anchor="start" font-size="16" font-weight="400" fill="#30302D">summary, service matching,</text>
+<text x="379.2" y="324.55000000000007" text-anchor="start" font-size="16" font-weight="400" fill="#30302D">and human fallback</text>
+</g>
+<g id="_v20" data-kind="text" data-content-text="false" data-box="379.2,333.15000000000003,247.2,39.800000000000004">
+
+<text x="379.2" y="348.15000000000003" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">proposed / 拟议方案 · User-path</text>
+<text x="379.2" y="367.05" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">storyboard v37</text>
+</g>
+<g id="_v22" data-kind="text" data-content-text="false" data-box="379.2,484,247.2,32.35">
+
+<text x="379.2" y="507.0" text-anchor="start" font-size="21" font-weight="400" fill="#AC6046">05 Channels</text>
+</g>
+<g id="channel-1" data-kind="text" data-content-text="false" data-box="379.2,528.35,247.2,45.2">
+
+<text x="379.2" y="545.35" text-anchor="start" font-size="16" font-weight="400" fill="#30302D">[channel-1] Mobile web and</text>
+<text x="379.2" y="566.95" text-anchor="start" font-size="16" font-weight="400" fill="#30302D">community service desk</text>
+</g>
+<g id="_v24" data-kind="text" data-content-text="false" data-box="379.2,575.5500000000001,247.2,39.800000000000004">
+
+<text x="379.2" y="590.5500000000001" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">hypothesis / 待验证假说 · Entry</text>
+<text x="379.2" y="609.45" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">inventory; reach is unverified</text>
+</g>
+<g id="_v26" data-kind="text" data-content-text="false" data-box="676.4,786,841.5999999999999,32.35">
+
+<text x="676.4" y="809.0" text-anchor="start" font-size="21" font-weight="400" fill="#67685E">06 Revenue streams</text>
+</g>
+<g id="revenue-1" data-kind="text" data-content-text="false" data-box="676.4,830.35,841.5999999999999,23.6">
+
+<text x="676.4" y="847.35" text-anchor="start" font-size="16" font-weight="400" fill="#30302D">[revenue-1] Partnership funding model to discuss</text>
+</g>
+<g id="_v28" data-kind="text" data-content-text="false" data-box="676.4,855.95,841.5999999999999,20.900000000000002">
+
+<text x="676.4" y="870.95" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">unknown / 未知 · No pricing data</text>
+</g>
+<g id="_v30" data-kind="text" data-content-text="false" data-box="82.0,786,544.4,32.35">
+
+<text x="82.0" y="809.0" text-anchor="start" font-size="21" font-weight="400" fill="#8C7964">07 Cost structure</text>
+</g>
+<g id="cost-1" data-kind="text" data-content-text="false" data-box="82.0,830.35,544.4,23.6">
+
+<text x="82.0" y="847.35" text-anchor="start" font-size="16" font-weight="400" fill="#30302D">[cost-1] Service operations, accessibility, and human transfer</text>
+</g>
+<g id="_v32" data-kind="text" data-content-text="false" data-box="82.0,855.95,544.4,20.900000000000002">
+
+<text x="82.0" y="870.95" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">hypothesis / 待验证假说 · Operations assumption list</text>
+</g>
+<g id="_v34" data-kind="text" data-content-text="false" data-box="676.4,484,247.2,32.35">
+
+<text x="676.4" y="507.0" text-anchor="start" font-size="21" font-weight="400" fill="#554C46">08 Key metrics</text>
+</g>
+<g id="metric-1" data-kind="text" data-content-text="false" data-box="676.4,528.35,247.2,66.80000000000001">
+
+<text x="676.4" y="545.35" text-anchor="start" font-size="16" font-weight="400" fill="#30302D">[metric-1] First-attempt</text>
+<text x="676.4" y="566.95" text-anchor="start" font-size="16" font-weight="400" fill="#30302D">completion and</text>
+<text x="676.4" y="588.5500000000001" text-anchor="start" font-size="16" font-weight="400" fill="#30302D">human-transfer rate</text>
+</g>
+<g id="_v36" data-kind="text" data-content-text="false" data-box="676.4,597.1500000000001,247.2,39.800000000000004">
+
+<text x="676.4" y="612.1500000000001" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">proposed / 拟议方案 · Event</text>
+<text x="676.4" y="631.0500000000001" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">tracking is still needed</text>
+</g>
+<g id="metric-2" data-kind="text" data-content-text="false" data-box="676.4,646.95,247.2,45.2">
+
+<text x="676.4" y="663.95" text-anchor="start" font-size="16" font-weight="400" fill="#30302D">[metric-2] Repeated-entry</text>
+<text x="676.4" y="685.5500000000001" text-anchor="start" font-size="16" font-weight="400" fill="#30302D">count</text>
+</g>
+<g id="_v38" data-kind="text" data-content-text="false" data-box="676.4,694.1500000000001,247.2,39.800000000000004">
+
+<text x="676.4" y="709.1500000000001" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">unknown / 未知 · No baseline is</text>
+<text x="676.4" y="728.0500000000001" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">available</text>
+</g>
+<g id="_v40" data-kind="text" data-content-text="false" data-box="973.5999999999999,484,247.2,32.35">
+
+<text x="973.5999999999999" y="507.0" text-anchor="start" font-size="21" font-weight="400" fill="#6D6A63">09 Unfair advantage</text>
+</g>
+<g id="advantage-1" data-kind="text" data-content-text="false" data-box="973.5999999999999,528.35,247.2,66.80000000000001">
+
+<text x="973.5999999999999" y="545.35" text-anchor="start" font-size="16" font-weight="400" fill="#30302D">[advantage-1] Local partner</text>
+<text x="973.5999999999999" y="566.95" text-anchor="start" font-size="16" font-weight="400" fill="#30302D">relationships and a real</text>
+<text x="973.5999999999999" y="588.5500000000001" text-anchor="start" font-size="16" font-weight="400" fill="#30302D">feedback loop</text>
+</g>
+<g id="_v42" data-kind="text" data-content-text="false" data-box="973.5999999999999,597.1500000000001,247.2,39.800000000000004">
+
+<text x="973.5999999999999" y="612.1500000000001" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">hypothesis / 待验证假说 · Partners</text>
+<text x="973.5999999999999" y="631.0500000000001" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">must confirm</text>
+</g>
+<g id="_v43" data-kind="text" data-content-text="false" data-box="64,34,1472,22">
+
+<text x="64" y="49.55" text-anchor="start" font-size="14" font-weight="400" fill="#AC6046">38 / HIGH-FREQUENCY FORMS</text>
+</g>
+<g id="_v44" data-kind="text" data-content-text="false" data-box="64,69,1472,56">
+
+<text x="64" y="108.7" text-anchor="start" font-size="36" font-weight="400" fill="#30302D">Community care booking · lean canvas</text>
+</g>
+<g id="_v45" data-kind="text" data-content-text="false" data-box="64,130,1472,38">
+
+<text x="64" y="154.525" text-anchor="start" font-size="17" font-weight="400" fill="#6D6A63">Nine questions follow a validation order and keep an evidence status on every entry</text>
+</g>
+<g id="_v46" data-kind="rect" data-content-text="false" data-box="64,1022,1472,1">
+<rect x="64" y="1022" width="1472" height="1" rx="0" fill="#D8D3C8" stroke="none" stroke-width="1.5"/>
+</g>
+<g id="_v47" data-kind="text" data-content-text="false" data-box="64,1035,1472,36">
+
+<text x="64" y="1057.55" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">Cross-industry simulated input · A validation worksheet, not market size, pricing, or revenue forecasting</text>
+</g>
+</g></svg>

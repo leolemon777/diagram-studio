@@ -1,0 +1,197 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2034" height="995" viewBox="0 0 2034 995" role="img" aria-labelledby="diagram-title diagram-desc">
+<title id="diagram-title">社区照护预约 · 用户路径故事板</title>
+<desc id="diagram-desc">把前置条件、可见状态、主路径、分支与异常放在同一条可审查路径上</desc>
+<rect width="100%" height="100%" fill="#F1EFEB"/>
+<defs>
+<marker id="arrow-accent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#AC6046"/></marker>
+<marker id="arrow-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#67685E"/></marker>
+<marker id="arrow-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#8C7964"/></marker>
+<marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#554C46"/></marker>
+<marker id="arrow-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#6D6A63"/></marker>
+<marker id="arrow-line" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#D8D3C8"/></marker>
+<marker id="arrow-ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#30302D"/></marker>
+</defs>
+<g font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, Arial, sans-serif">
+<g id="pre-language" data-kind="panel" data-content-text="false" data-box="64.0,232,946.0,68">
+<rect x="64.0" y="232" width="946.0" height="68" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="88.0" y="261" text-anchor="start" font-size="20" font-weight="600" fill="#30302D">[pre-language] 选择语言</text>
+<text x="88.0" y="283.0" text-anchor="start" font-size="15" font-weight="400" fill="#6D6A63">已观察</text>
+</g>
+<g id="pre-consent" data-kind="panel" data-content-text="false" data-box="1024.0,232,946.0,68">
+<rect x="1024.0" y="232" width="946.0" height="68" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="1048.0" y="261" text-anchor="start" font-size="20" font-weight="600" fill="#30302D">[pre-consent] 同意记录必要信息</text>
+<text x="1048.0" y="283.0" text-anchor="start" font-size="15" font-weight="400" fill="#6D6A63">待确认</text>
+</g>
+<g id="state-entry" data-kind="panel" data-content-text="false" data-box="64.0,316,371.6,72">
+<rect x="64.0" y="316" width="371.6" height="72" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="88.0" y="345" text-anchor="start" font-size="20" font-weight="600" fill="#30302D">[state-entry] 进入</text>
+<text x="88.0" y="367.0" text-anchor="start" font-size="15" font-weight="400" fill="#6D6A63">知道要解决的问题</text>
+</g>
+<g id="state-triage" data-kind="panel" data-content-text="false" data-box="447.6,316,371.6,72">
+<rect x="447.6" y="316" width="371.6" height="72" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="471.6" y="345" text-anchor="start" font-size="20" font-weight="600" fill="#30302D">[state-triage] 分诊</text>
+<text x="471.6" y="367.0" text-anchor="start" font-size="15" font-weight="400" fill="#6D6A63">问题被分类并补齐关键资料</text>
+</g>
+<g id="state-match" data-kind="panel" data-content-text="false" data-box="831.2,316,371.6,72">
+<rect x="831.2" y="316" width="371.6" height="72" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="855.2" y="345" text-anchor="start" font-size="20" font-weight="600" fill="#30302D">[state-match] 匹配</text>
+<text x="855.2" y="367.0" text-anchor="start" font-size="15" font-weight="400" fill="#6D6A63">看见可选服务与限制</text>
+</g>
+<g id="state-confirm" data-kind="panel" data-content-text="false" data-box="1214.8000000000002,316,371.6,72">
+<rect x="1214.8000000000002" y="316" width="371.6" height="72" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="1238.8000000000002" y="345" text-anchor="start" font-size="20" font-weight="600" fill="#30302D">[state-confirm] 确认</text>
+<text x="1238.8000000000002" y="367.0" text-anchor="start" font-size="15" font-weight="400" fill="#6D6A63">预约信息被再次核对</text>
+</g>
+<g id="state-followup" data-kind="panel" data-content-text="false" data-box="1598.4,316,371.6,72">
+<rect x="1598.4" y="316" width="371.6" height="72" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="1622.4" y="345" text-anchor="start" font-size="20" font-weight="600" fill="#30302D">[state-followup] 跟进</text>
+<text x="1622.4" y="367.0" text-anchor="start" font-size="15" font-weight="400" fill="#6D6A63">获得确认与后续入口</text>
+</g>
+<g id="step-open" data-kind="panel" data-content-text="false" data-box="64,430,250,158">
+<rect x="64" y="430" width="250" height="158" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="88" y="459" text-anchor="start" font-size="20" font-weight="600" fill="#30302D">01 · 进入</text>
+<text x="88" y="481.0" text-anchor="start" font-size="15" font-weight="400" fill="#6D6A63">[step-open] 照护者</text>
+<text x="88" y="501.25" text-anchor="start" font-size="15" font-weight="400" fill="#6D6A63">打开服务入口并说明想安排照护</text>
+<text x="88" y="521.5" text-anchor="start" font-size="15" font-weight="400" fill="#6D6A63">结果：进入需求分诊</text>
+</g>
+<g id="step-triage" data-kind="panel" data-content-text="false" data-box="340,430,250,158">
+<rect x="340" y="430" width="250" height="158" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="364" y="459" text-anchor="start" font-size="20" font-weight="600" fill="#30302D">02 · 分诊</text>
+<text x="364" y="481.0" text-anchor="start" font-size="15" font-weight="400" fill="#6D6A63">[step-triage] 服务入口</text>
+<text x="364" y="501.25" text-anchor="start" font-size="15" font-weight="400" fill="#6D6A63">询问服务类型、地点和可用时间</text>
+<text x="364" y="521.5" text-anchor="start" font-size="15" font-weight="400" fill="#6D6A63">结果：形成最小需求摘要</text>
+</g>
+<g id="step-review" data-kind="panel" data-content-text="false" data-box="616,430,250,158">
+<rect x="616" y="430" width="250" height="158" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="640" y="459" text-anchor="start" font-size="20" font-weight="600" fill="#30302D">03 · 分诊 · 拟议</text>
+<text x="640" y="481.0" text-anchor="start" font-size="15" font-weight="400" fill="#6D6A63">[step-review] 照护者</text>
+<text x="640" y="501.25" text-anchor="start" font-size="15" font-weight="400" fill="#6D6A63">检查摘要并补充缺失信息</text>
+<text x="640" y="521.5" text-anchor="start" font-size="15" font-weight="400" fill="#6D6A63">结果：信息完整或明确</text>
+<text x="640" y="541.75" text-anchor="start" font-size="15" font-weight="400" fill="#6D6A63">需要人工帮助</text>
+</g>
+<g id="step-match" data-kind="panel" data-content-text="false" data-box="892,430,250,158">
+<rect x="892" y="430" width="250" height="158" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="916" y="459" text-anchor="start" font-size="20" font-weight="600" fill="#30302D">04 · 匹配</text>
+<text x="916" y="481.0" text-anchor="start" font-size="15" font-weight="400" fill="#6D6A63">[step-match] 服务入口</text>
+<text x="916" y="501.25" text-anchor="start" font-size="15" font-weight="400" fill="#6D6A63">展示符合条件的服务选项与限制</text>
+<text x="916" y="521.5" text-anchor="start" font-size="15" font-weight="400" fill="#6D6A63">结果：选择一个可行选项</text>
+</g>
+<g id="step-confirm" data-kind="panel" data-content-text="false" data-box="1168,430,250,158">
+<rect x="1168" y="430" width="250" height="158" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="1192" y="459" text-anchor="start" font-size="20" font-weight="600" fill="#30302D">05 · 确认</text>
+<text x="1192" y="481.0" text-anchor="start" font-size="15" font-weight="400" fill="#6D6A63">[step-confirm] 照护者</text>
+<text x="1192" y="501.25" text-anchor="start" font-size="15" font-weight="400" fill="#6D6A63">确认时间、联系人和隐私提示</text>
+<text x="1192" y="521.5" text-anchor="start" font-size="15" font-weight="400" fill="#6D6A63">结果：提交预约请求</text>
+</g>
+<g id="step-submit" data-kind="panel" data-content-text="false" data-box="1444,430,250,158">
+<rect x="1444" y="430" width="250" height="158" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="1468" y="459" text-anchor="start" font-size="20" font-weight="600" fill="#30302D">06 · 确认</text>
+<text x="1468" y="481.0" text-anchor="start" font-size="15" font-weight="400" fill="#6D6A63">[step-submit] 服务入口</text>
+<text x="1468" y="501.25" text-anchor="start" font-size="15" font-weight="400" fill="#6D6A63">提交预约并显示处理状态</text>
+<text x="1468" y="521.5" text-anchor="start" font-size="15" font-weight="400" fill="#6D6A63">结果：等待服务方确认</text>
+</g>
+<g id="step-followup" data-kind="panel" data-content-text="false" data-box="1720,430,250,158">
+<rect x="1720" y="430" width="250" height="158" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="1744" y="459" text-anchor="start" font-size="20" font-weight="600" fill="#30302D">07 · 跟进</text>
+<text x="1744" y="481.0" text-anchor="start" font-size="15" font-weight="400" fill="#6D6A63">[step-followup] 服务入口</text>
+<text x="1744" y="501.25" text-anchor="start" font-size="15" font-weight="400" fill="#6D6A63">提供确认编号、变更入口和</text>
+<text x="1744" y="521.5" text-anchor="start" font-size="15" font-weight="400" fill="#6D6A63">人工联系方式</text>
+<text x="1744" y="541.75" text-anchor="start" font-size="15" font-weight="400" fill="#6D6A63">结果：照护者知道下一步</text>
+</g>
+<g id="branch-complete" data-kind="panel" data-content-text="false" data-box="64,693,310,112">
+<rect x="64" y="693" width="310" height="112" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="88" y="722" text-anchor="start" font-size="20" font-weight="600" fill="#30302D">[branch-complete] 分支 /</text>
+<text x="88" y="749.0" text-anchor="start" font-size="20" font-weight="600" fill="#30302D">Branch</text>
+<text x="88" y="771.0" text-anchor="start" font-size="15" font-weight="400" fill="#6D6A63">资料已完整 · 条件：必要字段都有值</text>
+</g>
+<g id="branch-assisted" data-kind="panel" data-content-text="false" data-box="394,693,310,130">
+<rect x="394" y="693" width="310" height="130" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="418" y="722" text-anchor="start" font-size="20" font-weight="600" fill="#30302D">[branch-assisted] 分支 /</text>
+<text x="418" y="749.0" text-anchor="start" font-size="20" font-weight="600" fill="#30302D">Branch · 拟议</text>
+<text x="418" y="771.0" text-anchor="start" font-size="15" font-weight="400" fill="#6D6A63">需要人工帮助 · 条件：照</text>
+<text x="418" y="791.25" text-anchor="start" font-size="15" font-weight="400" fill="#6D6A63">护者无法独立完成</text>
+</g>
+<g id="exception-no-slot" data-kind="panel" data-content-text="false" data-box="724,693,310,130">
+<rect x="724" y="693" width="310" height="130" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="748" y="722" text-anchor="start" font-size="20" font-weight="600" fill="#30302D">[exception-no-slot] 异常 /</text>
+<text x="748" y="749.0" text-anchor="start" font-size="20" font-weight="600" fill="#30302D">Exception · 拟议</text>
+<text x="748" y="771.0" text-anchor="start" font-size="15" font-weight="400" fill="#6D6A63">没有可用时段 · 条件：当前服务选项全</text>
+<text x="748" y="791.25" text-anchor="start" font-size="15" font-weight="400" fill="#6D6A63">部冲突 · 恢复：重新选择时间或转人工</text>
+</g>
+<g id="exception-submit-failed" data-kind="panel" data-content-text="false" data-box="1054,693,310,130">
+<rect x="1054" y="693" width="310" height="130" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="1078" y="722" text-anchor="start" font-size="20" font-weight="600" fill="#30302D">[exception-submit-failed]</text>
+<text x="1078" y="749.0" text-anchor="start" font-size="20" font-weight="600" fill="#30302D">异常 / Exception</text>
+<text x="1078" y="771.0" text-anchor="start" font-size="15" font-weight="400" fill="#6D6A63">提交失败 · 条件：网络或服务端返回错</text>
+<text x="1078" y="791.25" text-anchor="start" font-size="15" font-weight="400" fill="#6D6A63">误 · 恢复：保留已填内容并重试</text>
+</g>
+<path d="M314,509.0 L327.0,509.0 L340,509.0" fill="none" stroke="#AC6046" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#arrow-accent)"/>
+<path d="M590,509.0 L603.0,509.0 L616,509.0" fill="none" stroke="#AC6046" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#arrow-accent)"/>
+<path d="M866,509.0 L879.0,509.0 L892,509.0" fill="none" stroke="#AC6046" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#arrow-accent)"/>
+<path d="M1142,509.0 L1155.0,509.0 L1168,509.0" fill="none" stroke="#AC6046" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#arrow-accent)"/>
+<path d="M1418,509.0 L1431.0,509.0 L1444,509.0" fill="none" stroke="#AC6046" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#arrow-accent)"/>
+<path d="M1694,509.0 L1707.0,509.0 L1720,509.0" fill="none" stroke="#AC6046" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#arrow-accent)"/>
+<path d="M741.0,588 L741.0,684 L219.0,684 L219.0,821 L1017.0,821 L1017.0,588" fill="none" stroke="#8C7964" stroke-width="1.4" stroke-linejoin="round" marker-end="url(#arrow-amber)"/>
+<path d="M741.0,588 L741.0,684 L549.0,684 L549.0,839 L189.0,839 L189.0,588" fill="none" stroke="#8C7964" stroke-width="1.4" stroke-linejoin="round" stroke-dasharray="7 6" marker-end="url(#arrow-amber)"/>
+<path d="M1017.0,588 L1017.0,684 L879.0,684 L879.0,839 L741.0,839 L741.0,588" fill="none" stroke="#554C46" stroke-width="1.4" stroke-linejoin="round" stroke-dasharray="7 6" marker-end="url(#arrow-red)"/>
+<path d="M1569.0,588 L1569.0,684 L1209.0,684 L1209.0,839 L1293.0,839 L1293.0,588" fill="none" stroke="#554C46" stroke-width="1.4" stroke-linejoin="round" marker-end="url(#arrow-red)"/>
+<g id="_v1" data-kind="text" data-content-text="false" data-box="64,188,1906,32">
+
+<text x="64" y="209.85" text-anchor="start" font-size="18" font-weight="400" fill="#6D6A63">用户：需要安排照护服务的照护者  ·  目标：在一次会话内找到下一步并完成预约</text>
+</g>
+<g id="_v2" data-kind="text" data-content-text="false" data-box="64,207,260,50">
+
+<text x="64" y="237.2" text-anchor="start" font-size="16" font-weight="400" fill="#AC6046">前置条件 / Preconditions</text>
+</g>
+<g id="_v10" data-kind="text" data-content-text="false" data-box="64,400,280,52">
+
+<text x="64" y="431.2" text-anchor="start" font-size="16" font-weight="400" fill="#AC6046">主路径 / Main path</text>
+</g>
+<g id="_v18" data-kind="text" data-content-text="false" data-box="64,665,300,50">
+
+<text x="64" y="695.2" text-anchor="start" font-size="16" font-weight="400" fill="#AC6046">分支与异常 / Branches &amp; exceptions</text>
+</g>
+<g id="_v23" data-kind="text" data-content-text="false" data-box="64,851,1906,44">
+
+<text x="64" y="877.875" text-anchor="start" font-size="15" font-weight="400" fill="#6D6A63">虚线与“拟议”只表示待验证路径；状态、分支和异常均来自输入，不从相邻位置推断。</text>
+</g>
+<g id="_v24" data-kind="text" data-content-text="false" data-box="64,34,1906,22">
+
+<text x="64" y="49.55" text-anchor="start" font-size="14" font-weight="400" fill="#AC6046">37 / HIGH-FREQUENCY FORMS</text>
+</g>
+<g id="_v25" data-kind="text" data-content-text="false" data-box="64,69,1906,56">
+
+<text x="64" y="108.7" text-anchor="start" font-size="36" font-weight="400" fill="#30302D">社区照护预约 · 用户路径故事板</text>
+</g>
+<g id="_v26" data-kind="text" data-content-text="false" data-box="64,130,1906,38">
+
+<text x="64" y="154.525" text-anchor="start" font-size="17" font-weight="400" fill="#6D6A63">把前置条件、可见状态、主路径、分支与异常放在同一条可审查路径上</text>
+</g>
+<g id="_v27" data-kind="rect" data-content-text="false" data-box="64,932,1906,1">
+<rect x="64" y="932" width="1906" height="1" rx="0" fill="#D8D3C8" stroke="none" stroke-width="1.5"/>
+</g>
+<g id="_v28" data-kind="text" data-content-text="false" data-box="64,945,1906,36">
+
+<text x="64" y="967.55" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">跨行业模拟输入 · 分支与异常的拟议项仍需真实观察验证</text>
+</g>
+<rect x="290.0" y="479.0" width="61.0" height="25" rx="4" fill="#F1EFEB"/>
+<text x="320.5" y="496.0" font-size="15" text-anchor="middle" fill="#AC6046">下一步</text>
+<rect x="566.0" y="479.0" width="61.0" height="25" rx="4" fill="#F1EFEB"/>
+<text x="596.5" y="496.0" font-size="15" text-anchor="middle" fill="#AC6046">下一步</text>
+<rect x="842.0" y="479.0" width="61.0" height="25" rx="4" fill="#F1EFEB"/>
+<text x="872.5" y="496.0" font-size="15" text-anchor="middle" fill="#AC6046">下一步</text>
+<rect x="1118.0" y="479.0" width="61.0" height="25" rx="4" fill="#F1EFEB"/>
+<text x="1148.5" y="496.0" font-size="15" text-anchor="middle" fill="#AC6046">下一步</text>
+<rect x="1394.0" y="479.0" width="61.0" height="25" rx="4" fill="#F1EFEB"/>
+<text x="1424.5" y="496.0" font-size="15" text-anchor="middle" fill="#AC6046">下一步</text>
+<rect x="1670.0" y="479.0" width="61.0" height="25" rx="4" fill="#F1EFEB"/>
+<text x="1700.5" y="496.0" font-size="15" text-anchor="middle" fill="#AC6046">下一步</text>
+<rect x="695.575" y="648" width="114.85000000000001" height="25" rx="4" fill="#F1EFEB"/>
+<text x="753.0" y="665" font-size="15" text-anchor="middle" fill="#8C7964">分支 / Branch</text>
+<rect x="695.575" y="648" width="114.85000000000001" height="25" rx="4" fill="#F1EFEB"/>
+<text x="753.0" y="665" font-size="15" text-anchor="middle" fill="#8C7964">分支 / Branch</text>
+<rect x="958.75" y="648" width="140.5" height="25" rx="4" fill="#F1EFEB"/>
+<text x="1029.0" y="665" font-size="15" text-anchor="middle" fill="#554C46">异常 / Exception</text>
+<rect x="1510.75" y="648" width="140.5" height="25" rx="4" fill="#F1EFEB"/>
+<text x="1581.0" y="665" font-size="15" text-anchor="middle" fill="#554C46">异常 / Exception</text>
+</g></svg>

@@ -120,6 +120,54 @@ def expected_content(data):
             for key in ("label", "detail"):
                 if _text(item.get(key)):
                     texts.add(_text(item[key]))
+    elif kind == "lean-canvas":
+        for key in ("eyebrow", "title", "subtitle", "footer"):
+            if _text(data.get(key)):
+                texts.add(_text(data[key]))
+        for item in data.get("items", []):
+            if _text(item.get("id")):
+                ids.add(item["id"])
+            if _text(item.get("label")):
+                texts.add(_text(item["label"]))
+            for entry in item.get("entries", []):
+                if _text(entry.get("id")):
+                    ids.add(entry["id"])
+                for key in ("text", "evidence", "status"):
+                    if _text(entry.get(key)):
+                        texts.add(_text(entry[key]))
+    elif kind == "user-path-storyboard":
+        for key in ("persona", "goal", "eyebrow", "title", "subtitle", "footer"):
+            if _text(data.get(key)):
+                texts.add(_text(data[key]))
+        for row in data.get("preconditions", []):
+            if _text(row.get("id")):
+                ids.add(row["id"])
+            for key in ("text", "status"):
+                if _text(row.get(key)):
+                    texts.add(_text(row[key]))
+        for row in data.get("states", []):
+            if _text(row.get("id")):
+                ids.add(row["id"])
+            for key in ("label", "detail"):
+                if _text(row.get(key)):
+                    texts.add(_text(row[key]))
+        for row in data.get("steps", []):
+            if _text(row.get("id")):
+                ids.add(row["id"])
+            for key in ("actor", "action", "result"):
+                if _text(row.get(key)):
+                    texts.add(_text(row[key]))
+            if _text(row.get("next")):
+                relations.add((row["id"], row["next"]))
+        for kind_key in ("branches", "exceptions"):
+            for row in data.get(kind_key, []):
+                if _text(row.get("id")):
+                    ids.add(row["id"])
+                for key in ("label", "condition", "recovery"):
+                    if _text(row.get(key)):
+                        texts.add(_text(row[key]))
+                if row.get("from") and row.get("to"):
+                    relations.add((row["from"], row["to"]))
     elif kind == "storymap":
         for story in data.get("stories", []):
             if story.get("id"):

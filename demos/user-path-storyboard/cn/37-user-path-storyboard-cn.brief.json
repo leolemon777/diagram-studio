@@ -1,0 +1,164 @@
+{
+  "type": "user-path-storyboard",
+  "language": "zh",
+  "title": "社区照护预约 · 用户路径故事板",
+  "diagram_name": "用户路径故事板",
+  "family": "洞察与共创",
+  "subtitle": "把前置条件、可见状态、主路径、分支与异常放在同一条可审查路径上",
+  "eyebrow": "37 / HIGH-FREQUENCY FORMS",
+  "footer": "跨行业模拟输入 · 分支与异常的拟议项仍需真实观察验证",
+  "persona": "需要安排照护服务的照护者",
+  "goal": "在一次会话内找到下一步并完成预约",
+  "assumptions": [
+    "原创跨行业演示内容；不是实际医疗流程或服务承诺"
+  ],
+  "preconditions": [
+    {
+      "id": "pre-language",
+      "text": "选择语言",
+      "status": "已观察"
+    },
+    {
+      "id": "pre-consent",
+      "text": "同意记录必要信息",
+      "status": "待确认"
+    }
+  ],
+  "states": [
+    {
+      "id": "state-entry",
+      "label": "进入",
+      "detail": "知道要解决的问题"
+    },
+    {
+      "id": "state-triage",
+      "label": "分诊",
+      "detail": "问题被分类并补齐关键资料"
+    },
+    {
+      "id": "state-match",
+      "label": "匹配",
+      "detail": "看见可选服务与限制"
+    },
+    {
+      "id": "state-confirm",
+      "label": "确认",
+      "detail": "预约信息被再次核对"
+    },
+    {
+      "id": "state-followup",
+      "label": "跟进",
+      "detail": "获得确认与后续入口"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step-open",
+      "number": 1,
+      "state": "state-entry",
+      "actor": "照护者",
+      "action": "打开服务入口并说明想安排照护",
+      "result": "进入需求分诊",
+      "next": "step-triage",
+      "proposal": false
+    },
+    {
+      "id": "step-triage",
+      "number": 2,
+      "state": "state-triage",
+      "actor": "服务入口",
+      "action": "询问服务类型、地点和可用时间",
+      "result": "形成最小需求摘要",
+      "next": "step-review",
+      "proposal": false
+    },
+    {
+      "id": "step-review",
+      "number": 3,
+      "state": "state-triage",
+      "actor": "照护者",
+      "action": "检查摘要并补充缺失信息",
+      "result": "信息完整或明确需要人工帮助",
+      "next": "step-match",
+      "proposal": true
+    },
+    {
+      "id": "step-match",
+      "number": 4,
+      "state": "state-match",
+      "actor": "服务入口",
+      "action": "展示符合条件的服务选项与限制",
+      "result": "选择一个可行选项",
+      "next": "step-confirm",
+      "proposal": false
+    },
+    {
+      "id": "step-confirm",
+      "number": 5,
+      "state": "state-confirm",
+      "actor": "照护者",
+      "action": "确认时间、联系人和隐私提示",
+      "result": "提交预约请求",
+      "next": "step-submit",
+      "proposal": false
+    },
+    {
+      "id": "step-submit",
+      "number": 6,
+      "state": "state-confirm",
+      "actor": "服务入口",
+      "action": "提交预约并显示处理状态",
+      "result": "等待服务方确认",
+      "next": "step-followup",
+      "proposal": false
+    },
+    {
+      "id": "step-followup",
+      "number": 7,
+      "state": "state-followup",
+      "actor": "服务入口",
+      "action": "提供确认编号、变更入口和人工联系方式",
+      "result": "照护者知道下一步",
+      "next": null,
+      "proposal": false
+    }
+  ],
+  "branches": [
+    {
+      "id": "branch-complete",
+      "from": "step-review",
+      "to": "step-match",
+      "label": "资料已完整",
+      "condition": "必要字段都有值",
+      "proposal": false
+    },
+    {
+      "id": "branch-assisted",
+      "from": "step-review",
+      "to": "step-open",
+      "label": "需要人工帮助",
+      "condition": "照护者无法独立完成",
+      "proposal": true
+    }
+  ],
+  "exceptions": [
+    {
+      "id": "exception-no-slot",
+      "from": "step-match",
+      "to": "step-review",
+      "label": "没有可用时段",
+      "condition": "当前服务选项全部冲突",
+      "recovery": "重新选择时间或转人工",
+      "proposal": true
+    },
+    {
+      "id": "exception-submit-failed",
+      "from": "step-submit",
+      "to": "step-confirm",
+      "label": "提交失败",
+      "condition": "网络或服务端返回错误",
+      "recovery": "保留已填内容并重试",
+      "proposal": false
+    }
+  ]
+}

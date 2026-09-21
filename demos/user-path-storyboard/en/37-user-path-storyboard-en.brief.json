@@ -1,0 +1,164 @@
+{
+  "type": "user-path-storyboard",
+  "language": "en",
+  "title": "Community care booking · user-path storyboard",
+  "diagram_name": "User-path storyboard",
+  "family": "Insights & workshops",
+  "subtitle": "Keep preconditions, visible states, the main path, branches, and exceptions reviewable in one flow",
+  "eyebrow": "37 / HIGH-FREQUENCY FORMS",
+  "footer": "Cross-industry simulated input · proposed branches and exceptions still need observation",
+  "persona": "A caregiver arranging a care service",
+  "goal": "Find the next step and complete a booking in one session",
+  "assumptions": [
+    "Original cross-industry teaching content; it is not a medical workflow or service promise"
+  ],
+  "preconditions": [
+    {
+      "id": "pre-language",
+      "text": "Choose a language",
+      "status": "Observed"
+    },
+    {
+      "id": "pre-consent",
+      "text": "Consent to record required details",
+      "status": "To confirm"
+    }
+  ],
+  "states": [
+    {
+      "id": "state-entry",
+      "label": "Entry",
+      "detail": "The question is clear enough to start"
+    },
+    {
+      "id": "state-triage",
+      "label": "Triage",
+      "detail": "The request is classified and completed"
+    },
+    {
+      "id": "state-match",
+      "label": "Match",
+      "detail": "Available services and constraints are visible"
+    },
+    {
+      "id": "state-confirm",
+      "label": "Confirm",
+      "detail": "Booking details are checked again"
+    },
+    {
+      "id": "state-followup",
+      "label": "Follow-up",
+      "detail": "Confirmation and a next entry point are provided"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step-open",
+      "number": 1,
+      "state": "state-entry",
+      "actor": "Caregiver",
+      "action": "Open the service entry and describe the care need",
+      "result": "Enter request triage",
+      "next": "step-triage",
+      "proposal": false
+    },
+    {
+      "id": "step-triage",
+      "number": 2,
+      "state": "state-triage",
+      "actor": "Service entry",
+      "action": "Ask for service type, place, and available time",
+      "result": "Create a minimum request summary",
+      "next": "step-review",
+      "proposal": false
+    },
+    {
+      "id": "step-review",
+      "number": 3,
+      "state": "state-triage",
+      "actor": "Caregiver",
+      "action": "Review the summary and add missing information",
+      "result": "The request is complete or needs human help",
+      "next": "step-match",
+      "proposal": true
+    },
+    {
+      "id": "step-match",
+      "number": 4,
+      "state": "state-match",
+      "actor": "Service entry",
+      "action": "Show eligible services and their constraints",
+      "result": "Choose one workable option",
+      "next": "step-confirm",
+      "proposal": false
+    },
+    {
+      "id": "step-confirm",
+      "number": 5,
+      "state": "state-confirm",
+      "actor": "Caregiver",
+      "action": "Confirm time, contact, and privacy notice",
+      "result": "Submit the booking request",
+      "next": "step-submit",
+      "proposal": false
+    },
+    {
+      "id": "step-submit",
+      "number": 6,
+      "state": "state-confirm",
+      "actor": "Service entry",
+      "action": "Submit the request and show processing status",
+      "result": "Wait for provider confirmation",
+      "next": "step-followup",
+      "proposal": false
+    },
+    {
+      "id": "step-followup",
+      "number": 7,
+      "state": "state-followup",
+      "actor": "Service entry",
+      "action": "Provide confirmation code, change entry, and human contact",
+      "result": "The caregiver knows what happens next",
+      "next": null,
+      "proposal": false
+    }
+  ],
+  "branches": [
+    {
+      "id": "branch-complete",
+      "from": "step-review",
+      "to": "step-match",
+      "label": "Details complete",
+      "condition": "All required fields have values",
+      "proposal": false
+    },
+    {
+      "id": "branch-assisted",
+      "from": "step-review",
+      "to": "step-open",
+      "label": "Human help needed",
+      "condition": "The caregiver cannot complete the step alone",
+      "proposal": true
+    }
+  ],
+  "exceptions": [
+    {
+      "id": "exception-no-slot",
+      "from": "step-match",
+      "to": "step-review",
+      "label": "No slot available",
+      "condition": "Every current service option conflicts",
+      "recovery": "Choose another time or transfer to a person",
+      "proposal": true
+    },
+    {
+      "id": "exception-submit-failed",
+      "from": "step-submit",
+      "to": "step-confirm",
+      "label": "Submission failed",
+      "condition": "A network or service error is returned",
+      "recovery": "Keep entered details and retry",
+      "proposal": false
+    }
+  ]
+}

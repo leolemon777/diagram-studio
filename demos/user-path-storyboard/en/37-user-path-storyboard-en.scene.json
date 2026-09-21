@@ -1,0 +1,1260 @@
+{
+  "width": 2034,
+  "height": 1035,
+  "theme": "light",
+  "palette": {
+    "bg": "#F1EFEB",
+    "panel": "#FEFDF9",
+    "ink": "#30302D",
+    "muted": "#6D6A63",
+    "line": "#D8D3C8",
+    "accent": "#AC6046",
+    "teal": "#67685E",
+    "amber": "#8C7964",
+    "red": "#554C46",
+    "tint": "#F0E4DA",
+    "tint2": "#ECECE5"
+  },
+  "nodes": [
+    {
+      "id": "_v1",
+      "x": 64,
+      "y": 188,
+      "w": 1906,
+      "h": 32,
+      "label": "Persona: A caregiver arranging a care service  ·  Goal: Find the next step and complete a booking in one session",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 18,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v2",
+      "x": 64,
+      "y": 207,
+      "w": 260,
+      "h": 50,
+      "label": "Preconditions",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 16,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "pre-language",
+      "x": 64.0,
+      "y": 232,
+      "w": 946.0,
+      "h": 68,
+      "label": "[pre-language] Choose a language",
+      "detail": "Observed",
+      "kind": "panel",
+      "tone": "teal",
+      "check": false,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[pre-language] Choose a language",
+          20,
+          true,
+          "ink"
+        ],
+        [
+          "Observed",
+          15,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "pre-consent",
+      "x": 1024.0,
+      "y": 232,
+      "w": 946.0,
+      "h": 68,
+      "label": "[pre-consent] Consent to record required details",
+      "detail": "To confirm",
+      "kind": "panel",
+      "tone": "teal",
+      "check": false,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[pre-consent] Consent to record required details",
+          20,
+          true,
+          "ink"
+        ],
+        [
+          "To confirm",
+          15,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "state-entry",
+      "x": 64.0,
+      "y": 316,
+      "w": 371.6,
+      "h": 72,
+      "label": "[state-entry] Entry",
+      "detail": "The question is clear enough to start",
+      "kind": "panel",
+      "tone": "muted",
+      "check": false,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[state-entry] Entry",
+          20,
+          true,
+          "ink"
+        ],
+        [
+          "The question is clear enough to start",
+          15,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "state-triage",
+      "x": 447.6,
+      "y": 316,
+      "w": 371.6,
+      "h": 72,
+      "label": "[state-triage] Triage",
+      "detail": "The request is classified and completed",
+      "kind": "panel",
+      "tone": "muted",
+      "check": false,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[state-triage] Triage",
+          20,
+          true,
+          "ink"
+        ],
+        [
+          "The request is classified and completed",
+          15,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "state-match",
+      "x": 831.2,
+      "y": 316,
+      "w": 371.6,
+      "h": 72,
+      "label": "[state-match] Match",
+      "detail": "Available services and constraints are visible",
+      "kind": "panel",
+      "tone": "muted",
+      "check": false,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[state-match] Match",
+          20,
+          true,
+          "ink"
+        ],
+        [
+          "Available services and constraints are visible",
+          15,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "state-confirm",
+      "x": 1214.8000000000002,
+      "y": 316,
+      "w": 371.6,
+      "h": 72,
+      "label": "[state-confirm] Confirm",
+      "detail": "Booking details are checked again",
+      "kind": "panel",
+      "tone": "muted",
+      "check": false,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[state-confirm] Confirm",
+          20,
+          true,
+          "ink"
+        ],
+        [
+          "Booking details are checked again",
+          15,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "state-followup",
+      "x": 1598.4,
+      "y": 316,
+      "w": 371.6,
+      "h": 72,
+      "label": "[state-followup] Follow-up",
+      "detail": "Confirmation and a next entry point are provided",
+      "kind": "panel",
+      "tone": "muted",
+      "check": false,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[state-followup] Follow-up",
+          20,
+          true,
+          "ink"
+        ],
+        [
+          "Confirmation and a next entry point are",
+          15,
+          false,
+          "muted"
+        ],
+        [
+          "provided",
+          15,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "_v10",
+      "x": 64,
+      "y": 400,
+      "w": 280,
+      "h": 52,
+      "label": "Main path",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 16,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "step-open",
+      "x": 64,
+      "y": 430,
+      "w": 250,
+      "h": 198,
+      "label": "01 · Entry",
+      "detail": "[step-open] Caregiver\nOpen the service entry and describe the care need\nResult: Enter request triage",
+      "kind": "panel",
+      "tone": "accent",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "01 · Entry",
+          20,
+          true,
+          "ink"
+        ],
+        [
+          "[step-open] Caregiver",
+          15,
+          false,
+          "muted"
+        ],
+        [
+          "Open the service entry and",
+          15,
+          false,
+          "muted"
+        ],
+        [
+          "describe the care need",
+          15,
+          false,
+          "muted"
+        ],
+        [
+          "Result: Enter request triage",
+          15,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "step-triage",
+      "x": 340,
+      "y": 430,
+      "w": 250,
+      "h": 198,
+      "label": "02 · Triage",
+      "detail": "[step-triage] Service entry\nAsk for service type, place, and available time\nResult: Create a minimum request summary",
+      "kind": "panel",
+      "tone": "teal",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "02 · Triage",
+          20,
+          true,
+          "ink"
+        ],
+        [
+          "[step-triage] Service entry",
+          15,
+          false,
+          "muted"
+        ],
+        [
+          "Ask for service type, place,",
+          15,
+          false,
+          "muted"
+        ],
+        [
+          "and available time",
+          15,
+          false,
+          "muted"
+        ],
+        [
+          "Result: Create a minimum",
+          15,
+          false,
+          "muted"
+        ],
+        [
+          "request summary",
+          15,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "step-review",
+      "x": 616,
+      "y": 430,
+      "w": 250,
+      "h": 198,
+      "label": "03 · Triage · Proposed",
+      "detail": "[step-review] Caregiver\nReview the summary and add missing information\nResult: The request is complete or needs human help",
+      "kind": "panel",
+      "tone": "amber",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "03 · Triage ·",
+          20,
+          true,
+          "ink"
+        ],
+        [
+          "Proposed",
+          20,
+          true,
+          "ink"
+        ],
+        [
+          "[step-review] Caregiver",
+          15,
+          false,
+          "muted"
+        ],
+        [
+          "Review the summary and",
+          15,
+          false,
+          "muted"
+        ],
+        [
+          "add missing information",
+          15,
+          false,
+          "muted"
+        ],
+        [
+          "Result: The request is",
+          15,
+          false,
+          "muted"
+        ],
+        [
+          "complete or needs human",
+          15,
+          false,
+          "muted"
+        ],
+        [
+          "help",
+          15,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "step-match",
+      "x": 892,
+      "y": 430,
+      "w": 250,
+      "h": 198,
+      "label": "04 · Match",
+      "detail": "[step-match] Service entry\nShow eligible services and their constraints\nResult: Choose one workable option",
+      "kind": "panel",
+      "tone": "teal",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "04 · Match",
+          20,
+          true,
+          "ink"
+        ],
+        [
+          "[step-match] Service entry",
+          15,
+          false,
+          "muted"
+        ],
+        [
+          "Show eligible services and",
+          15,
+          false,
+          "muted"
+        ],
+        [
+          "their constraints",
+          15,
+          false,
+          "muted"
+        ],
+        [
+          "Result: Choose one",
+          15,
+          false,
+          "muted"
+        ],
+        [
+          "workable option",
+          15,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "step-confirm",
+      "x": 1168,
+      "y": 430,
+      "w": 250,
+      "h": 198,
+      "label": "05 · Confirm",
+      "detail": "[step-confirm] Caregiver\nConfirm time, contact, and privacy notice\nResult: Submit the booking request",
+      "kind": "panel",
+      "tone": "teal",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "05 · Confirm",
+          20,
+          true,
+          "ink"
+        ],
+        [
+          "[step-confirm] Caregiver",
+          15,
+          false,
+          "muted"
+        ],
+        [
+          "Confirm time, contact, and",
+          15,
+          false,
+          "muted"
+        ],
+        [
+          "privacy notice",
+          15,
+          false,
+          "muted"
+        ],
+        [
+          "Result: Submit the booking",
+          15,
+          false,
+          "muted"
+        ],
+        [
+          "request",
+          15,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "step-submit",
+      "x": 1444,
+      "y": 430,
+      "w": 250,
+      "h": 198,
+      "label": "06 · Confirm",
+      "detail": "[step-submit] Service entry\nSubmit the request and show processing status\nResult: Wait for provider confirmation",
+      "kind": "panel",
+      "tone": "teal",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "06 · Confirm",
+          20,
+          true,
+          "ink"
+        ],
+        [
+          "[step-submit] Service entry",
+          15,
+          false,
+          "muted"
+        ],
+        [
+          "Submit the request and show",
+          15,
+          false,
+          "muted"
+        ],
+        [
+          " processing status",
+          15,
+          false,
+          "muted"
+        ],
+        [
+          "Result: Wait for provider",
+          15,
+          false,
+          "muted"
+        ],
+        [
+          "confirmation",
+          15,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "step-followup",
+      "x": 1720,
+      "y": 430,
+      "w": 250,
+      "h": 198,
+      "label": "07 · Follow-up",
+      "detail": "[step-followup] Service entry\nProvide confirmation code, change entry, and human contact\nResult: The caregiver knows what happens next",
+      "kind": "panel",
+      "tone": "teal",
+      "check": true,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "07 · Follow-up",
+          20,
+          true,
+          "ink"
+        ],
+        [
+          "[step-followup] Service entry",
+          15,
+          false,
+          "muted"
+        ],
+        [
+          "Provide confirmation code,",
+          15,
+          false,
+          "muted"
+        ],
+        [
+          "change entry, and human",
+          15,
+          false,
+          "muted"
+        ],
+        [
+          "contact",
+          15,
+          false,
+          "muted"
+        ],
+        [
+          "Result: The caregiver knows",
+          15,
+          false,
+          "muted"
+        ],
+        [
+          "what happens next",
+          15,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "_v18",
+      "x": 64,
+      "y": 705,
+      "w": 300,
+      "h": 50,
+      "label": "Branches & exceptions",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 16,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "branch-complete",
+      "x": 64,
+      "y": 733,
+      "w": 310,
+      "h": 112,
+      "label": "[branch-complete] Branch",
+      "detail": "Details complete · When: All required fields have values",
+      "kind": "panel",
+      "tone": "amber",
+      "check": false,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[branch-complete] Branch",
+          20,
+          true,
+          "ink"
+        ],
+        [
+          "Details complete · When: All",
+          15,
+          false,
+          "muted"
+        ],
+        [
+          "required fields have values",
+          15,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "branch-assisted",
+      "x": 394,
+      "y": 733,
+      "w": 310,
+      "h": 152,
+      "label": "[branch-assisted] Branch · Proposed",
+      "detail": "Human help needed · When: The caregiver cannot complete the step alone",
+      "kind": "panel",
+      "tone": "amber",
+      "check": false,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[branch-assisted] Branch ·",
+          20,
+          true,
+          "ink"
+        ],
+        [
+          " Proposed",
+          20,
+          true,
+          "ink"
+        ],
+        [
+          "Human help needed · When: The",
+          15,
+          false,
+          "muted"
+        ],
+        [
+          "caregiver cannot complete the step",
+          15,
+          false,
+          "muted"
+        ],
+        [
+          " alone",
+          15,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "exception-no-slot",
+      "x": 724,
+      "y": 733,
+      "w": 310,
+      "h": 174,
+      "label": "[exception-no-slot] Exception · Proposed",
+      "detail": "No slot available · When: Every current service option conflicts · Recovery: Choose another time or transfer to a person",
+      "kind": "panel",
+      "tone": "red",
+      "check": false,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[exception-no-slot]",
+          20,
+          true,
+          "ink"
+        ],
+        [
+          "Exception · Proposed",
+          20,
+          true,
+          "ink"
+        ],
+        [
+          "No slot available · When: Every",
+          15,
+          false,
+          "muted"
+        ],
+        [
+          "current service option conflicts ·",
+          15,
+          false,
+          "muted"
+        ],
+        [
+          "Recovery: Choose another time or",
+          15,
+          false,
+          "muted"
+        ],
+        [
+          "transfer to a person",
+          15,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "exception-submit-failed",
+      "x": 1054,
+      "y": 733,
+      "w": 310,
+      "h": 174,
+      "label": "[exception-submit-failed] Exception",
+      "detail": "Submission failed · When: A network or service error is returned · Recovery: Keep entered details and retry",
+      "kind": "panel",
+      "tone": "red",
+      "check": false,
+      "text_margin": 14,
+      "_lines": [
+        [
+          "[exception-submit-failed]",
+          20,
+          true,
+          "ink"
+        ],
+        [
+          "Exception",
+          20,
+          true,
+          "ink"
+        ],
+        [
+          "Submission failed · When: A network",
+          15,
+          false,
+          "muted"
+        ],
+        [
+          " or service error is returned ·",
+          15,
+          false,
+          "muted"
+        ],
+        [
+          "Recovery: Keep entered details and",
+          15,
+          false,
+          "muted"
+        ],
+        [
+          "retry",
+          15,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "_v23",
+      "x": 64,
+      "y": 891,
+      "w": 1906,
+      "h": 44,
+      "label": "Dashed and proposed paths are unverified; states, branches and exceptions come from the input and are never inferred from proximity.",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 15,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v24",
+      "x": 64,
+      "y": 34,
+      "w": 1906,
+      "h": 22,
+      "label": "37 / HIGH-FREQUENCY FORMS",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v25",
+      "x": 64,
+      "y": 69,
+      "w": 1906,
+      "h": 56,
+      "label": "Community care booking · user-path storyboard",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 36,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v26",
+      "x": 64,
+      "y": 130,
+      "w": 1906,
+      "h": 38,
+      "label": "Keep preconditions, visible states, the main path, branches, and exceptions reviewable in one flow",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v27",
+      "x": 64,
+      "y": 972,
+      "w": 1906,
+      "h": 1,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "line",
+      "stroke": "none",
+      "check": false
+    },
+    {
+      "id": "_v28",
+      "x": 64,
+      "y": 985,
+      "w": 1906,
+      "h": 36,
+      "label": "Cross-industry simulated input · proposed branches and exceptions still need observation",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "step-open",
+      "target": "step-triage",
+      "label": "Next",
+      "points": [
+        [
+          314,
+          529.0
+        ],
+        [
+          327.0,
+          529.0
+        ],
+        [
+          340,
+          529.0
+        ]
+      ],
+      "source_port": "right",
+      "target_port": "left",
+      "tone": "accent",
+      "width": 1.7
+    },
+    {
+      "source": "step-triage",
+      "target": "step-review",
+      "label": "Next",
+      "points": [
+        [
+          590,
+          529.0
+        ],
+        [
+          603.0,
+          529.0
+        ],
+        [
+          616,
+          529.0
+        ]
+      ],
+      "source_port": "right",
+      "target_port": "left",
+      "tone": "accent",
+      "width": 1.7
+    },
+    {
+      "source": "step-review",
+      "target": "step-match",
+      "label": "Next",
+      "points": [
+        [
+          866,
+          529.0
+        ],
+        [
+          879.0,
+          529.0
+        ],
+        [
+          892,
+          529.0
+        ]
+      ],
+      "source_port": "right",
+      "target_port": "left",
+      "tone": "accent",
+      "width": 1.7
+    },
+    {
+      "source": "step-match",
+      "target": "step-confirm",
+      "label": "Next",
+      "points": [
+        [
+          1142,
+          529.0
+        ],
+        [
+          1155.0,
+          529.0
+        ],
+        [
+          1168,
+          529.0
+        ]
+      ],
+      "source_port": "right",
+      "target_port": "left",
+      "tone": "accent",
+      "width": 1.7
+    },
+    {
+      "source": "step-confirm",
+      "target": "step-submit",
+      "label": "Next",
+      "points": [
+        [
+          1418,
+          529.0
+        ],
+        [
+          1431.0,
+          529.0
+        ],
+        [
+          1444,
+          529.0
+        ]
+      ],
+      "source_port": "right",
+      "target_port": "left",
+      "tone": "accent",
+      "width": 1.7
+    },
+    {
+      "source": "step-submit",
+      "target": "step-followup",
+      "label": "Next",
+      "points": [
+        [
+          1694,
+          529.0
+        ],
+        [
+          1707.0,
+          529.0
+        ],
+        [
+          1720,
+          529.0
+        ]
+      ],
+      "source_port": "right",
+      "target_port": "left",
+      "tone": "accent",
+      "width": 1.7
+    },
+    {
+      "source": "step-review",
+      "target": "step-match",
+      "label": "Branch",
+      "points": [
+        [
+          741.0,
+          628
+        ],
+        [
+          741.0,
+          724
+        ],
+        [
+          219.0,
+          724
+        ],
+        [
+          219.0,
+          861
+        ],
+        [
+          1017.0,
+          861
+        ],
+        [
+          1017.0,
+          628
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "label_at": [
+        753.0,
+        705
+      ],
+      "tone": "amber",
+      "dashed": false,
+      "width": 1.4
+    },
+    {
+      "source": "step-review",
+      "target": "step-open",
+      "label": "Branch",
+      "points": [
+        [
+          741.0,
+          628
+        ],
+        [
+          741.0,
+          724
+        ],
+        [
+          549.0,
+          724
+        ],
+        [
+          549.0,
+          901
+        ],
+        [
+          189.0,
+          901
+        ],
+        [
+          189.0,
+          628
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "label_at": [
+        753.0,
+        705
+      ],
+      "tone": "amber",
+      "dashed": true,
+      "width": 1.4
+    },
+    {
+      "source": "step-match",
+      "target": "step-review",
+      "label": "Exception",
+      "points": [
+        [
+          1017.0,
+          628
+        ],
+        [
+          1017.0,
+          724
+        ],
+        [
+          879.0,
+          724
+        ],
+        [
+          879.0,
+          923
+        ],
+        [
+          741.0,
+          923
+        ],
+        [
+          741.0,
+          628
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "label_at": [
+        1029.0,
+        705
+      ],
+      "tone": "red",
+      "dashed": true,
+      "width": 1.4
+    },
+    {
+      "source": "step-submit",
+      "target": "step-confirm",
+      "label": "Exception",
+      "points": [
+        [
+          1569.0,
+          628
+        ],
+        [
+          1569.0,
+          724
+        ],
+        [
+          1209.0,
+          724
+        ],
+        [
+          1209.0,
+          923
+        ],
+        [
+          1293.0,
+          923
+        ],
+        [
+          1293.0,
+          628
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "label_at": [
+        1581.0,
+        705
+      ],
+      "tone": "red",
+      "dashed": false,
+      "width": 1.4
+    }
+  ],
+  "meta": {
+    "user_path_storyboard": {
+      "preconditions": [
+        "pre-consent",
+        "pre-language"
+      ],
+      "states": [
+        "state-confirm",
+        "state-entry",
+        "state-followup",
+        "state-match",
+        "state-triage"
+      ],
+      "steps": [
+        "step-open",
+        "step-triage",
+        "step-review",
+        "step-match",
+        "step-confirm",
+        "step-submit",
+        "step-followup"
+      ],
+      "branches": [
+        "branch-complete",
+        "branch-assisted"
+      ],
+      "exceptions": [
+        "exception-no-slot",
+        "exception-submit-failed"
+      ],
+      "stable_ids": [
+        "branch-assisted",
+        "branch-complete",
+        "exception-no-slot",
+        "exception-submit-failed",
+        "pre-consent",
+        "pre-language",
+        "state-confirm",
+        "state-entry",
+        "state-followup",
+        "state-match",
+        "state-triage",
+        "step-confirm",
+        "step-followup",
+        "step-match",
+        "step-open",
+        "step-review",
+        "step-submit",
+        "step-triage"
+      ],
+      "proposal_count": 3
+    }
+  },
+  "assumptions": [
+    "Original cross-industry teaching content; it is not a medical workflow or service promise"
+  ]
+}

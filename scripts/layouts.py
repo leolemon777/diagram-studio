@@ -128,6 +128,88 @@ def bmc(s,d):
   s.text(xx+22,detail_y,ww-44,detail_h,v.get('detail',''),detail_size,'ink',word_wrap=True)
  s.h=max(s.h,900);s.meta['semantic']='business-model-canvas';s.meta['cell_height']=h
 
+LEAN_CANVAS_IDS=(
+ 'problem','customer-segments','unique-value-proposition','solution',
+ 'channels','revenue-streams','cost-structure','key-metrics','unfair-advantage',
+)
+
+def lean_canvas(s,d):
+ """Render the nine-question Lean Canvas as an asymmetric, evidence-aware board.
+
+ The Lean Canvas deliberately keeps a different reading order and geometry from
+ the Business Model Canvas: problem and customer context sit on the outside,
+ the value proposition is central, and costs/revenue form a bottom strip.  Every
+ entry is an editable text node with a stable id and an explicit evidence/status
+ line so the board remains a hypothesis worksheet rather than a generated claim.
+ """
+ from render import wrap_words
+ blocks=d.get('items');need(isinstance(blocks,list) and len(blocks)==9,'lean canvas requires exactly nine blocks')
+ by={};entry_ids=set();statuses={'observed','hypothesis','proposed','unknown','validated'}
+ for block in blocks:
+  ident=block.get('id');need(ident in LEAN_CANVAS_IDS,'unknown lean canvas block id: '+str(ident));need(ident not in by,'duplicate lean canvas block id: '+str(ident))
+  label=block.get('label');need(isinstance(label,str) and label.strip(),'lean canvas block label required')
+  entries=block.get('entries');need(isinstance(entries,list) and 1<=len(entries)<=6,f'lean canvas {ident} needs 1–6 entries')
+  for entry in entries:
+   eid=entry.get('id');need(isinstance(eid,str) and eid.strip() and eid not in entry_ids,'lean canvas entry ids must be unique')
+   text=entry.get('text');evidence=entry.get('evidence');status=entry.get('status','hypothesis')
+   need(isinstance(text,str) and text.strip(),'lean canvas entry text required')
+   need(isinstance(evidence,str) and evidence.strip(),'lean canvas evidence is required for every entry')
+   need(status in statuses,'unsupported lean canvas status: '+str(status))
+   entry_ids.add(eid)
+  by[ident]=block
+ need(set(by)==set(LEAN_CANVAS_IDS),'lean canvas must include all nine canonical blocks')
+ order=list(LEAN_CANVAS_IDS)
+ gap=14;x0=64;y0=204;cw=(s.w-128-4*gap)/5
+ # Two upper rows retain unequal region sizes; the bottom strip is intentionally
+ # wider to keep cost/revenue questions readable in a single scan.
+ slots={
+  'problem':(0,0,1,2),'solution':(1,0,1,1),
+  'unique-value-proposition':(2,0,2,1),'customer-segments':(4,0,1,2),
+  'channels':(1,1,1,1),'key-metrics':(2,1,1,1),'unfair-advantage':(3,1,1,1),
+  'cost-structure':(0,2,2,1),'revenue-streams':(2,2,3,1),
+ }
+ from render import wrap_words
+ def needed_height(block,width,base=170):
+  label_h=max(28,len(wrap_words(block['label'],width-36,21))*21*1.35)
+  total=label_h+28
+  for e in block['entries']:
+   text=f"[{e['id']}] {e['text']}"
+   meta=f"{e.get('status','hypothesis')} · {e['evidence']}"
+   total+=len(wrap_words(text,width-36,16))*16*1.35
+   total+=len(wrap_words(meta,width-36,14))*14*1.35+10
+  return max(base,total+28)
+ row_heights=[250,245,205]
+ for ident,(col,row,span,rows) in slots.items():
+  ww=span*cw+(span-1)*gap
+  required=needed_height(by[ident],ww,170 if row==2 else 190)
+  if rows==2:
+   required=required/2-8
+   row_heights[0]=max(row_heights[0],math.ceil(required));row_heights[1]=max(row_heights[1],math.ceil(required))
+  else: row_heights[row]=max(row_heights[row],math.ceil(required))
+ y_positions=[y0,y0+row_heights[0]+gap,y0+row_heights[0]+gap+row_heights[1]+gap]
+ status_words={
+  'observed':'已观察','hypothesis':'待验证假说','proposed':'拟议方案','unknown':'未知','validated':'已验证',
+ }
+ for index,ident in enumerate(order,1):
+  block=by[ident];col,row,span,rows=slots[ident];xx=x0+col*(cw+gap);yy=y_positions[row]
+  ww=span*cw+(span-1)*gap;hh=sum(row_heights[row:row+rows])+(rows-1)*gap if row<2 else row_heights[2]
+  tone=('accent','teal','amber','red','muted')[index%5]
+  s.add(xx,yy,ww,hh,kind='panel',id=ident,fill='panel',stroke='line',check=False)
+  title=f'{index:02d}  {block["label"]}'
+  label_lines=wrap_words(title,ww-36,21);label_h=max(28,len(label_lines)*21*1.35+4)
+  s.text(xx+18,yy+16,ww-36,label_h,title,21,tone,word_wrap=True)
+  cursor=yy+16+label_h+12
+  for entry in block['entries']:
+   content=f"[{entry['id']}] {entry['text']}"
+   raw_status=entry.get('status','hypothesis')
+   meta=f"{raw_status} / {status_words.get(raw_status,raw_status)} · {entry['evidence']}"
+   text_lines=wrap_words(content,ww-36,16);meta_lines=wrap_words(meta,ww-36,14)
+   text_h=max(22,len(text_lines)*16*1.35+2);meta_h=max(20,len(meta_lines)*14*1.35+2)
+   s.text(xx+18,cursor,ww-36,text_h,content,16,'ink',id=entry['id'],word_wrap=True);cursor+=text_h+2
+   s.text(xx+18,cursor,ww-36,meta_h,meta,14,'muted',word_wrap=True);cursor+=meta_h+10
+ s.h=max(s.h,y_positions[2]+row_heights[2]+110)
+ s.meta['semantic']='lean-canvas';s.meta['lean_canvas']={'blocks':order,'entry_ids':sorted(entry_ids),'reading_order':order,'evidence_required':True,'distinct_from':'business-model-canvas'}
+
 def quadrant(s,d):
  a=items(d,lo=1,hi=12);x0,y0,pw,ph=250,230,1060,500
  for i,l in enumerate(d.get('quadrants',['低 / 高','高 / 高','低 / 低','高 / 低'])):
@@ -331,4 +413,4 @@ def infographic(s,d):
   x=64+i%2*(w+32);y=220+i//2*(h+24);s.add(x,y,w,h,kind='panel',check=False);s.text(x+24,y+20,100,65,f'{i+1:02d}',42,'accent');s.text(x+140,y+20,w-166,46,v['label'],25);s.text(x+140,y+76,w-166,72,v.get('detail',''),18,'muted')
  s.h=max(s.h,220+math.ceil(len(a)/2)*(h+24)+100)
 
-BUILDERS={'radial':radial,'cycle':cycle,'tapered':tapered,'venn':venn,'concentric':concentric,'timeline':timeline,'table':table,'bmc':bmc,'quadrant':quadrant,'chevrons':chevrons,'treemap':treemap,'sankey':sankey,'record':record,'plot':plot,'floorplan':floorplan,'circuit':circuit,'processplant':processplant,'infographic':infographic}
+BUILDERS={'radial':radial,'cycle':cycle,'tapered':tapered,'venn':venn,'concentric':concentric,'timeline':timeline,'table':table,'bmc':bmc,'lean-canvas':lean_canvas,'quadrant':quadrant,'chevrons':chevrons,'treemap':treemap,'sankey':sankey,'record':record,'plot':plot,'floorplan':floorplan,'circuit':circuit,'processplant':processplant,'infographic':infographic}

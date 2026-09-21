@@ -1,0 +1,39 @@
+{
+  "version": "v72",
+  "checked_at": "2026-09-21",
+  "scope": "bilingual Lean Canvas and user-path storyboard delivery",
+  "inputs": [
+    {"language": "zh", "type": "lean-canvas", "path": "assets/examples/38-lean-canvas-cn.json", "sha256": "046e675581b4bb037b1f10c587ea4d09c169c6ce7b06035981dffaf58c354f13"},
+    {"language": "en", "type": "lean-canvas", "path": "assets/examples/38-lean-canvas-en.json", "sha256": "a504d1d2bd9e0d18304ce3117a36ca23e04e5feea0776f11d98abc536b2e0f3d"},
+    {"language": "zh", "type": "user-path-storyboard", "path": "assets/examples/37-user-path-storyboard-cn.json", "sha256": "968f1edbda8bf9087e1baa169eb8067a9f8c4af0513af4c2992019d197d4b4f9"},
+    {"language": "en", "type": "user-path-storyboard", "path": "assets/examples/37-user-path-storyboard-en.json", "sha256": "f81d11f2e459f1b0622290388595dd86519a8ccb861c2595fc9a333d9ca26173"}
+  ],
+  "outputs": {
+    "lean_canvas": {
+      "zh": {"svg": "demos/lean-canvas/cn/38-lean-canvas-cn.svg", "svg_sha256": "a7aac8f8b4143468c4dee10e88f5048f9f87bceb560a1aa5aac6a4f1aceb054d", "dimensions": "1600×1042", "drawio": "demos/lean-canvas/cn/38-lean-canvas-cn.drawio", "drawio_sha256": "43a1ee28e883c5ac62aead5ecd72517c7e5dd0c4ed93062ce585072109d3bf87"},
+      "en": {"svg": "demos/lean-canvas/en/38-lean-canvas-en.svg", "svg_sha256": "08637117046bb4f7b6a05170ccea504f8380fe79e39b1683315a69e5abebe7e0", "dimensions": "1600×1085", "drawio": "demos/lean-canvas/en/38-lean-canvas-en.drawio", "drawio_sha256": "8a571383916dcc5184a68b2ce1c9562141200e322f2526c932fed3373e6e09d6"}
+    },
+    "user_path_storyboard": {
+      "zh": {"svg": "demos/user-path-storyboard/cn/37-user-path-storyboard-cn.svg", "svg_sha256": "f7b888588748f836a04c1ec22bd448848c44f1f23fbc645fcb900dfdf55204b5", "dimensions": "2034×995", "drawio": "demos/user-path-storyboard/cn/37-user-path-storyboard-cn.drawio", "drawio_sha256": "da1a7679397c9e9d1f5a11db8f7421e5b618e72c1e870ecff7659715d12439db"},
+      "en": {"svg": "demos/user-path-storyboard/en/37-user-path-storyboard-en.svg", "svg_sha256": "e19555324ab51c6670a6853c6e4e467e6c9392f7003cd4426152c4856786125b", "dimensions": "2034×1035", "drawio": "demos/user-path-storyboard/en/37-user-path-storyboard-en.drawio", "drawio_sha256": "4c2b8b6d4478d0051d0606002a0dcc346c1b7eb141d292547fc2673b44063a5c"
+      }
+    }
+  },
+  "checks": {
+    "source_regression_tests": 124,
+    "installed_regression_tests": 124,
+    "capability_registry": "v72 / 8 groups / 30 capabilities",
+    "semantic_validation": "passed: four bilingual inputs",
+    "content_integrity": "passed: stable IDs, source text and explicit path relations",
+    "geometry": "passed: zero errors and zero warnings for the four generated inputs",
+    "drawio_nodes": "passed: block, entry, state, step, branch and exception IDs are present",
+    "browser": "passed: bilingual Lean Canvas and user-path storyboard demo pages opened at 1280px desktop surface; readable-size scroll mode displayed actual content and links",
+    "source_installed_parity": "passed: recursive diff excluding .git is empty",
+    "jev": "pending: no matching Skill, plugin or repository file is available"
+  },
+  "boundaries": [
+    "Generated semantic and geometry checks do not certify a real service, product-market fit, domain workflow, user research, or user approval.",
+    "Native-editor edit/save/reopen is not claimed for these two new types; existing workflow and storymap evidence remains separate.",
+    "The layout grows beyond a fixed 16:9 canvas when long content or many steps require it."
+  ]
+}
