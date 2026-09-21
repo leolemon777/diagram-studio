@@ -31,6 +31,7 @@
   ],
   "boundaries": [
     "The viewport result covers nine popular demo pages at 390×844 and 768×1024; it does not certify every demo page or arbitrary high-density input.",
+    "Chooser continuity evidence covers representative state retention, category memory, keyboard order and format filtering; it does not certify a 390px full-keyboard path or byte-level clipboard behavior.",
     "The compact Gantt print variant has a measured 12px minimum embedded font; executive and delivery variants measured 14px.",
     "Native-editor edit/save/reopen remains representative diagrams.net browser-storage evidence, not approval for every registered type or every editor.",
     "JEV review remains pending until a real Skill name or path is available.",

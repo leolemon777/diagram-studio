@@ -15,7 +15,7 @@
     "trial_pack_evidence": "assets/v74-trials/evidence.json; six simulated cross-industry cases each have revised JSON, SVG, draw.io, scene, QA and delivery receipt; receipt hashes, scene/QA parsing and visible mutation text are tested",
     "jev": "not present in available skills, plugins, or repository files; integration awaits an explicit path or name",
     "native_editor": "representative pass remains 15 files; all-type coverage is not claimed",
-    "scope": "Popular embedded content only; this does not certify every catalog row, arbitrary density, domain facts, native-editor compatibility or JEV review",
+    "scope": "Popular embedded content only; this does not certify every catalog row, arbitrary density, domain facts, native-editor compatibility, a 390px full-keyboard chooser path, byte-level clipboard behavior or JEV review",
     "release_notes": "references/release-notes-v74.md and references/release-notes-v74.en.md",
     "clean_package_evidence": "assets/v74-clean-install-evidence.json; fresh-directory basic and optional cross-industry smoke tests passed"
   },
