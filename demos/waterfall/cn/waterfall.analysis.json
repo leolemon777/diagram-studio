@@ -1,0 +1,41 @@
+{
+  "recipe": "waterfall",
+  "row_count": 5,
+  "unit": "件 / 月",
+  "synthetic": true,
+  "start": 10000,
+  "end": 12800,
+  "net": 2800,
+  "steps": [
+    {
+      "id": "new",
+      "start": 10000,
+      "end": 12600,
+      "delta": 2600
+    },
+    {
+      "id": "campaign",
+      "start": 12600,
+      "end": 13500,
+      "delta": 900
+    },
+    {
+      "id": "seasonality",
+      "start": 13500,
+      "end": 13000,
+      "delta": -500
+    },
+    {
+      "id": "churn",
+      "start": 13000,
+      "end": 12300,
+      "delta": -700
+    },
+    {
+      "id": "recovery",
+      "start": 12300,
+      "end": 12800,
+      "delta": 500
+    }
+  ]
+}

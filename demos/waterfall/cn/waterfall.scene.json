@@ -1,0 +1,2341 @@
+{
+  "family": "warm",
+  "palette": {
+    "id": "warm",
+    "name": "暖灰纸感",
+    "en": "Warm Paper",
+    "bg": "#F1EFEB",
+    "ink": "#34322D",
+    "muted": "#706B62",
+    "line": "#CDC7BC",
+    "accent": "#94634C",
+    "tint": "#E8E1D6",
+    "outer": "#E4E2DD",
+    "relation_ink": "#94634C",
+    "secondary_ink": "#706B62"
+  },
+  "width": 1600,
+  "height": 1000,
+  "canvas": null,
+  "items": [
+    {
+      "kind": "text",
+      "id": "visual-1",
+      "x": 80,
+      "y": 39,
+      "w": 1150,
+      "h": 19.32,
+      "lines": [
+        "APAT    /    DATA STUDIES    /    CHANGE ACCOUNT"
+      ],
+      "text": "APAT    /    DATA STUDIES    /    CHANGE ACCOUNT",
+      "fs": 14,
+      "tone": "muted",
+      "font": "mono",
+      "weight": 400,
+      "align": "left"
+    },
+    {
+      "kind": "text",
+      "id": "visual-2",
+      "x": 1340,
+      "y": 39,
+      "w": 180,
+      "h": 19.32,
+      "lines": [
+        "10 / 12"
+      ],
+      "text": "10 / 12",
+      "fs": 14,
+      "tone": "muted",
+      "font": "mono",
+      "weight": 400,
+      "align": "right"
+    },
+    {
+      "kind": "line",
+      "id": "visual-3",
+      "points": [
+        [
+          80,
+          82
+        ],
+        [
+          1520,
+          82
+        ]
+      ],
+      "tone": "ink",
+      "lw": 1.0,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "text",
+      "id": "visual-4",
+      "x": 78,
+      "y": 105,
+      "w": 1440,
+      "h": 67.61999999999999,
+      "lines": [
+        "从 10,000 到 12,800：增长由什么组成？"
+      ],
+      "text": "从 10,000 到 12,800：增长由什么组成？",
+      "fs": 49,
+      "tone": "ink",
+      "font": "serif",
+      "weight": 400,
+      "align": "left"
+    },
+    {
+      "kind": "text",
+      "id": "visual-5",
+      "x": 81,
+      "y": 183,
+      "w": 1425,
+      "h": 28.979999999999997,
+      "lines": [
+        "把一个季度的月度活跃服务请求拆成有序增减项；保留口径与净变化。"
+      ],
+      "text": "把一个季度的月度活跃服务请求拆成有序增减项；保留口径与净变化。",
+      "fs": 21,
+      "tone": "muted",
+      "font": "sans",
+      "weight": 400,
+      "align": "left"
+    },
+    {
+      "kind": "text",
+      "id": "visual-6",
+      "x": 81,
+      "y": 247,
+      "w": 900,
+      "h": 22.08,
+      "lines": [
+        "2026 年第一季度 → 第二季度 / 月度活跃口径  /  增减分解"
+      ],
+      "text": "2026 年第一季度 → 第二季度 / 月度活跃口径  /  增减分解",
+      "fs": 16,
+      "tone": "accent",
+      "font": "sans",
+      "weight": 400,
+      "align": "left"
+    },
+    {
+      "kind": "text",
+      "id": "visual-7",
+      "x": 1160,
+      "y": 247,
+      "w": 360,
+      "h": 22.08,
+      "lines": [
+        "细读 · 逐项看数据"
+      ],
+      "text": "细读 · 逐项看数据",
+      "fs": 16,
+      "tone": "accent",
+      "font": "sans",
+      "weight": 400,
+      "align": "right"
+    },
+    {
+      "kind": "line",
+      "id": "visual-8",
+      "points": [
+        [
+          1195,
+          316
+        ],
+        [
+          1195,
+          809
+        ]
+      ],
+      "tone": "line",
+      "lw": 0.8,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-9",
+      "points": [
+        [
+          150,
+          770.0
+        ],
+        [
+          1130,
+          770.0
+        ]
+      ],
+      "tone": "line",
+      "lw": 0.6,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "text",
+      "id": "visual-10",
+      "x": 72,
+      "y": 758.0,
+      "w": 63,
+      "h": 22.08,
+      "lines": [
+        "0"
+      ],
+      "text": "0",
+      "fs": 16,
+      "tone": "muted",
+      "font": "grotesk",
+      "weight": 500,
+      "align": "right"
+    },
+    {
+      "kind": "line",
+      "id": "visual-11",
+      "points": [
+        [
+          150,
+          623.3333333333333
+        ],
+        [
+          1130,
+          623.3333333333333
+        ]
+      ],
+      "tone": "line",
+      "lw": 0.6,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "text",
+      "id": "visual-12",
+      "x": 72,
+      "y": 611.3333333333333,
+      "w": 63,
+      "h": 22.08,
+      "lines": [
+        "5,000"
+      ],
+      "text": "5,000",
+      "fs": 16,
+      "tone": "muted",
+      "font": "grotesk",
+      "weight": 500,
+      "align": "right"
+    },
+    {
+      "kind": "line",
+      "id": "visual-13",
+      "points": [
+        [
+          150,
+          476.66666666666663
+        ],
+        [
+          1130,
+          476.66666666666663
+        ]
+      ],
+      "tone": "line",
+      "lw": 0.6,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "text",
+      "id": "visual-14",
+      "x": 72,
+      "y": 464.66666666666663,
+      "w": 63,
+      "h": 22.08,
+      "lines": [
+        "10,000"
+      ],
+      "text": "10,000",
+      "fs": 16,
+      "tone": "muted",
+      "font": "grotesk",
+      "weight": 500,
+      "align": "right"
+    },
+    {
+      "kind": "line",
+      "id": "visual-15",
+      "points": [
+        [
+          150,
+          330.0
+        ],
+        [
+          1130,
+          330.0
+        ]
+      ],
+      "tone": "line",
+      "lw": 0.6,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "text",
+      "id": "visual-16",
+      "x": 72,
+      "y": 318.0,
+      "w": 63,
+      "h": 22.08,
+      "lines": [
+        "15,000"
+      ],
+      "text": "15,000",
+      "fs": 16,
+      "tone": "muted",
+      "font": "grotesk",
+      "weight": 500,
+      "align": "right"
+    },
+    {
+      "kind": "text",
+      "id": "visual-17",
+      "x": 90,
+      "y": 287,
+      "w": 980,
+      "h": 23.459999999999997,
+      "lines": [
+        "件 / 月"
+      ],
+      "text": "件 / 月",
+      "fs": 17,
+      "tone": "muted",
+      "font": "sans",
+      "weight": 400,
+      "align": "left"
+    },
+    {
+      "kind": "line",
+      "id": "visual-18",
+      "points": [
+        [
+          187.0,
+          762.6666666666667
+        ],
+        [
+          253.0,
+          762.6666666666667
+        ]
+      ],
+      "tone": "accent",
+      "lw": 1.7,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-19",
+      "points": [
+        [
+          187.0,
+          748.0
+        ],
+        [
+          253.0,
+          748.0
+        ]
+      ],
+      "tone": "accent",
+      "lw": 1.7,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-20",
+      "points": [
+        [
+          187.0,
+          733.3333333333333
+        ],
+        [
+          253.0,
+          733.3333333333333
+        ]
+      ],
+      "tone": "accent",
+      "lw": 1.7,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-21",
+      "points": [
+        [
+          187.0,
+          718.6666666666667
+        ],
+        [
+          253.0,
+          718.6666666666667
+        ]
+      ],
+      "tone": "accent",
+      "lw": 1.7,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-22",
+      "points": [
+        [
+          187.0,
+          704.0
+        ],
+        [
+          253.0,
+          704.0
+        ]
+      ],
+      "tone": "accent",
+      "lw": 1.7,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-23",
+      "points": [
+        [
+          187.0,
+          689.3333333333333
+        ],
+        [
+          253.0,
+          689.3333333333333
+        ]
+      ],
+      "tone": "accent",
+      "lw": 1.7,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-24",
+      "points": [
+        [
+          187.0,
+          674.6666666666667
+        ],
+        [
+          253.0,
+          674.6666666666667
+        ]
+      ],
+      "tone": "accent",
+      "lw": 1.7,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-25",
+      "points": [
+        [
+          187.0,
+          660.0
+        ],
+        [
+          253.0,
+          660.0
+        ]
+      ],
+      "tone": "accent",
+      "lw": 1.7,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-26",
+      "points": [
+        [
+          187.0,
+          645.3333333333333
+        ],
+        [
+          253.0,
+          645.3333333333333
+        ]
+      ],
+      "tone": "accent",
+      "lw": 1.7,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-27",
+      "points": [
+        [
+          187.0,
+          630.6666666666667
+        ],
+        [
+          253.0,
+          630.6666666666667
+        ]
+      ],
+      "tone": "accent",
+      "lw": 1.7,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-28",
+      "points": [
+        [
+          187.0,
+          616.0
+        ],
+        [
+          253.0,
+          616.0
+        ]
+      ],
+      "tone": "accent",
+      "lw": 1.7,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-29",
+      "points": [
+        [
+          187.0,
+          601.3333333333333
+        ],
+        [
+          253.0,
+          601.3333333333333
+        ]
+      ],
+      "tone": "accent",
+      "lw": 1.7,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-30",
+      "points": [
+        [
+          187.0,
+          586.6666666666667
+        ],
+        [
+          253.0,
+          586.6666666666667
+        ]
+      ],
+      "tone": "accent",
+      "lw": 1.7,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-31",
+      "points": [
+        [
+          187.0,
+          572.0
+        ],
+        [
+          253.0,
+          572.0
+        ]
+      ],
+      "tone": "accent",
+      "lw": 1.7,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-32",
+      "points": [
+        [
+          187.0,
+          557.3333333333334
+        ],
+        [
+          253.0,
+          557.3333333333334
+        ]
+      ],
+      "tone": "accent",
+      "lw": 1.7,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-33",
+      "points": [
+        [
+          187.0,
+          542.6666666666666
+        ],
+        [
+          253.0,
+          542.6666666666666
+        ]
+      ],
+      "tone": "accent",
+      "lw": 1.7,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-34",
+      "points": [
+        [
+          187.0,
+          528.0
+        ],
+        [
+          253.0,
+          528.0
+        ]
+      ],
+      "tone": "accent",
+      "lw": 1.7,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-35",
+      "points": [
+        [
+          187.0,
+          513.3333333333334
+        ],
+        [
+          253.0,
+          513.3333333333334
+        ]
+      ],
+      "tone": "accent",
+      "lw": 1.7,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-36",
+      "points": [
+        [
+          187.0,
+          498.66666666666663
+        ],
+        [
+          253.0,
+          498.66666666666663
+        ]
+      ],
+      "tone": "accent",
+      "lw": 1.7,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-37",
+      "points": [
+        [
+          187.0,
+          484.0
+        ],
+        [
+          253.0,
+          484.0
+        ]
+      ],
+      "tone": "accent",
+      "lw": 1.7,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-38",
+      "points": [
+        [
+          187.0,
+          770.0
+        ],
+        [
+          253.0,
+          770.0
+        ]
+      ],
+      "tone": "accent",
+      "lw": 0.8,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-39",
+      "points": [
+        [
+          187.0,
+          476.66666666666663
+        ],
+        [
+          253.0,
+          476.66666666666663
+        ]
+      ],
+      "tone": "accent",
+      "lw": 0.8,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-40",
+      "points": [
+        [
+          253.0,
+          476.66666666666663
+        ],
+        [
+          327.0,
+          476.66666666666663
+        ]
+      ],
+      "tone": "muted",
+      "lw": 0.7,
+      "arrow": false,
+      "dash": true,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "text",
+      "id": "visual-41",
+      "x": 150.0,
+      "y": 437.66666666666663,
+      "w": 140.0,
+      "h": 31.74,
+      "lines": [
+        "10,000"
+      ],
+      "text": "10,000",
+      "fs": 23,
+      "tone": "accent",
+      "font": "grotesk",
+      "weight": 500,
+      "align": "center"
+    },
+    {
+      "kind": "text",
+      "id": "visual-42",
+      "x": 150.0,
+      "y": 792,
+      "w": 140.0,
+      "h": 23.459999999999997,
+      "lines": [
+        "基期"
+      ],
+      "text": "基期",
+      "fs": 17,
+      "tone": "ink",
+      "font": "sans",
+      "weight": 400,
+      "align": "center"
+    },
+    {
+      "kind": "line",
+      "id": "visual-43",
+      "points": [
+        [
+          327.0,
+          469.33333333333337
+        ],
+        [
+          393.0,
+          469.33333333333337
+        ]
+      ],
+      "tone": "muted",
+      "lw": 1.7,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-44",
+      "points": [
+        [
+          327.0,
+          454.6666666666667
+        ],
+        [
+          393.0,
+          454.6666666666667
+        ]
+      ],
+      "tone": "muted",
+      "lw": 1.7,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-45",
+      "points": [
+        [
+          327.0,
+          440.0
+        ],
+        [
+          393.0,
+          440.0
+        ]
+      ],
+      "tone": "muted",
+      "lw": 1.7,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-46",
+      "points": [
+        [
+          327.0,
+          425.3333333333333
+        ],
+        [
+          393.0,
+          425.3333333333333
+        ]
+      ],
+      "tone": "muted",
+      "lw": 1.7,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-47",
+      "points": [
+        [
+          327.0,
+          410.6666666666667
+        ],
+        [
+          393.0,
+          410.6666666666667
+        ]
+      ],
+      "tone": "muted",
+      "lw": 1.7,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-48",
+      "points": [
+        [
+          327.0,
+          401.8666666666667
+        ],
+        [
+          340.2,
+          401.8666666666667
+        ]
+      ],
+      "tone": "muted",
+      "lw": 1.7,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-49",
+      "points": [
+        [
+          327.0,
+          476.66666666666663
+        ],
+        [
+          393.0,
+          476.66666666666663
+        ]
+      ],
+      "tone": "muted",
+      "lw": 0.8,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-50",
+      "points": [
+        [
+          327.0,
+          400.4
+        ],
+        [
+          393.0,
+          400.4
+        ]
+      ],
+      "tone": "muted",
+      "lw": 0.8,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-51",
+      "points": [
+        [
+          393.0,
+          400.4
+        ],
+        [
+          467.0,
+          400.4
+        ]
+      ],
+      "tone": "muted",
+      "lw": 0.7,
+      "arrow": false,
+      "dash": true,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "text",
+      "id": "visual-52",
+      "x": 290.0,
+      "y": 361.4,
+      "w": 140.0,
+      "h": 31.74,
+      "lines": [
+        "+2,600"
+      ],
+      "text": "+2,600",
+      "fs": 23,
+      "tone": "muted",
+      "font": "grotesk",
+      "weight": 500,
+      "align": "center"
+    },
+    {
+      "kind": "text",
+      "id": "visual-53",
+      "x": 290.0,
+      "y": 792,
+      "w": 140.0,
+      "h": 23.459999999999997,
+      "lines": [
+        "新增账户"
+      ],
+      "text": "新增账户",
+      "fs": 17,
+      "tone": "ink",
+      "font": "sans",
+      "weight": 400,
+      "align": "center"
+    },
+    {
+      "kind": "line",
+      "id": "visual-54",
+      "points": [
+        [
+          467.0,
+          393.06666666666666
+        ],
+        [
+          533.0,
+          393.06666666666666
+        ]
+      ],
+      "tone": "muted",
+      "lw": 1.7,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-55",
+      "points": [
+        [
+          467.0,
+          379.8666666666667
+        ],
+        [
+          519.8,
+          379.8666666666667
+        ]
+      ],
+      "tone": "muted",
+      "lw": 1.7,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-56",
+      "points": [
+        [
+          467.0,
+          400.4
+        ],
+        [
+          533.0,
+          400.4
+        ]
+      ],
+      "tone": "muted",
+      "lw": 0.8,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-57",
+      "points": [
+        [
+          467.0,
+          374.0
+        ],
+        [
+          533.0,
+          374.0
+        ]
+      ],
+      "tone": "muted",
+      "lw": 0.8,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-58",
+      "points": [
+        [
+          533.0,
+          374.0
+        ],
+        [
+          607.0,
+          374.0
+        ]
+      ],
+      "tone": "muted",
+      "lw": 0.7,
+      "arrow": false,
+      "dash": true,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "text",
+      "id": "visual-59",
+      "x": 430.0,
+      "y": 335.0,
+      "w": 140.0,
+      "h": 31.74,
+      "lines": [
+        "+900"
+      ],
+      "text": "+900",
+      "fs": 23,
+      "tone": "muted",
+      "font": "grotesk",
+      "weight": 500,
+      "align": "center"
+    },
+    {
+      "kind": "text",
+      "id": "visual-60",
+      "x": 430.0,
+      "y": 792,
+      "w": 140.0,
+      "h": 23.459999999999997,
+      "lines": [
+        "活动拉动"
+      ],
+      "text": "活动拉动",
+      "fs": 17,
+      "tone": "ink",
+      "font": "sans",
+      "weight": 400,
+      "align": "center"
+    },
+    {
+      "kind": "line",
+      "id": "visual-61",
+      "points": [
+        [
+          607.0,
+          381.3333333333333
+        ],
+        [
+          673.0,
+          381.3333333333333
+        ]
+      ],
+      "tone": "ink",
+      "lw": 1.7,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-62",
+      "points": [
+        [
+          607.0,
+          388.6666666666667
+        ],
+        [
+          673.0,
+          388.6666666666667
+        ]
+      ],
+      "tone": "ink",
+      "lw": 0.8,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-63",
+      "points": [
+        [
+          607.0,
+          374.0
+        ],
+        [
+          673.0,
+          374.0
+        ]
+      ],
+      "tone": "ink",
+      "lw": 0.8,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-64",
+      "points": [
+        [
+          673.0,
+          388.6666666666667
+        ],
+        [
+          747.0,
+          388.6666666666667
+        ]
+      ],
+      "tone": "muted",
+      "lw": 0.7,
+      "arrow": false,
+      "dash": true,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "text",
+      "id": "visual-65",
+      "x": 570.0,
+      "y": 335.0,
+      "w": 140.0,
+      "h": 31.74,
+      "lines": [
+        "-500"
+      ],
+      "text": "-500",
+      "fs": 23,
+      "tone": "ink",
+      "font": "grotesk",
+      "weight": 500,
+      "align": "center"
+    },
+    {
+      "kind": "text",
+      "id": "visual-66",
+      "x": 570.0,
+      "y": 792,
+      "w": 140.0,
+      "h": 23.459999999999997,
+      "lines": [
+        "季节波动"
+      ],
+      "text": "季节波动",
+      "fs": 17,
+      "tone": "ink",
+      "font": "sans",
+      "weight": 400,
+      "align": "center"
+    },
+    {
+      "kind": "line",
+      "id": "visual-67",
+      "points": [
+        [
+          747.0,
+          401.8666666666667
+        ],
+        [
+          813.0,
+          401.8666666666667
+        ]
+      ],
+      "tone": "ink",
+      "lw": 1.7,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-68",
+      "points": [
+        [
+          747.0,
+          391.6
+        ],
+        [
+          773.4,
+          391.6
+        ]
+      ],
+      "tone": "ink",
+      "lw": 1.7,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-69",
+      "points": [
+        [
+          747.0,
+          409.2
+        ],
+        [
+          813.0,
+          409.2
+        ]
+      ],
+      "tone": "ink",
+      "lw": 0.8,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-70",
+      "points": [
+        [
+          747.0,
+          388.6666666666667
+        ],
+        [
+          813.0,
+          388.6666666666667
+        ]
+      ],
+      "tone": "ink",
+      "lw": 0.8,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-71",
+      "points": [
+        [
+          813.0,
+          409.2
+        ],
+        [
+          887.0,
+          409.2
+        ]
+      ],
+      "tone": "muted",
+      "lw": 0.7,
+      "arrow": false,
+      "dash": true,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "text",
+      "id": "visual-72",
+      "x": 710.0,
+      "y": 349.6666666666667,
+      "w": 140.0,
+      "h": 31.74,
+      "lines": [
+        "-700"
+      ],
+      "text": "-700",
+      "fs": 23,
+      "tone": "ink",
+      "font": "grotesk",
+      "weight": 500,
+      "align": "center"
+    },
+    {
+      "kind": "text",
+      "id": "visual-73",
+      "x": 710.0,
+      "y": 792,
+      "w": 140.0,
+      "h": 23.459999999999997,
+      "lines": [
+        "流失"
+      ],
+      "text": "流失",
+      "fs": 17,
+      "tone": "ink",
+      "font": "sans",
+      "weight": 400,
+      "align": "center"
+    },
+    {
+      "kind": "line",
+      "id": "visual-74",
+      "points": [
+        [
+          887.0,
+          401.8666666666667
+        ],
+        [
+          953.0,
+          401.8666666666667
+        ]
+      ],
+      "tone": "muted",
+      "lw": 1.7,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-75",
+      "points": [
+        [
+          887.0,
+          409.2
+        ],
+        [
+          953.0,
+          409.2
+        ]
+      ],
+      "tone": "muted",
+      "lw": 0.8,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-76",
+      "points": [
+        [
+          887.0,
+          394.5333333333333
+        ],
+        [
+          953.0,
+          394.5333333333333
+        ]
+      ],
+      "tone": "muted",
+      "lw": 0.8,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-77",
+      "points": [
+        [
+          953.0,
+          394.5333333333333
+        ],
+        [
+          1027.0,
+          394.5333333333333
+        ]
+      ],
+      "tone": "muted",
+      "lw": 0.7,
+      "arrow": false,
+      "dash": true,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "text",
+      "id": "visual-78",
+      "x": 850.0,
+      "y": 355.5333333333333,
+      "w": 140.0,
+      "h": 31.74,
+      "lines": [
+        "+500"
+      ],
+      "text": "+500",
+      "fs": 23,
+      "tone": "muted",
+      "font": "grotesk",
+      "weight": 500,
+      "align": "center"
+    },
+    {
+      "kind": "text",
+      "id": "visual-79",
+      "x": 850.0,
+      "y": 792,
+      "w": 140.0,
+      "h": 23.459999999999997,
+      "lines": [
+        "支持恢复"
+      ],
+      "text": "支持恢复",
+      "fs": 17,
+      "tone": "ink",
+      "font": "sans",
+      "weight": 400,
+      "align": "center"
+    },
+    {
+      "kind": "line",
+      "id": "visual-80",
+      "points": [
+        [
+          1027.0,
+          762.6666666666667
+        ],
+        [
+          1093.0,
+          762.6666666666667
+        ]
+      ],
+      "tone": "accent",
+      "lw": 1.7,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-81",
+      "points": [
+        [
+          1027.0,
+          748.0
+        ],
+        [
+          1093.0,
+          748.0
+        ]
+      ],
+      "tone": "accent",
+      "lw": 1.7,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-82",
+      "points": [
+        [
+          1027.0,
+          733.3333333333333
+        ],
+        [
+          1093.0,
+          733.3333333333333
+        ]
+      ],
+      "tone": "accent",
+      "lw": 1.7,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-83",
+      "points": [
+        [
+          1027.0,
+          718.6666666666667
+        ],
+        [
+          1093.0,
+          718.6666666666667
+        ]
+      ],
+      "tone": "accent",
+      "lw": 1.7,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-84",
+      "points": [
+        [
+          1027.0,
+          704.0
+        ],
+        [
+          1093.0,
+          704.0
+        ]
+      ],
+      "tone": "accent",
+      "lw": 1.7,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-85",
+      "points": [
+        [
+          1027.0,
+          689.3333333333333
+        ],
+        [
+          1093.0,
+          689.3333333333333
+        ]
+      ],
+      "tone": "accent",
+      "lw": 1.7,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-86",
+      "points": [
+        [
+          1027.0,
+          674.6666666666667
+        ],
+        [
+          1093.0,
+          674.6666666666667
+        ]
+      ],
+      "tone": "accent",
+      "lw": 1.7,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-87",
+      "points": [
+        [
+          1027.0,
+          660.0
+        ],
+        [
+          1093.0,
+          660.0
+        ]
+      ],
+      "tone": "accent",
+      "lw": 1.7,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-88",
+      "points": [
+        [
+          1027.0,
+          645.3333333333333
+        ],
+        [
+          1093.0,
+          645.3333333333333
+        ]
+      ],
+      "tone": "accent",
+      "lw": 1.7,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-89",
+      "points": [
+        [
+          1027.0,
+          630.6666666666667
+        ],
+        [
+          1093.0,
+          630.6666666666667
+        ]
+      ],
+      "tone": "accent",
+      "lw": 1.7,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-90",
+      "points": [
+        [
+          1027.0,
+          616.0
+        ],
+        [
+          1093.0,
+          616.0
+        ]
+      ],
+      "tone": "accent",
+      "lw": 1.7,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-91",
+      "points": [
+        [
+          1027.0,
+          601.3333333333333
+        ],
+        [
+          1093.0,
+          601.3333333333333
+        ]
+      ],
+      "tone": "accent",
+      "lw": 1.7,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-92",
+      "points": [
+        [
+          1027.0,
+          586.6666666666667
+        ],
+        [
+          1093.0,
+          586.6666666666667
+        ]
+      ],
+      "tone": "accent",
+      "lw": 1.7,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-93",
+      "points": [
+        [
+          1027.0,
+          572.0
+        ],
+        [
+          1093.0,
+          572.0
+        ]
+      ],
+      "tone": "accent",
+      "lw": 1.7,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-94",
+      "points": [
+        [
+          1027.0,
+          557.3333333333334
+        ],
+        [
+          1093.0,
+          557.3333333333334
+        ]
+      ],
+      "tone": "accent",
+      "lw": 1.7,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-95",
+      "points": [
+        [
+          1027.0,
+          542.6666666666666
+        ],
+        [
+          1093.0,
+          542.6666666666666
+        ]
+      ],
+      "tone": "accent",
+      "lw": 1.7,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-96",
+      "points": [
+        [
+          1027.0,
+          528.0
+        ],
+        [
+          1093.0,
+          528.0
+        ]
+      ],
+      "tone": "accent",
+      "lw": 1.7,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-97",
+      "points": [
+        [
+          1027.0,
+          513.3333333333334
+        ],
+        [
+          1093.0,
+          513.3333333333334
+        ]
+      ],
+      "tone": "accent",
+      "lw": 1.7,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-98",
+      "points": [
+        [
+          1027.0,
+          498.66666666666663
+        ],
+        [
+          1093.0,
+          498.66666666666663
+        ]
+      ],
+      "tone": "accent",
+      "lw": 1.7,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-99",
+      "points": [
+        [
+          1027.0,
+          484.0
+        ],
+        [
+          1093.0,
+          484.0
+        ]
+      ],
+      "tone": "accent",
+      "lw": 1.7,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-100",
+      "points": [
+        [
+          1027.0,
+          469.33333333333337
+        ],
+        [
+          1093.0,
+          469.33333333333337
+        ]
+      ],
+      "tone": "accent",
+      "lw": 1.7,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-101",
+      "points": [
+        [
+          1027.0,
+          454.6666666666667
+        ],
+        [
+          1093.0,
+          454.6666666666667
+        ]
+      ],
+      "tone": "accent",
+      "lw": 1.7,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-102",
+      "points": [
+        [
+          1027.0,
+          440.0
+        ],
+        [
+          1093.0,
+          440.0
+        ]
+      ],
+      "tone": "accent",
+      "lw": 1.7,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-103",
+      "points": [
+        [
+          1027.0,
+          425.3333333333333
+        ],
+        [
+          1093.0,
+          425.3333333333333
+        ]
+      ],
+      "tone": "accent",
+      "lw": 1.7,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-104",
+      "points": [
+        [
+          1027.0,
+          410.6666666666667
+        ],
+        [
+          1093.0,
+          410.6666666666667
+        ]
+      ],
+      "tone": "accent",
+      "lw": 1.7,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-105",
+      "points": [
+        [
+          1027.0,
+          398.93333333333334
+        ],
+        [
+          1066.6,
+          398.93333333333334
+        ]
+      ],
+      "tone": "accent",
+      "lw": 1.7,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-106",
+      "points": [
+        [
+          1027.0,
+          770.0
+        ],
+        [
+          1093.0,
+          770.0
+        ]
+      ],
+      "tone": "accent",
+      "lw": 0.8,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "line",
+      "id": "visual-107",
+      "points": [
+        [
+          1027.0,
+          394.5333333333333
+        ],
+        [
+          1093.0,
+          394.5333333333333
+        ]
+      ],
+      "tone": "accent",
+      "lw": 0.8,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "text",
+      "id": "visual-108",
+      "x": 990.0,
+      "y": 355.5333333333333,
+      "w": 140.0,
+      "h": 31.74,
+      "lines": [
+        "12,800"
+      ],
+      "text": "12,800",
+      "fs": 23,
+      "tone": "accent",
+      "font": "grotesk",
+      "weight": 500,
+      "align": "center"
+    },
+    {
+      "kind": "text",
+      "id": "visual-109",
+      "x": 990.0,
+      "y": 792,
+      "w": 140.0,
+      "h": 23.459999999999997,
+      "lines": [
+        "期末"
+      ],
+      "text": "期末",
+      "fs": 17,
+      "tone": "ink",
+      "font": "sans",
+      "weight": 400,
+      "align": "center"
+    },
+    {
+      "kind": "text",
+      "id": "visual-110",
+      "x": 1240,
+      "y": 316,
+      "w": 276,
+      "h": 82.8,
+      "lines": [
+        "+2,800"
+      ],
+      "text": "+2,800",
+      "fs": 60,
+      "tone": "accent",
+      "font": "grotesk",
+      "weight": 400,
+      "align": "left"
+    },
+    {
+      "kind": "text",
+      "id": "visual-111",
+      "x": 1244,
+      "y": 399,
+      "w": 269,
+      "h": 24.839999999999996,
+      "lines": [
+        "净变化 / 件 / 月"
+      ],
+      "text": "净变化 / 件 / 月",
+      "fs": 18,
+      "tone": "muted",
+      "font": "sans",
+      "weight": 400,
+      "align": "left"
+    },
+    {
+      "kind": "line",
+      "id": "visual-112",
+      "points": [
+        [
+          1244,
+          449
+        ],
+        [
+          1518,
+          449
+        ]
+      ],
+      "tone": "line",
+      "lw": 0.8,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "text",
+      "id": "visual-113",
+      "x": 1244,
+      "y": 474,
+      "w": 265,
+      "h": 19.32,
+      "lines": [
+        "01  观察"
+      ],
+      "text": "01  观察",
+      "fs": 14,
+      "tone": "accent",
+      "font": "mono",
+      "weight": 400,
+      "align": "left"
+    },
+    {
+      "kind": "text",
+      "id": "visual-114",
+      "x": 1244,
+      "y": 507,
+      "w": 269,
+      "h": 82.8,
+      "lines": [
+        "期末 = 基期 + 所有增减",
+        "项。每一段都从上一段的累计",
+        "值接续。"
+      ],
+      "text": "期末 = 基期 + 所有增减项。每一段都从上一段的累计值接续。",
+      "fs": 20,
+      "tone": "ink",
+      "font": "sans",
+      "weight": 400,
+      "align": "left"
+    },
+    {
+      "kind": "text",
+      "id": "visual-115",
+      "x": 1244,
+      "y": 643,
+      "w": 265,
+      "h": 19.32,
+      "lines": [
+        "02  边界"
+      ],
+      "text": "02  边界",
+      "fs": 14,
+      "tone": "accent",
+      "font": "mono",
+      "weight": 400,
+      "align": "left"
+    },
+    {
+      "kind": "text",
+      "id": "visual-116",
+      "x": 1244,
+      "y": 676,
+      "w": 269,
+      "h": 74.52,
+      "lines": [
+        "分解项是模拟核算，不代表已验",
+        "证的节能量；避免重复计入同一",
+        "措施。"
+      ],
+      "text": "分解项是模拟核算，不代表已验证的节能量；避免重复计入同一措施。",
+      "fs": 18,
+      "tone": "muted",
+      "font": "sans",
+      "weight": 400,
+      "align": "left"
+    },
+    {
+      "kind": "line",
+      "id": "visual-117",
+      "points": [
+        [
+          80,
+          851
+        ],
+        [
+          1520,
+          851
+        ]
+      ],
+      "tone": "ink",
+      "lw": 0.8,
+      "arrow": false,
+      "dash": false,
+      "source": null,
+      "target": null
+    },
+    {
+      "kind": "text",
+      "id": "visual-118",
+      "x": 80,
+      "y": 873,
+      "w": 130,
+      "h": 22.08,
+      "lines": [
+        "读图约定"
+      ],
+      "text": "读图约定",
+      "fs": 16,
+      "tone": "accent",
+      "font": "sans",
+      "weight": 400,
+      "align": "left"
+    },
+    {
+      "kind": "text",
+      "id": "visual-119",
+      "x": 220,
+      "y": 871,
+      "w": 1295,
+      "h": 24.839999999999996,
+      "lines": [
+        "完整短线 = 500 件 / 月；浮动段表示增减，首尾柱从 0 起；虚线追踪累计值。"
+      ],
+      "text": "完整短线 = 500 件 / 月；浮动段表示增减，首尾柱从 0 起；虚线追踪累计值。",
+      "fs": 18,
+      "tone": "ink",
+      "font": "sans",
+      "weight": 400,
+      "align": "left"
+    },
+    {
+      "kind": "text",
+      "id": "visual-120",
+      "x": 80,
+      "y": 950,
+      "w": 1370,
+      "h": 19.32,
+      "lines": [
+        "模拟数据 · Apat 自拟跨行业示例，仅用于呈现图形效果；不代表真实经营数据。"
+      ],
+      "text": "模拟数据 · Apat 自拟跨行业示例，仅用于呈现图形效果；不代表真实经营数据。",
+      "fs": 14,
+      "tone": "muted",
+      "font": "sans",
+      "weight": 400,
+      "align": "left"
+    },
+    {
+      "kind": "text",
+      "id": "visual-121",
+      "x": 1420,
+      "y": 950,
+      "w": 100,
+      "h": 19.32,
+      "lines": [
+        "APAT"
+      ],
+      "text": "APAT",
+      "fs": 14,
+      "tone": "muted",
+      "font": "sans",
+      "weight": 400,
+      "align": "right"
+    }
+  ]
+}

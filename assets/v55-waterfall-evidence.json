@@ -1,0 +1,25 @@
+{
+  "version": "v55",
+  "date": "2026-09-20",
+  "scope": "Bilingual cross-industry change waterfall form",
+  "automated": {
+    "tests": "Three regressions cover bilingual waterfall reconciliation, non-negative opening value, quantum validation and long English labels",
+    "registry": "capability_registry.py --check passes",
+    "diff": "git diff --check passes",
+    "waterfall": "Opening 10,000 plus five signed changes reconciles to closing 12,800 while retaining a 500-unit quantum"
+  },
+  "browser_checks": [
+    "Chinese and English waterfall sections opened in a scrollable demo with JSON, SVG, draw.io, HTML, CSV, PNG and PDF links",
+    "Chinese and English SVGs opened directly; opening/closing bars, signed step labels, units and localised reading notes remain readable",
+    "Chooser registry exposes the waterfall form with signed-change minimum input, backend, formats and non-causal scope"
+  ],
+  "not_verified": [
+    "Native editor save/reopen for the new draw.io files",
+    "Mobile viewport and dense labels beyond the declared seven-step limit",
+    "Statistical significance, causal attribution, source provenance or user aesthetic approval"
+  ],
+  "artifacts": {
+    "waterfall": ["assets/data-art-examples/waterfall-cn.json", "assets/data-art-examples/waterfall-en.json"],
+    "demo": "demos/waterfall/index.html"
+  }
+}

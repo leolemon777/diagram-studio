@@ -20,13 +20,13 @@ RECIPES={
 
 DATA_ART_UI={
  'zh':{
-  'recipe_label':{'dumbbell':'前后哑铃'},
+  'recipe_label':{'dumbbell':'前后哑铃','waterfall':'增减分解'},
   'mode_detail':'细读 · 逐项看数据','mode_clear':'快读 · 先看整体',
   'reading_guide':'读图约定','observation':'01  观察','boundary':'02  边界',
   'synthetic':'模拟数据','source':'来源数据',
  },
  'en':{
-  'recipe_label':{'dumbbell':'Before / after dumbbell'},
+  'recipe_label':{'dumbbell':'Before / after dumbbell','waterfall':'Change waterfall'},
   'mode_detail':'Detail · read each value','mode_clear':'Clear · compare at a glance',
   'reading_guide':'Reading guide','observation':'01  Observation','boundary':'02  Boundary',
   'synthetic':'Synthetic data','source':'Source data',
@@ -350,13 +350,15 @@ class DataPlate(Plate):
    self.label(xx-slot/2,y+h+25,slot,r['label']+' / n='+str(b['n']),19,'ink','center')
   n=sum(len(r['values']) for r in self.rows);self.kpi=str(n);self.kpi_label='原始测量值 / 总样本数';self.reading='箱体显示中间 50% 的样本，中线为中位数；旁注保留各组样本数。';self.caveat='须线止于 1.5 × IQR 内的实测极值；离群点不删除，也不等同异常原因。';self.encoding=('每个点 = 一次测量，横向错开仅防重叠。' if self.detail else '箱体 = Q1–Q3；空心点 = 1.5 × IQR 以外观测。')+'分位数采用线性插值。'
  def waterfall(self):
-  x,y,w,h=self.box;a=self.metrics;bars=[dict(id='opening',label='基期',lo=0,hi=a['start'],display=a['start'])]
+  x,y,w,h=self.box;a=self.metrics
+  opening,closing=('Opening','Closing') if self.language=='en' else ('基期','期末')
+  bars=[dict(id='opening',label=opening,lo=0,hi=a['start'],display=a['start'])]
   for r,s in zip(self.rows,a['steps']):bars.append(dict(id=r['id'],label=r['label'],lo=s['start'],hi=s['end'],display=s['delta']))
-  bars.append(dict(id='closing',label='期末',lo=0,hi=a['end'],display=a['end']))
+  bars.append(dict(id='closing',label=closing,lo=0,hi=a['end'],display=a['end']))
   lo,hi=scale([0]+[v for b in bars for v in (b['lo'],b['hi'])],True);Y=self.axis(lo,hi);slot=w/len(bars);quant=self.data['quantum']
   if (hi-lo)/quant>200:raise ValueError('increase waterfall quantum')
   for i,b in enumerate(bars):
-   xx=x+(i+.5)*slot;low,high=sorted([b['lo'],b['hi']]);ww=min(66,slot*.52);tone='accent' if i in (0,len(bars)-1) else 'ink' if b['display']<0 else 'muted';tip=b['label']+'：'+fmt(b['display'])+' '+self.data['unit']
+   xx=x+(i+.5)*slot;low,high=sorted([b['lo'],b['hi']]);ww=min(66,slot*.52);tone='accent' if i in (0,len(bars)-1) else 'ink' if b['display']<0 else 'muted';tip=b['label']+(': ' if self.language=='en' else '：')+fmt(b['display'])+' '+self.data['unit']
    if self.detail:
     for k in range(math.floor((high-low)/quant)):
      self.mark(self.seg(xx-ww/2,Y(low+(k+.5)*quant),xx+ww/2,Y(low+(k+.5)*quant),tone,1.7),b,tip)
@@ -366,7 +368,11 @@ class DataPlate(Plate):
    else:self.mark(self.rect(xx-ww/2,Y(high),ww,Y(low)-Y(high),tone,'none'),b,tip)
    if i<len(bars)-1:self.seg(xx+ww/2,Y(b['hi']),xx+slot-ww/2,Y(b['hi']),'muted',.7,True)
    self.text(xx-slot/2,Y(high)-39,slot,('+' if b['display']>0 and 0<i<len(bars)-1 else '')+fmt(b['display']),23,tone,'grotesk',500,'center');self.label(xx-slot/2,y+h+22,slot,b['label'],17,'ink','center')
-  self.kpi=('+' if a['net']>0 else '')+fmt(a['net']);self.kpi_label='净变化 / '+self.data['unit'];self.reading='期末 = 基期 + 所有增减项。每一段都从上一段的累计值接续。';self.caveat='分解项是模拟核算，不代表已验证的节能量；避免重复计入同一措施。';self.encoding=(f'完整短线 = {fmt(quant)} {self.data["unit"]}；' if self.detail else '')+'浮动段表示增减，首尾柱从 0 起；虚线追踪累计值。'
+  self.kpi=('+' if a['net']>0 else '')+fmt(a['net'])
+  if self.language=='en':
+   self.kpi_label='Net change / '+self.data['unit'];self.reading='Closing = opening + every signed change. Each step continues from the previous cumulative value.';self.caveat='This is a simulated reconciliation, not verified savings; check that one measure is not counted twice.';self.encoding=(f'One full tick = {fmt(quant)} {self.data["unit"]}; ' if self.detail else '')+'Floating steps show signed change; opening and closing bars start at zero, with dashed cumulative guides.'
+  else:
+   self.kpi_label='净变化 / '+self.data['unit'];self.reading='期末 = 基期 + 所有增减项。每一段都从上一段的累计值接续。';self.caveat='分解项是模拟核算，不代表已验证的节能量；避免重复计入同一措施。';self.encoding=(f'完整短线 = {fmt(quant)} {self.data["unit"]}；' if self.detail else '')+'浮动段表示增减，首尾柱从 0 起；虚线追踪累计值。'
  def multiples(self):
   x,y,w,h=150,337,980,426;indexed=self.metrics['indexed'];vals=[v for row in indexed.values() for v in row if v is not None];lo,hi=scale(vals+[100]);n=len(self.rows);slot=w/n;dates=[dt.datetime.fromisoformat(v).timestamp() for v in self.data['dates']]
   for i,r in enumerate(self.rows):

@@ -1,0 +1,205 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="plate-title" data-recipe="waterfall" data-mode="detail"><title id="plate-title">从 10,000 到 12,800：增长由什么组成？ · 暖灰纸感</title>
+<rect width="1600" height="1000" fill="#F1EFEB" />
+<defs>
+<marker id="arrow-accent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 1 L9 5 L0 9" fill="none" stroke="#94634C" stroke-width="1.0" /></marker>
+<marker id="arrow-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 1 L9 5 L0 9" fill="none" stroke="#706B62" stroke-width="1.0" /></marker>
+<marker id="arrow-ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 1 L9 5 L0 9" fill="none" stroke="#34322D" stroke-width="1.0" /></marker>
+<marker id="arrow-relation_ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 1 L9 5 L0 9" fill="none" stroke="#94634C" stroke-width="1.0" /></marker>
+<marker id="arrow-secondary_ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 1 L9 5 L0 9" fill="none" stroke="#706B62" stroke-width="1.0" /></marker>
+</defs>
+<polyline id="visual-3" points="80,82 1520,82" fill="none" stroke="#34322D" stroke-width="1.0" stroke-linecap="butt" stroke-linejoin="miter" />
+<polyline id="visual-8" points="1195,316 1195,809" fill="none" stroke="#CDC7BC" stroke-width="0.8" stroke-linecap="butt" stroke-linejoin="miter" />
+<polyline id="visual-9" points="150,770.0 1130,770.0" fill="none" stroke="#CDC7BC" stroke-width="0.6" stroke-linecap="butt" stroke-linejoin="miter" />
+<polyline id="visual-11" points="150,623.3333333333333 1130,623.3333333333333" fill="none" stroke="#CDC7BC" stroke-width="0.6" stroke-linecap="butt" stroke-linejoin="miter" />
+<polyline id="visual-13" points="150,476.66666666666663 1130,476.66666666666663" fill="none" stroke="#CDC7BC" stroke-width="0.6" stroke-linecap="butt" stroke-linejoin="miter" />
+<polyline id="visual-15" points="150,330.0 1130,330.0" fill="none" stroke="#CDC7BC" stroke-width="0.6" stroke-linecap="butt" stroke-linejoin="miter" />
+<polyline id="visual-18" points="187.0,762.6666666666667 253.0,762.6666666666667" fill="none" stroke="#94634C" stroke-width="1.7" stroke-linecap="butt" stroke-linejoin="miter" data-record="opening" data-tip="基期：10,000 件 / 月"><title>基期：10,000 件 / 月</title></polyline>
+<polyline id="visual-19" points="187.0,748.0 253.0,748.0" fill="none" stroke="#94634C" stroke-width="1.7" stroke-linecap="butt" stroke-linejoin="miter" data-record="opening" data-tip="基期：10,000 件 / 月"><title>基期：10,000 件 / 月</title></polyline>
+<polyline id="visual-20" points="187.0,733.3333333333333 253.0,733.3333333333333" fill="none" stroke="#94634C" stroke-width="1.7" stroke-linecap="butt" stroke-linejoin="miter" data-record="opening" data-tip="基期：10,000 件 / 月"><title>基期：10,000 件 / 月</title></polyline>
+<polyline id="visual-21" points="187.0,718.6666666666667 253.0,718.6666666666667" fill="none" stroke="#94634C" stroke-width="1.7" stroke-linecap="butt" stroke-linejoin="miter" data-record="opening" data-tip="基期：10,000 件 / 月"><title>基期：10,000 件 / 月</title></polyline>
+<polyline id="visual-22" points="187.0,704.0 253.0,704.0" fill="none" stroke="#94634C" stroke-width="1.7" stroke-linecap="butt" stroke-linejoin="miter" data-record="opening" data-tip="基期：10,000 件 / 月"><title>基期：10,000 件 / 月</title></polyline>
+<polyline id="visual-23" points="187.0,689.3333333333333 253.0,689.3333333333333" fill="none" stroke="#94634C" stroke-width="1.7" stroke-linecap="butt" stroke-linejoin="miter" data-record="opening" data-tip="基期：10,000 件 / 月"><title>基期：10,000 件 / 月</title></polyline>
+<polyline id="visual-24" points="187.0,674.6666666666667 253.0,674.6666666666667" fill="none" stroke="#94634C" stroke-width="1.7" stroke-linecap="butt" stroke-linejoin="miter" data-record="opening" data-tip="基期：10,000 件 / 月"><title>基期：10,000 件 / 月</title></polyline>
+<polyline id="visual-25" points="187.0,660.0 253.0,660.0" fill="none" stroke="#94634C" stroke-width="1.7" stroke-linecap="butt" stroke-linejoin="miter" data-record="opening" data-tip="基期：10,000 件 / 月"><title>基期：10,000 件 / 月</title></polyline>
+<polyline id="visual-26" points="187.0,645.3333333333333 253.0,645.3333333333333" fill="none" stroke="#94634C" stroke-width="1.7" stroke-linecap="butt" stroke-linejoin="miter" data-record="opening" data-tip="基期：10,000 件 / 月"><title>基期：10,000 件 / 月</title></polyline>
+<polyline id="visual-27" points="187.0,630.6666666666667 253.0,630.6666666666667" fill="none" stroke="#94634C" stroke-width="1.7" stroke-linecap="butt" stroke-linejoin="miter" data-record="opening" data-tip="基期：10,000 件 / 月"><title>基期：10,000 件 / 月</title></polyline>
+<polyline id="visual-28" points="187.0,616.0 253.0,616.0" fill="none" stroke="#94634C" stroke-width="1.7" stroke-linecap="butt" stroke-linejoin="miter" data-record="opening" data-tip="基期：10,000 件 / 月"><title>基期：10,000 件 / 月</title></polyline>
+<polyline id="visual-29" points="187.0,601.3333333333333 253.0,601.3333333333333" fill="none" stroke="#94634C" stroke-width="1.7" stroke-linecap="butt" stroke-linejoin="miter" data-record="opening" data-tip="基期：10,000 件 / 月"><title>基期：10,000 件 / 月</title></polyline>
+<polyline id="visual-30" points="187.0,586.6666666666667 253.0,586.6666666666667" fill="none" stroke="#94634C" stroke-width="1.7" stroke-linecap="butt" stroke-linejoin="miter" data-record="opening" data-tip="基期：10,000 件 / 月"><title>基期：10,000 件 / 月</title></polyline>
+<polyline id="visual-31" points="187.0,572.0 253.0,572.0" fill="none" stroke="#94634C" stroke-width="1.7" stroke-linecap="butt" stroke-linejoin="miter" data-record="opening" data-tip="基期：10,000 件 / 月"><title>基期：10,000 件 / 月</title></polyline>
+<polyline id="visual-32" points="187.0,557.3333333333334 253.0,557.3333333333334" fill="none" stroke="#94634C" stroke-width="1.7" stroke-linecap="butt" stroke-linejoin="miter" data-record="opening" data-tip="基期：10,000 件 / 月"><title>基期：10,000 件 / 月</title></polyline>
+<polyline id="visual-33" points="187.0,542.6666666666666 253.0,542.6666666666666" fill="none" stroke="#94634C" stroke-width="1.7" stroke-linecap="butt" stroke-linejoin="miter" data-record="opening" data-tip="基期：10,000 件 / 月"><title>基期：10,000 件 / 月</title></polyline>
+<polyline id="visual-34" points="187.0,528.0 253.0,528.0" fill="none" stroke="#94634C" stroke-width="1.7" stroke-linecap="butt" stroke-linejoin="miter" data-record="opening" data-tip="基期：10,000 件 / 月"><title>基期：10,000 件 / 月</title></polyline>
+<polyline id="visual-35" points="187.0,513.3333333333334 253.0,513.3333333333334" fill="none" stroke="#94634C" stroke-width="1.7" stroke-linecap="butt" stroke-linejoin="miter" data-record="opening" data-tip="基期：10,000 件 / 月"><title>基期：10,000 件 / 月</title></polyline>
+<polyline id="visual-36" points="187.0,498.66666666666663 253.0,498.66666666666663" fill="none" stroke="#94634C" stroke-width="1.7" stroke-linecap="butt" stroke-linejoin="miter" data-record="opening" data-tip="基期：10,000 件 / 月"><title>基期：10,000 件 / 月</title></polyline>
+<polyline id="visual-37" points="187.0,484.0 253.0,484.0" fill="none" stroke="#94634C" stroke-width="1.7" stroke-linecap="butt" stroke-linejoin="miter" data-record="opening" data-tip="基期：10,000 件 / 月"><title>基期：10,000 件 / 月</title></polyline>
+<polyline id="visual-38" points="187.0,770.0 253.0,770.0" fill="none" stroke="#94634C" stroke-width="0.8" stroke-linecap="butt" stroke-linejoin="miter" />
+<polyline id="visual-39" points="187.0,476.66666666666663 253.0,476.66666666666663" fill="none" stroke="#94634C" stroke-width="0.8" stroke-linecap="butt" stroke-linejoin="miter" />
+<polyline id="visual-40" points="253.0,476.66666666666663 327.0,476.66666666666663" fill="none" stroke="#706B62" stroke-width="0.7" stroke-linecap="butt" stroke-linejoin="miter" stroke-dasharray="6 5" />
+<polyline id="visual-43" points="327.0,469.33333333333337 393.0,469.33333333333337" fill="none" stroke="#706B62" stroke-width="1.7" stroke-linecap="butt" stroke-linejoin="miter" data-record="new" data-tip="新增账户：2,600 件 / 月"><title>新增账户：2,600 件 / 月</title></polyline>
+<polyline id="visual-44" points="327.0,454.6666666666667 393.0,454.6666666666667" fill="none" stroke="#706B62" stroke-width="1.7" stroke-linecap="butt" stroke-linejoin="miter" data-record="new" data-tip="新增账户：2,600 件 / 月"><title>新增账户：2,600 件 / 月</title></polyline>
+<polyline id="visual-45" points="327.0,440.0 393.0,440.0" fill="none" stroke="#706B62" stroke-width="1.7" stroke-linecap="butt" stroke-linejoin="miter" data-record="new" data-tip="新增账户：2,600 件 / 月"><title>新增账户：2,600 件 / 月</title></polyline>
+<polyline id="visual-46" points="327.0,425.3333333333333 393.0,425.3333333333333" fill="none" stroke="#706B62" stroke-width="1.7" stroke-linecap="butt" stroke-linejoin="miter" data-record="new" data-tip="新增账户：2,600 件 / 月"><title>新增账户：2,600 件 / 月</title></polyline>
+<polyline id="visual-47" points="327.0,410.6666666666667 393.0,410.6666666666667" fill="none" stroke="#706B62" stroke-width="1.7" stroke-linecap="butt" stroke-linejoin="miter" data-record="new" data-tip="新增账户：2,600 件 / 月"><title>新增账户：2,600 件 / 月</title></polyline>
+<polyline id="visual-48" points="327.0,401.8666666666667 340.2,401.8666666666667" fill="none" stroke="#706B62" stroke-width="1.7" stroke-linecap="butt" stroke-linejoin="miter" data-record="new" data-tip="新增账户：2,600 件 / 月"><title>新增账户：2,600 件 / 月</title></polyline>
+<polyline id="visual-49" points="327.0,476.66666666666663 393.0,476.66666666666663" fill="none" stroke="#706B62" stroke-width="0.8" stroke-linecap="butt" stroke-linejoin="miter" />
+<polyline id="visual-50" points="327.0,400.4 393.0,400.4" fill="none" stroke="#706B62" stroke-width="0.8" stroke-linecap="butt" stroke-linejoin="miter" />
+<polyline id="visual-51" points="393.0,400.4 467.0,400.4" fill="none" stroke="#706B62" stroke-width="0.7" stroke-linecap="butt" stroke-linejoin="miter" stroke-dasharray="6 5" />
+<polyline id="visual-54" points="467.0,393.06666666666666 533.0,393.06666666666666" fill="none" stroke="#706B62" stroke-width="1.7" stroke-linecap="butt" stroke-linejoin="miter" data-record="campaign" data-tip="活动拉动：900 件 / 月"><title>活动拉动：900 件 / 月</title></polyline>
+<polyline id="visual-55" points="467.0,379.8666666666667 519.8,379.8666666666667" fill="none" stroke="#706B62" stroke-width="1.7" stroke-linecap="butt" stroke-linejoin="miter" data-record="campaign" data-tip="活动拉动：900 件 / 月"><title>活动拉动：900 件 / 月</title></polyline>
+<polyline id="visual-56" points="467.0,400.4 533.0,400.4" fill="none" stroke="#706B62" stroke-width="0.8" stroke-linecap="butt" stroke-linejoin="miter" />
+<polyline id="visual-57" points="467.0,374.0 533.0,374.0" fill="none" stroke="#706B62" stroke-width="0.8" stroke-linecap="butt" stroke-linejoin="miter" />
+<polyline id="visual-58" points="533.0,374.0 607.0,374.0" fill="none" stroke="#706B62" stroke-width="0.7" stroke-linecap="butt" stroke-linejoin="miter" stroke-dasharray="6 5" />
+<polyline id="visual-61" points="607.0,381.3333333333333 673.0,381.3333333333333" fill="none" stroke="#34322D" stroke-width="1.7" stroke-linecap="butt" stroke-linejoin="miter" data-record="seasonality" data-tip="季节波动：-500 件 / 月"><title>季节波动：-500 件 / 月</title></polyline>
+<polyline id="visual-62" points="607.0,388.6666666666667 673.0,388.6666666666667" fill="none" stroke="#34322D" stroke-width="0.8" stroke-linecap="butt" stroke-linejoin="miter" />
+<polyline id="visual-63" points="607.0,374.0 673.0,374.0" fill="none" stroke="#34322D" stroke-width="0.8" stroke-linecap="butt" stroke-linejoin="miter" />
+<polyline id="visual-64" points="673.0,388.6666666666667 747.0,388.6666666666667" fill="none" stroke="#706B62" stroke-width="0.7" stroke-linecap="butt" stroke-linejoin="miter" stroke-dasharray="6 5" />
+<polyline id="visual-67" points="747.0,401.8666666666667 813.0,401.8666666666667" fill="none" stroke="#34322D" stroke-width="1.7" stroke-linecap="butt" stroke-linejoin="miter" data-record="churn" data-tip="流失：-700 件 / 月"><title>流失：-700 件 / 月</title></polyline>
+<polyline id="visual-68" points="747.0,391.6 773.4,391.6" fill="none" stroke="#34322D" stroke-width="1.7" stroke-linecap="butt" stroke-linejoin="miter" data-record="churn" data-tip="流失：-700 件 / 月"><title>流失：-700 件 / 月</title></polyline>
+<polyline id="visual-69" points="747.0,409.2 813.0,409.2" fill="none" stroke="#34322D" stroke-width="0.8" stroke-linecap="butt" stroke-linejoin="miter" />
+<polyline id="visual-70" points="747.0,388.6666666666667 813.0,388.6666666666667" fill="none" stroke="#34322D" stroke-width="0.8" stroke-linecap="butt" stroke-linejoin="miter" />
+<polyline id="visual-71" points="813.0,409.2 887.0,409.2" fill="none" stroke="#706B62" stroke-width="0.7" stroke-linecap="butt" stroke-linejoin="miter" stroke-dasharray="6 5" />
+<polyline id="visual-74" points="887.0,401.8666666666667 953.0,401.8666666666667" fill="none" stroke="#706B62" stroke-width="1.7" stroke-linecap="butt" stroke-linejoin="miter" data-record="recovery" data-tip="支持恢复：500 件 / 月"><title>支持恢复：500 件 / 月</title></polyline>
+<polyline id="visual-75" points="887.0,409.2 953.0,409.2" fill="none" stroke="#706B62" stroke-width="0.8" stroke-linecap="butt" stroke-linejoin="miter" />
+<polyline id="visual-76" points="887.0,394.5333333333333 953.0,394.5333333333333" fill="none" stroke="#706B62" stroke-width="0.8" stroke-linecap="butt" stroke-linejoin="miter" />
+<polyline id="visual-77" points="953.0,394.5333333333333 1027.0,394.5333333333333" fill="none" stroke="#706B62" stroke-width="0.7" stroke-linecap="butt" stroke-linejoin="miter" stroke-dasharray="6 5" />
+<polyline id="visual-80" points="1027.0,762.6666666666667 1093.0,762.6666666666667" fill="none" stroke="#94634C" stroke-width="1.7" stroke-linecap="butt" stroke-linejoin="miter" data-record="closing" data-tip="期末：12,800 件 / 月"><title>期末：12,800 件 / 月</title></polyline>
+<polyline id="visual-81" points="1027.0,748.0 1093.0,748.0" fill="none" stroke="#94634C" stroke-width="1.7" stroke-linecap="butt" stroke-linejoin="miter" data-record="closing" data-tip="期末：12,800 件 / 月"><title>期末：12,800 件 / 月</title></polyline>
+<polyline id="visual-82" points="1027.0,733.3333333333333 1093.0,733.3333333333333" fill="none" stroke="#94634C" stroke-width="1.7" stroke-linecap="butt" stroke-linejoin="miter" data-record="closing" data-tip="期末：12,800 件 / 月"><title>期末：12,800 件 / 月</title></polyline>
+<polyline id="visual-83" points="1027.0,718.6666666666667 1093.0,718.6666666666667" fill="none" stroke="#94634C" stroke-width="1.7" stroke-linecap="butt" stroke-linejoin="miter" data-record="closing" data-tip="期末：12,800 件 / 月"><title>期末：12,800 件 / 月</title></polyline>
+<polyline id="visual-84" points="1027.0,704.0 1093.0,704.0" fill="none" stroke="#94634C" stroke-width="1.7" stroke-linecap="butt" stroke-linejoin="miter" data-record="closing" data-tip="期末：12,800 件 / 月"><title>期末：12,800 件 / 月</title></polyline>
+<polyline id="visual-85" points="1027.0,689.3333333333333 1093.0,689.3333333333333" fill="none" stroke="#94634C" stroke-width="1.7" stroke-linecap="butt" stroke-linejoin="miter" data-record="closing" data-tip="期末：12,800 件 / 月"><title>期末：12,800 件 / 月</title></polyline>
+<polyline id="visual-86" points="1027.0,674.6666666666667 1093.0,674.6666666666667" fill="none" stroke="#94634C" stroke-width="1.7" stroke-linecap="butt" stroke-linejoin="miter" data-record="closing" data-tip="期末：12,800 件 / 月"><title>期末：12,800 件 / 月</title></polyline>
+<polyline id="visual-87" points="1027.0,660.0 1093.0,660.0" fill="none" stroke="#94634C" stroke-width="1.7" stroke-linecap="butt" stroke-linejoin="miter" data-record="closing" data-tip="期末：12,800 件 / 月"><title>期末：12,800 件 / 月</title></polyline>
+<polyline id="visual-88" points="1027.0,645.3333333333333 1093.0,645.3333333333333" fill="none" stroke="#94634C" stroke-width="1.7" stroke-linecap="butt" stroke-linejoin="miter" data-record="closing" data-tip="期末：12,800 件 / 月"><title>期末：12,800 件 / 月</title></polyline>
+<polyline id="visual-89" points="1027.0,630.6666666666667 1093.0,630.6666666666667" fill="none" stroke="#94634C" stroke-width="1.7" stroke-linecap="butt" stroke-linejoin="miter" data-record="closing" data-tip="期末：12,800 件 / 月"><title>期末：12,800 件 / 月</title></polyline>
+<polyline id="visual-90" points="1027.0,616.0 1093.0,616.0" fill="none" stroke="#94634C" stroke-width="1.7" stroke-linecap="butt" stroke-linejoin="miter" data-record="closing" data-tip="期末：12,800 件 / 月"><title>期末：12,800 件 / 月</title></polyline>
+<polyline id="visual-91" points="1027.0,601.3333333333333 1093.0,601.3333333333333" fill="none" stroke="#94634C" stroke-width="1.7" stroke-linecap="butt" stroke-linejoin="miter" data-record="closing" data-tip="期末：12,800 件 / 月"><title>期末：12,800 件 / 月</title></polyline>
+<polyline id="visual-92" points="1027.0,586.6666666666667 1093.0,586.6666666666667" fill="none" stroke="#94634C" stroke-width="1.7" stroke-linecap="butt" stroke-linejoin="miter" data-record="closing" data-tip="期末：12,800 件 / 月"><title>期末：12,800 件 / 月</title></polyline>
+<polyline id="visual-93" points="1027.0,572.0 1093.0,572.0" fill="none" stroke="#94634C" stroke-width="1.7" stroke-linecap="butt" stroke-linejoin="miter" data-record="closing" data-tip="期末：12,800 件 / 月"><title>期末：12,800 件 / 月</title></polyline>
+<polyline id="visual-94" points="1027.0,557.3333333333334 1093.0,557.3333333333334" fill="none" stroke="#94634C" stroke-width="1.7" stroke-linecap="butt" stroke-linejoin="miter" data-record="closing" data-tip="期末：12,800 件 / 月"><title>期末：12,800 件 / 月</title></polyline>
+<polyline id="visual-95" points="1027.0,542.6666666666666 1093.0,542.6666666666666" fill="none" stroke="#94634C" stroke-width="1.7" stroke-linecap="butt" stroke-linejoin="miter" data-record="closing" data-tip="期末：12,800 件 / 月"><title>期末：12,800 件 / 月</title></polyline>
+<polyline id="visual-96" points="1027.0,528.0 1093.0,528.0" fill="none" stroke="#94634C" stroke-width="1.7" stroke-linecap="butt" stroke-linejoin="miter" data-record="closing" data-tip="期末：12,800 件 / 月"><title>期末：12,800 件 / 月</title></polyline>
+<polyline id="visual-97" points="1027.0,513.3333333333334 1093.0,513.3333333333334" fill="none" stroke="#94634C" stroke-width="1.7" stroke-linecap="butt" stroke-linejoin="miter" data-record="closing" data-tip="期末：12,800 件 / 月"><title>期末：12,800 件 / 月</title></polyline>
+<polyline id="visual-98" points="1027.0,498.66666666666663 1093.0,498.66666666666663" fill="none" stroke="#94634C" stroke-width="1.7" stroke-linecap="butt" stroke-linejoin="miter" data-record="closing" data-tip="期末：12,800 件 / 月"><title>期末：12,800 件 / 月</title></polyline>
+<polyline id="visual-99" points="1027.0,484.0 1093.0,484.0" fill="none" stroke="#94634C" stroke-width="1.7" stroke-linecap="butt" stroke-linejoin="miter" data-record="closing" data-tip="期末：12,800 件 / 月"><title>期末：12,800 件 / 月</title></polyline>
+<polyline id="visual-100" points="1027.0,469.33333333333337 1093.0,469.33333333333337" fill="none" stroke="#94634C" stroke-width="1.7" stroke-linecap="butt" stroke-linejoin="miter" data-record="closing" data-tip="期末：12,800 件 / 月"><title>期末：12,800 件 / 月</title></polyline>
+<polyline id="visual-101" points="1027.0,454.6666666666667 1093.0,454.6666666666667" fill="none" stroke="#94634C" stroke-width="1.7" stroke-linecap="butt" stroke-linejoin="miter" data-record="closing" data-tip="期末：12,800 件 / 月"><title>期末：12,800 件 / 月</title></polyline>
+<polyline id="visual-102" points="1027.0,440.0 1093.0,440.0" fill="none" stroke="#94634C" stroke-width="1.7" stroke-linecap="butt" stroke-linejoin="miter" data-record="closing" data-tip="期末：12,800 件 / 月"><title>期末：12,800 件 / 月</title></polyline>
+<polyline id="visual-103" points="1027.0,425.3333333333333 1093.0,425.3333333333333" fill="none" stroke="#94634C" stroke-width="1.7" stroke-linecap="butt" stroke-linejoin="miter" data-record="closing" data-tip="期末：12,800 件 / 月"><title>期末：12,800 件 / 月</title></polyline>
+<polyline id="visual-104" points="1027.0,410.6666666666667 1093.0,410.6666666666667" fill="none" stroke="#94634C" stroke-width="1.7" stroke-linecap="butt" stroke-linejoin="miter" data-record="closing" data-tip="期末：12,800 件 / 月"><title>期末：12,800 件 / 月</title></polyline>
+<polyline id="visual-105" points="1027.0,398.93333333333334 1066.6,398.93333333333334" fill="none" stroke="#94634C" stroke-width="1.7" stroke-linecap="butt" stroke-linejoin="miter" data-record="closing" data-tip="期末：12,800 件 / 月"><title>期末：12,800 件 / 月</title></polyline>
+<polyline id="visual-106" points="1027.0,770.0 1093.0,770.0" fill="none" stroke="#94634C" stroke-width="0.8" stroke-linecap="butt" stroke-linejoin="miter" />
+<polyline id="visual-107" points="1027.0,394.5333333333333 1093.0,394.5333333333333" fill="none" stroke="#94634C" stroke-width="0.8" stroke-linecap="butt" stroke-linejoin="miter" />
+<polyline id="visual-112" points="1244,449 1518,449" fill="none" stroke="#CDC7BC" stroke-width="0.8" stroke-linecap="butt" stroke-linejoin="miter" />
+<polyline id="visual-117" points="80,851 1520,851" fill="none" stroke="#34322D" stroke-width="0.8" stroke-linecap="butt" stroke-linejoin="miter" />
+<g id="visual-1" data-box="80,39,1150,19.32" font-family="Menlo, Consolas, PingFang SC, monospace" font-size="14" font-weight="400" fill="#706B62" text-anchor="start">
+<text x="80" y="53.0">APAT    /    DATA STUDIES    /    CHANGE ACCOUNT</text>
+</g>
+<g id="visual-2" data-box="1340,39,180,19.32" font-family="Menlo, Consolas, PingFang SC, monospace" font-size="14" font-weight="400" fill="#706B62" text-anchor="end">
+<text x="1520" y="53.0">10 / 12</text>
+</g>
+<g id="visual-4" data-box="78,105,1440,67.61999999999999" font-family="Songti SC, Noto Serif CJK SC, serif" font-size="49" font-weight="400" fill="#34322D" text-anchor="start">
+<text x="78" y="154.0">从 10,000 到 12,800：增长由什么组成？</text>
+</g>
+<g id="visual-5" data-box="81,183,1425,28.979999999999997" font-family="PingFang SC, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#706B62" text-anchor="start">
+<text x="81" y="204.0">把一个季度的月度活跃服务请求拆成有序增减项；保留口径与净变化。</text>
+</g>
+<g id="visual-6" data-box="81,247,900,22.08" font-family="PingFang SC, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" fill="#94634C" text-anchor="start">
+<text x="81" y="263.0">2026 年第一季度 → 第二季度 / 月度活跃口径  /  增减分解</text>
+</g>
+<g id="visual-7" data-box="1160,247,360,22.08" font-family="PingFang SC, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" fill="#94634C" text-anchor="end">
+<text x="1520" y="263.0">细读 · 逐项看数据</text>
+</g>
+<g id="visual-10" data-box="72,758.0,63,22.08" font-family="Helvetica Neue, PingFang SC, sans-serif" font-size="16" font-weight="500" fill="#706B62" text-anchor="end">
+<text x="135" y="774.0">0</text>
+</g>
+<g id="visual-12" data-box="72,611.3333333333333,63,22.08" font-family="Helvetica Neue, PingFang SC, sans-serif" font-size="16" font-weight="500" fill="#706B62" text-anchor="end">
+<text x="135" y="627.3333333333333">5,000</text>
+</g>
+<g id="visual-14" data-box="72,464.66666666666663,63,22.08" font-family="Helvetica Neue, PingFang SC, sans-serif" font-size="16" font-weight="500" fill="#706B62" text-anchor="end">
+<text x="135" y="480.66666666666663">10,000</text>
+</g>
+<g id="visual-16" data-box="72,318.0,63,22.08" font-family="Helvetica Neue, PingFang SC, sans-serif" font-size="16" font-weight="500" fill="#706B62" text-anchor="end">
+<text x="135" y="334.0">15,000</text>
+</g>
+<g id="visual-17" data-box="90,287,980,23.459999999999997" font-family="PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17" font-weight="400" fill="#706B62" text-anchor="start">
+<text x="90" y="304.0">件 / 月</text>
+</g>
+<g id="visual-41" data-box="150.0,437.66666666666663,140.0,31.74" font-family="Helvetica Neue, PingFang SC, sans-serif" font-size="23" font-weight="500" fill="#94634C" text-anchor="middle">
+<text x="220.0" y="460.66666666666663">10,000</text>
+</g>
+<g id="visual-42" data-box="150.0,792,140.0,23.459999999999997" font-family="PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17" font-weight="400" fill="#34322D" text-anchor="middle">
+<text x="220.0" y="809.0">基期</text>
+</g>
+<g id="visual-52" data-box="290.0,361.4,140.0,31.74" font-family="Helvetica Neue, PingFang SC, sans-serif" font-size="23" font-weight="500" fill="#706B62" text-anchor="middle">
+<text x="360.0" y="384.4">+2,600</text>
+</g>
+<g id="visual-53" data-box="290.0,792,140.0,23.459999999999997" font-family="PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17" font-weight="400" fill="#34322D" text-anchor="middle">
+<text x="360.0" y="809.0">新增账户</text>
+</g>
+<g id="visual-59" data-box="430.0,335.0,140.0,31.74" font-family="Helvetica Neue, PingFang SC, sans-serif" font-size="23" font-weight="500" fill="#706B62" text-anchor="middle">
+<text x="500.0" y="358.0">+900</text>
+</g>
+<g id="visual-60" data-box="430.0,792,140.0,23.459999999999997" font-family="PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17" font-weight="400" fill="#34322D" text-anchor="middle">
+<text x="500.0" y="809.0">活动拉动</text>
+</g>
+<g id="visual-65" data-box="570.0,335.0,140.0,31.74" font-family="Helvetica Neue, PingFang SC, sans-serif" font-size="23" font-weight="500" fill="#34322D" text-anchor="middle">
+<text x="640.0" y="358.0">-500</text>
+</g>
+<g id="visual-66" data-box="570.0,792,140.0,23.459999999999997" font-family="PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17" font-weight="400" fill="#34322D" text-anchor="middle">
+<text x="640.0" y="809.0">季节波动</text>
+</g>
+<g id="visual-72" data-box="710.0,349.6666666666667,140.0,31.74" font-family="Helvetica Neue, PingFang SC, sans-serif" font-size="23" font-weight="500" fill="#34322D" text-anchor="middle">
+<text x="780.0" y="372.6666666666667">-700</text>
+</g>
+<g id="visual-73" data-box="710.0,792,140.0,23.459999999999997" font-family="PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17" font-weight="400" fill="#34322D" text-anchor="middle">
+<text x="780.0" y="809.0">流失</text>
+</g>
+<g id="visual-78" data-box="850.0,355.5333333333333,140.0,31.74" font-family="Helvetica Neue, PingFang SC, sans-serif" font-size="23" font-weight="500" fill="#706B62" text-anchor="middle">
+<text x="920.0" y="378.5333333333333">+500</text>
+</g>
+<g id="visual-79" data-box="850.0,792,140.0,23.459999999999997" font-family="PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17" font-weight="400" fill="#34322D" text-anchor="middle">
+<text x="920.0" y="809.0">支持恢复</text>
+</g>
+<g id="visual-108" data-box="990.0,355.5333333333333,140.0,31.74" font-family="Helvetica Neue, PingFang SC, sans-serif" font-size="23" font-weight="500" fill="#94634C" text-anchor="middle">
+<text x="1060.0" y="378.5333333333333">12,800</text>
+</g>
+<g id="visual-109" data-box="990.0,792,140.0,23.459999999999997" font-family="PingFang SC, Noto Sans CJK SC, sans-serif" font-size="17" font-weight="400" fill="#34322D" text-anchor="middle">
+<text x="1060.0" y="809.0">期末</text>
+</g>
+<g id="visual-110" data-box="1240,316,276,82.8" font-family="Helvetica Neue, PingFang SC, sans-serif" font-size="60" font-weight="400" fill="#94634C" text-anchor="start">
+<text x="1240" y="376.0">+2,800</text>
+</g>
+<g id="visual-111" data-box="1244,399,269,24.839999999999996" font-family="PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" fill="#706B62" text-anchor="start">
+<text x="1244" y="417.0">净变化 / 件 / 月</text>
+</g>
+<g id="visual-113" data-box="1244,474,265,19.32" font-family="Menlo, Consolas, PingFang SC, monospace" font-size="14" font-weight="400" fill="#94634C" text-anchor="start">
+<text x="1244" y="488.0">01  观察</text>
+</g>
+<g id="visual-114" data-box="1244,507,269,82.8" font-family="PingFang SC, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" fill="#34322D" text-anchor="start">
+<text x="1244" y="527.0">期末 = 基期 + 所有增减</text>
+<text x="1244" y="554.6">项。每一段都从上一段的累计</text>
+<text x="1244" y="582.2">值接续。</text>
+</g>
+<g id="visual-115" data-box="1244,643,265,19.32" font-family="Menlo, Consolas, PingFang SC, monospace" font-size="14" font-weight="400" fill="#94634C" text-anchor="start">
+<text x="1244" y="657.0">02  边界</text>
+</g>
+<g id="visual-116" data-box="1244,676,269,74.52" font-family="PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" fill="#706B62" text-anchor="start">
+<text x="1244" y="694.0">分解项是模拟核算，不代表已验</text>
+<text x="1244" y="718.84">证的节能量；避免重复计入同一</text>
+<text x="1244" y="743.68">措施。</text>
+</g>
+<g id="visual-118" data-box="80,873,130,22.08" font-family="PingFang SC, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" fill="#94634C" text-anchor="start">
+<text x="80" y="889.0">读图约定</text>
+</g>
+<g id="visual-119" data-box="220,871,1295,24.839999999999996" font-family="PingFang SC, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" fill="#34322D" text-anchor="start">
+<text x="220" y="889.0">完整短线 = 500 件 / 月；浮动段表示增减，首尾柱从 0 起；虚线追踪累计值。</text>
+</g>
+<g id="visual-120" data-box="80,950,1370,19.32" font-family="PingFang SC, Noto Sans CJK SC, sans-serif" font-size="14" font-weight="400" fill="#706B62" text-anchor="start">
+<text x="80" y="964.0">模拟数据 · Apat 自拟跨行业示例，仅用于呈现图形效果；不代表真实经营数据。</text>
+</g>
+<g id="visual-121" data-box="1420,950,100,19.32" font-family="PingFang SC, Noto Sans CJK SC, sans-serif" font-size="14" font-weight="400" fill="#706B62" text-anchor="end">
+<text x="1520" y="964.0">APAT</text>
+</g>
+<desc>完整短线 = 500 件 / 月；浮动段表示增减，首尾柱从 0 起；虚线追踪累计值。 期末 = 基期 + 所有增减项。每一段都从上一段的累计值接续。 分解项是模拟核算，不代表已验证的节能量；避免重复计入同一措施。</desc></svg>

@@ -1,6 +1,6 @@
 # Capability registry and delivery scope
 
-The machine-readable source is [`assets/capability-registry.json`](../assets/capability-registry.json) (v53). The chooser reads structure, backend, formats and evidence from this file. Run `python3 scripts/capability_registry.py --check` to validate every backend, example and evidence reference. The compact table below is a human index; the JSON carries the complete fields.
+The machine-readable source is [`assets/capability-registry.json`](../assets/capability-registry.json) (v55). The chooser reads structure, backend, formats and evidence from this file. Run `python3 scripts/capability_registry.py --check` to validate every backend, example and evidence reference. The compact table below is a human index; the JSON carries the complete fields.
 
 | ID | Form | Backend | Formats | Evidence |
 |---|---|---|---|---|
@@ -15,6 +15,7 @@ The machine-readable source is [`assets/capability-registry.json`](../assets/cap
 | `dependency` | Dependency graph | `scripts/render.py#graph` | SVG, draw.io, scene/QA, HTML | `generated_with_semantic_validation` |
 | `bar` / `line` | Bar / trend chart | `scripts/render.py#chart` | SVG, draw.io, scene/QA, HTML | `generated_with_semantic_validation` / `manual_visual_review` |
 | `dumbbell` | Before/after dumbbell | `scripts/data_art.py#dumbbell` | SVG, draw.io, PNG, PDF, HTML, source/analysis/QA, CSV | `manual_visual_review` |
+| `waterfall` | Waterfall chart | `scripts/data_art.py#waterfall` | SVG, draw.io, PNG, PDF, HTML, source/analysis/QA, CSV | `manual_visual_review` |
 | `donut` | Donut chart | `scripts/render.py#chart:donut` | SVG, draw.io, scene/QA, HTML | `generated_with_semantic_validation` |
 | `heatmap` | Heatmap | `scripts/render.py#plot:heatmap` | SVG, draw.io, scene/QA, HTML | `manual_visual_review` |
 | `histogram` | Histogram | `scripts/render.py#plot:histogram` | SVG, draw.io, scene/QA, HTML | `manual_visual_review` |

@@ -1,0 +1,6 @@
+﻿id,label,value,unit
+new,New accounts,2600,cases / month
+campaign,Campaign lift,900,cases / month
+seasonality,Seasonality,-500,cases / month
+churn,Churn,-700,cases / month
+recovery,Support recovery,500,cases / month

@@ -1,0 +1,19 @@
+{
+  "recipe": "waterfall",
+  "language": "en",
+  "title": "From 10,000 to 12,800: what made up the change?",
+  "subtitle": "Break one quarter of monthly active service cases into ordered signed changes while keeping the scope and net movement visible.",
+  "unit": "cases / month",
+  "quantum": 500,
+  "start": 10000,
+  "rows": [
+    {"id": "new", "label": "New accounts", "value": 2600},
+    {"id": "campaign", "label": "Campaign lift", "value": 900},
+    {"id": "seasonality", "label": "Seasonality", "value": -500},
+    {"id": "churn", "label": "Churn", "value": -700},
+    {"id": "recovery", "label": "Support recovery", "value": 500}
+  ],
+  "period": "Q1 2026 → Q2 2026 / monthly active-case scope",
+  "synthetic": true,
+  "source": "Apat synthetic cross-industry example for visual inspection; not operating data."
+}

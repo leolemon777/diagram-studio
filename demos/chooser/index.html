@@ -42,7 +42,8 @@ const fallbackGroups=[
  {id:'change',title:['比较与变化','Comparison & change'],sub:['大小排序、趋势、前后差异','Rank, trends, before/after'],types:[
   {id:'bar',name:['条形图','Bar chart'],why:['比较类别大小，尤其适合较长标签','Compare category magnitudes, especially with long labels'],need:['类别、数值、单位','Categories, values, units']},
   {id:'line',name:['趋势图','Line chart'],why:['连续时间里的变化方向与波动','Show direction and variation across ordered time'],need:['时间、数值、单位','Time points, values, units']},
-  {id:'dumbbell',name:['前后对照图','Before/after dumbbell'],why:['同一对象的两次测量，突出差值','Compare two measurements for each entity and show change'],need:['对象、前值、后值、单位','Entities, before/after values, units'],example:'../dumbbell/index.html',scope:['同一对象的前后变化；不用于独立样本比较','For paired before/after entities; not for independent-group comparison']}]},
+  {id:'dumbbell',name:['前后对照图','Before/after dumbbell'],why:['同一对象的两次测量，突出差值','Compare two measurements for each entity and show change'],need:['对象、前值、后值、单位','Entities, before/after values, units'],example:'../dumbbell/index.html',scope:['同一对象的前后变化；不用于独立样本比较','For paired before/after entities; not for independent-group comparison']},
+  {id:'waterfall',name:['瀑布图','Waterfall chart'],why:['把基期到期末的增减来源按顺序拆开','Break an opening-to-closing total into ordered signed changes'],need:['基期、带符号变化项、单位与计量刻度','Opening value, signed changes, unit and measurement quantum'],example:'../waterfall/index.html',scope:['表达一个总量的增减分解；不从分解自动推断因果或显著性','Expresses one total’s change account; it does not infer causality or significance from the decomposition']}]},
  {id:'pattern',title:['组成与分布','Composition & distribution'],sub:['占比、频数、变量关系','Share, frequency, correlation'],types:[
   {id:'donut',name:['环形占比图','Donut chart'],why:['少量类别组成同一个整体','A few categories sum to one whole'],need:['各部分数值、总量口径','Part values and definition of total']},
   {id:'histogram',name:['直方图','Histogram'],why:['看连续数值的频数分布，而非类别大小','Show frequencies of continuous measurements'],need:['逐条数值、单位、分箱规则','Observations, unit, binning rule']},
@@ -97,6 +98,10 @@ svg=function(id){
   const L=(x1,y1,x2,y2)=>`<path d="M${x1} ${y1}L${x2} ${y2}" stroke="${line}" stroke-width="2" fill="none"/>`;
   const C=(x,y)=>`<circle cx="${x}" cy="${y}" r="3" fill="${dark}"/>`;
   return `<svg viewBox="0 0 260 104" role="img" aria-hidden="true">${L(18,32,242,32)+L(18,67,242,67)+L(18,86,242,86)+R(26,11,53,15)+R(99,42,53,15)+R(176,71,57,15)+L(79,19,99,49)+L(152,49,176,78)+C(79,19)+C(152,49)}</svg>`;
+ }
+ if(id==='waterfall'){
+  const bars=[['#283d42',50],['#537872',30],['#537872',42],['#283d42',24],['#537872',34],['#283d42',58]];
+  return `<svg viewBox="0 0 260 104" role="img" aria-hidden="true">${bars.map(([fill,h],i)=>`<rect x="${24+i*38}" y="${90-h}" width="27" height="${h}" fill="${fill}"/>`).join('')}</svg>`;
  }
  return basePreview(id);
 };

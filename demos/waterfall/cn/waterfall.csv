@@ -1,0 +1,6 @@
+﻿id,label,value,unit
+new,新增账户,2600,件 / 月
+campaign,活动拉动,900,件 / 月
+seasonality,季节波动,-500,件 / 月
+churn,流失,-700,件 / 月
+recovery,支持恢复,500,件 / 月

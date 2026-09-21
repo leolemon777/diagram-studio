@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "version": "v54",
+  "version": "v55",
   "updated": "2026-09-20",
   "purpose": "Single source for chooser labels, backend capability, delivery formats and acceptance evidence.",
   "status_vocabulary": {
@@ -204,6 +204,20 @@
           "examples": ["assets/data-art-examples/dumbbell-cn.json", "assets/data-art-examples/dumbbell-en.json"],
           "evidence": {"level": "manual_visual_review", "reference": "assets/v54-dumbbell-evidence.json", "detail": {"zh": "中英跨行业前后哑铃通过成对数值、单位、长英文对象名换行和浏览器查看。", "en": "Chinese and English cross-industry dumbbells pass paired values, units, long-English entity wrapping and browser review."}},
           "scope": {"zh": "同一对象的前后变化；不用于独立样本比较。", "en": "For paired before/after entities; not for independent-group comparison."}
+        },
+        {
+          "id": "waterfall",
+          "label": {"zh": "瀑布图", "en": "Waterfall chart"},
+          "why": {"zh": "把一个总量从基期到期末的增减来源按顺序拆开", "en": "Break an opening-to-closing total into ordered signed changes"},
+          "minimum_input": {"zh": "基期、带符号变化项、单位与计量刻度", "en": "Opening value, signed changes, unit and measurement quantum"},
+          "input_model": {"kind": "data-art", "recipe": "waterfall", "required": ["start", "rows", "quantum", "unit"]},
+          "backend": {"kind": "specialized-data", "module": "scripts/data_art.py", "entry": "waterfall"},
+          "formats": ["svg", "drawio", "png", "pdf", "html", "input.json", "scene.json", "analysis.json", "qa.json", "csv"],
+          "layout_limits": {"zh": "最多七个增减项；首尾总量和每个有符号变化都要保留，超过密度拆分。", "en": "Up to seven signed changes; keep opening, closing and every step, and split higher density."},
+          "languages": ["zh", "en"],
+          "examples": ["assets/data-art-examples/waterfall-cn.json", "assets/data-art-examples/waterfall-en.json"],
+          "evidence": {"level": "manual_visual_review", "reference": "assets/v55-waterfall-evidence.json", "detail": {"zh": "中英跨行业瀑布图通过基期/期末核算、符号增减、刻度、长英文说明和浏览器查看。", "en": "Chinese and English cross-industry waterfalls pass opening/closing reconciliation, signed steps, quantum, long-English notes and browser review."}},
+          "scope": {"zh": "表达一个总量的增减分解；不从分解自动推断因果或显著性。", "en": "Expresses one total's change account; it does not infer causality or significance from the decomposition."}
         }
       ]
     },
