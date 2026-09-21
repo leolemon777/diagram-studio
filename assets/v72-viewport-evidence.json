@@ -1,0 +1,60 @@
+{
+  "version": "v72-t05",
+  "checked_on": "2026-09-21",
+  "browser": "Codex In-app Browser",
+  "server": "http://127.0.0.1:8788",
+  "viewports": [
+    {"width": 390, "height": 844},
+    {"width": 768, "height": 1024},
+    {"width": 1280, "height": 720},
+    {"width": 1600, "height": 900}
+  ],
+  "pages_checked": [
+    "analysis-forms",
+    "architecture",
+    "chooser",
+    "data-story",
+    "dependency",
+    "distribution",
+    "dumbbell",
+    "experience-maps",
+    "expression-lab",
+    "flow",
+    "gantt",
+    "lean-canvas",
+    "network",
+    "route-mindmap",
+    "sequence",
+    "storymap",
+    "strategy-canvas",
+    "strategy-execution",
+    "swimlane",
+    "swot",
+    "user-path-storyboard",
+    "waterfall",
+    "workshop-study"
+  ],
+  "runs": 92,
+  "checks": {
+    "document_scroll_width_equals_viewport": {"passed": 92, "failed": 0},
+    "uncontained_visible_horizontal_overflow": {"passed": 92, "failed": 0},
+    "minimum_html_shell_font_px": 15,
+    "inner_scroll_is_explicit": {
+      "experience-maps": "narrow viewports use .frame overflow:auto after the v72 fix",
+      "lean-canvas": "dense canvas uses .viewport overflow:auto at all four sizes",
+      "storymap": "large story map uses an explicit scrollable region at all four sizes",
+      "user-path-storyboard": "wide path uses .viewport overflow:auto at all four sizes"
+    }
+  },
+  "repair": {
+    "page": "demos/experience-maps/index.html",
+    "observed_before": "390x844 and 768x1024 document scrollWidth was 1050px because the grid track adopted the image min-content width",
+    "change": "added minmax(0,1fr) to the grid and min-width:0 to cards, labels and frames while retaining inner image scrolling",
+    "verified_after": "390x844 and 768x1024 document scrollWidth equals the viewport; each frame keeps the 1000px image inside an explicit overflow:auto region"
+  },
+  "manual_visual_checks": [
+    {"page": "user-path-storyboard", "viewport": "390x844", "result": "Chinese path shows preconditions, main path, branch/exception lane and proposal note in a readable scrollable preview"},
+    {"page": "experience-maps", "viewport": "390x844", "result": "Journey labels and first stage remain visible while the wide map is contained in the frame scroll region"}
+  ],
+  "scope": "DOM viewport and container evidence for the current 23 demo pages; generated SVG semantic/font QA and native-editor/JEV review remain separate checks"
+}

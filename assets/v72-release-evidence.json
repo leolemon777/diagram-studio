@@ -20,14 +20,15 @@
     }
   },
   "checks": {
-    "source_regression_tests": 124,
-    "installed_regression_tests": 124,
+    "source_regression_tests": 126,
+    "installed_regression_tests": 126,
     "capability_registry": "v72 / 8 groups / 30 capabilities",
     "semantic_validation": "passed: four bilingual inputs",
     "content_integrity": "passed: stable IDs, source text and explicit path relations",
     "geometry": "passed: zero errors and zero warnings for the four generated inputs",
     "drawio_nodes": "passed: block, entry, state, step, branch and exception IDs are present",
-    "browser": "passed: bilingual Lean Canvas and user-path storyboard demo pages opened at 1280px desktop surface; readable-size scroll mode displayed actual content and links",
+    "browser": "passed: bilingual Lean Canvas and user-path storyboard demo pages opened at 1280px desktop surface; readable-size scroll mode displayed actual content and links; v72-t05 measured all 23 demo pages at four viewport sizes",
+    "viewport_evidence": "assets/v72-viewport-evidence.json",
     "source_installed_parity": "passed: recursive diff excluding .git is empty",
     "jev": "pending: no matching Skill, plugin or repository file is available"
   },

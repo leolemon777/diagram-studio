@@ -9,7 +9,7 @@
     "semantic_validation": "passed",
     "long_copy_layout": "passed",
     "drawio_node_presence": "passed",
-    "full_regression_baseline": 124
+    "full_regression_baseline": 126
   },
   "notes": [
     "Lean Canvas keeps nine validation questions and evidence/status on every entry; it is not the Business Model Canvas.",

@@ -5,14 +5,17 @@
     "source_regression_tests_before_this_patch": 120,
     "new_regressions": [
       "bilingual Lean Canvas and user-path storyboard semantic/content checks",
-      "editable draw.io node presence and invalid-input rejection"
+      "editable draw.io node presence and invalid-input rejection",
+      "responsive demo-shell contract and experience-map narrow-width repair"
     ],
-    "source_regression_tests_after_this_patch": 124,
+    "source_regression_tests_after_this_patch": 126,
     "new_types": ["lean-canvas", "user-path-storyboard"],
     "semantic_validation": "passed for four bilingual examples",
     "generated_outputs": "SVG, draw.io, scene, brief, QA and delivery receipts generated",
     "release_evidence": "assets/v72-high-frequency-evidence.json",
-    "installed_sync": "passed: source and installed copies are byte-identical excluding .git; both pass 124 tests",
+    "installed_sync": "passed: source and installed copies are byte-identical excluding .git; both pass 126 tests",
+    "viewport_evidence": "assets/v72-viewport-evidence.json; 23 demo pages × 4 viewports; document overflow 0/92",
+    "responsive_repair": "experience-maps grid/card/frame min-width fix verified at 390×844 and 768×1024",
     "jev": "not present in available skills, plugins, or repository files; integration awaits an explicit path or name",
     "native_editor": "not claimed for the two new types; existing workflow/storymap evidence remains separate",
     "remaining_count_policy": "the 206 unverified catalog rows are not a reliable work-remaining count"
