@@ -346,22 +346,32 @@ def chart(s,d):
 
 def fishbone(s,d):
     groups=d['categories'];need(2<=len(groups)<=6,'fishbone expects 2–6 categories')
-    mainy=480;endx=s.w-330;s.edge(points=[(100,mainy),(endx,mainy)],tone='accent',width=3)
-    s.add(endx+12,mainy-46,240,92,d['effect'],d.get('effect_detail',''),tone='accent',check=True)
+    cause_width=250;cause_size=15;line_height=20;stack_gap=8
+    def cause_height(cause):
+        return max(32,len(wrap('• '+cause,cause_width,cause_size))*line_height+6)
+    stacks=[sum(cause_height(cause)+stack_gap for cause in group.get('causes',[])) for group in groups]
+    max_stack=max(stacks or [32])-stack_gap
+    up_start=300;mainy=max(480,up_start+max_stack+18);down_start=mainy+30;down_label_y=down_start+max_stack+18
+    s.h=max(s.h,down_label_y+100);endx=s.w-330;s.edge(points=[(100,mainy),(endx,mainy)],tone='accent',width=3)
+    effect_width=240;effect_inner=effect_width-30
+    effect_label_lines=wrap_words(d['effect'],effect_inner,22)
+    effect_detail_lines=wrap_words(d.get('effect_detail',''),effect_inner,16) if d.get('effect_detail','') else []
+    effect_h=max(92,sum(size*1.35 for size in [22]*len(effect_label_lines)+[16]*len(effect_detail_lines))+24)
+    s.add(endx+12,mainy-effect_h/2,effect_width,effect_h,d['effect'],d.get('effect_detail',''),tone='accent',check=True,word_wrap=True)
     pairs=math.ceil(len(groups)/2);step=(endx-150)/pairs
     for i,g in enumerate(groups):
-        col=i//2;up=i%2==0;tipx=170+col*step;base=tipx+265;ty=250 if up else 665
+        col=i//2;up=i%2==0;tipx=170+col*step;base=tipx+265;ty=up_start-64 if up else down_label_y
         tone=('accent','teal','amber')[col%3]
-        rib_start=(tipx+150,290 if up else 660)
+        rib_start=(tipx+150,up_start-18 if up else down_start+max_stack+10)
         s.edge(points=[rib_start,(base,mainy)],arrow=False,tone=tone)
-        s.text(tipx-70,ty-10 if up else ty+10,260,36,g['label'],22,tone)
+        s.text(tipx-70,ty,260,36,g['label'],22,tone)
+        text_y=up_start if up else down_start
         for j,cause in enumerate(g.get('causes',[])):
             need(j<3,'fishbone: split categories exceeding 3 causes')
-            text_y=(310 if up else 510)+j*46
-            s.text(tipx-95,text_y,225,32,'• '+cause,16)
-            line_y=text_y+33
+            box_h=cause_height(cause);s.text(tipx-95,text_y,cause_width,box_h,'• '+cause,cause_size,word_wrap=True)
+            line_y=text_y+box_h/2
             join_x=rib_start[0]+(base-rib_start[0])*(line_y-rib_start[1])/(mainy-rib_start[1])
-            s.edge(points=[(tipx+137,line_y),(join_x,line_y)],arrow=False,tone=tone,width=1.3)
+            s.edge(points=[(tipx+137,line_y),(join_x,line_y)],arrow=False,tone=tone,width=1.3);text_y+=box_h+stack_gap
 
 def build(d,theme):
     need(d.get('type') in BUILDERS,'unsupported type: '+str(d.get('type')))

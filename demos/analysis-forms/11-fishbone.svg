@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="diagram-title diagram-desc">
+<title id="diagram-title">重复停机 · 原因假说整理</title>
+<desc id="diagram-desc">鱼骨用于组织待验证原因；连线不等于因果证据</desc>
+<rect width="100%" height="100%" fill="#F1EFEB"/>
+<defs>
+<marker id="arrow-accent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#AC6046"/></marker>
+<marker id="arrow-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#67685E"/></marker>
+<marker id="arrow-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#8C7964"/></marker>
+<marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#554C46"/></marker>
+<marker id="arrow-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#6D6A63"/></marker>
+<marker id="arrow-line" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#D8D3C8"/></marker>
+<marker id="arrow-ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#30302D"/></marker>
+</defs>
+<g font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, Arial, sans-serif">
+<path d="M100,480 L1270,480" fill="none" stroke="#AC6046" stroke-width="3" stroke-linejoin="round" marker-end="url(#arrow-accent)"/>
+<path d="M320.0,282 L435.0,480" fill="none" stroke="#AC6046" stroke-width="2" stroke-linejoin="round"/>
+<path d="M307.0,316.0 L339.74747474747477,316.0" fill="none" stroke="#AC6046" stroke-width="1.3" stroke-linejoin="round"/>
+<path d="M307.0,356.0 L362.979797979798,356.0" fill="none" stroke="#AC6046" stroke-width="1.3" stroke-linejoin="round"/>
+<path d="M320.0,592 L435.0,480" fill="none" stroke="#AC6046" stroke-width="2" stroke-linejoin="round"/>
+<path d="M307.0,526.0 L387.7678571428571,526.0" fill="none" stroke="#AC6046" stroke-width="1.3" stroke-linejoin="round"/>
+<path d="M307.0,566.0 L346.69642857142856,566.0" fill="none" stroke="#AC6046" stroke-width="1.3" stroke-linejoin="round"/>
+<path d="M693.3333333333333,282 L808.3333333333333,480" fill="none" stroke="#67685E" stroke-width="2" stroke-linejoin="round"/>
+<path d="M680.3333333333333,316.0 L713.080808080808,316.0" fill="none" stroke="#67685E" stroke-width="1.3" stroke-linejoin="round"/>
+<path d="M680.3333333333333,356.0 L736.3131313131312,356.0" fill="none" stroke="#67685E" stroke-width="1.3" stroke-linejoin="round"/>
+<path d="M693.3333333333333,592 L808.3333333333333,480" fill="none" stroke="#67685E" stroke-width="2" stroke-linejoin="round"/>
+<path d="M680.3333333333333,526.0 L761.1011904761904,526.0" fill="none" stroke="#67685E" stroke-width="1.3" stroke-linejoin="round"/>
+<path d="M680.3333333333333,566.0 L720.0297619047618,566.0" fill="none" stroke="#67685E" stroke-width="1.3" stroke-linejoin="round"/>
+<path d="M1066.6666666666665,282 L1181.6666666666665,480" fill="none" stroke="#8C7964" stroke-width="2" stroke-linejoin="round"/>
+<path d="M1053.6666666666665,316.0 L1086.4141414141413,316.0" fill="none" stroke="#8C7964" stroke-width="1.3" stroke-linejoin="round"/>
+<path d="M1053.6666666666665,356.0 L1109.6464646464644,356.0" fill="none" stroke="#8C7964" stroke-width="1.3" stroke-linejoin="round"/>
+<path d="M1066.6666666666665,592 L1181.6666666666665,480" fill="none" stroke="#8C7964" stroke-width="2" stroke-linejoin="round"/>
+<path d="M1053.6666666666665,526.0 L1134.4345238095236,526.0" fill="none" stroke="#8C7964" stroke-width="1.3" stroke-linejoin="round"/>
+<path d="M1053.6666666666665,566.0 L1093.3630952380952,566.0" fill="none" stroke="#8C7964" stroke-width="1.3" stroke-linejoin="round"/>
+<g id="_v1" data-kind="rect" data-content-text="false" data-box="1282,434.0,240,92">
+<rect x="1282" y="434.0" width="240" height="92" rx="10" fill="#FEFDF9" stroke="#AC6046" stroke-width="1.5"/>
+<text x="1402.0" y="476.35" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">重复停机</text>
+<text x="1402.0" y="500.05" text-anchor="middle" font-size="16" font-weight="400" fill="#6D6A63">需先确认频次与边界</text>
+</g>
+<g id="_v2" data-kind="text" data-content-text="false" data-box="100.0,236,260,36">
+
+<text x="100.0" y="261.15" text-anchor="start" font-size="22" font-weight="400" fill="#AC6046">人员</text>
+</g>
+<g id="_v3" data-kind="text" data-content-text="false" data-box="75.0,300,250,32">
+
+<text x="75.0" y="320.875" text-anchor="start" font-size="15" font-weight="400" fill="#30302D">• 交接信息是否完整</text>
+</g>
+<g id="_v4" data-kind="text" data-content-text="false" data-box="75.0,340,250,32">
+
+<text x="75.0" y="360.875" text-anchor="start" font-size="15" font-weight="400" fill="#30302D">• 操作训练是否充分</text>
+</g>
+<g id="_v5" data-kind="text" data-content-text="false" data-box="100.0,600,260,36">
+
+<text x="100.0" y="625.15" text-anchor="start" font-size="22" font-weight="400" fill="#AC6046">设备</text>
+</g>
+<g id="_v6" data-kind="text" data-content-text="false" data-box="75.0,510,250,32">
+
+<text x="75.0" y="530.875" text-anchor="start" font-size="15" font-weight="400" fill="#30302D">• 磨损状态是否异常</text>
+</g>
+<g id="_v7" data-kind="text" data-content-text="false" data-box="75.0,550,250,32">
+
+<text x="75.0" y="570.875" text-anchor="start" font-size="15" font-weight="400" fill="#30302D">• 信号质量是否稳定</text>
+</g>
+<g id="_v8" data-kind="text" data-content-text="false" data-box="473.33333333333326,236,260,36">
+
+<text x="473.33333333333326" y="261.15" text-anchor="start" font-size="22" font-weight="400" fill="#67685E">方法</text>
+</g>
+<g id="_v9" data-kind="text" data-content-text="false" data-box="448.33333333333326,300,250,32">
+
+<text x="448.33333333333326" y="320.875" text-anchor="start" font-size="15" font-weight="400" fill="#30302D">• 排查路径是否清晰</text>
+</g>
+<g id="_v10" data-kind="text" data-content-text="false" data-box="448.33333333333326,340,250,32">
+
+<text x="448.33333333333326" y="360.875" text-anchor="start" font-size="15" font-weight="400" fill="#30302D">• 参数管理是否一致</text>
+</g>
+<g id="_v11" data-kind="text" data-content-text="false" data-box="473.33333333333326,600,260,36">
+
+<text x="473.33333333333326" y="625.15" text-anchor="start" font-size="22" font-weight="400" fill="#67685E">环境</text>
+</g>
+<g id="_v12" data-kind="text" data-content-text="false" data-box="448.33333333333326,510,250,32">
+
+<text x="448.33333333333326" y="530.875" text-anchor="start" font-size="15" font-weight="400" fill="#30302D">• 温湿度是否变化</text>
+</g>
+<g id="_v13" data-kind="text" data-content-text="false" data-box="448.33333333333326,550,250,32">
+
+<text x="448.33333333333326" y="570.875" text-anchor="start" font-size="15" font-weight="400" fill="#30302D">• 干扰来源是否存在</text>
+</g>
+<g id="_v14" data-kind="text" data-content-text="false" data-box="846.6666666666666,236,260,36">
+
+<text x="846.6666666666666" y="261.15" text-anchor="start" font-size="22" font-weight="400" fill="#8C7964">材料</text>
+</g>
+<g id="_v15" data-kind="text" data-content-text="false" data-box="821.6666666666666,300,250,32">
+
+<text x="821.6666666666666" y="320.875" text-anchor="start" font-size="15" font-weight="400" fill="#30302D">• 批次差异是否显著</text>
+</g>
+<g id="_v16" data-kind="text" data-content-text="false" data-box="821.6666666666666,340,250,32">
+
+<text x="821.6666666666666" y="360.875" text-anchor="start" font-size="15" font-weight="400" fill="#30302D">• 规格是否符合要求</text>
+</g>
+<g id="_v17" data-kind="text" data-content-text="false" data-box="846.6666666666666,600,260,36">
+
+<text x="846.6666666666666" y="625.15" text-anchor="start" font-size="22" font-weight="400" fill="#8C7964">测量</text>
+</g>
+<g id="_v18" data-kind="text" data-content-text="false" data-box="821.6666666666666,510,250,32">
+
+<text x="821.6666666666666" y="530.875" text-anchor="start" font-size="15" font-weight="400" fill="#30302D">• 量具状态是否合格</text>
+</g>
+<g id="_v19" data-kind="text" data-content-text="false" data-box="821.6666666666666,550,250,32">
+
+<text x="821.6666666666666" y="570.875" text-anchor="start" font-size="15" font-weight="400" fill="#30302D">• 测点口径是否统一</text>
+</g>
+<g id="_v20" data-kind="text" data-content-text="false" data-box="64,34,1472,22">
+
+<text x="64" y="49.55" text-anchor="start" font-size="14" font-weight="400" fill="#AC6046">11 / CAUSE ANALYSIS</text>
+</g>
+<g id="_v21" data-kind="text" data-content-text="false" data-box="64,69,1472,56">
+
+<text x="64" y="108.7" text-anchor="start" font-size="36" font-weight="400" fill="#30302D">重复停机 · 原因假说整理</text>
+</g>
+<g id="_v22" data-kind="text" data-content-text="false" data-box="64,130,1472,38">
+
+<text x="64" y="154.525" text-anchor="start" font-size="17" font-weight="400" fill="#6D6A63">鱼骨用于组织待验证原因；连线不等于因果证据</text>
+</g>
+<g id="_v23" data-kind="rect" data-content-text="false" data-box="64,837,1472,1">
+<rect x="64" y="837" width="1472" height="1" rx="0" fill="#D8D3C8" stroke="none" stroke-width="1.5"/>
+</g>
+<g id="_v24" data-kind="text" data-content-text="false" data-box="64,850,1472,36">
+
+<text x="64" y="872.55" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">原创原因分析示例 · 全部条目为问题和假说，尚无验证结论</text>
+</g>
+</g></svg>

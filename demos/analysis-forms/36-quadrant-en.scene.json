@@ -1,0 +1,403 @@
+{
+  "width": 1600,
+  "height": 900,
+  "theme": "light",
+  "palette": {
+    "bg": "#F1EFEB",
+    "panel": "#FEFDF9",
+    "ink": "#30302D",
+    "muted": "#6D6A63",
+    "line": "#D8D3C8",
+    "accent": "#AC6046",
+    "teal": "#67685E",
+    "amber": "#8C7964",
+    "red": "#554C46",
+    "tint": "#F0E4DA",
+    "tint2": "#ECECE5"
+  },
+  "nodes": [
+    {
+      "id": "_v1",
+      "x": 250.0,
+      "y": 230.0,
+      "w": 530.0,
+      "h": 250.0,
+      "label": "",
+      "detail": "",
+      "kind": "panel",
+      "tone": "accent",
+      "fill": "panel",
+      "stroke": "none",
+      "check": false
+    },
+    {
+      "id": "_v2",
+      "x": 268.0,
+      "y": 240.0,
+      "w": 494.0,
+      "h": 34,
+      "label": "Validate first",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 16,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v3",
+      "x": 780.0,
+      "y": 230.0,
+      "w": 530.0,
+      "h": 250.0,
+      "label": "",
+      "detail": "",
+      "kind": "panel",
+      "tone": "accent",
+      "fill": "tint2",
+      "stroke": "none",
+      "check": false
+    },
+    {
+      "id": "_v4",
+      "x": 798.0,
+      "y": 240.0,
+      "w": 494.0,
+      "h": 34,
+      "label": "Plan deliberately",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 16,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v5",
+      "x": 250.0,
+      "y": 480.0,
+      "w": 530.0,
+      "h": 250.0,
+      "label": "",
+      "detail": "",
+      "kind": "panel",
+      "tone": "accent",
+      "fill": "panel",
+      "stroke": "none",
+      "check": false
+    },
+    {
+      "id": "_v6",
+      "x": 268.0,
+      "y": 490.0,
+      "w": 494.0,
+      "h": 34,
+      "label": "Quick improvement",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 16,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v7",
+      "x": 780.0,
+      "y": 480.0,
+      "w": 530.0,
+      "h": 250.0,
+      "label": "",
+      "detail": "",
+      "kind": "panel",
+      "tone": "accent",
+      "fill": "tint2",
+      "stroke": "none",
+      "check": false
+    },
+    {
+      "id": "_v8",
+      "x": 798.0,
+      "y": 490.0,
+      "w": 494.0,
+      "h": 34,
+      "label": "Invest cautiously",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 16,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v9",
+      "x": 435.79999999999995,
+      "y": 330.0,
+      "w": 10,
+      "h": 10,
+      "label": "",
+      "detail": "",
+      "kind": "ellipse",
+      "tone": "accent",
+      "fill": "accent",
+      "stroke": "none",
+      "check": false
+    },
+    {
+      "id": "_v10",
+      "x": 452.79999999999995,
+      "y": 318.0,
+      "w": 200,
+      "h": 36,
+      "label": "Measure A",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 17,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v11",
+      "x": 1008.1999999999999,
+      "y": 355.0,
+      "w": 10,
+      "h": 10,
+      "label": "",
+      "detail": "",
+      "kind": "ellipse",
+      "tone": "accent",
+      "fill": "accent",
+      "stroke": "none",
+      "check": false
+    },
+    {
+      "id": "_v12",
+      "x": 1025.1999999999998,
+      "y": 343.0,
+      "w": 200,
+      "h": 36,
+      "label": "Measure B",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 17,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v13",
+      "x": 499.4,
+      "y": 585.0,
+      "w": 10,
+      "h": 10,
+      "label": "",
+      "detail": "",
+      "kind": "ellipse",
+      "tone": "accent",
+      "fill": "accent",
+      "stroke": "none",
+      "check": false
+    },
+    {
+      "id": "_v14",
+      "x": 516.4,
+      "y": 573.0,
+      "w": 200,
+      "h": 36,
+      "label": "Measure C",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 17,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v15",
+      "x": 1018.8,
+      "y": 610.0,
+      "w": 10,
+      "h": 10,
+      "label": "",
+      "detail": "",
+      "kind": "ellipse",
+      "tone": "accent",
+      "fill": "accent",
+      "stroke": "none",
+      "check": false
+    },
+    {
+      "id": "_v16",
+      "x": 1035.8,
+      "y": 598.0,
+      "w": 200,
+      "h": 36,
+      "label": "Measure D",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 17,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v17",
+      "x": 250,
+      "y": 762,
+      "w": 1060,
+      "h": 36,
+      "label": "Effort →",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 18,
+      "align": "center",
+      "check": false
+    },
+    {
+      "id": "_v18",
+      "x": 64,
+      "y": 250,
+      "w": 166,
+      "h": 76,
+      "label": "Impact ↑",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 18,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v19",
+      "x": 64,
+      "y": 34,
+      "w": 1472,
+      "h": 22,
+      "label": "36 / DIAGRAM LIBRARY",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v20",
+      "x": 64,
+      "y": 69,
+      "w": 1472,
+      "h": 56,
+      "label": "Impact × effort · prioritisation hypotheses",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 36,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v21",
+      "x": 64,
+      "y": 130,
+      "w": 1472,
+      "h": 38,
+      "label": "Scores are illustrative; real priorities need a declared scoring basis",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v22",
+      "x": 64,
+      "y": 837,
+      "w": 1472,
+      "h": 1,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "line",
+      "stroke": "none",
+      "check": false
+    },
+    {
+      "id": "_v23",
+      "x": 64,
+      "y": 850,
+      "w": 1472,
+      "h": 36,
+      "label": "Original structural example · values, entities and hypotheses are illustrative inputs",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    }
+  ],
+  "edges": [
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          230,
+          480.0
+        ],
+        [
+          1335,
+          480.0
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "tone": "muted"
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          780.0,
+          745
+        ],
+        [
+          780.0,
+          220
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "tone": "muted"
+    }
+  ],
+  "meta": {
+    "coordinates": [
+      [
+        18,
+        79
+      ],
+      [
+        72,
+        74
+      ],
+      [
+        24,
+        28
+      ],
+      [
+        73,
+        23
+      ]
+    ]
+  },
+  "assumptions": [
+    "Original illustrative content; not an operational priority or research conclusion"
+  ]
+}

@@ -1,0 +1,403 @@
+{
+  "width": 1600,
+  "height": 900,
+  "theme": "light",
+  "palette": {
+    "bg": "#F1EFEB",
+    "panel": "#FEFDF9",
+    "ink": "#30302D",
+    "muted": "#6D6A63",
+    "line": "#D8D3C8",
+    "accent": "#AC6046",
+    "teal": "#67685E",
+    "amber": "#8C7964",
+    "red": "#554C46",
+    "tint": "#F0E4DA",
+    "tint2": "#ECECE5"
+  },
+  "nodes": [
+    {
+      "id": "_v1",
+      "x": 250.0,
+      "y": 230.0,
+      "w": 530.0,
+      "h": 250.0,
+      "label": "",
+      "detail": "",
+      "kind": "panel",
+      "tone": "accent",
+      "fill": "panel",
+      "stroke": "none",
+      "check": false
+    },
+    {
+      "id": "_v2",
+      "x": 268.0,
+      "y": 240.0,
+      "w": 494.0,
+      "h": 34,
+      "label": "优先验证",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 16,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v3",
+      "x": 780.0,
+      "y": 230.0,
+      "w": 530.0,
+      "h": 250.0,
+      "label": "",
+      "detail": "",
+      "kind": "panel",
+      "tone": "accent",
+      "fill": "tint2",
+      "stroke": "none",
+      "check": false
+    },
+    {
+      "id": "_v4",
+      "x": 798.0,
+      "y": 240.0,
+      "w": 494.0,
+      "h": 34,
+      "label": "专项规划",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 16,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v5",
+      "x": 250.0,
+      "y": 480.0,
+      "w": 530.0,
+      "h": 250.0,
+      "label": "",
+      "detail": "",
+      "kind": "panel",
+      "tone": "accent",
+      "fill": "panel",
+      "stroke": "none",
+      "check": false
+    },
+    {
+      "id": "_v6",
+      "x": 268.0,
+      "y": 490.0,
+      "w": 494.0,
+      "h": 34,
+      "label": "顺手改善",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 16,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v7",
+      "x": 780.0,
+      "y": 480.0,
+      "w": 530.0,
+      "h": 250.0,
+      "label": "",
+      "detail": "",
+      "kind": "panel",
+      "tone": "accent",
+      "fill": "tint2",
+      "stroke": "none",
+      "check": false
+    },
+    {
+      "id": "_v8",
+      "x": 798.0,
+      "y": 490.0,
+      "w": 494.0,
+      "h": 34,
+      "label": "谨慎投入",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 16,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v9",
+      "x": 435.79999999999995,
+      "y": 330.0,
+      "w": 10,
+      "h": 10,
+      "label": "",
+      "detail": "",
+      "kind": "ellipse",
+      "tone": "accent",
+      "fill": "accent",
+      "stroke": "none",
+      "check": false
+    },
+    {
+      "id": "_v10",
+      "x": 452.79999999999995,
+      "y": 318.0,
+      "w": 200,
+      "h": 36,
+      "label": "措施 A",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 17,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v11",
+      "x": 1008.1999999999999,
+      "y": 355.0,
+      "w": 10,
+      "h": 10,
+      "label": "",
+      "detail": "",
+      "kind": "ellipse",
+      "tone": "accent",
+      "fill": "accent",
+      "stroke": "none",
+      "check": false
+    },
+    {
+      "id": "_v12",
+      "x": 1025.1999999999998,
+      "y": 343.0,
+      "w": 200,
+      "h": 36,
+      "label": "措施 B",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 17,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v13",
+      "x": 499.4,
+      "y": 585.0,
+      "w": 10,
+      "h": 10,
+      "label": "",
+      "detail": "",
+      "kind": "ellipse",
+      "tone": "accent",
+      "fill": "accent",
+      "stroke": "none",
+      "check": false
+    },
+    {
+      "id": "_v14",
+      "x": 516.4,
+      "y": 573.0,
+      "w": 200,
+      "h": 36,
+      "label": "措施 C",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 17,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v15",
+      "x": 1018.8,
+      "y": 610.0,
+      "w": 10,
+      "h": 10,
+      "label": "",
+      "detail": "",
+      "kind": "ellipse",
+      "tone": "accent",
+      "fill": "accent",
+      "stroke": "none",
+      "check": false
+    },
+    {
+      "id": "_v16",
+      "x": 1035.8,
+      "y": 598.0,
+      "w": 200,
+      "h": 36,
+      "label": "措施 D",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 17,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v17",
+      "x": 250,
+      "y": 762,
+      "w": 1060,
+      "h": 36,
+      "label": "实施难度 →",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 18,
+      "align": "center",
+      "check": false
+    },
+    {
+      "id": "_v18",
+      "x": 64,
+      "y": 250,
+      "w": 166,
+      "h": 76,
+      "label": "影响程度 ↑",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 18,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v19",
+      "x": 64,
+      "y": 34,
+      "w": 1472,
+      "h": 22,
+      "label": "36 / DIAGRAM LIBRARY",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v20",
+      "x": 64,
+      "y": 69,
+      "w": 1472,
+      "h": 56,
+      "label": "四象限 · 影响与实施难度",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 36,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v21",
+      "x": 64,
+      "y": 130,
+      "w": 1472,
+      "h": 38,
+      "label": "坐标为演示评分，真实优先级需要公开评分依据",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v22",
+      "x": 64,
+      "y": 837,
+      "w": 1472,
+      "h": 1,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "line",
+      "stroke": "none",
+      "check": false
+    },
+    {
+      "id": "_v23",
+      "x": 64,
+      "y": 850,
+      "w": 1472,
+      "h": 36,
+      "label": "原创结构范例 · 数据、实体、尺寸与假说均为演示输入；实际任务按用户资料替换",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    }
+  ],
+  "edges": [
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          230,
+          480.0
+        ],
+        [
+          1335,
+          480.0
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "tone": "muted"
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          780.0,
+          745
+        ],
+        [
+          780.0,
+          220
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "tone": "muted"
+    }
+  ],
+  "meta": {
+    "coordinates": [
+      [
+        18,
+        79
+      ],
+      [
+        72,
+        74
+      ],
+      [
+        24,
+        28
+      ],
+      [
+        73,
+        23
+      ]
+    ]
+  },
+  "assumptions": [
+    "原创演示内容，不代表实际业务、研究结论或工程设计"
+  ]
+}

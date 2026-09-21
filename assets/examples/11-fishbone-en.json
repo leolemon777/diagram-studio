@@ -1,0 +1,19 @@
+{
+  "type": "fishbone",
+  "title": "Recurring service interruptions · cause hypotheses",
+  "subtitle": "A fishbone organizes causes to verify; its branches are not causal evidence",
+  "eyebrow": "11 / CAUSE ANALYSIS",
+  "effect": "Recurring service interruptions",
+  "effect_detail": "Confirm frequency and boundary before prioritising",
+  "categories": [
+    {"label": "People", "causes": ["Handover information may be incomplete", "Operator training may be uneven"]},
+    {"label": "Equipment", "causes": ["Wear state may be abnormal", "Signal quality may be unstable"]},
+    {"label": "Method", "causes": ["Troubleshooting path may be unclear", "Parameter changes may be inconsistent"]},
+    {"label": "Environment", "causes": ["Temperature or humidity may vary", "Interference sources may be present"]},
+    {"label": "Materials", "causes": ["Batch differences may matter", "Specification may not fit the use"]},
+    {"label": "Measurement", "causes": ["Instrument status may be unverified", "Measurement points may use different definitions"]}
+  ],
+  "footer": "Original cause-analysis example · every entry is a question or hypothesis, not a verified conclusion",
+  "family": "Research & analysis",
+  "diagram_name": "Fishbone cause analysis"
+}

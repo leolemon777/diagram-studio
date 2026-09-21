@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "protocol_version": "diagram-studio/delivery-1",
+  "version_id": "v-d2834738e4ca",
+  "source_name": "36-quadrant",
+  "input_sha256": "d2834738e4caf984253c104c1fa2a75360777494ba629a9196f0f089d7e5a20c",
+  "theme": "light",
+  "checks": {
+    "geometry": {
+      "status": "passed",
+      "warnings": []
+    },
+    "composition": {
+      "status": "not-run",
+      "findings": []
+    },
+    "content_integrity": {
+      "status": "passed",
+      "source_ids": 0,
+      "source_relations": 0,
+      "source_texts": 13,
+      "missing_ids": [],
+      "missing_relations": [],
+      "missing_text": [],
+      "scope": "stable source IDs, explicit relation endpoints and source display text; not domain correctness"
+    },
+    "browser_text_bounds": {
+      "status": "not-run"
+    },
+    "manual_visual_review": {
+      "status": "not-run"
+    },
+    "native_editor": {
+      "status": "not-run"
+    }
+  },
+  "files": {
+    "36-quadrant.brief.json": "d2834738e4caf984253c104c1fa2a75360777494ba629a9196f0f089d7e5a20c",
+    "36-quadrant.drawio": "805e3978a3d456c661e6187e5d9916e260de1f718db332bd5e9da514d3c00195",
+    "36-quadrant.qa.json": "921694bd370cee6c3be629681827ae88113464f8115c38bb636a7561e995bbd2",
+    "36-quadrant.scene.json": "302a5b540391da114a0f4dd93141548de4cc8f961ef5daa1851111281b33d83a",
+    "36-quadrant.svg": "d04bc4f60de2871e4580b53c9193ef03ba38f2a38e44f0f4c44451e76caee83d"
+  },
+  "delivery_scope": "Generation, semantic content checks and QA finish before replacement. Individual files are replaced; promotion is not a multi-file atomic transaction."
+}

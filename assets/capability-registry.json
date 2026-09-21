@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "version": "v47",
+  "version": "v48",
   "updated": "2026-09-20",
   "purpose": "Single source for chooser labels, backend capability, delivery formats and acceptance evidence.",
   "status_vocabulary": {
@@ -257,6 +257,41 @@
       ]
     },
     {
+      "id": "analysis",
+      "label": {"zh": "分析与优先级", "en": "Analysis & prioritisation"},
+      "sub": {"zh": "组织原因、比较取舍、决定先后", "en": "Organise causes, trade-offs and priority"},
+      "types": [
+        {
+          "id": "fishbone",
+          "label": {"zh": "鱼骨分析图", "en": "Fishbone diagram"},
+          "why": {"zh": "把问题拆成待验证的原因假说，不把分支当作因果证明", "en": "Break a problem into testable cause hypotheses without presenting branches as proof"},
+          "minimum_input": {"zh": "结果/问题、原因类别、每类原因；每条都要有验证状态", "en": "Effect or problem, cause categories and causes; each remains a hypothesis to verify"},
+          "input_model": {"kind": "brief", "type": "fishbone", "required": ["effect", "categories"]},
+          "backend": {"kind": "shared-renderer", "module": "scripts/render.py", "entry": "fishbone"},
+          "formats": ["svg", "drawio", "scene.json", "qa.json", "html"],
+          "layout_limits": {"zh": "原因类别 2–6 个，每类最多 3 条；英文和长文按内容测量，过密时拆页。", "en": "Two to six categories and up to three causes each; measure long bilingual copy and split dense boards."},
+          "languages": ["zh", "en"],
+          "examples": ["assets/examples/11-fishbone.json", "assets/examples/11-fishbone-en.json"],
+          "evidence": {"level": "manual_visual_review", "reference": "assets/v48-analysis-forms-evidence.json", "detail": {"zh": "中英示例通过内容保留、长英文换行和几何检查；分支仍是待验证假说。", "en": "Chinese and English examples pass content retention, long-English wrapping and geometry checks; branches remain hypotheses to verify."}},
+          "scope": {"zh": "用于结构化排查，不计算概率、不自动宣称根因。", "en": "Structures investigation; it does not calculate probabilities or declare a root cause."}
+        },
+        {
+          "id": "quadrant",
+          "label": {"zh": "四象限优先级图", "en": "Quadrant priority matrix"},
+          "why": {"zh": "用两个明确维度展示取舍和优先验证项", "en": "Show trade-offs and items to validate first on two declared dimensions"},
+          "minimum_input": {"zh": "横纵轴含义、四个象限标签、对象与 0–100 坐标来源", "en": "Axis meanings, four quadrant labels, items and the basis for 0–100 coordinates"},
+          "input_model": {"kind": "brief", "type": "quadrant", "required": ["x_label", "y_label", "quadrants", "items"]},
+          "backend": {"kind": "shared-renderer", "module": "scripts/render.py", "entry": "quadrant"},
+          "formats": ["svg", "drawio", "scene.json", "qa.json", "html"],
+          "layout_limits": {"zh": "坐标仅表达声明的归一化评分；不把位置自动解释为事实、因果或统计显著性。", "en": "Coordinates express declared normalised scores; position is not automatically fact, causality or statistical significance."},
+          "languages": ["zh", "en"],
+          "examples": ["assets/examples/36-quadrant.json", "assets/examples/36-quadrant-en.json"],
+          "evidence": {"level": "manual_visual_review", "reference": "assets/v48-analysis-forms-evidence.json", "detail": {"zh": "中英示例通过轴、象限、对象坐标、内容保留和几何检查；评分依据仍需项目提供。", "en": "Chinese and English examples pass axes, quadrants, item coordinates, content retention and geometry checks; project scoring basis is still required."}},
+          "scope": {"zh": "表达优先级假说，不替代决策记录或实际评分流程。", "en": "Expresses a prioritisation hypothesis; it does not replace decision records or scoring workflow."}
+        }
+      ]
+    },
+    {
       "id": "workshop",
       "label": {"zh": "洞察与共创", "en": "Insights & workshops"},
       "sub": {"zh": "归纳、体验、复盘与交付切片", "en": "Synthesis, experience, review, release slices"},
@@ -340,6 +375,7 @@
     "user-journey": "journey",
     "service-blueprint": "service-blueprint",
     "roadmap": "timeline",
-    "story-map": "storymap"
+    "story-map": "storymap",
+    "priority-matrix": "quadrant"
   }
 }

@@ -1,0 +1,744 @@
+{
+  "width": 1600,
+  "height": 900,
+  "theme": "light",
+  "palette": {
+    "bg": "#F1EFEB",
+    "panel": "#FEFDF9",
+    "ink": "#30302D",
+    "muted": "#6D6A63",
+    "line": "#D8D3C8",
+    "accent": "#AC6046",
+    "teal": "#67685E",
+    "amber": "#8C7964",
+    "red": "#554C46",
+    "tint": "#F0E4DA",
+    "tint2": "#ECECE5"
+  },
+  "nodes": [
+    {
+      "id": "_v1",
+      "x": 1282,
+      "y": 405.9,
+      "w": 240,
+      "h": 148.20000000000002,
+      "label": "Recurring service interruptions",
+      "detail": "Confirm frequency and boundary before prioritising",
+      "kind": "rect",
+      "tone": "accent",
+      "check": true,
+      "word_wrap": true
+    },
+    {
+      "id": "_v2",
+      "x": 100.0,
+      "y": 236,
+      "w": 260,
+      "h": 36,
+      "label": "People",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 22,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v3",
+      "x": 75.0,
+      "y": 300,
+      "w": 250,
+      "h": 46,
+      "label": "• Handover information may be incomplete",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 15,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v4",
+      "x": 75.0,
+      "y": 354,
+      "w": 250,
+      "h": 46,
+      "label": "• Operator training may be uneven",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 15,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v5",
+      "x": 100.0,
+      "y": 628,
+      "w": 260,
+      "h": 36,
+      "label": "Equipment",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 22,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v6",
+      "x": 75.0,
+      "y": 510,
+      "w": 250,
+      "h": 32,
+      "label": "• Wear state may be abnormal",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 15,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v7",
+      "x": 75.0,
+      "y": 550,
+      "w": 250,
+      "h": 46,
+      "label": "• Signal quality may be unstable",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 15,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v8",
+      "x": 473.33333333333326,
+      "y": 236,
+      "w": 260,
+      "h": 36,
+      "label": "Method",
+      "detail": "",
+      "kind": "text",
+      "tone": "teal",
+      "fs": 22,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v9",
+      "x": 448.33333333333326,
+      "y": 300,
+      "w": 250,
+      "h": 46,
+      "label": "• Troubleshooting path may be unclear",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 15,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v10",
+      "x": 448.33333333333326,
+      "y": 354,
+      "w": 250,
+      "h": 46,
+      "label": "• Parameter changes may be inconsistent",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 15,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v11",
+      "x": 473.33333333333326,
+      "y": 628,
+      "w": 260,
+      "h": 36,
+      "label": "Environment",
+      "detail": "",
+      "kind": "text",
+      "tone": "teal",
+      "fs": 22,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v12",
+      "x": 448.33333333333326,
+      "y": 510,
+      "w": 250,
+      "h": 46,
+      "label": "• Temperature or humidity may vary",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 15,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v13",
+      "x": 448.33333333333326,
+      "y": 564,
+      "w": 250,
+      "h": 46,
+      "label": "• Interference sources may be present",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 15,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v14",
+      "x": 846.6666666666666,
+      "y": 236,
+      "w": 260,
+      "h": 36,
+      "label": "Materials",
+      "detail": "",
+      "kind": "text",
+      "tone": "amber",
+      "fs": 22,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v15",
+      "x": 821.6666666666666,
+      "y": 300,
+      "w": 250,
+      "h": 32,
+      "label": "• Batch differences may matter",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 15,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v16",
+      "x": 821.6666666666666,
+      "y": 340,
+      "w": 250,
+      "h": 46,
+      "label": "• Specification may not fit the use",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 15,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v17",
+      "x": 846.6666666666666,
+      "y": 628,
+      "w": 260,
+      "h": 36,
+      "label": "Measurement",
+      "detail": "",
+      "kind": "text",
+      "tone": "amber",
+      "fs": 22,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v18",
+      "x": 821.6666666666666,
+      "y": 510,
+      "w": 250,
+      "h": 46,
+      "label": "• Instrument status may be unverified",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 15,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v19",
+      "x": 821.6666666666666,
+      "y": 564,
+      "w": 250,
+      "h": 46,
+      "label": "• Measurement points may use different definitions",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 15,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v20",
+      "x": 64,
+      "y": 34,
+      "w": 1472,
+      "h": 22,
+      "label": "11 / CAUSE ANALYSIS",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v21",
+      "x": 64,
+      "y": 69,
+      "w": 1472,
+      "h": 56,
+      "label": "Recurring service interruptions · cause hypotheses",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 36,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v22",
+      "x": 64,
+      "y": 130,
+      "w": 1472,
+      "h": 38,
+      "label": "A fishbone organizes causes to verify; its branches are not causal evidence",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v23",
+      "x": 64,
+      "y": 837,
+      "w": 1472,
+      "h": 1,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "line",
+      "stroke": "none",
+      "check": false
+    },
+    {
+      "id": "_v24",
+      "x": 64,
+      "y": 850,
+      "w": 1472,
+      "h": 36,
+      "label": "Original cause-analysis example · every entry is a question or hypothesis, not a verified conclusion",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    }
+  ],
+  "edges": [
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          100,
+          480
+        ],
+        [
+          1270,
+          480
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "tone": "accent",
+      "width": 3
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          320.0,
+          282
+        ],
+        [
+          435.0,
+          480
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "arrow": false,
+      "tone": "accent"
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          307.0,
+          323.0
+        ],
+        [
+          343.8131313131313,
+          323.0
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "arrow": false,
+      "tone": "accent",
+      "width": 1.3
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          307.0,
+          377.0
+        ],
+        [
+          375.17676767676767,
+          377.0
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "arrow": false,
+      "tone": "accent",
+      "width": 1.3
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          320.0,
+          620
+        ],
+        [
+          435.0,
+          480
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "arrow": false,
+      "tone": "accent"
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          307.0,
+          526.0
+        ],
+        [
+          397.2142857142857,
+          526.0
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "arrow": false,
+      "tone": "accent",
+      "width": 1.3
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          307.0,
+          573.0
+        ],
+        [
+          358.60714285714283,
+          573.0
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "arrow": false,
+      "tone": "accent",
+      "width": 1.3
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          693.3333333333333,
+          282
+        ],
+        [
+          808.3333333333333,
+          480
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "arrow": false,
+      "tone": "teal"
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          680.3333333333333,
+          323.0
+        ],
+        [
+          717.1464646464646,
+          323.0
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "arrow": false,
+      "tone": "teal",
+      "width": 1.3
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          680.3333333333333,
+          377.0
+        ],
+        [
+          748.5101010101009,
+          377.0
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "arrow": false,
+      "tone": "teal",
+      "width": 1.3
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          693.3333333333333,
+          620
+        ],
+        [
+          808.3333333333333,
+          480
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "arrow": false,
+      "tone": "teal"
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          680.3333333333333,
+          533.0
+        ],
+        [
+          764.7976190476189,
+          533.0
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "arrow": false,
+      "tone": "teal",
+      "width": 1.3
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          680.3333333333333,
+          587.0
+        ],
+        [
+          720.4404761904761,
+          587.0
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "arrow": false,
+      "tone": "teal",
+      "width": 1.3
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          1066.6666666666665,
+          282
+        ],
+        [
+          1181.6666666666665,
+          480
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "arrow": false,
+      "tone": "amber"
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          1053.6666666666665,
+          316.0
+        ],
+        [
+          1086.4141414141413,
+          316.0
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "arrow": false,
+      "tone": "amber",
+      "width": 1.3
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          1053.6666666666665,
+          363.0
+        ],
+        [
+          1113.712121212121,
+          363.0
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "arrow": false,
+      "tone": "amber",
+      "width": 1.3
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          1066.6666666666665,
+          620
+        ],
+        [
+          1181.6666666666665,
+          480
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "arrow": false,
+      "tone": "amber"
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          1053.6666666666665,
+          533.0
+        ],
+        [
+          1138.1309523809523,
+          533.0
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "arrow": false,
+      "tone": "amber",
+      "width": 1.3
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          1053.6666666666665,
+          587.0
+        ],
+        [
+          1093.7738095238094,
+          587.0
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "arrow": false,
+      "tone": "amber",
+      "width": 1.3
+    }
+  ],
+  "meta": {},
+  "assumptions": []
+}

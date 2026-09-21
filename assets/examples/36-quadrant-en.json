@@ -1,0 +1,19 @@
+{
+  "type": "quadrant",
+  "title": "Impact × effort · prioritisation hypotheses",
+  "diagram_name": "Quadrant matrix",
+  "family": "Business & management",
+  "subtitle": "Scores are illustrative; real priorities need a declared scoring basis",
+  "eyebrow": "36 / DIAGRAM LIBRARY",
+  "footer": "Original structural example · values, entities and hypotheses are illustrative inputs",
+  "assumptions": ["Original illustrative content; not an operational priority or research conclusion"],
+  "x_label": "Effort →",
+  "y_label": "Impact ↑",
+  "quadrants": ["Validate first", "Plan deliberately", "Quick improvement", "Invest cautiously"],
+  "items": [
+    {"label": "Measure A", "x": 18, "y": 79},
+    {"label": "Measure B", "x": 72, "y": 74},
+    {"label": "Measure C", "x": 24, "y": 28},
+    {"label": "Measure D", "x": 73, "y": 23}
+  ]
+}

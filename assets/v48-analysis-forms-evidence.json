@@ -1,0 +1,28 @@
+{
+  "version": "v48",
+  "date": "2026-09-20",
+  "scope": "Bilingual fishbone and quadrant priority forms",
+  "automated": {
+    "tests": "Bundled Python unittest suite passes; analysis-form tests cover content retention, coordinates, bilingual rendering and measured long-English fishbone boxes",
+    "registry": "capability_registry.py --check passes",
+    "diff": "git diff --check passes",
+    "fishbone": "Six categories and every cause are retained; effect/detail cards and long English causes fit without audit errors",
+    "quadrant": "Four axis quadrants and four item coordinates are retained; coordinates remain explicit 0–100 values"
+  },
+  "browser_checks": [
+    "Chinese fishbone SVG opened directly; six category branches and hypothesis labels readable, with the effect card retained in the fit-width demo",
+    "English fishbone SVG opened directly; long causes wrap at readable boundaries, and the effect/detail card remains inside its measured card in the fit-width demo",
+    "Chinese quadrant SVG opened directly; axes, four quadrant labels and four points readable",
+    "English quadrant SVG opened directly; axes, four quadrant labels and four points readable"
+  ],
+  "not_verified": [
+    "Native editor save/reopen for these two forms",
+    "Mobile viewport and dense category stress cases beyond the declared limits",
+    "Domain root-cause proof, scoring validity or user aesthetic approval"
+  ],
+  "artifacts": {
+    "fishbone_models": ["assets/examples/11-fishbone.json", "assets/examples/11-fishbone-en.json"],
+    "quadrant_models": ["assets/examples/36-quadrant.json", "assets/examples/36-quadrant-en.json"],
+    "demo": "demos/analysis-forms/index.html"
+  }
+}

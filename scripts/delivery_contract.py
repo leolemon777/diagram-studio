@@ -179,6 +179,26 @@ def expected_content(data):
             for value in values:
                 if _text(value):
                     texts.add(_text(value))
+    elif kind == "fishbone":
+        for key in ("title", "subtitle", "effect", "effect_detail", "footer"):
+            if _text(data.get(key)):
+                texts.add(_text(data[key]))
+        for group in data.get("categories", []):
+            if _text(group.get("label")):
+                texts.add(_text(group["label"]))
+            for cause in group.get("causes", []):
+                if _text(cause):
+                    texts.add(_text(cause))
+    elif kind == "quadrant":
+        for key in ("title", "subtitle", "x_label", "y_label", "footer"):
+            if _text(data.get(key)):
+                texts.add(_text(data[key]))
+        for label in data.get("quadrants", []):
+            if _text(label):
+                texts.add(_text(label))
+        for item in data.get("items", []):
+            if _text(item.get("label")):
+                texts.add(_text(item["label"]))
     return {"ids": sorted(ids), "relations": sorted(relations), "texts": sorted(texts)}
 
 
