@@ -7,13 +7,13 @@
 | 范例 | 输入与可复用语义 |
 |---|---|
 | [01 分层系统架构](../assets/examples/01-system-architecture.json) | 从用户入口到服务能力与数据底座；横向能力贯穿每层 |
-| [12 逻辑数据模型](../assets/examples/12-data-model.json) | 三个实体与两条关系；基数直接标注，字段仅展示关键标识 |
-| [13 系统上下文](../assets/examples/13-c4-context.json) | 只画目标系统、使用者和外部依赖；连线标明交互内容 |
+| [12 逻辑数据模型](../assets/examples/12-data-model.json) | 服务项目、预约记录与服务团队；基数直接标注，字段仅展示关键标识 |
+| [13 系统上下文](../assets/examples/13-c4-context.json) | 社区服务平台、使用者与身份/通知外部服务；连线标明交互内容 |
 | [14 部署拓扑](../assets/examples/14-deployment.json) | 逻辑服务、运行实例与网络边界分开；图中实例数量仅为演示 |
-| [15 网络拓扑](../assets/examples/15-network-topology.json) | 连线表示链路，中心是接入交换节点；不暗示冗余与安全隔离 |
-| [16 数据流图](../assets/examples/16-data-flow.json) | 处理过程使用动词；外部实体、数据存储和命名数据流分开 |
+| [15 网络拓扑](../assets/examples/15-network-topology.json) | 连线表示服务连接，中心是服务平台；不暗示冗余与权限隔离 |
+| [16 数据流图](../assets/examples/16-data-flow.json) | 用户反馈经过校验、存储并生成改进摘要；处理过程使用动词 |
 | [18 类结构](../assets/examples/18-class-diagram.json) | 三个分区分别是类名、属性和操作；连线为关联，基数直接标注 |
-| [19 用例关系](../assets/examples/19-use-case.json) | 系统边界包围用例；角色在边界外；线表示参与关系 |
+| [19 用例关系](../assets/examples/19-use-case.json) | 社区服务平台边界包围用例；申请人与协调员在边界外 |
 
 ## 过程与时序
 
@@ -21,7 +21,7 @@
 |---|---|
 | [02 责任泳道](../assets/examples/02-workflow.json) | 三条责任泳道；信息不完整回到申请人，交付后由协调团队验收 |
 | [05 交互时序](../assets/examples/05-sequence.json) | 纵向表示先后；虚线表示返回，图中不暗示实际耗时 |
-| [17 状态机](../assets/examples/17-state-machine.json) | 边标注触发事件；退回与取消为明确转移 |
+| [17 状态机](../assets/examples/17-state-machine.json) | 服务申请生命周期；边标注提交、安排、补充、完成和取消事件 |
 | [24 循环结构](../assets/examples/24-cycle.json) | 箭头沿同一方向闭环；每个阶段有明确产出 |
 | [32 决策树](../assets/examples/32-decision-tree.json) | 每个问题都有明确分支，叶子是行动结果 |
 

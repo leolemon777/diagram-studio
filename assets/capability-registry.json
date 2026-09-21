@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "version": "v67",
+  "version": "v68",
   "updated": "2026-09-21",
   "purpose": "Single source for chooser labels, backend capability, delivery formats and acceptance evidence.",
   "status_vocabulary": {

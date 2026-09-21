@@ -1,0 +1,32 @@
+{
+  "version": "v68",
+  "date": "2026-09-21",
+  "scope": "Common software-system examples aligned with a cross-industry service platform",
+  "automated": {
+    "tests": "Six system-library inputs pass title, banned-term, relationship-topology and render-quality regressions; the full suite passes 113 tests",
+    "registry": "capability_registry.py --check passes",
+    "diff": "git diff --check passes",
+    "content": "Data model, context, service network, feedback data flow, service-request state machine and use-case boundaries retain their original diagram semantics while removing maintenance-specific fixture terms"
+  },
+  "browser_checks": [
+    "The reviewed architecture, swimlane, Gantt, data-story and route/mind-map pages still expose the cross-industry Chinese and English examples after synchronization",
+    "The chooser continues to show the current bilingual structure and delivery guidance"
+  ],
+  "not_verified": [
+    "Native editor save/reopen for these unregistered library examples",
+    "Mobile viewport and domain-specific evidence for illustrative software models",
+    "English numbered aliases for the six library entries, which previously had no paired source files"
+  ],
+  "artifacts": {
+    "models": [
+      "assets/examples/12-data-model.json",
+      "assets/examples/13-c4-context.json",
+      "assets/examples/15-network-topology.json",
+      "assets/examples/16-data-flow.json",
+      "assets/examples/17-state-machine.json",
+      "assets/examples/19-use-case.json"
+    ],
+    "indexes": ["assets/catalog.json", "references/library-index.md"],
+    "tests": ["tests/test_system_library_examples.py"]
+  }
+}

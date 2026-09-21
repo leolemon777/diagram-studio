@@ -1,9 +1,9 @@
 {
   "type": "graph",
-  "title": "状态机 · 工单生命周期",
+  "title": "状态机 · 服务申请生命周期",
   "diagram_name": "状态机",
   "family": "过程与时序",
-  "subtitle": "边标注触发事件；退回与取消为明确转移",
+  "subtitle": "边标注触发事件；补充与取消为明确转移",
   "eyebrow": "17 / DIAGRAM LIBRARY",
   "footer": "原创结构范例 · 数据、实体、尺寸与假说均为演示输入；实际任务按用户资料替换",
   "assumptions": [
@@ -12,7 +12,7 @@
   "nodes": [
     {
       "id": "new",
-      "label": "待分派",
+      "label": "待处理",
       "x": 140,
       "y": 275,
       "w": 250,
@@ -30,7 +30,7 @@
     },
     {
       "id": "verify",
-      "label": "待验收",
+      "label": "待确认",
       "x": 1140,
       "y": 275,
       "w": 250,
@@ -39,7 +39,7 @@
     },
     {
       "id": "done",
-      "label": "已关闭",
+      "label": "已完成",
       "x": 1140,
       "y": 625,
       "w": 250,
@@ -60,22 +60,22 @@
     {
       "from": "new",
       "to": "work",
-      "label": "分派成功"
+      "label": "提交申请"
     },
     {
       "from": "work",
       "to": "verify",
-      "label": "提交验收"
+      "label": "安排服务"
     },
     {
       "from": "verify",
       "to": "done",
-      "label": "验收通过"
+      "label": "确认完成"
     },
     {
       "from": "verify",
       "to": "work",
-      "label": "验收退回",
+      "label": "需要补充",
       "points": [
         [
           1265,

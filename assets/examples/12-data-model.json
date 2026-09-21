@@ -1,27 +1,27 @@
 {
   "type": "graph",
-  "title": "设备与工单 · 逻辑数据关系",
+  "title": "服务预约 · 逻辑数据关系",
   "subtitle": "三个实体与两条关系；基数直接标注，字段仅展示关键标识",
   "eyebrow": "12 / DATA MODEL",
   "nodes": [
     {
-      "id": "device",
+      "id": "service",
       "x": 100,
       "y": 340,
       "w": 350,
       "h": 210,
-      "label": "设备 Device",
-      "detail": "PK  device_id\n设备名称\n所属位置",
+      "label": "服务项目 Service",
+      "detail": "PK  service_id\n服务名称\n服务类型",
       "kind": "rect"
     },
     {
-      "id": "ticket",
+      "id": "booking",
       "x": 625,
       "y": 340,
       "w": 350,
       "h": 210,
-      "label": "工单 WorkOrder",
-      "detail": "PK  work_order_id\nFK  device_id\nFK  assigned_team_id",
+      "label": "预约记录 Booking",
+      "detail": "PK  booking_id\nFK  service_id\nFK  assigned_team_id",
       "kind": "rect",
       "tone": "teal"
     },
@@ -31,27 +31,27 @@
       "y": 340,
       "w": 350,
       "h": 210,
-      "label": "作业团队 Team",
-      "detail": "PK  team_id\n团队名称\n责任范围",
+      "label": "服务团队 Team",
+      "detail": "PK  team_id\n团队名称\n服务范围",
       "kind": "rect"
     }
   ],
   "edges": [
     {
-      "from": "device",
-      "to": "ticket",
+      "from": "service",
+      "to": "booking",
       "label": "1 : 0..N",
       "arrow": false
     },
     {
       "from": "team",
-      "to": "ticket",
+      "to": "booking",
       "label": "0..N : 1",
       "arrow": false,
       "tone": "teal"
     }
   ],
-  "footer": "逻辑数据模型示例 · 每张工单属于一台设备、一个作业团队；不代表既有数据库结构",
+  "footer": "逻辑数据模型示例 · 每条预约记录对应一个服务项目和一个服务团队；不代表既有数据库结构",
   "family": "系统与软件",
   "diagram_name": "逻辑数据模型"
 }
