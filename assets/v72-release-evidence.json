@@ -30,13 +30,14 @@
     "browser": "passed: bilingual Lean Canvas and user-path storyboard demo pages opened at 1280px desktop surface; readable-size scroll mode displayed actual content and links; v72-t05 measured all 23 demo pages at four viewport sizes",
     "viewport_evidence": "assets/v72-viewport-evidence.json",
     "native_editor_attempt": "assets/v72-editor-attempt.json",
+    "native_editor_roundtrip": "assets/v72-native-editor-roundtrip-evidence.json",
     "source_installed_parity": "passed: recursive diff excluding .git is empty",
     "jev": "pending: no matching Skill, plugin or repository file is available",
-    "native_editor": "pending for v72 additions; local 万兴图示 rejected a temporary flow .drawio copy before loading"
+    "native_editor": "representative pass: flow-cn, lean-canvas-cn and user-path-storyboard-cn edited, saved to diagrams.net browser storage and reopened; all-type coverage is not claimed; local 万兴图示 separately rejected a temporary flow .drawio copy"
   },
   "boundaries": [
     "Generated semantic and geometry checks do not certify a real service, product-market fit, domain workflow, user research, or user approval.",
-    "Native-editor edit/save/reopen is not claimed for these two new types; existing workflow and storymap evidence remains separate.",
+    "Native-editor edit/save/reopen is proven for three representative files through diagrams.net browser storage; this does not cover every registered type or every language variant.",
     "The layout grows beyond a fixed 16:9 canvas when long content or many steps require it."
   ]
 }

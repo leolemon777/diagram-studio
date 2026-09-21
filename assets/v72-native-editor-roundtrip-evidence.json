@@ -1,0 +1,48 @@
+{
+  "version": "v72-t07-roundtrip",
+  "checked_on": "2026-09-21",
+  "editor": "diagrams.net web editor",
+  "editor_url": "https://app.diagrams.net",
+  "storage": "browser storage",
+  "scope": "Three representative bilingual-capable draw.io outputs were opened from the public repository, edited in the native diagrams.net editor, saved to browser storage, reopened, and checked through the editor accessibility tree.",
+  "cases": [
+    {
+      "id": "flow-cn",
+      "source": "demos/flow/cn/flow-cn.drawio",
+      "source_url": "https://raw.githubusercontent.com/leolemon777/diagram-studio/main/demos/flow/cn/flow-cn.drawio",
+      "saved_name": "diagram-studio-t07-flow-browser.drawio",
+      "edit": "Changed the node label 提交需求 to 提交需求 · T07.",
+      "reopen_check": "The T07 marker remained after reopening; the nodes 核对信息, 信息完整？, 补充信息, 安排服务, 发送确认 and the 是/否/补充后 condition labels remained visible.",
+      "reload_verified": true
+    },
+    {
+      "id": "lean-canvas-cn",
+      "source": "demos/lean-canvas/cn/38-lean-canvas-cn.drawio",
+      "source_url": "https://raw.githubusercontent.com/leolemon777/diagram-studio/main/demos/lean-canvas/cn/38-lean-canvas-cn.drawio",
+      "saved_name": "diagram-studio-t07-lean-browser.drawio",
+      "edit": "Changed the entry label [problem-1] 照护者不知道下一步该找谁 to [problem-1] 照护者不知道下一步该找谁 · T07.",
+      "reopen_check": "The T07 marker remained after reopening; all nine numbered Lean Canvas blocks, entry IDs, evidence/status lines and the footnote remained visible.",
+      "reload_verified": true
+    },
+    {
+      "id": "user-path-storyboard-cn",
+      "source": "demos/user-path-storyboard/cn/37-user-path-storyboard-cn.drawio",
+      "source_url": "https://raw.githubusercontent.com/leolemon777/diagram-studio/main/demos/user-path-storyboard/cn/37-user-path-storyboard-cn.drawio",
+      "saved_name": "diagram-studio-t07-userpath-browser.drawio",
+      "edit": "Changed the actor label [step-open] 照护者 to [step-open] 照护者 · T07.",
+      "reopen_check": "The T07 marker remained after reopening; preconditions, visible states, main-path steps, branch labels, exception labels and recovery text remained visible.",
+      "reload_verified": true
+    }
+  ],
+  "checks": {
+    "edit_save_reopen": "passed for all three representative cases",
+    "relationship_or_structure_visibility": "passed for the flow conditions, all nine Lean Canvas blocks, and user-path branches/exceptions",
+    "repository_source_modified": false,
+    "local_editor_compatibility": "separate EdrawMax attempt failed to open a temporary flow copy; see assets/v72-editor-attempt.json"
+  },
+  "limits": [
+    "Browser storage is the saved artifact for this evidence; no local exported round-trip file was added to the repository.",
+    "This is representative coverage for three files, not native-editor approval of every registered capability or every language variant.",
+    "The editor verified text edits and preserved visible structure; data-driven chart edits that require JSON regeneration remain documented as regeneration workflows."
+  ]
+}
