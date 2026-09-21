@@ -301,9 +301,9 @@ def matrix(s,d):
     for i,c in enumerate(cells):
         x=64+(i%cols)*(w+gap);y=198+(i//cols)*(h+gap);tone=c.get('tone',('accent','teal','amber','red')[i%4])
         s.add(x,y,w,h,kind='panel',check=False);s.add(x,y,5,h,kind='rect',fill=tone,stroke='none',check=False)
-        s.text(x+28,y+24,w-56,36,c['label'],24,tone)
+        s.text(x+28,y+24,w-56,36,c['label'],24,tone,word_wrap=True)
         lines=c.get('items',[]);need(len(lines)<=5,'matrix cell more than five items: split')
-        for j,line in enumerate(lines):s.text(x+30,y+83+j*32,w-60,30,'•  '+line,18)
+        for j,line in enumerate(lines):s.text(x+30,y+83+j*32,w-60,30,'•  '+line,18,word_wrap=True)
     s.h=max(s.h,198+rows*(h+gap)+76)
 
 def chart(s,d):

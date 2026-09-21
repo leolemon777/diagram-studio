@@ -1,0 +1,223 @@
+{
+  "language": "zh",
+  "title": "客户发布工作板",
+  "service": "从验证机会到可交付、可复盘的体验改进",
+  "snapshot": "2026-09-20 09:00",
+  "assumptions": [
+    "本图为教学快照，不是实时交付系统",
+    "进入待执行列是承诺点，进入完成列是交付点",
+    "阻塞项继续计入 WIP；泳道表示工作类型，不表示个人绩效"
+  ],
+  "columns": [
+    {
+      "id": "backlog",
+      "name": "待选池",
+      "order": 0,
+      "stage": "queue"
+    },
+    {
+      "id": "ready",
+      "name": "待执行",
+      "order": 1,
+      "stage": "wip",
+      "wip_limit": 3,
+      "pull_criteria": "目标、负责人和验收方式清楚"
+    },
+    {
+      "id": "doing",
+      "name": "进行中",
+      "order": 2,
+      "stage": "wip",
+      "wip_limit": 3,
+      "pull_criteria": "负责人有容量且下一步未阻塞"
+    },
+    {
+      "id": "review",
+      "name": "复核",
+      "order": 3,
+      "stage": "wip",
+      "wip_limit": 2,
+      "pull_criteria": "已有可用结果，能够基于证据复核"
+    },
+    {
+      "id": "done",
+      "name": "已完成",
+      "order": 4,
+      "stage": "done"
+    }
+  ],
+  "lanes": [
+    {
+      "id": "customer",
+      "name": "客户价值",
+      "order": 0,
+      "wip_limit": 4
+    },
+    {
+      "id": "reliability",
+      "name": "可靠性",
+      "order": 1,
+      "wip_limit": 4
+    },
+    {
+      "id": "enablement",
+      "name": "团队赋能",
+      "order": 2,
+      "wip_limit": 3
+    }
+  ],
+  "cards": [
+    {
+      "id": "CV-014",
+      "title": "测试引导式上手",
+      "lane": "customer",
+      "column": "doing",
+      "owner": "小雅",
+      "service_class": "standard",
+      "blocked": false,
+      "age_days": 2
+    },
+    {
+      "id": "CV-011",
+      "title": "明确续费交接",
+      "lane": "customer",
+      "column": "review",
+      "owner": "小诺",
+      "service_class": "fixed_date",
+      "blocked": false,
+      "age_days": 1,
+      "due": "09-23"
+    },
+    {
+      "id": "CV-009",
+      "title": "补充无障碍空状态",
+      "lane": "customer",
+      "column": "done",
+      "owner": "小雅",
+      "service_class": "standard",
+      "blocked": false
+    },
+    {
+      "id": "RL-021",
+      "title": "演练故障清单",
+      "lane": "reliability",
+      "column": "doing",
+      "owner": "阿杰",
+      "service_class": "expedite",
+      "blocked": true,
+      "blocked_reason": "等待服务负责人确认",
+      "age_days": 3
+    },
+    {
+      "id": "RL-018",
+      "title": "测量导入重试率",
+      "lane": "reliability",
+      "column": "ready",
+      "owner": "小安",
+      "service_class": "standard",
+      "blocked": false,
+      "age_days": 1
+    },
+    {
+      "id": "EN-007",
+      "title": "更新支持手册",
+      "lane": "enablement",
+      "column": "ready",
+      "owner": "小蕊",
+      "service_class": "intangible",
+      "blocked": false,
+      "age_days": 2
+    },
+    {
+      "id": "EN-004",
+      "title": "发布版本演示",
+      "lane": "enablement",
+      "column": "review",
+      "owner": "小蕊",
+      "service_class": "fixed_date",
+      "blocked": false,
+      "age_days": 2,
+      "due": "09-24"
+    },
+    {
+      "id": "EN-001",
+      "title": "归档旧发布笔记",
+      "lane": "enablement",
+      "column": "done",
+      "owner": "小杉",
+      "service_class": "standard",
+      "blocked": false
+    }
+  ],
+  "policies": [
+    {
+      "id": "pull",
+      "title": "拉动",
+      "rule": "只有下游有容量且满足进入条件，才拉入下一项工作。"
+    },
+    {
+      "id": "blocked",
+      "title": "阻塞",
+      "rule": "阻塞项留在当前状态，明确一位负责人和一个解除动作。"
+    },
+    {
+      "id": "expedite",
+      "title": "加急",
+      "rule": "全板最多一项加急工作，由服务负责人确认它挤占了哪些普通工作。"
+    },
+    {
+      "id": "done",
+      "title": "完成",
+      "rule": "证据、验收方式和发布说明齐全后，工作项才进入已完成。"
+    }
+  ],
+  "flow_metrics": {
+    "throughput_period": "最近 7 天",
+    "throughput": 6,
+    "throughput_unit": "项/周",
+    "sle_days": 5,
+    "sle_probability": 0.85
+  },
+  "counts": {
+    "columns": 5,
+    "lanes": 3,
+    "cards": 8,
+    "wip": 6,
+    "blocked": 1
+  },
+  "column_counts": {
+    "doing": 2,
+    "review": 2,
+    "done": 2,
+    "ready": 2
+  },
+  "column_wip": {
+    "ready": 2,
+    "doing": 2,
+    "review": 2
+  },
+  "lane_wip": {
+    "customer": 2,
+    "reliability": 2,
+    "enablement": 2
+  },
+  "pull_capacity": {
+    "ready": 1,
+    "doing": 1,
+    "review": 0
+  },
+  "service_class_counts": {
+    "standard": 4,
+    "fixed_date": 2,
+    "expedite": 1,
+    "intangible": 1
+  },
+  "blocked_cards": [
+    "RL-021"
+  ],
+  "expedite_cards": [
+    "RL-021"
+  ],
+  "commitment_column": "ready",
+  "delivery_column": "done"
+}

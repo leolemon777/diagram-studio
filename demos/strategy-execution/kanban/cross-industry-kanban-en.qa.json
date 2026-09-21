@@ -1,0 +1,40 @@
+{
+  "errors": [],
+  "warnings": [],
+  "text_overflow": [],
+  "text_overlap": [],
+  "missing_glyphs": [],
+  "canvas": {
+    "width": 1600,
+    "height": 1076
+  },
+  "counts": {
+    "columns": 5,
+    "lanes": 3,
+    "cards": 8,
+    "wip": 6,
+    "blocked": 1
+  },
+  "column_wip": {
+    "ready": 2,
+    "doing": 2,
+    "review": 2
+  },
+  "lane_wip": {
+    "customer": 2,
+    "reliability": 2,
+    "enablement": 2
+  },
+  "pull_capacity": {
+    "ready": 1,
+    "doing": 1,
+    "review": 0
+  },
+  "checks": [
+    "每张卡只有一个泳道和状态",
+    "WIP列与泳道限制未超限",
+    "阻塞项保留在WIP并写明原因",
+    "开始点、完成点、拉动条件和显式策略已显示",
+    "模拟数据与个人绩效边界已声明"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "version": "v49",
+  "date": "2026-09-20",
+  "scope": "Bilingual cross-industry SWOT and swimlane Kanban forms",
+  "automated": {
+    "tests": "Strategy/execution tests cover bilingual SWOT content retention, matrix geometry, Kanban WIP limits, blocker retention, localised labels and SVG/draw.io generation",
+    "registry": "capability_registry.py --check passes",
+    "diff": "git diff --check passes",
+    "swot": "Four cells and every factor item are retained in Chinese and English renders; content integrity passes",
+    "kanban": "Columns, lanes, eight cards, WIP limits, one blocked card and four policies are retained in both language models"
+  },
+  "browser_checks": [
+    "Chinese SWOT SVG opened in the strategy/execution demo; four cells, factor labels and item text readable",
+    "English SWOT SVG opened in the strategy/execution demo; four cells and long factor items remain readable",
+    "Chinese swimlane Kanban opened in the strategy/execution demo; columns, lanes, WIP, blocked card and policies readable",
+    "English swimlane Kanban opened in the strategy/execution demo; localised UI labels, cards, WIP and policies readable",
+    "Chooser strategy group opened; SWOT and Kanban previews, backends, evidence and formats inspected"
+  ],
+  "not_verified": [
+    "Native editor save/reopen for the new Kanban draw.io files",
+    "Mobile viewport and dense-board stress cases beyond declared limits",
+    "Live collaboration, historical flow metrics, strategic evidence, domain facts or user aesthetic approval"
+  ],
+  "artifacts": {
+    "swot_models": ["assets/examples/07-swot.json", "assets/examples/07-swot-en.json"],
+    "kanban_models": ["assets/kanban-models/cross-industry-kanban.json", "assets/kanban-models/cross-industry-kanban-en.json"],
+    "demo": "demos/strategy-execution/index.html"
+  }
+}

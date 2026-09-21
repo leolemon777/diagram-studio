@@ -39,7 +39,9 @@ def validate(document):
     exact(document, (
         "title", "service", "snapshot", "assumptions", "columns", "lanes",
         "cards", "policies", "flow_metrics",
-    ))
+    ), ("language",))
+    language = document.get("language", "zh")
+    need(language in {"zh", "en"}, "language must be zh or en")
     for key in ("title", "service", "snapshot"):
         text(document[key], key)
     need(isinstance(document["assumptions"], list) and document["assumptions"],
@@ -180,6 +182,7 @@ def validate(document):
     pull_capacity = {column["id"]: column["wip_limit"] - wip_counts[column["id"]]
                      for column in ordered_columns if column["stage"] == "wip"}
     return {
+        "language": language,
         "title": document["title"],
         "service": document["service"],
         "snapshot": document["snapshot"],

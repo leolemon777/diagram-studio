@@ -1,0 +1,223 @@
+{
+  "language": "en",
+  "title": "Customer launch workboard",
+  "service": "From a validated opportunity to a shipped, learnable change",
+  "snapshot": "2026-09-20 09:00",
+  "assumptions": [
+    "This is a teaching snapshot, not a live delivery system",
+    "Entering Ready is the commitment point; entering Done is the delivery point",
+    "Blocked work remains in WIP; lanes show work classes, not individual performance"
+  ],
+  "columns": [
+    {
+      "id": "backlog",
+      "name": "Backlog",
+      "order": 0,
+      "stage": "queue"
+    },
+    {
+      "id": "ready",
+      "name": "Ready",
+      "order": 1,
+      "stage": "wip",
+      "wip_limit": 3,
+      "pull_criteria": "Outcome, owner and acceptance check are clear"
+    },
+    {
+      "id": "doing",
+      "name": "In progress",
+      "order": 2,
+      "stage": "wip",
+      "wip_limit": 3,
+      "pull_criteria": "Owner has capacity and the next step is unblocked"
+    },
+    {
+      "id": "review",
+      "name": "Review",
+      "order": 3,
+      "stage": "wip",
+      "wip_limit": 2,
+      "pull_criteria": "A usable result is ready for evidence-based review"
+    },
+    {
+      "id": "done",
+      "name": "Done",
+      "order": 4,
+      "stage": "done"
+    }
+  ],
+  "lanes": [
+    {
+      "id": "customer",
+      "name": "Customer value",
+      "order": 0,
+      "wip_limit": 4
+    },
+    {
+      "id": "reliability",
+      "name": "Reliability",
+      "order": 1,
+      "wip_limit": 4
+    },
+    {
+      "id": "enablement",
+      "name": "Enablement",
+      "order": 2,
+      "wip_limit": 3
+    }
+  ],
+  "cards": [
+    {
+      "id": "CV-014",
+      "title": "Test guided onboarding",
+      "lane": "customer",
+      "column": "doing",
+      "owner": "Maya",
+      "service_class": "standard",
+      "blocked": false,
+      "age_days": 2
+    },
+    {
+      "id": "CV-011",
+      "title": "Clarify renewal handoff",
+      "lane": "customer",
+      "column": "review",
+      "owner": "Noah",
+      "service_class": "fixed_date",
+      "blocked": false,
+      "age_days": 1,
+      "due": "09-23"
+    },
+    {
+      "id": "CV-009",
+      "title": "Add accessible empty state",
+      "lane": "customer",
+      "column": "done",
+      "owner": "Maya",
+      "service_class": "standard",
+      "blocked": false
+    },
+    {
+      "id": "RL-021",
+      "title": "Rehearse incident checklist",
+      "lane": "reliability",
+      "column": "doing",
+      "owner": "Jordan",
+      "service_class": "expedite",
+      "blocked": true,
+      "blocked_reason": "Waiting for service owner sign-off",
+      "age_days": 3
+    },
+    {
+      "id": "RL-018",
+      "title": "Measure import retry rate",
+      "lane": "reliability",
+      "column": "ready",
+      "owner": "Ari",
+      "service_class": "standard",
+      "blocked": false,
+      "age_days": 1
+    },
+    {
+      "id": "EN-007",
+      "title": "Refresh support playbook",
+      "lane": "enablement",
+      "column": "ready",
+      "owner": "Riley",
+      "service_class": "intangible",
+      "blocked": false,
+      "age_days": 2
+    },
+    {
+      "id": "EN-004",
+      "title": "Publish release walkthrough",
+      "lane": "enablement",
+      "column": "review",
+      "owner": "Riley",
+      "service_class": "fixed_date",
+      "blocked": false,
+      "age_days": 2,
+      "due": "09-24"
+    },
+    {
+      "id": "EN-001",
+      "title": "Archive old launch notes",
+      "lane": "enablement",
+      "column": "done",
+      "owner": "Sam",
+      "service_class": "standard",
+      "blocked": false
+    }
+  ],
+  "policies": [
+    {
+      "id": "pull",
+      "title": "Pull",
+      "rule": "Pull the next item only when downstream capacity and its entry condition are both available."
+    },
+    {
+      "id": "blocked",
+      "title": "Blocked",
+      "rule": "Keep blocked work visible in its current state, with one owner and one next unblock action."
+    },
+    {
+      "id": "expedite",
+      "title": "Expedite",
+      "rule": "Allow at most one expedite item; the service owner confirms what ordinary work it displaces."
+    },
+    {
+      "id": "done",
+      "title": "Done",
+      "rule": "Evidence, acceptance check and release note are complete before an item enters Done."
+    }
+  ],
+  "flow_metrics": {
+    "throughput_period": "last 7 days",
+    "throughput": 6,
+    "throughput_unit": "items/week",
+    "sle_days": 5,
+    "sle_probability": 0.85
+  },
+  "counts": {
+    "columns": 5,
+    "lanes": 3,
+    "cards": 8,
+    "wip": 6,
+    "blocked": 1
+  },
+  "column_counts": {
+    "doing": 2,
+    "review": 2,
+    "done": 2,
+    "ready": 2
+  },
+  "column_wip": {
+    "ready": 2,
+    "doing": 2,
+    "review": 2
+  },
+  "lane_wip": {
+    "customer": 2,
+    "reliability": 2,
+    "enablement": 2
+  },
+  "pull_capacity": {
+    "ready": 1,
+    "doing": 1,
+    "review": 0
+  },
+  "service_class_counts": {
+    "standard": 4,
+    "fixed_date": 2,
+    "expedite": 1,
+    "intangible": 1
+  },
+  "blocked_cards": [
+    "RL-021"
+  ],
+  "expedite_cards": [
+    "RL-021"
+  ],
+  "commitment_column": "ready",
+  "delivery_column": "done"
+}

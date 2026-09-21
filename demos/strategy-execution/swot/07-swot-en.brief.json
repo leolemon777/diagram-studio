@@ -1,0 +1,49 @@
+{
+  "type": "matrix",
+  "title": "Community learning platform · SWOT scan",
+  "subtitle": "Four lenses organise hypotheses; each item still needs evidence and an owner",
+  "eyebrow": "07 / STRATEGY CANVAS",
+  "columns": 2,
+  "cell_height": 235,
+  "cells": [
+    {
+      "label": "S  Strengths",
+      "tone": "accent",
+      "items": [
+        "Peer mentors already share practical examples",
+        "Short lessons fit existing study routines",
+        "Pilot groups can test changes in stages"
+      ]
+    },
+    {
+      "label": "W  Weaknesses",
+      "tone": "amber",
+      "items": [
+        "Learner goals are not yet consistently captured",
+        "Content quality needs a review path",
+        "Facilitator time is limited during peak terms"
+      ]
+    },
+    {
+      "label": "O  Opportunities",
+      "tone": "teal",
+      "items": [
+        "Libraries and clubs can provide local cohorts",
+        "Open resources can widen practice choices",
+        "Lightweight feedback can guide the next lesson"
+      ]
+    },
+    {
+      "label": "T  Threats",
+      "tone": "red",
+      "items": [
+        "Partner schedules may change without notice",
+        "Access needs can be missed without inclusive review",
+        "External platforms may change integration rules"
+      ]
+    }
+  ],
+  "footer": "Original teaching canvas · statements are hypotheses, not organisational facts",
+  "family": "Strategy and management",
+  "diagram_name": "SWOT analysis"
+}

@@ -199,6 +199,16 @@ def expected_content(data):
         for item in data.get("items", []):
             if _text(item.get("label")):
                 texts.add(_text(item["label"]))
+    elif kind == "matrix":
+        for key in ("title", "subtitle", "eyebrow", "footer"):
+            if _text(data.get(key)):
+                texts.add(_text(data[key]))
+        for cell in data.get("cells", []):
+            if _text(cell.get("label")):
+                texts.add(_text(cell["label"]))
+            for item in cell.get("items", []):
+                if _text(item):
+                    texts.add(_text(item))
     return {"ids": sorted(ids), "relations": sorted(relations), "texts": sorted(texts)}
 
 

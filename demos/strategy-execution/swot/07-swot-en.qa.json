@@ -1,0 +1,17 @@
+{
+  "errors": [],
+  "warnings": [],
+  "nodes": 29,
+  "edges": 0,
+  "scope": "geometry, text estimate, axis-aligned edge/node crossings; not semantic or visual acceptance",
+  "content_integrity": {
+    "status": "passed",
+    "source_ids": 0,
+    "source_relations": 0,
+    "source_texts": 20,
+    "missing_ids": [],
+    "missing_relations": [],
+    "missing_text": [],
+    "scope": "stable source IDs, explicit relation endpoints and source display text; not domain correctness"
+  }
+}

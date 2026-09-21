@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "version": "v48",
+  "version": "v49",
   "updated": "2026-09-20",
   "purpose": "Single source for chooser labels, backend capability, delivery formats and acceptance evidence.",
   "status_vocabulary": {
@@ -292,6 +292,41 @@
       ]
     },
     {
+      "id": "strategy",
+      "label": {"zh": "战略与执行", "en": "Strategy & delivery"},
+      "sub": {"zh": "判断方向、安排工作、看见流动", "en": "Choose direction, organise work and see flow"},
+      "types": [
+        {
+          "id": "swot",
+          "label": {"zh": "SWOT 分析", "en": "SWOT analysis"},
+          "why": {"zh": "把内部能力、限制与外部机会、风险分开，形成待验证的战略假说", "en": "Separate internal capabilities and limits from external opportunities and threats as hypotheses to test"},
+          "minimum_input": {"zh": "四类因素、每类条目、证据或待验证标记", "en": "Four factors, items in each factor and evidence or open-question markers"},
+          "input_model": {"kind": "brief", "type": "matrix", "required": ["cells"]},
+          "backend": {"kind": "shared-renderer", "module": "scripts/render.py", "entry": "matrix"},
+          "formats": ["svg", "drawio", "scene.json", "qa.json", "html"],
+          "layout_limits": {"zh": "四类各最多 5 条；每条写成可讨论的事实、假说或问题，内容密集时拆成策略与证据两页。", "en": "Up to five items per factor; state facts, hypotheses or questions explicitly and split dense evidence into a second page."},
+          "languages": ["zh", "en"],
+          "examples": ["assets/examples/07-swot.json", "assets/examples/07-swot-en.json"],
+          "evidence": {"level": "manual_visual_review", "reference": "assets/v49-strategy-execution-evidence.json", "detail": {"zh": "中英 SWOT 示例通过内容保留、四格几何检查和浏览器查看；条目仍需领域证据。", "en": "Chinese and English SWOT examples pass content retention, four-cell geometry checks and browser review; items still need domain evidence."}},
+          "scope": {"zh": "用于组织战略讨论，不自动计算优势权重、概率或决策结论。", "en": "Organises strategy discussion; it does not calculate weights, probabilities or a decision conclusion."}
+        },
+        {
+          "id": "kanban",
+          "label": {"zh": "泳道看板", "en": "Swimlane Kanban"},
+          "why": {"zh": "把工作项、状态、工作类型、WIP 和阻塞放在同一块可读的流动板上", "en": "Show work items, states, work classes, WIP and blockers on one readable flow board"},
+          "minimum_input": {"zh": "状态列、工作类型泳道、卡片、负责人、WIP 限制、拉动条件和显式策略", "en": "State columns, work-class lanes, cards, owners, WIP limits, pull criteria and explicit policies"},
+          "input_model": {"kind": "model", "mode": "kanban-swimlane", "required": ["columns", "lanes", "cards", "policies", "flow_metrics"]},
+          "backend": {"kind": "specialized-kanban", "module": "scripts/kanban_render.py", "entry": "render"},
+          "formats": ["svg", "drawio", "input.json", "model.json", "qa.json"],
+          "layout_limits": {"zh": "单板 3–7 列、2–5 条泳道；每格最多 4 张卡，阻塞项继续计入 WIP，实时历史轨迹和 CFD 另行实现。", "en": "One board with 3–7 columns and 2–5 lanes; up to four cards per cell, with blockers counted in WIP; history and CFD are separate work."},
+          "languages": ["zh", "en"],
+          "examples": ["assets/kanban-models/cross-industry-kanban.json", "assets/kanban-models/cross-industry-kanban-en.json"],
+          "evidence": {"level": "manual_visual_review", "reference": "assets/v49-strategy-execution-evidence.json", "detail": {"zh": "中英跨行业看板通过列/泳道 WIP、阻塞、双语界面标签、SVG 与 draw.io 生成和浏览器查看。", "en": "Chinese and English cross-industry boards pass column/lane WIP, blocker, bilingual UI-label, SVG/draw.io generation and browser review."}},
+          "scope": {"zh": "表达声明的当前工作流，不是实时工单系统、自动排程、人员绩效排名或历史流量分析。", "en": "Expresses the declared current workflow; it is not a live ticket system, scheduler, performance ranking or historical flow analysis."}
+        }
+      ]
+    },
+    {
       "id": "workshop",
       "label": {"zh": "洞察与共创", "en": "Insights & workshops"},
       "sub": {"zh": "归纳、体验、复盘与交付切片", "en": "Synthesis, experience, review, release slices"},
@@ -376,6 +411,8 @@
     "service-blueprint": "service-blueprint",
     "roadmap": "timeline",
     "story-map": "storymap",
-    "priority-matrix": "quadrant"
+    "priority-matrix": "quadrant",
+    "swot-analysis": "swot",
+    "kanban-swimlane": "kanban"
   }
 }

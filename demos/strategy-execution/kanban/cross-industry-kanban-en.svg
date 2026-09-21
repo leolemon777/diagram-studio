@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1076" viewBox="0 0 1600 1076">
+<rect width="100%" height="100%" fill="#F1EFEB"/>
+<title>Customer launch workboard</title>
+<text x="50.0" y="48.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="12" font-weight="650" fill="#8B5947" text-anchor="start">KANBAN / FLOW SNAPSHOT</text>
+<text x="50.0" y="83.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="30" font-weight="620" fill="#30302D" text-anchor="start">Customer launch workboard</text>
+<text x="50.0" y="112.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="15" font-weight="400" fill="#756F66" text-anchor="start">From a validated opportunity to a shipped, learnable change</text>
+<text x="1550.0" y="47.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="12" font-weight="450" fill="#756F66" text-anchor="end">Snapshot 2026-09-20 09:00</text>
+<rect x="815" y="70" width="170" height="48" rx="5" fill="#FBFAF7" stroke="#CFC7BA"/>
+<text x="828.0" y="89.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="10" font-weight="500" fill="#756F66" text-anchor="start">WIP</text>
+<text x="828.0" y="108.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="15" font-weight="600" fill="#30302D" text-anchor="start">6</text>
+<rect x="997" y="70" width="170" height="48" rx="5" fill="#FBFAF7" stroke="#CFC7BA"/>
+<text x="1010.0" y="89.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="10" font-weight="500" fill="#756F66" text-anchor="start">Blocked</text>
+<text x="1010.0" y="108.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="15" font-weight="600" fill="#30302D" text-anchor="start">1</text>
+<rect x="1179" y="70" width="170" height="48" rx="5" fill="#FBFAF7" stroke="#CFC7BA"/>
+<text x="1192.0" y="89.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="10" font-weight="500" fill="#756F66" text-anchor="start">Throughput</text>
+<text x="1192.0" y="108.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="15" font-weight="600" fill="#30302D" text-anchor="start">6 items/week</text>
+<rect x="1361" y="70" width="170" height="48" rx="5" fill="#FBFAF7" stroke="#CFC7BA"/>
+<text x="1374.0" y="89.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="10" font-weight="500" fill="#756F66" text-anchor="start">SLE</text>
+<text x="1374.0" y="108.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="15" font-weight="600" fill="#30302D" text-anchor="start">85% ≤ 5d</text>
+<rect x="170.0" y="154" width="276.0" height="86" fill="#FBFAF7" stroke="#CFC7BA"/>
+<text x="186.0" y="185.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="18" font-weight="600" fill="#30302D" text-anchor="start">Backlog</text>
+<text x="186.0" y="215.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="11" font-weight="500" fill="#756F66" text-anchor="start">Before commitment</text>
+<rect x="446.0" y="154" width="276.0" height="86" fill="#DDE8E1" stroke="#CFC7BA"/>
+<text x="462.0" y="185.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="18" font-weight="600" fill="#30302D" text-anchor="start">Ready</text>
+<rect x="631.0" y="169" width="73" height="26" rx="13" fill="#8B5947"/>
+<text x="667.5" y="188.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="11" font-weight="650" fill="#FFFFFF" text-anchor="middle">WIP 2/3</text>
+<text x="462.0" y="212.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="11" font-weight="400" fill="#756F66" text-anchor="start">Outcome, owner and</text>
+<text x="462.0" y="229.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="11" font-weight="400" fill="#756F66" text-anchor="start">acceptance check</text>
+<rect x="722.0" y="154" width="276.0" height="86" fill="#DDE8E1" stroke="#CFC7BA"/>
+<text x="738.0" y="185.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="18" font-weight="600" fill="#30302D" text-anchor="start">In progress</text>
+<rect x="907.0" y="169" width="73" height="26" rx="13" fill="#8B5947"/>
+<text x="943.5" y="188.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="11" font-weight="650" fill="#FFFFFF" text-anchor="middle">WIP 2/3</text>
+<text x="738.0" y="212.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="11" font-weight="400" fill="#756F66" text-anchor="start">Owner has capacity</text>
+<text x="738.0" y="229.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="11" font-weight="400" fill="#756F66" text-anchor="start">and the next step</text>
+<rect x="998.0" y="154" width="276.0" height="86" fill="#DDE8E1" stroke="#CFC7BA"/>
+<text x="1014.0" y="185.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="18" font-weight="600" fill="#30302D" text-anchor="start">Review</text>
+<rect x="1183.0" y="169" width="73" height="26" rx="13" fill="#B94B42"/>
+<text x="1219.5" y="188.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="11" font-weight="650" fill="#FFFFFF" text-anchor="middle">WIP 2/2</text>
+<text x="1014.0" y="212.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="11" font-weight="400" fill="#756F66" text-anchor="start">A usable result is</text>
+<text x="1014.0" y="229.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="11" font-weight="400" fill="#756F66" text-anchor="start">ready for</text>
+<rect x="1274.0" y="154" width="276.0" height="86" fill="#FBFAF7" stroke="#CFC7BA"/>
+<text x="1290.0" y="185.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="18" font-weight="600" fill="#30302D" text-anchor="start">Done</text>
+<text x="1290.0" y="215.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="11" font-weight="500" fill="#756F66" text-anchor="start">Delivered</text>
+<rect x="50" y="240" width="120" height="172" fill="#FBFAF7" stroke="#CFC7BA"/>
+<text x="110.0" y="282.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="15" font-weight="620" fill="#30302D" text-anchor="middle">Customer value</text>
+<text x="110.0" y="308.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="10" font-weight="500" fill="#756F66" text-anchor="middle">Lane WIP 2/4</text>
+<rect x="170" y="240" width="1380" height="172" fill="#FBFAF7" stroke="#CFC7BA"/>
+<line x1="446.0" y1="240" x2="446.0" y2="412" stroke="#CFC7BA"/>
+<line x1="722.0" y1="240" x2="722.0" y2="412" stroke="#CFC7BA"/>
+<rect x="734.0" y="255" width="252.0" height="69" rx="5" fill="#FFFFFF" stroke="#CFC7BA" stroke-width="1"/>
+<rect x="734.0" y="255" width="7" height="69" rx="3" fill="#607D8B"/>
+<text x="752.0" y="277.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="13" font-weight="600" fill="#30302D" text-anchor="start">Test guided</text>
+<text x="752.0" y="294.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="13" font-weight="600" fill="#30302D" text-anchor="start">onboarding</text>
+<text x="752.0" y="313.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="10" font-weight="450" fill="#756F66" text-anchor="start">CV-014 · Maya · 2d</text>
+<text x="974.0" y="277.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="9" font-weight="600" fill="#607D8B" text-anchor="end">Standard</text>
+<line x1="998.0" y1="240" x2="998.0" y2="412" stroke="#CFC7BA"/>
+<rect x="1010.0" y="255" width="252.0" height="69" rx="5" fill="#FFFFFF" stroke="#CFC7BA" stroke-width="1"/>
+<rect x="1010.0" y="255" width="7" height="69" rx="3" fill="#C28A36"/>
+<text x="1028.0" y="277.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="13" font-weight="600" fill="#30302D" text-anchor="start">Clarify</text>
+<text x="1028.0" y="294.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="13" font-weight="600" fill="#30302D" text-anchor="start">renewal</text>
+<text x="1028.0" y="313.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="10" font-weight="450" fill="#756F66" text-anchor="start">CV-011 · Noah · 1d · Due 09-23</text>
+<text x="1250.0" y="277.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="9" font-weight="600" fill="#C28A36" text-anchor="end">Fixed date</text>
+<line x1="1274.0" y1="240" x2="1274.0" y2="412" stroke="#CFC7BA"/>
+<rect x="1286.0" y="255" width="252.0" height="69" rx="5" fill="#FFFFFF" stroke="#CFC7BA" stroke-width="1"/>
+<rect x="1286.0" y="255" width="7" height="69" rx="3" fill="#607D8B"/>
+<text x="1304.0" y="277.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="13" font-weight="600" fill="#30302D" text-anchor="start">Add accessible</text>
+<text x="1304.0" y="294.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="13" font-weight="600" fill="#30302D" text-anchor="start">empty state</text>
+<text x="1304.0" y="313.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="10" font-weight="450" fill="#756F66" text-anchor="start">CV-009 · Maya</text>
+<text x="1526.0" y="277.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="9" font-weight="600" fill="#607D8B" text-anchor="end">Standard</text>
+<rect x="50" y="412" width="120" height="172" fill="#FBFAF7" stroke="#CFC7BA"/>
+<text x="110.0" y="454.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="15" font-weight="620" fill="#30302D" text-anchor="middle">Reliability</text>
+<text x="110.0" y="480.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="10" font-weight="500" fill="#756F66" text-anchor="middle">Lane WIP 2/4</text>
+<rect x="170" y="412" width="1380" height="172" fill="#F7F4EE" stroke="#CFC7BA"/>
+<line x1="446.0" y1="412" x2="446.0" y2="584" stroke="#CFC7BA"/>
+<rect x="458.0" y="427" width="252.0" height="69" rx="5" fill="#FFFFFF" stroke="#CFC7BA" stroke-width="1"/>
+<rect x="458.0" y="427" width="7" height="69" rx="3" fill="#607D8B"/>
+<text x="476.0" y="449.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="13" font-weight="600" fill="#30302D" text-anchor="start">Measure import</text>
+<text x="476.0" y="466.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="13" font-weight="600" fill="#30302D" text-anchor="start">retry rate</text>
+<text x="476.0" y="485.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="10" font-weight="450" fill="#756F66" text-anchor="start">RL-018 · Ari · 1d</text>
+<text x="698.0" y="449.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="9" font-weight="600" fill="#607D8B" text-anchor="end">Standard</text>
+<line x1="722.0" y1="412" x2="722.0" y2="584" stroke="#CFC7BA"/>
+<rect x="734.0" y="427" width="252.0" height="69" rx="5" fill="#FFFFFF" stroke="#B94B42" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="734.0" y="427" width="7" height="69" rx="3" fill="#B94B42"/>
+<text x="752.0" y="449.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="13" font-weight="600" fill="#30302D" text-anchor="start">Rehearse</text>
+<text x="752.0" y="466.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="13" font-weight="600" fill="#30302D" text-anchor="start">incident</text>
+<text x="752.0" y="485.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="10" font-weight="450" fill="#756F66" text-anchor="start">RL-021 · Jordan · 3d</text>
+<rect x="929.0" y="435" width="46" height="21" rx="4" fill="#B94B42"/>
+<text x="952.0" y="450.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="10" font-weight="650" fill="#FFFFFF" text-anchor="middle">Blocked</text>
+<text x="974.0" y="479.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="9" font-weight="500" fill="#B94B42" text-anchor="end">Waiting for service owner sign-off</text>
+<line x1="998.0" y1="412" x2="998.0" y2="584" stroke="#CFC7BA"/>
+<line x1="1274.0" y1="412" x2="1274.0" y2="584" stroke="#CFC7BA"/>
+<rect x="50" y="584" width="120" height="172" fill="#FBFAF7" stroke="#CFC7BA"/>
+<text x="110.0" y="626.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="15" font-weight="620" fill="#30302D" text-anchor="middle">Enablement</text>
+<text x="110.0" y="652.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="10" font-weight="500" fill="#756F66" text-anchor="middle">Lane WIP 2/3</text>
+<rect x="170" y="584" width="1380" height="172" fill="#FBFAF7" stroke="#CFC7BA"/>
+<line x1="446.0" y1="584" x2="446.0" y2="756" stroke="#CFC7BA"/>
+<rect x="458.0" y="599" width="252.0" height="69" rx="5" fill="#FFFFFF" stroke="#CFC7BA" stroke-width="1"/>
+<rect x="458.0" y="599" width="7" height="69" rx="3" fill="#7B6D8D"/>
+<text x="476.0" y="621.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="13" font-weight="600" fill="#30302D" text-anchor="start">Refresh</text>
+<text x="476.0" y="638.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="13" font-weight="600" fill="#30302D" text-anchor="start">support</text>
+<text x="476.0" y="657.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="10" font-weight="450" fill="#756F66" text-anchor="start">EN-007 · Riley · 2d</text>
+<text x="698.0" y="621.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="9" font-weight="600" fill="#7B6D8D" text-anchor="end">Improvement</text>
+<line x1="722.0" y1="584" x2="722.0" y2="756" stroke="#CFC7BA"/>
+<line x1="998.0" y1="584" x2="998.0" y2="756" stroke="#CFC7BA"/>
+<rect x="1010.0" y="599" width="252.0" height="69" rx="5" fill="#FFFFFF" stroke="#CFC7BA" stroke-width="1"/>
+<rect x="1010.0" y="599" width="7" height="69" rx="3" fill="#C28A36"/>
+<text x="1028.0" y="621.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="13" font-weight="600" fill="#30302D" text-anchor="start">Publish</text>
+<text x="1028.0" y="638.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="13" font-weight="600" fill="#30302D" text-anchor="start">release</text>
+<text x="1028.0" y="657.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="10" font-weight="450" fill="#756F66" text-anchor="start">EN-004 · Riley · 2d · Due 09-24</text>
+<text x="1250.0" y="621.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="9" font-weight="600" fill="#C28A36" text-anchor="end">Fixed date</text>
+<line x1="1274.0" y1="584" x2="1274.0" y2="756" stroke="#CFC7BA"/>
+<rect x="1286.0" y="599" width="252.0" height="69" rx="5" fill="#FFFFFF" stroke="#CFC7BA" stroke-width="1"/>
+<rect x="1286.0" y="599" width="7" height="69" rx="3" fill="#607D8B"/>
+<text x="1304.0" y="621.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="13" font-weight="600" fill="#30302D" text-anchor="start">Archive old</text>
+<text x="1304.0" y="638.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="13" font-weight="600" fill="#30302D" text-anchor="start">launch notes</text>
+<text x="1304.0" y="657.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="10" font-weight="450" fill="#756F66" text-anchor="start">EN-001 · Sam</text>
+<text x="1526.0" y="621.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="9" font-weight="600" fill="#607D8B" text-anchor="end">Standard</text>
+<text x="50.0" y="790.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="18" font-weight="620" fill="#30302D" text-anchor="start">Explicit policies</text>
+<text x="1550.0" y="790.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="11" font-weight="500" fill="#756F66" text-anchor="end">Blocked items remain in WIP · pull only when downstream capacity exists</text>
+<rect x="50" y="815" width="730" height="62" rx="5" fill="#FBFAF7" stroke="#CFC7BA"/>
+<text x="66.0" y="839.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="12" font-weight="650" fill="#8B5947" text-anchor="start">Pull</text>
+<text x="140.0" y="838.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="11" font-weight="400" fill="#30302D" text-anchor="start">Pull the next item only when downstream</text>
+<text x="140.0" y="855.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="11" font-weight="400" fill="#30302D" text-anchor="start">capacity and its entry condition are both</text>
+<rect x="805" y="815" width="730" height="62" rx="5" fill="#FBFAF7" stroke="#CFC7BA"/>
+<text x="821.0" y="839.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="12" font-weight="650" fill="#8B5947" text-anchor="start">Blocked</text>
+<text x="895.0" y="838.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="11" font-weight="400" fill="#30302D" text-anchor="start">Keep blocked work visible in its current</text>
+<text x="895.0" y="855.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="11" font-weight="400" fill="#30302D" text-anchor="start">state, with one owner and one next unblock</text>
+<rect x="50" y="891" width="730" height="62" rx="5" fill="#FBFAF7" stroke="#CFC7BA"/>
+<text x="66.0" y="915.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="12" font-weight="650" fill="#8B5947" text-anchor="start">Expedite</text>
+<text x="140.0" y="914.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="11" font-weight="400" fill="#30302D" text-anchor="start">Allow at most one expedite item; the</text>
+<text x="140.0" y="931.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="11" font-weight="400" fill="#30302D" text-anchor="start">service owner confirms what ordinary work</text>
+<rect x="805" y="891" width="730" height="62" rx="5" fill="#FBFAF7" stroke="#CFC7BA"/>
+<text x="821.0" y="915.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="12" font-weight="650" fill="#8B5947" text-anchor="start">Done</text>
+<text x="895.0" y="914.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="11" font-weight="400" fill="#30302D" text-anchor="start">Evidence, acceptance check and release</text>
+<text x="895.0" y="931.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="11" font-weight="400" fill="#30302D" text-anchor="start">note are complete before an item enters</text>
+<text x="50.0" y="1059.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,sans-serif" font-size="10" font-weight="450" fill="#756F66" text-anchor="start">Teaching simulation · lanes show work classes, not individual performance</text>
+</svg>
+
