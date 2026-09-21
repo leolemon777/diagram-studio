@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "version": "v59",
+  "version": "v60",
   "updated": "2026-09-20",
   "purpose": "Single source for chooser labels, backend capability, delivery formats and acceptance evidence.",
   "status_vocabulary": {
@@ -75,8 +75,8 @@
           "formats": ["svg", "drawio", "scene.json", "qa.json", "html"],
           "layout_limits": {"zh": "分支和回流必须有文字条件；复杂流程用总览加局部关系图。", "en": "Label branch and return conditions; use overview plus local relationship pages for complex flows."},
           "languages": ["zh", "en"],
-          "examples": ["assets/examples/02-workflow.json", "assets/examples/59-process-flow.json"],
-          "evidence": {"level": "manual_visual_review", "reference": "assets/verification-status.json", "detail": {"zh": "流程节点改字、保存、刷新已验证；v40 含流程精修。", "en": "Workflow text edit, save and reload were verified; workflow is in the v40 refined scope."}},
+          "examples": ["assets/examples/flow-cn.json", "assets/examples/flow-en.json"],
+          "evidence": {"level": "manual_visual_review", "reference": "assets/v60-flow-evidence.json", "detail": {"zh": "中英跨行业流程通过六个步骤、两条判断分支、虚线补充回流、几何检查和浏览器复核。", "en": "Chinese and English cross-industry flows pass six steps, two decision branches, a dashed update loop, geometry checks and browser review."}},
           "scope": {"zh": "保留前进与返回方向；不为排版改变真实回路。", "en": "Preserves forward and return direction; real loops are never changed for layout."}
         },
         {

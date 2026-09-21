@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="760" viewBox="0 0 1600 760" role="img" aria-labelledby="diagram-title diagram-desc">
+<title id="diagram-title">Service booking · request to confirmation</title>
+<desc id="diagram-desc">Check the request before scheduling; incomplete information returns for an update</desc>
+<rect width="100%" height="100%" fill="#F1EFEB"/>
+<defs>
+<marker id="arrow-accent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#AC6046"/></marker>
+<marker id="arrow-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#67685E"/></marker>
+<marker id="arrow-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#8C7964"/></marker>
+<marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#554C46"/></marker>
+<marker id="arrow-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#6D6A63"/></marker>
+<marker id="arrow-line" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#D8D3C8"/></marker>
+<marker id="arrow-ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#30302D"/></marker>
+</defs>
+<g font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, Arial, sans-serif">
+<path d="M320,340.0 L360.0,340.0 L400,340.0" fill="none" stroke="#AC6046" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow-accent)"/>
+<path d="M620,340.0 L660.0,340.0 L660.0,330.0 L700,330.0" fill="none" stroke="#AC6046" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow-accent)"/>
+<path d="M920,330.0 L960.0,330.0 L960.0,340.0 L1000,340.0" fill="none" stroke="#AC6046" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow-accent)"/>
+<path d="M810,390 L810,500" fill="none" stroke="#AC6046" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow-accent)"/>
+<path d="M700,540 L640,540 L640,420 L620,420 L620,340" fill="none" stroke="#8C7964" stroke-width="2" stroke-linejoin="round" stroke-dasharray="7 6" marker-end="url(#arrow-amber)"/>
+<path d="M1220,340.0 L1260.0,340.0 L1300,340.0" fill="none" stroke="#AC6046" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow-accent)"/>
+<g id="request" data-kind="pill" data-content-text="false" data-box="100,300,220,80">
+<rect x="100" y="300" width="220" height="80" rx="40.0" fill="#FEFDF9" stroke="#AC6046" stroke-width="1.5"/>
+<text x="210.0" y="336.35" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">Send request</text>
+<text x="210.0" y="360.05" text-anchor="middle" font-size="16" font-weight="400" fill="#6D6A63">Goal · time · contact</text>
+</g>
+<g id="check" data-kind="rect" data-content-text="false" data-box="400,300,220,80">
+<rect x="400" y="300" width="220" height="80" rx="10" fill="#FEFDF9" stroke="#AC6046" stroke-width="1.5"/>
+<text x="510.0" y="336.35" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">Check details</text>
+<text x="510.0" y="360.05" text-anchor="middle" font-size="16" font-weight="400" fill="#6D6A63">Scope · terms</text>
+</g>
+<g id="complete" data-kind="diamond" data-content-text="false" data-box="700,270,220,120">
+<polygon points="810.0,270 920,330.0 810.0,390 700,330.0" fill="#FEFDF9" stroke="#AC6046" stroke-width="1.5"/>
+<text x="810.0" y="337.15" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">Complete?</text>
+</g>
+<g id="add" data-kind="pill" data-content-text="false" data-box="700,500,220,80">
+<rect x="700" y="500" width="220" height="80" rx="40.0" fill="#FEFDF9" stroke="#AC6046" stroke-width="1.5"/>
+<text x="810.0" y="536.35" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">Add details</text>
+<text x="810.0" y="560.0500000000001" text-anchor="middle" font-size="16" font-weight="400" fill="#6D6A63">Answer questions</text>
+</g>
+<g id="schedule" data-kind="rect" data-content-text="false" data-box="1000,300,220,80">
+<rect x="1000" y="300" width="220" height="80" rx="10" fill="#FEFDF9" stroke="#AC6046" stroke-width="1.5"/>
+<text x="1110.0" y="336.35" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">Schedule</text>
+<text x="1110.0" y="360.05" text-anchor="middle" font-size="16" font-weight="400" fill="#6D6A63">Time · owner</text>
+</g>
+<g id="notify" data-kind="pill" data-content-text="false" data-box="1300,300,220,80">
+<rect x="1300" y="300" width="220" height="80" rx="40.0" fill="#FEFDF9" stroke="#67685E" stroke-width="1.5"/>
+<text x="1410.0" y="336.35" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">Confirm</text>
+<text x="1410.0" y="360.05" text-anchor="middle" font-size="16" font-weight="400" fill="#6D6A63">Share result</text>
+</g>
+<g id="_v7" data-kind="text" data-content-text="false" data-box="64,34,1472,22">
+
+<text x="64" y="49.55" text-anchor="start" font-size="14" font-weight="400" fill="#AC6046">60 / FLOWCHART</text>
+</g>
+<g id="_v8" data-kind="text" data-content-text="false" data-box="64,69,1472,56">
+
+<text x="64" y="108.7" text-anchor="start" font-size="36" font-weight="400" fill="#30302D">Service booking · request to confirmation</text>
+</g>
+<g id="_v9" data-kind="text" data-content-text="false" data-box="64,130,1472,38">
+
+<text x="64" y="154.525" text-anchor="start" font-size="17" font-weight="400" fill="#6D6A63">Check the request before scheduling; incomplete information returns for an update</text>
+</g>
+<g id="_v10" data-kind="rect" data-content-text="false" data-box="64,697,1472,1">
+<rect x="64" y="697" width="1472" height="1" rx="0" fill="#D8D3C8" stroke="none" stroke-width="1.5"/>
+</g>
+<g id="_v11" data-kind="text" data-content-text="false" data-box="64,710,1472,36">
+
+<text x="64" y="732.55" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">Cross-industry flow sample · relationships and conditions come from the input; business rules are not inferred</text>
+</g>
+<rect x="919.175" y="300.0" width="41.65" height="25" rx="4" fill="#F1EFEB"/>
+<text x="940.0" y="317.0" font-size="15" text-anchor="middle" fill="#AC6046">Yes</text>
+<rect x="821.45" y="433" width="33.099999999999994" height="25" rx="4" fill="#F1EFEB"/>
+<text x="838" y="450" font-size="15" text-anchor="middle" fill="#AC6046">No</text>
+<rect x="592.725" y="453" width="114.55" height="25" rx="4" fill="#F1EFEB"/>
+<text x="650" y="470" font-size="15" text-anchor="middle" fill="#8C7964">After update</text>
+</g></svg>

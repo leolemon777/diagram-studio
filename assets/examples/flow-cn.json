@@ -1,0 +1,27 @@
+{
+  "type": "graph",
+  "title": "预约服务 · 从需求到确认",
+  "subtitle": "先核对信息，再安排服务；信息不完整时返回补充",
+  "eyebrow": "60 / FLOWCHART",
+  "height": 760,
+  "layout": {"mode": "fixed", "direction": "right"},
+  "nodes": [
+    {"id": "request", "x": 100, "y": 300, "w": 220, "h": 80, "label": "提交需求", "detail": "目标 · 时间 · 联系方式", "kind": "pill"},
+    {"id": "check", "x": 400, "y": 300, "w": 220, "h": 80, "label": "核对信息", "detail": "确认范围与可用条件"},
+    {"id": "complete", "x": 700, "y": 270, "w": 220, "h": 120, "label": "信息完整？", "kind": "diamond"},
+    {"id": "add", "x": 700, "y": 500, "w": 220, "h": 80, "label": "补充信息", "detail": "回答缺失问题", "kind": "pill"},
+    {"id": "schedule", "x": 1000, "y": 300, "w": 220, "h": 80, "label": "安排服务", "detail": "确认时间与负责人"},
+    {"id": "notify", "x": 1300, "y": 300, "w": 220, "h": 80, "label": "发送确认", "detail": "通知结果与下一步", "kind": "pill", "tone": "teal"}
+  ],
+  "edges": [
+    {"from": "request", "to": "check"},
+    {"from": "check", "to": "complete"},
+    {"from": "complete", "to": "schedule", "label": "是"},
+    {"from": "complete", "to": "add", "label": "否", "points": [[810, 390], [810, 500]], "label_at": [838, 450]},
+    {"from": "add", "to": "check", "label": "补充后", "points": [[700, 540], [640, 540], [640, 420], [620, 420], [620, 340]], "label_at": [650, 470], "tone": "amber", "dashed": true},
+    {"from": "schedule", "to": "notify"}
+  ],
+  "footer": "跨行业流程示例 · 关系和条件来自输入；不自动推断业务规则",
+  "family": "过程与协作",
+  "diagram_name": "预约流程"
+}

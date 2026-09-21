@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "protocol_version": "diagram-studio/delivery-1",
+  "version_id": "v-afa684f2740e",
+  "source_name": "flow-en",
+  "input_sha256": "afa684f2740e61ce7a63db5f76a2fd19aedbbeb8251e331ef3cf04a3a6b373bd",
+  "theme": "light",
+  "checks": {
+    "geometry": {
+      "status": "passed",
+      "warnings": []
+    },
+    "composition": {
+      "status": "not-run",
+      "findings": []
+    },
+    "content_integrity": {
+      "status": "passed",
+      "source_ids": 6,
+      "source_relations": 6,
+      "source_texts": 11,
+      "missing_ids": [],
+      "missing_relations": [],
+      "missing_text": [],
+      "scope": "stable source IDs, explicit relation endpoints and source display text; not domain correctness"
+    },
+    "browser_text_bounds": {
+      "status": "not-run"
+    },
+    "manual_visual_review": {
+      "status": "not-run"
+    },
+    "native_editor": {
+      "status": "not-run"
+    }
+  },
+  "files": {
+    "flow-en.brief.json": "256b5aa913b7ed4d1e62448c0b2783d5989df659068721d21a91d8e542c26cd4",
+    "flow-en.drawio": "fa4af24564d06234acb70d1d1e06dfec663662533d06b7896075ed92832fd778",
+    "flow-en.qa.json": "29ca7ffc7dc4aa7fdca9f904a8159b78dcb3adb94ab69ff42948933627ea9c67",
+    "flow-en.scene.json": "5e92f59ba37ce38dfc3a27d48dea60b3da898266f7e4518793d07a90e37d6b93",
+    "flow-en.svg": "2a6f237dd0bd8bb199961ec540a5d9d886bcc180c860f2f732f6e9927e5a016f"
+  },
+  "delivery_scope": "Generation, semantic content checks and QA finish before replacement. Individual files are replaced; promotion is not a multi-file atomic transaction.",
+  "version_dir": "demos/flow/en/versions/v-afa684f2740e"
+}

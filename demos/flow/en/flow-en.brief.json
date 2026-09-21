@@ -1,0 +1,145 @@
+{
+  "type": "graph",
+  "title": "Service booking · request to confirmation",
+  "subtitle": "Check the request before scheduling; incomplete information returns for an update",
+  "eyebrow": "60 / FLOWCHART",
+  "height": 760,
+  "layout": {
+    "mode": "fixed",
+    "direction": "right"
+  },
+  "nodes": [
+    {
+      "id": "request",
+      "x": 100,
+      "y": 300,
+      "w": 220,
+      "h": 80,
+      "label": "Send request",
+      "detail": "Goal · time · contact",
+      "kind": "pill"
+    },
+    {
+      "id": "check",
+      "x": 400,
+      "y": 300,
+      "w": 220,
+      "h": 80,
+      "label": "Check details",
+      "detail": "Scope · terms"
+    },
+    {
+      "id": "complete",
+      "x": 700,
+      "y": 270,
+      "w": 220,
+      "h": 120,
+      "label": "Complete?",
+      "kind": "diamond"
+    },
+    {
+      "id": "add",
+      "x": 700,
+      "y": 500,
+      "w": 220,
+      "h": 80,
+      "label": "Add details",
+      "detail": "Answer questions",
+      "kind": "pill"
+    },
+    {
+      "id": "schedule",
+      "x": 1000,
+      "y": 300,
+      "w": 220,
+      "h": 80,
+      "label": "Schedule",
+      "detail": "Time · owner"
+    },
+    {
+      "id": "notify",
+      "x": 1300,
+      "y": 300,
+      "w": 220,
+      "h": 80,
+      "label": "Confirm",
+      "detail": "Share result",
+      "kind": "pill",
+      "tone": "teal"
+    }
+  ],
+  "edges": [
+    {
+      "from": "request",
+      "to": "check"
+    },
+    {
+      "from": "check",
+      "to": "complete"
+    },
+    {
+      "from": "complete",
+      "to": "schedule",
+      "label": "Yes"
+    },
+    {
+      "from": "complete",
+      "to": "add",
+      "label": "No",
+      "points": [
+        [
+          810,
+          390
+        ],
+        [
+          810,
+          500
+        ]
+      ],
+      "label_at": [
+        838,
+        450
+      ]
+    },
+    {
+      "from": "add",
+      "to": "check",
+      "label": "After update",
+      "points": [
+        [
+          700,
+          540
+        ],
+        [
+          640,
+          540
+        ],
+        [
+          640,
+          420
+        ],
+        [
+          620,
+          420
+        ],
+        [
+          620,
+          340
+        ]
+      ],
+      "label_at": [
+        650,
+        470
+      ],
+      "tone": "amber",
+      "dashed": true
+    },
+    {
+      "from": "schedule",
+      "to": "notify"
+    }
+  ],
+  "footer": "Cross-industry flow sample · relationships and conditions come from the input; business rules are not inferred",
+  "family": "Process & collaboration",
+  "diagram_name": "Booking flow"
+}

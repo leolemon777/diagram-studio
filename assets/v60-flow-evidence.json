@@ -1,0 +1,20 @@
+{
+  "version": "v60",
+  "capability": "flow",
+  "status": "manual_visual_review",
+  "source_examples": [
+    "assets/examples/flow-cn.json",
+    "assets/examples/flow-en.json"
+  ],
+  "checks": {
+    "bilingual_topology": "same six stable step ids, six explicit links, two decision branches and one dashed feedback loop",
+    "geometry": "fixed graph audit reports zero errors and zero connector warnings",
+    "content": "request, information check, yes/no branch, scheduling, confirmation and update loop remain explicit",
+    "browser": "overview demo and direct Chinese/English SVG were opened and visually reviewed, including right-side confirmation and lower feedback regions"
+  },
+  "limitations": [
+    "This is an ordinary graph-based flowchart, not a BPMN conformance validator.",
+    "Native draw.io edit, save and reopen behavior is not included in this batch.",
+    "The booking flow is an illustrative cross-industry example; real policy, exception ownership and service capacity require domain review."
+  ]
+}
