@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "version": "v50",
+  "version": "v51",
   "updated": "2026-09-20",
   "purpose": "Single source for chooser labels, backend capability, delivery formats and acceptance evidence.",
   "status_vocabulary": {
@@ -173,8 +173,8 @@
           "formats": ["svg", "drawio", "scene.json", "qa.json", "html"],
           "layout_limits": {"zh": "保留单位和零基准；负值与正值不能混成无零轴排序。", "en": "Retain units and a meaningful baseline; signed values must not become a zero-free ranking."},
           "languages": ["zh", "en"],
-          "examples": ["assets/examples/08-bar-chart.json"],
-          "evidence": {"level": "generated_with_semantic_validation", "reference": "references/charts.md", "detail": {"zh": "共享图表后端已校验数值和单位；代表性浏览器复核仍按具体案例进行。", "en": "The shared chart backend checks values and units; browser review is case-specific."}},
+          "examples": ["assets/examples/08-bar-chart-cn.json", "assets/examples/08-bar-chart-en.json"],
+          "evidence": {"level": "manual_visual_review", "reference": "assets/v51-data-story-evidence.json", "detail": {"zh": "中英跨行业条形图通过数值、单位、长英文标签换行和浏览器查看。", "en": "Chinese and English cross-industry bars pass value/unit checks, long-English wrapping and browser review."}},
           "scope": {"zh": "适合类别比较；不把条形图的长度当成统计显著性。", "en": "For category comparison; bar length is not statistical significance."}
         },
         {
@@ -187,8 +187,8 @@
           "formats": ["svg", "drawio", "scene.json", "qa.json", "html"],
           "layout_limits": {"zh": "真实日期按间隔定位；缺测保留断点，不能顺手补成零。", "en": "Use actual date spacing; preserve missing values as breaks rather than turning them into zero."},
           "languages": ["zh", "en"],
-          "examples": ["assets/examples/09-line-chart.json"],
-          "evidence": {"level": "manual_visual_review", "reference": "assets/verification-status.json", "detail": {"zh": "趋势列入 v40 精修，并检查真实日期间隔和缺测。", "en": "Trend is in the v40 refined scope with checks for actual date spacing and missing data."}},
+          "examples": ["assets/examples/09-line-chart-cn.json", "assets/examples/09-line-chart-en.json"],
+          "evidence": {"level": "manual_visual_review", "reference": "assets/v51-data-story-evidence.json", "detail": {"zh": "中英跨行业趋势图通过等距周标签、单位、原始数值和浏览器查看。", "en": "Chinese and English cross-industry trends pass equal interval labels, units, raw values and browser review."}},
           "scope": {"zh": "表达时间顺序和波动；不把平滑线说成预测。", "en": "Expresses time order and variation; a smoothing line is not a forecast."}
         },
         {
@@ -222,9 +222,23 @@
           "formats": ["svg", "drawio", "scene.json", "qa.json", "html"],
           "layout_limits": {"zh": "最多五个类别且总量为正；类别过多改用条形图。", "en": "Up to five positive categories; use bars when there are more categories."},
           "languages": ["zh", "en"],
-          "examples": ["assets/examples/10-donut-chart.json"],
-          "evidence": {"level": "generated_with_semantic_validation", "reference": "references/charts.md", "detail": {"zh": "总量和类别约束由图表后端校验。", "en": "Total and category constraints are checked by the chart backend."}},
+          "examples": ["assets/examples/10-donut-chart-cn.json", "assets/examples/10-donut-chart-en.json"],
+          "evidence": {"level": "manual_visual_review", "reference": "assets/v51-data-story-evidence.json", "detail": {"zh": "中英跨行业环图通过互斥构成、总量、长图例换行和浏览器查看。", "en": "Chinese and English cross-industry donuts pass exclusive composition, totals, long-legend wrapping and browser review."}},
           "scope": {"zh": "只在部分构成同一整体时使用；不把角度差当精确读数。", "en": "Use only when parts share one whole; do not make angle differences carry exact readings."}
+        },
+        {
+          "id": "heatmap",
+          "label": {"zh": "热力图", "en": "Heatmap"},
+          "why": {"zh": "在同一量纲下快速看出行列交叉的高低与空档", "en": "Scan high, low and missing pockets across a shared row-column scale"},
+          "minimum_input": {"zh": "行标签、列标签、同一量纲的数值矩阵、色阶范围", "en": "Row labels, column labels, a same-unit value grid and scale bounds"},
+          "input_model": {"kind": "plot", "mode": "heatmap", "required": ["row_labels", "column_labels", "values"]},
+          "backend": {"kind": "shared-renderer-extra", "module": "scripts/render.py", "entry": "plot:heatmap"},
+          "formats": ["svg", "drawio", "scene.json", "qa.json", "html"],
+          "layout_limits": {"zh": "建议 2–8 行、2–10 列；所有格子共享色阶并直接显示数值，密集时拆分。", "en": "Use roughly 2–8 rows and 2–10 columns; share one scale and show values directly, splitting dense grids."},
+          "languages": ["zh", "en"],
+          "examples": ["assets/examples/48-heatmap-cn.json", "assets/examples/48-heatmap-en.json"],
+          "evidence": {"level": "manual_visual_review", "reference": "assets/v51-data-story-evidence.json", "detail": {"zh": "中英跨行业热力图通过矩阵尺寸、固定色阶、数值保留和浏览器查看。", "en": "Chinese and English cross-industry heatmaps pass matrix dimensions, fixed scale, value retention and browser review."}},
+          "scope": {"zh": "颜色只编码已声明的数值高低；不从色块邻近推断因果或聚类。", "en": "Colour encodes only the declared values; adjacency never implies causality or clustering."}
         },
         {
           "id": "histogram",

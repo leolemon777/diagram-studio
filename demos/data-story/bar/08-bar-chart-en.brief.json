@@ -1,0 +1,34 @@
+{
+  "type": "chart",
+  "mode": "bar",
+  "title": "Community programme · reach by channel",
+  "subtitle": "One campaign window and one counting rule; bars start at zero",
+  "eyebrow": "08 / DATA COMPARISON",
+  "unit": " people",
+  "baseline_note": "Zero baseline · bar length encodes the value",
+  "data": [
+    {
+      "label": "Community sessions",
+      "value": 42
+    },
+    {
+      "label": "Live stream",
+      "value": 31
+    },
+    {
+      "label": "Partner shares",
+      "value": 24
+    },
+    {
+      "label": "Email reminders",
+      "value": 17
+    },
+    {
+      "label": "Other entry points",
+      "value": 9
+    }
+  ],
+  "footer": "Style sample · all values are simulated, not programme statistics",
+  "family": "Data charts",
+  "diagram_name": "Horizontal comparison"
+}

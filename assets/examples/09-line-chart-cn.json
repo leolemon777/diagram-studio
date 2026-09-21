@@ -1,0 +1,19 @@
+{
+  "type": "chart",
+  "mode": "line",
+  "title": "客户支持 · 首次响应趋势",
+  "subtitle": "按周等距记录；保留原始数值，不使用平滑曲线",
+  "eyebrow": "09 / TREND",
+  "unit": " 分钟",
+  "data": [
+    {"label": "第 1 周", "value": 46},
+    {"label": "第 2 周", "value": 42},
+    {"label": "第 3 周", "value": 39},
+    {"label": "第 4 周", "value": 31},
+    {"label": "第 5 周", "value": 34},
+    {"label": "第 6 周", "value": 27}
+  ],
+  "footer": "样式演示 · 合成数据 · 趋势变化不自动证明因果效果",
+  "family": "数据图表",
+  "diagram_name": "折线趋势"
+}

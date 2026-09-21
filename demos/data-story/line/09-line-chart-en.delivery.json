@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "protocol_version": "diagram-studio/delivery-1",
+  "version_id": "v-028ebb2d4fea",
+  "source_name": "09-line-chart-en",
+  "input_sha256": "028ebb2d4feaaa59b4681bed71c5ab4b120bc0450c8e86182a24a2f852920ac6",
+  "theme": "light",
+  "checks": {
+    "geometry": {
+      "status": "passed",
+      "warnings": []
+    },
+    "composition": {
+      "status": "not-run",
+      "findings": []
+    },
+    "content_integrity": {
+      "status": "passed",
+      "source_ids": 0,
+      "source_relations": 0,
+      "source_texts": 11,
+      "missing_ids": [],
+      "missing_relations": [],
+      "missing_text": [],
+      "scope": "stable source IDs, explicit relation endpoints and source display text; not domain correctness"
+    },
+    "browser_text_bounds": {
+      "status": "not-run"
+    },
+    "manual_visual_review": {
+      "status": "not-run"
+    },
+    "native_editor": {
+      "status": "not-run"
+    }
+  },
+  "files": {
+    "09-line-chart-en.brief.json": "0189ae342623eb424ae7b8062774232dde1a2ee424ea03b206c77c88a7414724",
+    "09-line-chart-en.drawio": "471337df203ef8f47b38b5dd932b139d43a6c90842f6f0eff3e8d292645cef72",
+    "09-line-chart-en.qa.json": "2552312ff72da79638aa07c5d31bc53255b5460905a10ef04354c94f11d11e53",
+    "09-line-chart-en.scene.json": "205913fc7f8ec26dda3bcb9ebe27268afc137dc2d0b830c8603d80092d5d86d3",
+    "09-line-chart-en.svg": "afff64bbe4e6df489eda7bec739d075736da87ac6e4febd64ef40a639da2f6c9"
+  },
+  "delivery_scope": "Generation, semantic content checks and QA finish before replacement. Individual files are replaced; promotion is not a multi-file atomic transaction."
+}

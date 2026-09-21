@@ -1,0 +1,57 @@
+{
+  "type": "plot",
+  "mode": "heatmap",
+  "title": "Customer support · demand heatmap",
+  "subtitle": "One scale carries one unit; values stay visible and colour is not causality",
+  "eyebrow": "48 / HEATMAP",
+  "row_labels": [
+    "Email",
+    "Chat",
+    "Phone",
+    "Community"
+  ],
+  "column_labels": [
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu",
+    "Fri"
+  ],
+  "values": [
+    [
+      12,
+      15,
+      9,
+      18,
+      14
+    ],
+    [
+      8,
+      11,
+      14,
+      10,
+      16
+    ],
+    [
+      5,
+      7,
+      6,
+      9,
+      8
+    ],
+    [
+      3,
+      4,
+      5,
+      4,
+      6
+    ]
+  ],
+  "minimum": 0,
+  "maximum": 20,
+  "unit": "requests",
+  "scale_label": "Lightness scale",
+  "footer": "Style sample · all values are simulated, not real support statistics",
+  "family": "Data charts",
+  "diagram_name": "Heatmap matrix"
+}

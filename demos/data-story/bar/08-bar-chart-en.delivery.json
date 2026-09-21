@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "protocol_version": "diagram-studio/delivery-1",
+  "version_id": "v-19a307dc482d",
+  "source_name": "08-bar-chart-en",
+  "input_sha256": "19a307dc482d6e6adc9e875f4f6e3a26ae2f94df11db6c82c8f97ea1624b7b85",
+  "theme": "light",
+  "checks": {
+    "geometry": {
+      "status": "passed",
+      "warnings": []
+    },
+    "composition": {
+      "status": "not-run",
+      "findings": []
+    },
+    "content_integrity": {
+      "status": "passed",
+      "source_ids": 0,
+      "source_relations": 0,
+      "source_texts": 11,
+      "missing_ids": [],
+      "missing_relations": [],
+      "missing_text": [],
+      "scope": "stable source IDs, explicit relation endpoints and source display text; not domain correctness"
+    },
+    "browser_text_bounds": {
+      "status": "not-run"
+    },
+    "manual_visual_review": {
+      "status": "not-run"
+    },
+    "native_editor": {
+      "status": "not-run"
+    }
+  },
+  "files": {
+    "08-bar-chart-en.brief.json": "648715d27034aecab60b45c5995c2a2650246e9bbdccff585f1d72bc10ef0a32",
+    "08-bar-chart-en.drawio": "1315af01ca33bae7bedb12dc3ddc0e3e7d3c37c9d14a822fcf69cf58e32791d8",
+    "08-bar-chart-en.qa.json": "3e8f1a3a8eebc89973b632a837887d1dba13937096fc6058565a3abca0238f0a",
+    "08-bar-chart-en.scene.json": "9859c1ceeca4996ac2c21c1ba46ca8f6a667bfa6d44350a89244e9a586ac02be",
+    "08-bar-chart-en.svg": "7aa739a55f2b9d70a87cf6d28f46b87ac267c40fe8283400da3b07002bada893"
+  },
+  "delivery_scope": "Generation, semantic content checks and QA finish before replacement. Individual files are replaced; promotion is not a multi-file atomic transaction."
+}

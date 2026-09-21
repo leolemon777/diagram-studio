@@ -1,0 +1,31 @@
+{
+  "version": "v51",
+  "date": "2026-09-20",
+  "scope": "Bilingual cross-industry data-story forms",
+  "automated": {
+    "tests": "Four regressions cover bilingual bar, line, donut and heatmap inputs, content retention, long Latin label wrapping, donut totals and heatmap shape validation",
+    "registry": "capability_registry.py --check passes",
+    "diff": "git diff --check passes",
+    "bar": "Five non-negative values retain a zero baseline, unit and all category labels; long English labels wrap without geometry errors",
+    "line": "Six ordered points retain equal category spacing, raw values, unit and non-smoothed semantics",
+    "donut": "Four non-negative mutually exclusive parts retain a positive total, absolute values, shares and total label",
+    "heatmap": "Four by five values retain one declared 0–20 scale, row/column labels and direct cell values"
+  },
+  "browser_checks": [
+    "Chinese data-story demo opened with bar, line, donut and heatmap sections; each object viewport is scrollable and exposes JSON/SVG/draw.io links",
+    "English bar, line, donut and heatmap SVGs opened directly; labels, units, legends and values remain readable",
+    "Chooser registry loads the heatmap card with a dedicated preview, backend, scope and bilingual input requirements"
+  ],
+  "not_verified": [
+    "Native editor save/reopen for these chart draw.io files",
+    "Mobile viewport and dense grids beyond declared limits",
+    "Statistical significance, forecasting, causal interpretation, data provenance or user aesthetic approval"
+  ],
+  "artifacts": {
+    "bar": ["assets/examples/08-bar-chart-cn.json", "assets/examples/08-bar-chart-en.json"],
+    "line": ["assets/examples/09-line-chart-cn.json", "assets/examples/09-line-chart-en.json"],
+    "donut": ["assets/examples/10-donut-chart-cn.json", "assets/examples/10-donut-chart-en.json"],
+    "heatmap": ["assets/examples/48-heatmap-cn.json", "assets/examples/48-heatmap-en.json"],
+    "demo": "demos/data-story/index.html"
+  }
+}

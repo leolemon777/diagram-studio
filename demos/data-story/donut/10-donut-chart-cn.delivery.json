@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "protocol_version": "diagram-studio/delivery-1",
+  "version_id": "v-7390bdb59020",
+  "source_name": "10-donut-chart-cn",
+  "input_sha256": "7390bdb59020226ef6a3b7027adcba01fe31275930e6625a37ba461ce0e53ac0",
+  "theme": "light",
+  "checks": {
+    "geometry": {
+      "status": "passed",
+      "warnings": []
+    },
+    "composition": {
+      "status": "not-run",
+      "findings": []
+    },
+    "content_integrity": {
+      "status": "passed",
+      "source_ids": 0,
+      "source_relations": 0,
+      "source_texts": 10,
+      "missing_ids": [],
+      "missing_relations": [],
+      "missing_text": [],
+      "scope": "stable source IDs, explicit relation endpoints and source display text; not domain correctness"
+    },
+    "browser_text_bounds": {
+      "status": "not-run"
+    },
+    "manual_visual_review": {
+      "status": "not-run"
+    },
+    "native_editor": {
+      "status": "not-run"
+    }
+  },
+  "files": {
+    "10-donut-chart-cn.brief.json": "b38b9a7059932e584d05866acc76a0311997e50cdb41133564e1bd1722f4d403",
+    "10-donut-chart-cn.drawio": "0a9ad70f97caac04a84cf0b9fe9a8941c053009a74bde83559611b573aadea31",
+    "10-donut-chart-cn.qa.json": "93944f515196174b9f1269f890dfb6b872060b3f97b8aa96f29e0964090f1167",
+    "10-donut-chart-cn.scene.json": "bab5af3efc890f6b01a6fa6ae33ff7c3b885176f516de45636088fb9f5a8d720",
+    "10-donut-chart-cn.svg": "fcfb289b51d9883b9d22676850d4dcd6416508239c9b460a05627715ea277542"
+  },
+  "delivery_scope": "Generation, semantic content checks and QA finish before replacement. Individual files are replaced; promotion is not a multi-file atomic transaction."
+}

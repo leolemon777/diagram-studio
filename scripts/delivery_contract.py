@@ -171,10 +171,22 @@ def expected_content(data):
             if item_lookup.get((start.get("lane"), start.get("stage"))) and item_lookup.get((end.get("lane"), end.get("stage"))):
                 relations.add(("blueprint-" + item_lookup[(start["lane"], start["stage"])], "blueprint-" + item_lookup[(end["lane"], end["stage"])]))
     elif kind in {"chart", "plot"}:
+        for key in ("eyebrow", "title", "subtitle", "unit", "total_label", "baseline_note", "scale_label", "footer"):
+            if _text(data.get(key)):
+                texts.add(_text(data[key]))
         rows = data.get("data", [])
         for row in rows:
             if _text(row.get("label")):
                 texts.add(_text(row["label"]))
+        for label in data.get("row_labels", []) + data.get("column_labels", []):
+            if _text(label):
+                texts.add(_text(label))
+        for series in data.get("series", []):
+            if _text(series.get("label")):
+                texts.add(_text(series["label"]))
+        for key in ("x_label", "y_label"):
+            if _text(data.get(key)):
+                texts.add(_text(data[key]))
     elif kind == "table":
         for value in data.get("columns", []):
             if _text(value):

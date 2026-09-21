@@ -1,0 +1,18 @@
+{
+  "type": "chart",
+  "mode": "donut",
+  "title": "Learning programme · participation mix",
+  "subtitle": "Categories are mutually exclusive parts of one whole; area follows participant share",
+  "eyebrow": "10 / COMPOSITION",
+  "unit": " people",
+  "total_label": "Total",
+  "data": [
+    {"label": "In-person workshops", "value": 38},
+    {"label": "Self-guided resources", "value": 27},
+    {"label": "Peer groups", "value": 21},
+    {"label": "Q&A sessions", "value": 14}
+  ],
+  "footer": "Style sample · simulated values · total 100 people",
+  "family": "Data charts",
+  "diagram_name": "Donut composition"
+}

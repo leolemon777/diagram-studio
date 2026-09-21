@@ -1,0 +1,568 @@
+{
+  "width": 1600,
+  "height": 900,
+  "theme": "light",
+  "palette": {
+    "bg": "#F1EFEB",
+    "panel": "#FEFDF9",
+    "ink": "#30302D",
+    "muted": "#6D6A63",
+    "line": "#D8D3C8",
+    "accent": "#AC6046",
+    "teal": "#67685E",
+    "amber": "#8C7964",
+    "red": "#554C46",
+    "tint": "#F0E4DA",
+    "tint2": "#ECECE5"
+  },
+  "nodes": [
+    {
+      "id": "_v1",
+      "x": 64,
+      "y": 676.0,
+      "w": 54,
+      "h": 28,
+      "label": "0",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "right",
+      "check": false
+    },
+    {
+      "id": "_v2",
+      "x": 64,
+      "y": 566.0,
+      "w": 54,
+      "h": 28,
+      "label": "11.5",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "right",
+      "check": false
+    },
+    {
+      "id": "_v3",
+      "x": 64,
+      "y": 456.0,
+      "w": 54,
+      "h": 28,
+      "label": "23",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "right",
+      "check": false
+    },
+    {
+      "id": "_v4",
+      "x": 64,
+      "y": 346.0,
+      "w": 54,
+      "h": 28,
+      "label": "34.5",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "right",
+      "check": false
+    },
+    {
+      "id": "_v5",
+      "x": 64,
+      "y": 236.0,
+      "w": 54,
+      "h": 28,
+      "label": "46",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "right",
+      "check": false
+    },
+    {
+      "id": "_v6",
+      "x": 125.0,
+      "y": 245.0,
+      "w": 10,
+      "h": 10,
+      "label": "",
+      "detail": "",
+      "kind": "ellipse",
+      "tone": "accent",
+      "fill": "accent",
+      "stroke": "panel",
+      "check": false
+    },
+    {
+      "id": "_v7",
+      "x": 50.0,
+      "y": 708,
+      "w": 160,
+      "h": 40,
+      "label": "Week 1",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 16,
+      "align": "center",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v8",
+      "x": 60.0,
+      "y": 214.0,
+      "w": 140,
+      "h": 28,
+      "label": "46 min",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 16,
+      "align": "center",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v9",
+      "x": 393.0,
+      "y": 283.2608695652174,
+      "w": 10,
+      "h": 10,
+      "label": "",
+      "detail": "",
+      "kind": "ellipse",
+      "tone": "accent",
+      "fill": "accent",
+      "stroke": "panel",
+      "check": false
+    },
+    {
+      "id": "_v10",
+      "x": 318.0,
+      "y": 708,
+      "w": 160,
+      "h": 40,
+      "label": "Week 2",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 16,
+      "align": "center",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v11",
+      "x": 328.0,
+      "y": 252.26086956521738,
+      "w": 140,
+      "h": 28,
+      "label": "42 min",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 16,
+      "align": "center",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v12",
+      "x": 661.0,
+      "y": 311.95652173913044,
+      "w": 10,
+      "h": 10,
+      "label": "",
+      "detail": "",
+      "kind": "ellipse",
+      "tone": "accent",
+      "fill": "accent",
+      "stroke": "panel",
+      "check": false
+    },
+    {
+      "id": "_v13",
+      "x": 586.0,
+      "y": 708,
+      "w": 160,
+      "h": 40,
+      "label": "Week 3",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 16,
+      "align": "center",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v14",
+      "x": 596.0,
+      "y": 280.95652173913044,
+      "w": 140,
+      "h": 28,
+      "label": "39 min",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 16,
+      "align": "center",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v15",
+      "x": 929.0,
+      "y": 388.4782608695652,
+      "w": 10,
+      "h": 10,
+      "label": "",
+      "detail": "",
+      "kind": "ellipse",
+      "tone": "accent",
+      "fill": "accent",
+      "stroke": "panel",
+      "check": false
+    },
+    {
+      "id": "_v16",
+      "x": 854.0,
+      "y": 708,
+      "w": 160,
+      "h": 40,
+      "label": "Week 4",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 16,
+      "align": "center",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v17",
+      "x": 864.0,
+      "y": 357.4782608695652,
+      "w": 140,
+      "h": 28,
+      "label": "31 min",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 16,
+      "align": "center",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v18",
+      "x": 1197.0,
+      "y": 359.7826086956522,
+      "w": 10,
+      "h": 10,
+      "label": "",
+      "detail": "",
+      "kind": "ellipse",
+      "tone": "accent",
+      "fill": "accent",
+      "stroke": "panel",
+      "check": false
+    },
+    {
+      "id": "_v19",
+      "x": 1122.0,
+      "y": 708,
+      "w": 160,
+      "h": 40,
+      "label": "Week 5",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 16,
+      "align": "center",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v20",
+      "x": 1132.0,
+      "y": 328.7826086956522,
+      "w": 140,
+      "h": 28,
+      "label": "34 min",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 16,
+      "align": "center",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v21",
+      "x": 1465.0,
+      "y": 426.7391304347826,
+      "w": 10,
+      "h": 10,
+      "label": "",
+      "detail": "",
+      "kind": "ellipse",
+      "tone": "accent",
+      "fill": "accent",
+      "stroke": "panel",
+      "check": false
+    },
+    {
+      "id": "_v22",
+      "x": 1390.0,
+      "y": 708,
+      "w": 160,
+      "h": 40,
+      "label": "Week 6",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 16,
+      "align": "center",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v23",
+      "x": 1400.0,
+      "y": 395.7391304347826,
+      "w": 140,
+      "h": 28,
+      "label": "27 min",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 16,
+      "align": "center",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v24",
+      "x": 64,
+      "y": 34,
+      "w": 1472,
+      "h": 22,
+      "label": "09 / TREND",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v25",
+      "x": 64,
+      "y": 69,
+      "w": 1472,
+      "h": 56,
+      "label": "Customer support · first response trend",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 36,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v26",
+      "x": 64,
+      "y": 130,
+      "w": 1472,
+      "h": 38,
+      "label": "Recorded at equal weekly intervals; raw values stay visible and unsmoothed",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v27",
+      "x": 64,
+      "y": 837,
+      "w": 1472,
+      "h": 1,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "line",
+      "stroke": "none",
+      "check": false
+    },
+    {
+      "id": "_v28",
+      "x": 64,
+      "y": 850,
+      "w": 1472,
+      "h": 36,
+      "label": "Style sample · simulated values · a trend does not prove causal impact",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    }
+  ],
+  "edges": [
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          130,
+          690.0
+        ],
+        [
+          1470,
+          690.0
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "arrow": false,
+      "tone": "line"
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          130,
+          580.0
+        ],
+        [
+          1470,
+          580.0
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "arrow": false,
+      "tone": "line"
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          130,
+          470.0
+        ],
+        [
+          1470,
+          470.0
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "arrow": false,
+      "tone": "line"
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          130,
+          360.0
+        ],
+        [
+          1470,
+          360.0
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "arrow": false,
+      "tone": "line"
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          130,
+          250.0
+        ],
+        [
+          1470,
+          250.0
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "arrow": false,
+      "tone": "line"
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          130.0,
+          250.0
+        ],
+        [
+          398.0,
+          288.2608695652174
+        ],
+        [
+          666.0,
+          316.95652173913044
+        ],
+        [
+          934.0,
+          393.4782608695652
+        ],
+        [
+          1202.0,
+          364.7826086956522
+        ],
+        [
+          1470.0,
+          431.7391304347826
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "arrow": false,
+      "tone": "accent",
+      "width": 3
+    }
+  ],
+  "meta": {
+    "data_values": [
+      46,
+      42,
+      39,
+      31,
+      34,
+      27
+    ]
+  },
+  "assumptions": []
+}

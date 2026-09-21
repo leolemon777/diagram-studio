@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "protocol_version": "diagram-studio/delivery-1",
+  "version_id": "v-61c22d0fa468",
+  "source_name": "48-heatmap-cn",
+  "input_sha256": "61c22d0fa468989ada50dd6af9fef162de954950b2c8392a54585eaf39fe2e9f",
+  "theme": "light",
+  "checks": {
+    "geometry": {
+      "status": "passed",
+      "warnings": []
+    },
+    "composition": {
+      "status": "not-run",
+      "findings": []
+    },
+    "content_integrity": {
+      "status": "passed",
+      "source_ids": 0,
+      "source_relations": 0,
+      "source_texts": 15,
+      "missing_ids": [],
+      "missing_relations": [],
+      "missing_text": [],
+      "scope": "stable source IDs, explicit relation endpoints and source display text; not domain correctness"
+    },
+    "browser_text_bounds": {
+      "status": "not-run"
+    },
+    "manual_visual_review": {
+      "status": "not-run"
+    },
+    "native_editor": {
+      "status": "not-run"
+    }
+  },
+  "files": {
+    "48-heatmap-cn.brief.json": "e9962ef23e8dbc2766f3c092a6ab56f6d45fa450347c5b0ca5be20781e4e0eff",
+    "48-heatmap-cn.drawio": "335784f3a87aa12d5e63329d7a6ccd78081a8b6ec33c81cecb82b6d57ad75c0c",
+    "48-heatmap-cn.qa.json": "80ab49e446e8b9f66745d3dd58458a331cd1462ebfd360a962f29caba0250d9e",
+    "48-heatmap-cn.scene.json": "481b7bf62c487892b1f06fe0d0e5260477163882cca09c720b9c25ed47ec2908",
+    "48-heatmap-cn.svg": "573e9f196bc2d8d69c599010e2f971d6130c818987f8922eb6e5b90cbb501a0b"
+  },
+  "delivery_scope": "Generation, semantic content checks and QA finish before replacement. Individual files are replaced; promotion is not a multi-file atomic transaction."
+}

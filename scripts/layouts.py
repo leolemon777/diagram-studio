@@ -208,7 +208,7 @@ def plot(s,d):
    for i,v in enumerate(row):
     t=(v-low)/(high-low);fill=blend(s.palette['panel'],s.palette['accent'],t*.65);s.add(x0+i*cw,y0+j*rh,cw,rh,kind='rect',fill=fill,stroke='bg',stroke_width=3,radius=0,check=False);s.text(x0+i*cw,y0+j*rh+rh/2-20,cw,40,f'{v:g}',20,'ink',align='center')
   for i,c in enumerate(cols):bottom(i,len(cols),c)
-  s.text(x0,192,pw,36,f'明度映射 {low:g} — {high:g}  ·  '+d.get('unit',''),17,'muted')
+  s.text(x0,192,pw,36,f'{d.get("scale_label","明度映射")} {low:g} — {high:g}  ·  '+d.get('unit',''),17,'muted',word_wrap=True)
  elif mode=='radar':
   a=items(d,'data',3,8);maximum=d.get('maximum',100);need(finite(maximum) and maximum>0 and all(finite(v['value']) and 0<=v['value']<=maximum for v in a),'radar requires shared bounded scale');cx,cy,r=s.w/2,492,228;points=[]
   for level in (.25,.5,.75,1):

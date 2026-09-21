@@ -1,0 +1,214 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="diagram-title diagram-desc">
+<title id="diagram-title">Customer support · demand heatmap</title>
+<desc id="diagram-desc">One scale carries one unit; values stay visible and colour is not causality</desc>
+<rect width="100%" height="100%" fill="#F1EFEB"/>
+<defs>
+<marker id="arrow-accent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#AC6046"/></marker>
+<marker id="arrow-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#67685E"/></marker>
+<marker id="arrow-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#8C7964"/></marker>
+<marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#554C46"/></marker>
+<marker id="arrow-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#6D6A63"/></marker>
+<marker id="arrow-line" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#D8D3C8"/></marker>
+<marker id="arrow-ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#30302D"/></marker>
+</defs>
+<g font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, Arial, sans-serif">
+<g id="_v1" data-kind="text" data-content-text="false" data-box="64,282.625,100,36">
+
+<text x="164" y="306.15" text-anchor="end" font-size="17" font-weight="400" fill="#6D6A63">Email</text>
+</g>
+<g id="_v2" data-kind="rect" data-content-text="false" data-box="170.0,245.0,252.0,111.25">
+<rect x="170.0" y="245.0" width="252.0" height="111.25" rx="0" fill="#DEC0B3" stroke="#F1EFEB" stroke-width="3"/>
+</g>
+<g id="_v3" data-kind="text" data-content-text="false" data-box="170.0,280.625,252.0,40">
+
+<text x="296.0" y="307.125" text-anchor="middle" font-size="20" font-weight="400" fill="#30302D">12</text>
+</g>
+<g id="_v4" data-kind="rect" data-content-text="false" data-box="422.0,245.0,252.0,111.25">
+<rect x="422.0" y="245.0" width="252.0" height="111.25" rx="0" fill="#D6B0A2" stroke="#F1EFEB" stroke-width="3"/>
+</g>
+<g id="_v5" data-kind="text" data-content-text="false" data-box="422.0,280.625,252.0,40">
+
+<text x="548.0" y="307.125" text-anchor="middle" font-size="20" font-weight="400" fill="#30302D">15</text>
+</g>
+<g id="_v6" data-kind="rect" data-content-text="false" data-box="674.0,245.0,252.0,111.25">
+<rect x="674.0" y="245.0" width="252.0" height="111.25" rx="0" fill="#E6CFC5" stroke="#F1EFEB" stroke-width="3"/>
+</g>
+<g id="_v7" data-kind="text" data-content-text="false" data-box="674.0,280.625,252.0,40">
+
+<text x="800.0" y="307.125" text-anchor="middle" font-size="20" font-weight="400" fill="#30302D">9</text>
+</g>
+<g id="_v8" data-kind="rect" data-content-text="false" data-box="926.0,245.0,252.0,111.25">
+<rect x="926.0" y="245.0" width="252.0" height="111.25" rx="0" fill="#CEA190" stroke="#F1EFEB" stroke-width="3"/>
+</g>
+<g id="_v9" data-kind="text" data-content-text="false" data-box="926.0,280.625,252.0,40">
+
+<text x="1052.0" y="307.125" text-anchor="middle" font-size="20" font-weight="400" fill="#30302D">18</text>
+</g>
+<g id="_v10" data-kind="rect" data-content-text="false" data-box="1178.0,245.0,252.0,111.25">
+<rect x="1178.0" y="245.0" width="252.0" height="111.25" rx="0" fill="#D9B6A8" stroke="#F1EFEB" stroke-width="3"/>
+</g>
+<g id="_v11" data-kind="text" data-content-text="false" data-box="1178.0,280.625,252.0,40">
+
+<text x="1304.0" y="307.125" text-anchor="middle" font-size="20" font-weight="400" fill="#30302D">14</text>
+</g>
+<g id="_v12" data-kind="text" data-content-text="false" data-box="64,393.875,100,36">
+
+<text x="164" y="417.4" text-anchor="end" font-size="17" font-weight="400" fill="#6D6A63">Chat</text>
+</g>
+<g id="_v13" data-kind="rect" data-content-text="false" data-box="170.0,356.25,252.0,111.25">
+<rect x="170.0" y="356.25" width="252.0" height="111.25" rx="0" fill="#E9D4CA" stroke="#F1EFEB" stroke-width="3"/>
+</g>
+<g id="_v14" data-kind="text" data-content-text="false" data-box="170.0,391.875,252.0,40">
+
+<text x="296.0" y="418.375" text-anchor="middle" font-size="20" font-weight="400" fill="#30302D">8</text>
+</g>
+<g id="_v15" data-kind="rect" data-content-text="false" data-box="422.0,356.25,252.0,111.25">
+<rect x="422.0" y="356.25" width="252.0" height="111.25" rx="0" fill="#E1C5B9" stroke="#F1EFEB" stroke-width="3"/>
+</g>
+<g id="_v16" data-kind="text" data-content-text="false" data-box="422.0,391.875,252.0,40">
+
+<text x="548.0" y="418.375" text-anchor="middle" font-size="20" font-weight="400" fill="#30302D">11</text>
+</g>
+<g id="_v17" data-kind="rect" data-content-text="false" data-box="674.0,356.25,252.0,111.25">
+<rect x="674.0" y="356.25" width="252.0" height="111.25" rx="0" fill="#D9B6A8" stroke="#F1EFEB" stroke-width="3"/>
+</g>
+<g id="_v18" data-kind="text" data-content-text="false" data-box="674.0,391.875,252.0,40">
+
+<text x="800.0" y="418.375" text-anchor="middle" font-size="20" font-weight="400" fill="#30302D">14</text>
+</g>
+<g id="_v19" data-kind="rect" data-content-text="false" data-box="926.0,356.25,252.0,111.25">
+<rect x="926.0" y="356.25" width="252.0" height="111.25" rx="0" fill="#E3CABF" stroke="#F1EFEB" stroke-width="3"/>
+</g>
+<g id="_v20" data-kind="text" data-content-text="false" data-box="926.0,391.875,252.0,40">
+
+<text x="1052.0" y="418.375" text-anchor="middle" font-size="20" font-weight="400" fill="#30302D">10</text>
+</g>
+<g id="_v21" data-kind="rect" data-content-text="false" data-box="1178.0,356.25,252.0,111.25">
+<rect x="1178.0" y="356.25" width="252.0" height="111.25" rx="0" fill="#D3AB9C" stroke="#F1EFEB" stroke-width="3"/>
+</g>
+<g id="_v22" data-kind="text" data-content-text="false" data-box="1178.0,391.875,252.0,40">
+
+<text x="1304.0" y="418.375" text-anchor="middle" font-size="20" font-weight="400" fill="#30302D">16</text>
+</g>
+<g id="_v23" data-kind="text" data-content-text="false" data-box="64,505.125,100,36">
+
+<text x="164" y="528.65" text-anchor="end" font-size="17" font-weight="400" fill="#6D6A63">Phone</text>
+</g>
+<g id="_v24" data-kind="rect" data-content-text="false" data-box="170.0,467.5,252.0,111.25">
+<rect x="170.0" y="467.5" width="252.0" height="111.25" rx="0" fill="#F1E3DC" stroke="#F1EFEB" stroke-width="3"/>
+</g>
+<g id="_v25" data-kind="text" data-content-text="false" data-box="170.0,503.125,252.0,40">
+
+<text x="296.0" y="529.625" text-anchor="middle" font-size="20" font-weight="400" fill="#30302D">5</text>
+</g>
+<g id="_v26" data-kind="rect" data-content-text="false" data-box="422.0,467.5,252.0,111.25">
+<rect x="422.0" y="467.5" width="252.0" height="111.25" rx="0" fill="#EBD9D0" stroke="#F1EFEB" stroke-width="3"/>
+</g>
+<g id="_v27" data-kind="text" data-content-text="false" data-box="422.0,503.125,252.0,40">
+
+<text x="548.0" y="529.625" text-anchor="middle" font-size="20" font-weight="400" fill="#30302D">7</text>
+</g>
+<g id="_v28" data-kind="rect" data-content-text="false" data-box="674.0,467.5,252.0,111.25">
+<rect x="674.0" y="467.5" width="252.0" height="111.25" rx="0" fill="#EEDED6" stroke="#F1EFEB" stroke-width="3"/>
+</g>
+<g id="_v29" data-kind="text" data-content-text="false" data-box="674.0,503.125,252.0,40">
+
+<text x="800.0" y="529.625" text-anchor="middle" font-size="20" font-weight="400" fill="#30302D">6</text>
+</g>
+<g id="_v30" data-kind="rect" data-content-text="false" data-box="926.0,467.5,252.0,111.25">
+<rect x="926.0" y="467.5" width="252.0" height="111.25" rx="0" fill="#E6CFC5" stroke="#F1EFEB" stroke-width="3"/>
+</g>
+<g id="_v31" data-kind="text" data-content-text="false" data-box="926.0,503.125,252.0,40">
+
+<text x="1052.0" y="529.625" text-anchor="middle" font-size="20" font-weight="400" fill="#30302D">9</text>
+</g>
+<g id="_v32" data-kind="rect" data-content-text="false" data-box="1178.0,467.5,252.0,111.25">
+<rect x="1178.0" y="467.5" width="252.0" height="111.25" rx="0" fill="#E9D4CA" stroke="#F1EFEB" stroke-width="3"/>
+</g>
+<g id="_v33" data-kind="text" data-content-text="false" data-box="1178.0,503.125,252.0,40">
+
+<text x="1304.0" y="529.625" text-anchor="middle" font-size="20" font-weight="400" fill="#30302D">8</text>
+</g>
+<g id="_v34" data-kind="text" data-content-text="false" data-box="64,616.375,100,36">
+
+<text x="164" y="639.9" text-anchor="end" font-size="17" font-weight="400" fill="#6D6A63">Community</text>
+</g>
+<g id="_v35" data-kind="rect" data-content-text="false" data-box="170.0,578.75,252.0,111.25">
+<rect x="170.0" y="578.75" width="252.0" height="111.25" rx="0" fill="#F6EEE8" stroke="#F1EFEB" stroke-width="3"/>
+</g>
+<g id="_v36" data-kind="text" data-content-text="false" data-box="170.0,614.375,252.0,40">
+
+<text x="296.0" y="640.875" text-anchor="middle" font-size="20" font-weight="400" fill="#30302D">3</text>
+</g>
+<g id="_v37" data-kind="rect" data-content-text="false" data-box="422.0,578.75,252.0,111.25">
+<rect x="422.0" y="578.75" width="252.0" height="111.25" rx="0" fill="#F3E9E2" stroke="#F1EFEB" stroke-width="3"/>
+</g>
+<g id="_v38" data-kind="text" data-content-text="false" data-box="422.0,614.375,252.0,40">
+
+<text x="548.0" y="640.875" text-anchor="middle" font-size="20" font-weight="400" fill="#30302D">4</text>
+</g>
+<g id="_v39" data-kind="rect" data-content-text="false" data-box="674.0,578.75,252.0,111.25">
+<rect x="674.0" y="578.75" width="252.0" height="111.25" rx="0" fill="#F1E3DC" stroke="#F1EFEB" stroke-width="3"/>
+</g>
+<g id="_v40" data-kind="text" data-content-text="false" data-box="674.0,614.375,252.0,40">
+
+<text x="800.0" y="640.875" text-anchor="middle" font-size="20" font-weight="400" fill="#30302D">5</text>
+</g>
+<g id="_v41" data-kind="rect" data-content-text="false" data-box="926.0,578.75,252.0,111.25">
+<rect x="926.0" y="578.75" width="252.0" height="111.25" rx="0" fill="#F3E9E2" stroke="#F1EFEB" stroke-width="3"/>
+</g>
+<g id="_v42" data-kind="text" data-content-text="false" data-box="926.0,614.375,252.0,40">
+
+<text x="1052.0" y="640.875" text-anchor="middle" font-size="20" font-weight="400" fill="#30302D">4</text>
+</g>
+<g id="_v43" data-kind="rect" data-content-text="false" data-box="1178.0,578.75,252.0,111.25">
+<rect x="1178.0" y="578.75" width="252.0" height="111.25" rx="0" fill="#EEDED6" stroke="#F1EFEB" stroke-width="3"/>
+</g>
+<g id="_v44" data-kind="text" data-content-text="false" data-box="1178.0,614.375,252.0,40">
+
+<text x="1304.0" y="640.875" text-anchor="middle" font-size="20" font-weight="400" fill="#30302D">6</text>
+</g>
+<g id="_v45" data-kind="text" data-content-text="false" data-box="196.0,706,200,42">
+
+<text x="296.0" y="732.525" text-anchor="middle" font-size="17" font-weight="400" fill="#6D6A63">Mon</text>
+</g>
+<g id="_v46" data-kind="text" data-content-text="false" data-box="448.0,706,200,42">
+
+<text x="548.0" y="732.525" text-anchor="middle" font-size="17" font-weight="400" fill="#6D6A63">Tue</text>
+</g>
+<g id="_v47" data-kind="text" data-content-text="false" data-box="700.0,706,200,42">
+
+<text x="800.0" y="732.525" text-anchor="middle" font-size="17" font-weight="400" fill="#6D6A63">Wed</text>
+</g>
+<g id="_v48" data-kind="text" data-content-text="false" data-box="952.0,706,200,42">
+
+<text x="1052.0" y="732.525" text-anchor="middle" font-size="17" font-weight="400" fill="#6D6A63">Thu</text>
+</g>
+<g id="_v49" data-kind="text" data-content-text="false" data-box="1204.0,706,200,42">
+
+<text x="1304.0" y="732.525" text-anchor="middle" font-size="17" font-weight="400" fill="#6D6A63">Fri</text>
+</g>
+<g id="_v50" data-kind="text" data-content-text="false" data-box="170,192,1260,36">
+
+<text x="170" y="215.525" text-anchor="start" font-size="17" font-weight="400" fill="#6D6A63">Lightness scale 0 — 20 · requests</text>
+</g>
+<g id="_v51" data-kind="text" data-content-text="false" data-box="64,34,1472,22">
+
+<text x="64" y="49.55" text-anchor="start" font-size="14" font-weight="400" fill="#AC6046">48 / HEATMAP</text>
+</g>
+<g id="_v52" data-kind="text" data-content-text="false" data-box="64,69,1472,56">
+
+<text x="64" y="108.7" text-anchor="start" font-size="36" font-weight="400" fill="#30302D">Customer support · demand heatmap</text>
+</g>
+<g id="_v53" data-kind="text" data-content-text="false" data-box="64,130,1472,38">
+
+<text x="64" y="154.525" text-anchor="start" font-size="17" font-weight="400" fill="#6D6A63">One scale carries one unit; values stay visible and colour is not causality</text>
+</g>
+<g id="_v54" data-kind="rect" data-content-text="false" data-box="64,837,1472,1">
+<rect x="64" y="837" width="1472" height="1" rx="0" fill="#D8D3C8" stroke="none" stroke-width="1.5"/>
+</g>
+<g id="_v55" data-kind="text" data-content-text="false" data-box="64,850,1472,36">
+
+<text x="64" y="872.55" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">Style sample · all values are simulated, not real support statistics</text>
+</g>
+</g></svg>

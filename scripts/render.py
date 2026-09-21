@@ -313,35 +313,40 @@ def chart(s,d):
     maximum=max(vals);need(maximum>0,'chart needs a positive value')
     unit=d.get('unit','');s.meta['data_values']=vals
     if mode=='bar':
-        left=320;plotw=s.w-460;y0=240;rh=76
+        left=340;plotw=s.w-480;y0=240;label_w=240;label_size=20
+        label_heights=[max(38,len(wrap_words(item['label'],label_w,label_size))*label_size*1.35+4) for item in series]
+        rh=max(76,max(label_heights)+30)
         for i,item in enumerate(series):
-            y=y0+i*rh;s.text(72,y,222,38,item['label'],20,align='right')
-            s.add(left,y+4,plotw,30,kind='rect',fill='tint',stroke='none',check=False)
-            s.add(left,y+4,plotw*item['value']/maximum,30,kind='rect',fill='accent' if i==d.get('highlight',0) else 'teal',stroke='none',check=False)
-            s.text(left+plotw+12,y,120,38,f'{item["value"]:g}{unit}',18)
-        s.text(left,y0+len(series)*rh+20,plotw,28,'0 起点 · 长度按数值比例计算',15,'muted');s.h=max(s.h,y0+(len(series)+1)*rh+100)
+            y=y0+i*rh;label_h=label_heights[i];label_y=y+(rh-label_h)/2;bar_y=y+(rh-30)/2
+            s.text(72,label_y,label_w,label_h,item['label'],label_size,align='right',word_wrap=True)
+            s.add(left,bar_y,plotw,30,kind='rect',fill='tint',stroke='none',check=False)
+            s.add(left,bar_y,plotw*item['value']/maximum,30,kind='rect',fill='accent' if i==d.get('highlight',0) else 'teal',stroke='none',check=False)
+            s.text(left+plotw+12,bar_y-4,120,38,f'{item["value"]:g}{unit}',18,word_wrap=True)
+        s.text(left,y0+len(series)*rh+20,plotw,28,d.get('baseline_note','0 起点 · 长度按数值比例计算'),15,'muted',word_wrap=True);s.h=max(s.h,y0+(len(series)+1)*rh+100)
     elif mode=='line':
         need(len(series)>=2,'line chart needs two or more points');x0=130;y0=250;pw=s.w-260;ph=440
+        label_w=160;label_size=16;label_h=max(40,max(len(wrap_words(item['label'],label_w,label_size)) for item in series)*label_size*1.35+4)
         for i in range(5):
             value=maximum*i/4;y=y0+ph-ph*i/4;s.edge(points=[(x0,y),(x0+pw,y)],arrow=False,tone='line');s.text(64,y-14,54,28,f'{value:g}',14,'muted',align='right')
         points=[]
         for i,item in enumerate(series):
             x=x0+pw*i/(len(series)-1);y=y0+ph-ph*item['value']/maximum;points.append([x,y])
             s.add(x-5,y-5,10,10,kind='ellipse',fill='accent',stroke='panel',check=False)
-            s.text(x-80,y0+ph+18,160,40,item['label'],16,'muted',align='center');s.text(x-70,y-36,140,28,f'{item["value"]:g}{unit}',16,align='center')
-        s.edge(points=points,arrow=False,tone='accent',width=3);s.h=max(s.h,y0+ph+140)
+            s.text(x-label_w/2,y0+ph+18,label_w,label_h,item['label'],label_size,'muted',align='center',word_wrap=True);s.text(x-70,y-36,140,28,f'{item["value"]:g}{unit}',16,align='center',word_wrap=True)
+        s.edge(points=points,arrow=False,tone='accent',width=3);s.h=max(s.h,y0+ph+label_h+100)
     elif mode=='donut':
         total=sum(vals);cx=530;cy=475;r=200;inner=132;angle=-math.pi/2;tones=['accent','teal','amber','red','muted'];need(len(series)<=5,'donut supports up to five categories')
+        legend_w=360;legend_size=22;legend_heights=[max(36,len(wrap_words(item['label'],legend_w,legend_size))*legend_size*1.35+2) for item in series];legend_step=max(84,max(legend_heights)+44)
         for i,item in enumerate(series):
             share=item['value']/total;end=angle+share*math.tau
             count=max(2,math.ceil(share*120));pts=[]
             for j in range(count+1):a=angle+(end-angle)*j/count;pts.append([cx+r*math.cos(a),cy+r*math.sin(a)])
             for j in range(count,-1,-1):a=angle+(end-angle)*j/count;pts.append([cx+inner*math.cos(a),cy+inner*math.sin(a)])
             if item['value']>0:s.add(cx-r,cy-r,2*r,2*r,kind='polygon',points=pts,fill=tones[i],stroke='bg',check=False)
-            y=280+i*84;s.add(850,y+8,16,16,kind='rect',fill=tones[i],stroke='none',check=False)
-            s.text(885,y,360,36,item['label'],22);s.text(885,y+35,420,28,f'{item["value"]:g}{unit}  /  {share:.1%}',17,'muted')
+            y=280+i*legend_step;label_h=legend_heights[i];s.add(850,y+8,16,16,kind='rect',fill=tones[i],stroke='none',check=False)
+            s.text(885,y,legend_w,label_h,item['label'],legend_size,word_wrap=True);s.text(885,y+label_h+2,420,28,f'{item["value"]:g}{unit}  /  {share:.1%}',17,'muted',word_wrap=True)
             angle=end
-        s.text(cx-130,cy-42,260,58,f'{total:g}',40,align='center');s.text(cx-130,cy+20,260,32,d.get('total_label','总计')+' '+unit,17,'muted',align='center')
+        s.text(cx-130,cy-42,260,58,f'{total:g}',40,align='center');s.text(cx-130,cy+20,260,32,d.get('total_label','总计')+' '+unit,17,'muted',align='center',word_wrap=True);s.h=max(s.h,280+len(series)*legend_step+90)
     else:raise ValueError('chart mode supported: bar, line, donut')
 
 def fishbone(s,d):

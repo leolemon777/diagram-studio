@@ -1,0 +1,18 @@
+{
+  "type": "chart",
+  "mode": "donut",
+  "title": "课程服务 · 参与方式构成",
+  "subtitle": "各类别互斥且属于同一总体；面积按人数比例计算",
+  "eyebrow": "10 / COMPOSITION",
+  "unit": " 人",
+  "total_label": "参与者",
+  "data": [
+    {"label": "线下工作坊", "value": 38},
+    {"label": "自学资料", "value": 27},
+    {"label": "同伴小组", "value": 21},
+    {"label": "问答时段", "value": 14}
+  ],
+  "footer": "样式演示 · 合成数据 · 合计 100 人",
+  "family": "数据图表",
+  "diagram_name": "环图构成"
+}

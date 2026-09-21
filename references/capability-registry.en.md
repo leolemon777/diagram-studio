@@ -16,6 +16,7 @@ The machine-readable source is [`assets/capability-registry.json`](../assets/cap
 | `bar` / `line` | Bar / trend chart | `scripts/render.py#chart` | SVG, draw.io, scene/QA, HTML | `generated_with_semantic_validation` / `manual_visual_review` |
 | `dumbbell` | Before/after dumbbell | `scripts/data_art.py#dumbbell` | SVG, draw.io, PNG, PDF, HTML, source/analysis/QA, CSV | `rendered_visual_check` |
 | `donut` | Donut chart | `scripts/render.py#chart:donut` | SVG, draw.io, scene/QA, HTML | `generated_with_semantic_validation` |
+| `heatmap` | Heatmap | `scripts/render.py#plot:heatmap` | SVG, draw.io, scene/QA, HTML | `manual_visual_review` |
 | `histogram` / `scatter` | Histogram / scatter | `scripts/render.py#plot` | SVG, draw.io, scene/QA, HTML | `generated_with_semantic_validation` |
 | `fishbone` | Fishbone diagram | `scripts/render.py#fishbone` | SVG, draw.io, scene/QA, HTML | `manual_visual_review` |
 | `quadrant` | Quadrant priority matrix | `scripts/render.py#quadrant` | SVG, draw.io, scene/QA, HTML | `manual_visual_review` |
