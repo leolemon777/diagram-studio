@@ -1,5 +1,17 @@
 {
-  "version": "v72",
+  "version": "v74",
+  "v74_evidence": {
+    "registry": "v72 registry retained: 8 groups; 30 registered capabilities",
+    "source_regression_tests_after_this_patch": 127,
+    "new_regression": "popular embedded-content viewport contract for nine high-frequency demo pages",
+    "release_evidence": "assets/v74-release-evidence.json",
+    "installed_sync": "passed: source and installed copies are byte-identical excluding .git; both pass 127 tests",
+    "popular_viewport_evidence": "assets/v74-popular-viewport-evidence.json; 9 popular pages × 2 viewports; page overflow 0/18",
+    "chooser_continuity_evidence": "assets/v74-chooser-continuity-evidence.json; representative bilingual state, category memory, keyboard order and format boundary passed",
+    "jev": "not present in available skills, plugins, or repository files; integration awaits an explicit path or name",
+    "native_editor": "representative pass remains 15 files; all-type coverage is not claimed",
+    "scope": "Popular embedded content only; this does not certify every catalog row, arbitrary density, domain facts, native-editor compatibility or JEV review"
+  },
   "v72_evidence": {
     "registry": "v72; 8 groups; 30 registered capabilities",
     "source_regression_tests_before_this_patch": 120,

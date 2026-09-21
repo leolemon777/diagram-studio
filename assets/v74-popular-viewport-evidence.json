@@ -1,0 +1,34 @@
+{
+  "version": "v74-popular-viewport-evidence",
+  "checked_on": "2026-09-21",
+  "browser": "Codex In-app Browser with CDP device metrics",
+  "server": "http://127.0.0.1:8788",
+  "viewports": [
+    {"width": 390, "height": 844},
+    {"width": 768, "height": 1024}
+  ],
+  "method": "Loaded each local demo page in the browser, set a temporary viewport override, read document and embedded object geometry through CDP, checked embedded SVG text font sizes, and cleared the override after the run.",
+  "pages": {
+    "flow": {"embedded_objects": 2, "minimum_embedded_font_px": 14, "internal_scroll_regions": 0, "runs": 2},
+    "architecture": {"embedded_objects": 2, "minimum_embedded_font_px": 14, "internal_scroll_regions": 0, "runs": 2},
+    "swimlane": {"embedded_objects": 2, "minimum_embedded_font_px": 14, "internal_scroll_regions": 0, "runs": 2},
+    "gantt": {"embedded_objects": 6, "minimum_embedded_font_px": 12, "internal_scroll_regions": 0, "runs": 2, "note": "The 12px floor belongs to the compact print variant; executive and delivery variants measured 14px."},
+    "network": {"embedded_objects": 2, "minimum_embedded_font_px": 14, "internal_scroll_regions": 0, "runs": 2},
+    "data-story": {"embedded_objects": 4, "minimum_embedded_font_px": 14, "internal_scroll_regions": 0, "runs": 2},
+    "storymap": {"embedded_objects": 1, "minimum_embedded_font_px": 14, "internal_scroll_regions": 1, "runs": 2, "wide_content_contained_in_scroll_region": true},
+    "user-path-storyboard": {"embedded_objects": 2, "minimum_embedded_font_px": 14, "internal_scroll_regions": 2, "runs": 2, "wide_content_contained_in_scroll_region": true},
+    "lean-canvas": {"embedded_objects": 2, "minimum_embedded_font_px": 14, "internal_scroll_regions": 2, "runs": 2, "wide_content_contained_in_scroll_region": true}
+  },
+  "checks": {
+    "page_level_document_scroll_width": {"passed": 18, "failed": 0, "detail": "Each page reported document.scrollWidth equal to the active viewport width."},
+    "uncontained_visible_horizontal_overflow": {"passed": 18, "failed": 0},
+    "embedded_content_width": {"detail": "Responsive forms fit the content box; dense forms keep their natural width inside an explicit internal scroll region."},
+    "embedded_content_minimum_font_px": {"target_px": 14, "gantt_compact_floor_px": 12, "status": "within_declared_scope"}
+  },
+  "manual_visual_checks": [
+    {"page": "storymap", "viewport": "390x844", "result": "The narrow page retains the reading controls, a named scroll region, a readable 14px quality report and links for SVG, draw.io and JSON; the map is intentionally wider than the viewport and scrolls inside its frame."},
+    {"page": "user-path-storyboard", "viewport": "390x844", "result": "The page exposes a detailed natural-size mode and a fit-width overview mode; switching to fit-width keeps the complete overview inside the page without document overflow."},
+    {"page": "data-story", "viewport": "1280x720", "result": "Bar, line, donut and heatmap sections show explicit units/labels and scrollable reading containers; the line chart was inspected after scrolling to its full plotting region."}
+  ],
+  "scope": "This closes responsive embedded coverage for nine popular cross-industry demo pages. It does not certify the remaining demo pages, arbitrary high-density user inputs, domain facts, aesthetics, native-editor behavior, or JEV review."
+}

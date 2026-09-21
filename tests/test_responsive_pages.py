@@ -25,6 +25,15 @@ class ResponsiveDemoTests(unittest.TestCase):
         self.assertIn(".frame{overflow:auto", html)
         self.assertIn("min-width:0;max-width:100%", html)
 
+    def test_v74_popular_embedded_viewport_evidence_has_no_uncontained_overflow(self):
+        evidence = json.loads((ROOT / "assets/v74-popular-viewport-evidence.json").read_text(encoding="utf-8"))
+        self.assertEqual(set(evidence["viewports"] and [tuple(v.values()) for v in evidence["viewports"]]), {(390, 844), (768, 1024)})
+        self.assertEqual(len(evidence["pages"]), 9)
+        self.assertEqual(evidence["checks"]["page_level_document_scroll_width"]["failed"], 0)
+        self.assertEqual(evidence["checks"]["uncontained_visible_horizontal_overflow"]["failed"], 0)
+        self.assertTrue(all(item["runs"] == 2 for item in evidence["pages"].values()))
+        self.assertGreaterEqual(min(item["minimum_embedded_font_px"] for item in evidence["pages"].values()), 12)
+
 
 if __name__ == "__main__":
     unittest.main()
