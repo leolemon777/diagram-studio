@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="diagram-title diagram-desc">
-<title id="diagram-title">Impact × effort · prioritisation hypotheses</title>
+<title id="diagram-title">Service improvements · impact × effort</title>
 <desc id="diagram-desc">Scores are illustrative; real priorities need a declared scoring basis</desc>
 <rect width="100%" height="100%" fill="#F1EFEB"/>
 <defs>
@@ -42,33 +42,34 @@
 
 <text x="798.0" y="512.2" text-anchor="start" font-size="16" font-weight="400" fill="#6D6A63">Invest cautiously</text>
 </g>
-<g id="_v9" data-kind="ellipse" data-content-text="false" data-box="435.79999999999995,330.0,10,10">
-<ellipse cx="440.79999999999995" cy="335.0" rx="5.0" ry="5.0" fill="#AC6046" stroke="none" stroke-width="1.5"/>
+<g id="_v9" data-kind="ellipse" data-content-text="false" data-box="478.2,315.0,10,10">
+<ellipse cx="483.2" cy="320.0" rx="5.0" ry="5.0" fill="#AC6046" stroke="none" stroke-width="1.5"/>
 </g>
-<g id="_v10" data-kind="text" data-content-text="false" data-box="452.79999999999995,318.0,200,36">
+<g id="_v10" data-kind="text" data-content-text="false" data-box="495.2,303.0,230,58">
 
-<text x="452.79999999999995" y="341.525" text-anchor="start" font-size="17" font-weight="400" fill="#30302D">Measure A</text>
+<text x="495.2" y="337.525" text-anchor="start" font-size="17" font-weight="400" fill="#30302D">Simplify feedback entry</text>
 </g>
-<g id="_v11" data-kind="ellipse" data-content-text="false" data-box="1008.1999999999999,355.0,10,10">
-<ellipse cx="1013.1999999999999" cy="360.0" rx="5.0" ry="5.0" fill="#AC6046" stroke="none" stroke-width="1.5"/>
+<g id="_v11" data-kind="ellipse" data-content-text="false" data-box="859.8,335.0,10,10">
+<ellipse cx="864.8" cy="340.0" rx="5.0" ry="5.0" fill="#AC6046" stroke="none" stroke-width="1.5"/>
 </g>
-<g id="_v12" data-kind="text" data-content-text="false" data-box="1025.1999999999998,343.0,200,36">
+<g id="_v12" data-kind="text" data-content-text="false" data-box="876.8,323.0,230,58">
 
-<text x="1025.1999999999998" y="366.525" text-anchor="start" font-size="17" font-weight="400" fill="#30302D">Measure B</text>
+<text x="876.8" y="346.05" text-anchor="start" font-size="17" font-weight="400" fill="#30302D">Add accessibility</text>
+<text x="876.8" y="369.0" text-anchor="start" font-size="17" font-weight="400" fill="#30302D">support</text>
 </g>
-<g id="_v13" data-kind="ellipse" data-content-text="false" data-box="499.4,585.0,10,10">
-<ellipse cx="504.4" cy="590.0" rx="5.0" ry="5.0" fill="#AC6046" stroke="none" stroke-width="1.5"/>
+<g id="_v13" data-kind="ellipse" data-content-text="false" data-box="510.0,545.0,10,10">
+<ellipse cx="515.0" cy="550.0" rx="5.0" ry="5.0" fill="#AC6046" stroke="none" stroke-width="1.5"/>
 </g>
-<g id="_v14" data-kind="text" data-content-text="false" data-box="516.4,573.0,200,36">
+<g id="_v14" data-kind="text" data-content-text="false" data-box="527.0,533.0,230,58">
 
-<text x="516.4" y="596.525" text-anchor="start" font-size="17" font-weight="400" fill="#30302D">Measure C</text>
+<text x="527.0" y="567.525" text-anchor="start" font-size="17" font-weight="400" fill="#30302D">Unify reply templates</text>
 </g>
-<g id="_v15" data-kind="ellipse" data-content-text="false" data-box="1018.8,610.0,10,10">
-<ellipse cx="1023.8" cy="615.0" rx="5.0" ry="5.0" fill="#AC6046" stroke="none" stroke-width="1.5"/>
+<g id="_v15" data-kind="ellipse" data-content-text="false" data-box="1071.8000000000002,385.0,10,10">
+<ellipse cx="1076.8000000000002" cy="390.0" rx="5.0" ry="5.0" fill="#AC6046" stroke="none" stroke-width="1.5"/>
 </g>
-<g id="_v16" data-kind="text" data-content-text="false" data-box="1035.8,598.0,200,36">
+<g id="_v16" data-kind="text" data-content-text="false" data-box="1088.8000000000002,373.0,230,58">
 
-<text x="1035.8" y="621.525" text-anchor="start" font-size="17" font-weight="400" fill="#30302D">Measure D</text>
+<text x="1088.8000000000002" y="407.525" text-anchor="start" font-size="17" font-weight="400" fill="#30302D">Add service dashboard</text>
 </g>
 <g id="_v17" data-kind="text" data-content-text="false" data-box="250,762,1060,36">
 
@@ -84,7 +85,7 @@
 </g>
 <g id="_v20" data-kind="text" data-content-text="false" data-box="64,69,1472,56">
 
-<text x="64" y="108.7" text-anchor="start" font-size="36" font-weight="400" fill="#30302D">Impact × effort · prioritisation hypotheses</text>
+<text x="64" y="108.7" text-anchor="start" font-size="36" font-weight="400" fill="#30302D">Service improvements · impact × effort</text>
 </g>
 <g id="_v21" data-kind="text" data-content-text="false" data-box="64,130,1472,38">
 
@@ -95,6 +96,6 @@
 </g>
 <g id="_v23" data-kind="text" data-content-text="false" data-box="64,850,1472,36">
 
-<text x="64" y="872.55" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">Original structural example · values, entities and hypotheses are illustrative inputs</text>
+<text x="64" y="872.55" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">Cross-industry service example · values, entities and hypotheses are illustrative inputs</text>
 </g>
 </g></svg>

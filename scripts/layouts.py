@@ -134,7 +134,7 @@ def quadrant(s,d):
   xx=x0+(i%2)*pw/2;yy=y0+(i//2)*ph/2;s.add(xx,yy,pw/2,ph/2,kind='panel',fill='tint2' if i%2 else 'panel',stroke='none',check=False);s.text(xx+18,yy+10,pw/2-36,34,l,16,'muted')
  s.edge(points=[(x0-20,y0+ph/2),(x0+pw+25,y0+ph/2)],tone='muted');s.edge(points=[(x0+pw/2,y0+ph+15),(x0+pw/2,y0-10)],tone='muted')
  for v in a:
-  need(all(finite(v[k]) and 0<=v[k]<=100 for k in ('x','y')),'quadrant coordinates must be 0–100');xx=x0+v['x']/100*pw;yy=y0+ph-v['y']/100*ph;s.add(xx-5,yy-5,10,10,kind='ellipse',fill='accent',stroke='none',check=False);s.text(xx+12,yy-17,200,36,v['label'],17)
+  need(all(finite(v[k]) and 0<=v[k]<=100 for k in ('x','y')),'quadrant coordinates must be 0–100');xx=x0+v['x']/100*pw;yy=y0+ph-v['y']/100*ph;s.add(xx-5,yy-5,10,10,kind='ellipse',fill='accent',stroke='none',check=False);s.text(xx+12,yy-17,230,58,v['label'],17,word_wrap=True)
  s.text(x0,y0+ph+32,pw,36,d.get('x_label','横轴 →'),18,'muted',align='center');s.text(64,y0+20,166,76,d.get('y_label','纵轴 ↑'),18,'muted');s.meta['coordinates']=[(v['x'],v['y']) for v in a]
 
 def chevrons(s,d):

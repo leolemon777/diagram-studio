@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "version": "v64",
+  "version": "v65",
   "updated": "2026-09-21",
   "purpose": "Single source for chooser labels, backend capability, delivery formats and acceptance evidence.",
   "status_vocabulary": {
@@ -314,7 +314,7 @@
           "layout_limits": {"zh": "坐标仅表达声明的归一化评分；不把位置自动解释为事实、因果或统计显著性。", "en": "Coordinates express declared normalised scores; position is not automatically fact, causality or statistical significance."},
           "languages": ["zh", "en"],
           "examples": ["assets/examples/36-quadrant.json", "assets/examples/36-quadrant-en.json"],
-          "evidence": {"level": "manual_visual_review", "reference": "assets/v48-analysis-forms-evidence.json", "detail": {"zh": "中英示例通过轴、象限、对象坐标、内容保留和几何检查；评分依据仍需项目提供。", "en": "Chinese and English examples pass axes, quadrants, item coordinates, content retention and geometry checks; project scoring basis is still required."}},
+          "evidence": {"level": "manual_visual_review", "reference": "assets/v65-quadrant-evidence.json", "detail": {"zh": "中英跨行业服务改进示例通过轴、象限、同一对象坐标、长标签换行和几何检查；评分依据仍需项目提供。", "en": "Chinese and English cross-industry service-improvement examples pass axes, quadrants, shared item coordinates, wrapped long labels and geometry checks; project scoring basis is still required."}},
           "scope": {"zh": "表达优先级假说，不替代决策记录或实际评分流程。", "en": "Expresses a prioritisation hypothesis; it does not replace decision records or scoring workflow."}
         }
       ]

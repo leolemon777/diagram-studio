@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "protocol_version": "diagram-studio/delivery-1",
-  "version_id": "v-f89a421ef33b",
+  "version_id": "v-996380bcb0d3",
   "source_name": "36-quadrant-en",
-  "input_sha256": "f89a421ef33b7a74cdfbe3808118c52ea603e426e99d076bb3e16bb294255691",
+  "input_sha256": "996380bcb0d3ad72228b2d91464dcb3ac94a5c2e5d644be574e4dff42295d0a0",
   "theme": "light",
   "checks": {
     "geometry": {
@@ -35,11 +35,11 @@
     }
   },
   "files": {
-    "36-quadrant-en.brief.json": "364bd0b41830ea9d6e5a66598246ed5f3598fc25dddb856656122548543b6da4",
-    "36-quadrant-en.drawio": "dbe89cd8a250457ef4be613020c6499f577c75c040e39edaa1f34190b1424c62",
+    "36-quadrant-en.brief.json": "c6be55b481096047aa6b282a97c66555536f912d1c42783a4add57957e277f17",
+    "36-quadrant-en.drawio": "3a3f3293ec88dc7817d3ba638cc0d2a4609a3e639fc85d18ccd2995875701673",
     "36-quadrant-en.qa.json": "921694bd370cee6c3be629681827ae88113464f8115c38bb636a7561e995bbd2",
-    "36-quadrant-en.scene.json": "2c53b5620026332f0ca3607e8aee18fd1acf32ff699fe3e5068460a4cbc6ee30",
-    "36-quadrant-en.svg": "ea2b417dbae7db2dd06aff91b2883df55fefe2166a76e5c24fbf89a48971e6dd"
+    "36-quadrant-en.scene.json": "679c7cd6045c6e586f790b19fd7d927152a182a58352da428ebdfde5ca743f3b",
+    "36-quadrant-en.svg": "ff46005fba702d74ea8623600a4dba557b5359e0e3904e31250fb4ae36322324"
   },
   "delivery_scope": "Generation, semantic content checks and QA finish before replacement. Individual files are replaced; promotion is not a multi-file atomic transaction."
 }

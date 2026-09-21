@@ -45,8 +45,8 @@ class AnalysisFormTests(unittest.TestCase):
         )
 
     def test_quadrant_bilingual_examples_keep_axes_and_items(self):
-        for name in ("36-quadrant.json", "36-quadrant-en.json"):
-            data = self._load(name)
+        examples = [self._load(name) for name in ("36-quadrant.json", "36-quadrant-en.json")]
+        for name, data in zip(("36-quadrant.json", "36-quadrant-en.json"), examples):
             scene = render.build(data, "light")
             self.assertEqual(render.audit(scene)["errors"], [])
             integrity = delivery_contract.content_integrity(
@@ -55,6 +55,23 @@ class AnalysisFormTests(unittest.TestCase):
             self.assertEqual(integrity["status"], "passed", integrity)
             self.assertEqual(len(data["items"]), 4)
             self.assertEqual(scene.meta["coordinates"], [(item["x"], item["y"]) for item in data["items"]])
+        self.assertEqual(
+            [(item["x"], item["y"]) for item in examples[0]["items"]],
+            [(item["x"], item["y"]) for item in examples[1]["items"]],
+        )
+        self.assertIn("服务", examples[0]["title"])
+        self.assertIn("Service", examples[1]["title"])
+
+    def test_quadrant_examples_share_service_improvement_items(self):
+        zh, en = [self._load(name) for name in ("36-quadrant.json", "36-quadrant-en.json")]
+        self.assertEqual(
+            [item["label"] for item in zh["items"]],
+            ["简化反馈入口", "增加无障碍支持", "统一回复模板", "增加服务看板"],
+        )
+        self.assertEqual(
+            [item["label"] for item in en["items"]],
+            ["Simplify feedback entry", "Add accessibility support", "Unify reply templates", "Add service dashboard"],
+        )
 
 
 if __name__ == "__main__":

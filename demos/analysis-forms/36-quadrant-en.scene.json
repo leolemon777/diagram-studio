@@ -130,8 +130,8 @@
     },
     {
       "id": "_v9",
-      "x": 435.79999999999995,
-      "y": 330.0,
+      "x": 478.2,
+      "y": 315.0,
       "w": 10,
       "h": 10,
       "label": "",
@@ -144,22 +144,23 @@
     },
     {
       "id": "_v10",
-      "x": 452.79999999999995,
-      "y": 318.0,
-      "w": 200,
-      "h": 36,
-      "label": "Measure A",
+      "x": 495.2,
+      "y": 303.0,
+      "w": 230,
+      "h": 58,
+      "label": "Simplify feedback entry",
       "detail": "",
       "kind": "text",
       "tone": "ink",
       "fs": 17,
       "align": "left",
-      "check": false
+      "check": false,
+      "word_wrap": true
     },
     {
       "id": "_v11",
-      "x": 1008.1999999999999,
-      "y": 355.0,
+      "x": 859.8,
+      "y": 335.0,
       "w": 10,
       "h": 10,
       "label": "",
@@ -172,22 +173,23 @@
     },
     {
       "id": "_v12",
-      "x": 1025.1999999999998,
-      "y": 343.0,
-      "w": 200,
-      "h": 36,
-      "label": "Measure B",
+      "x": 876.8,
+      "y": 323.0,
+      "w": 230,
+      "h": 58,
+      "label": "Add accessibility support",
       "detail": "",
       "kind": "text",
       "tone": "ink",
       "fs": 17,
       "align": "left",
-      "check": false
+      "check": false,
+      "word_wrap": true
     },
     {
       "id": "_v13",
-      "x": 499.4,
-      "y": 585.0,
+      "x": 510.0,
+      "y": 545.0,
       "w": 10,
       "h": 10,
       "label": "",
@@ -200,22 +202,23 @@
     },
     {
       "id": "_v14",
-      "x": 516.4,
-      "y": 573.0,
-      "w": 200,
-      "h": 36,
-      "label": "Measure C",
+      "x": 527.0,
+      "y": 533.0,
+      "w": 230,
+      "h": 58,
+      "label": "Unify reply templates",
       "detail": "",
       "kind": "text",
       "tone": "ink",
       "fs": 17,
       "align": "left",
-      "check": false
+      "check": false,
+      "word_wrap": true
     },
     {
       "id": "_v15",
-      "x": 1018.8,
-      "y": 610.0,
+      "x": 1071.8000000000002,
+      "y": 385.0,
       "w": 10,
       "h": 10,
       "label": "",
@@ -228,17 +231,18 @@
     },
     {
       "id": "_v16",
-      "x": 1035.8,
-      "y": 598.0,
-      "w": 200,
-      "h": 36,
-      "label": "Measure D",
+      "x": 1088.8000000000002,
+      "y": 373.0,
+      "w": 230,
+      "h": 58,
+      "label": "Add service dashboard",
       "detail": "",
       "kind": "text",
       "tone": "ink",
       "fs": 17,
       "align": "left",
-      "check": false
+      "check": false,
+      "word_wrap": true
     },
     {
       "id": "_v17",
@@ -288,7 +292,7 @@
       "y": 69,
       "w": 1472,
       "h": 56,
-      "label": "Impact × effort · prioritisation hypotheses",
+      "label": "Service improvements · impact × effort",
       "detail": "",
       "kind": "text",
       "tone": "ink",
@@ -330,7 +334,7 @@
       "y": 850,
       "w": 1472,
       "h": 36,
-      "label": "Original structural example · values, entities and hypotheses are illustrative inputs",
+      "label": "Cross-industry service example · values, entities and hypotheses are illustrative inputs",
       "detail": "",
       "kind": "text",
       "tone": "muted",
@@ -380,24 +384,25 @@
   "meta": {
     "coordinates": [
       [
-        18,
-        79
+        22,
+        82
       ],
       [
-        72,
-        74
+        58,
+        78
       ],
       [
-        24,
-        28
+        25,
+        36
       ],
       [
-        73,
-        23
+        78,
+        68
       ]
     ]
   },
   "assumptions": [
-    "Original illustrative content; not an operational priority or research conclusion"
+    "Original illustrative content; not an operational priority or research conclusion",
+    "The four coordinates are discussion hypotheses; the scoring basis must be declared by the project"
   ]
 }

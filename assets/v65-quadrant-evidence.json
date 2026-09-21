@@ -1,0 +1,26 @@
+{
+  "version": "v65",
+  "date": "2026-09-21",
+  "scope": "Cross-industry bilingual quadrant priority form",
+  "automated": {
+    "tests": "Bundled Python unittest suite passes; quadrant tests cover shared coordinates, bilingual content and wrapped labels",
+    "registry": "capability_registry.py --check passes",
+    "diff": "git diff --check passes",
+    "quadrant": "Four explicit service-improvement items retain the same 0–100 coordinates in both languages; long labels are measured and wrapped"
+  },
+  "browser_checks": [
+    "Chinese quadrant SVG opened directly; axes, four quadrant names and four service-improvement labels are readable",
+    "English quadrant SVG opened directly; long labels wrap without clipping and all four points retain their positions",
+    "Analysis forms page opened; the quadrant section keeps the scoring-basis limitation and bilingual links"
+  ],
+  "not_verified": [
+    "Native editor save/reopen for the regenerated quadrant files",
+    "Mobile viewport and dense point-label collisions beyond the declared limits",
+    "Real scoring validity, prioritisation decisions or delivery commitments"
+  ],
+  "artifacts": {
+    "models": ["assets/examples/36-quadrant.json", "assets/examples/36-quadrant-en.json"],
+    "outputs": ["demos/analysis-forms/36-quadrant.svg", "demos/analysis-forms/36-quadrant-en.svg"],
+    "demo": "demos/analysis-forms/index.html"
+  }
+}
