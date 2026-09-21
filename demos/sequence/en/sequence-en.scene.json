@@ -1,0 +1,362 @@
+{
+  "width": 1600,
+  "height": 900,
+  "theme": "light",
+  "palette": {
+    "bg": "#F1EFEB",
+    "panel": "#FEFDF9",
+    "ink": "#30302D",
+    "muted": "#6D6A63",
+    "line": "#D8D3C8",
+    "accent": "#AC6046",
+    "teal": "#67685E",
+    "amber": "#8C7964",
+    "red": "#554C46",
+    "tint": "#F0E4DA",
+    "tint2": "#ECECE5"
+  },
+  "nodes": [
+    {
+      "id": "visitor",
+      "x": 196.0,
+      "y": 202,
+      "w": 188,
+      "h": 66,
+      "label": "Visitor",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "check": true
+    },
+    {
+      "id": "entry",
+      "x": 536.0,
+      "y": 202,
+      "w": 188,
+      "h": 66,
+      "label": "Service entry",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "check": true
+    },
+    {
+      "id": "booking",
+      "x": 876.0,
+      "y": 202,
+      "w": 188,
+      "h": 66,
+      "label": "Booking",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "check": true
+    },
+    {
+      "id": "calendar",
+      "x": 1216.0,
+      "y": 202,
+      "w": 188,
+      "h": 66,
+      "label": "Calendar",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "check": true
+    },
+    {
+      "id": "_v5",
+      "x": 64,
+      "y": 34,
+      "w": 1472,
+      "h": 22,
+      "label": "57 / SEQUENCE",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v6",
+      "x": 64,
+      "y": 69,
+      "w": 1472,
+      "h": 56,
+      "label": "Service booking · interaction sequence",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 36,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v7",
+      "x": 64,
+      "y": 130,
+      "w": 1472,
+      "h": 38,
+      "label": "Vertical order shows sequence; dashed arrows return information, not elapsed time",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v8",
+      "x": 64,
+      "y": 837,
+      "w": 1472,
+      "h": 1,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "line",
+      "stroke": "none",
+      "check": false
+    },
+    {
+      "id": "_v9",
+      "x": 64,
+      "y": 850,
+      "w": 1472,
+      "h": 36,
+      "label": "Cross-industry illustration · auth, conflicts and cancellation are omitted; add real interface details for implementation",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    }
+  ],
+  "edges": [
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          290.0,
+          272
+        ],
+        [
+          290.0,
+          720
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "dashed": true,
+      "arrow": false,
+      "tone": "line"
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          630.0,
+          272
+        ],
+        [
+          630.0,
+          720
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "dashed": true,
+      "arrow": false,
+      "tone": "line"
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          970.0,
+          272
+        ],
+        [
+          970.0,
+          720
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "dashed": true,
+      "arrow": false,
+      "tone": "line"
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          1310.0,
+          272
+        ],
+        [
+          1310.0,
+          720
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "dashed": true,
+      "arrow": false,
+      "tone": "line"
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "01  Select service and slot",
+      "points": [
+        [
+          290.0,
+          320
+        ],
+        [
+          630.0,
+          320
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "dashed": false,
+      "tone": "accent",
+      "label_at": [
+        460.0,
+        303
+      ]
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "02  Submit booking request",
+      "points": [
+        [
+          630.0,
+          390
+        ],
+        [
+          970.0,
+          390
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "dashed": false,
+      "tone": "accent",
+      "label_at": [
+        800.0,
+        373
+      ]
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "03  Lock available slot",
+      "points": [
+        [
+          970.0,
+          460
+        ],
+        [
+          1310.0,
+          460
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "dashed": false,
+      "tone": "accent",
+      "label_at": [
+        1140.0,
+        443
+      ]
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "04  Return booking ID",
+      "points": [
+        [
+          1310.0,
+          530
+        ],
+        [
+          970.0,
+          530
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "dashed": true,
+      "tone": "teal",
+      "label_at": [
+        1140.0,
+        513
+      ]
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "05  Return booking result",
+      "points": [
+        [
+          970.0,
+          600
+        ],
+        [
+          630.0,
+          600
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "dashed": true,
+      "tone": "teal",
+      "label_at": [
+        800.0,
+        583
+      ]
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "06  Show confirmation",
+      "points": [
+        [
+          630.0,
+          670
+        ],
+        [
+          290.0,
+          670
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "dashed": true,
+      "tone": "teal",
+      "label_at": [
+        460.0,
+        653
+      ]
+    }
+  ],
+  "meta": {},
+  "assumptions": [
+    "Participants, messages and order are illustrative; they do not describe a real service interface or duration."
+  ]
+}

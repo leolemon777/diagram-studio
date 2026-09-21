@@ -1,0 +1,65 @@
+{
+  "type": "sequence",
+  "title": "服务预约 · 交互时序",
+  "subtitle": "纵向表示先后；虚线表示返回，图中不暗示实际耗时",
+  "eyebrow": "57 / SEQUENCE",
+  "actors": [
+    {
+      "id": "visitor",
+      "label": "访客"
+    },
+    {
+      "id": "entry",
+      "label": "服务入口"
+    },
+    {
+      "id": "booking",
+      "label": "预约服务"
+    },
+    {
+      "id": "calendar",
+      "label": "日历记录"
+    }
+  ],
+  "messages": [
+    {
+      "from": "visitor",
+      "to": "entry",
+      "label": "选择服务与时段"
+    },
+    {
+      "from": "entry",
+      "to": "booking",
+      "label": "提交预约请求"
+    },
+    {
+      "from": "booking",
+      "to": "calendar",
+      "label": "锁定可用时段"
+    },
+    {
+      "from": "calendar",
+      "to": "booking",
+      "label": "返回预约编号",
+      "return": true
+    },
+    {
+      "from": "booking",
+      "to": "entry",
+      "label": "返回预约结果",
+      "return": true
+    },
+    {
+      "from": "entry",
+      "to": "visitor",
+      "label": "显示确认信息",
+      "return": true
+    }
+  ],
+  "footer": "跨行业演示 · 省略鉴权、冲突和取消片段；实施时按实际接口补充",
+  "family": "过程与时序",
+  "diagram_name": "交互时序",
+  "assumptions": [
+    "参与者、消息和顺序为跨行业演示输入；不代表实际服务接口或耗时。"
+  ]
+}

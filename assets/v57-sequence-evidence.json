@@ -1,0 +1,20 @@
+{
+  "version": "v57",
+  "capability": "sequence",
+  "status": "manual_visual_review",
+  "source_examples": [
+    "assets/examples/sequence-cn.json",
+    "assets/examples/sequence-en.json"
+  ],
+  "checks": {
+    "bilingual_topology": "same four stable actor ids, six message endpoints and three return flags",
+    "geometry": "sequence audit reports zero geometry, text and connector warnings",
+    "ordering": "message labels are numbered in input order from 01 to 06",
+    "browser": "overview demo and direct Chinese/English SVG were opened and visually reviewed"
+  },
+  "limitations": [
+    "This batch does not implement alt/loop frames, concurrent branches or protocol validation.",
+    "Native draw.io edit, save and reopen behavior is not included.",
+    "The ordering is illustrative and does not assert real latency or service behavior."
+  ]
+}

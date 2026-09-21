@@ -1,0 +1,24 @@
+{
+  "type": "sequence",
+  "title": "Service booking · interaction sequence",
+  "subtitle": "Vertical order shows sequence; dashed arrows return information, not elapsed time",
+  "eyebrow": "57 / SEQUENCE",
+  "actors": [
+    {"id": "visitor", "label": "Visitor"},
+    {"id": "entry", "label": "Service entry"},
+    {"id": "booking", "label": "Booking"},
+    {"id": "calendar", "label": "Calendar"}
+  ],
+  "messages": [
+    {"from": "visitor", "to": "entry", "label": "Select service and slot"},
+    {"from": "entry", "to": "booking", "label": "Submit booking request"},
+    {"from": "booking", "to": "calendar", "label": "Lock available slot"},
+    {"from": "calendar", "to": "booking", "label": "Return booking ID", "return": true},
+    {"from": "booking", "to": "entry", "label": "Return booking result", "return": true},
+    {"from": "entry", "to": "visitor", "label": "Show confirmation", "return": true}
+  ],
+  "footer": "Cross-industry illustration · auth, conflicts and cancellation are omitted; add real interface details for implementation",
+  "family": "Process & sequence",
+  "diagram_name": "Interaction sequence",
+  "assumptions": ["Participants, messages and order are illustrative; they do not describe a real service interface or duration."]
+}

@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "protocol_version": "diagram-studio/delivery-1",
+  "version_id": "v-f15e8da70a55",
+  "source_name": "sequence-cn",
+  "input_sha256": "f15e8da70a550b8cdec698ab7124ebadde4194ddcb096306cbb4325355816473",
+  "theme": "light",
+  "checks": {
+    "geometry": {
+      "status": "passed",
+      "warnings": []
+    },
+    "composition": {
+      "status": "not-run",
+      "findings": []
+    },
+    "content_integrity": {
+      "status": "passed",
+      "source_ids": 4,
+      "source_relations": 6,
+      "source_texts": 10,
+      "missing_ids": [],
+      "missing_relations": [],
+      "missing_text": [],
+      "scope": "stable source IDs, explicit relation endpoints and source display text; not domain correctness"
+    },
+    "browser_text_bounds": {
+      "status": "not-run"
+    },
+    "manual_visual_review": {
+      "status": "not-run"
+    },
+    "native_editor": {
+      "status": "not-run"
+    }
+  },
+  "files": {
+    "sequence-cn.brief.json": "d6fcb0308a97b5626b9205c50e6780d4290eb4a3a708ff726f8f0ee439ab3784",
+    "sequence-cn.drawio": "65912e4c02c21b908002279512e79259128b5b8470569c9ec1e04d60956f1910",
+    "sequence-cn.qa.json": "86e4334b558f7a0225774a535df72c0c751f24d0815b95204b527035bb7d2d47",
+    "sequence-cn.scene.json": "ead20aadd7a2404cb8ea44b4c3f6cd460b8a86c1fef94ceaa63aba6aa4358795",
+    "sequence-cn.svg": "800cb26949803e328b884f112b6dd62a99286a058617b53ef40274e2186bce52"
+  },
+  "delivery_scope": "Generation, semantic content checks and QA finish before replacement. Individual files are replaced; promotion is not a multi-file atomic transaction."
+}

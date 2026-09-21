@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "version": "v56",
+  "version": "v57",
   "updated": "2026-09-20",
   "purpose": "Single source for chooser labels, backend capability, delivery formats and acceptance evidence.",
   "status_vocabulary": {
@@ -103,8 +103,8 @@
           "formats": ["svg", "drawio", "scene.json", "qa.json", "html"],
           "layout_limits": {"zh": "参与者 2–8 个；复杂循环和并发需拆局部交互。", "en": "Two to eight participants; split complex loops and concurrency into local interaction views."},
           "languages": ["zh", "en"],
-          "examples": ["assets/examples/05-sequence.json"],
-          "evidence": {"level": "generated_with_semantic_validation", "reference": "assets/verification-status.json", "detail": {"zh": "消息方向和参与者端点由后端校验；alt/loop 框仍未覆盖。", "en": "Message direction and actor endpoints are checked; alt/loop frames are not covered."}},
+          "examples": ["assets/examples/sequence-cn.json", "assets/examples/sequence-en.json"],
+          "evidence": {"level": "manual_visual_review", "reference": "assets/v57-sequence-evidence.json", "detail": {"zh": "中英时序通过参与者与消息拓扑、六步顺序、三条返回虚线、几何检查和浏览器复核。", "en": "Chinese and English sequences pass actor/message topology, six-step order, three dashed returns, geometry checks and browser review."}},
           "scope": {"zh": "返回消息保留虚线与方向；不把静态架构当动态交互。", "en": "Return messages retain their dashed direction; static architecture is not treated as interaction."}
         }
       ]

@@ -1,0 +1,362 @@
+{
+  "width": 1600,
+  "height": 900,
+  "theme": "light",
+  "palette": {
+    "bg": "#F1EFEB",
+    "panel": "#FEFDF9",
+    "ink": "#30302D",
+    "muted": "#6D6A63",
+    "line": "#D8D3C8",
+    "accent": "#AC6046",
+    "teal": "#67685E",
+    "amber": "#8C7964",
+    "red": "#554C46",
+    "tint": "#F0E4DA",
+    "tint2": "#ECECE5"
+  },
+  "nodes": [
+    {
+      "id": "visitor",
+      "x": 196.0,
+      "y": 202,
+      "w": 188,
+      "h": 66,
+      "label": "访客",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "check": true
+    },
+    {
+      "id": "entry",
+      "x": 536.0,
+      "y": 202,
+      "w": 188,
+      "h": 66,
+      "label": "服务入口",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "check": true
+    },
+    {
+      "id": "booking",
+      "x": 876.0,
+      "y": 202,
+      "w": 188,
+      "h": 66,
+      "label": "预约服务",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "check": true
+    },
+    {
+      "id": "calendar",
+      "x": 1216.0,
+      "y": 202,
+      "w": 188,
+      "h": 66,
+      "label": "日历记录",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "check": true
+    },
+    {
+      "id": "_v5",
+      "x": 64,
+      "y": 34,
+      "w": 1472,
+      "h": 22,
+      "label": "57 / SEQUENCE",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v6",
+      "x": 64,
+      "y": 69,
+      "w": 1472,
+      "h": 56,
+      "label": "服务预约 · 交互时序",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 36,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v7",
+      "x": 64,
+      "y": 130,
+      "w": 1472,
+      "h": 38,
+      "label": "纵向表示先后；虚线表示返回，图中不暗示实际耗时",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v8",
+      "x": 64,
+      "y": 837,
+      "w": 1472,
+      "h": 1,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "line",
+      "stroke": "none",
+      "check": false
+    },
+    {
+      "id": "_v9",
+      "x": 64,
+      "y": 850,
+      "w": 1472,
+      "h": 36,
+      "label": "跨行业演示 · 省略鉴权、冲突和取消片段；实施时按实际接口补充",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    }
+  ],
+  "edges": [
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          290.0,
+          272
+        ],
+        [
+          290.0,
+          720
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "dashed": true,
+      "arrow": false,
+      "tone": "line"
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          630.0,
+          272
+        ],
+        [
+          630.0,
+          720
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "dashed": true,
+      "arrow": false,
+      "tone": "line"
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          970.0,
+          272
+        ],
+        [
+          970.0,
+          720
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "dashed": true,
+      "arrow": false,
+      "tone": "line"
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          1310.0,
+          272
+        ],
+        [
+          1310.0,
+          720
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "dashed": true,
+      "arrow": false,
+      "tone": "line"
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "01  选择服务与时段",
+      "points": [
+        [
+          290.0,
+          320
+        ],
+        [
+          630.0,
+          320
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "dashed": false,
+      "tone": "accent",
+      "label_at": [
+        460.0,
+        303
+      ]
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "02  提交预约请求",
+      "points": [
+        [
+          630.0,
+          390
+        ],
+        [
+          970.0,
+          390
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "dashed": false,
+      "tone": "accent",
+      "label_at": [
+        800.0,
+        373
+      ]
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "03  锁定可用时段",
+      "points": [
+        [
+          970.0,
+          460
+        ],
+        [
+          1310.0,
+          460
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "dashed": false,
+      "tone": "accent",
+      "label_at": [
+        1140.0,
+        443
+      ]
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "04  返回预约编号",
+      "points": [
+        [
+          1310.0,
+          530
+        ],
+        [
+          970.0,
+          530
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "dashed": true,
+      "tone": "teal",
+      "label_at": [
+        1140.0,
+        513
+      ]
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "05  返回预约结果",
+      "points": [
+        [
+          970.0,
+          600
+        ],
+        [
+          630.0,
+          600
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "dashed": true,
+      "tone": "teal",
+      "label_at": [
+        800.0,
+        583
+      ]
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "06  显示确认信息",
+      "points": [
+        [
+          630.0,
+          670
+        ],
+        [
+          290.0,
+          670
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "dashed": true,
+      "tone": "teal",
+      "label_at": [
+        460.0,
+        653
+      ]
+    }
+  ],
+  "meta": {},
+  "assumptions": [
+    "参与者、消息和顺序为跨行业演示输入；不代表实际服务接口或耗时。"
+  ]
+}

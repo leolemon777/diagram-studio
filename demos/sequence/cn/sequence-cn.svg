@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="diagram-title diagram-desc">
+<title id="diagram-title">服务预约 · 交互时序</title>
+<desc id="diagram-desc">纵向表示先后；虚线表示返回，图中不暗示实际耗时</desc>
+<rect width="100%" height="100%" fill="#F1EFEB"/>
+<defs>
+<marker id="arrow-accent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#AC6046"/></marker>
+<marker id="arrow-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#67685E"/></marker>
+<marker id="arrow-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#8C7964"/></marker>
+<marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#554C46"/></marker>
+<marker id="arrow-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#6D6A63"/></marker>
+<marker id="arrow-line" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#D8D3C8"/></marker>
+<marker id="arrow-ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#30302D"/></marker>
+</defs>
+<g font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, Arial, sans-serif">
+<path d="M290.0,272 L290.0,720" fill="none" stroke="#D8D3C8" stroke-width="2" stroke-linejoin="round" stroke-dasharray="7 6"/>
+<path d="M630.0,272 L630.0,720" fill="none" stroke="#D8D3C8" stroke-width="2" stroke-linejoin="round" stroke-dasharray="7 6"/>
+<path d="M970.0,272 L970.0,720" fill="none" stroke="#D8D3C8" stroke-width="2" stroke-linejoin="round" stroke-dasharray="7 6"/>
+<path d="M1310.0,272 L1310.0,720" fill="none" stroke="#D8D3C8" stroke-width="2" stroke-linejoin="round" stroke-dasharray="7 6"/>
+<path d="M290.0,320 L630.0,320" fill="none" stroke="#AC6046" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow-accent)"/>
+<path d="M630.0,390 L970.0,390" fill="none" stroke="#AC6046" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow-accent)"/>
+<path d="M970.0,460 L1310.0,460" fill="none" stroke="#AC6046" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow-accent)"/>
+<path d="M1310.0,530 L970.0,530" fill="none" stroke="#67685E" stroke-width="2" stroke-linejoin="round" stroke-dasharray="7 6" marker-end="url(#arrow-teal)"/>
+<path d="M970.0,600 L630.0,600" fill="none" stroke="#67685E" stroke-width="2" stroke-linejoin="round" stroke-dasharray="7 6" marker-end="url(#arrow-teal)"/>
+<path d="M630.0,670 L290.0,670" fill="none" stroke="#67685E" stroke-width="2" stroke-linejoin="round" stroke-dasharray="7 6" marker-end="url(#arrow-teal)"/>
+<g id="visitor" data-kind="rect" data-content-text="false" data-box="196.0,202,188,66">
+<rect x="196.0" y="202" width="188" height="66" rx="10" fill="#FEFDF9" stroke="#AC6046" stroke-width="1.5"/>
+<text x="290.0" y="242.15" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">访客</text>
+</g>
+<g id="entry" data-kind="rect" data-content-text="false" data-box="536.0,202,188,66">
+<rect x="536.0" y="202" width="188" height="66" rx="10" fill="#FEFDF9" stroke="#AC6046" stroke-width="1.5"/>
+<text x="630.0" y="242.15" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">服务入口</text>
+</g>
+<g id="booking" data-kind="rect" data-content-text="false" data-box="876.0,202,188,66">
+<rect x="876.0" y="202" width="188" height="66" rx="10" fill="#FEFDF9" stroke="#AC6046" stroke-width="1.5"/>
+<text x="970.0" y="242.15" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">预约服务</text>
+</g>
+<g id="calendar" data-kind="rect" data-content-text="false" data-box="1216.0,202,188,66">
+<rect x="1216.0" y="202" width="188" height="66" rx="10" fill="#FEFDF9" stroke="#AC6046" stroke-width="1.5"/>
+<text x="1310.0" y="242.15" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">日历记录</text>
+</g>
+<g id="_v5" data-kind="text" data-content-text="false" data-box="64,34,1472,22">
+
+<text x="64" y="49.55" text-anchor="start" font-size="14" font-weight="400" fill="#AC6046">57 / SEQUENCE</text>
+</g>
+<g id="_v6" data-kind="text" data-content-text="false" data-box="64,69,1472,56">
+
+<text x="64" y="108.7" text-anchor="start" font-size="36" font-weight="400" fill="#30302D">服务预约 · 交互时序</text>
+</g>
+<g id="_v7" data-kind="text" data-content-text="false" data-box="64,130,1472,38">
+
+<text x="64" y="154.525" text-anchor="start" font-size="17" font-weight="400" fill="#6D6A63">纵向表示先后；虚线表示返回，图中不暗示实际耗时</text>
+</g>
+<g id="_v8" data-kind="rect" data-content-text="false" data-box="64,837,1472,1">
+<rect x="64" y="837" width="1472" height="1" rx="0" fill="#D8D3C8" stroke="none" stroke-width="1.5"/>
+</g>
+<g id="_v9" data-kind="text" data-content-text="false" data-box="64,850,1472,36">
+
+<text x="64" y="872.55" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">跨行业演示 · 省略鉴权、冲突和取消片段；实施时按实际接口补充</text>
+</g>
+<rect x="386.45" y="286" width="147.1" height="25" rx="4" fill="#F1EFEB"/>
+<text x="460.0" y="303" font-size="15" text-anchor="middle" fill="#AC6046">01  选择服务与时段</text>
+<rect x="733.95" y="356" width="132.10000000000002" height="25" rx="4" fill="#F1EFEB"/>
+<text x="800.0" y="373" font-size="15" text-anchor="middle" fill="#AC6046">02  提交预约请求</text>
+<rect x="1073.95" y="426" width="132.10000000000002" height="25" rx="4" fill="#F1EFEB"/>
+<text x="1140.0" y="443" font-size="15" text-anchor="middle" fill="#AC6046">03  锁定可用时段</text>
+<rect x="1073.95" y="496" width="132.10000000000002" height="25" rx="4" fill="#F1EFEB"/>
+<text x="1140.0" y="513" font-size="15" text-anchor="middle" fill="#67685E">04  返回预约编号</text>
+<rect x="733.95" y="566" width="132.10000000000002" height="25" rx="4" fill="#F1EFEB"/>
+<text x="800.0" y="583" font-size="15" text-anchor="middle" fill="#67685E">05  返回预约结果</text>
+<rect x="393.95" y="636" width="132.10000000000002" height="25" rx="4" fill="#F1EFEB"/>
+<text x="460.0" y="653" font-size="15" text-anchor="middle" fill="#67685E">06  显示确认信息</text>
+</g></svg>
