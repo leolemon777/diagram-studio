@@ -59,17 +59,35 @@
       "edit": "Changed the stage label 01 / discover to 01 / discover · T07.",
       "reopen_check": "The T07 marker remained after reopening; stages, behaviors, touchpoints, evidence, opportunities, actions and emotion rows remained visible.",
       "reload_verified": true
+    },
+    {
+      "id": "user-path-storyboard-en",
+      "source": "demos/user-path-storyboard/en/37-user-path-storyboard-en.drawio",
+      "source_url": "https://raw.githubusercontent.com/leolemon777/diagram-studio/main/demos/user-path-storyboard/en/37-user-path-storyboard-en.drawio",
+      "saved_name": "diagram-studio-t07-userpath-en-browser.drawio",
+      "edit": "Changed the actor label [step-open] Caregiver to [step-open] Caregiver · T07.",
+      "reopen_check": "The T07 marker remained after reopening; English preconditions, visible states, main-path steps, branches, exceptions and recovery text remained visible.",
+      "reload_verified": true
+    },
+    {
+      "id": "mindmap-cn",
+      "source": "demos/route-mindmap/mindmap/04-mindmap-cn.drawio",
+      "source_url": "https://raw.githubusercontent.com/leolemon777/diagram-studio/main/demos/route-mindmap/mindmap/04-mindmap-cn.drawio",
+      "saved_name": "diagram-studio-t07-mindmap-browser.drawio",
+      "edit": "Changed the branch label 观察学习者 to 观察学习者 · T07.",
+      "reopen_check": "The T07 marker remained after reopening; the root and the remaining knowledge-structure branches remained visible.",
+      "reload_verified": true
     }
   ],
   "checks": {
-    "edit_save_reopen": "passed for all six representative cases",
-    "relationship_or_structure_visibility": "passed for flow conditions, all nine Lean Canvas blocks, user-path branches/exceptions, Gantt task/date/progress rows, line-chart marks, and experience-map rows",
+    "edit_save_reopen": "passed for all eight representative cases",
+    "relationship_or_structure_visibility": "passed for flow conditions, all nine Lean Canvas blocks, user-path branches/exceptions in both languages, Gantt task/date/progress rows, line-chart marks, experience-map rows, and mind-map branches",
     "repository_source_modified": false,
     "local_editor_compatibility": "separate EdrawMax attempt failed to open a temporary flow copy; see assets/v72-editor-attempt.json"
   },
   "limits": [
     "Browser storage is the saved artifact for this evidence; no local exported round-trip file was added to the repository.",
-    "This is representative coverage for six files, not native-editor approval of every registered capability or every language variant.",
+    "This is representative coverage for eight files, including one English user-path variant, not native-editor approval of every registered capability or every language variant.",
     "The editor verified text edits and preserved visible structure; data-driven chart value changes that require JSON regeneration remain documented as regeneration workflows."
   ]
 }
