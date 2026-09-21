@@ -192,7 +192,7 @@ def tree(s,d):
         span=sizes[n['id']];center=start+span/2;dep=depths[n['id']]
         if direction=='right':x,y=64+dep*300,200+center*104-nh/2
         else:x,y=64+center*250-nw/2,205+dep*160
-        s.add(x,y,nw,nh,n['label'],n.get('detail',''),id=n['id'],tone=n.get('tone',tone),check=True)
+        s.add(x,y,nw,nh,n['label'],n.get('detail',''),id=n['id'],tone=n.get('tone',tone),check=True,word_wrap=True)
         cursor=start
         for i,c in enumerate(n.get('children',[])):
             ctone=('accent','teal','amber','red')[i%4] if dep==0 else tone

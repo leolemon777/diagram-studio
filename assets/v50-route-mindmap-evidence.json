@@ -1,0 +1,29 @@
+{
+  "version": "v50",
+  "date": "2026-09-20",
+  "scope": "Bilingual cross-industry timeline and mind-map refinement",
+  "automated": {
+    "tests": "Route/mind-map tests cover bilingual tree content, down-layout readability, timeline dates, actual day offsets and delivery content integrity",
+    "registry": "capability_registry.py --check passes",
+    "diff": "git diff --check passes",
+    "timeline": "Four dated events retain offsets [0, 8, 23, 42]; measured English labels and details pass geometry audit",
+    "mindmap": "Thirteen stable tree nodes and twelve parent-child relations retain content; down-layout overview projects above the 12px reading threshold"
+  },
+  "browser_checks": [
+    "Chinese timeline opened in the route/mind-map demo; dated gaps, alternating event cards and details readable",
+    "English timeline opened directly; long labels and details remain inside their measured cards",
+    "Chinese mind map opened in the route/mind-map demo; four branches and eight leaf topics readable in the down-layout overview",
+    "English mind map reading view and overview opened; branch order, labels and detail pages readable",
+    "Chooser existing timeline and tree entries continue to point at the shared backends and formats"
+  ],
+  "not_verified": [
+    "Native editor save/reopen for the new timeline and mind-map draw.io files",
+    "Mobile viewport and larger trees beyond declared limits",
+    "Calendar scheduling, causal proof, domain facts or user aesthetic approval"
+  ],
+  "artifacts": {
+    "timeline_models": ["assets/examples/29-timeline-cn.json", "assets/examples/29-timeline-en.json"],
+    "mindmap_models": ["assets/examples/04-mindmap-cn.json", "assets/examples/04-mindmap-en.json"],
+    "demo": "demos/route-mindmap/index.html"
+  }
+}

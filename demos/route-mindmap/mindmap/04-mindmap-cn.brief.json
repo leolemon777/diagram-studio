@@ -1,0 +1,73 @@
+{
+  "type": "tree",
+  "direction": "down",
+  "width": 1250,
+  "title": "社区学习改进 · 从问题到证据",
+  "subtitle": "把观察、机会、试验和复盘分开；分支是主题拆解，不是因果证明",
+  "eyebrow": "04 / KNOWLEDGE STRUCTURE",
+  "root": {
+    "id": "root",
+    "label": "学习体验改进",
+    "children": [
+      {
+        "id": "observe",
+        "label": "观察学习者",
+        "children": [
+          {
+            "id": "need",
+            "label": "需求与阻碍"
+          },
+          {
+            "id": "context",
+            "label": "场景与资源"
+          }
+        ]
+      },
+      {
+        "id": "frame",
+        "label": "界定机会",
+        "children": [
+          {
+            "id": "question",
+            "label": "待回答问题"
+          },
+          {
+            "id": "evidence",
+            "label": "已有证据"
+          }
+        ]
+      },
+      {
+        "id": "try",
+        "label": "小步试验",
+        "children": [
+          {
+            "id": "lesson",
+            "label": "课程改动"
+          },
+          {
+            "id": "support",
+            "label": "支持动作"
+          }
+        ]
+      },
+      {
+        "id": "review",
+        "label": "复盘证据",
+        "children": [
+          {
+            "id": "metric",
+            "label": "指标与口径"
+          },
+          {
+            "id": "decision",
+            "label": "下一步决定"
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "思维导图示例 · 输入内容为模拟假说，使用前需补充来源与验证方法",
+  "family": "关系与结构",
+  "diagram_name": "思维导图"
+}

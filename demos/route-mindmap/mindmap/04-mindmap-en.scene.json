@@ -1,0 +1,1047 @@
+{
+  "width": 2216,
+  "height": 900,
+  "theme": "light",
+  "palette": {
+    "bg": "#F1EFEB",
+    "panel": "#FEFDF9",
+    "ink": "#30302D",
+    "muted": "#6D6A63",
+    "line": "#D8D3C8",
+    "accent": "#AC6046",
+    "teal": "#67685E",
+    "amber": "#8C7964",
+    "red": "#554C46",
+    "tint": "#F0E4DA",
+    "tint2": "#ECECE5"
+  },
+  "nodes": [
+    {
+      "id": "root",
+      "x": 1006.0,
+      "y": 230.0,
+      "w": 220,
+      "h": 136,
+      "label": "Improve learning experience",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "check": true,
+      "_lines": [
+        [
+          "Improve",
+          22,
+          true,
+          "ink"
+        ],
+        [
+          "learning",
+          22,
+          true,
+          "ink"
+        ],
+        [
+          "experience",
+          22,
+          true,
+          "ink"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "text_margin": 20,
+      "stroke_width": 1.5
+    },
+    {
+      "id": "observe",
+      "x": 616.0,
+      "y": 442.0,
+      "w": 220,
+      "h": 104,
+      "label": "Observe learners",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "check": true,
+      "_lines": [
+        [
+          "Observe",
+          22,
+          true,
+          "ink"
+        ],
+        [
+          "learners",
+          22,
+          true,
+          "ink"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "text_margin": 20,
+      "stroke_width": 1.5
+    },
+    {
+      "id": "need",
+      "x": 96.0,
+      "y": 622.0,
+      "w": 220,
+      "h": 104,
+      "label": "Needs and friction",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "check": true,
+      "_lines": [
+        [
+          "Needs and",
+          22,
+          true,
+          "ink"
+        ],
+        [
+          "friction",
+          22,
+          true,
+          "ink"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "text_margin": 20,
+      "stroke_width": 1.5
+    },
+    {
+      "id": "context",
+      "x": 356.0,
+      "y": 622.0,
+      "w": 220,
+      "h": 104,
+      "label": "Context and resources",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "check": true,
+      "_lines": [
+        [
+          "Context and",
+          22,
+          true,
+          "ink"
+        ],
+        [
+          "resources",
+          22,
+          true,
+          "ink"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "text_margin": 20,
+      "stroke_width": 1.5
+    },
+    {
+      "id": "frame",
+      "x": 876.0,
+      "y": 442.0,
+      "w": 220,
+      "h": 104,
+      "label": "Frame opportunity",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "check": true,
+      "_lines": [
+        [
+          "Frame",
+          22,
+          true,
+          "ink"
+        ],
+        [
+          "opportunity",
+          22,
+          true,
+          "ink"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "text_margin": 20,
+      "stroke_width": 1.5
+    },
+    {
+      "id": "question",
+      "x": 616.0,
+      "y": 622.0,
+      "w": 220,
+      "h": 104,
+      "label": "Question to answer",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "check": true,
+      "_lines": [
+        [
+          "Question to",
+          22,
+          true,
+          "ink"
+        ],
+        [
+          "answer",
+          22,
+          true,
+          "ink"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "text_margin": 20,
+      "stroke_width": 1.5
+    },
+    {
+      "id": "evidence",
+      "x": 876.0,
+      "y": 622.0,
+      "w": 220,
+      "h": 136,
+      "label": "Evidence already available",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "check": true,
+      "_lines": [
+        [
+          "Evidence",
+          22,
+          true,
+          "ink"
+        ],
+        [
+          "already",
+          22,
+          true,
+          "ink"
+        ],
+        [
+          "available",
+          22,
+          true,
+          "ink"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "text_margin": 20,
+      "stroke_width": 1.5
+    },
+    {
+      "id": "try",
+      "x": 1136.0,
+      "y": 442.0,
+      "w": 220,
+      "h": 104,
+      "label": "Run a small experiment",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "check": true,
+      "_lines": [
+        [
+          "Run a small",
+          22,
+          true,
+          "ink"
+        ],
+        [
+          "experiment",
+          22,
+          true,
+          "ink"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "text_margin": 20,
+      "stroke_width": 1.5
+    },
+    {
+      "id": "lesson",
+      "x": 1136.0,
+      "y": 622.0,
+      "w": 220,
+      "h": 88,
+      "label": "Lesson change",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "check": true,
+      "_lines": [
+        [
+          "Lesson change",
+          22,
+          true,
+          "ink"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "text_margin": 20,
+      "stroke_width": 1.5
+    },
+    {
+      "id": "support",
+      "x": 1396.0,
+      "y": 622.0,
+      "w": 220,
+      "h": 88,
+      "label": "Support action",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "check": true,
+      "_lines": [
+        [
+          "Support action",
+          22,
+          true,
+          "ink"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "text_margin": 20,
+      "stroke_width": 1.5
+    },
+    {
+      "id": "review",
+      "x": 1396.0,
+      "y": 442.0,
+      "w": 220,
+      "h": 104,
+      "label": "Review evidence",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "check": true,
+      "_lines": [
+        [
+          "Review",
+          22,
+          true,
+          "ink"
+        ],
+        [
+          "evidence",
+          22,
+          true,
+          "ink"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "text_margin": 20,
+      "stroke_width": 1.5
+    },
+    {
+      "id": "metric",
+      "x": 1656.0,
+      "y": 622.0,
+      "w": 220,
+      "h": 104,
+      "label": "Metric and definition",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "check": true,
+      "_lines": [
+        [
+          "Metric and",
+          22,
+          true,
+          "ink"
+        ],
+        [
+          "definition",
+          22,
+          true,
+          "ink"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "text_margin": 20,
+      "stroke_width": 1.5
+    },
+    {
+      "id": "decision",
+      "x": 1916.0,
+      "y": 622.0,
+      "w": 220,
+      "h": 104,
+      "label": "Next-step decision",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "check": true,
+      "_lines": [
+        [
+          "Next-step",
+          22,
+          true,
+          "ink"
+        ],
+        [
+          "decision",
+          22,
+          true,
+          "ink"
+        ]
+      ],
+      "font_family": "Heiti TC",
+      "text_margin": 20,
+      "stroke_width": 1.5
+    },
+    {
+      "id": "_v14",
+      "x": 64,
+      "y": 34,
+      "w": 2088,
+      "h": 22,
+      "label": "04 / KNOWLEDGE STRUCTURE",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 14,
+      "align": "left",
+      "check": false,
+      "font_family": "Heiti TC"
+    },
+    {
+      "id": "_v15",
+      "x": 64,
+      "y": 74,
+      "w": 2088,
+      "h": 49,
+      "label": "Community learning · from question to evidence",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 36,
+      "align": "left",
+      "check": false,
+      "font_family": "Heiti TC",
+      "_lines": [
+        [
+          "Community learning · from question to evidence",
+          36,
+          true,
+          "ink"
+        ]
+      ]
+    },
+    {
+      "id": "_v16",
+      "x": 64,
+      "y": 131,
+      "w": 2088,
+      "h": 24,
+      "label": "Keep observation, opportunity, experiment and review separate; branches are themes, not proof of causality",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "left",
+      "check": false,
+      "font_family": "Heiti TC",
+      "_lines": [
+        [
+          "Keep observation, opportunity, experiment and review separate; branches are themes, not proof of causality",
+          17,
+          false,
+          "muted"
+        ]
+      ]
+    },
+    {
+      "id": "_v17",
+      "x": 64,
+      "y": 840,
+      "w": 2088,
+      "h": 1,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "line",
+      "stroke": "none",
+      "check": false
+    },
+    {
+      "id": "_v18",
+      "x": 64,
+      "y": 856,
+      "w": 2088,
+      "h": 20,
+      "label": "Mind-map example · simulated hypotheses need sources and a review method before use",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false,
+      "font_family": "Heiti TC",
+      "_lines": [
+        [
+          "Mind-map example · simulated hypotheses need sources and a review method before use",
+          14,
+          false,
+          "muted"
+        ]
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "root",
+      "target": "observe",
+      "label": "",
+      "points": [
+        [
+          1116.0,
+          366.0
+        ],
+        [
+          1116.0,
+          420.0
+        ],
+        [
+          726.0,
+          420.0
+        ],
+        [
+          726.0,
+          442.0
+        ]
+      ],
+      "source_port": "bottom",
+      "target_port": "top",
+      "tone": "muted",
+      "width": 2,
+      "dashed": false,
+      "arrow": false,
+      "_label_box": null,
+      "_label_lines": null,
+      "_label_font": 15
+    },
+    {
+      "source": "observe",
+      "target": "need",
+      "label": "",
+      "points": [
+        [
+          726.0,
+          546.0
+        ],
+        [
+          726.0,
+          594.0
+        ],
+        [
+          206.0,
+          594.0
+        ],
+        [
+          206.0,
+          622.0
+        ]
+      ],
+      "source_port": "bottom",
+      "target_port": "top",
+      "tone": "muted",
+      "width": 2,
+      "dashed": false,
+      "arrow": false,
+      "_label_box": null,
+      "_label_lines": null,
+      "_label_font": 15
+    },
+    {
+      "source": "observe",
+      "target": "context",
+      "label": "",
+      "points": [
+        [
+          726.0,
+          546.0
+        ],
+        [
+          726.0,
+          588.0
+        ],
+        [
+          466.0,
+          588.0
+        ],
+        [
+          466.0,
+          622.0
+        ]
+      ],
+      "source_port": "bottom",
+      "target_port": "top",
+      "tone": "muted",
+      "width": 2,
+      "dashed": false,
+      "arrow": false,
+      "_label_box": null,
+      "_label_lines": null,
+      "_label_font": 15
+    },
+    {
+      "source": "root",
+      "target": "frame",
+      "label": "",
+      "points": [
+        [
+          1116.0,
+          366.0
+        ],
+        [
+          1116.0,
+          402.0
+        ],
+        [
+          986.0,
+          402.0
+        ],
+        [
+          986.0,
+          442.0
+        ]
+      ],
+      "source_port": "bottom",
+      "target_port": "top",
+      "tone": "muted",
+      "width": 2,
+      "dashed": false,
+      "arrow": false,
+      "_label_box": null,
+      "_label_lines": null,
+      "_label_font": 15
+    },
+    {
+      "source": "frame",
+      "target": "question",
+      "label": "",
+      "points": [
+        [
+          986.0,
+          546.0
+        ],
+        [
+          986.0,
+          600.0
+        ],
+        [
+          726.0,
+          600.0
+        ],
+        [
+          726.0,
+          622.0
+        ]
+      ],
+      "source_port": "bottom",
+      "target_port": "top",
+      "tone": "muted",
+      "width": 2,
+      "dashed": false,
+      "arrow": false,
+      "_label_box": null,
+      "_label_lines": null,
+      "_label_font": 15
+    },
+    {
+      "source": "frame",
+      "target": "evidence",
+      "label": "",
+      "points": [
+        [
+          986.0,
+          546.0
+        ],
+        [
+          986.0,
+          622.0
+        ]
+      ],
+      "source_port": "bottom",
+      "target_port": "top",
+      "tone": "muted",
+      "width": 2,
+      "dashed": false,
+      "arrow": false,
+      "_label_box": null,
+      "_label_lines": null,
+      "_label_font": 15
+    },
+    {
+      "source": "root",
+      "target": "try",
+      "label": "",
+      "points": [
+        [
+          1116.0,
+          366.0
+        ],
+        [
+          1116.0,
+          408.0
+        ],
+        [
+          1246.0,
+          408.0
+        ],
+        [
+          1246.0,
+          442.0
+        ]
+      ],
+      "source_port": "bottom",
+      "target_port": "top",
+      "tone": "muted",
+      "width": 2,
+      "dashed": false,
+      "arrow": false,
+      "_label_box": null,
+      "_label_lines": null,
+      "_label_font": 15
+    },
+    {
+      "source": "try",
+      "target": "lesson",
+      "label": "",
+      "points": [
+        [
+          1246.0,
+          546.0
+        ],
+        [
+          1246.0,
+          622.0
+        ]
+      ],
+      "source_port": "bottom",
+      "target_port": "top",
+      "tone": "muted",
+      "width": 2,
+      "dashed": false,
+      "arrow": false,
+      "_label_box": null,
+      "_label_lines": null,
+      "_label_font": 15
+    },
+    {
+      "source": "try",
+      "target": "support",
+      "label": "",
+      "points": [
+        [
+          1246.0,
+          546.0
+        ],
+        [
+          1246.0,
+          600.0
+        ],
+        [
+          1506.0,
+          600.0
+        ],
+        [
+          1506.0,
+          622.0
+        ]
+      ],
+      "source_port": "bottom",
+      "target_port": "top",
+      "tone": "muted",
+      "width": 2,
+      "dashed": false,
+      "arrow": false,
+      "_label_box": null,
+      "_label_lines": null,
+      "_label_font": 15
+    },
+    {
+      "source": "root",
+      "target": "review",
+      "label": "",
+      "points": [
+        [
+          1116.0,
+          366.0
+        ],
+        [
+          1116.0,
+          414.0
+        ],
+        [
+          1506.0,
+          414.0
+        ],
+        [
+          1506.0,
+          442.0
+        ]
+      ],
+      "source_port": "bottom",
+      "target_port": "top",
+      "tone": "muted",
+      "width": 2,
+      "dashed": false,
+      "arrow": false,
+      "_label_box": null,
+      "_label_lines": null,
+      "_label_font": 15
+    },
+    {
+      "source": "review",
+      "target": "metric",
+      "label": "",
+      "points": [
+        [
+          1506.0,
+          546.0
+        ],
+        [
+          1506.0,
+          588.0
+        ],
+        [
+          1766.0,
+          588.0
+        ],
+        [
+          1766.0,
+          622.0
+        ]
+      ],
+      "source_port": "bottom",
+      "target_port": "top",
+      "tone": "muted",
+      "width": 2,
+      "dashed": false,
+      "arrow": false,
+      "_label_box": null,
+      "_label_lines": null,
+      "_label_font": 15
+    },
+    {
+      "source": "review",
+      "target": "decision",
+      "label": "",
+      "points": [
+        [
+          1506.0,
+          546.0
+        ],
+        [
+          1506.0,
+          582.0
+        ],
+        [
+          2026.0,
+          582.0
+        ],
+        [
+          2026.0,
+          622.0
+        ]
+      ],
+      "source_port": "bottom",
+      "target_port": "top",
+      "tone": "muted",
+      "width": 2,
+      "dashed": false,
+      "arrow": false,
+      "_label_box": null,
+      "_label_lines": null,
+      "_label_font": 15
+    }
+  ],
+  "meta": {
+    "adaptive_layout": {
+      "version": 39,
+      "strategy": "down",
+      "node_width": 220,
+      "candidates": [
+        {
+          "score": 93.57,
+          "crossings": 0,
+          "orientation": "down",
+          "node_width": 220,
+          "spacing": 76,
+          "issues": []
+        },
+        {
+          "score": 127.24,
+          "crossings": 0,
+          "orientation": "down",
+          "node_width": 280,
+          "spacing": 76,
+          "issues": []
+        },
+        {
+          "score": 158.41,
+          "crossings": 0,
+          "orientation": "down",
+          "node_width": 360,
+          "spacing": 76,
+          "issues": []
+        },
+        {
+          "score": 94.63,
+          "crossings": 0,
+          "orientation": "down",
+          "node_width": 220,
+          "spacing": 100,
+          "issues": []
+        },
+        {
+          "score": 128.54,
+          "crossings": 0,
+          "orientation": "down",
+          "node_width": 280,
+          "spacing": 100,
+          "issues": []
+        },
+        {
+          "score": 160.01,
+          "crossings": 0,
+          "orientation": "down",
+          "node_width": 360,
+          "spacing": 100,
+          "issues": []
+        },
+        {
+          "score": 100.3,
+          "crossings": 0,
+          "orientation": "down",
+          "node_width": 220,
+          "spacing": 168,
+          "issues": []
+        },
+        {
+          "score": 132.2,
+          "crossings": 0,
+          "orientation": "down",
+          "node_width": 280,
+          "spacing": 168,
+          "issues": []
+        },
+        {
+          "score": 164.54,
+          "crossings": 0,
+          "orientation": "down",
+          "node_width": 360,
+          "spacing": 168,
+          "issues": []
+        }
+      ],
+      "selected_score": 93.57,
+      "crossings": 0,
+      "font_measurement": "font-glyph-metrics",
+      "font_family": "Heiti TC",
+      "source_node_ids": [
+        "root",
+        "observe",
+        "need",
+        "context",
+        "frame",
+        "question",
+        "evidence",
+        "try",
+        "lesson",
+        "support",
+        "review",
+        "metric",
+        "decision"
+      ],
+      "source_edges": [
+        {
+          "from": "root",
+          "to": "observe",
+          "arrow": false
+        },
+        {
+          "from": "observe",
+          "to": "need",
+          "arrow": false
+        },
+        {
+          "from": "observe",
+          "to": "context",
+          "arrow": false
+        },
+        {
+          "from": "root",
+          "to": "frame",
+          "arrow": false
+        },
+        {
+          "from": "frame",
+          "to": "question",
+          "arrow": false
+        },
+        {
+          "from": "frame",
+          "to": "evidence",
+          "arrow": false
+        },
+        {
+          "from": "root",
+          "to": "try",
+          "arrow": false
+        },
+        {
+          "from": "try",
+          "to": "lesson",
+          "arrow": false
+        },
+        {
+          "from": "try",
+          "to": "support",
+          "arrow": false
+        },
+        {
+          "from": "root",
+          "to": "review",
+          "arrow": false
+        },
+        {
+          "from": "review",
+          "to": "metric",
+          "arrow": false
+        },
+        {
+          "from": "review",
+          "to": "decision",
+          "arrow": false
+        }
+      ],
+      "overview_scale_at_1600": 0.7,
+      "detail_pages_recommended": false,
+      "rendered_visual_check": "not-run",
+      "manual_visual_review": "not-run",
+      "readability": {
+        "reference_viewport": [
+          1600,
+          900
+        ],
+        "available_canvas": [
+          1552,
+          720
+        ],
+        "minimum_content_font_px": 22,
+        "projected_minimum_font_px": 15.41,
+        "review_threshold_px": 12,
+        "status": "within-target",
+        "scope": "projected content text size at reference viewport; not visual acceptance"
+      }
+    }
+  },
+  "assumptions": []
+}

@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "protocol_version": "diagram-studio/delivery-1",
+  "version_id": "v-8ff9b999345f",
+  "source_name": "04-mindmap-cn",
+  "input_sha256": "8ff9b999345f6f5a716db8a5872d37aa4c8ad2f3135bcbdabc791bcd90cf05b2",
+  "theme": "light",
+  "checks": {
+    "geometry": {
+      "status": "passed",
+      "warnings": []
+    },
+    "composition": {
+      "status": "within-target",
+      "findings": []
+    },
+    "content_integrity": {
+      "status": "passed",
+      "source_ids": 13,
+      "source_relations": 12,
+      "source_texts": 13,
+      "missing_ids": [],
+      "missing_relations": [],
+      "missing_text": [],
+      "scope": "stable source IDs, explicit relation endpoints and source display text; not domain correctness"
+    },
+    "browser_text_bounds": {
+      "status": "not-run"
+    },
+    "manual_visual_review": {
+      "status": "not-run"
+    },
+    "native_editor": {
+      "status": "not-run"
+    }
+  },
+  "files": {
+    "04-mindmap-cn-p01.qa.json": "5d8a1e3b820e145abe98b66e0aa0d46628206663a2980ab2f03e64a4c8c81f9d",
+    "04-mindmap-cn-p01.svg": "173432e4462e9a3e40640dfffaaa90a29e44416bb221a947e93635408a7634b0",
+    "04-mindmap-cn-p02.qa.json": "3b32fbe458bacc8597b3871ad067cdd0b62c087e9330548f89b7cb43e3b0e511",
+    "04-mindmap-cn-p02.svg": "2815dab061cd3a07099c3c9c416bcdacd3bad3591e595ac8eeeca856a618b6f1",
+    "04-mindmap-cn-p03.qa.json": "bfe355badd50f7d998d065eddc2098674312ca05ef953c788848b00ade74ff1b",
+    "04-mindmap-cn-p03.svg": "522ca1393532d7b7af6fbf4f49728818fd322ddbe923a4e456f60262c115c254",
+    "04-mindmap-cn-p04.qa.json": "bfe355badd50f7d998d065eddc2098674312ca05ef953c788848b00ade74ff1b",
+    "04-mindmap-cn-p04.svg": "10228910d9e99922f3add0550b9c0c42bfdbba7324bcddf56f2783f177c0bc57",
+    "04-mindmap-cn-p05.qa.json": "bfe355badd50f7d998d065eddc2098674312ca05ef953c788848b00ade74ff1b",
+    "04-mindmap-cn-p05.svg": "13a4ab0f4694b8c0e8aed9fa658a6c607606d34cee6ecd56fefc00ceb418d979",
+    "04-mindmap-cn-reading.drawio": "16e7754fadc21df60e9802ea24ee6bacf039fabd682d51397a016ff4d36d4791",
+    "04-mindmap-cn-reading.json": "9eac04c6f96c97c3ae8c2022cac15c0b4bc22b43022762fc3743899f90f86753",
+    "04-mindmap-cn.brief.json": "e33d26d16d88dc0ad3d22491966217d3284b32de57cecdcebec5410af9053fd4",
+    "04-mindmap-cn.drawio": "f623d5e634a6356798957abcc83dc399dc6e23e3d0836e9d6374141fa07db765",
+    "04-mindmap-cn.html": "5ee5302f8ce6bfd893ba159fa8ff5082ad91fa19e97dd5691959e76f17572bef",
+    "04-mindmap-cn.qa.json": "ea7549e95d9d30ff3f9be98da1afec3f1fc89ab6d4e36789d45bafd92cf68d25",
+    "04-mindmap-cn.scene.json": "3b8e94c101eafd5f910259fc6e3df6f9c3cee5ba3f63b6a5273a2e293410cd74",
+    "04-mindmap-cn.svg": "c26c59f8d1ad38237a02cc20261e6402856710501012b27074b7acb3ba0fb4ab",
+    "adaptive_reader.js": "9bc0a1eb6bfcf6bc88f5546bab128557ab8cc5daaee9887bcfa3e4d23b426fcf",
+    "browser_quality.js": "e02da63376abe62d68f626d97701d2aacf761f59e6312a420643eab270339e1b"
+  },
+  "delivery_scope": "Generation, semantic content checks and QA finish before replacement. Individual files are replaced; promotion is not a multi-file atomic transaction."
+}

@@ -1,0 +1,14 @@
+{
+  "type": "timeline",
+  "title": "Community programme · dated milestones",
+  "subtitle": "Place events on actual calendar days; gaps show time and are not an even schedule",
+  "eyebrow": "29 / TIMELINE",
+  "footer": "Original cross-industry example · dates, activities and hypotheses are simulated inputs",
+  "assumptions": ["Original teaching content, not a project commitment"],
+  "items": [
+    {"date": "2026-10-01", "label": "Confirm participants", "detail": "Name community, learners and collaborators"},
+    {"date": "2026-10-09", "label": "Synthesize observations", "detail": "Trace interviews and field notes to sources"},
+    {"date": "2026-10-24", "label": "Run a small experiment", "detail": "Record participation, completion and friction"},
+    {"date": "2026-11-12", "label": "Review next step", "detail": "Check evidence, disagreement and follow-up action"}
+  ]
+}

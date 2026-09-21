@@ -99,6 +99,11 @@ def expected_content(data):
                     texts.add(_text(task[key]))
             for parent in task.get("depends", []):
                 relations.add((parent, task.get("id")))
+    elif kind == "timeline":
+        for item in data.get("items", []):
+            for key in ("date", "label", "detail"):
+                if _text(item.get(key)):
+                    texts.add(_text(item[key]))
     elif kind == "storymap":
         for story in data.get("stories", []):
             if story.get("id"):

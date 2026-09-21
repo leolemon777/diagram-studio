@@ -1,0 +1,193 @@
+{
+  "nodes": {
+    "root": [
+      1
+    ],
+    "observe": [
+      1
+    ],
+    "need": [
+      1
+    ],
+    "context": [
+      1
+    ],
+    "frame": [
+      1
+    ],
+    "question": [
+      1
+    ],
+    "evidence": [
+      1
+    ],
+    "try": [
+      1
+    ],
+    "lesson": [
+      2
+    ],
+    "support": [
+      2
+    ],
+    "review": [
+      2
+    ],
+    "metric": [
+      2
+    ],
+    "decision": [
+      2
+    ]
+  },
+  "edges": [
+    {
+      "index": 0,
+      "from": "root",
+      "to": "observe",
+      "label": "",
+      "pages": [
+        3
+      ]
+    },
+    {
+      "index": 1,
+      "from": "observe",
+      "to": "need",
+      "label": "",
+      "pages": [
+        3
+      ]
+    },
+    {
+      "index": 2,
+      "from": "observe",
+      "to": "context",
+      "label": "",
+      "pages": [
+        3
+      ]
+    },
+    {
+      "index": 3,
+      "from": "root",
+      "to": "frame",
+      "label": "",
+      "pages": [
+        3
+      ]
+    },
+    {
+      "index": 4,
+      "from": "frame",
+      "to": "question",
+      "label": "",
+      "pages": [
+        4
+      ]
+    },
+    {
+      "index": 5,
+      "from": "frame",
+      "to": "evidence",
+      "label": "",
+      "pages": [
+        4
+      ]
+    },
+    {
+      "index": 6,
+      "from": "root",
+      "to": "try",
+      "label": "",
+      "pages": [
+        4
+      ]
+    },
+    {
+      "index": 7,
+      "from": "try",
+      "to": "lesson",
+      "label": "",
+      "pages": [
+        4
+      ]
+    },
+    {
+      "index": 8,
+      "from": "try",
+      "to": "support",
+      "label": "",
+      "pages": [
+        5
+      ]
+    },
+    {
+      "index": 9,
+      "from": "root",
+      "to": "review",
+      "label": "",
+      "pages": [
+        5
+      ]
+    },
+    {
+      "index": 10,
+      "from": "review",
+      "to": "metric",
+      "label": "",
+      "pages": [
+        5
+      ]
+    },
+    {
+      "index": 11,
+      "from": "review",
+      "to": "decision",
+      "label": "",
+      "pages": [
+        5
+      ]
+    }
+  ],
+  "local_views": [],
+  "source_node_count": 13,
+  "source_edge_count": 12,
+  "pages": [
+    {
+      "file": "04-mindmap-cn-p01.svg",
+      "title": "P01 对象详解",
+      "width": 1600,
+      "height": 900,
+      "minimum_font": 14
+    },
+    {
+      "file": "04-mindmap-cn-p02.svg",
+      "title": "P02 对象详解",
+      "width": 1600,
+      "height": 900,
+      "minimum_font": 14
+    },
+    {
+      "file": "04-mindmap-cn-p03.svg",
+      "title": "P03 完整关系索引",
+      "width": 1600,
+      "height": 900,
+      "minimum_font": 14
+    },
+    {
+      "file": "04-mindmap-cn-p04.svg",
+      "title": "P04 完整关系索引",
+      "width": 1600,
+      "height": 900,
+      "minimum_font": 14
+    },
+    {
+      "file": "04-mindmap-cn-p05.svg",
+      "title": "P05 完整关系索引",
+      "width": 1600,
+      "height": 900,
+      "minimum_font": 14
+    }
+  ]
+}

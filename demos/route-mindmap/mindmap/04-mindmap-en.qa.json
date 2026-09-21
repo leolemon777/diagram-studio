@@ -1,0 +1,199 @@
+{
+  "errors": [],
+  "warnings": [],
+  "nodes": 18,
+  "edges": 12,
+  "scope": "geometry, text estimate, axis-aligned edge/node crossings; not semantic or visual acceptance",
+  "font_measurement": "font-glyph-metrics",
+  "rendered_visual_check": "not-run",
+  "manual_visual_review": "not-run",
+  "adaptive_layout": {
+    "version": 39,
+    "strategy": "down",
+    "node_width": 220,
+    "candidates": [
+      {
+        "score": 93.57,
+        "crossings": 0,
+        "orientation": "down",
+        "node_width": 220,
+        "spacing": 76,
+        "issues": []
+      },
+      {
+        "score": 127.24,
+        "crossings": 0,
+        "orientation": "down",
+        "node_width": 280,
+        "spacing": 76,
+        "issues": []
+      },
+      {
+        "score": 158.41,
+        "crossings": 0,
+        "orientation": "down",
+        "node_width": 360,
+        "spacing": 76,
+        "issues": []
+      },
+      {
+        "score": 94.63,
+        "crossings": 0,
+        "orientation": "down",
+        "node_width": 220,
+        "spacing": 100,
+        "issues": []
+      },
+      {
+        "score": 128.54,
+        "crossings": 0,
+        "orientation": "down",
+        "node_width": 280,
+        "spacing": 100,
+        "issues": []
+      },
+      {
+        "score": 160.01,
+        "crossings": 0,
+        "orientation": "down",
+        "node_width": 360,
+        "spacing": 100,
+        "issues": []
+      },
+      {
+        "score": 100.3,
+        "crossings": 0,
+        "orientation": "down",
+        "node_width": 220,
+        "spacing": 168,
+        "issues": []
+      },
+      {
+        "score": 132.2,
+        "crossings": 0,
+        "orientation": "down",
+        "node_width": 280,
+        "spacing": 168,
+        "issues": []
+      },
+      {
+        "score": 164.54,
+        "crossings": 0,
+        "orientation": "down",
+        "node_width": 360,
+        "spacing": 168,
+        "issues": []
+      }
+    ],
+    "selected_score": 93.57,
+    "crossings": 0,
+    "font_measurement": "font-glyph-metrics",
+    "font_family": "Heiti TC",
+    "source_node_ids": [
+      "root",
+      "observe",
+      "need",
+      "context",
+      "frame",
+      "question",
+      "evidence",
+      "try",
+      "lesson",
+      "support",
+      "review",
+      "metric",
+      "decision"
+    ],
+    "source_edges": [
+      {
+        "from": "root",
+        "to": "observe",
+        "arrow": false
+      },
+      {
+        "from": "observe",
+        "to": "need",
+        "arrow": false
+      },
+      {
+        "from": "observe",
+        "to": "context",
+        "arrow": false
+      },
+      {
+        "from": "root",
+        "to": "frame",
+        "arrow": false
+      },
+      {
+        "from": "frame",
+        "to": "question",
+        "arrow": false
+      },
+      {
+        "from": "frame",
+        "to": "evidence",
+        "arrow": false
+      },
+      {
+        "from": "root",
+        "to": "try",
+        "arrow": false
+      },
+      {
+        "from": "try",
+        "to": "lesson",
+        "arrow": false
+      },
+      {
+        "from": "try",
+        "to": "support",
+        "arrow": false
+      },
+      {
+        "from": "root",
+        "to": "review",
+        "arrow": false
+      },
+      {
+        "from": "review",
+        "to": "metric",
+        "arrow": false
+      },
+      {
+        "from": "review",
+        "to": "decision",
+        "arrow": false
+      }
+    ],
+    "overview_scale_at_1600": 0.7,
+    "detail_pages_recommended": false,
+    "rendered_visual_check": "not-run",
+    "manual_visual_review": "not-run",
+    "readability": {
+      "reference_viewport": [
+        1600,
+        900
+      ],
+      "available_canvas": [
+        1552,
+        720
+      ],
+      "minimum_content_font_px": 22,
+      "projected_minimum_font_px": 15.41,
+      "review_threshold_px": 12,
+      "status": "within-target",
+      "scope": "projected content text size at reference viewport; not visual acceptance"
+    }
+  },
+  "content_integrity": {
+    "status": "passed",
+    "source_ids": 13,
+    "source_relations": 12,
+    "source_texts": 13,
+    "missing_ids": [],
+    "missing_relations": [],
+    "missing_text": [],
+    "scope": "stable source IDs, explicit relation endpoints and source display text; not domain correctness"
+  }
+}

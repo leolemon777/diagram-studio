@@ -1,0 +1,21 @@
+{
+  "type": "tree",
+  "direction": "down",
+  "width": 1350,
+  "title": "Community learning · from question to evidence",
+  "subtitle": "Keep observation, opportunity, experiment and review separate; branches are themes, not proof of causality",
+  "eyebrow": "04 / KNOWLEDGE STRUCTURE",
+  "root": {
+    "id": "root",
+    "label": "Improve learning experience",
+    "children": [
+      {"id": "observe", "label": "Observe learners", "children": [{"id": "need", "label": "Needs and friction"}, {"id": "context", "label": "Context and resources"}]},
+      {"id": "frame", "label": "Frame opportunity", "children": [{"id": "question", "label": "Question to answer"}, {"id": "evidence", "label": "Evidence already available"}]},
+      {"id": "try", "label": "Run a small experiment", "children": [{"id": "lesson", "label": "Lesson change"}, {"id": "support", "label": "Support action"}]},
+      {"id": "review", "label": "Review evidence", "children": [{"id": "metric", "label": "Metric and definition"}, {"id": "decision", "label": "Next-step decision"}]}
+    ]
+  },
+  "footer": "Mind-map example · simulated hypotheses need sources and a review method before use",
+  "family": "Structure and relations",
+  "diagram_name": "Mind map"
+}

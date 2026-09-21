@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "version": "v49",
+  "version": "v50",
   "updated": "2026-09-20",
   "purpose": "Single source for chooser labels, backend capability, delivery formats and acceptance evidence.",
   "status_vocabulary": {
@@ -26,8 +26,8 @@
           "formats": ["svg", "drawio", "scene.json", "qa.json", "html"],
           "layout_limits": {"zh": "最多六层；高分支或长文拆成局部详图。", "en": "Up to six levels; split high-branching or long-text trees into detail views."},
           "languages": ["zh", "en"],
-          "examples": ["assets/examples/03-organization.json", "assets/examples/04-mindmap.json"],
-          "evidence": {"level": "manual_visual_review", "reference": "assets/verification-status.json", "detail": {"zh": "代表性结构图已生成并查看；完整类型集合仍需逐项复核。", "en": "Representative structural outputs were generated and viewed; the full type set still needs item-by-item review."}},
+          "examples": ["assets/examples/04-mindmap-cn.json", "assets/examples/04-mindmap-en.json"],
+          "evidence": {"level": "manual_visual_review", "reference": "assets/v50-route-mindmap-evidence.json", "detail": {"zh": "中英思维导图通过树关系、内容保留、自适应下排总览和阅读页检查。", "en": "Chinese and English mind maps pass tree relations, content retention, adaptive down-layout overview and reading-view checks."}},
           "scope": {"zh": "自适应树布局与稳定 ID；不自动推断组织事实。", "en": "Adaptive tree layout with stable IDs; organizational facts are never inferred."}
         },
         {
@@ -124,8 +124,8 @@
           "formats": ["svg", "drawio", "scene.json", "qa.json", "html"],
           "layout_limits": {"zh": "日期必须递增且唯一；日期比例不能被装饰性间距替代。", "en": "Dates must be unique and increasing; decorative spacing cannot replace date scale."},
           "languages": ["zh", "en"],
-          "examples": ["assets/examples/29-timeline.json"],
-          "evidence": {"level": "generated_with_semantic_validation", "reference": "assets/verification-status.json", "detail": {"zh": "时间线布局和日期约束已在共享额外布局中实现，尚未完成独立浏览器人工验收。", "en": "Timeline layout and date constraints exist in the shared extra layouts; independent browser review is pending."}},
+          "examples": ["assets/examples/29-timeline-cn.json", "assets/examples/29-timeline-en.json"],
+          "evidence": {"level": "manual_visual_review", "reference": "assets/v50-route-mindmap-evidence.json", "detail": {"zh": "中英时间线通过日期递增、真实日间距、长英文卡片高度、内容保留和浏览器查看。", "en": "Chinese and English timelines pass increasing dates, actual day spacing, measured long-English card heights, content retention and browser review."}},
           "scope": {"zh": "表达真实日期顺序；不把方向性路线图宣称为日历排期。", "en": "Expresses real date order; a directional roadmap is not called a calendar schedule."}
         },
         {

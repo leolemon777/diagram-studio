@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "protocol_version": "diagram-studio/delivery-1",
+  "version_id": "v-87a93a38d940",
+  "source_name": "29-timeline-en",
+  "input_sha256": "87a93a38d9403a5d13abf1215a22ddcb65ab54312f825dc74190626f19344ebc",
+  "theme": "light",
+  "checks": {
+    "geometry": {
+      "status": "passed",
+      "warnings": []
+    },
+    "composition": {
+      "status": "not-run",
+      "findings": []
+    },
+    "content_integrity": {
+      "status": "passed",
+      "source_ids": 0,
+      "source_relations": 0,
+      "source_texts": 12,
+      "missing_ids": [],
+      "missing_relations": [],
+      "missing_text": [],
+      "scope": "stable source IDs, explicit relation endpoints and source display text; not domain correctness"
+    },
+    "browser_text_bounds": {
+      "status": "not-run"
+    },
+    "manual_visual_review": {
+      "status": "not-run"
+    },
+    "native_editor": {
+      "status": "not-run"
+    }
+  },
+  "files": {
+    "29-timeline-en.brief.json": "c536fa16795cf3552669a3ed250e4f3e38f0a30832d958f34783153944130655",
+    "29-timeline-en.drawio": "dc34c88c3ca700f8d9ada75df2ea55309fd7b8fbaa0c5c159c638e6b667b5617",
+    "29-timeline-en.qa.json": "37cf7d0c06507ccd2e0ea7616b86704f483a1647ed664e851453d9110a10faf3",
+    "29-timeline-en.scene.json": "5e112c1bbb6f0a5b6dac76b91b978c1286bad12ef388d9b94ecdd01290f04e98",
+    "29-timeline-en.svg": "4d86e50fb97b1c3bdf2c77514071e3ea23bb9051afaa5d7c89a48a44956df271"
+  },
+  "delivery_scope": "Generation, semantic content checks and QA finish before replacement. Individual files are replaced; promotion is not a multi-file atomic transaction."
+}

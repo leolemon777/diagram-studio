@@ -1,0 +1,433 @@
+{
+  "width": 1600,
+  "height": 900,
+  "theme": "light",
+  "palette": {
+    "bg": "#F1EFEB",
+    "panel": "#FEFDF9",
+    "ink": "#30302D",
+    "muted": "#6D6A63",
+    "line": "#D8D3C8",
+    "accent": "#AC6046",
+    "teal": "#67685E",
+    "amber": "#8C7964",
+    "red": "#554C46",
+    "tint": "#F0E4DA",
+    "tint2": "#ECECE5"
+  },
+  "nodes": [
+    {
+      "id": "_v1",
+      "x": 123.0,
+      "y": 493,
+      "w": 14,
+      "h": 14,
+      "label": "",
+      "detail": "",
+      "kind": "ellipse",
+      "tone": "accent",
+      "fill": "accent",
+      "stroke": "panel",
+      "check": false
+    },
+    {
+      "id": "_v2",
+      "x": 64,
+      "y": 250,
+      "w": 250,
+      "h": 34,
+      "label": "2026-10-01",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 17,
+      "align": "center",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v3",
+      "x": 64,
+      "y": 293,
+      "w": 250,
+      "h": 72,
+      "label": "Confirm participants",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 22,
+      "align": "center",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v4",
+      "x": 64,
+      "y": 373,
+      "w": 250,
+      "h": 96,
+      "label": "Name community, learners and collaborators",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 16,
+      "align": "center",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v5",
+      "x": 378.2380952380952,
+      "y": 493,
+      "w": 14,
+      "h": 14,
+      "label": "",
+      "detail": "",
+      "kind": "ellipse",
+      "tone": "accent",
+      "fill": "accent",
+      "stroke": "panel",
+      "check": false
+    },
+    {
+      "id": "_v6",
+      "x": 260.2380952380952,
+      "y": 564,
+      "w": 250,
+      "h": 34,
+      "label": "2026-10-09",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 17,
+      "align": "center",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v7",
+      "x": 260.2380952380952,
+      "y": 607,
+      "w": 250,
+      "h": 72,
+      "label": "Synthesize observations",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 22,
+      "align": "center",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v8",
+      "x": 260.2380952380952,
+      "y": 687,
+      "w": 250,
+      "h": 96,
+      "label": "Trace interviews and field notes to sources",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 16,
+      "align": "center",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v9",
+      "x": 856.8095238095239,
+      "y": 493,
+      "w": 14,
+      "h": 14,
+      "label": "",
+      "detail": "",
+      "kind": "ellipse",
+      "tone": "accent",
+      "fill": "accent",
+      "stroke": "panel",
+      "check": false
+    },
+    {
+      "id": "_v10",
+      "x": 738.8095238095239,
+      "y": 250,
+      "w": 250,
+      "h": 34,
+      "label": "2026-10-24",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 17,
+      "align": "center",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v11",
+      "x": 738.8095238095239,
+      "y": 293,
+      "w": 250,
+      "h": 72,
+      "label": "Run a small experiment",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 22,
+      "align": "center",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v12",
+      "x": 738.8095238095239,
+      "y": 373,
+      "w": 250,
+      "h": 96,
+      "label": "Record participation, completion and friction",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 16,
+      "align": "center",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v13",
+      "x": 1463.0,
+      "y": 493,
+      "w": 14,
+      "h": 14,
+      "label": "",
+      "detail": "",
+      "kind": "ellipse",
+      "tone": "accent",
+      "fill": "accent",
+      "stroke": "panel",
+      "check": false
+    },
+    {
+      "id": "_v14",
+      "x": 1286,
+      "y": 564,
+      "w": 250,
+      "h": 34,
+      "label": "2026-11-12",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 17,
+      "align": "center",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v15",
+      "x": 1286,
+      "y": 607,
+      "w": 250,
+      "h": 72,
+      "label": "Review next step",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 22,
+      "align": "center",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v16",
+      "x": 1286,
+      "y": 687,
+      "w": 250,
+      "h": 96,
+      "label": "Check evidence, disagreement and follow-up action",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 16,
+      "align": "center",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v17",
+      "x": 64,
+      "y": 34,
+      "w": 1472,
+      "h": 22,
+      "label": "29 / TIMELINE",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v18",
+      "x": 64,
+      "y": 69,
+      "w": 1472,
+      "h": 56,
+      "label": "Community programme · dated milestones",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 36,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v19",
+      "x": 64,
+      "y": 130,
+      "w": 1472,
+      "h": 38,
+      "label": "Place events on actual calendar days; gaps show time and are not an even schedule",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v20",
+      "x": 64,
+      "y": 837,
+      "w": 1472,
+      "h": 1,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "line",
+      "stroke": "none",
+      "check": false
+    },
+    {
+      "id": "_v21",
+      "x": 64,
+      "y": 850,
+      "w": 1472,
+      "h": 36,
+      "label": "Original cross-industry example · dates, activities and hypotheses are simulated inputs",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    }
+  ],
+  "edges": [
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          100,
+          500
+        ],
+        [
+          1500,
+          500
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "tone": "muted"
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          130.0,
+          500
+        ],
+        [
+          130.0,
+          462
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "arrow": false,
+      "tone": "line"
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          385.2380952380952,
+          500
+        ],
+        [
+          385.2380952380952,
+          545
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "arrow": false,
+      "tone": "line"
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          863.8095238095239,
+          500
+        ],
+        [
+          863.8095238095239,
+          462
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "arrow": false,
+      "tone": "line"
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          1470.0,
+          500
+        ],
+        [
+          1470.0,
+          545
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "arrow": false,
+      "tone": "line"
+    }
+  ],
+  "meta": {
+    "day_offsets": [
+      0,
+      8,
+      23,
+      42
+    ]
+  },
+  "assumptions": [
+    "Original teaching content, not a project commitment"
+  ]
+}

@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2216" height="900" viewBox="0 0 2216 900" role="img" aria-labelledby="diagram-title diagram-desc">
+<title id="diagram-title">社区学习改进 · 从问题到证据</title>
+<desc id="diagram-desc">把观察、机会、试验和复盘分开；分支是主题拆解，不是因果证明</desc>
+<rect width="100%" height="100%" fill="#F1EFEB"/>
+<defs>
+<marker id="arrow-accent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#AC6046"/></marker>
+<marker id="arrow-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#67685E"/></marker>
+<marker id="arrow-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#8C7964"/></marker>
+<marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#554C46"/></marker>
+<marker id="arrow-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#6D6A63"/></marker>
+<marker id="arrow-line" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#D8D3C8"/></marker>
+<marker id="arrow-ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#30302D"/></marker>
+</defs>
+<g font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, Arial, sans-serif">
+<path d="M1116.0,389.0 L1116.0,443.0 L726.0,443.0 L726.0,465.0" fill="none" stroke="#6D6A63" stroke-width="2" stroke-linejoin="round"/>
+<path d="M726.0,553.0 L726.0,601.0 L206.0,601.0 L206.0,629.0" fill="none" stroke="#6D6A63" stroke-width="2" stroke-linejoin="round"/>
+<path d="M726.0,553.0 L726.0,595.0 L466.0,595.0 L466.0,629.0" fill="none" stroke="#6D6A63" stroke-width="2" stroke-linejoin="round"/>
+<path d="M1116.0,389.0 L1116.0,425.0 L986.0,425.0 L986.0,465.0" fill="none" stroke="#6D6A63" stroke-width="2" stroke-linejoin="round"/>
+<path d="M986.0,553.0 L986.0,607.0 L726.0,607.0 L726.0,629.0" fill="none" stroke="#6D6A63" stroke-width="2" stroke-linejoin="round"/>
+<path d="M986.0,553.0 L986.0,629.0" fill="none" stroke="#6D6A63" stroke-width="2" stroke-linejoin="round"/>
+<path d="M1116.0,389.0 L1116.0,431.0 L1246.0,431.0 L1246.0,465.0" fill="none" stroke="#6D6A63" stroke-width="2" stroke-linejoin="round"/>
+<path d="M1246.0,553.0 L1246.0,629.0" fill="none" stroke="#6D6A63" stroke-width="2" stroke-linejoin="round"/>
+<path d="M1246.0,553.0 L1246.0,607.0 L1506.0,607.0 L1506.0,629.0" fill="none" stroke="#6D6A63" stroke-width="2" stroke-linejoin="round"/>
+<path d="M1116.0,389.0 L1116.0,437.0 L1506.0,437.0 L1506.0,465.0" fill="none" stroke="#6D6A63" stroke-width="2" stroke-linejoin="round"/>
+<path d="M1506.0,553.0 L1506.0,595.0 L1766.0,595.0 L1766.0,629.0" fill="none" stroke="#6D6A63" stroke-width="2" stroke-linejoin="round"/>
+<path d="M1506.0,553.0 L1506.0,589.0 L2026.0,589.0 L2026.0,629.0" fill="none" stroke="#6D6A63" stroke-width="2" stroke-linejoin="round"/>
+<g id="root" data-kind="rect" data-content-text="false" data-box="1006.0,301.0,220,88" font-family="Heiti TC">
+<rect x="1006.0" y="301.0" width="220" height="88" rx="10" fill="#FEFDF9" stroke="#AC6046" stroke-width="1.5"/>
+<text x="1116.0" y="352.15" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">学习体验改进</text>
+</g>
+<g id="observe" data-kind="rect" data-content-text="false" data-box="616.0,465.0,220,88" font-family="Heiti TC">
+<rect x="616.0" y="465.0" width="220" height="88" rx="10" fill="#FEFDF9" stroke="#AC6046" stroke-width="1.5"/>
+<text x="726.0" y="516.15" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">观察学习者</text>
+</g>
+<g id="need" data-kind="rect" data-content-text="false" data-box="96.0,629.0,220,88" font-family="Heiti TC">
+<rect x="96.0" y="629.0" width="220" height="88" rx="10" fill="#FEFDF9" stroke="#AC6046" stroke-width="1.5"/>
+<text x="206.0" y="680.15" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">需求与阻碍</text>
+</g>
+<g id="context" data-kind="rect" data-content-text="false" data-box="356.0,629.0,220,88" font-family="Heiti TC">
+<rect x="356.0" y="629.0" width="220" height="88" rx="10" fill="#FEFDF9" stroke="#AC6046" stroke-width="1.5"/>
+<text x="466.0" y="680.15" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">场景与资源</text>
+</g>
+<g id="frame" data-kind="rect" data-content-text="false" data-box="876.0,465.0,220,88" font-family="Heiti TC">
+<rect x="876.0" y="465.0" width="220" height="88" rx="10" fill="#FEFDF9" stroke="#AC6046" stroke-width="1.5"/>
+<text x="986.0" y="516.15" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">界定机会</text>
+</g>
+<g id="question" data-kind="rect" data-content-text="false" data-box="616.0,629.0,220,88" font-family="Heiti TC">
+<rect x="616.0" y="629.0" width="220" height="88" rx="10" fill="#FEFDF9" stroke="#AC6046" stroke-width="1.5"/>
+<text x="726.0" y="680.15" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">待回答问题</text>
+</g>
+<g id="evidence" data-kind="rect" data-content-text="false" data-box="876.0,629.0,220,88" font-family="Heiti TC">
+<rect x="876.0" y="629.0" width="220" height="88" rx="10" fill="#FEFDF9" stroke="#AC6046" stroke-width="1.5"/>
+<text x="986.0" y="680.15" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">已有证据</text>
+</g>
+<g id="try" data-kind="rect" data-content-text="false" data-box="1136.0,465.0,220,88" font-family="Heiti TC">
+<rect x="1136.0" y="465.0" width="220" height="88" rx="10" fill="#FEFDF9" stroke="#AC6046" stroke-width="1.5"/>
+<text x="1246.0" y="516.15" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">小步试验</text>
+</g>
+<g id="lesson" data-kind="rect" data-content-text="false" data-box="1136.0,629.0,220,88" font-family="Heiti TC">
+<rect x="1136.0" y="629.0" width="220" height="88" rx="10" fill="#FEFDF9" stroke="#AC6046" stroke-width="1.5"/>
+<text x="1246.0" y="680.15" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">课程改动</text>
+</g>
+<g id="support" data-kind="rect" data-content-text="false" data-box="1396.0,629.0,220,88" font-family="Heiti TC">
+<rect x="1396.0" y="629.0" width="220" height="88" rx="10" fill="#FEFDF9" stroke="#AC6046" stroke-width="1.5"/>
+<text x="1506.0" y="680.15" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">支持动作</text>
+</g>
+<g id="review" data-kind="rect" data-content-text="false" data-box="1396.0,465.0,220,88" font-family="Heiti TC">
+<rect x="1396.0" y="465.0" width="220" height="88" rx="10" fill="#FEFDF9" stroke="#AC6046" stroke-width="1.5"/>
+<text x="1506.0" y="516.15" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">复盘证据</text>
+</g>
+<g id="metric" data-kind="rect" data-content-text="false" data-box="1656.0,629.0,220,88" font-family="Heiti TC">
+<rect x="1656.0" y="629.0" width="220" height="88" rx="10" fill="#FEFDF9" stroke="#AC6046" stroke-width="1.5"/>
+<text x="1766.0" y="680.15" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">指标与口径</text>
+</g>
+<g id="decision" data-kind="rect" data-content-text="false" data-box="1916.0,629.0,220,88" font-family="Heiti TC">
+<rect x="1916.0" y="629.0" width="220" height="88" rx="10" fill="#FEFDF9" stroke="#AC6046" stroke-width="1.5"/>
+<text x="2026.0" y="680.15" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">下一步决定</text>
+</g>
+<g id="_v14" data-kind="text" data-content-text="false" data-box="64,34,2088,22" font-family="Heiti TC">
+
+<text x="64" y="49.55" text-anchor="start" font-size="14" font-weight="400" fill="#AC6046">04 / KNOWLEDGE STRUCTURE</text>
+</g>
+<g id="_v15" data-kind="text" data-content-text="false" data-box="64,74,2088,49" font-family="Heiti TC">
+
+<text x="64" y="110.2" text-anchor="start" font-size="36" font-weight="600" fill="#30302D">社区学习改进 · 从问题到证据</text>
+</g>
+<g id="_v16" data-kind="text" data-content-text="false" data-box="64,131,2088,24" font-family="Heiti TC">
+
+<text x="64" y="148.525" text-anchor="start" font-size="17" font-weight="400" fill="#6D6A63">把观察、机会、试验和复盘分开；分支是主题拆解，不是因果证明</text>
+</g>
+<g id="_v17" data-kind="rect" data-content-text="false" data-box="64,840,2088,1">
+<rect x="64" y="840" width="2088" height="1" rx="0" fill="#D8D3C8" stroke="none" stroke-width="1.5"/>
+</g>
+<g id="_v18" data-kind="text" data-content-text="false" data-box="64,856,2088,20" font-family="Heiti TC">
+
+<text x="64" y="870.55" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">思维导图示例 · 输入内容为模拟假说，使用前需补充来源与验证方法</text>
+</g>
+</g></svg>

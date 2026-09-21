@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="diagram-title diagram-desc">
+<title id="diagram-title">社区项目 · 有日期的里程碑</title>
+<desc id="diagram-desc">按真实自然日定位；事件之间的空白表示时间，不等于均匀排期</desc>
+<rect width="100%" height="100%" fill="#F1EFEB"/>
+<defs>
+<marker id="arrow-accent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#AC6046"/></marker>
+<marker id="arrow-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#67685E"/></marker>
+<marker id="arrow-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#8C7964"/></marker>
+<marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#554C46"/></marker>
+<marker id="arrow-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#6D6A63"/></marker>
+<marker id="arrow-line" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#D8D3C8"/></marker>
+<marker id="arrow-ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#30302D"/></marker>
+</defs>
+<g font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, Arial, sans-serif">
+<path d="M100,500 L1500,500" fill="none" stroke="#6D6A63" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow-muted)"/>
+<path d="M130.0,500 L130.0,462" fill="none" stroke="#D8D3C8" stroke-width="2" stroke-linejoin="round"/>
+<path d="M385.2380952380952,500 L385.2380952380952,545" fill="none" stroke="#D8D3C8" stroke-width="2" stroke-linejoin="round"/>
+<path d="M863.8095238095239,500 L863.8095238095239,462" fill="none" stroke="#D8D3C8" stroke-width="2" stroke-linejoin="round"/>
+<path d="M1470.0,500 L1470.0,545" fill="none" stroke="#D8D3C8" stroke-width="2" stroke-linejoin="round"/>
+<g id="_v1" data-kind="ellipse" data-content-text="false" data-box="123.0,493,14,14">
+<ellipse cx="130.0" cy="500.0" rx="7.0" ry="7.0" fill="#AC6046" stroke="#FEFDF9" stroke-width="1.5"/>
+</g>
+<g id="_v2" data-kind="text" data-content-text="false" data-box="64,250,250,34">
+
+<text x="189.0" y="272.525" text-anchor="middle" font-size="17" font-weight="400" fill="#AC6046">2026-10-01</text>
+</g>
+<g id="_v3" data-kind="text" data-content-text="false" data-box="64,293,250,72">
+
+<text x="189.0" y="336.15" text-anchor="middle" font-size="22" font-weight="400" fill="#30302D">确定参与者</text>
+</g>
+<g id="_v4" data-kind="text" data-content-text="false" data-box="64,373,250,96">
+
+<text x="189.0" y="426.2" text-anchor="middle" font-size="16" font-weight="400" fill="#6D6A63">明确社区、学习者和协作者</text>
+</g>
+<g id="_v5" data-kind="ellipse" data-content-text="false" data-box="378.2380952380952,493,14,14">
+<ellipse cx="385.2380952380952" cy="500.0" rx="7.0" ry="7.0" fill="#AC6046" stroke="#FEFDF9" stroke-width="1.5"/>
+</g>
+<g id="_v6" data-kind="text" data-content-text="false" data-box="260.2380952380952,564,250,34">
+
+<text x="385.2380952380952" y="586.525" text-anchor="middle" font-size="17" font-weight="400" fill="#AC6046">2026-10-09</text>
+</g>
+<g id="_v7" data-kind="text" data-content-text="false" data-box="260.2380952380952,607,250,72">
+
+<text x="385.2380952380952" y="650.15" text-anchor="middle" font-size="22" font-weight="400" fill="#30302D">整理观察</text>
+</g>
+<g id="_v8" data-kind="text" data-content-text="false" data-box="260.2380952380952,687,250,96">
+
+<text x="385.2380952380952" y="740.2" text-anchor="middle" font-size="16" font-weight="400" fill="#6D6A63">把访谈与现场笔记标出来源</text>
+</g>
+<g id="_v9" data-kind="ellipse" data-content-text="false" data-box="856.8095238095239,493,14,14">
+<ellipse cx="863.8095238095239" cy="500.0" rx="7.0" ry="7.0" fill="#AC6046" stroke="#FEFDF9" stroke-width="1.5"/>
+</g>
+<g id="_v10" data-kind="text" data-content-text="false" data-box="738.8095238095239,250,250,34">
+
+<text x="863.8095238095239" y="272.525" text-anchor="middle" font-size="17" font-weight="400" fill="#AC6046">2026-10-24</text>
+</g>
+<g id="_v11" data-kind="text" data-content-text="false" data-box="738.8095238095239,293,250,72">
+
+<text x="863.8095238095239" y="336.15" text-anchor="middle" font-size="22" font-weight="400" fill="#30302D">运行小试验</text>
+</g>
+<g id="_v12" data-kind="text" data-content-text="false" data-box="738.8095238095239,373,250,96">
+
+<text x="863.8095238095239" y="426.2" text-anchor="middle" font-size="16" font-weight="400" fill="#6D6A63">记录参与、完成和阻碍</text>
+</g>
+<g id="_v13" data-kind="ellipse" data-content-text="false" data-box="1463.0,493,14,14">
+<ellipse cx="1470.0" cy="500.0" rx="7.0" ry="7.0" fill="#AC6046" stroke="#FEFDF9" stroke-width="1.5"/>
+</g>
+<g id="_v14" data-kind="text" data-content-text="false" data-box="1286,564,250,34">
+
+<text x="1411.0" y="586.525" text-anchor="middle" font-size="17" font-weight="400" fill="#AC6046">2026-11-12</text>
+</g>
+<g id="_v15" data-kind="text" data-content-text="false" data-box="1286,607,250,72">
+
+<text x="1411.0" y="650.15" text-anchor="middle" font-size="22" font-weight="400" fill="#30302D">复盘下一步</text>
+</g>
+<g id="_v16" data-kind="text" data-content-text="false" data-box="1286,687,250,96">
+
+<text x="1411.0" y="740.2" text-anchor="middle" font-size="16" font-weight="400" fill="#6D6A63">核对证据、分歧与后续行动</text>
+</g>
+<g id="_v17" data-kind="text" data-content-text="false" data-box="64,34,1472,22">
+
+<text x="64" y="49.55" text-anchor="start" font-size="14" font-weight="400" fill="#AC6046">29 / TIMELINE</text>
+</g>
+<g id="_v18" data-kind="text" data-content-text="false" data-box="64,69,1472,56">
+
+<text x="64" y="108.7" text-anchor="start" font-size="36" font-weight="400" fill="#30302D">社区项目 · 有日期的里程碑</text>
+</g>
+<g id="_v19" data-kind="text" data-content-text="false" data-box="64,130,1472,38">
+
+<text x="64" y="154.525" text-anchor="start" font-size="17" font-weight="400" fill="#6D6A63">按真实自然日定位；事件之间的空白表示时间，不等于均匀排期</text>
+</g>
+<g id="_v20" data-kind="rect" data-content-text="false" data-box="64,837,1472,1">
+<rect x="64" y="837" width="1472" height="1" rx="0" fill="#D8D3C8" stroke="none" stroke-width="1.5"/>
+</g>
+<g id="_v21" data-kind="text" data-content-text="false" data-box="64,850,1472,36">
+
+<text x="64" y="872.55" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">原创跨行业示例 · 日期、事项与假说均为模拟输入，实际项目需替换并复核</text>
+</g>
+</g></svg>

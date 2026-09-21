@@ -67,11 +67,13 @@ def concentric(s,d):
  s.text(cx-130,cy-13,260,55,d.get('center','核心'),28,'accent',align='center')
 
 def timeline(s,d):
- a=items(d,lo=2,hi=7);dates=[dt.date.fromisoformat(v['date']) for v in a];need(dates==sorted(dates) and len(set(dates))==len(dates),'timeline requires unique increasing dates');span=(dates[-1]-dates[0]).days;xs=[130+((v-dates[0]).days/span)*(s.w-260) for v in dates];cy=476
+ a=items(d,lo=2,hi=7);dates=[dt.date.fromisoformat(v['date']) for v in a];need(dates==sorted(dates) and len(set(dates))==len(dates),'timeline requires unique increasing dates');span=(dates[-1]-dates[0]).days;xs=[130+((v-dates[0]).days/span)*(s.w-260) for v in dates];cy=500
+ label_h=72;detail_h=96;card_top=250;down_top=cy+64
+ s.h=max(s.h,down_top+43+label_h+8+detail_h+100)
  s.edge(points=[(100,cy),(s.w-100,cy)],tone='muted')
  for i,(v,x) in enumerate(zip(a,xs)):
-  up=i%2==0;y=cy-192 if up else cy+64;w=250;xx=max(64,min(s.w-64-w,x-w/2));s.add(x-7,cy-7,14,14,kind='ellipse',fill='accent',stroke='panel',check=False)
-  s.text(xx,y,w,34,v['date'],17,'accent',align='center');s.text(xx,y+43,w,42,v['label'],22,align='center');s.text(xx,y+88,w,54,v.get('detail',''),16,'muted',align='center')
+  up=i%2==0;y=card_top if up else down_top;w=250;xx=max(64,min(s.w-64-w,x-w/2));s.add(x-7,cy-7,14,14,kind='ellipse',fill='accent',stroke='panel',check=False)
+  s.text(xx,y,w,34,v['date'],17,'accent',align='center',word_wrap=True);s.text(xx,y+43,w,label_h,v['label'],22,align='center',word_wrap=True);s.text(xx,y+43+label_h+8,w,detail_h,v.get('detail',''),16,'muted',align='center',word_wrap=True)
   s.edge(points=[(x,cy),(x,cy-38 if up else cy+45)],arrow=False,tone='line')
  s.meta['day_offsets']=[(v-dates[0]).days for v in dates]
 
