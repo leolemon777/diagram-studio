@@ -34,11 +34,11 @@
     "native_editor_roundtrip_supplement": "assets/v73-native-editor-roundtrip-evidence.json",
     "source_installed_parity": "passed: recursive diff excluding .git is empty",
     "jev": "pending: no matching Skill, plugin or repository file is available",
-    "native_editor": "representative pass supplemented to ten files: flow, bilingual Lean Canvas, bilingual user-path storyboard, delivery Gantt, line trend, education experience-map and bilingual tree/mind-map files edited, saved to diagrams.net browser storage and reopened; all-type coverage is not claimed; local 万兴图示 separately rejected a temporary flow .drawio copy"
+    "native_editor": "representative pass supplemented to fifteen files: flow, bilingual Lean Canvas, bilingual user-path storyboard, delivery Gantt, line trend, bilingual education experience-map, bilingual tree/mind-map, architecture, swimlane, sequence and bar-chart files edited, saved to diagrams.net browser storage and reopened; all-type coverage is not claimed; local 万兴图示 separately rejected a temporary flow .drawio copy"
   },
   "boundaries": [
     "Generated semantic and geometry checks do not certify a real service, product-market fit, domain workflow, user research, or user approval.",
-    "Native-editor edit/save/reopen is proven for ten representative files through diagrams.net browser storage, including bilingual Lean Canvas, user-path and tree/mind-map variants; this does not cover every registered type or every language variant.",
+    "Native-editor edit/save/reopen is proven for fifteen representative files through diagrams.net browser storage, including bilingual Lean Canvas, user-path, journey and tree/mind-map variants plus architecture, swimlane, sequence and bar-chart structures; this does not cover every registered type or every language variant.",
     "The layout grows beyond a fixed 16:9 canvas when long content or many steps require it."
   ]
 }

@@ -4,7 +4,7 @@
   "editor": "diagrams.net web editor",
   "editor_url": "https://app.diagrams.net",
   "storage": "browser storage",
-  "scope": "The eight v72 representative cases were supplemented with English Lean Canvas and English tree/mind-map files. Each file was opened from the public repository, edited in the native diagrams.net editor, saved to browser storage, reopened, and checked through the editor accessibility tree.",
+  "scope": "The eight v72 representative cases were supplemented with English Lean Canvas, English tree/mind-map, architecture, swimlane, sequence and bar-chart files. Each file was opened from the public repository, edited in the native diagrams.net editor, saved to browser storage, reopened, and checked through the editor accessibility tree.",
   "cases": [
     {
       "id": "flow-cn",
@@ -95,17 +95,62 @@
       "edit": "Changed the branch label Observe learners to Observe learners · T08.",
       "reopen_check": "The T08 marker remained; the English root, all knowledge-structure branches and explanatory footnotes remained visible.",
       "reload_verified": true
+    },
+    {
+      "id": "architecture-cn",
+      "source": "demos/architecture/cn/architecture-cn.drawio",
+      "source_url": "https://raw.githubusercontent.com/leolemon777/diagram-studio/main/demos/architecture/cn/architecture-cn.drawio",
+      "saved_name": "diagram-studio-t09-architecture-cn-browser.drawio",
+      "edit": "Changed the module label 服务入口 / 预约 · 查询 · 反馈 to 服务入口 / 预约 · 查询 · 反馈 · T09.",
+      "reopen_check": "The T09 marker remained; the four architecture layers, module labels and cross-cutting support labels remained visible.",
+      "reload_verified": true
+    },
+    {
+      "id": "swimlane-cn",
+      "source": "demos/swimlane/cn/swimlane-cn.drawio",
+      "source_url": "https://raw.githubusercontent.com/leolemon777/diagram-studio/main/demos/swimlane/cn/swimlane-cn.drawio",
+      "saved_name": "diagram-studio-t09-swimlane-cn-browser.drawio",
+      "edit": "Changed the handoff step 说明目标与约束 to 说明目标与约束 · T09.",
+      "reopen_check": "The T09 marker remained; three responsibility lanes, decision labels, handoffs and return path text remained visible.",
+      "reload_verified": true
+    },
+    {
+      "id": "sequence-en",
+      "source": "demos/sequence/en/sequence-en.drawio",
+      "source_url": "https://raw.githubusercontent.com/leolemon777/diagram-studio/main/demos/sequence/en/sequence-en.drawio",
+      "saved_name": "diagram-studio-t09-sequence-en-browser.drawio",
+      "edit": "Changed the message label 02 Submit booking request to 02 Submit booking request · T09.",
+      "reopen_check": "The T09 marker remained; participants, six ordered messages and the return-information note remained visible.",
+      "reload_verified": true
+    },
+    {
+      "id": "bar-chart-en",
+      "source": "demos/data-story/bar/08-bar-chart-en.drawio",
+      "source_url": "https://raw.githubusercontent.com/leolemon777/diagram-studio/main/demos/data-story/bar/08-bar-chart-en.drawio",
+      "saved_name": "diagram-studio-t09-bar-en-browser.drawio",
+      "edit": "Changed the value label 42 people to 42 people · T09.",
+      "reopen_check": "The T09 marker remained; all five categories, values, zero-baseline note and simulated-data footnote remained visible.",
+      "reload_verified": true
+    },
+    {
+      "id": "journey-map-en",
+      "source": "demos/experience-maps/education-journey-en.drawio",
+      "source_url": "https://raw.githubusercontent.com/leolemon777/diagram-studio/main/demos/experience-maps/education-journey-en.drawio",
+      "saved_name": "diagram-studio-t09-journey-en-browser.drawio",
+      "edit": "Changed the stage label 01 / discover to 01 / discover · T09.",
+      "reopen_check": "The T09 marker remained; stages, behaviors, touchpoints, evidence, opportunities, actions and emotion rows remained visible in the English experience map.",
+      "reload_verified": true
     }
   ],
   "checks": {
-    "edit_save_reopen": "passed for all ten representative cases",
-    "structure_visibility": "passed for flow conditions, nine-block Lean Canvas in both languages, user-path branches/exceptions in both languages, Gantt task/date/progress rows, line-chart marks, experience-map rows, and tree/mind-map branches in both languages",
+    "edit_save_reopen": "passed for all fifteen representative cases",
+    "structure_visibility": "passed for flow conditions, nine-block Lean Canvas in both languages, user-path branches/exceptions in both languages, Gantt task/date/progress rows, line-chart marks, experience-map rows in both languages, tree/mind-map branches in both languages, architecture layers/cross-cutting labels, swimlane handoffs, sequence order/returns and bar labels/zero baseline",
     "repository_source_modified": false,
     "local_editor_compatibility": "separate EdrawMax attempt failed to open a temporary flow copy; see assets/v72-editor-attempt.json"
   },
   "limits": [
     "Browser storage is the saved artifact for this evidence; no local exported round-trip file was added to the repository.",
-    "This is representative coverage for ten files, not native-editor approval of every registered capability or every editor/language combination.",
+    "This is representative coverage for fifteen files, not native-editor approval of every registered capability or every editor/language combination.",
     "The editor verified text edits and preserved visible structure; data-driven chart value changes that require JSON regeneration remain documented as regeneration workflows."
   ]
 }
