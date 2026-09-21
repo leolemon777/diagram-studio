@@ -29,8 +29,10 @@
     "drawio_nodes": "passed: block, entry, state, step, branch and exception IDs are present",
     "browser": "passed: bilingual Lean Canvas and user-path storyboard demo pages opened at 1280px desktop surface; readable-size scroll mode displayed actual content and links; v72-t05 measured all 23 demo pages at four viewport sizes",
     "viewport_evidence": "assets/v72-viewport-evidence.json",
+    "native_editor_attempt": "assets/v72-editor-attempt.json",
     "source_installed_parity": "passed: recursive diff excluding .git is empty",
-    "jev": "pending: no matching Skill, plugin or repository file is available"
+    "jev": "pending: no matching Skill, plugin or repository file is available",
+    "native_editor": "pending for v72 additions; local 万兴图示 rejected a temporary flow .drawio copy before loading"
   },
   "boundaries": [
     "Generated semantic and geometry checks do not certify a real service, product-market fit, domain workflow, user research, or user approval.",

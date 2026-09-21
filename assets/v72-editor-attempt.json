@@ -1,0 +1,17 @@
+{
+  "version": "v72-t07-attempt",
+  "checked_on": "2026-09-21",
+  "editor": "万兴图示",
+  "bundle_id": "com.edrawsoft.edrawmax",
+  "input_copy": "/tmp/diagram-studio-t07-flow.drawio",
+  "source_input": "demos/flow/cn/flow-cn.drawio",
+  "actions": [
+    "Copied the repository draw.io file to a temporary path so the source file could not be modified.",
+    "Opened the local editor and used its Open command.",
+    "Selected the temporary .drawio file and confirmed Open."
+  ],
+  "result": "failed: the editor displayed 打开文件失败 and did not load the draw.io document",
+  "saved_roundtrip": false,
+  "repository_changed": false,
+  "interpretation": "This is an editor-compatibility finding, not a renderer failure. It cannot count as a native-editor round trip; a diagrams.net/draw.io editor or another editor that accepts the source is still required."
+}

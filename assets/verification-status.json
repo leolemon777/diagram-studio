@@ -17,7 +17,7 @@
     "viewport_evidence": "assets/v72-viewport-evidence.json; 23 demo pages × 4 viewports; document overflow 0/92",
     "responsive_repair": "experience-maps grid/card/frame min-width fix verified at 390×844 and 768×1024",
     "jev": "not present in available skills, plugins, or repository files; integration awaits an explicit path or name",
-    "native_editor": "not claimed for the two new types; existing workflow/storymap evidence remains separate",
+    "native_editor": "v72 editor attempt recorded in assets/v72-editor-attempt.json; local 万兴图示 rejected a temporary flow .drawio copy, so no new round trip is claimed",
     "remaining_count_policy": "the 206 unverified catalog rows are not a reliable work-remaining count"
   },
   "v71_evidence": {
