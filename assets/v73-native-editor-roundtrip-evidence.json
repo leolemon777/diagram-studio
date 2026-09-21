@@ -1,0 +1,111 @@
+{
+  "version": "v73-t07-roundtrip-supplement",
+  "checked_on": "2026-09-21",
+  "editor": "diagrams.net web editor",
+  "editor_url": "https://app.diagrams.net",
+  "storage": "browser storage",
+  "scope": "The eight v72 representative cases were supplemented with English Lean Canvas and English tree/mind-map files. Each file was opened from the public repository, edited in the native diagrams.net editor, saved to browser storage, reopened, and checked through the editor accessibility tree.",
+  "cases": [
+    {
+      "id": "flow-cn",
+      "source": "demos/flow/cn/flow-cn.drawio",
+      "source_url": "https://raw.githubusercontent.com/leolemon777/diagram-studio/main/demos/flow/cn/flow-cn.drawio",
+      "saved_name": "diagram-studio-t07-flow-browser.drawio",
+      "edit": "Changed the node label 提交需求 to 提交需求 · T07.",
+      "reopen_check": "The T07 marker remained; flow nodes and 是/否/补充后 condition labels remained visible.",
+      "reload_verified": true
+    },
+    {
+      "id": "lean-canvas-cn",
+      "source": "demos/lean-canvas/cn/38-lean-canvas-cn.drawio",
+      "source_url": "https://raw.githubusercontent.com/leolemon777/diagram-studio/main/demos/lean-canvas/cn/38-lean-canvas-cn.drawio",
+      "saved_name": "diagram-studio-t07-lean-browser.drawio",
+      "edit": "Changed the entry label [problem-1] 照护者不知道下一步该找谁 to [problem-1] 照护者不知道下一步该找谁 · T07.",
+      "reopen_check": "The T07 marker remained; all nine numbered blocks, entry IDs, evidence/status lines and footnote remained visible.",
+      "reload_verified": true
+    },
+    {
+      "id": "user-path-storyboard-cn",
+      "source": "demos/user-path-storyboard/cn/37-user-path-storyboard-cn.drawio",
+      "source_url": "https://raw.githubusercontent.com/leolemon777/diagram-studio/main/demos/user-path-storyboard/cn/37-user-path-storyboard-cn.drawio",
+      "saved_name": "diagram-studio-t07-userpath-browser.drawio",
+      "edit": "Changed the actor label [step-open] 照护者 to [step-open] 照护者 · T07.",
+      "reopen_check": "The T07 marker remained; preconditions, states, main-path steps, branch labels, exception labels and recovery text remained visible.",
+      "reload_verified": true
+    },
+    {
+      "id": "gantt-delivery-cn",
+      "source": "demos/gantt/cn/delivery/gantt-cn-delivery.drawio",
+      "source_url": "https://raw.githubusercontent.com/leolemon777/diagram-studio/main/demos/gantt/cn/delivery/gantt-cn-delivery.drawio",
+      "saved_name": "diagram-studio-t07-gantt-browser.drawio",
+      "edit": "Changed the task label 确认活动范围 to 确认活动范围 · T07.",
+      "reopen_check": "The T07 marker remained; task names, owners, date ranges, progress percentages and the milestone remained visible.",
+      "reload_verified": true
+    },
+    {
+      "id": "line-chart-cn",
+      "source": "demos/data-story/line/09-line-chart-cn.drawio",
+      "source_url": "https://raw.githubusercontent.com/leolemon777/diagram-studio/main/demos/data-story/line/09-line-chart-cn.drawio",
+      "saved_name": "diagram-studio-t07-line-browser.drawio",
+      "edit": "Changed the visible mark 第 1 周 to 第 1 周 · T07.",
+      "reopen_check": "The T07 marker remained; axis labels, six weekly marks, values and trend footnote remained visible.",
+      "reload_verified": true
+    },
+    {
+      "id": "experience-map-cn",
+      "source": "demos/experience-maps/education-journey.drawio",
+      "source_url": "https://raw.githubusercontent.com/leolemon777/diagram-studio/main/demos/experience-maps/education-journey.drawio",
+      "saved_name": "diagram-studio-t07-experience-browser.drawio",
+      "edit": "Changed the stage label 01 / discover to 01 / discover · T07.",
+      "reopen_check": "The T07 marker remained; stages, behaviors, touchpoints, evidence, opportunities, actions and emotion rows remained visible.",
+      "reload_verified": true
+    },
+    {
+      "id": "user-path-storyboard-en",
+      "source": "demos/user-path-storyboard/en/37-user-path-storyboard-en.drawio",
+      "source_url": "https://raw.githubusercontent.com/leolemon777/diagram-studio/main/demos/user-path-storyboard/en/37-user-path-storyboard-en.drawio",
+      "saved_name": "diagram-studio-t07-userpath-en-browser.drawio",
+      "edit": "Changed the actor label [step-open] Caregiver to [step-open] Caregiver · T07.",
+      "reopen_check": "The T07 marker remained; English preconditions, states, main-path steps, branches, exceptions and recovery text remained visible.",
+      "reload_verified": true
+    },
+    {
+      "id": "mindmap-cn",
+      "source": "demos/route-mindmap/mindmap/04-mindmap-cn.drawio",
+      "source_url": "https://raw.githubusercontent.com/leolemon777/diagram-studio/main/demos/route-mindmap/mindmap/04-mindmap-cn.drawio",
+      "saved_name": "diagram-studio-t07-mindmap-browser.drawio",
+      "edit": "Changed the branch label 观察学习者 to 观察学习者 · T07.",
+      "reopen_check": "The T07 marker remained; root and remaining knowledge-structure branches remained visible.",
+      "reload_verified": true
+    },
+    {
+      "id": "lean-canvas-en",
+      "source": "demos/lean-canvas/en/38-lean-canvas-en.drawio",
+      "source_url": "https://raw.githubusercontent.com/leolemon777/diagram-studio/main/demos/lean-canvas/en/38-lean-canvas-en.drawio",
+      "saved_name": "diagram-studio-t08-lean-en-browser.drawio",
+      "edit": "Changed the entry label [problem-1] Caregivers do not know who to contact next to [problem-1] Caregivers do not know who to contact next · T08.",
+      "reopen_check": "The T08 marker remained; all nine English Lean Canvas blocks, entry IDs, evidence/status lines and the simulated-input footnote remained visible.",
+      "reload_verified": true
+    },
+    {
+      "id": "mindmap-en",
+      "source": "demos/route-mindmap/mindmap/04-mindmap-en.drawio",
+      "source_url": "https://raw.githubusercontent.com/leolemon777/diagram-studio/main/demos/route-mindmap/mindmap/04-mindmap-en.drawio",
+      "saved_name": "diagram-studio-t08-mindmap-en-browser.drawio",
+      "edit": "Changed the branch label Observe learners to Observe learners · T08.",
+      "reopen_check": "The T08 marker remained; the English root, all knowledge-structure branches and explanatory footnotes remained visible.",
+      "reload_verified": true
+    }
+  ],
+  "checks": {
+    "edit_save_reopen": "passed for all ten representative cases",
+    "structure_visibility": "passed for flow conditions, nine-block Lean Canvas in both languages, user-path branches/exceptions in both languages, Gantt task/date/progress rows, line-chart marks, experience-map rows, and tree/mind-map branches in both languages",
+    "repository_source_modified": false,
+    "local_editor_compatibility": "separate EdrawMax attempt failed to open a temporary flow copy; see assets/v72-editor-attempt.json"
+  },
+  "limits": [
+    "Browser storage is the saved artifact for this evidence; no local exported round-trip file was added to the repository.",
+    "This is representative coverage for ten files, not native-editor approval of every registered capability or every editor/language combination.",
+    "The editor verified text edits and preserved visible structure; data-driven chart value changes that require JSON regeneration remain documented as regeneration workflows."
+  ]
+}
