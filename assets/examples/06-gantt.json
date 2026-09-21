@@ -1,64 +1,84 @@
 {
   "type": "gantt",
-  "title": "运维平台试点 · 实施计划",
-  "subtitle": "按自然日定位，包含结束日；箭头表示完成后开始的依赖",
-  "eyebrow": "06 / PROJECT PLAN",
+  "language": "zh",
+  "gantt_variant": "delivery",
+  "title": "社区服务活动 · 上线计划",
+  "subtitle": "按阶段、责任人和实际日期跟踪一场跨团队活动；深色条表示完成进度",
+  "eyebrow": "PROJECT PLAN / 社区服务",
+  "footer": "模拟排期 · 自然日且包含结束日 · 未计算关键路径",
+  "assumptions": [
+    "任务、日期和进度为演示数据"
+  ],
   "tasks": [
     {
-      "id": "research",
-      "label": "现场需求与范围确认",
-      "owner": "业务与运维",
+      "id": "scope",
+      "phase": "01 · 定义",
+      "label": "确认活动范围",
+      "owner": "项目负责人",
       "start": "2026-10-01",
-      "end": "2026-10-05",
+      "end": "2026-10-03",
       "progress": 100
     },
     {
-      "id": "design",
-      "label": "数据与架构设计",
-      "owner": "技术小组",
-      "start": "2026-10-06",
+      "id": "content",
+      "phase": "02 · 准备",
+      "label": "准备活动内容",
+      "owner": "内容团队",
+      "start": "2026-10-04",
+      "end": "2026-10-07",
+      "progress": 60,
+      "depends": ["scope"]
+    },
+    {
+      "id": "partners",
+      "phase": "02 · 准备",
+      "label": "确认合作伙伴",
+      "owner": "合作团队",
+      "start": "2026-10-04",
+      "end": "2026-10-06",
+      "progress": 100,
+      "depends": ["scope"]
+    },
+    {
+      "id": "outreach",
+      "phase": "03 · 邀请",
+      "label": "开放报名",
+      "owner": "社区团队",
+      "start": "2026-10-08",
       "end": "2026-10-12",
-      "progress": 65,
-      "depends": [
-        "research"
-      ]
+      "progress": 25,
+      "depends": ["content", "partners"]
     },
     {
-      "id": "prototype",
-      "label": "试点链路实现",
-      "owner": "开发与实施",
-      "start": "2026-10-13",
-      "end": "2026-10-22",
-      "progress": 20,
-      "depends": [
-        "design"
-      ]
+      "id": "logistics",
+      "phase": "03 · 邀请",
+      "label": "安排现场物料",
+      "owner": "运营团队",
+      "start": "2026-10-08",
+      "end": "2026-10-13",
+      "progress": 40,
+      "depends": ["partners"]
     },
     {
-      "id": "qa",
-      "label": "现场联调与验证",
-      "owner": "运维与测试",
-      "start": "2026-10-23",
-      "end": "2026-10-28",
+      "id": "rehearsal",
+      "phase": "04 · 交付",
+      "label": "开展短彩排",
+      "owner": "活动团队",
+      "start": "2026-10-14",
+      "end": "2026-10-15",
       "progress": 0,
-      "depends": [
-        "prototype"
-      ]
+      "depends": ["outreach", "logistics"]
     },
     {
-      "id": "accept",
-      "label": "试点验收",
-      "owner": "项目小组",
-      "start": "2026-10-29",
-      "end": "2026-10-29",
+      "id": "event",
+      "phase": "04 · 交付",
+      "label": "举办活动",
+      "owner": "全体团队",
+      "start": "2026-10-16",
+      "end": "2026-10-16",
       "progress": 0,
       "milestone": true,
-      "depends": [
-        "qa"
-      ]
+      "depends": ["rehearsal"]
     }
-  ],
-  "footer": "排期和进度均为演示数据 · 未计算关键路径",
-  "family": "计划与协作",
-  "diagram_name": "甘特排期"
+  ]
 }

@@ -1,56 +1,56 @@
 {
   "type": "tree",
   "direction": "down",
-  "title": "运维团队 · 职责结构",
+  "title": "服务运营团队 · 职责结构",
   "subtitle": "实线表示行政汇报；岗位职责独立于姓名",
   "eyebrow": "03 / ORGANIZATION",
   "root": {
     "id": "lead",
-    "label": "运维负责人",
-    "detail": "统筹资源与改善",
+    "label": "服务运营负责人",
+    "detail": "统筹资源与体验改善",
     "children": [
       {
         "id": "ops",
-        "label": "运行保障",
-        "detail": "巡检与异常响应",
+        "label": "用户支持",
+        "detail": "需求响应与回访",
         "children": [
           {
             "id": "inspect",
-            "label": "现场巡检"
+            "label": "需求受理"
           },
           {
             "id": "response",
-            "label": "故障响应"
+            "label": "问题跟进"
           }
         ]
       },
       {
         "id": "tech",
-        "label": "技术支持",
-        "detail": "可靠性与标准",
+        "label": "内容与活动",
+        "detail": "信息准备与服务触达",
         "children": [
           {
             "id": "reliability",
-            "label": "可靠性分析"
+            "label": "内容策划"
           },
           {
             "id": "standard",
-            "label": "作业标准"
+            "label": "活动协调"
           }
         ]
       },
       {
         "id": "plan",
-        "label": "计划协调",
-        "detail": "计划与资料",
+        "label": "数据与改进",
+        "detail": "指标观察与流程优化",
         "children": [
           {
             "id": "schedule",
-            "label": "维护计划"
+            "label": "指标分析"
           },
           {
             "id": "docs",
-            "label": "资料管理"
+            "label": "流程优化"
           }
         ]
       }

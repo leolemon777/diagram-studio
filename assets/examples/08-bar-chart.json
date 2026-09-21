@@ -1,33 +1,18 @@
 {
   "type": "chart",
   "mode": "bar",
-  "title": "异常类型 · 频次比较",
-  "subtitle": "同一统计期间、同一计数口径；横条从零开始",
+  "title": "社区活动 · 触达渠道比较",
+  "subtitle": "同一活动周期、同一统计口径；条形从零基线开始",
   "eyebrow": "08 / DATA COMPARISON",
-  "unit": " 次",
+  "unit": " 人",
   "data": [
-    {
-      "label": "传感器异常",
-      "value": 36
-    },
-    {
-      "label": "机械卡滞",
-      "value": 28
-    },
-    {
-      "label": "通讯中断",
-      "value": 19
-    },
-    {
-      "label": "参数偏差",
-      "value": 12
-    },
-    {
-      "label": "其他异常",
-      "value": 8
-    }
+    {"label": "社区讲座", "value": 42},
+    {"label": "线上直播", "value": 31},
+    {"label": "合作转发", "value": 24},
+    {"label": "邮件提醒", "value": 17},
+    {"label": "其他入口", "value": 9}
   ],
-  "footer": "样式演示 · 全部数值为合成数据，非实际生产统计",
+  "footer": "样式演示 · 全部数值为合成数据，非实际活动统计",
   "family": "数据图表",
   "diagram_name": "横条比较"
 }

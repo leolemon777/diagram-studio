@@ -6,7 +6,7 @@
 
 | 范例 | 输入与可复用语义 |
 |---|---|
-| [01 分层系统架构](../assets/examples/01-system-architecture.json) | 从现场数据到运维决策，四层职责与三项横向支撑 |
+| [01 分层系统架构](../assets/examples/01-system-architecture.json) | 从用户入口到服务能力与数据底座；横向能力贯穿每层 |
 | [12 逻辑数据模型](../assets/examples/12-data-model.json) | 三个实体与两条关系；基数直接标注，字段仅展示关键标识 |
 | [13 系统上下文](../assets/examples/13-c4-context.json) | 只画目标系统、使用者和外部依赖；连线标明交互内容 |
 | [14 部署拓扑](../assets/examples/14-deployment.json) | 逻辑服务、运行实例与网络边界分开；图中实例数量仅为演示 |
@@ -19,7 +19,7 @@
 
 | 范例 | 输入与可复用语义 |
 |---|---|
-| [02 责任泳道](../assets/examples/02-workflow.json) | 三条责任泳道；判定分支明确，复验不通过时返回维修 |
+| [02 责任泳道](../assets/examples/02-workflow.json) | 三条责任泳道；信息不完整回到申请人，交付后由协调团队验收 |
 | [05 交互时序](../assets/examples/05-sequence.json) | 纵向表示先后；虚线表示返回，图中不暗示实际耗时 |
 | [17 状态机](../assets/examples/17-state-machine.json) | 边标注触发事件；退回与取消为明确转移 |
 | [24 循环结构](../assets/examples/24-cycle.json) | 箭头沿同一方向闭环；每个阶段有明确产出 |
@@ -29,8 +29,8 @@
 
 | 范例 | 输入与可复用语义 |
 |---|---|
-| [03 组织结构](../assets/examples/03-organization.json) | 实线表示行政汇报；岗位职责独立于姓名 |
-| [04 思维导图](../assets/examples/04-mindmap.json) | 以可观察问题为根，按事实、原因、方案与验证展开 |
+| [03 组织结构](../assets/examples/03-organization.json) | 服务运营团队的职责结构；岗位职责独立于姓名 |
+| [04 思维导图](../assets/examples/04-mindmap.json) | 把观察、机会、试验和复盘分开；分支是主题拆解，不是因果证明 |
 | [22 概念图](../assets/examples/22-concept-map.json) | 概念之间用可读命题连接，允许交叉关系 |
 | [23 辐射结构](../assets/examples/23-hub-spoke.json) | 辐射线表示主题关联，没有先后顺序 |
 | [26 金字塔结构](../assets/examples/26-pyramid.json) | 形状表达层级，面积不代表数值比例 |
@@ -41,7 +41,7 @@
 
 | 范例 | 输入与可复用语义 |
 |---|---|
-| [06 甘特排期](../assets/examples/06-gantt.json) | 按自然日定位，包含结束日；箭头表示完成后开始的依赖 |
+| [06 甘特排期](../assets/examples/06-gantt.json) | 按阶段、责任人和实际日期跟踪一场跨团队活动；深色条表示完成进度 |
 | [21 工作分解结构](../assets/examples/21-wbs.json) | 父节点范围由子交付物分解；不把分解线当作时间依赖 |
 | [29 时间线](../assets/examples/29-timeline.json) | 日期按自然日距离定位；上下错开说明，避免均匀排期造成误读 |
 | [30 路线图](../assets/examples/30-roadmap.json) | 每行是一条工作流；每列是阶段，单元格给出交付重点 |
@@ -67,9 +67,9 @@
 
 | 范例 | 输入与可复用语义 |
 |---|---|
-| [08 横条比较](../assets/examples/08-bar-chart.json) | 同一统计期间、同一计数口径；横条从零开始 |
-| [09 折线趋势](../assets/examples/09-line-chart.json) | 等间隔月份；保留原始数值，不使用平滑曲线 |
-| [10 环图构成](../assets/examples/10-donut-chart.json) | 各分类互斥且属于同一总体；面积按数值比例计算 |
+| [08 横条比较](../assets/examples/08-bar-chart.json) | 同一活动周期、同一统计口径；条形从零基线开始 |
+| [09 折线趋势](../assets/examples/09-line-chart.json) | 按周等距记录；保留原始数值，不使用平滑曲线 |
+| [10 环图构成](../assets/examples/10-donut-chart.json) | 各类别互斥且属于同一总体；面积按人数比例计算 |
 | [44 分组柱状图](../assets/examples/44-grouped-bar.json) | 各系列共享零基线和相同量纲 |
 | [45 堆叠柱状图](../assets/examples/45-stacked-bar.json) | 每根柱的组成必须互斥且量纲一致 |
 | [46 散点图](../assets/examples/46-scatter.json) | 每一点是一组配对值；位置不自动证明因果 |

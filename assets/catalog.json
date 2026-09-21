@@ -1,28 +1,28 @@
 [
   {
     "id": "01-system-architecture",
-    "title": "设备运维平台 · 系统架构",
+    "title": "社区服务平台 · 分层架构",
     "name": "分层系统架构",
     "family": "系统与软件",
     "type": "architecture",
-    "subtitle": "从现场数据到运维决策，四层职责与三项横向支撑",
+    "subtitle": "从用户入口到服务能力与数据底座；横向能力贯穿每层",
     "assumptions": [
-      "这是原创示例，不是用户现场实际部署",
+      "这是原创跨行业示例，不是用户现有平台的部署图",
       "横层未绘制未经确认的调用关系"
     ]
   },
   {
     "id": "02-workflow",
-    "title": "设备异常处置 · 责任与闭环",
+    "title": "服务请求 · 责任交接",
     "name": "责任泳道",
     "family": "过程与时序",
     "type": "graph",
-    "subtitle": "三条责任泳道；判定分支明确，复验不通过时返回维修",
+    "subtitle": "三条责任泳道；信息不完整回到申请人，交付后由协调团队验收",
     "assumptions": []
   },
   {
     "id": "03-organization",
-    "title": "运维团队 · 职责结构",
+    "title": "服务运营团队 · 职责结构",
     "name": "组织结构",
     "family": "关系与结构",
     "type": "tree",
@@ -31,16 +31,16 @@
   },
   {
     "id": "04-mindmap",
-    "title": "改善课题 · 从问题到验证",
+    "title": "社区学习改进 · 从问题到证据",
     "name": "思维导图",
     "family": "关系与结构",
     "type": "tree",
-    "subtitle": "以可观察问题为根，按事实、原因、方案与验证展开",
+    "subtitle": "把观察、机会、试验和复盘分开；分支是主题拆解，不是因果证明",
     "assumptions": []
   },
   {
     "id": "05-sequence",
-    "title": "工单创建 · 服务交互时序",
+    "title": "服务预约 · 交互时序",
     "name": "交互时序",
     "family": "过程与时序",
     "type": "sequence",
@@ -49,11 +49,11 @@
   },
   {
     "id": "06-gantt",
-    "title": "运维平台试点 · 实施计划",
+    "title": "社区服务活动 · 上线计划",
     "name": "甘特排期",
     "family": "计划与协作",
     "type": "gantt",
-    "subtitle": "按自然日定位，包含结束日；箭头表示完成后开始的依赖",
+    "subtitle": "按阶段、责任人和实际日期跟踪一场跨团队活动；深色条表示完成进度",
     "assumptions": []
   },
   {
@@ -67,29 +67,29 @@
   },
   {
     "id": "08-bar-chart",
-    "title": "异常类型 · 频次比较",
+    "title": "社区活动 · 触达渠道比较",
     "name": "横条比较",
     "family": "数据图表",
     "type": "chart",
-    "subtitle": "同一统计期间、同一计数口径；横条从零开始",
+    "subtitle": "同一活动周期、同一统计口径；条形从零基线开始",
     "assumptions": []
   },
   {
     "id": "09-line-chart",
-    "title": "月度停机时间 · 趋势观察",
+    "title": "客户支持 · 首次响应趋势",
     "name": "折线趋势",
     "family": "数据图表",
     "type": "chart",
-    "subtitle": "等间隔月份；保留原始数值，不使用平滑曲线",
+    "subtitle": "按周等距记录；保留原始数值，不使用平滑曲线",
     "assumptions": []
   },
   {
     "id": "10-donut-chart",
-    "title": "维护任务 · 工作量构成",
+    "title": "课程服务 · 参与方式构成",
     "name": "环图构成",
     "family": "数据图表",
     "type": "chart",
-    "subtitle": "各分类互斥且属于同一总体；面积按数值比例计算",
+    "subtitle": "各类别互斥且属于同一总体；面积按人数比例计算",
     "assumptions": []
   },
   {

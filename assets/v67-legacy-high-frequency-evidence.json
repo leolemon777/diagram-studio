@@ -1,0 +1,37 @@
+{
+  "version": "v67",
+  "date": "2026-09-21",
+  "scope": "Numbered high-frequency aliases aligned with reviewed cross-industry inputs",
+  "automated": {
+    "tests": "Legacy alias regression checks exact reviewed-input parity for 01, 02, 04, 05, 06, 08, 09 and 10; the organization alias is checked for service roles; all nine aliases render with clean QA",
+    "registry": "capability_registry.py --check passes",
+    "diff": "git diff --check passes",
+    "catalog": "Catalog titles and library-index descriptions match the updated Chinese examples",
+    "content": "Old high-frequency industrial terms are removed from the numbered 01–10 inputs while their diagram semantics remain unchanged"
+  },
+  "browser_checks": [
+    "The bilingual chooser still exposes the reviewed architecture, swimlane, tree, sequence, Gantt and data-chart forms",
+    "The local examples are served from the updated installed skill after synchronization",
+    "English chooser prompt punctuation and Chinese chooser punctuation remain localized after the alias update"
+  ],
+  "not_verified": [
+    "Native editor save/reopen for these legacy alias files",
+    "Mobile viewport and domain-specific evidence for illustrative scenarios",
+    "English organization alias, which remains outside the numbered legacy pair because no prior English source existed"
+  ],
+  "artifacts": {
+    "models": [
+      "assets/examples/01-system-architecture.json",
+      "assets/examples/02-workflow.json",
+      "assets/examples/03-organization.json",
+      "assets/examples/04-mindmap.json",
+      "assets/examples/05-sequence.json",
+      "assets/examples/06-gantt.json",
+      "assets/examples/08-bar-chart.json",
+      "assets/examples/09-line-chart.json",
+      "assets/examples/10-donut-chart.json"
+    ],
+    "indexes": ["assets/catalog.json", "references/library-index.md"],
+    "tests": ["tests/test_legacy_alias_consistency.py"]
+  }
+}
