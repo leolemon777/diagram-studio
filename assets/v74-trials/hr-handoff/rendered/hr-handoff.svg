@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1060" viewBox="0 0 1600 1060" role="img" aria-labelledby="diagram-title diagram-desc">
+<title id="diagram-title">服务请求 · 责任交接</title>
+<desc id="diagram-desc">三条责任泳道；信息不完整回到申请人，交付后由协调团队验收</desc>
+<rect width="100%" height="100%" fill="#F1EFEB"/>
+<defs>
+<marker id="arrow-accent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#AC6046"/></marker>
+<marker id="arrow-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#67685E"/></marker>
+<marker id="arrow-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#8C7964"/></marker>
+<marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#554C46"/></marker>
+<marker id="arrow-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#6D6A63"/></marker>
+<marker id="arrow-line" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#D8D3C8"/></marker>
+<marker id="arrow-ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#30302D"/></marker>
+</defs>
+<g font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, Arial, sans-serif">
+<g id="lane1" data-kind="panel" data-content-text="false" data-box="64,204,1472,162">
+<rect x="64" y="204" width="1472" height="162" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="88" y="233" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">01  申请人</text>
+</g>
+<g id="lane2" data-kind="panel" data-content-text="false" data-box="64,402,1472,250">
+<rect x="64" y="402" width="1472" height="250" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="88" y="431" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">02  协调团队</text>
+</g>
+<g id="lane3" data-kind="panel" data-content-text="false" data-box="64,700,1472,190">
+<rect x="64" y="700" width="1472" height="190" rx="10" fill="#FEFDF9" stroke="#D8D3C8" stroke-width="1.5"/>
+<text x="88" y="729" text-anchor="start" font-size="20" font-weight="600" fill="#6D6A63">03  执行团队</text>
+</g>
+<path d="M365,299 L390,299 L390,390 L565,390 L565,460" fill="none" stroke="#AC6046" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow-accent)"/>
+<path d="M685,502.0 L730.0,502.0 L730.0,499.0 L775,499.0" fill="none" stroke="#AC6046" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow-accent)"/>
+<path d="M1007,499.0 L1053.5,499.0 L1053.5,502.0 L1100,502.0" fill="none" stroke="#AC6046" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow-accent)"/>
+<path d="M891,433 L891,350 L565,350 L565,333" fill="none" stroke="#AC6046" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow-accent)"/>
+<path d="M565,333 L565,402 L565,460" fill="none" stroke="#AC6046" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow-accent)"/>
+<path d="M1223,544 L1223,760" fill="none" stroke="#AC6046" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow-accent)"/>
+<path d="M1100,802.0 L892.5,802.0 L685,802.0" fill="none" stroke="#AC6046" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow-accent)"/>
+<path d="M1346,802 L1450,802 L1450,502 L1346,502" fill="none" stroke="#8C7964" stroke-width="2" stroke-linejoin="round" stroke-dasharray="7 6" marker-end="url(#arrow-amber)"/>
+<g id="submit" data-kind="pill" data-content-text="false" data-box="125,265,240,68">
+<rect x="125" y="265" width="240" height="68" rx="34.0" fill="#FEFDF9" stroke="#AC6046" stroke-width="1.5"/>
+<text x="245.0" y="295.35" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">提交请求</text>
+<text x="245.0" y="319.05" text-anchor="middle" font-size="16" font-weight="400" fill="#6D6A63">说明目标与约束</text>
+</g>
+<g id="clarify" data-kind="pill" data-content-text="false" data-box="445,265,240,68">
+<rect x="445" y="265" width="240" height="68" rx="34.0" fill="#FEFDF9" stroke="#AC6046" stroke-width="1.5"/>
+<text x="565.0" y="295.35" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">补充信息</text>
+<text x="565.0" y="319.05" text-anchor="middle" font-size="16" font-weight="400" fill="#6D6A63">回答关键问题</text>
+</g>
+<g id="triage" data-kind="rect" data-content-text="false" data-box="445,460,240,84">
+<rect x="445" y="460" width="240" height="84" rx="10" fill="#FEFDF9" stroke="#AC6046" stroke-width="1.5"/>
+<text x="565.0" y="498.35" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">确认范围</text>
+<text x="565.0" y="522.05" text-anchor="middle" font-size="16" font-weight="400" fill="#6D6A63">明确优先级与交付物</text>
+</g>
+<g id="check" data-kind="diamond" data-content-text="false" data-box="775,433,232,132">
+<polygon points="891.0,433 1007,499.0 891.0,565 775,499.0" fill="#FEFDF9" stroke="#AC6046" stroke-width="1.5"/>
+<text x="891.0" y="506.15" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">信息完整？</text>
+</g>
+<g id="deliver" data-kind="rect" data-content-text="false" data-box="1100,460,246,84">
+<rect x="1100" y="460" width="246" height="84" rx="10" fill="#FEFDF9" stroke="#AC6046" stroke-width="1.5"/>
+<text x="1223.0" y="498.35" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">执行交付</text>
+<text x="1223.0" y="522.05" text-anchor="middle" font-size="16" font-weight="400" fill="#6D6A63">提交可验收成果与复盘记录</text>
+</g>
+<g id="review" data-kind="rect" data-content-text="false" data-box="1100,760,246,84">
+<rect x="1100" y="760" width="246" height="84" rx="10" fill="#FEFDF9" stroke="#67685E" stroke-width="1.5"/>
+<text x="1223.0" y="809.15" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">验收反馈</text>
+</g>
+<g id="close" data-kind="pill" data-content-text="false" data-box="445,760,240,84">
+<rect x="445" y="760" width="240" height="84" rx="42.0" fill="#FEFDF9" stroke="#67685E" stroke-width="1.5"/>
+<text x="565.0" y="798.35" text-anchor="middle" font-size="22" font-weight="600" fill="#30302D">确认完成</text>
+<text x="565.0" y="822.0500000000001" text-anchor="middle" font-size="16" font-weight="400" fill="#6D6A63">记录结果与后续</text>
+</g>
+<g id="_v11" data-kind="text" data-content-text="false" data-box="64,34,1472,22">
+
+<text x="64" y="49.55" text-anchor="start" font-size="14" font-weight="400" fill="#AC6046">59 / SWIMLANE FLOW</text>
+</g>
+<g id="_v12" data-kind="text" data-content-text="false" data-box="64,69,1472,56">
+
+<text x="64" y="108.7" text-anchor="start" font-size="36" font-weight="400" fill="#30302D">服务请求 · 责任交接</text>
+</g>
+<g id="_v13" data-kind="text" data-content-text="false" data-box="64,130,1472,38">
+
+<text x="64" y="154.525" text-anchor="start" font-size="17" font-weight="400" fill="#6D6A63">三条责任泳道；信息不完整回到申请人，交付后由协调团队验收</text>
+</g>
+<g id="_v14" data-kind="rect" data-content-text="false" data-box="64,997,1472,1">
+<rect x="64" y="997" width="1472" height="1" rx="0" fill="#D8D3C8" stroke="none" stroke-width="1.5"/>
+</g>
+<g id="_v15" data-kind="text" data-content-text="false" data-box="64,1010,1472,36">
+
+<text x="64" y="1032.55" text-anchor="start" font-size="14" font-weight="400" fill="#6D6A63">跨行业服务流程示例 · 普通责任泳道图 · 未声明为 BPMN 标准模型</text>
+</g>
+<rect x="1014.75" y="469.0" width="31.0" height="25" rx="4" fill="#F1EFEB"/>
+<text x="1030.25" y="486.0" font-size="15" text-anchor="middle" fill="#AC6046">是</text>
+<rect x="714.5" y="317" width="31.0" height="25" rx="4" fill="#F1EFEB"/>
+<text x="730" y="334" font-size="15" text-anchor="middle" fill="#AC6046">否</text>
+<rect x="559.5" y="373" width="61.0" height="25" rx="4" fill="#F1EFEB"/>
+<text x="590" y="390" font-size="15" text-anchor="middle" fill="#AC6046">补充后</text>
+<rect x="1199.5" y="633" width="121.0" height="25" rx="4" fill="#F1EFEB"/>
+<text x="1260" y="650" font-size="15" text-anchor="middle" fill="#AC6046">提交验收与复盘</text>
+<rect x="973.25" y="772.0" width="46.0" height="25" rx="4" fill="#F1EFEB"/>
+<text x="996.25" y="789.0" font-size="15" text-anchor="middle" fill="#AC6046">通过</text>
+<rect x="1419.5" y="664" width="61.0" height="25" rx="4" fill="#F1EFEB"/>
+<text x="1450" y="681" font-size="15" text-anchor="middle" fill="#8C7964">需调整</text>
+</g></svg>

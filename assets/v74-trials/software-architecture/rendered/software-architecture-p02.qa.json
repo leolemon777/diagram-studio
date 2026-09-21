@@ -1,0 +1,260 @@
+{
+  "errors": [],
+  "warnings": [],
+  "nodes": 6,
+  "edges": 0,
+  "scope": "geometry, text estimate, axis-aligned edge/node crossings; not semantic or visual acceptance",
+  "font_measurement": "font-glyph-metrics",
+  "rendered_visual_check": "not-run",
+  "manual_visual_review": "not-run",
+  "adaptive_layout": {
+    "version": 39,
+    "strategy": "right",
+    "node_width": 220,
+    "candidates": [
+      {
+        "score": 51.64,
+        "crossings": 0,
+        "orientation": "right",
+        "node_width": 220,
+        "spacing": 76,
+        "issues": []
+      },
+      {
+        "score": 51.89,
+        "crossings": 0,
+        "orientation": "right",
+        "node_width": 280,
+        "spacing": 76,
+        "issues": []
+      },
+      {
+        "score": 52.22,
+        "crossings": 0,
+        "orientation": "right",
+        "node_width": 360,
+        "spacing": 76,
+        "issues": []
+      },
+      {
+        "score": 51.64,
+        "crossings": 0,
+        "orientation": "down",
+        "node_width": 220,
+        "spacing": 76,
+        "issues": []
+      },
+      {
+        "score": 51.89,
+        "crossings": 0,
+        "orientation": "down",
+        "node_width": 280,
+        "spacing": 76,
+        "issues": []
+      },
+      {
+        "score": 52.22,
+        "crossings": 0,
+        "orientation": "down",
+        "node_width": 360,
+        "spacing": 76,
+        "issues": []
+      },
+      {
+        "score": 51.64,
+        "crossings": 0,
+        "orientation": "snake",
+        "node_width": 220,
+        "spacing": 76,
+        "issues": []
+      },
+      {
+        "score": 51.89,
+        "crossings": 0,
+        "orientation": "snake",
+        "node_width": 280,
+        "spacing": 76,
+        "issues": []
+      },
+      {
+        "score": 52.22,
+        "crossings": 0,
+        "orientation": "snake",
+        "node_width": 360,
+        "spacing": 76,
+        "issues": []
+      },
+      {
+        "score": 51.64,
+        "crossings": 0,
+        "orientation": "right",
+        "node_width": 220,
+        "spacing": 100,
+        "issues": []
+      },
+      {
+        "score": 51.89,
+        "crossings": 0,
+        "orientation": "right",
+        "node_width": 280,
+        "spacing": 100,
+        "issues": []
+      },
+      {
+        "score": 52.22,
+        "crossings": 0,
+        "orientation": "right",
+        "node_width": 360,
+        "spacing": 100,
+        "issues": []
+      },
+      {
+        "score": 51.64,
+        "crossings": 0,
+        "orientation": "down",
+        "node_width": 220,
+        "spacing": 100,
+        "issues": []
+      },
+      {
+        "score": 51.89,
+        "crossings": 0,
+        "orientation": "down",
+        "node_width": 280,
+        "spacing": 100,
+        "issues": []
+      },
+      {
+        "score": 52.22,
+        "crossings": 0,
+        "orientation": "down",
+        "node_width": 360,
+        "spacing": 100,
+        "issues": []
+      },
+      {
+        "score": 51.64,
+        "crossings": 0,
+        "orientation": "snake",
+        "node_width": 220,
+        "spacing": 100,
+        "issues": []
+      },
+      {
+        "score": 51.89,
+        "crossings": 0,
+        "orientation": "snake",
+        "node_width": 280,
+        "spacing": 100,
+        "issues": []
+      },
+      {
+        "score": 52.22,
+        "crossings": 0,
+        "orientation": "snake",
+        "node_width": 360,
+        "spacing": 100,
+        "issues": []
+      },
+      {
+        "score": 51.64,
+        "crossings": 0,
+        "orientation": "right",
+        "node_width": 220,
+        "spacing": 168,
+        "issues": []
+      },
+      {
+        "score": 51.89,
+        "crossings": 0,
+        "orientation": "right",
+        "node_width": 280,
+        "spacing": 168,
+        "issues": []
+      },
+      {
+        "score": 52.22,
+        "crossings": 0,
+        "orientation": "right",
+        "node_width": 360,
+        "spacing": 168,
+        "issues": []
+      },
+      {
+        "score": 51.64,
+        "crossings": 0,
+        "orientation": "down",
+        "node_width": 220,
+        "spacing": 168,
+        "issues": []
+      },
+      {
+        "score": 51.89,
+        "crossings": 0,
+        "orientation": "down",
+        "node_width": 280,
+        "spacing": 168,
+        "issues": []
+      },
+      {
+        "score": 52.22,
+        "crossings": 0,
+        "orientation": "down",
+        "node_width": 360,
+        "spacing": 168,
+        "issues": []
+      },
+      {
+        "score": 51.64,
+        "crossings": 0,
+        "orientation": "snake",
+        "node_width": 220,
+        "spacing": 168,
+        "issues": []
+      },
+      {
+        "score": 51.89,
+        "crossings": 0,
+        "orientation": "snake",
+        "node_width": 280,
+        "spacing": 168,
+        "issues": []
+      },
+      {
+        "score": 52.22,
+        "crossings": 0,
+        "orientation": "snake",
+        "node_width": 360,
+        "spacing": 168,
+        "issues": []
+      }
+    ],
+    "selected_score": 51.64,
+    "crossings": 0,
+    "font_measurement": "font-glyph-metrics",
+    "font_family": "Heiti TC",
+    "source_node_ids": [
+      "feedback-center"
+    ],
+    "source_edges": [],
+    "overview_scale_at_1600": 0.8,
+    "detail_pages_recommended": false,
+    "rendered_visual_check": "not-run",
+    "manual_visual_review": "not-run",
+    "readability": {
+      "reference_viewport": [
+        1600,
+        900
+      ],
+      "available_canvas": [
+        1552,
+        720
+      ],
+      "minimum_content_font_px": 22,
+      "projected_minimum_font_px": 17.6,
+      "review_threshold_px": 12,
+      "status": "within-target",
+      "scope": "projected content text size at reference viewport; not visual acceptance"
+    }
+  }
+}

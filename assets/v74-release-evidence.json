@@ -1,19 +1,22 @@
 {
   "version": "v74",
   "checked_at": "2026-09-21",
-  "scope": "popular embedded-content viewport closure and chooser continuity",
+  "scope": "popular embedded-content viewport closure, chooser continuity, reproducible trial outputs and clean-package release smoke test",
   "checks": {
-    "source_regression_tests": 127,
-    "installed_regression_tests": 127,
+    "source_regression_tests": 128,
+    "installed_regression_tests": 128,
     "quick_validate": "passed for source and installed copies",
-    "json_parse": "passed for 754 JSON files",
-    "markdown_link_audit": "passed for README, English README and verification status",
+    "json_parse": "passed for 798 JSON files",
+    "markdown_link_audit": "passed for README, English README, verification status, release notes and trial guides",
     "diff_check": "passed",
-    "source_installed_parity": "passed: recursive diff excluding .git is empty",
+    "source_installed_parity": "passed: recursive diff excluding .git and Python caches is empty",
     "chooser_continuity": "assets/v74-chooser-continuity-evidence.json",
     "popular_viewport": "assets/v74-popular-viewport-evidence.json",
+    "trial_pack": "assets/v74-trials/evidence.json; six mutated cases with preview, editable source, QA and receipt",
     "native_editor": "assets/v73-native-editor-roundtrip-evidence.json; 15 representative files; all reload_verified=true",
-    "jev": "pending: no matching Skill, plugin or repository file is available"
+    "jev": "pending: no matching Skill, plugin or repository file is available",
+    "clean_package": "assets/v74-clean-install-evidence.json; fresh-directory basic and optional cross-industry smoke tests passed",
+    "release_notes": "references/release-notes-v74.md and references/release-notes-v74.en.md"
   },
   "popular_pages": [
     "flow",
@@ -30,6 +33,7 @@
     "The viewport result covers nine popular demo pages at 390×844 and 768×1024; it does not certify every demo page or arbitrary high-density input.",
     "The compact Gantt print variant has a measured 12px minimum embedded font; executive and delivery variants measured 14px.",
     "Native-editor edit/save/reopen remains representative diagrams.net browser-storage evidence, not approval for every registered type or every editor.",
-    "JEV review remains pending until a real Skill name or path is available."
+    "JEV review remains pending until a real Skill name or path is available.",
+    "The clean-package smoke test verifies a basic renderer and one valid optional cross-industry model; it does not certify every backend or dependency combination."
   ]
 }

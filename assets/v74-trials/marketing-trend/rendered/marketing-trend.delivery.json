@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "protocol_version": "diagram-studio/delivery-1",
+  "version_id": "v-506afff212d8",
+  "source_name": "marketing-trend",
+  "input_sha256": "506afff212d8553bfb34eb93c96a02bb747b939a14c55cfce243cde84ac3866f",
+  "theme": "light",
+  "checks": {
+    "geometry": {
+      "status": "passed",
+      "warnings": []
+    },
+    "composition": {
+      "status": "not-run",
+      "findings": []
+    },
+    "content_integrity": {
+      "status": "passed",
+      "source_ids": 0,
+      "source_relations": 0,
+      "source_texts": 11,
+      "missing_ids": [],
+      "missing_relations": [],
+      "missing_text": [],
+      "scope": "stable source IDs, explicit relation endpoints and source display text; not domain correctness"
+    },
+    "browser_text_bounds": {
+      "status": "not-run"
+    },
+    "manual_visual_review": {
+      "status": "not-run"
+    },
+    "native_editor": {
+      "status": "not-run"
+    }
+  },
+  "files": {
+    "marketing-trend.brief.json": "1ca272cd88d7eb2baee4f772bded890a7add06b52efd538ea6518e94577a55e8",
+    "marketing-trend.drawio": "819e776afa434394b5bdaec631eb8ea7445dd67f79aa9d71fb3aa2ca5894cfa9",
+    "marketing-trend.qa.json": "2552312ff72da79638aa07c5d31bc53255b5460905a10ef04354c94f11d11e53",
+    "marketing-trend.scene.json": "271d59c572cae56268db728585f340ba5fca3d8b0e09d799642881c4430a21a3",
+    "marketing-trend.svg": "7f3a00d339e46b503ab5b74c160848ff7af81c469040509dcfa48b2315a9518b"
+  },
+  "delivery_scope": "Generation, semantic content checks and QA finish before replacement. Individual files are replaced; promotion is not a multi-file atomic transaction."
+}

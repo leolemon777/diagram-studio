@@ -1,0 +1,1122 @@
+{
+  "width": 1600,
+  "height": 1020,
+  "theme": "light",
+  "palette": {
+    "bg": "#F1EFEB",
+    "panel": "#FEFDF9",
+    "ink": "#30302D",
+    "muted": "#6D6A63",
+    "line": "#D8D3C8",
+    "accent": "#AC6046",
+    "teal": "#67685E",
+    "amber": "#8C7964",
+    "red": "#554C46",
+    "tint": "#F0E4DA",
+    "tint2": "#ECECE5"
+  },
+  "nodes": [
+    {
+      "id": "_v1",
+      "x": 82,
+      "y": 208,
+      "w": 300,
+      "h": 40,
+      "label": "任务 / 责任人",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 18,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v2",
+      "x": 402,
+      "y": 208,
+      "w": 74,
+      "h": 40,
+      "label": "进度",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 16,
+      "align": "right",
+      "check": false
+    },
+    {
+      "id": "_v3",
+      "x": 500,
+      "y": 208,
+      "w": 1000,
+      "h": 40,
+      "label": "2026-09-14 — 2026-10-09 · 自然日",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 18,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v4",
+      "x": 500.0,
+      "y": 258,
+      "w": 112,
+      "h": 22,
+      "label": "09/14",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v5",
+      "x": 653.8461538461538,
+      "y": 258,
+      "w": 112,
+      "h": 22,
+      "label": "09/18",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v6",
+      "x": 846.1538461538462,
+      "y": 258,
+      "w": 112,
+      "h": 22,
+      "label": "09/23",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v7",
+      "x": 1000.0,
+      "y": 258,
+      "w": 112,
+      "h": 22,
+      "label": "09/27",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v8",
+      "x": 1153.8461538461538,
+      "y": 258,
+      "w": 112,
+      "h": 22,
+      "label": "10/01",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v9",
+      "x": 1346.1538461538462,
+      "y": 258,
+      "w": 112,
+      "h": 22,
+      "label": "10/06",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v10",
+      "x": 82,
+      "y": 312,
+      "w": 300,
+      "h": 30,
+      "label": "需求调研与课程定位",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 20,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v11",
+      "x": 82,
+      "y": 344,
+      "w": 300,
+      "h": 22,
+      "label": "产品负责人  ·  09/14 — 09/16",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "scope",
+      "x": 500.0,
+      "y": 321.0,
+      "w": 115.38461538461539,
+      "h": 24,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "tint",
+      "stroke": "accent",
+      "check": false
+    },
+    {
+      "id": "_v13",
+      "x": 500.0,
+      "y": 321.0,
+      "w": 115.38461538461539,
+      "h": 24,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "accent",
+      "stroke": "none",
+      "check": false,
+      "parent_task": "scope"
+    },
+    {
+      "id": "_v14",
+      "x": 392,
+      "y": 319,
+      "w": 84,
+      "h": 30,
+      "label": "100%",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "right",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v15",
+      "x": 82,
+      "y": 388,
+      "w": 300,
+      "h": 30,
+      "label": "课程大纲与脚本",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 20,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v16",
+      "x": 82,
+      "y": 420,
+      "w": 300,
+      "h": 22,
+      "label": "教研团队  ·  09/17 — 09/22",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "outline",
+      "x": 615.3846153846154,
+      "y": 397.0,
+      "w": 230.76923076923077,
+      "h": 24,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "tint",
+      "stroke": "accent",
+      "check": false
+    },
+    {
+      "id": "_v18",
+      "x": 615.3846153846154,
+      "y": 397.0,
+      "w": 80.76923076923077,
+      "h": 24,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "accent",
+      "stroke": "none",
+      "check": false,
+      "parent_task": "outline"
+    },
+    {
+      "id": "_v19",
+      "x": 392,
+      "y": 395,
+      "w": 84,
+      "h": 30,
+      "label": "35%",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "right",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v20",
+      "x": 82,
+      "y": 464,
+      "w": 300,
+      "h": 30,
+      "label": "招生页面与报名流程",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 20,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v21",
+      "x": 82,
+      "y": 496,
+      "w": 300,
+      "h": 22,
+      "label": "设计 / 运营  ·  09/17 — 09/24",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "landing",
+      "x": 615.3846153846154,
+      "y": 473.0,
+      "w": 307.6923076923077,
+      "h": 24,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "tint",
+      "stroke": "accent",
+      "check": false
+    },
+    {
+      "id": "_v23",
+      "x": 615.3846153846154,
+      "y": 473.0,
+      "w": 76.92307692307692,
+      "h": 24,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "accent",
+      "stroke": "none",
+      "check": false,
+      "parent_task": "landing"
+    },
+    {
+      "id": "_v24",
+      "x": 392,
+      "y": 471,
+      "w": 84,
+      "h": 30,
+      "label": "25%",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "right",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v25",
+      "x": 82,
+      "y": 540,
+      "w": 300,
+      "h": 30,
+      "label": "课程录制与剪辑",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 20,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v26",
+      "x": 82,
+      "y": 572,
+      "w": 300,
+      "h": 22,
+      "label": "讲师 / 视频制作  ·  09/23 — 10/01",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "record",
+      "x": 846.1538461538462,
+      "y": 549.0,
+      "w": 346.15384615384613,
+      "h": 24,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "tint",
+      "stroke": "accent",
+      "check": false
+    },
+    {
+      "id": "_v28",
+      "x": 392,
+      "y": 547,
+      "w": 84,
+      "h": 30,
+      "label": "0%",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "right",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v29",
+      "x": 82,
+      "y": 616,
+      "w": 300,
+      "h": 30,
+      "label": "推广预热与学员招募",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 20,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v30",
+      "x": 82,
+      "y": 648,
+      "w": 300,
+      "h": 22,
+      "label": "市场团队  ·  09/26 — 10/06",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "promote",
+      "x": 961.5384615384615,
+      "y": 625.0,
+      "w": 423.07692307692304,
+      "h": 24,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "tint",
+      "stroke": "accent",
+      "check": false
+    },
+    {
+      "id": "_v32",
+      "x": 392,
+      "y": 623,
+      "w": 84,
+      "h": 30,
+      "label": "0%",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "right",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v33",
+      "x": 82,
+      "y": 692,
+      "w": 300,
+      "h": 30,
+      "label": "课程上传与体验测试",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 20,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v34",
+      "x": 82,
+      "y": 724,
+      "w": 300,
+      "h": 22,
+      "label": "教研 / 测试  ·  10/02 — 10/05",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "qa",
+      "x": 1192.3076923076924,
+      "y": 701.0,
+      "w": 153.84615384615384,
+      "h": 24,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "tint",
+      "stroke": "accent",
+      "check": false
+    },
+    {
+      "id": "_v36",
+      "x": 392,
+      "y": 699,
+      "w": 84,
+      "h": 30,
+      "label": "0%",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "right",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v37",
+      "x": 82,
+      "y": 768,
+      "w": 300,
+      "h": 30,
+      "label": "开课彩排与上线检查",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 20,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v38",
+      "x": 82,
+      "y": 800,
+      "w": 300,
+      "h": 22,
+      "label": "项目负责人  ·  10/07 — 10/08",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "rehearsal",
+      "x": 1384.6153846153845,
+      "y": 777.0,
+      "w": 76.92307692307692,
+      "h": 24,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "tint",
+      "stroke": "accent",
+      "check": false
+    },
+    {
+      "id": "_v40",
+      "x": 392,
+      "y": 775,
+      "w": 84,
+      "h": 30,
+      "label": "0%",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "right",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v41",
+      "x": 82,
+      "y": 844,
+      "w": 300,
+      "h": 30,
+      "label": "正式开课",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 20,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v42",
+      "x": 82,
+      "y": 876,
+      "w": 300,
+      "h": 22,
+      "label": "全体项目组  ·  10/09 — 10/09",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "launch",
+      "x": 1449.5384615384614,
+      "y": 853.0,
+      "w": 24,
+      "h": 24,
+      "label": "",
+      "detail": "",
+      "kind": "diamond",
+      "tone": "accent",
+      "fill": "tint",
+      "stroke": "accent",
+      "check": false
+    },
+    {
+      "id": "_v44",
+      "x": 392,
+      "y": 851,
+      "w": 84,
+      "h": 30,
+      "label": "里程碑",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "right",
+      "check": false,
+      "word_wrap": true
+    },
+    {
+      "id": "_v45",
+      "x": 64,
+      "y": 34,
+      "w": 1472,
+      "h": 22,
+      "label": "DELIVERY PLAN / 教育培训",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v46",
+      "x": 64,
+      "y": 69,
+      "w": 1472,
+      "h": 56,
+      "label": "线上课程上线计划 · 试用修订",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 36,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v47",
+      "x": 64,
+      "y": 130,
+      "w": 1472,
+      "h": 38,
+      "label": "责任人、日期、进度与完成后开始依赖全部保留",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v48",
+      "x": 64,
+      "y": 957,
+      "w": 1472,
+      "h": 1,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "line",
+      "stroke": "none",
+      "check": false
+    },
+    {
+      "id": "_v49",
+      "x": 64,
+      "y": 970,
+      "w": 1472,
+      "h": 36,
+      "label": "模拟排期 · 状态截至 2026/09/18 · 自然日且包含结束日 · 未计算关键路径",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    }
+  ],
+  "edges": [
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          500.0,
+          292
+        ],
+        [
+          500.0,
+          920
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "tone": "line",
+      "arrow": false
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          653.8461538461538,
+          292
+        ],
+        [
+          653.8461538461538,
+          920
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "tone": "line",
+      "arrow": false
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          846.1538461538462,
+          292
+        ],
+        [
+          846.1538461538462,
+          920
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "tone": "line",
+      "arrow": false
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          1000.0,
+          292
+        ],
+        [
+          1000.0,
+          920
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "tone": "line",
+      "arrow": false
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          1153.8461538461538,
+          292
+        ],
+        [
+          1153.8461538461538,
+          920
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "tone": "line",
+      "arrow": false
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          1346.1538461538462,
+          292
+        ],
+        [
+          1346.1538461538462,
+          920
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "tone": "line",
+      "arrow": false
+    },
+    {
+      "source": null,
+      "target": null,
+      "label": "",
+      "points": [
+        [
+          1500.0,
+          292
+        ],
+        [
+          1500.0,
+          920
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "tone": "line",
+      "arrow": false
+    },
+    {
+      "source": "scope",
+      "target": "outline",
+      "label": "",
+      "points": [
+        [
+          615.3846153846154,
+          333
+        ],
+        [
+          627.3846153846154,
+          333
+        ],
+        [
+          627.3846153846154,
+          409
+        ],
+        [
+          615.3846153846154,
+          409
+        ]
+      ],
+      "source_port": "right",
+      "target_port": "left",
+      "tone": "muted",
+      "width": 1.3
+    },
+    {
+      "source": "scope",
+      "target": "landing",
+      "label": "",
+      "points": [
+        [
+          615.3846153846154,
+          333
+        ],
+        [
+          627.3846153846154,
+          333
+        ],
+        [
+          627.3846153846154,
+          485
+        ],
+        [
+          615.3846153846154,
+          485
+        ]
+      ],
+      "source_port": "right",
+      "target_port": "left",
+      "tone": "muted",
+      "width": 1.3
+    },
+    {
+      "source": "outline",
+      "target": "record",
+      "label": "",
+      "points": [
+        [
+          846.1538461538462,
+          409
+        ],
+        [
+          858.1538461538462,
+          409
+        ],
+        [
+          858.1538461538462,
+          561
+        ],
+        [
+          846.1538461538462,
+          561
+        ]
+      ],
+      "source_port": "right",
+      "target_port": "left",
+      "tone": "muted",
+      "width": 1.3
+    },
+    {
+      "source": "landing",
+      "target": "promote",
+      "label": "",
+      "points": [
+        [
+          923.0769230769231,
+          485
+        ],
+        [
+          935.0769230769231,
+          485
+        ],
+        [
+          935.0769230769231,
+          637
+        ],
+        [
+          961.5384615384615,
+          637
+        ]
+      ],
+      "source_port": "right",
+      "target_port": "left",
+      "tone": "muted",
+      "width": 1.3
+    },
+    {
+      "source": "outline",
+      "target": "promote",
+      "label": "",
+      "points": [
+        [
+          846.1538461538462,
+          409
+        ],
+        [
+          858.1538461538462,
+          409
+        ],
+        [
+          858.1538461538462,
+          637
+        ],
+        [
+          961.5384615384615,
+          637
+        ]
+      ],
+      "source_port": "right",
+      "target_port": "left",
+      "tone": "muted",
+      "width": 1.3
+    },
+    {
+      "source": "record",
+      "target": "qa",
+      "label": "",
+      "points": [
+        [
+          1192.3076923076924,
+          561
+        ],
+        [
+          1204.3076923076924,
+          561
+        ],
+        [
+          1204.3076923076924,
+          713
+        ],
+        [
+          1192.3076923076924,
+          713
+        ]
+      ],
+      "source_port": "right",
+      "target_port": "left",
+      "tone": "muted",
+      "width": 1.3
+    },
+    {
+      "source": "qa",
+      "target": "rehearsal",
+      "label": "",
+      "points": [
+        [
+          1346.1538461538462,
+          713
+        ],
+        [
+          1358.1538461538462,
+          713
+        ],
+        [
+          1358.1538461538462,
+          789
+        ],
+        [
+          1384.6153846153845,
+          789
+        ]
+      ],
+      "source_port": "right",
+      "target_port": "left",
+      "tone": "muted",
+      "width": 1.3
+    },
+    {
+      "source": "promote",
+      "target": "rehearsal",
+      "label": "",
+      "points": [
+        [
+          1384.6153846153845,
+          637
+        ],
+        [
+          1396.6153846153845,
+          637
+        ],
+        [
+          1396.6153846153845,
+          789
+        ],
+        [
+          1384.6153846153845,
+          789
+        ]
+      ],
+      "source_port": "right",
+      "target_port": "left",
+      "tone": "muted",
+      "width": 1.3
+    },
+    {
+      "source": "rehearsal",
+      "target": "launch",
+      "label": "",
+      "points": [
+        [
+          1461.5384615384614,
+          789
+        ],
+        [
+          1473.5384615384614,
+          789
+        ],
+        [
+          1473.5384615384614,
+          865
+        ],
+        [
+          1449.5384615384614,
+          865
+        ]
+      ],
+      "source_port": "right",
+      "target_port": "left",
+      "tone": "muted",
+      "width": 1.3
+    }
+  ],
+  "meta": {
+    "gantt_variant": "delivery",
+    "gantt_language": "zh",
+    "calendar": "natural-days-inclusive",
+    "start": "2026-09-14",
+    "end": "2026-10-09",
+    "critical_path": "not-calculated"
+  },
+  "assumptions": [
+    "任务、日期和进度为演示数据"
+  ]
+}

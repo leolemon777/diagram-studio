@@ -1,0 +1,50 @@
+{
+  "version": "v74",
+  "checked_at": "2026-09-21",
+  "scope": "clean-directory release smoke test after copying the source package without .git or Python caches",
+  "copy_policy": "source tree copied to a fresh temporary directory; generated artifacts inspected only for portability tokens",
+  "checks": {
+    "basic_render": "passed",
+    "optional_cross_industry_render": "passed",
+    "generated_artifact_presence": "passed",
+    "forbidden_token_scan": "passed"
+  },
+  "commands": [
+    {
+      "command": "python3 scripts/render.py assets/examples/02-workflow.json --out runs/basic-flow-2",
+      "runtime": "system Python 3",
+      "status": "passed"
+    },
+    {
+      "command": "python scripts/cross_industry.py assets/cross-industry-models/technology-infographic.json --out runs/optional-cross-industry --name technology-infographic",
+      "runtime": "bundled workspace Python",
+      "status": "passed"
+    }
+  ],
+  "artifact_checks": [
+    {
+      "name": "basic-flow",
+      "status": "passed",
+      "output_scope": "runs/basic-flow-2",
+      "missing": [],
+      "forbidden_token_hits": {},
+      "qa_errors": [
+        []
+      ]
+    },
+    {
+      "name": "cross-industry",
+      "status": "passed",
+      "output_scope": "runs/optional-cross-industry",
+      "missing": [],
+      "forbidden_token_hits": {},
+      "qa_errors": [
+        []
+      ]
+    }
+  ],
+  "limitations": [
+    "This is a clean-package smoke test, not a full catalog render or human/domain approval.",
+    "The optional cross-industry smoke test uses one valid technology-infographic model; the complete six-case trial pack is checked separately."
+  ]
+}

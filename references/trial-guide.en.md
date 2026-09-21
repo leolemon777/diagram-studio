@@ -15,6 +15,21 @@ Use this pack to start with six common industry questions. Every case uses simul
 
 Two additional high-frequency entries are available: [Lean Canvas](../demos/lean-canvas/index.html) keeps problems, solutions, metrics, and evidence on one validation board; [user-path storyboard](../demos/user-path-storyboard/index.html) reviews preconditions, visible states, next steps, branches, and exceptions. Both provide bilingual JSON, SVG, draw.io, and QA, and neither turns a proposal into a fact automatically.
 
+## v74 reproducible mutated outputs
+
+The six cases below have each been revised once in the direction shown above and regenerated. The linked SVG is the revised preview, JSON is the redraw input, draw.io remains editable, and QA/receipt state the generation scope and limits. All values are simulated.
+
+| Case | Mutation marker | Revised preview | Redraw input | Editable source | QA / receipt | Limit |
+| --- | --- | --- | --- | --- | --- | --- |
+| Software product | Added “反馈中心 / feedback center” | [SVG](../assets/v74-trials/software-architecture/rendered/software-architecture.svg) | [JSON](../assets/v74-trials/software-architecture/software-architecture.json) | [draw.io](../assets/v74-trials/software-architecture/rendered/software-architecture.drawio) | [QA](../assets/v74-trials/software-architecture/rendered/software-architecture.qa.json) · [receipt](../assets/v74-trials/software-architecture/rendered/software-architecture.delivery.json) | A conceptual layering is not deployment or security certification |
+| Retail/e-commerce | Changed branch to “门店确认失败 / store confirmation failed” | [SVG](../assets/v74-trials/retail-fulfillment/rendered/retail-fulfillment.svg) | [JSON](../assets/v74-trials/retail-fulfillment/retail-fulfillment.json) | [draw.io](../assets/v74-trials/retail-fulfillment/rendered/retail-fulfillment.drawio) | [QA](../assets/v74-trials/retail-fulfillment/rendered/retail-fulfillment.qa.json) · [receipt](../assets/v74-trials/retail-fulfillment/rendered/retail-fulfillment.delivery.json) | Does not prove a real fulfilment rule |
+| Education/training | Moved promotion to 09/26 and added a prerequisite | [SVG](../assets/v74-trials/education-launch/rendered/education-launch.svg) | [JSON](../assets/v74-trials/education-launch/education-launch.json) | [draw.io](../assets/v74-trials/education-launch/rendered/education-launch.drawio) | [QA](../assets/v74-trials/education-launch/rendered/education-launch.qa.json) · [receipt](../assets/v74-trials/education-launch/rendered/education-launch.delivery.json) | Simulated schedule; critical path is not calculated |
+| Marketing | Changed week 3 to 36 | [SVG](../assets/v74-trials/marketing-trend/rendered/marketing-trend.svg) | [JSON](../assets/v74-trials/marketing-trend/marketing-trend.json) | [draw.io](../assets/v74-trials/marketing-trend/rendered/marketing-trend.drawio) | [QA](../assets/v74-trials/marketing-trend/rendered/marketing-trend.qa.json) · [receipt](../assets/v74-trials/marketing-trend/rendered/marketing-trend.delivery.json) | A trend does not prove causality; values are simulated |
+| HR/administration | Added “复盘记录 / review record” to the handoff | [SVG](../assets/v74-trials/hr-handoff/rendered/hr-handoff.svg) | [JSON](../assets/v74-trials/hr-handoff/hr-handoff.json) | [draw.io](../assets/v74-trials/hr-handoff/rendered/hr-handoff.drawio) | [QA](../assets/v74-trials/hr-handoff/rendered/hr-handoff.qa.json) · [receipt](../assets/v74-trials/hr-handoff/rendered/hr-handoff.delivery.json) | Not a BPMN or organisational-fact claim |
+| Travel/store service | Added “核对商品与数量 / verify item and quantity” | [SVG](../assets/v74-trials/travel-store-blueprint/rendered/travel-store-blueprint.svg) | [JSON](../assets/v74-trials/travel-store-blueprint/travel-store-blueprint.json) | [draw.io](../assets/v74-trials/travel-store-blueprint/rendered/travel-store-blueprint.drawio) | [QA](../assets/v74-trials/travel-store-blueprint/rendered/travel-store-blueprint.qa.json) · [receipt](../assets/v74-trials/travel-store-blueprint/rendered/travel-store-blueprint.delivery.json) | Shows declared handoffs only; it is not a service promise |
+
+The machine-readable scope is in the [v74 trial evidence](../assets/v74-trials/evidence.json).
+
 ## Minimum workflow
 
 1. Open an entry and read the question it answers and its scope note.

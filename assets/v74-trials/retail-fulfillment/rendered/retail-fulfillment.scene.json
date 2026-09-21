@@ -1,0 +1,334 @@
+{
+  "width": 1600,
+  "height": 760,
+  "theme": "light",
+  "palette": {
+    "bg": "#F1EFEB",
+    "panel": "#FEFDF9",
+    "ink": "#30302D",
+    "muted": "#6D6A63",
+    "line": "#D8D3C8",
+    "accent": "#AC6046",
+    "teal": "#67685E",
+    "amber": "#8C7964",
+    "red": "#554C46",
+    "tint": "#F0E4DA",
+    "tint2": "#ECECE5"
+  },
+  "nodes": [
+    {
+      "id": "request",
+      "x": 100,
+      "y": 300,
+      "w": 220,
+      "h": 80,
+      "label": "提交需求",
+      "detail": "目标 · 时间 · 联系方式",
+      "kind": "pill",
+      "tone": "accent",
+      "check": true
+    },
+    {
+      "id": "check",
+      "x": 400,
+      "y": 300,
+      "w": 220,
+      "h": 80,
+      "label": "核对信息",
+      "detail": "确认范围与可用条件",
+      "kind": "rect",
+      "tone": "accent",
+      "check": true
+    },
+    {
+      "id": "complete",
+      "x": 700,
+      "y": 270,
+      "w": 220,
+      "h": 120,
+      "label": "信息完整？",
+      "detail": "",
+      "kind": "diamond",
+      "tone": "accent",
+      "check": true
+    },
+    {
+      "id": "add",
+      "x": 700,
+      "y": 500,
+      "w": 220,
+      "h": 80,
+      "label": "门店确认失败",
+      "detail": "重新确认库存与取货点",
+      "kind": "pill",
+      "tone": "accent",
+      "check": true
+    },
+    {
+      "id": "schedule",
+      "x": 1000,
+      "y": 300,
+      "w": 220,
+      "h": 80,
+      "label": "安排服务",
+      "detail": "确认时间与负责人",
+      "kind": "rect",
+      "tone": "accent",
+      "check": true
+    },
+    {
+      "id": "notify",
+      "x": 1300,
+      "y": 300,
+      "w": 220,
+      "h": 80,
+      "label": "发送确认",
+      "detail": "通知结果与下一步",
+      "kind": "pill",
+      "tone": "teal",
+      "check": true
+    },
+    {
+      "id": "_v7",
+      "x": 64,
+      "y": 34,
+      "w": 1472,
+      "h": 22,
+      "label": "60 / FLOWCHART",
+      "detail": "",
+      "kind": "text",
+      "tone": "accent",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v8",
+      "x": 64,
+      "y": 69,
+      "w": 1472,
+      "h": 56,
+      "label": "预约服务 · 从需求到确认",
+      "detail": "",
+      "kind": "text",
+      "tone": "ink",
+      "fs": 36,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v9",
+      "x": 64,
+      "y": 130,
+      "w": 1472,
+      "h": 38,
+      "label": "先核对信息，再安排服务；信息不完整时返回补充",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 17,
+      "align": "left",
+      "check": false
+    },
+    {
+      "id": "_v10",
+      "x": 64,
+      "y": 697,
+      "w": 1472,
+      "h": 1,
+      "label": "",
+      "detail": "",
+      "kind": "rect",
+      "tone": "accent",
+      "fill": "line",
+      "stroke": "none",
+      "check": false
+    },
+    {
+      "id": "_v11",
+      "x": 64,
+      "y": 710,
+      "w": 1472,
+      "h": 36,
+      "label": "跨行业流程示例 · 关系和条件来自输入；不自动推断业务规则",
+      "detail": "",
+      "kind": "text",
+      "tone": "muted",
+      "fs": 14,
+      "align": "left",
+      "check": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "request",
+      "target": "check",
+      "label": "",
+      "points": [
+        [
+          320,
+          340.0
+        ],
+        [
+          360.0,
+          340.0
+        ],
+        [
+          400,
+          340.0
+        ]
+      ],
+      "source_port": "right",
+      "target_port": "left",
+      "tone": "accent",
+      "dashed": false,
+      "arrow": true,
+      "label_at": null
+    },
+    {
+      "source": "check",
+      "target": "complete",
+      "label": "",
+      "points": [
+        [
+          620,
+          340.0
+        ],
+        [
+          660.0,
+          340.0
+        ],
+        [
+          660.0,
+          330.0
+        ],
+        [
+          700,
+          330.0
+        ]
+      ],
+      "source_port": "right",
+      "target_port": "left",
+      "tone": "accent",
+      "dashed": false,
+      "arrow": true,
+      "label_at": null
+    },
+    {
+      "source": "complete",
+      "target": "schedule",
+      "label": "是",
+      "points": [
+        [
+          920,
+          330.0
+        ],
+        [
+          960.0,
+          330.0
+        ],
+        [
+          960.0,
+          340.0
+        ],
+        [
+          1000,
+          340.0
+        ]
+      ],
+      "source_port": "right",
+      "target_port": "left",
+      "tone": "accent",
+      "dashed": false,
+      "arrow": true,
+      "label_at": null
+    },
+    {
+      "source": "complete",
+      "target": "add",
+      "label": "否 / 门店异常",
+      "points": [
+        [
+          810,
+          390
+        ],
+        [
+          810,
+          500
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "tone": "accent",
+      "dashed": false,
+      "arrow": true,
+      "label_at": [
+        838,
+        450
+      ]
+    },
+    {
+      "source": "add",
+      "target": "check",
+      "label": "补充后",
+      "points": [
+        [
+          700,
+          540
+        ],
+        [
+          640,
+          540
+        ],
+        [
+          640,
+          420
+        ],
+        [
+          620,
+          420
+        ],
+        [
+          620,
+          340
+        ]
+      ],
+      "source_port": null,
+      "target_port": null,
+      "tone": "amber",
+      "dashed": true,
+      "arrow": true,
+      "label_at": [
+        650,
+        470
+      ]
+    },
+    {
+      "source": "schedule",
+      "target": "notify",
+      "label": "",
+      "points": [
+        [
+          1220,
+          340.0
+        ],
+        [
+          1260.0,
+          340.0
+        ],
+        [
+          1300,
+          340.0
+        ]
+      ],
+      "source_port": "right",
+      "target_port": "left",
+      "tone": "accent",
+      "dashed": false,
+      "arrow": true,
+      "label_at": null
+    }
+  ],
+  "meta": {},
+  "assumptions": []
+}

@@ -1,0 +1,247 @@
+{
+  "type": "graph",
+  "title": "服务请求 · 责任交接",
+  "subtitle": "三条责任泳道；信息不完整回到申请人，交付后由协调团队验收",
+  "eyebrow": "59 / SWIMLANE FLOW",
+  "height": 1060,
+  "groups": [
+    {
+      "id": "lane1",
+      "x": 64,
+      "y": 204,
+      "w": 1472,
+      "h": 162,
+      "label": "01  申请人"
+    },
+    {
+      "id": "lane2",
+      "x": 64,
+      "y": 402,
+      "w": 1472,
+      "h": 250,
+      "label": "02  协调团队"
+    },
+    {
+      "id": "lane3",
+      "x": 64,
+      "y": 700,
+      "w": 1472,
+      "h": 190,
+      "label": "03  执行团队"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "submit",
+      "x": 125,
+      "y": 265,
+      "w": 240,
+      "h": 68,
+      "label": "提交请求",
+      "detail": "说明目标与约束",
+      "kind": "pill"
+    },
+    {
+      "id": "clarify",
+      "x": 445,
+      "y": 265,
+      "w": 240,
+      "h": 68,
+      "label": "补充信息",
+      "detail": "回答关键问题",
+      "kind": "pill"
+    },
+    {
+      "id": "triage",
+      "x": 445,
+      "y": 460,
+      "w": 240,
+      "h": 84,
+      "label": "确认范围",
+      "detail": "明确优先级与交付物"
+    },
+    {
+      "id": "check",
+      "x": 775,
+      "y": 433,
+      "w": 232,
+      "h": 132,
+      "label": "信息完整？",
+      "kind": "diamond"
+    },
+    {
+      "id": "deliver",
+      "x": 1100,
+      "y": 460,
+      "w": 246,
+      "h": 84,
+      "label": "执行交付",
+      "detail": "提交可验收成果与复盘记录"
+    },
+    {
+      "id": "review",
+      "x": 1100,
+      "y": 760,
+      "w": 246,
+      "h": 84,
+      "label": "验收反馈",
+      "tone": "teal"
+    },
+    {
+      "id": "close",
+      "x": 445,
+      "y": 760,
+      "w": 240,
+      "h": 84,
+      "label": "确认完成",
+      "detail": "记录结果与后续",
+      "kind": "pill",
+      "tone": "teal"
+    }
+  ],
+  "edges": [
+    {
+      "from": "submit",
+      "to": "triage",
+      "points": [
+        [
+          365,
+          299
+        ],
+        [
+          390,
+          299
+        ],
+        [
+          390,
+          390
+        ],
+        [
+          565,
+          390
+        ],
+        [
+          565,
+          460
+        ]
+      ]
+    },
+    {
+      "from": "triage",
+      "to": "check"
+    },
+    {
+      "from": "check",
+      "to": "deliver",
+      "label": "是"
+    },
+    {
+      "from": "check",
+      "to": "clarify",
+      "label": "否",
+      "points": [
+        [
+          891,
+          433
+        ],
+        [
+          891,
+          350
+        ],
+        [
+          565,
+          350
+        ],
+        [
+          565,
+          333
+        ]
+      ],
+      "label_at": [
+        730,
+        334
+      ]
+    },
+    {
+      "from": "clarify",
+      "to": "triage",
+      "label": "补充后",
+      "points": [
+        [
+          565,
+          333
+        ],
+        [
+          565,
+          402
+        ],
+        [
+          565,
+          460
+        ]
+      ],
+      "label_at": [
+        590,
+        390
+      ]
+    },
+    {
+      "from": "deliver",
+      "to": "review",
+      "label": "提交验收与复盘",
+      "points": [
+        [
+          1223,
+          544
+        ],
+        [
+          1223,
+          760
+        ]
+      ],
+      "label_at": [
+        1260,
+        650
+      ]
+    },
+    {
+      "from": "review",
+      "to": "close",
+      "label": "通过",
+      "source_port": "left",
+      "target_port": "right"
+    },
+    {
+      "from": "review",
+      "to": "deliver",
+      "label": "需调整",
+      "points": [
+        [
+          1346,
+          802
+        ],
+        [
+          1450,
+          802
+        ],
+        [
+          1450,
+          502
+        ],
+        [
+          1346,
+          502
+        ]
+      ],
+      "label_at": [
+        1450,
+        681
+      ],
+      "tone": "amber",
+      "dashed": true
+    }
+  ],
+  "footer": "跨行业服务流程示例 · 普通责任泳道图 · 未声明为 BPMN 标准模型",
+  "family": "过程与协作",
+  "diagram_name": "责任泳道"
+}

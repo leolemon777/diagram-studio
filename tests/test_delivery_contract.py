@@ -43,6 +43,15 @@ class DeliveryContractTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "changed"):
                 delivery_contract.verify_receipt(result["receipt"])
 
+    def test_v74_trial_pack_has_six_reproducible_mutations(self):
+        evidence = json.loads((ROOT / "assets/v74-trials/evidence.json").read_text())
+        self.assertEqual(len(evidence["cases"]), 6)
+        for case in evidence["cases"]:
+            self.assertTrue(case["mutation_visible"])
+            self.assertEqual(case["qa_errors"], [])
+            for key in ("input", "preview", "editable_source", "delivery_receipt"):
+                self.assertTrue((ROOT / case[key]).is_file(), f"missing {key}: {case[key]}")
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -2,15 +2,21 @@
   "version": "v74",
   "v74_evidence": {
     "registry": "v72 registry retained: 8 groups; 30 registered capabilities",
-    "source_regression_tests_after_this_patch": 127,
-    "new_regression": "popular embedded-content viewport contract for nine high-frequency demo pages",
+    "source_regression_tests_after_this_patch": 128,
+    "new_regressions": [
+      "popular embedded-content viewport contract for nine high-frequency demo pages",
+      "six-industry trial artifact integrity and mutation visibility"
+    ],
     "release_evidence": "assets/v74-release-evidence.json",
-    "installed_sync": "passed: source and installed copies are byte-identical excluding .git; both pass 127 tests",
+    "installed_sync": "passed: source and installed copies are byte-identical excluding .git; both pass 128 tests",
     "popular_viewport_evidence": "assets/v74-popular-viewport-evidence.json; 9 popular pages × 2 viewports; page overflow 0/18",
     "chooser_continuity_evidence": "assets/v74-chooser-continuity-evidence.json; representative bilingual state, category memory, keyboard order and format boundary passed",
+    "trial_pack_evidence": "assets/v74-trials/evidence.json; six simulated cross-industry cases each have revised JSON, SVG, draw.io, scene, QA and delivery receipt",
     "jev": "not present in available skills, plugins, or repository files; integration awaits an explicit path or name",
     "native_editor": "representative pass remains 15 files; all-type coverage is not claimed",
-    "scope": "Popular embedded content only; this does not certify every catalog row, arbitrary density, domain facts, native-editor compatibility or JEV review"
+    "scope": "Popular embedded content only; this does not certify every catalog row, arbitrary density, domain facts, native-editor compatibility or JEV review",
+    "release_notes": "references/release-notes-v74.md and references/release-notes-v74.en.md",
+    "clean_package_evidence": "assets/v74-clean-install-evidence.json; fresh-directory basic and optional cross-industry smoke tests passed"
   },
   "v72_evidence": {
     "registry": "v72; 8 groups; 30 registered capabilities",
@@ -21,7 +27,10 @@
       "responsive demo-shell contract and experience-map narrow-width repair"
     ],
     "source_regression_tests_after_this_patch": 126,
-    "new_types": ["lean-canvas", "user-path-storyboard"],
+    "new_types": [
+      "lean-canvas",
+      "user-path-storyboard"
+    ],
     "semantic_validation": "passed for four bilingual examples",
     "generated_outputs": "SVG, draw.io, scene, brief, QA and delivery receipts generated",
     "release_evidence": "assets/v72-high-frequency-evidence.json",
@@ -132,7 +141,11 @@
   "v44_evidence": {
     "boardmix_export_trial": "assets/boardmix-export-trial-evidence.json",
     "boardmix_editor_reload": "passed: 5 elements and 72 board words preserved",
-    "export_ui_success": ["SVG all area", "PDF 16:9 all area", "Markdown 3 sticky notes"],
+    "export_ui_success": [
+      "SVG all area",
+      "PDF 16:9 all area",
+      "Markdown 3 sticky notes"
+    ],
     "json_boundary": "mind-map-only entry rejected the freeform board",
     "byte_level_download_validation": "not available through the browser automation download surface"
   }

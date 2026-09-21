@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "protocol_version": "diagram-studio/delivery-1",
+  "version_id": "v-9621375c7f33",
+  "source_name": "travel-store-blueprint",
+  "input_sha256": "9621375c7f33569670a357ac948806c68ac995a6280c3d0d37fc4f17ce77304d",
+  "theme": "light",
+  "checks": {
+    "geometry": {
+      "status": "passed",
+      "warnings": []
+    },
+    "composition": {
+      "status": "not-run",
+      "findings": []
+    },
+    "content_integrity": {
+      "status": "passed",
+      "source_ids": 24,
+      "source_relations": 3,
+      "source_texts": 46,
+      "missing_ids": [],
+      "missing_relations": [],
+      "missing_text": [],
+      "scope": "stable source IDs, explicit relation endpoints and source display text; not domain correctness"
+    },
+    "browser_text_bounds": {
+      "status": "not-run"
+    },
+    "manual_visual_review": {
+      "status": "not-run"
+    },
+    "native_editor": {
+      "status": "not-run"
+    }
+  },
+  "files": {
+    "travel-store-blueprint.brief.json": "3fd19a4c6b39cd02ea1a22e23d22ed13401dbedf5885be276166fa514df7cdbd",
+    "travel-store-blueprint.drawio": "0e713f381e756e8277bc77c01f0b4d793a1489a094790b9af22b891d387b91dc",
+    "travel-store-blueprint.qa.json": "5e925702afacd33dec67ffa882d297f82a80c43244ee04f552632f5357845c0d",
+    "travel-store-blueprint.scene.json": "415cc6ee29c56d4d4a47066553c730b9ca059fb82afe9a42ea2a16a3afdd80c4",
+    "travel-store-blueprint.svg": "1e9de0bcf658af8905910e43a3d3149151d7b4a3aa33b56da91a6e338ee2a44e"
+  },
+  "delivery_scope": "Generation, semantic content checks and QA finish before replacement. Individual files are replaced; promotion is not a multi-file atomic transaction."
+}

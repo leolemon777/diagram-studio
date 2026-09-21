@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "protocol_version": "diagram-studio/delivery-1",
+  "version_id": "v-58e9e740fab0",
+  "source_name": "software-architecture",
+  "input_sha256": "58e9e740fab0e4d026eeab985546e97909df96c5551fa15f43da5640c46cbc66",
+  "theme": "light",
+  "checks": {
+    "geometry": {
+      "status": "passed",
+      "warnings": []
+    },
+    "composition": {
+      "status": "review-required",
+      "findings": [
+        {
+          "kind": "small-overview-text",
+          "reference_viewport": [
+            1600,
+            900
+          ],
+          "available_canvas": [
+            1552,
+            720
+          ],
+          "minimum_content_font_px": 17,
+          "projected_minimum_font_px": 7.32,
+          "review_threshold_px": 12,
+          "status": "review-required",
+          "scope": "projected content text size at reference viewport; not visual acceptance"
+        }
+      ]
+    },
+    "content_integrity": {
+      "status": "passed",
+      "source_ids": 13,
+      "source_relations": 0,
+      "source_texts": 26,
+      "missing_ids": [],
+      "missing_relations": [],
+      "missing_text": [],
+      "scope": "stable source IDs, explicit relation endpoints and source display text; not domain correctness"
+    },
+    "browser_text_bounds": {
+      "status": "not-run"
+    },
+    "manual_visual_review": {
+      "status": "not-run"
+    },
+    "native_editor": {
+      "status": "not-run"
+    }
+  },
+  "files": {
+    "adaptive_reader.js": "9bc0a1eb6bfcf6bc88f5546bab128557ab8cc5daaee9887bcfa3e4d23b426fcf",
+    "browser_quality.js": "e02da63376abe62d68f626d97701d2aacf761f59e6312a420643eab270339e1b",
+    "software-architecture-p01.qa.json": "1f7af03a11a391e6b2dcad5c8facc96d4135b2037789293a46da127a689db225",
+    "software-architecture-p01.svg": "381d4d3b997a53730f327b6b5c1ed9613351a260fe07c1e4af27de91d6d3c65b",
+    "software-architecture-p02.qa.json": "4fb338e0472b3890cdac06b164e769dc162089f7fb4dedb65bcc066c75a33071",
+    "software-architecture-p02.svg": "575b4a92a0465165259efd6a9c5f4f8c84c1187ed770d6fc5595d451f431db87",
+    "software-architecture-p03.qa.json": "b8b1bbec3b269799f0b21c081bf5a16e8dcbc7343d3e5ae51fce4a9c723b3f24",
+    "software-architecture-p03.svg": "28eb0595805b4b79ece0af58b7811d37245e9dd23d46b0248855a1fcbba6b926",
+    "software-architecture-p04.qa.json": "119abc4efa35867d7437f5465719e95134c367cdb21e7e934f3d19720166ee3e",
+    "software-architecture-p04.svg": "978524724f3304fcbcc7c552323f8c7e11aff4a93e300dfb95b5923c17c3a9f9",
+    "software-architecture-p05.qa.json": "12a33c5f4654ba39c9c1668295bddbf635b0bfb897120f3bf009c168d32d1efe",
+    "software-architecture-p05.svg": "a8f3f5e9d7e18e78f86264b62fd24af934d3c8c57a33cb3762ff006422cd1126",
+    "software-architecture-p06.qa.json": "4848aa16423c8a0575cabb48e81511f7a3564757d618738ba3a667b6b42bce87",
+    "software-architecture-p06.svg": "b885af420d47a54593f581eb9c4f55128174dd1978e2f07ea38e3c96bcc57d03",
+    "software-architecture-p07.qa.json": "5d8a1e3b820e145abe98b66e0aa0d46628206663a2980ab2f03e64a4c8c81f9d",
+    "software-architecture-p07.svg": "dccfc91c2221bd1b020eb4f54eb931eeff324a3b6d3ec0c355c02e3808457de1",
+    "software-architecture-p08.qa.json": "5d8a1e3b820e145abe98b66e0aa0d46628206663a2980ab2f03e64a4c8c81f9d",
+    "software-architecture-p08.svg": "41e622fb6a3240990f8a4c35b02b2ed974299d6b55761f36117bb5618d323bd9",
+    "software-architecture-reading.drawio": "7855af382b1bce05e7378f9063c33b44f01fdd2a9dab64a2994e1d5ca996a7c0",
+    "software-architecture-reading.json": "fc2143e0d07491601e3cfa7fff95e87aa8be8357b92edcb0bd2c36be06010ea2",
+    "software-architecture.brief.json": "79dcc867121a023134d7d963c7a147a762605fdc7550eadba8b335db5398872e",
+    "software-architecture.drawio": "5362170c1f693794f12533fd7a761c9075655f71eb407dfeaf35f3e139916d5a",
+    "software-architecture.html": "b3732182ead263e04685a260a6d88271c6a61a32155748a8920184780542881b",
+    "software-architecture.qa.json": "cefb27d50815a159a466929bf6737c35b1683b6d5b36ffa52131916b37d3d217",
+    "software-architecture.scene.json": "e7179597253fbe8eb54b26faf27282da8ff30c8e1d06338f69a850021d1dfd28",
+    "software-architecture.svg": "40dd4d8dec843110b2c57ac98f6fbb9d5608786067aa71c82ec94143b6e21b92"
+  },
+  "delivery_scope": "Generation, semantic content checks and QA finish before replacement. Individual files are replaced; promotion is not a multi-file atomic transaction."
+}

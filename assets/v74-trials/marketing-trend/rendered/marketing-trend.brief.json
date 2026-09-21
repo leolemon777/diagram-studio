@@ -1,0 +1,37 @@
+{
+  "type": "chart",
+  "mode": "line",
+  "title": "Customer support · revised response trend",
+  "subtitle": "Recorded at equal weekly intervals; raw values stay visible and unsmoothed",
+  "eyebrow": "09 / TREND",
+  "unit": " min",
+  "data": [
+    {
+      "label": "Week 1",
+      "value": 46
+    },
+    {
+      "label": "Week 2",
+      "value": 42
+    },
+    {
+      "label": "Week 3",
+      "value": 36
+    },
+    {
+      "label": "Week 4",
+      "value": 31
+    },
+    {
+      "label": "Week 5",
+      "value": 34
+    },
+    {
+      "label": "Week 6",
+      "value": 27
+    }
+  ],
+  "footer": "Style sample · simulated values · a trend does not prove causal impact",
+  "family": "Data charts",
+  "diagram_name": "Line trend"
+}

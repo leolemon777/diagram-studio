@@ -15,6 +15,21 @@
 
 新增两种高频试用入口：[精益画布](../demos/lean-canvas/index.html)适合把问题、方案、指标和证据放在同一张验证板上；[用户路径故事板](../demos/user-path-storyboard/index.html)适合审查前置条件、可见状态、下一步、分支和异常。两者都提供中英文 JSON、SVG、draw.io 和 QA，且不把拟议内容自动当成事实。
 
+## v74 可复现修改产物
+
+以下六例已经按表中方向做过一次真实修改并重新生成；链接中的 SVG 是修改后的预览，JSON 是可重绘输入，draw.io 可继续编辑，QA 与 receipt 记录生成范围和限制。所有数据均为模拟数据。
+
+| 场景 | 修改标记 | 修改后预览 | 可重绘输入 | 可编辑源 | QA / receipt | 限制 |
+| --- | --- | --- | --- | --- | --- | --- |
+| 软件产品 | 增加“反馈中心” | [SVG](../assets/v74-trials/software-architecture/rendered/software-architecture.svg) | [JSON](../assets/v74-trials/software-architecture/software-architecture.json) | [draw.io](../assets/v74-trials/software-architecture/rendered/software-architecture.drawio) | [QA](../assets/v74-trials/software-architecture/rendered/software-architecture.qa.json) · [receipt](../assets/v74-trials/software-architecture/rendered/software-architecture.delivery.json) | 概念分层不等于部署图或安全认证 |
+| 电商零售 | 改为“门店确认失败” | [SVG](../assets/v74-trials/retail-fulfillment/rendered/retail-fulfillment.svg) | [JSON](../assets/v74-trials/retail-fulfillment/retail-fulfillment.json) | [draw.io](../assets/v74-trials/retail-fulfillment/rendered/retail-fulfillment.drawio) | [QA](../assets/v74-trials/retail-fulfillment/rendered/retail-fulfillment.qa.json) · [receipt](../assets/v74-trials/retail-fulfillment/rendered/retail-fulfillment.delivery.json) | 不自动证明真实履约规则 |
+| 教育培训 | 推广任务改为 09/26 并增加前置关系 | [SVG](../assets/v74-trials/education-launch/rendered/education-launch.svg) | [JSON](../assets/v74-trials/education-launch/education-launch.json) | [draw.io](../assets/v74-trials/education-launch/rendered/education-launch.drawio) | [QA](../assets/v74-trials/education-launch/rendered/education-launch.qa.json) · [receipt](../assets/v74-trials/education-launch/rendered/education-launch.delivery.json) | 模拟排期，未计算关键路径 |
+| 营销 | 第 3 周改为 36 | [SVG](../assets/v74-trials/marketing-trend/rendered/marketing-trend.svg) | [JSON](../assets/v74-trials/marketing-trend/marketing-trend.json) | [draw.io](../assets/v74-trials/marketing-trend/rendered/marketing-trend.drawio) | [QA](../assets/v74-trials/marketing-trend/rendered/marketing-trend.qa.json) · [receipt](../assets/v74-trials/marketing-trend/rendered/marketing-trend.delivery.json) | 趋势不证明因果，数值为模拟数据 |
+| 人事与行政 | 增加“复盘记录”交接语义 | [SVG](../assets/v74-trials/hr-handoff/rendered/hr-handoff.svg) | [JSON](../assets/v74-trials/hr-handoff/hr-handoff.json) | [draw.io](../assets/v74-trials/hr-handoff/rendered/hr-handoff.drawio) | [QA](../assets/v74-trials/hr-handoff/rendered/hr-handoff.qa.json) · [receipt](../assets/v74-trials/hr-handoff/rendered/hr-handoff.delivery.json) | 不声明为 BPMN 或组织事实 |
+| 文旅与门店 | 取货时增加“核对商品与数量” | [SVG](../assets/v74-trials/travel-store-blueprint/rendered/travel-store-blueprint.svg) | [JSON](../assets/v74-trials/travel-store-blueprint/travel-store-blueprint.json) | [draw.io](../assets/v74-trials/travel-store-blueprint/rendered/travel-store-blueprint.drawio) | [QA](../assets/v74-trials/travel-store-blueprint/rendered/travel-store-blueprint.qa.json) · [receipt](../assets/v74-trials/travel-store-blueprint/rendered/travel-store-blueprint.delivery.json) | 只表达声明的交接，不替代服务承诺 |
+
+机器可读的完整范围见 [v74 试用证据](../assets/v74-trials/evidence.json)。
+
 ## 最小流程
 
 1. 打开入口，先读“它回答什么问题”和边界说明。

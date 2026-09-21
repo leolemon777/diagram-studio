@@ -1,0 +1,173 @@
+{
+  "nodes": {
+    "service-entry": [
+      7
+    ],
+    "work-desk": [
+      7
+    ],
+    "operations-view": [
+      7
+    ],
+    "feedback-center": [
+      7
+    ],
+    "booking-service": [
+      7
+    ],
+    "notification-hub": [
+      7
+    ],
+    "content-service": [
+      7
+    ],
+    "business-records": [
+      7
+    ],
+    "event-stream": [
+      8
+    ],
+    "analytics-data": [
+      8
+    ],
+    "identity-provider": [
+      8
+    ],
+    "payment-signup": [
+      8
+    ],
+    "message-channels": [
+      8
+    ],
+    "crosscut-0": [
+      8
+    ],
+    "crosscut-1": [
+      8
+    ],
+    "crosscut-2": [
+      8
+    ]
+  },
+  "edges": [],
+  "local_views": [
+    {
+      "page": 1,
+      "nodes": [
+        "service-entry",
+        "work-desk",
+        "operations-view"
+      ],
+      "context_nodes": [],
+      "cross_page_relations": []
+    },
+    {
+      "page": 2,
+      "nodes": [
+        "feedback-center"
+      ],
+      "context_nodes": [],
+      "cross_page_relations": []
+    },
+    {
+      "page": 3,
+      "nodes": [
+        "booking-service",
+        "notification-hub",
+        "content-service"
+      ],
+      "context_nodes": [],
+      "cross_page_relations": []
+    },
+    {
+      "page": 4,
+      "nodes": [
+        "business-records",
+        "event-stream",
+        "analytics-data"
+      ],
+      "context_nodes": [],
+      "cross_page_relations": []
+    },
+    {
+      "page": 5,
+      "nodes": [
+        "identity-provider",
+        "payment-signup",
+        "message-channels"
+      ],
+      "context_nodes": [],
+      "cross_page_relations": []
+    },
+    {
+      "page": 6,
+      "nodes": [
+        "crosscut-0",
+        "crosscut-1",
+        "crosscut-2"
+      ],
+      "context_nodes": [],
+      "cross_page_relations": []
+    }
+  ],
+  "source_node_count": 16,
+  "source_edge_count": 0,
+  "pages": [
+    {
+      "file": "software-architecture-p01.svg",
+      "title": "P01 局部关系 · 1/6",
+      "width": 1600,
+      "height": 900,
+      "minimum_font": 22
+    },
+    {
+      "file": "software-architecture-p02.svg",
+      "title": "P02 局部关系 · 2/6",
+      "width": 1600,
+      "height": 900,
+      "minimum_font": 22
+    },
+    {
+      "file": "software-architecture-p03.svg",
+      "title": "P03 局部关系 · 3/6",
+      "width": 1600,
+      "height": 900,
+      "minimum_font": 22
+    },
+    {
+      "file": "software-architecture-p04.svg",
+      "title": "P04 局部关系 · 4/6",
+      "width": 1600,
+      "height": 900,
+      "minimum_font": 22
+    },
+    {
+      "file": "software-architecture-p05.svg",
+      "title": "P05 局部关系 · 5/6",
+      "width": 1600,
+      "height": 900,
+      "minimum_font": 22
+    },
+    {
+      "file": "software-architecture-p06.svg",
+      "title": "P06 局部关系 · 6/6",
+      "width": 1600,
+      "height": 900,
+      "minimum_font": 22
+    },
+    {
+      "file": "software-architecture-p07.svg",
+      "title": "P07 对象详解",
+      "width": 1600,
+      "height": 900,
+      "minimum_font": 14
+    },
+    {
+      "file": "software-architecture-p08.svg",
+      "title": "P08 对象详解",
+      "width": 1600,
+      "height": 900,
+      "minimum_font": 14
+    }
+  ]
+}
